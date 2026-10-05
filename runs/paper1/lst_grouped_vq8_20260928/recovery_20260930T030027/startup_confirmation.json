@@ -1,0 +1,36 @@
+{
+  "utc": "2026-09-30T03:02:33.027560+00:00",
+  "status": "passed",
+  "models": {
+    "full_lst_grouped_g8k16_seed17": {
+      "step": 7760,
+      "utc": "2026-09-30T03:02:27.817489+00:00",
+      "total": 0.05338190571637824,
+      "gradient_norm": 0.09897565096616745
+    },
+    "full_lst_grouped_g8k256_seed17": {
+      "step": 7760,
+      "utc": "2026-09-30T03:02:28.034388+00:00",
+      "total": 0.04138415225315839,
+      "gradient_norm": 0.10953374952077866
+    }
+  },
+  "gpu": {
+    "utc": "2026-09-30T03:02:33.449583+00:00",
+    "used_gib": 22.2548828125,
+    "total_gib": 31.8427734375,
+    "utilization_percent": 89.0,
+    "phase": "full",
+    "stage": "train",
+    "active": [
+      {
+        "name": "full_lst_grouped_g8k16_seed17",
+        "pid": 28304
+      },
+      {
+        "name": "full_lst_grouped_g8k256_seed17",
+        "pid": 16976
+      }
+    ]
+  }
+}

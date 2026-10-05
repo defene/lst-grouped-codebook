@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "units": 12,
+  "identical_inputs": true,
+  "checkpoint_and_sample_hashes": true,
+  "token_histograms_verified": true,
+  "complete_members_and_two_views": true
+}

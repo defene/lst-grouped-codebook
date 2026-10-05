@@ -1,0 +1,27 @@
+{
+  "record_ids": [
+    240455,
+    235502,
+    236343,
+    233332,
+    235386,
+    234327,
+    238221,
+    237686
+  ],
+  "excluded_previous_ids": [
+    231773,
+    232129,
+    232414,
+    232565,
+    232620,
+    233073,
+    233356,
+    234070
+  ],
+  "pool_size": 11749,
+  "rule": "First eight by (SHA256(salt + decimal record ID), record ID); no metric or image selection",
+  "salt": "grouped-vq-case-20261002:",
+  "source": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_vq_20260924\\full\\full_lst_grouped_single1024_seed17\\final_test_clean\\record_ids.npy",
+  "source_sha256": "e6fbcedcfc36900054c46322fc7769fce1e16bc145a183afc820cb3ee3aa7db8"
+}

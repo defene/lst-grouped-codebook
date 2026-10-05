@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "utc": "2026-09-30T03:00:27.625998+00:00",
+  "authorization": "User: 继续任务，为什么不跑了",
+  "sources_configs_orchestration_qa_match": true,
+  "STOP": [],
+  "models": {
+    "full_lst_grouped_g8k16_seed17": {
+      "step": 7750,
+      "validated_epoch": 2,
+      "records_presented": 495934,
+      "checkpoint_sha256": "f8dde379289f3a9179c5830cc787ca504f66f1746d8b0ffc821628d4b3825b45",
+      "logged_last_step": 7828,
+      "end_time_lower_bound_utc": "2026-09-29T11:49:56.761022+00:00",
+      "model_optimizer_finite": true,
+      "data_and_A06_training_stream_match": true,
+      "uncommitted_updates": 78
+    },
+    "full_lst_grouped_g8k256_seed17": {
+      "step": 7750,
+      "validated_epoch": 2,
+      "records_presented": 495934,
+      "checkpoint_sha256": "b2bb0148181ebbf501b44714cd46bb16bd9a06477ac313a72c216a6d34680655",
+      "logged_last_step": 7828,
+      "end_time_lower_bound_utc": "2026-09-29T11:49:56.710223+00:00",
+      "model_optimizer_finite": true,
+      "data_and_A06_training_stream_match": true,
+      "uncommitted_updates": 78
+    }
+  },
+  "reconstructed_stage_ends": [
+    {
+      "event": "end",
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g8k16_seed17",
+      "pid": 5908,
+      "exit_code": null,
+      "utc": "2026-09-29T13:03:36.562732+00:00",
+      "end_time_lower_bound_utc": "2026-09-29T11:49:56.761022+00:00",
+      "end_time_is_upper_bound": true,
+      "recovery_id": "recovery_20260930T030027",
+      "reason": "Exact termination unknown; last training log gives lower bound, incident review confirms all processes absent by upper bound. nvlddmkm Event153 coincides but does not establish termination time. Exclude subsequent confirmed downtime."
+    },
+    {
+      "event": "end",
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g8k256_seed17",
+      "pid": 8260,
+      "exit_code": null,
+      "utc": "2026-09-29T13:03:36.562732+00:00",
+      "end_time_lower_bound_utc": "2026-09-29T11:49:56.710223+00:00",
+      "end_time_is_upper_bound": true,
+      "recovery_id": "recovery_20260930T030027",
+      "reason": "Exact termination unknown; last training log gives lower bound, incident review confirms all processes absent by upper bound. nvlddmkm Event153 coincides but does not establish termination time. Exclude subsequent confirmed downtime."
+    }
+  ],
+  "prelaunch_utc": "2026-09-30T03:01:08.589303+00:00",
+  "resumed_utc": "2026-09-30T03:01:09+00:00",
+  "wrapper_pid": 27896,
+  "supervisor_pid": 24888,
+  "active": [
+    {
+      "name": "full_lst_grouped_g8k16_seed17",
+      "pid": 28304
+    },
+    {
+      "name": "full_lst_grouped_g8k256_seed17",
+      "pid": 16976
+    }
+  ],
+  "first_new_update_step": 7751,
+  "first_new_update_utc": "2026-09-30T03:01:36+00:00",
+  "monitor_updated": true
+}

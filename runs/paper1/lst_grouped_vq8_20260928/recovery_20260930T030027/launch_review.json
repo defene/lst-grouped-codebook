@@ -1,0 +1,133 @@
+{
+  "status": "passed",
+  "utc": "2026-09-28T22:56:26.771472+00:00",
+  "authorized_models": [
+    "g8k16",
+    "g8k256"
+  ],
+  "frozen_A06_core_unchanged": true,
+  "identical_A06_data_normalization_and_QA": true,
+  "config_differences": {
+    "smoke/g8k16": [
+      {
+        "field": "experiment.id",
+        "reference": "A06",
+        "new": "A07"
+      },
+      {
+        "field": "experiment.output_root",
+        "reference": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_vq_20260924",
+        "new": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_vq8_20260928"
+      },
+      {
+        "field": "experiment.primary_comparison",
+        "reference": "single1024_vs_g2k32_same_fixed_length_rate",
+        "new": "A06_g4k256_vs_g8k16_same_rate_and_g8k256_expanded_rate"
+      },
+      {
+        "field": "model.codes_per_group",
+        "reference": 256,
+        "new": 16
+      },
+      {
+        "field": "model.groups",
+        "reference": 4,
+        "new": 8
+      },
+      {
+        "field": "name",
+        "reference": "smoke_lst_grouped_g4k256_seed17",
+        "new": "smoke_lst_grouped_g8k16_seed17"
+      }
+    ],
+    "smoke/g8k256": [
+      {
+        "field": "experiment.id",
+        "reference": "A06",
+        "new": "A07"
+      },
+      {
+        "field": "experiment.output_root",
+        "reference": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_vq_20260924",
+        "new": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_vq8_20260928"
+      },
+      {
+        "field": "experiment.primary_comparison",
+        "reference": "single1024_vs_g2k32_same_fixed_length_rate",
+        "new": "A06_g4k256_vs_g8k16_same_rate_and_g8k256_expanded_rate"
+      },
+      {
+        "field": "model.groups",
+        "reference": 4,
+        "new": 8
+      },
+      {
+        "field": "name",
+        "reference": "smoke_lst_grouped_g4k256_seed17",
+        "new": "smoke_lst_grouped_g8k256_seed17"
+      }
+    ],
+    "full/g8k16": [
+      {
+        "field": "experiment.id",
+        "reference": "A06",
+        "new": "A07"
+      },
+      {
+        "field": "experiment.output_root",
+        "reference": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_vq_20260924",
+        "new": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_vq8_20260928"
+      },
+      {
+        "field": "experiment.primary_comparison",
+        "reference": "single1024_vs_g2k32_same_fixed_length_rate",
+        "new": "A06_g4k256_vs_g8k16_same_rate_and_g8k256_expanded_rate"
+      },
+      {
+        "field": "model.codes_per_group",
+        "reference": 256,
+        "new": 16
+      },
+      {
+        "field": "model.groups",
+        "reference": 4,
+        "new": 8
+      },
+      {
+        "field": "name",
+        "reference": "full_lst_grouped_g4k256_seed17",
+        "new": "full_lst_grouped_g8k16_seed17"
+      }
+    ],
+    "full/g8k256": [
+      {
+        "field": "experiment.id",
+        "reference": "A06",
+        "new": "A07"
+      },
+      {
+        "field": "experiment.output_root",
+        "reference": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_vq_20260924",
+        "new": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_vq8_20260928"
+      },
+      {
+        "field": "experiment.primary_comparison",
+        "reference": "single1024_vs_g2k32_same_fixed_length_rate",
+        "new": "A06_g4k256_vs_g8k16_same_rate_and_g8k256_expanded_rate"
+      },
+      {
+        "field": "model.groups",
+        "reference": 4,
+        "new": 8
+      },
+      {
+        "field": "name",
+        "reference": "full_lst_grouped_g4k256_seed17",
+        "new": "full_lst_grouped_g8k256_seed17"
+      }
+    ]
+  },
+  "unit_tests_passed": 10,
+  "formal_start_requires_smoke_resume_and_evaluation_gate": true,
+  "reference_A06_completion_sha256": "b6c518c00e862c8307c976160345b4f6d76e799da932c049a02767b4eed24e2f"
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-30",
+  "source_document": "data_inspection/FINAL_DATASET_SUMMARY.md",
+  "scope": "Current dataset working names and versioned split metadata; original source storage and legacy v1 remain unchanged.",
+  "terms": {
+    "hr": "fine-resolution LST",
+    "lr": "coarse-resolution LST",
+    "sequence_id": "calendar-month bundle identifier (HLC)",
+    "fine_lst_role": "satellite-retrieved reference product",
+    "temperature_decode": "stored / 100.0 (degrees Celsius); mask invalid values first",
+    "reader_temperature_decode": "ds.denormalize(sample['image']) / 100.0; use reference_mask",
+    "resolution_ratio": "256 / 8 = 32 is the array side-length ratio, not independent thermal information gain"
+  },
+  "datasets": [
+    {
+      "name": "HLS-LST-Pairs",
+      "short_name": "HLP",
+      "reader_id": "prithvi",
+      "legacy_names": [
+        "Prithvi Data",
+        "prithvi_data"
+      ],
+      "record_unit": "HLS/fine LST patch pair",
+      "records": 242416,
+      "mgrs_tiles": 3094,
+      "hls_samples": 242416,
+      "fine_lst_samples": 242416,
+      "splits": {
+        "train": {
+          "reader_split": "train",
+          "tiles": 2796,
+          "hls_samples": 218975,
+          "fine_lst_samples": 218975
+        },
+        "validation": {
+          "reader_split": "val",
+          "tiles": 147,
+          "hls_samples": 11684,
+          "fine_lst_samples": 11684
+        },
+        "test": {
+          "reader_split": "test",
+          "tiles": 151,
+          "hls_samples": 11757,
+          "fine_lst_samples": 11757
+        }
+      },
+      "storage": {
+        "kind": "zip64_eoz",
+        "path": "artifacts/prithvi_data_v1_20260909.zip"
+      },
+      "prepared_directory": "processed_data/hlp_split_v2_20260914/prithvi",
+      "coarse_lst": "not delivered; synthetic degradation required",
+      "continuous_time_series": false,
+      "legacy_prepared_directory": "processed_data/v1/prithvi",
+      "legacy_split_mapping": {
+        "train": "train",
+        "test": "val"
+      },
+      "reader_prepared_argument": "processed_data/hlp_split_v2_20260914",
+      "split_version": "hlp-tile-validation-v2-20260914",
+      "split_summary": "data_inspection/hlp_split_20260914/split_summary.json"
+    },
+    {
+      "name": "HLS-LST-CrossSensor",
+      "short_name": "HLC",
+      "reader_id": "lstsr_tb",
+      "legacy_names": [
+        "LSTSR-TB",
+        "LSTSR",
+        "lstsr_tb_final_upload_20260721"
+      ],
+      "record_unit": "calendar-month bundle",
+      "records": 277808,
+      "mgrs_tiles": 2490,
+      "hls_samples": 277808,
+      "fine_lst_samples": 2892007,
+      "splits": {
+        "train": {
+          "reader_split": "train",
+          "hls_samples": 250449,
+          "fine_lst_samples": 2608772
+        },
+        "validation": {
+          "reader_split": "val",
+          "hls_samples": 13694,
+          "fine_lst_samples": 141711
+        },
+        "test": {
+          "reader_split": "test",
+          "hls_samples": 13665,
+          "fine_lst_samples": 141524
+        }
+      },
+      "storage": {
+        "kind": "npz_directory",
+        "path": "data_inspection/extracted_metadata/lstsr_tb_final_dataset_20260719"
+      },
+      "prepared_directory": "processed_data/v1/lstsr_tb",
+      "coarse_lst": "Terra/MODIS MOD11A1 Collection 6.1; actual same-calendar-day coarse/fine pairs",
+      "continuous_time_series": false,
+      "full_membership_experiments": [
+        {
+          "run_id": "hlc-synthetic-full-epoch1-ddp2-io16-20260916-v3",
+          "manifest": "experiments/efdiff_hlc/deadline_run_manifest.json",
+          "train_fine_lst_months": 2608772,
+          "epochs": 1,
+          "val_fine_lst_months": 512,
+          "test_used": false,
+          "input": "synthetic Wald32 coarse LST and associated HLS",
+          "split_membership_unchanged": true,
+          "status": "complete; each model 2608772 records, 40763 updates, one epoch; 24-hour deadline met",
+          "world_size_per_model": 2,
+          "deadline_utc": "2026-09-18T04:23:04Z",
+          "loader_workers_per_rank": 16,
+          "local_full_test": {
+            "status": "launched; see run manifest and live pipeline",
+            "records": 141524,
+            "crop": 224,
+            "checkpoint": "fixed_epoch1_ema",
+            "test_used_for_selection": false,
+            "manifest": "experiments/efdiff_hlc/deadline_run_manifest.json",
+            "live_pipeline": "output/efdiff_hlc_epoch1_deadline_io16_20260916/full_test_20260921/pipeline.json"
+          }
+        },
+        {
+          "run_id": "hlc-synthetic-full-epoch1-20260916-v1",
+          "manifest": "experiments/efdiff_hlc/epoch1_run_manifest.json",
+          "train_fine_lst_months": 2608772,
+          "epochs": 1,
+          "val_fine_lst_months": 512,
+          "test_used": false,
+          "input": "synthetic Wald32 coarse LST and associated HLS",
+          "split_membership_unchanged": true,
+          "status": "preparation superseded by deadline DDP2 run; statistics retained"
+        }
+      ],
+      "experimental_subsets": [
+        {
+          "version": "efdiff-hlc-synthetic-pilot-16384-512-v1",
+          "scope": "experiment-only fixed subset; original splits unchanged",
+          "summary": "experiments/efdiff_hlc/pilot_membership/summary.json",
+          "manifest": "experiments/efdiff_hlc/pilot_run_manifest.json",
+          "train_fine_lst_months": 16384,
+          "val_fine_lst_months": 512,
+          "test_used": false,
+          "input": "synthetic Wald32 coarse LST and associated HLS; no actual MODIS input"
+        }
+      ],
+      "new_experiment_spatial_protocol": {
+        "protocol": "efdiff-hlc-fixed-center224-no-flip-20260930-v1",
+        "definition": "experiments/efdiff_hlc/center_crop_protocol.json",
+        "scope": "New synthetic-degradation experiments only; original data, splits and frozen historical training unchanged",
+        "shared_across_sequence_months": true,
+        "shared_across_epochs": true,
+        "crop": [
+          16,
+          240,
+          16,
+          240
+        ],
+        "random_flip": false
+      }
+    }
+  ]
+}

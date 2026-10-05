@@ -1,0 +1,14 @@
+{
+  "status": "running",
+  "processed": 11757,
+  "total": 11757,
+  "utc": "2026-09-28T09:08:04.609107+00:00",
+  "memory": {
+    "allocated_gib": 0.44300127029418945,
+    "reserved_gib": 1.16796875,
+    "peak_allocated_gib": 1.079287052154541,
+    "peak_reserved_gib": 1.16796875,
+    "device_free_gib": 28.9228515625,
+    "device_total_gib": 31.84234619140625
+  }
+}

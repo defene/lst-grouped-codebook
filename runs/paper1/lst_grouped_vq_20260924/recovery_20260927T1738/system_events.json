@@ -1,0 +1,338 @@
+[
+  {
+    "utc": "2026-09-27T17:34:00.0480073Z",
+    "Id": 98,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "卷 D: (\\Device\\HarddiskVolume5) 运行状况良好。无需执行任何操作。"
+  },
+  {
+    "utc": "2026-09-27T17:33:59.7870812Z",
+    "Id": 98,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "卷 C: (\\Device\\HarddiskVolume3) 运行状况良好。无需执行任何操作。"
+  },
+  {
+    "utc": "2026-09-27T17:34:28.0223487Z",
+    "Id": 6005,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已启动。"
+  },
+  {
+    "utc": "2026-09-27T01:15:18.3291859Z",
+    "Id": 6006,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已停止。"
+  },
+  {
+    "utc": "2026-09-27T01:15:08.6525882Z",
+    "Id": 1074,
+    "ProviderName": "User32",
+    "Message": "进程 C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe (DESKTOP-U87PE81) 由于以下原因已代表用户 DESKTOP-U87PE81\\rog 启动计算机 DESKTOP-U87PE81 的 关闭电源: 其他(计划外)\r\n 原因代码: 0x0\r\n 关机类型: 关闭电源\r\n 注释: "
+  },
+  {
+    "utc": "2026-09-26T22:12:50.6028081Z",
+    "Id": 98,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "卷 D: (\\Device\\HarddiskVolume5) 运行状况良好。无需执行任何操作。"
+  },
+  {
+    "utc": "2026-09-26T22:12:49.8214203Z",
+    "Id": 98,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "卷 C: (\\Device\\HarddiskVolume3) 运行状况良好。无需执行任何操作。"
+  },
+  {
+    "utc": "2026-09-26T22:13:18.0934937Z",
+    "Id": 6005,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已启动。"
+  },
+  {
+    "utc": "2026-09-26T20:01:46.6080784Z",
+    "Id": 6006,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已停止。"
+  },
+  {
+    "utc": "2026-09-26T20:01:39.4010688Z",
+    "Id": 1074,
+    "ProviderName": "User32",
+    "Message": "进程 C:\\Windows\\system32\\winlogon.exe (DESKTOP-U87PE81) 由于以下原因已代表用户 NT AUTHORITY\\SYSTEM 启动计算机 DESKTOP-U87PE81 的 关闭电源: 没有找到这个原因的标题\r\n 原因代码: 0x500ff\r\n 关机类型: 关闭电源\r\n 注释: "
+  },
+  {
+    "utc": "2026-09-26T18:29:29.9721207Z",
+    "Id": 98,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "卷 C: (\\Device\\HarddiskVolume3) 运行状况良好。无需执行任何操作。"
+  },
+  {
+    "utc": "2026-09-26T18:29:28.8006498Z",
+    "Id": 98,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "卷 D: (\\Device\\HarddiskVolume5) 运行状况良好。无需执行任何操作。"
+  },
+  {
+    "utc": "2026-09-26T18:29:54.3301278Z",
+    "Id": 6005,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已启动。"
+  },
+  {
+    "utc": "2026-09-26T06:43:06.2906857Z",
+    "Id": 6006,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已停止。"
+  },
+  {
+    "utc": "2026-09-26T06:42:53.5242124Z",
+    "Id": 1074,
+    "ProviderName": "User32",
+    "Message": "进程 C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe (DESKTOP-U87PE81) 由于以下原因已代表用户 DESKTOP-U87PE81\\rog 启动计算机 DESKTOP-U87PE81 的 关闭电源: 其他(计划外)\r\n 原因代码: 0x0\r\n 关机类型: 关闭电源\r\n 注释: "
+  },
+  {
+    "utc": "2026-09-26T06:00:30.8176254Z",
+    "Id": 98,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "卷 C: (\\Device\\HarddiskVolume3) 运行状况良好。无需执行任何操作。"
+  },
+  {
+    "utc": "2026-09-26T06:00:30.7468719Z",
+    "Id": 98,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "卷 D: (\\Device\\HarddiskVolume5) 运行状况良好。无需执行任何操作。"
+  },
+  {
+    "utc": "2026-09-26T05:58:37.1597531Z",
+    "Id": 140,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "系统无法将数据刷新到事务日志。可能发生损坏: VolumeId: D:，DeviceName: \\Device\\HarddiskVolume5。\r\n\r\n           故障状态: 指定不存在的设备。\r\n\r\n           设备 GUID: {3b7bccaa-b138-fa93-6c45-fce70a8bfcbc}\r\n           设备制造商: \r\n           设备型号: WD_BLACK SN850X 4000GB\r\n           设备版本: 624361WD\r\n           设备序列号: E823_8FA6_BF53_0001_001B_448B_4245_4131.\r\n           总线类型: NVMe\r\n\r\n           适配器序列号: 25193M800524        _2020\r\n"
+  },
+  {
+    "utc": "2026-09-26T05:58:36.8267378Z",
+    "Id": 140,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "系统无法将数据刷新到事务日志。可能发生损坏: VolumeId: D:，DeviceName: \\Device\\HarddiskVolume5。\r\n\r\n           故障状态: 指定不存在的设备。\r\n\r\n           设备 GUID: {3b7bccaa-b138-fa93-6c45-fce70a8bfcbc}\r\n           设备制造商: \r\n           设备型号: WD_BLACK SN850X 4000GB\r\n           设备版本: 624361WD\r\n           设备序列号: E823_8FA6_BF53_0001_001B_448B_4245_4131.\r\n           总线类型: NVMe\r\n\r\n           适配器序列号: 25193M800524        _2020\r\n"
+  },
+  {
+    "utc": "2026-09-26T06:00:57.3258260Z",
+    "Id": 6005,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已启动。"
+  },
+  {
+    "utc": "2026-09-26T05:58:35.7101561Z",
+    "Id": 6006,
+    "ProviderName": "EventLog",
+    "Message": "事件日志服务已停止。"
+  },
+  {
+    "utc": "2026-09-26T05:58:24.2102426Z",
+    "Id": 1074,
+    "ProviderName": "User32",
+    "Message": "进程 C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe (DESKTOP-U87PE81) 由于以下原因已代表用户 DESKTOP-U87PE81\\rog 启动计算机 DESKTOP-U87PE81 的 关闭电源: 其他(计划外)\r\n 原因代码: 0x0\r\n 关机类型: 关闭电源\r\n 注释: "
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4254931Z",
+    "Id": 140,
+    "ProviderName": "Microsoft-Windows-Ntfs",
+    "Message": "系统无法将数据刷新到事务日志。可能发生损坏: VolumeId: D:，DeviceName: \\Device\\HarddiskVolume5。\r\n\r\n           故障状态: 指定不存在的设备。\r\n\r\n           设备 GUID: {3b7bccaa-b138-fa93-6c45-fce70a8bfcbc}\r\n           设备制造商: \r\n           设备型号: WD_BLACK SN850X 4000GB\r\n           设备版本: 624361WD\r\n           设备序列号: E823_8FA6_BF53_0001_001B_448B_4245_4131.\r\n           总线类型: NVMe\r\n\r\n           适配器序列号: 25193M800524        _2020\r\n"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4254196Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4254196Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4254196Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4254196Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:24.4249162Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:23.8054041Z",
+    "Id": 50,
+    "ProviderName": "Ntfs",
+    "Message": "{Delayed Write Failed} Windows 无法保存文件 D:\\$Mft 的所有数据。数据已丢失。 此错误可能是由计算机硬件或网络连接问题所致。请尝试将此文件保存到其他位置。"
+  },
+  {
+    "utc": "2026-09-26T05:54:23.8054041Z",
+    "Id": 50,
+    "ProviderName": "Ntfs",
+    "Message": "{Delayed Write Failed} Windows 无法保存文件 D:\\steam 的所有数据。数据已丢失。 此错误可能是由计算机硬件或网络连接问题所致。请尝试将此文件保存到其他位置。"
+  },
+  {
+    "utc": "2026-09-26T05:54:23.8054041Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:23.8049004Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:23.8049004Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:23.8049004Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:23.8049004Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:20.8056165Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:20.8056165Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:20.8021174Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:20.8016176Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  },
+  {
+    "utc": "2026-09-26T05:54:20.8006163Z",
+    "Id": 51,
+    "ProviderName": "disk",
+    "Message": "传呼期间在设备 \\Device\\Harddisk1\\DR1 上检测到一个错误。"
+  }
+]

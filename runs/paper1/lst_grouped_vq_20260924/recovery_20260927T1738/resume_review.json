@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "utc": "2026-09-27T17:41:29.945364+00:00",
+  "frozen_sources_match": true,
+  "all_six_configs_match": true,
+  "STOP_evidence": [
+    {
+      "path": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_vq_20260924\\full\\full_lst_grouped_g2k32_seed17\\STOP",
+      "text": "checkpoint and stop\n",
+      "mtime_utc": "2026-09-26T05:58:26.743075+00:00"
+    }
+  ],
+  "STOP_interpretation": "Matches existing supervisor cleanup stop_process marker at OS shutdown time; retained until verification passes. No conversational request to stop experiment.",
+  "mask_banks_match": true,
+  "models": {
+    "full_lst_grouped_g2k32_seed17": {
+      "step": 17073,
+      "epoch": 4,
+      "consumed": 216640,
+      "validated_epoch": 4,
+      "records_presented": 1092540,
+      "checkpoint_sha256": "be6ab08293981697f69b0aa48b5849cbd0e2b67a99867dcf7e51f03ee8bf7116",
+      "logged_last_step": 17073,
+      "abandoned_logged_updates": 0,
+      "finite_model_optimizer": true
+    },
+    "full_lst_grouped_g4k256_seed17": {
+      "step": 15500,
+      "epoch": 4,
+      "consumed": 115968,
+      "validated_epoch": 4,
+      "records_presented": 991868,
+      "checkpoint_sha256": "93e2b6a4b96f353d933a5ddfdf3a56d4bf16dba88b190cbf6ba00b39e36af965",
+      "logged_last_step": 15529,
+      "abandoned_logged_updates": 29,
+      "finite_model_optimizer": true
+    }
+  },
+  "common_committed_steps": 15500,
+  "data_fingerprints_and_read_probes_passed": true,
+  "checkpoint_weights_not_copied": "Original last.pt files retained; SHA256 recorded before resume.",
+  "reconstructed_stage_ends": [
+    {
+      "event": "end",
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g2k32_seed17",
+      "pid": 15004,
+      "exit_code": null,
+      "utc": "2026-09-26T06:00:57.325826+00:00",
+      "end_time_lower_bound_utc": "2026-09-26T05:58:16.352037+00:00",
+      "end_time_is_upper_bound": true,
+      "recovery_id": "20260927T1738",
+      "reason": "OS shutdown requested at 05:58:24 UTC; telemetry stops 05:58:16; next EventLog boot 06:00:57 bounds termination. Earlier D disk errors also recorded; exact child termination unknown."
+    },
+    {
+      "event": "end",
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g4k256_seed17",
+      "pid": 26356,
+      "exit_code": null,
+      "utc": "2026-09-26T06:00:57.325826+00:00",
+      "end_time_lower_bound_utc": "2026-09-26T05:58:16.352037+00:00",
+      "end_time_is_upper_bound": true,
+      "recovery_id": "20260927T1738",
+      "reason": "OS shutdown requested at 05:58:24 UTC; telemetry stops 05:58:16; next EventLog boot 06:00:57 bounds termination. Earlier D disk errors also recorded; exact child termination unknown."
+    }
+  ],
+  "STOP_archived_as": "STOP_g2k32_at_shutdown.txt",
+  "uncommitted_updates_policy": "Frozen trainer archives old train log and replays g4 steps 15501-15529 from saved RNG; final record stream counts committed updates only. Wasted activity remains in GPU interval accounting."
+}

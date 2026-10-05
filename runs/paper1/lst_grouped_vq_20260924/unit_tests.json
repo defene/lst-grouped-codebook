@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "tests": 11,
+  "command": "python -m pytest tests/test_lst_grouped_vq.py tests/test_lst_v2_epochs.py -q",
+  "test_source_sha256": "69c47a5743845833ceda808503039284cf86ba19a9ee0dbc544ee05cc5ebe35b"
+}

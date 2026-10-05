@@ -1,0 +1,35 @@
+{
+  "source_files_verified": 661,
+  "unit_tests_passed": 21,
+  "pytest_seconds": 6.1,
+  "largest_files_bytes": [
+    [
+      11727575,
+      "output/pdf/grouped_codebook_A06_A07_summary_20261002.pdf"
+    ],
+    [
+      10229430,
+      "runs/paper1/lst_grouped_summary_20261002/gallery/predictions_8_records.npz"
+    ],
+    [
+      7486562,
+      "runs/paper1/lst_grouped_vq8_20260928/gallery/predictions_8_records.npz"
+    ],
+    [
+      7430080,
+      "runs/paper1/lst_grouped_vq_20260924/gallery/predictions_8_records.npz"
+    ],
+    [
+      6556795,
+      "runs/paper1/lst_grouped_vq8_20260928/full/full_lst_grouped_g8k16_seed17/train.jsonl.gz"
+    ]
+  ],
+  "registry_trials": [
+    "lst_grouped_vq_trial",
+    "lst_grouped_vq8_trial"
+  ],
+  "remote_upload": "validated_for_push",
+  "repository": "https://github.com/defene/lst-grouped-codebook",
+  "branch": "main",
+  "staged_file_count": 669
+}

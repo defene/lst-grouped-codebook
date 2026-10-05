@@ -1,0 +1,876 @@
+{
+  "version": 29,
+  "updated": "2026-09-14",
+  "status": "codebook1024_full_complete",
+  "plan": "PAPER1_EXPERIMENT_PLAN.md",
+  "split_seed": null,
+  "training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "manifest_sha256": "51f8a54dac595fad3584acc520e0811fdbba03c4b5e0a80721e17fda4cafee8c",
+  "split_counts": {
+    "train": {
+      "pairs": 230659,
+      "tiles": 2943,
+      "hls": 230659,
+      "lst_hr": 230659,
+      "metadata_eligible_for_cross_view": 183613
+    },
+    "val": {
+      "pairs": 11757,
+      "tiles": 151,
+      "hls": 11757,
+      "lst_hr": 11757,
+      "metadata_eligible_for_cross_view": 8770
+    }
+  },
+  "scope": "discrete representation learning; full asynchronous cross-satellite reconstruction belongs to paper 2",
+  "main_factorial": {
+    "VQ00": {
+      "stability": false,
+      "cross_view": false
+    },
+    "VQ10": {
+      "stability": true,
+      "cross_view": false
+    },
+    "VQ01": {
+      "stability": false,
+      "cross_view": true
+    },
+    "VQ11": {
+      "stability": true,
+      "cross_view": true
+    }
+  },
+  "proposed_rates": [
+    {
+      "name": "low",
+      "latent_hw": 8,
+      "tokens": 64,
+      "vocabulary": 512,
+      "fixed_bits": 576,
+      "bpp": 0.0087890625
+    },
+    {
+      "name": "medium",
+      "latent_hw": 16,
+      "tokens": 256,
+      "vocabulary": 512,
+      "fixed_bits": 2304,
+      "bpp": 0.03515625
+    },
+    {
+      "name": "high",
+      "latent_hw": 32,
+      "tokens": 1024,
+      "vocabulary": 512,
+      "fixed_bits": 9216,
+      "bpp": 0.140625
+    }
+  ],
+  "proposed_training": {
+    "global_pair_batch": 64,
+    "pilot_steps": 20000,
+    "full_steps": 100000,
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "hyperparameters_status": "proposed_freeze_after_pilot",
+    "hardware": "v1 single-device implementation; validated on RTX 5090; DDP not implemented",
+    "batch_unit": "one source-record HLS and HR LST pair, two synthetic views per modality",
+    "microbatch_pairs": 2,
+    "accumulation": 32,
+    "val_subset_pairs": 256,
+    "full_training_started": false
+  },
+  "experiments": [
+    {
+      "id": "E00",
+      "priority": "必做",
+      "experiment": "云污染保留、地表参考、单位与分组审计",
+      "deliverable": "污染/缺失/可靠参考分开，data_protocol、合法训练入口",
+      "prerequisites": "无",
+      "status": "planned"
+    },
+    {
+      "id": "E01",
+      "priority": "必做",
+      "experiment": "train 归一化与 loader 吞吐",
+      "deliverable": "norm hash、精确子集、每模态样本流",
+      "prerequisites": "E00",
+      "status": "planned"
+    },
+    {
+      "id": "E02",
+      "priority": "必做",
+      "experiment": "AE/VQ/FSQ smoke 与可逆编码",
+      "deliverable": "32 组 overfit、形状/梯度/roundtrip 记录",
+      "prerequisites": "E01",
+      "status": "planned"
+    },
+    {
+      "id": "E03",
+      "priority": "必做",
+      "experiment": "中码率基础 pilot",
+      "deliverable": "连续 AE、独立 VQ、独立 FSQ，各模态单独输出",
+      "prerequisites": "E02",
+      "status": "planned"
+    },
+    {
+      "id": "E04",
+      "priority": "必做",
+      "experiment": "S 一致性项 pilot",
+      "deliverable": "VQ00 vs VQ10，相同受控损坏",
+      "prerequisites": "E03",
+      "status": "planned"
+    },
+    {
+      "id": "E05",
+      "priority": "必做",
+      "experiment": "C 结构项 pilot",
+      "deliverable": "VQ00 vs VQ01，相同 paired 输入暴露量",
+      "prerequisites": "E03",
+      "status": "planned"
+    },
+    {
+      "id": "E06",
+      "priority": "必做",
+      "experiment": "S+C 联合机制",
+      "deliverable": "VQ00/10/01/11 四组，全同 backbone",
+      "prerequisites": "E04,E05",
+      "status": "planned"
+    },
+    {
+      "id": "E07",
+      "priority": "必做",
+      "experiment": "错配与退化诊断",
+      "deliverable": "正确配对/跨 tile 错配、码本使用、细节与极值",
+      "prerequisites": "E06",
+      "status": "planned"
+    },
+    {
+      "id": "E08",
+      "priority": "必做",
+      "experiment": "独立复验",
+      "deliverable": "seed=29 重跑选定 pilot 对照，不再改超参",
+      "prerequisites": "E07",
+      "status": "planned"
+    },
+    {
+      "id": "E09",
+      "priority": "必做",
+      "experiment": "机制判断与冻结",
+      "deliverable": "选定机制、主码率和训练配置；失败则修改假设",
+      "prerequisites": "E08",
+      "status": "planned"
+    },
+    {
+      "id": "E10",
+      "priority": "必做",
+      "experiment": "三码率正式 tokenizer",
+      "deliverable": "VQ00、FSQ00、VQ11：每模型输出 HLS/LST 两套结果",
+      "prerequisites": "E09",
+      "status": "planned"
+    },
+    {
+      "id": "E11",
+      "priority": "必做",
+      "experiment": "中码率正式消融",
+      "deliverable": "增加 VQ10、VQ01，与 E10 中的 00/11 构成四组",
+      "prerequisites": "E10",
+      "status": "planned"
+    },
+    {
+      "id": "E12",
+      "priority": "必做",
+      "experiment": "云/云影异常还原、覆盖与形状迁移",
+      "deliverable": "异常区还原、可靠区保真；真实与参考可控实验分表",
+      "prerequisites": "E10,E11",
+      "status": "planned"
+    },
+    {
+      "id": "E13",
+      "priority": "必做",
+      "experiment": "物理保真与坍缩诊断",
+      "deliverable": "SAM/指数、温度极值/梯度、usage/entropy",
+      "prerequisites": "E10,E11",
+      "status": "planned"
+    },
+    {
+      "id": "E14",
+      "priority": "必做",
+      "experiment": "像素域云区缺失→离散表示→图像还原",
+      "deliverable": "输入在编码前污染/遮挡，匹配轻量恢复头",
+      "prerequisites": "E10",
+      "status": "planned"
+    },
+    {
+      "id": "E15",
+      "priority": "必做",
+      "experiment": "条件重建对照",
+      "deliverable": "LST-only、concat、连续 cross、离散 cross，单独计条件成本",
+      "prerequisites": "E09",
+      "status": "planned"
+    },
+    {
+      "id": "E16",
+      "priority": "必做",
+      "experiment": "主要结果三种子与最终测试",
+      "deliverable": "固定配置 seed 17/29/43、tile CI、统一 test batch",
+      "prerequisites": "E11–E15",
+      "status": "planned"
+    },
+    {
+      "id": "E17",
+      "priority": "扩展",
+      "experiment": "FSQ + 所提训练机制",
+      "deliverable": "检查机制是否依赖 VQ，明确损失适配",
+      "prerequisites": "E09",
+      "status": "planned"
+    },
+    {
+      "id": "E18",
+      "priority": "扩展",
+      "experiment": "多尺度残差 VQ 迁移",
+      "deliverable": "历史 680-token anchor 与同架构无机制对照",
+      "prerequisites": "E09",
+      "status": "planned"
+    },
+    {
+      "id": "E19",
+      "priority": "扩展",
+      "experiment": "shared/private 与物理 loss",
+      "deliverable": "一次改变一个因素，所有 token 都计码率",
+      "prerequisites": "E11",
+      "status": "planned"
+    },
+    {
+      "id": "E20",
+      "priority": "辅助",
+      "experiment": "自然 RGB/HLS RGB/6-band/LST 几何分析",
+      "deliverable": "matched 数量、归一化敏感性；只用 train",
+      "prerequisites": "E01",
+      "status": "planned"
+    },
+    {
+      "id": "E21",
+      "priority": "扩展",
+      "experiment": "TerraMind/EO-VAE 适配参考",
+      "deliverable": "HLS 波段/归一化/码率可比性核实后加入",
+      "prerequisites": "E03",
+      "status": "planned"
+    }
+  ],
+  "noise_definition": "R1: split-local Fmask cloud/shadow/adjacency geometry transplanted onto reliable reference pixels; known input mask",
+  "restoration_protocols": {
+    "R1": "reference-controlled cloud-shape missing-region restoration",
+    "R2": "actual masked cloud holes; no pixel accuracy without reference",
+    "R3": "retained cloudy observations; input/reference pairs not yet verified"
+  },
+  "gaussian_role": "optional diagnostic only; not primary task",
+  "direction_status": "user_confirmed_prithvi_one_to_one_main_data_and_noise_robust_tokenization_framework",
+  "primary_protocol": "R1: hide additional reliable pixels before encoding; use original held-out values for supervision; restore at same resolution",
+  "application_protocol": "R2: restore actual cloud-masked holes; no pixel accuracy claims without reference",
+  "paired_cloudy_clear_data_required_to_start": false,
+  "R3_status": "optional_extension_not_prerequisite",
+  "sampling_protocol": {
+    "unit": "paired_source_record",
+    "key": [
+      "dataset_id",
+      "source_split",
+      "record_id"
+    ],
+    "inputs": [
+      "one HLS image",
+      "one HR LST image",
+      "per-modality input masks"
+    ],
+    "sampler": "uniform epoch shuffle of joined eligible record IDs; deterministic worker indices",
+    "requires_LR_for_paper1": false,
+    "requires_complete_sequence": false,
+    "split": "inherit source train/val; record IDs and record tile sets verified disjoint",
+    "normalization_weighting": "frozen per-dataset, per-modality sample-equal train-only statistics",
+    "partial_pixel_nodata": "keep eligible sample; reference mask excludes invalid pixels from supervision",
+    "geometric_augmentation": false,
+    "cross_view_gate": "same HLS source tile and timestamp as record metadata; other pairs still reconstruct independently",
+    "audit": "experiments/paper1/paired_metadata_audit.json"
+  },
+  "implementation": "eo_denoise/README.md",
+  "framework_validation": "experiments/paper1/framework_validation.json",
+  "historical_registry": "experiments/paper1/registry.v4.lstsr-plan.json",
+  "primary_dataset": "prithvi",
+  "secondary_dataset_policy": "lstsr_tb remains independent; not mixed into paper1 v1",
+  "split_policy": "inherit existing source train/val; no re-split; no independent test",
+  "subset_seed": 20260910,
+  "implemented_configs": [
+    "experiments/paper1/configs/prithvi_ae00.json",
+    "experiments/paper1/configs/prithvi_fsq00.json",
+    "experiments/paper1/configs/prithvi_hls_conv_vae_clean.json",
+    "experiments/paper1/configs/prithvi_hls_prithvi_style_vae_clean.json",
+    "experiments/paper1/configs/prithvi_lst_conv_vae_clean.json",
+    "experiments/paper1/configs/prithvi_lst_prithvi_style_vae_clean.json",
+    "experiments/paper1/configs/prithvi_vq00.json",
+    "experiments/paper1/configs/prithvi_vq01.json",
+    "experiments/paper1/configs/prithvi_vq10.json",
+    "experiments/paper1/configs/prithvi_vq11.json"
+  ],
+  "execution_status_note": "A03 四组 1024 码本从零训练及八份全量验证全部完成；逐样本、数据/模型身份和码本核查通过。中文报告与单模型 GPU-hours 已核对，A02 历史结果保留。",
+  "current_ablation": {
+    "id": "A03",
+    "status": "full_complete",
+    "protocol": "experiments/paper1/codebook1024/PROTOCOL.md",
+    "output": "runs/paper1/codebook1024",
+    "pilot_output": "runs/paper1/codebook1024/pilot",
+    "full_output": "runs/paper1/codebook1024/full",
+    "full_status": "runs/paper1/codebook1024/status.json",
+    "full_results": "runs/paper1/codebook1024/full/report/RESULTS_ZH.md",
+    "pilot_gate": "runs/paper1/codebook1024/pilot/gate.json",
+    "baseline_ablation": "A02",
+    "baseline_output": "runs/paper1/var_vs_prithvi_ae_full",
+    "codebook_size": 1024,
+    "baseline_codebook_size": 4096,
+    "pretrained_weights": false,
+    "seed": 17,
+    "runs": 4,
+    "steps_per_run": 10813,
+    "train_pairs": 230659,
+    "final_val_pairs": 11757,
+    "final_validation_views": 2,
+    "parallel_queues": [
+      "conv"
+    ],
+    "memory_limit_gib": 20,
+    "report_language": "zh",
+    "started_utc": "2026-09-12T17:25:50.0872676Z",
+    "config_derivation": "experiments/paper1/codebook1024/config_derivation.json",
+    "pilot_results": "runs/paper1/codebook1024/pilot/report/RESULTS_ZH.md",
+    "pilot_gate_passed_utc": "2026-09-12T17:33:30.536488+00:00",
+    "pilot_global_gpu_peak_gib": 19.8837890625,
+    "full_started_utc": "2026-09-12T17:33:31.136616+00:00",
+    "full_launch_verification": "runs/paper1/codebook1024/full_launch_verified.json",
+    "automation_id": "a02",
+    "completed_runs": 4,
+    "completed_run_names": [
+      "full_hls_conv_clean_seed17",
+      "full_hls_conv_noisy_seed17",
+      "full_lst_conv_clean_seed17",
+      "full_lst_conv_noisy_seed17"
+    ],
+    "first_completed_run_audit": "runs/paper1/codebook1024/milestones/full_hls_conv_clean_seed17.json",
+    "gpu_hours_reporting": {
+      "requested_utc": "2026-09-13T07:08:01.194236+00:00",
+      "required": true,
+      "per_run_and_mean": true,
+      "definition": "1 GPU x stage wall-clock hours; training and final validation separately; periodic validation is a training subcomponent",
+      "hardware": "NVIDIA GeForce RTX 5090",
+      "report": "runs/paper1/codebook1024/full/report/gpu_hours.json",
+      "script": "experiments/paper1/codebook1024/gpu_hours.py",
+      "source_and_training_config_unchanged": true,
+      "accounting_tests_passed": 3,
+      "status": "complete",
+      "completed_models": 4,
+      "mean_training_gpu_hours": 6.594624884294139,
+      "total_training_gpu_hours": 26.378499537176555,
+      "per_run": {
+        "full_hls_conv_clean_seed17": {
+          "training_gpu_hours": 6.675517562164201,
+          "final_validation_gpu_hours": 0.25250099056296876
+        },
+        "full_hls_conv_noisy_seed17": {
+          "training_gpu_hours": 6.8925611208544835,
+          "final_validation_gpu_hours": 0.25469461692704093
+        },
+        "full_lst_conv_clean_seed17": {
+          "training_gpu_hours": 6.36882270945443,
+          "final_validation_gpu_hours": 0.2006231744421853
+        },
+        "full_lst_conv_noisy_seed17": {
+          "training_gpu_hours": 6.441598144703441,
+          "final_validation_gpu_hours": 0.19941445887088777
+        }
+      },
+      "verified_utc": "2026-09-13T21:06:15.325723+00:00"
+    },
+    "second_completed_run_audit": "runs/paper1/codebook1024/milestones/full_hls_conv_noisy_seed17.json",
+    "third_completed_run_audit": "runs/paper1/codebook1024/milestones/full_lst_conv_clean_seed17.json",
+    "full_completed_utc": "2026-09-13T20:52:00.382652+00:00",
+    "full_quantitative_results": "runs/paper1/codebook1024/full/report/results.json",
+    "completion_audit": "runs/paper1/codebook1024/full/report/completion_audit.json",
+    "codebook_audit": "runs/paper1/codebook1024/full/report/codebook_audit/results.json",
+    "visual_review_zh": "runs/paper1/codebook1024/full/report/visual_review_zh.json",
+    "global_gpu_peak_gib": 20.02734375,
+    "minimum_sampled_device_free_gib": 11.8154296875,
+    "conclusion": "1024 未解决码字使用集中。匹配输入条件的 HLS 两组和 LST 干净组 RMSE 略差；LST 加噪组总体 RMSE 下降 1.39%，缺失区基本未改善。单种子、验证集、三遍数据，未证明收敛。",
+    "additional_predictions": {
+      "status": "complete",
+      "samples": 16,
+      "distinct_tiles": 16,
+      "predictions": 256,
+      "output": "runs/paper1/codebook1024/full/report/more_predictions",
+      "report": "runs/paper1/codebook1024/full/report/more_predictions/README_ZH.md",
+      "review": "runs/paper1/codebook1024/full/report/more_predictions/review.json",
+      "pdfs": [
+        "output/pdf/VQVAE_HLS_16_samples.pdf",
+        "output/pdf/VQVAE_LST_16_samples.pdf"
+      ],
+      "inference_only": true,
+      "prithvi_comparison": {
+        "status": "complete",
+        "inference_only": true,
+        "same_paired_samples": 16,
+        "new_predictions": 128,
+        "comparison_predictions": 256,
+        "output": "runs/paper1/codebook1024/full/report/more_predictions/prithvi_comparison",
+        "report": "runs/paper1/codebook1024/full/report/more_predictions/prithvi_comparison/README_ZH.md",
+        "pdfs": [
+          "output/pdf/VQVAE_vs_Prithvi_HLS_16_samples.pdf",
+          "output/pdf/VQVAE_vs_Prithvi_LST_16_samples.pdf"
+        ],
+        "review": "runs/paper1/codebook1024/full/report/more_predictions/prithvi_comparison/review.json"
+      }
+    },
+    "spatial_token_audit": {
+      "status": "complete",
+      "report": "runs/paper1/codebook1024/full/report/spatial_token_audit/REPORT_ZH.md",
+      "quantitative_results": "runs/paper1/codebook1024/full/report/spatial_token_audit/results.json",
+      "review": "runs/paper1/codebook1024/full/report/spatial_token_audit/review.json",
+      "validation_records": 256,
+      "probe_tiles": 32,
+      "models": 8,
+      "inference_only": true
+    }
+  },
+  "historical_ablations": [
+    {
+      "id": "A01",
+      "status": "complete",
+      "protocol": "experiments/paper1/ablation_vq_prithvi/PROTOCOL.md",
+      "output": "runs/paper1/ablation_vq_prithvi_20260910",
+      "user_constraints": [
+        "Prithvi-EO-2.0 structure only",
+        "no time",
+        "parameter count below VAR VQ-VAE",
+        "all scratch initialized"
+      ],
+      "parameter_ceiling": 108948355,
+      "modalities": [
+        "hls",
+        "lst"
+      ],
+      "backbones": [
+        "conv",
+        "prithvi_eo2_spatial"
+      ],
+      "training_inputs": [
+        "clean",
+        "10pct_QA_shape_missing"
+      ],
+      "runs": 8,
+      "steps_per_run": 1000,
+      "batch_size": 8,
+      "seed": 17,
+      "cross_view_loss": 0,
+      "stability_loss": 0,
+      "final_val_pairs": 256,
+      "formal_full_data_training": false,
+      "results": "runs/paper1/ablation_vq_prithvi_20260910/report/RESULTS.md",
+      "quantitative_results": "runs/paper1/ablation_vq_prithvi_20260910/report/results.json",
+      "tests_passed": 22
+    },
+    {
+      "id": "A02",
+      "status": "full_complete",
+      "protocol": "experiments/paper1/var_vs_prithvi_ae/PROTOCOL.md",
+      "pilot_output": "runs/paper1/var_vs_prithvi_ae_pilot",
+      "full_output": "runs/paper1/var_vs_prithvi_ae_full",
+      "prithvi_quantization": false,
+      "prithvi_kl": false,
+      "rate_matched": false,
+      "pretrained_weights": false,
+      "parallel_queues": [
+        "conv",
+        "prithvi"
+      ],
+      "seed": 17,
+      "pilot_gate": "runs/paper1/var_vs_prithvi_ae_pilot/gate.json",
+      "pilot_results": "runs/paper1/var_vs_prithvi_ae_pilot/report/RESULTS.md",
+      "full_status": "runs/paper1/var_vs_prithvi_ae_full/status.json",
+      "full_started_utc": "2026-09-10T22:51:24Z",
+      "recoveries": [
+        {
+          "incident": "runs/paper1/var_vs_prithvi_ae_full/incidents/20260911T174211",
+          "reason": "Windows PermissionError on scheduler atomic status replacement",
+          "checkpoint_step": 1887,
+          "first_resumed_step": 1888,
+          "verified_utc": "2026-09-11T17:54:15.898119+00:00",
+          "model_and_data_and_config_unchanged": true
+        }
+      ],
+      "full_completed_utc": "2026-09-12T06:21:28.406946+00:00",
+      "full_results": "runs/paper1/var_vs_prithvi_ae_full/report/RESULTS_ZH.md",
+      "full_quantitative_results": "runs/paper1/var_vs_prithvi_ae_full/report/results.json",
+      "completion_audit": "runs/paper1/var_vs_prithvi_ae_full/report/completion_audit.json",
+      "visual_review": "runs/paper1/var_vs_prithvi_ae_full/report/visual_review.json",
+      "completed_runs": 8,
+      "training_records_per_run": 230659,
+      "training_presentations_per_run": 692017,
+      "final_validation_records": 11757,
+      "final_validation_views": 2,
+      "global_gpu_peak_gib": 24.376953125,
+      "convergence": "仍有细节欠拟合迹象，尚未证明充分收敛。Prithvi 末期仍改善，卷积 VQ-VAE 更接近平台。LST 加噪训练的卷积 VQ-VAE 在干净输入上出现明显退化。",
+      "full_results_en": "runs/paper1/var_vs_prithvi_ae_full/report/RESULTS.md",
+      "report_language": "zh",
+      "model_display_names": {
+        "conv": "卷积 VQ-VAE",
+        "prithvi": "Prithvi 连续 AE"
+      },
+      "visual_review_zh": "runs/paper1/var_vs_prithvi_ae_full/report/visual_review_zh.json",
+      "codebook_report": "runs/paper1/var_vs_prithvi_ae_full/report/CODEBOOK_ZH.md",
+      "codebook_diagnosis": "严重码字使用集中和部分索引坍缩迹象，LST 更明显；不同于单码完全坍缩，也未证明训练过程中的持续收缩。详见全量汇总和 256 条记录分尺度核查。"
+    }
+  ],
+  "lst_residual_trial": {
+    "id": "A04",
+    "status": "complete",
+    "protocol": "experiments/paper1/lst_residual/PROTOCOL_ZH.md",
+    "output": "runs/paper1/lst_residual_20260913",
+    "models": 4,
+    "modality": "lst",
+    "hls_included": false,
+    "steps_per_model": 2000,
+    "scratch": true,
+    "codebook_size": 1024,
+    "smoke_gate": "runs/paper1/lst_residual_20260913/smoke/gate.json",
+    "full_training_not_automatically_authorized": true,
+    "completed_utc": "2026-09-14T10:07:20.227060+00:00",
+    "report": "runs/paper1/lst_residual_20260913/report/REPORT_ZH.md",
+    "completion_review": "runs/paper1/lst_residual_20260913/report/completion_review.json",
+    "best_arm": "residual_spatial4",
+    "best_noisy_rmse": 1.058284,
+    "longer_training_started": false
+  },
+  "formal_training_budget": {
+    "status": "provisional_user_convention",
+    "epochs": 5,
+    "specification": "experiments/paper1/training_budget.json",
+    "applies_to": "future_formal_comparisons",
+    "historical_runs_unchanged": true,
+    "new_training_started": false,
+    "implementation": "experiments/paper1/lst_v2_5epoch/train.py"
+  },
+  "lst_full_evaluation": {
+    "status": "complete",
+    "output": "runs/paper1/lst_full_eval_20260914",
+    "protocol": "experiments/paper1/lst_full_eval/PROTOCOL_ZH.md",
+    "models": [
+      "absolute",
+      "absolute_spatial4",
+      "residual",
+      "residual_spatial4"
+    ],
+    "checkpoint_steps": 2000,
+    "new_training": false,
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "val_pairs": 11684,
+    "test_pairs": 11757,
+    "realizations": 2,
+    "conditions": [
+      "clean",
+      "noisy10"
+    ],
+    "seen_val_records": 6563,
+    "independent_validation": false,
+    "historical_test_monitoring": true,
+    "technical_checks": "16 units x 8 samples passed; 2 unit/data tests passed",
+    "monitor": "a02",
+    "completed_utc": "2026-09-15T02:02:15.918960+00:00",
+    "verified_units": 16,
+    "review": "runs/paper1/lst_full_eval_20260914/completion_review.json",
+    "report": "runs/paper1/lst_full_eval_20260914/REPORT_ZH.md",
+    "test_noisy_best_fixed_checkpoint": "residual_spatial4",
+    "test_noisy_rmse": 1.0976736161828873,
+    "relative_rmse_reduction_vs_absolute": 0.25075346826378264,
+    "inference_job_wall_hours": 1.9027445469166722
+  },
+  "lst_v2_5epoch_trial": {
+    "id": "A05",
+    "status": "complete",
+    "authorized_date": "2026-09-15",
+    "output": "runs/paper1/lst_v2_5epoch_20260915",
+    "protocol": "experiments/paper1/lst_v2_5epoch/PROTOCOL_ZH.md",
+    "models": [
+      "absolute",
+      "absolute_spatial4",
+      "residual",
+      "residual_spatial4"
+    ],
+    "modality": "lst",
+    "scratch": true,
+    "epochs": 5,
+    "records_per_epoch": 218975,
+    "record_presentations_per_model": 1094875,
+    "updates_per_model": 17110,
+    "effective_batch": 64,
+    "tail_records": 31,
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "full_val_pairs": 11684,
+    "full_test_pairs": 11757,
+    "primary_checkpoint": "fixed_epoch5_last",
+    "parallel_jobs": 2,
+    "allocator_limit_gib_per_job": 12,
+    "monitor": "a02",
+    "preflight": "passed",
+    "unit_tests": "6 passed",
+    "resume_smoke": "passed",
+    "hls_started": false,
+    "prithvi_started": false,
+    "evaluation_smoke": "16/16 passed",
+    "formal_started_utc": "2026-09-15T05:32:52.563036+00:00",
+    "recovery": "runs/paper1/lst_v2_5epoch_20260915/recovery_20260915T2220/resume_review.json",
+    "recovery_verified_utc": "2026-09-15T22:24:07.089662+00:00",
+    "recovery_details": "Supervisor-only file-sharing retry; frozen core and configs unchanged; resumed checkpoints and observed advancing training logs",
+    "latest_recovery": {
+      "date": "2026-09-17",
+      "review": "runs\\paper1\\lst_v2_5epoch_20260915\\recovery_20260917T1633\\resume_review.json",
+      "result": "runs\\paper1\\lst_v2_5epoch_20260915\\recovery_20260917T1633\\resume_result.json",
+      "cause": "Telemetry stopped near D drive errors; later Windows Update reboot confirmed; initial interruption cause uncertain",
+      "resumed_step": 13688,
+      "core_and_config_unchanged": true,
+      "gpu_time": "Report lower/upper bounds because prior termination time unknown"
+    },
+    "training_gate": {
+      "status": "passed",
+      "path": "runs\\paper1\\lst_v2_5epoch_20260915\\full\\gate.json",
+      "updates_per_model": 17110,
+      "records_per_model": 1094875,
+      "same_record_stream": true
+    },
+    "completed_utc": "2026-09-18T00:21:52.427094+00:00",
+    "evaluation": "16/16 full units passed; matched inputs, membership, two views, checkpoint/sample hashes and MSE decomposition",
+    "report": "runs/paper1/lst_v2_5epoch_20260915/REPORT_ZH.md",
+    "gallery": "runs/paper1/lst_v2_5epoch_20260915/gallery",
+    "gpu_hours": {
+      "training_stage_gpu_hours_union": 56.4367350708776,
+      "training_stage_gpu_hours_union_lower_bound": 53.59940296259191,
+      "training_stage_gpu_hours_union_upper_bound": 56.4367350708776,
+      "timing_note": "Reconstructed ends are uncertain: union and job wall point fields use upper bounds; report lower/upper ranges, not exact measured GPU time.",
+      "final_evaluation_gpu_hours_union": 1.9013914980491002,
+      "shared_gpu_job_wall_hours": {
+        "full_lst_v2_absolute_seed17": 26.792296985255348,
+        "full_lst_v2_absolute_spatial4_seed17": 26.792294914722444,
+        "full_lst_v2_residual_seed17": 29.64386109530926,
+        "full_lst_v2_residual_spatial4_seed17": 29.644433633353977
+      },
+      "shared_gpu_job_wall_hours_lower_bound": {
+        "full_lst_v2_absolute_seed17": 26.79131826248434,
+        "full_lst_v2_absolute_spatial4_seed17": 26.792001978357632,
+        "full_lst_v2_residual_seed17": 26.806821923388377,
+        "full_lst_v2_residual_spatial4_seed17": 26.80739446143309
+      },
+      "peak_global_used_gib": 24.896484375,
+      "training_scope": "single GPU; training stage includes full epoch validation and checkpoint I/O; parallel job wall hours cannot be summed as GPU-hours",
+      "unclosed_events": {},
+      "reconstructed_end_boundaries": [
+        {
+          "event": "end",
+          "phase": "full",
+          "stage": "train",
+          "name": "full_lst_v2_absolute_seed17",
+          "exit_code": null,
+          "utc": "2026-09-15T21:49:59.585850+00:00",
+          "recovery_id": "20260915T2220",
+          "reason": "supervisor metadata replace failed; saved checkpoint; end reconstructed from supervisor failure timestamp after child stop",
+          "end_time_lower_bound_utc": "2026-09-15T21:49:56.062448+00:00",
+          "end_time_is_upper_bound": true
+        },
+        {
+          "event": "end",
+          "phase": "full",
+          "stage": "train",
+          "name": "full_lst_v2_absolute_spatial4_seed17",
+          "exit_code": null,
+          "utc": "2026-09-15T21:49:59.585850+00:00",
+          "recovery_id": "20260915T2220",
+          "reason": "supervisor metadata replace failed; saved checkpoint; end reconstructed from supervisor failure timestamp after child stop",
+          "end_time_lower_bound_utc": "2026-09-15T21:49:58.531279+00:00",
+          "end_time_is_upper_bound": true
+        },
+        {
+          "event": "end",
+          "phase": "full",
+          "stage": "train",
+          "name": "full_lst_v2_residual_seed17",
+          "exit_code": null,
+          "utc": "2026-09-17T08:59:06.929276+00:00",
+          "recovery_id": "20260917T1633",
+          "reason": "Process absent after Windows update restart; earlier D drive I/O errors coincide with telemetry loss. Actual termination time unknown. Upper bound is first planned restart; lower bound is last GPU activity sample.",
+          "end_time_lower_bound_utc": "2026-09-17T06:08:53.588257+00:00",
+          "end_time_is_upper_bound": true
+        },
+        {
+          "event": "end",
+          "phase": "full",
+          "stage": "train",
+          "name": "full_lst_v2_residual_spatial4_seed17",
+          "exit_code": null,
+          "utc": "2026-09-17T08:59:06.929276+00:00",
+          "recovery_id": "20260917T1633",
+          "reason": "Process absent after Windows update restart; earlier D drive I/O errors coincide with telemetry loss. Actual termination time unknown. Upper bound is first planned restart; lower bound is last GPU activity sample.",
+          "end_time_lower_bound_utc": "2026-09-17T06:08:53.588257+00:00",
+          "end_time_is_upper_bound": true
+        }
+      ],
+      "sum_end_boundary_uncertainty_seconds": 20431.260011
+    },
+    "completion_review": "runs/paper1/lst_v2_5epoch_20260915/completion_review.json"
+  },
+  "lst_grouped_vq_trial": {
+    "id": "A06",
+    "status": "complete",
+    "authorized_date": "2026-09-24",
+    "output": "runs/paper1/lst_grouped_vq_20260924",
+    "protocol": "experiments/paper1/lst_grouped_vq/PROTOCOL_ZH.md",
+    "models": [
+      "single1024",
+      "g2k32",
+      "g4k256"
+    ],
+    "modality": "lst",
+    "scratch": true,
+    "epochs": 5,
+    "updates_per_model": 17110,
+    "records_per_model": 1094875,
+    "effective_batch": 64,
+    "tail_records": 31,
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "seed": 17,
+    "predict_residual": true,
+    "spatial_extra_weight": 3,
+    "hls_started": false,
+    "prithvi_started": false,
+    "parallel_jobs": 2,
+    "allocator_gib_per_process": 12,
+    "minimum_gpu_free_gib": 2,
+    "unit_tests": "11 passed",
+    "preflight": "passed",
+    "created_utc": "2026-09-25T04:57:41.642232+00:00",
+    "monitor": "a06-lst",
+    "supervisor_wrapper_pid": 25816,
+    "supervisor_pid": 5368,
+    "smoke": "passed",
+    "launch_review": "runs/paper1/lst_grouped_vq_20260924/launch_review.json",
+    "updated_utc": "2026-09-28T10:16:43.748981+00:00",
+    "full_train_starts": [
+      {
+        "event": "start",
+        "phase": "full",
+        "stage": "train",
+        "name": "full_lst_grouped_g2k32_seed17",
+        "pid": 15004,
+        "utc": "2026-09-25T05:00:56.683964+00:00"
+      },
+      {
+        "event": "start",
+        "phase": "full",
+        "stage": "train",
+        "name": "full_lst_grouped_g4k256_seed17",
+        "pid": 26356,
+        "utc": "2026-09-25T05:00:56.690314+00:00"
+      }
+    ],
+    "recovery_review": "runs/paper1/lst_grouped_vq_20260924/recovery_20260927T1738/resume_review.json",
+    "recovery_reason": "OS shutdown; frozen checkpoint/config/source/data validation passed; resumed unchanged.",
+    "completed_utc": "2026-09-28T09:54:52.958719+00:00",
+    "report": "runs/paper1/lst_grouped_vq_20260924/REPORT_ZH.md",
+    "report_sha256": "c5c2c8c3fa1a0400b59b8321bedf3652dce2e8e008ede61367b43432b9dd3a7f",
+    "completion_review": "runs/paper1/lst_grouped_vq_20260924/completion_review.json",
+    "gallery": "runs/paper1/lst_grouped_vq_20260924/gallery/review.json",
+    "evaluation_units": 12,
+    "final_checkpoint": "epoch5 last.pt",
+    "gpu_hours": {
+      "full_training": {
+        "lower": 39.70602581328816,
+        "upper": 39.750740754670566
+      },
+      "full_evaluation": {
+        "lower": 1.4518220022651884,
+        "upper": 1.4518220022651884
+      },
+      "smoke_all": {
+        "lower": 0.04959708829720815,
+        "upper": 0.04959708829720815
+      }
+    },
+    "monitor_status": "deleted_after_completion",
+    "monitor_deleted_utc": "2026-09-28T10:17:20.253843+00:00"
+  },
+  "lst_grouped_vq8_trial": {
+    "id": "A07",
+    "status": "full_training_running",
+    "authorized_date": "2026-09-28",
+    "created_utc": "2026-09-28T22:56:26.771472+00:00",
+    "output": "runs/paper1/lst_grouped_vq8_20260928",
+    "protocol": "experiments/paper1/lst_grouped_vq8/PROTOCOL_ZH.md",
+    "models": [
+      "g8k16",
+      "g8k256"
+    ],
+    "reference": "A06 g4k256 epoch5 last.pt (not retrained)",
+    "training_core": "unchanged A06",
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "scratch": true,
+    "epochs": 5,
+    "updates_per_model": 17110,
+    "records_per_model": 1094875,
+    "views_presented_per_model": 1094875,
+    "effective_batch": 64,
+    "tail_records": 31,
+    "seed": 17,
+    "bits_per_image": {
+      "g8k16": 21792,
+      "g8k256": 43552
+    },
+    "parallel_jobs": 2,
+    "allocator_gib_per_process": 12,
+    "minimum_gpu_free_gib": 2,
+    "smoke_budget": {
+      "train_records": 67,
+      "val_records": 8,
+      "test_records": 8,
+      "epochs": 2,
+      "updates": 4,
+      "resume_after_step": 2,
+      "tail_records": 3
+    },
+    "unit_tests": "10 passed",
+    "preflight": "passed",
+    "launch_review": "runs/paper1/lst_grouped_vq8_20260928/launch_review.json",
+    "monitor": "a07-lst",
+    "monitor_interval_minutes": 30,
+    "supervisor_wrapper_pid": 22752,
+    "supervisor_pid": 10472,
+    "updated_utc": "2026-09-28T22:59:00.124396+00:00",
+    "smoke": "passed",
+    "smoke_evaluation_units": 8,
+    "full_train_starts": [
+      {
+        "event": "start",
+        "phase": "full",
+        "stage": "train",
+        "name": "full_lst_grouped_g8k16_seed17",
+        "pid": 5908,
+        "utc": "2026-09-28T22:58:26.011696+00:00"
+      },
+      {
+        "event": "start",
+        "phase": "full",
+        "stage": "train",
+        "name": "full_lst_grouped_g8k256_seed17",
+        "pid": 8260,
+        "utc": "2026-09-28T22:58:26.016570+00:00"
+      }
+    ]
+  }
+}

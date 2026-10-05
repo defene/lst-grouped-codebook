@@ -1,0 +1,102 @@
+{
+  "status": "complete",
+  "version": "hlp-tile-validation-v2-20260914",
+  "date": "2026-09-14",
+  "seed": 20260914,
+  "method": "Sort original-train MGRS tiles by (SHA256(seed:tile), tile); first round(0.05*N) become val.",
+  "target_train_tile_fraction": 0.05,
+  "eligible_train_tiles": 2943,
+  "selected_val_tiles": 147,
+  "counts": {
+    "train": {
+      "records": 218975,
+      "tiles": 2796,
+      "hls_samples": 218975,
+      "fine_lst_samples": 218975
+    },
+    "val": {
+      "records": 11684,
+      "tiles": 147,
+      "hls_samples": 11684,
+      "fine_lst_samples": 11684
+    },
+    "test": {
+      "records": 11757,
+      "tiles": 151,
+      "hls_samples": 11757,
+      "fine_lst_samples": 11757
+    }
+  },
+  "test_membership_and_index_arrays_unchanged": true,
+  "old_train_equals_new_train_union_val": true,
+  "pairwise_record_overlap": 0,
+  "pairwise_tile_id_overlap": 0,
+  "spatial_footprint_overlap_checked": false,
+  "prepared_directory": "processed_data/hlp_split_v2_20260914",
+  "reader_splits": {
+    "train": "train",
+    "validation": "val",
+    "test": "test"
+  },
+  "normalization": "Remaining-train sufficient statistics; see normalization_derivation.json.",
+  "old_checkpoints_independent_of_new_validation": false,
+  "source_files_unchanged": {
+    "bundle.json": "efcd7c93a69dd4e6a5dedfd7e91b23c55a16fbcb88d96f63a5691902cac32810",
+    "index.sqlite": "b1207b2a4cca3548640fa60b654dc160e1b79e2750a5c2880be19aae2cfd172e",
+    "normalization.json": "c591955820d377aebb1eb8874f56914bad275d8b061b4c798b9694cd022509e0",
+    "progress.json": "2e200b12c33e44e0bbe8bb89ad9bba9668f4e5c03f1fe813174b16d27f7feea1",
+    "protocol.json": "986e5c3210bf3d2e54c9eccedc0775c4724ab475e1bb98ef893d65befe5a3bc8",
+    "source_index.jsonl": "51f8a54dac595fad3584acc520e0811fdbba03c4b5e0a80721e17fda4cafee8c",
+    "source_info.json": "1fece2d9825986e497bb84e6d3117eca1fe8cc8b86a3ea1603dee3b0abc5d870",
+    "storage.json": "a0765c6efa0b4dab8a27da692af54a9dc7a3d804fe2bcf571431b2b93c12814d",
+    "verification.json": "2b13a64396d0b956a23aa6788cbbe1c971b0f96e8fa20467ea0254d8bf829b40"
+  },
+  "membership_sha256": {
+    "train_records.csv": "76a7874da2e93fe0b293484e7f75693351679f800b43987c5846d29446ab53d9",
+    "train_tiles.txt": "610c480b74b42e555c060eee595a04f3e73522ab313cd12fe0bb018f1e697883",
+    "val_records.csv": "11238870bcb51315a82c81d9060576609429ac2ac14331200a6de5e06f9217fe",
+    "val_tiles.txt": "ec6f3c084e33c09925c2098dffecfcae4692ea228218ecd7607e5063bfe353d9",
+    "test_records.csv": "3161eeb980809095a2a7c8af3d89686dee4fd0de1a8651d50e9fd9098c6f1ce8",
+    "test_tiles.txt": "b32245354df23dfdc976524376c055189feef86e7bfab91dd6aa2f4e6062e218"
+  },
+  "read_verification": [
+    {
+      "split": "train",
+      "modality": "hls",
+      "samples": 218975,
+      "raw_read_checks": 3
+    },
+    {
+      "split": "train",
+      "modality": "lst_hr",
+      "samples": 218975,
+      "raw_read_checks": 3
+    },
+    {
+      "split": "val",
+      "modality": "hls",
+      "samples": 11684,
+      "raw_read_checks": 3
+    },
+    {
+      "split": "val",
+      "modality": "lst_hr",
+      "samples": 11684,
+      "raw_read_checks": 3
+    },
+    {
+      "split": "test",
+      "modality": "hls",
+      "samples": 11757,
+      "raw_read_checks": 3
+    },
+    {
+      "split": "test",
+      "modality": "lst_hr",
+      "samples": 11757,
+      "raw_read_checks": 3
+    }
+  ],
+  "script_sha256": "ba136fce46ed3b8f7d4271b7db42a2ae23ac8b130b6e0da360a08edb2d4f74ef",
+  "elapsed_seconds": 27.56
+}

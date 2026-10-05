@@ -1,0 +1,18 @@
+{
+  "status": "running",
+  "phase": "full",
+  "stage": "train",
+  "utc": "2026-09-29T11:49:58.352521+00:00",
+  "pid": 10472,
+  "active": [
+    {
+      "name": "full_lst_grouped_g8k16_seed17",
+      "pid": 5908
+    },
+    {
+      "name": "full_lst_grouped_g8k256_seed17",
+      "pid": 8260
+    }
+  ],
+  "pending": []
+}

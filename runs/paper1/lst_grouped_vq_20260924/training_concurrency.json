@@ -1,0 +1,30 @@
+{
+  "lower": {
+    "full_lst_grouped_g2k32_seed17": {
+      "alone": 3.0194388495551217e-06,
+      "concurrent": 25.404506861368816
+    },
+    "full_lst_grouped_g4k256_seed17": {
+      "alone": 0.0005867805745866563,
+      "concurrent": 27.710423341923292
+    },
+    "full_lst_grouped_single1024_seed17": {
+      "alone": 11.995012671351432,
+      "concurrent": 2.3059164805544747
+    }
+  },
+  "upper": {
+    "full_lst_grouped_g2k32_seed17": {
+      "alone": 3.0194388495551217e-06,
+      "concurrent": 25.44922180275122
+    },
+    "full_lst_grouped_g4k256_seed17": {
+      "alone": 0.0005867805745866563,
+      "concurrent": 27.755138283305698
+    },
+    "full_lst_grouped_single1024_seed17": {
+      "alone": 11.995012671351432,
+      "concurrent": 2.3059164805544747
+    }
+  }
+}

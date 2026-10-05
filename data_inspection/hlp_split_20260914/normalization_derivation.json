@@ -1,0 +1,103 @@
+{
+  "method": "Original train sufficient-statistic sums minus raw recomputed held-out sums; float64 arithmetic.",
+  "validation_records_recomputed_and_digest_verified": 11684,
+  "original_train": {
+    "hls": {
+      "samples": 230659,
+      "pixels": 14875278812,
+      "sum_mean": [
+        25549.40517350877,
+        31320.141012688528,
+        33680.7414875315,
+        59673.86921585374,
+        42956.10605907405,
+        30888.830928292133
+      ],
+      "sum_second": [
+        14797.66087847574,
+        15453.001424698234,
+        16793.660211721617,
+        25077.70356027466,
+        13021.595492010616,
+        7842.14775898441
+      ]
+    },
+    "lst_hr": {
+      "samples": 230659,
+      "pixels": 15113459623,
+      "sum_mean": [
+        585697980.7245973
+      ],
+      "sum_second": [
+        2094551767383.2976
+      ]
+    }
+  },
+  "heldout_validation": {
+    "hls": {
+      "samples": 11684,
+      "pixels": 756075668,
+      "sum_mean": [
+        1059.5595265917814,
+        1385.7539594036339,
+        1538.511676201912,
+        2792.4535666466973,
+        2312.0852496114044,
+        1702.1369542006119
+      ],
+      "sum_second": [
+        491.6709024190346,
+        547.5973385332834,
+        636.3657860662919,
+        1067.0584027108441,
+        747.6183282209815,
+        472.30270952481203
+      ]
+    },
+    "lst_hr": {
+      "samples": 11684,
+      "pixels": 765592871,
+      "sum_mean": [
+        30234541.78309022
+      ],
+      "sum_second": [
+        104154041507.86511
+      ]
+    }
+  },
+  "remaining_train": {
+    "hls": {
+      "samples": 218975,
+      "pixels": 14119203144,
+      "sum_mean": [
+        24489.84564691699,
+        29934.387053284892,
+        32142.229811329587,
+        56881.41564920704,
+        40644.02080946265,
+        29186.693974091522
+      ],
+      "sum_second": [
+        14305.989976056706,
+        14905.40408616495,
+        16157.294425655326,
+        24010.645157563813,
+        12273.977163789634,
+        7369.845049459598
+      ]
+    },
+    "lst_hr": {
+      "samples": 218975,
+      "pixels": 14347866752,
+      "sum_mean": [
+        555463438.9415071
+      ],
+      "sum_second": [
+        1990397725875.4326
+      ]
+    }
+  },
+  "test_contribution": 0,
+  "source_normalization_sha256": "c591955820d377aebb1eb8874f56914bad275d8b061b4c798b9694cd022509e0",
+  "note": "Same canonical masks and equal-sample weighting; no rounded published means used. Floating-point subtraction has normal roundoff."
+}

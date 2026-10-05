@@ -1,0 +1,176 @@
+{
+  "lst_grouped_vq_trial": {
+    "id": "A06",
+    "status": "complete",
+    "authorized_date": "2026-09-24",
+    "output": "runs/paper1/lst_grouped_vq_20260924",
+    "protocol": "experiments/paper1/lst_grouped_vq/PROTOCOL_ZH.md",
+    "models": [
+      "single1024",
+      "g2k32",
+      "g4k256"
+    ],
+    "modality": "lst",
+    "scratch": true,
+    "epochs": 5,
+    "updates_per_model": 17110,
+    "records_per_model": 1094875,
+    "effective_batch": 64,
+    "tail_records": 31,
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "seed": 17,
+    "predict_residual": true,
+    "spatial_extra_weight": 3,
+    "hls_started": false,
+    "prithvi_started": false,
+    "parallel_jobs": 2,
+    "allocator_gib_per_process": 12,
+    "minimum_gpu_free_gib": 2,
+    "unit_tests": "11 passed",
+    "preflight": "passed",
+    "created_utc": "2026-09-25T04:57:41.642232+00:00",
+    "monitor": "a06-lst",
+    "supervisor_wrapper_pid": 25816,
+    "supervisor_pid": 5368,
+    "smoke": "passed",
+    "launch_review": "runs/paper1/lst_grouped_vq_20260924/launch_review.json",
+    "updated_utc": "2026-09-28T10:16:43.748981+00:00",
+    "full_train_starts": [
+      {
+        "event": "start",
+        "phase": "full",
+        "stage": "train",
+        "name": "full_lst_grouped_g2k32_seed17",
+        "pid": 15004,
+        "utc": "2026-09-25T05:00:56.683964+00:00"
+      },
+      {
+        "event": "start",
+        "phase": "full",
+        "stage": "train",
+        "name": "full_lst_grouped_g4k256_seed17",
+        "pid": 26356,
+        "utc": "2026-09-25T05:00:56.690314+00:00"
+      }
+    ],
+    "recovery_review": "runs/paper1/lst_grouped_vq_20260924/recovery_20260927T1738/resume_review.json",
+    "recovery_reason": "OS shutdown; frozen checkpoint/config/source/data validation passed; resumed unchanged.",
+    "completed_utc": "2026-09-28T09:54:52.958719+00:00",
+    "report": "runs/paper1/lst_grouped_vq_20260924/REPORT_ZH.md",
+    "report_sha256": "c5c2c8c3fa1a0400b59b8321bedf3652dce2e8e008ede61367b43432b9dd3a7f",
+    "completion_review": "runs/paper1/lst_grouped_vq_20260924/completion_review.json",
+    "gallery": "runs/paper1/lst_grouped_vq_20260924/gallery/review.json",
+    "evaluation_units": 12,
+    "final_checkpoint": "epoch5 last.pt",
+    "gpu_hours": {
+      "full_training": {
+        "lower": 39.70602581328816,
+        "upper": 39.750740754670566
+      },
+      "full_evaluation": {
+        "lower": 1.4518220022651884,
+        "upper": 1.4518220022651884
+      },
+      "smoke_all": {
+        "lower": 0.04959708829720815,
+        "upper": 0.04959708829720815
+      }
+    },
+    "monitor_status": "deleted_after_completion",
+    "monitor_deleted_utc": "2026-09-28T10:17:20.253843+00:00"
+  },
+  "lst_grouped_vq8_trial": {
+    "id": "A07",
+    "status": "complete",
+    "authorized_date": "2026-09-28",
+    "created_utc": "2026-09-28T22:56:26.771472+00:00",
+    "output": "runs/paper1/lst_grouped_vq8_20260928",
+    "protocol": "experiments/paper1/lst_grouped_vq8/PROTOCOL_ZH.md",
+    "models": [
+      "g8k16",
+      "g8k256"
+    ],
+    "reference": "A06 g4k256 epoch5 last.pt (not retrained)",
+    "training_core": "unchanged A06",
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "scratch": true,
+    "epochs": 5,
+    "updates_per_model": 17110,
+    "records_per_model": 1094875,
+    "views_presented_per_model": 1094875,
+    "effective_batch": 64,
+    "tail_records": 31,
+    "seed": 17,
+    "bits_per_image": {
+      "g8k16": 21792,
+      "g8k256": 43552
+    },
+    "parallel_jobs": 2,
+    "allocator_gib_per_process": 12,
+    "minimum_gpu_free_gib": 2,
+    "smoke_budget": {
+      "train_records": 67,
+      "val_records": 8,
+      "test_records": 8,
+      "epochs": 2,
+      "updates": 4,
+      "resume_after_step": 2,
+      "tail_records": 3
+    },
+    "unit_tests": "10 passed",
+    "preflight": "passed",
+    "launch_review": "runs/paper1/lst_grouped_vq8_20260928/launch_review.json",
+    "monitor": "a07-lst",
+    "monitor_interval_minutes": 30,
+    "supervisor_wrapper_pid": 27896,
+    "supervisor_pid": 24888,
+    "updated_utc": "2026-09-30T20:08:28.117275+00:00",
+    "smoke": "passed",
+    "smoke_evaluation_units": 8,
+    "full_train_starts": [
+      {
+        "event": "start",
+        "phase": "full",
+        "stage": "train",
+        "name": "full_lst_grouped_g8k16_seed17",
+        "pid": 5908,
+        "utc": "2026-09-28T22:58:26.011696+00:00"
+      },
+      {
+        "event": "start",
+        "phase": "full",
+        "stage": "train",
+        "name": "full_lst_grouped_g8k256_seed17",
+        "pid": 8260,
+        "utc": "2026-09-28T22:58:26.016570+00:00"
+      }
+    ],
+    "recovery_review": "runs/paper1/lst_grouped_vq8_20260928/recovery_20260930T030027/resume_review.json",
+    "resumed_from_step": 7750,
+    "completed_utc": "2026-09-30T20:03:46.930585+00:00",
+    "report": "runs/paper1/lst_grouped_vq8_20260928/REPORT_ZH.md",
+    "report_sha256": "a37b58cb8ef4f17a8af79be9292b6ccf32eb2765f4b1179df9281d4231a98564",
+    "completion_review": "runs/paper1/lst_grouped_vq8_20260928/completion_review.json",
+    "gallery": "runs/paper1/lst_grouped_vq8_20260928/gallery/review.json",
+    "evaluation_units": 8,
+    "comparison_units": 12,
+    "final_checkpoint": "epoch5 last.pt",
+    "gpu_hours": {
+      "full_training": {
+        "lower": 28.683296677470207,
+        "upper": 29.911019374661976
+      },
+      "full_evaluation": {
+        "lower": 1.2120022872421476,
+        "upper": 1.2120022872421476
+      },
+      "smoke_all": {
+        "lower": 0.02607797748512692,
+        "upper": 0.02607797748512692
+      }
+    },
+    "additional_gallery_wall_seconds": 11.74989000003552,
+    "monitor_status": "deleted",
+    "monitor_deleted_utc": "2026-09-30T20:09:22.891370+00:00"
+  }
+}

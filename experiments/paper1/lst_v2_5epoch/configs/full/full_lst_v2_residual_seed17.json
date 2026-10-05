@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "name": "full_lst_v2_residual_seed17",
+  "seed": 17,
+  "data": {
+    "dataset": "prithvi",
+    "root": "C:\\Users\\rog\\Desktop\\iclr",
+    "modalities": [
+      "lst"
+    ],
+    "train_limit": null,
+    "val_limit": null,
+    "subset_seed": 20260910,
+    "alignment": "same_tile_same_time_metadata",
+    "train_views": 1,
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "test_limit": null
+  },
+  "noise": {
+    "kind": "bank_missing",
+    "coverages": [
+      0.1
+    ],
+    "clean_probability": 0,
+    "sigma": 0.1,
+    "bank_root": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_v2_5epoch_20260915\\mask_banks",
+    "seed": 20260910
+  },
+  "model": {
+    "backbone": "var_conv",
+    "quantizer": "var_vq",
+    "base_width": 64,
+    "blocks": 2,
+    "latent_dim": 32,
+    "grid": 16,
+    "codebook_size": 1024,
+    "commitment": 0.25,
+    "levels": [
+      8,
+      8,
+      8
+    ],
+    "temperature": 1.0,
+    "vit_dim": 192,
+    "vit_depth": 4,
+    "vit_heads": 6,
+    "eo_dim": 768,
+    "eo_depth": 11,
+    "eo_heads": 12,
+    "eo_decoder_dim": 512,
+    "eo_decoder_depth": 9,
+    "eo_decoder_heads": 8,
+    "var_ch": 160,
+    "var_scales": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      13,
+      16
+    ],
+    "var_quant_resi": 0.5,
+    "var_share_quant_resi": 4,
+    "activation_checkpointing": false
+  },
+  "loss": {
+    "gradient": 0.1,
+    "stability": 0,
+    "cross_view": 0,
+    "kl": 0,
+    "min_token_valid": 0.75,
+    "relation_grid": 4
+  },
+  "train": {
+    "steps": 17110,
+    "batch_size": 4,
+    "accumulation": 16,
+    "workers": 2,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "warmup": 500,
+    "eval_every": 3422,
+    "save_every": 250,
+    "log_every": 20,
+    "clip": 1.0,
+    "device": "cuda",
+    "amp": true,
+    "memory_limit_gib": 12
+  },
+  "eval": {
+    "coverage": 0.1,
+    "realizations": 2,
+    "batch_size": 4,
+    "bootstrap_replicates": 500
+  },
+  "residual_experiment": {
+    "id": "A04",
+    "predict_residual": true,
+    "spatial_extra_weight": 0
+  },
+  "experiment": {
+    "id": "A05",
+    "phase": "full",
+    "epochs": 5,
+    "output_root": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_v2_5epoch_20260915",
+    "pretrained_weights": false,
+    "primary_checkpoint": "last_after_exact_epochs",
+    "no_test_model_selection": true,
+    "epoch_tail": "flush_actual_sample_weight_no_padding",
+    "schedule": "cosine_with_500_update_warmup_for_full"
+  }
+}

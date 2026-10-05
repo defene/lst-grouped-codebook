@@ -1,0 +1,33 @@
+{
+  "base": "runs\\paper1\\codebook1024\\full\\full_lst_conv_noisy_seed17\\config.json",
+  "base_sha256": "a663f9993d0bf2d39c8afc44ab4d2e70d2ad8300ba155d1de8a123eb1076be26",
+  "arms": [
+    [
+      "absolute",
+      false,
+      0
+    ],
+    [
+      "absolute_spatial4",
+      false,
+      3
+    ],
+    [
+      "residual",
+      true,
+      0
+    ],
+    [
+      "residual_spatial4",
+      true,
+      3
+    ]
+  ],
+  "matched_training": "10% known-mask missing; same initialization and record order; scratch",
+  "pilot_steps": 2000,
+  "effective_batch": 64,
+  "full_training_pool": 230659,
+  "sample_presentations": 128000,
+  "pilot_is_not_full_convergence": true,
+  "train_normalization": "unchanged frozen LST normalization"
+}

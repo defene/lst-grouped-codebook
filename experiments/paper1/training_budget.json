@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "confirmed_date": "2026-09-14",
+  "status": "provisional_user_convention",
+  "scope": "future_formal_comparisons",
+  "epochs": 5,
+  "epoch_definition": "one complete traversal of the experiment's training record membership",
+  "same_comparison_requires": [
+    "data_version",
+    "training_membership",
+    "effective_batch",
+    "sample_order_rule"
+  ],
+  "drop_last": false,
+  "pad_or_repeat_tail_records": false,
+  "flush_accumulation_at_epoch_end": true,
+  "weight_partial_update_by_actual_sample_count": true,
+  "noise_views_count_as_additional_epochs": false,
+  "hlp": {
+    "split_version": "hlp-tile-validation-v2-20260914",
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "train_records": 218975,
+    "total_record_presentations_per_model": 1094875,
+    "current_effective_batch_example": 64,
+    "updates_per_epoch_at_example_batch": 3422,
+    "tail_update_records_at_example_batch": 31,
+    "total_updates_at_example_batch": 17110
+  },
+  "steps_formula": "epochs * ceil(train_records / effective_batch), with accumulation flushed at every epoch end",
+  "historical_runs_unchanged": true,
+  "short_checks_must_be_labeled_separately": true,
+  "implementation_status": "A05 HLP v2 integration, exact-epoch and partial-gradient tests, four-model resume and inference gate passed; formal training started",
+  "new_training_started_by_this_change": false,
+  "implementation": "experiments/paper1/lst_v2_5epoch/train.py",
+  "authorized_run": "runs/paper1/lst_v2_5epoch_20260915",
+  "experiment_specific_user_overrides": {
+    "hlc_full_epoch1_20260916": {
+      "epochs": 1,
+      "scope": "user explicitly requested one complete HLC full-training-set epoch for both EFDiff variants",
+      "budget": "experiments/efdiff_hlc/deadline_fast_budget.json",
+      "manifest": "experiments/efdiff_hlc/deadline_run_manifest.json",
+      "train_records": 2608772,
+      "record_presentations_per_model": 2608772,
+      "effective_batch": 64,
+      "updates_per_model": 40763,
+      "tail_records": 4,
+      "initialization": "fresh denoisers and frozen pretrained Prithvi",
+      "validation_membership": "existing fixed 512 pilot val months",
+      "test_used": false,
+      "other_experiments_unchanged": true,
+      "world_size_per_model": 2,
+      "deadline_utc": "2026-09-18T04:23:04Z"
+    },
+    "hlc_width32_epoch1_resume_20260925": {
+      "run_id": "hlc-width32-epoch1-resume-20260925-v1",
+      "source_run": "hlc-width32-single-12h-20260923-v1",
+      "full_epoch_records": 2608772,
+      "effective_batch": 64,
+      "resume_records": 819200,
+      "resume_updates": 12800,
+      "remaining_records": 1789572,
+      "remaining_updates": 27963,
+      "tail_records": 4,
+      "test_used": false,
+      "epochs": 1,
+      "gpu_count": 1,
+      "budget": "experiments/efdiff_hlc/width32_epoch1_plan.json",
+      "other_experiments_unchanged": true,
+      "stop_rule": "stop at exactly one complete epoch; no former wall-clock deadline; checkpoint and automatically continue bounded execution segments"
+    },
+    "hlc_dit_flow_epsilon_epoch1_20261001": {
+      "run_id": "hlc-dit-center-flow-epsilon-epoch1-20261001-v1",
+      "epochs": 1,
+      "record_presentations_per_model": 2608772,
+      "updates_per_model": 40763,
+      "batch_size": 64,
+      "tail_records": 4,
+      "test_used": false,
+      "authorization": "User requested launch of the two prepared DiT versions; continuing the established one-full-epoch comparison and one H200 per model concurrently.",
+      "plan": "experiments/efdiff_hlc/dit_plan.json",
+      "gpu_count": 2,
+      "gpu_per_model": 1,
+      "other_experiments_unchanged": true,
+      "status": "stopped_at_user_request_before_first_checkpoint"
+    },
+    "hlc_dit_flow_epsilon_a100_epoch1_20261001": {
+      "run_id": "hlc-dit-center-flow-epsilon-a100-epoch1-20261001-v1",
+      "epochs": 1,
+      "record_presentations_per_model": 2608772,
+      "updates_per_model": 40763,
+      "batch_size": 64,
+      "tail_records": 4,
+      "test_used": false,
+      "authorization": "User explicitly replaced H200 with A100 after authorizing both DiT variants; one complete epoch each retained.",
+      "plan": "experiments/efdiff_hlc/dit_a100_plan.json",
+      "gpu_count": 2,
+      "gpu_per_model": "A100-40GB",
+      "other_experiments_unchanged": true,
+      "status": "superseded_by_checkpoint_migration_to_two_epochs_batch128_fullval"
+    },
+    "hlc_dit_a100_b128_fullval_epoch2_20261001": {
+      "run_id": "hlc-dit-a100-b128-fullval-epoch2-20261001-v1",
+      "epochs": 2,
+      "batch_size": 128,
+      "record_presentations_per_model": 5217544,
+      "tail_records": 4,
+      "validation_records": 141711,
+      "authorization": "User requested cumulative two epochs, full validation, and batch128; migrate saved batch64 prefix, then batch128.",
+      "resume_source_run": "hlc-dit-center-flow-epsilon-a100-epoch1-20261001-v1",
+      "updates_definition": "Per variant: inherited updates + ceil((2608772-inherited_offset)/128) + 20382 for epoch2; never count source-prefix samples again.",
+      "plan": "experiments/efdiff_hlc/dit_a100_epoch2_plan.json",
+      "gpu_per_model": "A100-40GB",
+      "gpu_count": 2,
+      "test_used": false,
+      "updates_per_model": {
+        "flow": 42514,
+        "epsilon": 42264
+      },
+      "inherited_records": {
+        "flow": 224000,
+        "epsilon": 192000
+      }
+    }
+  },
+  "separate_pilots": {
+    "efdiff_hlc_synthetic_16384_v1": {
+      "scope": "user-selected fixed-subset pilot, not formal full-data budget",
+      "manifest": "experiments/efdiff_hlc/pilot_run_manifest.json",
+      "membership": "experiments/efdiff_hlc/pilot_membership/summary.json",
+      "train_patch_months": 16384,
+      "val_patch_months": 512,
+      "epochs": 5,
+      "effective_batch": 64,
+      "updates_per_model": 1280,
+      "record_presentations_per_model": 81920,
+      "test_used": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "utc": "2026-10-02T18:56:45.753897+00:00",
+  "unique_models": 5,
+  "evaluation_units": 20,
+  "new_case_checks": 80,
+  "identical_input_digests": true,
+  "complete_members": true,
+  "source_sample_and_token_hashes": true,
+  "mse_decomposition": true,
+  "actual_visual_review": [
+    "predictions_clean_1.png",
+    "predictions_clean_2.png",
+    "predictions_noisy10_1.png",
+    "predictions_noisy10_2.png"
+  ],
+  "visual_notes": "All four images inspected; masked river continuity fails for all models; low-temperature-range cases retain poor texture despite low RMSE.",
+  "no_new_training": true,
+  "artifact_hashes": {
+    "REPORT_ZH.md": "07fc7200094d719daad819eb3590c3550380cf656bc999917f9ac90e7bae6165",
+    "comparison_results.json": "46dca9155c1e3d7059688702d0d2dd72c9b2fc5f1068e810547da3bcee2f3b0b",
+    "selection.json": "08ab7039c97e52d884c40355546b59d94cc8719ec2a003e1af1d11ea6e0005de",
+    "gallery/review.json": "285d2b4183e8a76e1179122a63d1c5fd062087925ec2610b6097a21c9aa76dce"
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "TimeCreated": "2026-09-29T06:59:14.9000155-05:00",
+    "Id": 8224,
+    "ProviderName": "VSS",
+    "Message": "由于空闲超时，VSS 服务将关闭。 "
+  },
+  {
+    "TimeCreated": "2026-09-29T06:57:05.3312602-05:00",
+    "Id": 10001,
+    "ProviderName": "Microsoft-Windows-RestartManager",
+    "Message": "正在结束会话 1 已启动 ‎2026‎-‎09‎-‎29T11:56:41.884129800Z。"
+  },
+  {
+    "TimeCreated": "2026-09-29T06:56:41.8841965-05:00",
+    "Id": 10000,
+    "ProviderName": "Microsoft-Windows-RestartManager",
+    "Message": "正在启动会话 1 - ‎2026‎-‎09‎-‎29T11:56:41.884129800Z。"
+  },
+  {
+    "TimeCreated": "2026-09-29T06:56:14.9742941-05:00",
+    "Id": 15,
+    "ProviderName": "SecurityCenter",
+    "Message": "已成功将 Windows Defender 状态更新为 SECURITY_PRODUCT_STATE_ON。"
+  },
+  {
+    "TimeCreated": "2026-09-29T06:56:12.9570429-05:00",
+    "Id": 15,
+    "ProviderName": "SecurityCenter",
+    "Message": "已成功将 Windows Defender 状态更新为 SECURITY_PRODUCT_STATE_ON。"
+  },
+  {
+    "TimeCreated": "2026-09-29T06:56:10.6059288-05:00",
+    "Id": 8231,
+    "ProviderName": "VSS",
+    "Message": "卷影复制服务信息： 已为快照集 {c193e52e-0c9b-4f37-a912-4b93406f956e}.\r\n 启动快照创建 进程命令行： taskhostw.exe\r\n 进程调用方堆栈：\r\n Process[0]： taskhostw.exe\r\n Process[1]： svchost.exe\r\n Process[2]： services.exe\r\n"
+  },
+  {
+    "TimeCreated": "2026-09-29T06:52:16.2377001-05:00",
+    "Id": 256,
+    "ProviderName": "Chrome",
+    "Message": "[8584:27332:0929/065216.237:INFO:chrome\\browser\\extensions\\extension_garbage_collector.cc:212] Garbage collection for extensions on file thread is complete."
+  },
+  {
+    "TimeCreated": "2026-09-29T06:50:21.1524739-05:00",
+    "Id": 16384,
+    "ProviderName": "Microsoft-Windows-Security-SPP",
+    "Message": "安排软件保护服务在 2126-09-05T11:50:21Z 时重新启动成功。原因: RulesEngine。"
+  },
+  {
+    "TimeCreated": "2026-09-29T06:49:50.9114397-05:00",
+    "Id": 16394,
+    "ProviderName": "Microsoft-Windows-Security-SPP",
+    "Message": "脱机下级迁移成功。"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "stage": "train",
+  "epoch_completed": 5,
+  "consumed_in_epoch": 0,
+  "step": 17110,
+  "configured_steps": 17110,
+  "records_presented": 1094875,
+  "validated_epoch": 5,
+  "pid": 20228,
+  "utc": "2026-09-30T18:50:47.403683+00:00",
+  "memory": {
+    "allocated_gib": 1.7016892433166504,
+    "reserved_gib": 9.220703125,
+    "peak_allocated_gib": 8.706885814666748,
+    "peak_reserved_gib": 9.220703125,
+    "device_free_gib": 20.8583984375,
+    "device_total_gib": 31.84234619140625
+  },
+  "session_elapsed_seconds": 56962.774367100006
+}

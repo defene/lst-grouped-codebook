@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "membership_csv_vs_npy": "all 242416 records in both modalities",
+  "tile_selection_reproduced": true,
+  "pairwise_record_and_tile_overlap": 0,
+  "test_npy_files_byte_identical": true,
+  "report_counts_match_membership": true,
+  "report_local_links_resolve": true,
+  "catalog_matches_current_version": true,
+  "source_data_not_rewritten": true
+}

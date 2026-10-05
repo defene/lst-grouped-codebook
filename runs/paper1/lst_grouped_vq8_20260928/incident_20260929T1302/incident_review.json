@@ -1,0 +1,75 @@
+{
+  "utc": "2026-09-29T13:03:36.562732+00:00",
+  "status": "interrupted_not_resumed",
+  "last_logged_step": 7828,
+  "processes_absent": [
+    10472,
+    5908,
+    8260
+  ],
+  "stop_files": [],
+  "gpu_driver_event_utc": "2026-09-29T11:49:59.3191880Z",
+  "cause": "nvlddmkm event 153 coincides with interruption; exact termination cause unconfirmed",
+  "checks": {
+    "sources": true,
+    "configs": true,
+    "orchestration": true,
+    "qa_hashes": true,
+    "full_lst_grouped_g8k16_seed17_train": true,
+    "full_lst_grouped_g8k16_seed17_val": true,
+    "full_lst_grouped_g8k16_seed17_test": true,
+    "full_lst_grouped_g8k256_seed17_train": true,
+    "full_lst_grouped_g8k256_seed17_val": true,
+    "full_lst_grouped_g8k256_seed17_test": true
+  },
+  "checkpoints": {
+    "full_lst_grouped_g8k16_seed17": {
+      "sha256": "f8dde379289f3a9179c5830cc787ca504f66f1746d8b0ffc821628d4b3825b45",
+      "step": 7750,
+      "records_presented": 495934,
+      "validated_epoch": 2,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "state_keys": [
+        "format",
+        "model",
+        "optimizer",
+        "epoch",
+        "consumed",
+        "step",
+        "validated_epoch",
+        "records_presented",
+        "config",
+        "config_sha256",
+        "data_fingerprint",
+        "source_hashes",
+        "rng_cpu",
+        "rng_cuda"
+      ]
+    },
+    "full_lst_grouped_g8k256_seed17": {
+      "sha256": "b2bb0148181ebbf501b44714cd46bb16bd9a06477ac313a72c216a6d34680655",
+      "step": 7750,
+      "records_presented": 495934,
+      "validated_epoch": 2,
+      "model_finite": true,
+      "optimizer_finite": true,
+      "state_keys": [
+        "format",
+        "model",
+        "optimizer",
+        "epoch",
+        "consumed",
+        "step",
+        "validated_epoch",
+        "records_presented",
+        "config",
+        "config_sha256",
+        "data_fingerprint",
+        "source_hashes",
+        "rng_cpu",
+        "rng_cuda"
+      ]
+    }
+  }
+}

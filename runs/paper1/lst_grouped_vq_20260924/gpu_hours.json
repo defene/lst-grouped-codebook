@@ -1,0 +1,167 @@
+{
+  "full_training": {
+    "lower": 39.70602581328816,
+    "upper": 39.750740754670566
+  },
+  "full_evaluation": {
+    "lower": 1.4518220022651884,
+    "upper": 1.4518220022651884
+  },
+  "smoke_all": {
+    "lower": 0.04959708829720815,
+    "upper": 0.04959708829720815
+  },
+  "per_model_training_wall_hours": {
+    "single1024": {
+      "lower": 14.300929151905908,
+      "upper": 14.300929151905908
+    },
+    "g2k32": {
+      "lower": 25.404509880807666,
+      "upper": 25.44922482219007
+    },
+    "g4k256": {
+      "lower": 27.711010122497875,
+      "upper": 27.755725063880284
+    }
+  },
+  "scope": "Single GPU process activity union; training includes full epoch validation and checkpoint I/O; concurrent wall hours cannot be summed. Some jobs can run alone.",
+  "intervals": [
+    {
+      "phase": "smoke",
+      "stage": "partial",
+      "name": "smoke_lst_grouped_g2k32_seed17",
+      "start": 1790312262.610058,
+      "lower_end": 1790312283.453264,
+      "upper_end": 1790312283.453264
+    },
+    {
+      "phase": "smoke",
+      "stage": "partial",
+      "name": "smoke_lst_grouped_g4k256_seed17",
+      "start": 1790312262.615773,
+      "lower_end": 1790312283.458622,
+      "upper_end": 1790312283.458622
+    },
+    {
+      "phase": "smoke",
+      "stage": "partial",
+      "name": "smoke_lst_grouped_single1024_seed17",
+      "start": 1790312285.572303,
+      "lower_end": 1790312302.105781,
+      "upper_end": 1790312302.105781
+    },
+    {
+      "phase": "smoke",
+      "stage": "train",
+      "name": "smoke_lst_grouped_g2k32_seed17",
+      "start": 1790312304.220506,
+      "lower_end": 1790312345.823035,
+      "upper_end": 1790312345.823035
+    },
+    {
+      "phase": "smoke",
+      "stage": "train",
+      "name": "smoke_lst_grouped_g4k256_seed17",
+      "start": 1790312304.226263,
+      "lower_end": 1790312345.829201,
+      "upper_end": 1790312345.829201
+    },
+    {
+      "phase": "smoke",
+      "stage": "train",
+      "name": "smoke_lst_grouped_single1024_seed17",
+      "start": 1790312347.956409,
+      "lower_end": 1790312383.168288,
+      "upper_end": 1790312383.168288
+    },
+    {
+      "phase": "smoke",
+      "stage": "evaluate",
+      "name": "smoke_lst_grouped_g2k32_seed17",
+      "start": 1790312385.247199,
+      "lower_end": 1790312418.512866,
+      "upper_end": 1790312418.512866
+    },
+    {
+      "phase": "smoke",
+      "stage": "evaluate",
+      "name": "smoke_lst_grouped_g4k256_seed17",
+      "start": 1790312385.253415,
+      "lower_end": 1790312418.51352,
+      "upper_end": 1790312418.51352
+    },
+    {
+      "phase": "smoke",
+      "stage": "evaluate",
+      "name": "smoke_lst_grouped_single1024_seed17",
+      "start": 1790312420.587451,
+      "lower_end": 1790312451.668032,
+      "upper_end": 1790312451.668032
+    },
+    {
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g2k32_seed17",
+      "start": 1790312456.683964,
+      "lower_end": 1790402296.352037,
+      "upper_end": 1790402457.325826
+    },
+    {
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g4k256_seed17",
+      "start": 1790312456.690314,
+      "lower_end": 1790402296.352037,
+      "upper_end": 1790402457.325826
+    },
+    {
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g2k32_seed17",
+      "start": 1790530947.659302,
+      "lower_end": 1790532564.2268,
+      "upper_end": 1790532564.2268
+    },
+    {
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g4k256_seed17",
+      "start": 1790530947.663822,
+      "lower_end": 1790540867.63854,
+      "upper_end": 1790540867.63854
+    },
+    {
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_single1024_seed17",
+      "start": 1790532566.33921,
+      "lower_end": 1790584049.684157,
+      "upper_end": 1790584049.684157
+    },
+    {
+      "phase": "full",
+      "stage": "evaluate",
+      "name": "full_lst_grouped_g2k32_seed17",
+      "start": 1790584053.270213,
+      "lower_end": 1790587358.891815,
+      "upper_end": 1790587358.891815
+    },
+    {
+      "phase": "full",
+      "stage": "evaluate",
+      "name": "full_lst_grouped_g4k256_seed17",
+      "start": 1790584053.27441,
+      "lower_end": 1790587939.130084,
+      "upper_end": 1790587939.130084
+    },
+    {
+      "phase": "full",
+      "stage": "evaluate",
+      "name": "full_lst_grouped_single1024_seed17",
+      "start": 1790587360.964155,
+      "lower_end": 1790589279.829421,
+      "upper_end": 1790589279.829421
+    }
+  ]
+}

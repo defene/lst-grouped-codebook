@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "utc": "2026-09-28T22:59:00.125324+00:00",
+  "smoke_gate": "passed",
+  "evaluation_gate": {
+    "status": "passed",
+    "units": 8,
+    "identical_inputs": true,
+    "checkpoint_and_sample_hashes": true,
+    "token_histograms_verified": true,
+    "complete_members_and_two_views": true
+  },
+  "formal_starts": [
+    {
+      "event": "start",
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g8k16_seed17",
+      "pid": 5908,
+      "utc": "2026-09-28T22:58:26.011696+00:00"
+    },
+    {
+      "event": "start",
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g8k256_seed17",
+      "pid": 8260,
+      "utc": "2026-09-28T22:58:26.016570+00:00"
+    }
+  ],
+  "monitor": "a07-lst"
+}

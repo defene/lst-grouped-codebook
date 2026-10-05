@@ -1,0 +1,37 @@
+{
+  "utc": "2026-09-27T17:43:11.667165+00:00",
+  "supervisor": {
+    "status": "running",
+    "phase": "full",
+    "stage": "train",
+    "utc": "2026-09-27T17:43:11.356215+00:00",
+    "pid": 5368,
+    "active": [
+      {
+        "name": "full_lst_grouped_g2k32_seed17",
+        "pid": 12152
+      },
+      {
+        "name": "full_lst_grouped_g4k256_seed17",
+        "pid": 29132
+      }
+    ],
+    "pending": [
+      "full_lst_grouped_single1024_seed17"
+    ]
+  },
+  "progress": {
+    "full_lst_grouped_g2k32_seed17": {
+      "step": 17079,
+      "records_presented": 1092924,
+      "utc": "2026-09-27T17:43:10.858289+00:00",
+      "total": 0.08149888983462006
+    },
+    "full_lst_grouped_g4k256_seed17": {
+      "step": 15505,
+      "records_presented": 992188,
+      "utc": "2026-09-27T17:43:07.728110+00:00",
+      "total": 0.048530576925259084
+    }
+  }
+}

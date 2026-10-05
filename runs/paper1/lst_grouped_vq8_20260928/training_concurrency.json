@@ -1,0 +1,22 @@
+{
+  "lower": {
+    "full_lst_grouped_g8k16_seed17": {
+      "alone": 1.668393611907959e-05,
+      "concurrent": 28.680969368550514
+    },
+    "full_lst_grouped_g8k256_seed17": {
+      "alone": 0.002310624983575609,
+      "concurrent": 28.680969368550514
+    }
+  },
+  "upper": {
+    "full_lst_grouped_g8k16_seed17": {
+      "alone": 2.5730662875705294e-06,
+      "concurrent": 29.908706176612114
+    },
+    "full_lst_grouped_g8k256_seed17": {
+      "alone": 0.002310624983575609,
+      "concurrent": 29.908706176612114
+    }
+  }
+}

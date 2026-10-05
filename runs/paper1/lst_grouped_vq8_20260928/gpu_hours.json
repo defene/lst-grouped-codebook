@@ -1,0 +1,123 @@
+{
+  "full_training": {
+    "lower": 28.683296677470207,
+    "upper": 29.911019374661976
+  },
+  "full_evaluation": {
+    "lower": 1.2120022872421476,
+    "upper": 1.2120022872421476
+  },
+  "smoke_all": {
+    "lower": 0.02607797748512692,
+    "upper": 0.02607797748512692
+  },
+  "per_model_training_wall_hours": {
+    "g8k16": {
+      "lower": 28.68098605248663,
+      "upper": 29.9087087496784
+    },
+    "g8k256": {
+      "lower": 28.68327999353409,
+      "upper": 29.91101680159569
+    }
+  },
+  "scope": "Single GPU process activity union; training includes full epoch validation and checkpoint I/O; concurrent wall hours cannot be summed. Some jobs can run alone.",
+  "intervals": [
+    {
+      "phase": "smoke",
+      "stage": "partial",
+      "name": "smoke_lst_grouped_g8k16_seed17",
+      "start": 1790636203.670109,
+      "lower_end": 1790636224.63305,
+      "upper_end": 1790636224.63305
+    },
+    {
+      "phase": "smoke",
+      "stage": "partial",
+      "name": "smoke_lst_grouped_g8k256_seed17",
+      "start": 1790636203.675128,
+      "lower_end": 1790636224.643683,
+      "upper_end": 1790636224.643683
+    },
+    {
+      "phase": "smoke",
+      "stage": "train",
+      "name": "smoke_lst_grouped_g8k16_seed17",
+      "start": 1790636226.756647,
+      "lower_end": 1790636266.382709,
+      "upper_end": 1790636266.382709
+    },
+    {
+      "phase": "smoke",
+      "stage": "train",
+      "name": "smoke_lst_grouped_g8k256_seed17",
+      "start": 1790636226.761793,
+      "lower_end": 1790636266.388153,
+      "upper_end": 1790636266.388153
+    },
+    {
+      "phase": "smoke",
+      "stage": "evaluate",
+      "name": "smoke_lst_grouped_g8k16_seed17",
+      "start": 1790636268.473122,
+      "lower_end": 1790636301.748094,
+      "upper_end": 1790636301.748094
+    },
+    {
+      "phase": "smoke",
+      "stage": "evaluate",
+      "name": "smoke_lst_grouped_g8k256_seed17",
+      "start": 1790636268.477886,
+      "lower_end": 1790636301.748761,
+      "upper_end": 1790636301.748761
+    },
+    {
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g8k16_seed17",
+      "start": 1790636306.011696,
+      "lower_end": 1790682596.761022,
+      "upper_end": 1790687016.562732
+    },
+    {
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g8k256_seed17",
+      "start": 1790636306.01657,
+      "lower_end": 1790682596.710223,
+      "upper_end": 1790687016.562732
+    },
+    {
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g8k16_seed17",
+      "start": 1790737280.431735,
+      "lower_end": 1790794241.232198,
+      "upper_end": 1790794241.232198
+    },
+    {
+      "phase": "full",
+      "stage": "train",
+      "name": "full_lst_grouped_g8k256_seed17",
+      "start": 1790737280.436124,
+      "lower_end": 1790794249.550448,
+      "upper_end": 1790794249.550448
+    },
+    {
+      "phase": "full",
+      "stage": "evaluate",
+      "name": "full_lst_grouped_g8k16_seed17",
+      "start": 1790794252.927155,
+      "lower_end": 1790798614.066349,
+      "upper_end": 1790798614.066349
+    },
+    {
+      "phase": "full",
+      "stage": "evaluate",
+      "name": "full_lst_grouped_g8k256_seed17",
+      "start": 1790794252.931727,
+      "lower_end": 1790798616.135389,
+      "upper_end": 1790798616.135389
+    }
+  ]
+}

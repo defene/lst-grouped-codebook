@@ -1,0 +1,46 @@
+{
+  "prepared": "processed_data/hlp_split_v2_20260914",
+  "split": "train",
+  "record_ids_sha256": "e4d0134eafe9024125fc33325ba69e1deb3285a992f2f74e4392cb67b0e4d164",
+  "source": {
+    "dataset": "prithvi",
+    "modality": "lst_hr",
+    "split": "train",
+    "protocol": "b3f6a94d26cfa021334aca031fe445ee7a80dcbe911e17a3728e1b77c025a98d",
+    "sample_index": "d79b183a302fd3a9f67ab4f42a778f7695e28810dd976b3d53e96169ba378464",
+    "normalization": "efc261a766380b4c1fdb1953099c17a3f3ac0bac21566c4e7b24bbe5a5ba2c51",
+    "source_index": "7bc93b17bab90a47b724d712417e12f5fa6b486ccf29bd4d33d3b298b3a038d4",
+    "record_index": "ef606d34d6d6c8f06bcdd7e3a7521f1c4ce4618f7d80728dfb08ebfeee6e0a10",
+    "reader_code": "007d784043504df218fa6bc3539a0fef72627c3f08aebc1dedf78188fa134388",
+    "processing_code": {
+      "codec.py": "7e3f21ca95652919dd69d26b5f448af7da8af7c47a836e900f4c6b01ba340dff",
+      "core.py": "7b56ddaa8d037a7acab3fb1f17ea1e294bc21d69187a0efbc43735dbe0d0c513",
+      "dataset.py": "c335ab2975f019eccbeefab4b7c443e49867c592169f0c4b0f09be101360af84",
+      "prepare.py": "9ba7e9277088591696de88f9ce1b739e23b3b15729d8ea2fab03dc3ddc66c378",
+      "verify.py": "0980a434089637c9eb702be95568302589d1786c4aaabe4b8d216442eb772e2f",
+      "__init__.py": "b89c5939d137e74d81e82fa90d01f085d3d62d498f380b18770e1e8b42d99b58",
+      "__main__.py": "7d8ef47df0580c754b3d581e4024a0924a7e3abd8fb4c67f9cb53fb63aa7a058"
+    }
+  },
+  "stats": {
+    "mean": [
+      2536.6523070738995
+    ],
+    "std": [
+      1629.4191574547272
+    ],
+    "unfloored_std": [
+      1629.4191574547272
+    ],
+    "std_floor": 1e-06,
+    "samples": 218975,
+    "valid_spatial_pixels": 14347866752,
+    "fit_split": "train",
+    "weighting": "equal_samples_then_equal_valid_pixels_within_sample",
+    "units": "source_raw_int16_units",
+    "physical_temperature_unit_confirmed": false
+  },
+  "samples": 67,
+  "mask_bank_sha256": "d977ba058e2c8050621f8c0dface97bb9f3107aea45f7bee2ff7c0f35de3366e",
+  "mask_manifest_sha256": "c457b5abbe95b23e21901d561d813e789914e93185bffe3096c17871bd319bc4"
+}

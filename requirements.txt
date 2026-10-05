@@ -1,0 +1,10 @@
+torch
+torchvision
+timm
+einops
+numpy
+scipy
+matplotlib
+zstandard
+PyYAML
+pytest

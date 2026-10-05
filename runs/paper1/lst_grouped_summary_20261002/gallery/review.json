@@ -1,0 +1,692 @@
+{
+  "status": "passed",
+  "image_record_ids": [
+    240455,
+    235502,
+    236343,
+    233332,
+    235386,
+    234327,
+    238221,
+    237686
+  ],
+  "image_view": 0,
+  "selection_source": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_grouped_summary_20261002\\selection.json",
+  "selection_sha256": "08ab7039c97e52d884c40355546b59d94cc8719ec2a003e1af1d11ea6e0005de",
+  "input_hashes": {
+    "clean": "ee1d1d4698e4b524fab76b25ad4d8f879d72094e3265a6e4b14104907f7537a7",
+    "noisy10": "e0771819437ecb50d6464c544135c917ba0a05944bed495a48667d4d3df249ff"
+  },
+  "checkpoint_hashes": {
+    "single1024": "31940008fff414b03c2f07d5401f28f23364f7db89d616a4b907a56af8f8be27",
+    "g2k32": "62f8eb2ec8b1acf926ec0a0f32fdb3f29309c985b1d763bd7602d7d02702498b",
+    "g4k256": "3c9eefa82abfb517de7c653380a101b70a84f21c35a3e15b5e9ed780c54d1944",
+    "g8k16": "325d842a0e58209b532d42ee6221f8e25b66d87eefebef862b84f31b92bbf10b",
+    "g8k256": "47a808c3aa018252214f40179a946cb8b8931791a127ec7134d7c0161d845f7e"
+  },
+  "checks": [
+    {
+      "model": "single1024",
+      "condition": "clean",
+      "record_id": 240455,
+      "view": 0,
+      "gallery_mse": 0.693133915150404,
+      "full_evaluation_mse": 0.6931338310241699
+    },
+    {
+      "model": "single1024",
+      "condition": "clean",
+      "record_id": 235502,
+      "view": 0,
+      "gallery_mse": 2.6656276290190166,
+      "full_evaluation_mse": 2.6656274795532227
+    },
+    {
+      "model": "single1024",
+      "condition": "clean",
+      "record_id": 236343,
+      "view": 0,
+      "gallery_mse": 0.22182657405547734,
+      "full_evaluation_mse": 0.22182655334472656
+    },
+    {
+      "model": "single1024",
+      "condition": "clean",
+      "record_id": 233332,
+      "view": 0,
+      "gallery_mse": 1.4566675255594057,
+      "full_evaluation_mse": 1.456667423248291
+    },
+    {
+      "model": "single1024",
+      "condition": "clean",
+      "record_id": 235386,
+      "view": 0,
+      "gallery_mse": 0.00831249197568972,
+      "full_evaluation_mse": 0.008312491700053215
+    },
+    {
+      "model": "single1024",
+      "condition": "clean",
+      "record_id": 234327,
+      "view": 0,
+      "gallery_mse": 0.9660963593945802,
+      "full_evaluation_mse": 0.9660962820053101
+    },
+    {
+      "model": "single1024",
+      "condition": "clean",
+      "record_id": 238221,
+      "view": 0,
+      "gallery_mse": 0.013624577006060333,
+      "full_evaluation_mse": 0.013624575920403004
+    },
+    {
+      "model": "single1024",
+      "condition": "clean",
+      "record_id": 237686,
+      "view": 0,
+      "gallery_mse": 0.3251700956030573,
+      "full_evaluation_mse": 0.3251700699329376
+    },
+    {
+      "model": "single1024",
+      "condition": "noisy10",
+      "record_id": 240455,
+      "view": 0,
+      "gallery_mse": 0.7247480301077228,
+      "full_evaluation_mse": 0.7247479557991028
+    },
+    {
+      "model": "single1024",
+      "condition": "noisy10",
+      "record_id": 235502,
+      "view": 0,
+      "gallery_mse": 2.717814552360279,
+      "full_evaluation_mse": 2.7178144454956055
+    },
+    {
+      "model": "single1024",
+      "condition": "noisy10",
+      "record_id": 236343,
+      "view": 0,
+      "gallery_mse": 0.28564770801375633,
+      "full_evaluation_mse": 0.2856476902961731
+    },
+    {
+      "model": "single1024",
+      "condition": "noisy10",
+      "record_id": 233332,
+      "view": 0,
+      "gallery_mse": 1.4444929581295656,
+      "full_evaluation_mse": 1.4444928169250488
+    },
+    {
+      "model": "single1024",
+      "condition": "noisy10",
+      "record_id": 235386,
+      "view": 0,
+      "gallery_mse": 0.007640766190965183,
+      "full_evaluation_mse": 0.007640765514224768
+    },
+    {
+      "model": "single1024",
+      "condition": "noisy10",
+      "record_id": 234327,
+      "view": 0,
+      "gallery_mse": 0.9545971395239945,
+      "full_evaluation_mse": 0.9545971155166626
+    },
+    {
+      "model": "single1024",
+      "condition": "noisy10",
+      "record_id": 238221,
+      "view": 0,
+      "gallery_mse": 0.010771280896912963,
+      "full_evaluation_mse": 0.010771280154585838
+    },
+    {
+      "model": "single1024",
+      "condition": "noisy10",
+      "record_id": 237686,
+      "view": 0,
+      "gallery_mse": 0.3371527065806091,
+      "full_evaluation_mse": 0.3371526896953583
+    },
+    {
+      "model": "g2k32",
+      "condition": "clean",
+      "record_id": 240455,
+      "view": 0,
+      "gallery_mse": 0.568829613883009,
+      "full_evaluation_mse": 0.5688295960426331
+    },
+    {
+      "model": "g2k32",
+      "condition": "clean",
+      "record_id": 235502,
+      "view": 0,
+      "gallery_mse": 1.7910312868469338,
+      "full_evaluation_mse": 1.7910312414169312
+    },
+    {
+      "model": "g2k32",
+      "condition": "clean",
+      "record_id": 236343,
+      "view": 0,
+      "gallery_mse": 0.17490804729791526,
+      "full_evaluation_mse": 0.17490804195404053
+    },
+    {
+      "model": "g2k32",
+      "condition": "clean",
+      "record_id": 233332,
+      "view": 0,
+      "gallery_mse": 0.9587786815758345,
+      "full_evaluation_mse": 0.9587786197662354
+    },
+    {
+      "model": "g2k32",
+      "condition": "clean",
+      "record_id": 235386,
+      "view": 0,
+      "gallery_mse": 0.009740231905324805,
+      "full_evaluation_mse": 0.009740231558680534
+    },
+    {
+      "model": "g2k32",
+      "condition": "clean",
+      "record_id": 234327,
+      "view": 0,
+      "gallery_mse": 0.6207926527458844,
+      "full_evaluation_mse": 0.6207926273345947
+    },
+    {
+      "model": "g2k32",
+      "condition": "clean",
+      "record_id": 238221,
+      "view": 0,
+      "gallery_mse": 0.00917394404491137,
+      "full_evaluation_mse": 0.009173943661153316
+    },
+    {
+      "model": "g2k32",
+      "condition": "clean",
+      "record_id": 237686,
+      "view": 0,
+      "gallery_mse": 0.22308366655833559,
+      "full_evaluation_mse": 0.22308364510536194
+    },
+    {
+      "model": "g2k32",
+      "condition": "noisy10",
+      "record_id": 240455,
+      "view": 0,
+      "gallery_mse": 0.5822769631300264,
+      "full_evaluation_mse": 0.5822768807411194
+    },
+    {
+      "model": "g2k32",
+      "condition": "noisy10",
+      "record_id": 235502,
+      "view": 0,
+      "gallery_mse": 2.003278561229469,
+      "full_evaluation_mse": 2.0032782554626465
+    },
+    {
+      "model": "g2k32",
+      "condition": "noisy10",
+      "record_id": 236343,
+      "view": 0,
+      "gallery_mse": 0.24323208934300658,
+      "full_evaluation_mse": 0.24323208630084991
+    },
+    {
+      "model": "g2k32",
+      "condition": "noisy10",
+      "record_id": 233332,
+      "view": 0,
+      "gallery_mse": 1.1304605692250975,
+      "full_evaluation_mse": 1.130460500717163
+    },
+    {
+      "model": "g2k32",
+      "condition": "noisy10",
+      "record_id": 235386,
+      "view": 0,
+      "gallery_mse": 0.010981814840932554,
+      "full_evaluation_mse": 0.010981814004480839
+    },
+    {
+      "model": "g2k32",
+      "condition": "noisy10",
+      "record_id": 234327,
+      "view": 0,
+      "gallery_mse": 0.6412973803231998,
+      "full_evaluation_mse": 0.6412973403930664
+    },
+    {
+      "model": "g2k32",
+      "condition": "noisy10",
+      "record_id": 238221,
+      "view": 0,
+      "gallery_mse": 0.012486449042553074,
+      "full_evaluation_mse": 0.012486448511481285
+    },
+    {
+      "model": "g2k32",
+      "condition": "noisy10",
+      "record_id": 237686,
+      "view": 0,
+      "gallery_mse": 0.24331898047023606,
+      "full_evaluation_mse": 0.24331897497177124
+    },
+    {
+      "model": "g4k256",
+      "condition": "clean",
+      "record_id": 240455,
+      "view": 0,
+      "gallery_mse": 0.5247637621194878,
+      "full_evaluation_mse": 0.5247637033462524
+    },
+    {
+      "model": "g4k256",
+      "condition": "clean",
+      "record_id": 235502,
+      "view": 0,
+      "gallery_mse": 1.3995138453234957,
+      "full_evaluation_mse": 1.3995137214660645
+    },
+    {
+      "model": "g4k256",
+      "condition": "clean",
+      "record_id": 236343,
+      "view": 0,
+      "gallery_mse": 0.1281584417802009,
+      "full_evaluation_mse": 0.12815843522548676
+    },
+    {
+      "model": "g4k256",
+      "condition": "clean",
+      "record_id": 233332,
+      "view": 0,
+      "gallery_mse": 0.7934398953737534,
+      "full_evaluation_mse": 0.7934398055076599
+    },
+    {
+      "model": "g4k256",
+      "condition": "clean",
+      "record_id": 235386,
+      "view": 0,
+      "gallery_mse": 0.008055083157817229,
+      "full_evaluation_mse": 0.008055082522332668
+    },
+    {
+      "model": "g4k256",
+      "condition": "clean",
+      "record_id": 234327,
+      "view": 0,
+      "gallery_mse": 0.4848395264988419,
+      "full_evaluation_mse": 0.4848394989967346
+    },
+    {
+      "model": "g4k256",
+      "condition": "clean",
+      "record_id": 238221,
+      "view": 0,
+      "gallery_mse": 0.011038086791189495,
+      "full_evaluation_mse": 0.01103808544576168
+    },
+    {
+      "model": "g4k256",
+      "condition": "clean",
+      "record_id": 237686,
+      "view": 0,
+      "gallery_mse": 0.19187532163580692,
+      "full_evaluation_mse": 0.19187530875205994
+    },
+    {
+      "model": "g4k256",
+      "condition": "noisy10",
+      "record_id": 240455,
+      "view": 0,
+      "gallery_mse": 0.5392272493179714,
+      "full_evaluation_mse": 0.5392271876335144
+    },
+    {
+      "model": "g4k256",
+      "condition": "noisy10",
+      "record_id": 235502,
+      "view": 0,
+      "gallery_mse": 1.5727740364490546,
+      "full_evaluation_mse": 1.5727739334106445
+    },
+    {
+      "model": "g4k256",
+      "condition": "noisy10",
+      "record_id": 236343,
+      "view": 0,
+      "gallery_mse": 0.24021474817436134,
+      "full_evaluation_mse": 0.2402147352695465
+    },
+    {
+      "model": "g4k256",
+      "condition": "noisy10",
+      "record_id": 233332,
+      "view": 0,
+      "gallery_mse": 0.8980776967452385,
+      "full_evaluation_mse": 0.8980776071548462
+    },
+    {
+      "model": "g4k256",
+      "condition": "noisy10",
+      "record_id": 235386,
+      "view": 0,
+      "gallery_mse": 0.008516697589613537,
+      "full_evaluation_mse": 0.008516697213053703
+    },
+    {
+      "model": "g4k256",
+      "condition": "noisy10",
+      "record_id": 234327,
+      "view": 0,
+      "gallery_mse": 0.51291675032692,
+      "full_evaluation_mse": 0.5129166841506958
+    },
+    {
+      "model": "g4k256",
+      "condition": "noisy10",
+      "record_id": 238221,
+      "view": 0,
+      "gallery_mse": 0.008732297927676316,
+      "full_evaluation_mse": 0.008732296526432037
+    },
+    {
+      "model": "g4k256",
+      "condition": "noisy10",
+      "record_id": 237686,
+      "view": 0,
+      "gallery_mse": 0.20147352139822192,
+      "full_evaluation_mse": 0.20147350430488586
+    },
+    {
+      "model": "g8k16",
+      "condition": "clean",
+      "record_id": 240455,
+      "view": 0,
+      "gallery_mse": 0.4218355639667135,
+      "full_evaluation_mse": 0.4218355119228363
+    },
+    {
+      "model": "g8k16",
+      "condition": "clean",
+      "record_id": 235502,
+      "view": 0,
+      "gallery_mse": 1.1476060971645279,
+      "full_evaluation_mse": 1.1476060152053833
+    },
+    {
+      "model": "g8k16",
+      "condition": "clean",
+      "record_id": 236343,
+      "view": 0,
+      "gallery_mse": 0.10045609339430334,
+      "full_evaluation_mse": 0.10045608878135681
+    },
+    {
+      "model": "g8k16",
+      "condition": "clean",
+      "record_id": 233332,
+      "view": 0,
+      "gallery_mse": 0.561995224058116,
+      "full_evaluation_mse": 0.5619952082633972
+    },
+    {
+      "model": "g8k16",
+      "condition": "clean",
+      "record_id": 235386,
+      "view": 0,
+      "gallery_mse": 0.006022212359053539,
+      "full_evaluation_mse": 0.006022212095558643
+    },
+    {
+      "model": "g8k16",
+      "condition": "clean",
+      "record_id": 234327,
+      "view": 0,
+      "gallery_mse": 0.3782230310370769,
+      "full_evaluation_mse": 0.3782230019569397
+    },
+    {
+      "model": "g8k16",
+      "condition": "clean",
+      "record_id": 238221,
+      "view": 0,
+      "gallery_mse": 0.007225786735748663,
+      "full_evaluation_mse": 0.0072257863357663155
+    },
+    {
+      "model": "g8k16",
+      "condition": "clean",
+      "record_id": 237686,
+      "view": 0,
+      "gallery_mse": 0.1548829498842845,
+      "full_evaluation_mse": 0.15488293766975403
+    },
+    {
+      "model": "g8k16",
+      "condition": "noisy10",
+      "record_id": 240455,
+      "view": 0,
+      "gallery_mse": 0.45500151244542447,
+      "full_evaluation_mse": 0.45500144362449646
+    },
+    {
+      "model": "g8k16",
+      "condition": "noisy10",
+      "record_id": 235502,
+      "view": 0,
+      "gallery_mse": 1.3442485825005086,
+      "full_evaluation_mse": 1.3442485332489014
+    },
+    {
+      "model": "g8k16",
+      "condition": "noisy10",
+      "record_id": 236343,
+      "view": 0,
+      "gallery_mse": 0.20267221581523762,
+      "full_evaluation_mse": 0.20267219841480255
+    },
+    {
+      "model": "g8k16",
+      "condition": "noisy10",
+      "record_id": 233332,
+      "view": 0,
+      "gallery_mse": 0.7233841861222953,
+      "full_evaluation_mse": 0.7233841419219971
+    },
+    {
+      "model": "g8k16",
+      "condition": "noisy10",
+      "record_id": 235386,
+      "view": 0,
+      "gallery_mse": 0.006880442634778989,
+      "full_evaluation_mse": 0.0068804421462118626
+    },
+    {
+      "model": "g8k16",
+      "condition": "noisy10",
+      "record_id": 234327,
+      "view": 0,
+      "gallery_mse": 0.4103381202486883,
+      "full_evaluation_mse": 0.4103381037712097
+    },
+    {
+      "model": "g8k16",
+      "condition": "noisy10",
+      "record_id": 238221,
+      "view": 0,
+      "gallery_mse": 0.007228137401479443,
+      "full_evaluation_mse": 0.007228136993944645
+    },
+    {
+      "model": "g8k16",
+      "condition": "noisy10",
+      "record_id": 237686,
+      "view": 0,
+      "gallery_mse": 0.1563445610271258,
+      "full_evaluation_mse": 0.15634456276893616
+    },
+    {
+      "model": "g8k256",
+      "condition": "clean",
+      "record_id": 240455,
+      "view": 0,
+      "gallery_mse": 0.44309257306131083,
+      "full_evaluation_mse": 0.44309255480766296
+    },
+    {
+      "model": "g8k256",
+      "condition": "clean",
+      "record_id": 235502,
+      "view": 0,
+      "gallery_mse": 0.987857467170916,
+      "full_evaluation_mse": 0.9878573417663574
+    },
+    {
+      "model": "g8k256",
+      "condition": "clean",
+      "record_id": 236343,
+      "view": 0,
+      "gallery_mse": 0.1079204041648307,
+      "full_evaluation_mse": 0.10792040079832077
+    },
+    {
+      "model": "g8k256",
+      "condition": "clean",
+      "record_id": 233332,
+      "view": 0,
+      "gallery_mse": 0.7042221225023809,
+      "full_evaluation_mse": 0.7042220234870911
+    },
+    {
+      "model": "g8k256",
+      "condition": "clean",
+      "record_id": 235386,
+      "view": 0,
+      "gallery_mse": 0.006968642777577949,
+      "full_evaluation_mse": 0.006968642584979534
+    },
+    {
+      "model": "g8k256",
+      "condition": "clean",
+      "record_id": 234327,
+      "view": 0,
+      "gallery_mse": 0.40024220985023046,
+      "full_evaluation_mse": 0.4002421796321869
+    },
+    {
+      "model": "g8k256",
+      "condition": "clean",
+      "record_id": 238221,
+      "view": 0,
+      "gallery_mse": 0.009437142539881831,
+      "full_evaluation_mse": 0.009437141008675098
+    },
+    {
+      "model": "g8k256",
+      "condition": "clean",
+      "record_id": 237686,
+      "view": 0,
+      "gallery_mse": 0.1726502170234428,
+      "full_evaluation_mse": 0.17265018820762634
+    },
+    {
+      "model": "g8k256",
+      "condition": "noisy10",
+      "record_id": 240455,
+      "view": 0,
+      "gallery_mse": 0.4583928437797599,
+      "full_evaluation_mse": 0.45839276909828186
+    },
+    {
+      "model": "g8k256",
+      "condition": "noisy10",
+      "record_id": 235502,
+      "view": 0,
+      "gallery_mse": 1.17597466792632,
+      "full_evaluation_mse": 1.1759746074676514
+    },
+    {
+      "model": "g8k256",
+      "condition": "noisy10",
+      "record_id": 236343,
+      "view": 0,
+      "gallery_mse": 0.2374568072263362,
+      "full_evaluation_mse": 0.2374567985534668
+    },
+    {
+      "model": "g8k256",
+      "condition": "noisy10",
+      "record_id": 233332,
+      "view": 0,
+      "gallery_mse": 0.8308325159862822,
+      "full_evaluation_mse": 0.8308324813842773
+    },
+    {
+      "model": "g8k256",
+      "condition": "noisy10",
+      "record_id": 235386,
+      "view": 0,
+      "gallery_mse": 0.007820249776261196,
+      "full_evaluation_mse": 0.0078202486038208
+    },
+    {
+      "model": "g8k256",
+      "condition": "noisy10",
+      "record_id": 234327,
+      "view": 0,
+      "gallery_mse": 0.4478865276123245,
+      "full_evaluation_mse": 0.44788649678230286
+    },
+    {
+      "model": "g8k256",
+      "condition": "noisy10",
+      "record_id": 238221,
+      "view": 0,
+      "gallery_mse": 0.009724887643790231,
+      "full_evaluation_mse": 0.00972488708794117
+    },
+    {
+      "model": "g8k256",
+      "condition": "noisy10",
+      "record_id": 237686,
+      "view": 0,
+      "gallery_mse": 0.18565292463180877,
+      "full_evaluation_mse": 0.18565291166305542
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "predictions_clean_1.png",
+      "sha256": "239669d8b7656a4940ddc294744e9a01373875640f1a05f9f6ec8a3b8c55e6f6"
+    },
+    {
+      "path": "predictions_clean_2.png",
+      "sha256": "227625edf206532b800e8764c60bc6dcd3ed07fe53473fd781b32dddd7b075ac"
+    },
+    {
+      "path": "predictions_noisy10_1.png",
+      "sha256": "5d15ed06b48dd56ecd03bcd708812234f4a6ef1ec87f01d591a22d6c6d4a5db9"
+    },
+    {
+      "path": "predictions_noisy10_2.png",
+      "sha256": "58157f081abc2360ed44bab7503411a6f387810121b789f1092997b8c862417c"
+    }
+  ],
+  "predictions_sha256": "51ce6e6638613ad2ed7b100c20bf9364024745c7dcb8b30726902410c4b17e78",
+  "started_utc": "2026-10-02T18:51:55.969617+00:00",
+  "completed_utc": "2026-10-02T18:52:15.793521+00:00",
+  "wall_seconds": 19.824040200008312,
+  "timing_scope": "Additional inference/plotting wall time; separate from formal training/evaluation GPU hours."
+}

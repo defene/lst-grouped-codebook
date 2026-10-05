@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "utc": "2026-09-30T20:08:28.117275+00:00",
+  "units": 8,
+  "comparison_units": 12,
+  "report_sha256": "a37b58cb8ef4f17a8af79be9292b6ccf32eb2765f4b1179df9281d4231a98564",
+  "artifact_hashes": {
+    "REPORT_ZH.md": "a37b58cb8ef4f17a8af79be9292b6ccf32eb2765f4b1179df9281d4231a98564",
+    "CODEBOOK_DETAILS_ZH.md": "b7ceccfdd29ae162e106b05a42e35a81531f35cf4bef947214417081216cf774",
+    "token_frequencies.json": "1dca10668a5b599412b17a64b79f8dab211c0832a4065d68331258c32b14ec5c",
+    "results.json": "ac8bed80126a01bf2d4f36890f3328142d186be288cc5a5eeb69d0c115f96075",
+    "comparison_results.json": "ccd06f641c079d00193974955e882b24cc39291590d373f8bc92dfdfe6d30ca1",
+    "gpu_hours.json": "9c16e413658e6efcb1eee4bee21c4bfb3934f584f5a21ba5b4ec66bf43eb18c3",
+    "training_concurrency.json": "3911d81515815a09867d22fd7b1b6c53986455343b60f658c58175bade205ee4",
+    "delivery_validation.json": "d07d2fcd9188c6547ff86b510211c3657c9f0eff9f66ece8ca663b9d4d001add",
+    "gallery/review.json": "9b5c6f511eea911599097c63ceea5f0deca90cb421345b30f4bf8293e997b071"
+  },
+  "registry_entry_report_hash": "a37b58cb8ef4f17a8af79be9292b6ccf32eb2765f4b1179df9281d4231a98564",
+  "remaining_delivery": [],
+  "visual_review_complete": true,
+  "all_training_and_evaluation_complete": true
+}

@@ -1,0 +1,332 @@
+{
+  "weighting": "equal_samples; average available views within each sample",
+  "regions": {
+    "lst/all": {
+      "samples": 11757,
+      "tiles": 151,
+      "unit": "degrees_Celsius",
+      "rmse_normalized": 0.05818941591422724,
+      "rmse": 0.9481494776543891,
+      "mae": 0.6087581593442848,
+      "bias": -0.02343472788779974,
+      "band_rmse": [
+        0.9481494776543891
+      ],
+      "band_mae": [
+        0.6087581593442848
+      ],
+      "actual_coverage": 0.0,
+      "gradient_mse_physical_samples": 11757,
+      "sam_degrees": null,
+      "sam_degrees_samples": 0,
+      "ndvi_mae": null,
+      "ndvi_mae_samples": 0,
+      "gradient_rmse": 0.3419385044126316,
+      "rmse_tile_ci95": [
+        0.8703445885740966,
+        1.0233059118059764
+      ]
+    },
+    "lst/retained": {
+      "samples": 11757,
+      "tiles": 151,
+      "unit": "degrees_Celsius",
+      "rmse_normalized": 0.05818941591422724,
+      "rmse": 0.9481494776543891,
+      "mae": 0.6087581593442848,
+      "bias": -0.02343472788779974,
+      "band_rmse": [
+        0.9481494776543891
+      ],
+      "band_mae": [
+        0.6087581593442848
+      ],
+      "actual_coverage": 0.0,
+      "gradient_mse_physical_samples": 11757,
+      "sam_degrees": null,
+      "sam_degrees_samples": 0,
+      "ndvi_mae": null,
+      "ndvi_mae_samples": 0,
+      "gradient_rmse": 0.3419385044126316,
+      "rmse_tile_ci95": [
+        0.8798090836661967,
+        1.0240398876088268
+      ]
+    }
+  },
+  "tokens": {
+    "lst": {
+      "groups": 1,
+      "codes_per_group": 1024,
+      "per_group": [
+        {
+          "group": 0,
+          "used_codes": 845,
+          "vocabulary": 1024,
+          "count": 15989520,
+          "entropy_bits": 3.2263430061908855,
+          "perplexity": 9.358926167939403,
+          "top1_fraction": 0.17658166098794711,
+          "top10_fraction": 0.9900353481530403,
+          "scales": [
+            {
+              "scale": 1,
+              "used_codes": 8,
+              "vocabulary": 1024,
+              "count": 23514,
+              "entropy_bits": 0.3287962205041087,
+              "perplexity": 1.2559649645886843,
+              "top1_fraction": 0.9599387598877265,
+              "top10_fraction": 1.0,
+              "within_image_mean_unique_codes": 1.0,
+              "within_image_mean_entropy_bits": 0.0,
+              "within_image_adjacent_change_fraction": null,
+              "image_view_count": 23514
+            },
+            {
+              "scale": 2,
+              "used_codes": 9,
+              "vocabulary": 1024,
+              "count": 94056,
+              "entropy_bits": 2.7041247452989756,
+              "perplexity": 6.516623952162193,
+              "top1_fraction": 0.36697286722803435,
+              "top10_fraction": 1.0,
+              "within_image_mean_unique_codes": 2.7944203453261887,
+              "within_image_mean_entropy_bits": 1.3118699273923948,
+              "within_image_adjacent_change_fraction": 0.6971591392361998,
+              "image_view_count": 23514
+            },
+            {
+              "scale": 3,
+              "used_codes": 11,
+              "vocabulary": 1024,
+              "count": 211626,
+              "entropy_bits": 2.705111748322722,
+              "perplexity": 6.521083749991298,
+              "top1_fraction": 0.3780537363083931,
+              "top10_fraction": 0.9999905493653899,
+              "within_image_mean_unique_codes": 4.283660797822574,
+              "within_image_mean_entropy_bits": 1.758596048718106,
+              "within_image_adjacent_change_fraction": 0.6551841456153736,
+              "image_view_count": 23514
+            },
+            {
+              "scale": 4,
+              "used_codes": 18,
+              "vocabulary": 1024,
+              "count": 376224,
+              "entropy_bits": 2.947559370945341,
+              "perplexity": 7.714428969861809,
+              "top1_fraction": 0.27543165773581696,
+              "top10_fraction": 0.9999574721442545,
+              "within_image_mean_unique_codes": 6.496980522242069,
+              "within_image_mean_entropy_bits": 2.368606745737964,
+              "within_image_adjacent_change_fraction": 0.7663484165461744,
+              "image_view_count": 23514
+            },
+            {
+              "scale": 5,
+              "used_codes": 19,
+              "vocabulary": 1024,
+              "count": 587850,
+              "entropy_bits": 2.944350618551879,
+              "perplexity": 7.69729008443717,
+              "top1_fraction": 0.28537552096623287,
+              "top10_fraction": 0.9999591732584843,
+              "within_image_mean_unique_codes": 7.363783278047121,
+              "within_image_mean_entropy_bits": 2.490624561224499,
+              "within_image_adjacent_change_fraction": 0.7133005868844065,
+              "image_view_count": 23514
+            },
+            {
+              "scale": 6,
+              "used_codes": 30,
+              "vocabulary": 1024,
+              "count": 846504,
+              "entropy_bits": 3.0080111401568423,
+              "perplexity": 8.044546761074134,
+              "top1_fraction": 0.24650799051156286,
+              "top10_fraction": 0.9998889550433312,
+              "within_image_mean_unique_codes": 8.146210768053075,
+              "within_image_mean_entropy_bits": 2.703483637465891,
+              "within_image_adjacent_change_fraction": 0.7426937143829385,
+              "image_view_count": 23514
+            },
+            {
+              "scale": 8,
+              "used_codes": 107,
+              "vocabulary": 1024,
+              "count": 1504896,
+              "entropy_bits": 3.1270896894230793,
+              "perplexity": 8.736707492458203,
+              "top1_fraction": 0.1603446351109977,
+              "top10_fraction": 0.9986125287063027,
+              "within_image_mean_unique_codes": 9.006379178361827,
+              "within_image_mean_entropy_bits": 2.976372521225781,
+              "within_image_adjacent_change_fraction": 0.853441414840999,
+              "image_view_count": 23514
+            },
+            {
+              "scale": 10,
+              "used_codes": 79,
+              "vocabulary": 1024,
+              "count": 2351400,
+              "entropy_bits": 3.046007795666106,
+              "perplexity": 8.259232912873658,
+              "top1_fraction": 0.21029259164752914,
+              "top10_fraction": 0.9994913668452836,
+              "within_image_mean_unique_codes": 8.998979331462108,
+              "within_image_mean_entropy_bits": 2.9208210911325794,
+              "within_image_adjacent_change_fraction": 0.7468312022152074,
+              "image_view_count": 23514
+            },
+            {
+              "scale": 13,
+              "used_codes": 121,
+              "vocabulary": 1024,
+              "count": 3973866,
+              "entropy_bits": 3.050723508940853,
+              "perplexity": 8.28627390020481,
+              "top1_fraction": 0.18186471310305882,
+              "top10_fraction": 0.9992908668787523,
+              "within_image_mean_unique_codes": 9.132942077060475,
+              "within_image_mean_entropy_bits": 2.9623077265367885,
+              "within_image_adjacent_change_fraction": 0.7432969556597746,
+              "image_view_count": 23514
+            },
+            {
+              "scale": 16,
+              "used_codes": 845,
+              "vocabulary": 1024,
+              "count": 6019584,
+              "entropy_bits": 3.434678206756213,
+              "perplexity": 10.812874582690558,
+              "top1_fraction": 0.14322252168920643,
+              "top10_fraction": 0.974567677766437,
+              "within_image_mean_unique_codes": 14.608573615718296,
+              "within_image_mean_entropy_bits": 3.2518145630680717,
+              "within_image_adjacent_change_fraction": 0.896303088939923,
+              "image_view_count": 23514
+            }
+          ]
+        }
+      ],
+      "count_scope": "all transmitted positions, including positions outside reference support; distinct dictionaries never pooled",
+      "within_image_scope": "separate group and scale; spatial variation is not evidence of accurate detail",
+      "entropy_is_not_an_actual_compressed_file_rate": true
+    }
+  },
+  "stability": {
+    "reference": [
+      {
+        "group": 0,
+        "flip_rate": 0.0,
+        "compared_positions": 7993401
+      }
+    ],
+    "common_visible": [
+      {
+        "group": 0,
+        "flip_rate": 0.0,
+        "compared_positions": 7993401
+      }
+    ]
+  },
+  "uncertainty": "tile-cluster percentile bootstrap over sample-equal MSE, then square root",
+  "split": "test",
+  "coverage": 0,
+  "evaluated_pairs": 11757,
+  "realizations": 2,
+  "mean_rmse": 0.03819233499165402,
+  "spatial_rmse": 0.94737995414943,
+  "data_fingerprint": {
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "split": "test",
+    "record_ids_sha256": "348964510247add9ec461eb520cb52e76258b8db76fd8b1e41bd0236a380be93",
+    "source": {
+      "dataset": "prithvi",
+      "modality": "lst_hr",
+      "split": "test",
+      "protocol": "b3f6a94d26cfa021334aca031fe445ee7a80dcbe911e17a3728e1b77c025a98d",
+      "sample_index": "a1d5b97c7f3761513f207aea54e2e3a9d907e7b98a3f18062f7c907758961816",
+      "normalization": "efc261a766380b4c1fdb1953099c17a3f3ac0bac21566c4e7b24bbe5a5ba2c51",
+      "source_index": "7bc93b17bab90a47b724d712417e12f5fa6b486ccf29bd4d33d3b298b3a038d4",
+      "record_index": "ef606d34d6d6c8f06bcdd7e3a7521f1c4ce4618f7d80728dfb08ebfeee6e0a10",
+      "reader_code": "007d784043504df218fa6bc3539a0fef72627c3f08aebc1dedf78188fa134388",
+      "processing_code": {
+        "codec.py": "7e3f21ca95652919dd69d26b5f448af7da8af7c47a836e900f4c6b01ba340dff",
+        "core.py": "7b56ddaa8d037a7acab3fb1f17ea1e294bc21d69187a0efbc43735dbe0d0c513",
+        "dataset.py": "c335ab2975f019eccbeefab4b7c443e49867c592169f0c4b0f09be101360af84",
+        "prepare.py": "9ba7e9277088591696de88f9ce1b739e23b3b15729d8ea2fab03dc3ddc66c378",
+        "verify.py": "0980a434089637c9eb702be95568302589d1786c4aaabe4b8d216442eb772e2f",
+        "__init__.py": "b89c5939d137e74d81e82fa90d01f085d3d62d498f380b18770e1e8b42d99b58",
+        "__main__.py": "7d8ef47df0580c754b3d581e4024a0924a7e3abd8fb4c67f9cb53fb63aa7a058"
+      }
+    },
+    "stats": {
+      "mean": [
+        2536.6523070738995
+      ],
+      "std": [
+        1629.4191574547272
+      ],
+      "unfloored_std": [
+        1629.4191574547272
+      ],
+      "std_floor": 1e-06,
+      "samples": 218975,
+      "valid_spatial_pixels": 14347866752,
+      "fit_split": "train",
+      "weighting": "equal_samples_then_equal_valid_pixels_within_sample",
+      "units": "source_raw_int16_units",
+      "physical_temperature_unit_confirmed": false
+    },
+    "samples": 11757,
+    "mask_bank_sha256": "fcdf108d64689ffb9ec1abf17762e38032647067068cdb7d792305a4d21643ac",
+    "mask_manifest_sha256": "60c43308030f26c15d6c441a95ce03563f9f0078c0710e0cb80bb764da64815d"
+  },
+  "input_digest": "f6b4d7ca0bc6f0f0a0ca914e70d19f2c4b99941c166c6003dcbd29240beb88d2",
+  "config_sha256": "8df83243999d4d3bbe29692e8f6b42ce5ce9b0e8dcd74f914726bc3f7848e2e3",
+  "checkpoint_sha256": "31940008fff414b03c2f07d5401f28f23364f7db89d616a4b907a56af8f8be27",
+  "rates": {
+    "lst": {
+      "kind": "multiscale_tokens_plus_visible_temperature_mean",
+      "scales": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        13,
+        16
+      ],
+      "tokens": 680,
+      "vocabulary": 1024,
+      "bits_per_image": 6832,
+      "bpp_spatial": 0.104248046875,
+      "bpp_band_pixel": 0.104248046875,
+      "includes_mask_header_or_model": false,
+      "token_bits_per_image": 6800,
+      "side_information_bits": 32,
+      "side_information": "one float32 visible-input mean in frozen normalized units"
+    }
+  },
+  "elapsed_seconds": 398.6554909999977,
+  "completed_utc": "2026-09-28T09:47:30.229171+00:00",
+  "memory": {
+    "allocated_gib": 0.44313669204711914,
+    "reserved_gib": 1.166015625,
+    "peak_allocated_gib": 1.079301357269287,
+    "peak_reserved_gib": 1.166015625,
+    "device_free_gib": 28.9248046875,
+    "device_total_gib": 31.84234619140625
+  },
+  "independent_validation": false,
+  "historical_test_monitoring": true,
+  "samples_sha256": "cc77779206ca4d6412bfbfa47d9ba44afd830bdcbfe1dea06043ec8f86ef2abe",
+  "token_counts_sha256": "04b40a0ce9f24e37a69b009685086d68df02d4682c37505c36c50c072a7b382d"
+}

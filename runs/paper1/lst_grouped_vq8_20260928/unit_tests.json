@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "tests": 10,
+  "command": "pytest tests/test_lst_grouped_vq8.py tests/test_lst_v2_epochs.py -q",
+  "xml_sha256": "7021fb8082e789fdfc4d0495b6c03f9b0f69be9cc2ecf957f6fc95de1407f6c7"
+}
