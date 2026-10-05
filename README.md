@@ -1,5 +1,7 @@
 # LST 组合码本实验：A06 / A07
 
+新增设计文档：[Prithvi + RAE 14 层 ViT decoder 方案](experiments/paper1/prithvi_rae_20261005/README.md)（2026-10-05，仅方案与显存估算，训练器尚未实现，未提交实验；不属于下述 A06/A07 历史结果或原始导出 manifest）。
+
 本快照包含 single1024、g2k32、g4k256、g8k16、g8k256 五个已完成配置的实验框架和结果；没有启动新训练。
 
 - [完整中文汇总](runs/paper1/lst_grouped_summary_20261002/REPORT_ZH.md)

@@ -1,0 +1,40 @@
+{
+  "status": "architecture_proposal_only",
+  "submission_authorized": false,
+  "gpu_preflight_run": false,
+  "scope": "RAE stage-1 HLS reconstruction; latent generator excluded",
+  "input": {"channels": 6, "frames": 1, "height": 224, "width": 224},
+  "encoder": {
+    "model": "ibm-nasa-geospatial/Prithvi-EO-2.0-300M",
+    "frozen": true,
+    "mask_ratio": 0.0,
+    "patch_tokens": 196,
+    "feature_dimension": 1024,
+    "retain_original_mae_decoder": false
+  },
+  "decoder": {
+    "design": "RAE GeneralDecoder with half the ViT-XL depth",
+    "input_dimension": 1024,
+    "hidden_size": 1152,
+    "intermediate_size": 4096,
+    "num_attention_heads": 16,
+    "num_hidden_layers": 14,
+    "patch_size": 16,
+    "num_channels": 6,
+    "analytical_trainable_parameters": 209596160,
+    "ema_scope": "decoder_only"
+  },
+  "memory_estimate": {
+    "method": "analytical parameter accounting plus conservative activation/workspace allowance; NOT measured",
+    "assumptions": "microbatch 8 per GPU, BF16 autocast with FP32 parameters/gradients/AdamW states and decoder EMA, no activation checkpointing, frozen encoder under no_grad",
+    "static_encoder_decoder_gradients_adam_ema_GiB": 5.04,
+    "reconstruction_training_peak_budget_GiB": [10, 16],
+    "with_perceptual_and_adversarial_losses_peak_budget_GiB": [16, 26],
+    "uncertainty": "Six-band perceptual/discriminator design is unresolved. Allocator, optimizer, attention backend and distributed buffers affect actual peaks. GPU validation has not been authorized."
+  },
+  "implementation_status": "No new trainer or data integration implemented; configuration records the revised design only.",
+  "sources": [
+    "https://github.com/bytetriper/RAE/blob/main/configs/decoder/ViTXL/config.json",
+    "https://github.com/bytetriper/RAE/blob/main/src/stage1/decoders/decoder.py"
+  ]
+}
