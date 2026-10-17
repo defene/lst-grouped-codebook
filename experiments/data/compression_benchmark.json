@@ -1,0 +1,34 @@
+[
+  {
+    "codec": "zlib6",
+    "samples": 32,
+    "raw_bytes": 31482696,
+    "compressed_bytes": 19680680,
+    "encode_seconds": 1.1543468000018038
+  },
+  {
+    "codec": "zstd3",
+    "samples": 32,
+    "raw_bytes": 31482696,
+    "compressed_bytes": 19557367,
+    "encode_seconds": 0.11871660000178963
+  },
+  {
+    "codec": "delta_shuffle_zstd3",
+    "samples": 32,
+    "raw_bytes": 31482696,
+    "compressed_bytes": 16378657,
+    "encode_seconds": 0.07594390000303974,
+    "decode_and_hash_seconds": 0.10859820000041509,
+    "byte_exact": true
+  },
+  {
+    "codec": "delta_shuffle_zstd6",
+    "samples": 32,
+    "raw_bytes": 31482696,
+    "compressed_bytes": 16119515,
+    "encode_seconds": 0.21470370000315597,
+    "decode_and_hash_seconds": 0.10544990000198595,
+    "byte_exact": true
+  }
+]

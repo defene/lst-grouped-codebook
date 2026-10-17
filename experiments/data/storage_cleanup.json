@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "authorization": "全部删除，并给我一份最新的压缩文件",
+  "started_utc": "2026-09-10T00:26:28.3882092Z",
+  "archive": "C:\\Users\\rog\\Desktop\\iclr\\artifacts\\prithvi_data_v1_20260909.zip",
+  "archive_sha256": "2764097028fe9caa44fb55eb5c204c949788f2e6ebfba49b6c37d4171b9c9879",
+  "original_bytes": 238504143023,
+  "old_zip_bytes": 147517786920,
+  "free_bytes_before": 464763498496,
+  "deleted": [
+    "C:\\Users\\rog\\Desktop\\iclr\\prithvi_data.zip",
+    "C:\\Users\\rog\\Desktop\\iclr\\processed_data\\v1\\prithvi\\packs",
+    "C:\\Users\\rog\\Desktop\\iclr\\prithvi_data",
+    "C:\\Users\\rog\\Desktop\\iclr\\processed_data\\development",
+    "C:\\Users\\rog\\Desktop\\iclr\\processed_data\\restore_check"
+  ],
+  "free_bytes_after": 977833193472,
+  "freed_bytes_during_cleanup": 513069694976,
+  "finished_utc": "2026-09-10T00:28:39.7949974Z"
+}

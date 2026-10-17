@@ -1,0 +1,31 @@
+LOCAL EMA PILOT — COMPLETED
+
+HLP v2 train/val; G representation; scratch seed17; no test data.
+128 updates x effective batch16 = 2048 training records/model (0.00935 full train epochs).
+Microbatch2; BF16; AdamW lr1e-4, 10-update warmup then cosine; clip1.
+Validation: fixed random 64 records, clean1view and pixel10 2views; raw valid-pixel weighted Celsius error.
+All reported final values are step128. Best candidates restricted to steps0/64/128 on this subset.
+This is an early technical pilot, not a formal 5-epoch comparison or full validation selection.
+
+family | method | pixel10 RMSE C | clean RMSE C | missing RMSE C | best step | used codes | perplexity
+vq | baseline | 2.869245 | 2.869242 | 2.864986 | 0 | [102] | [14.13]
+vq | ema | 2.033024 | 2.044610 | 2.029741 | 128 | [61] | [16.14]
+vq | ema_maint | 1.743793 | 1.744080 | 1.741940 | 128 | [678] | [380.14]
+grouped_g8k256 | baseline | 1.813731 | 1.823009 | 1.811506 | 128 | [33, 36, 49, 58, 45, 38, 50, 50] | [5.24, 5.78, 4.28, 7.2, 4.13, 6.89, 6.02, 8.6]
+grouped_g8k256 | ema | 1.736887 | 1.753636 | 1.736060 | 128 | [61, 55, 64, 71, 80, 68, 61, 74] | [18.71, 24.76, 22.36, 20.13, 23.78, 22.22, 22.45, 21.84]
+grouped_g8k256 | ema_maint | 1.841054 | 1.839663 | 1.840197 | 128 | [238, 252, 248, 250, 237, 249, 250, 247] | [115.92, 136.71, 117.65, 142.07, 112.72, 167.41, 159.88, 123.41]
+
+Interpretation limits:
+- Maintenance arm bundles K-means and resets: cannot attribute improvement to one alone.
+- Ordinary EMA removes gradient codebook loss; compare physical error / quantization MSE, not total loss.
+- Raw quantization MSE also depends on learned latent scale; it is diagnostic, not a standalone quality ranking.
+- Grouped retains fitting gradients to Phi; EMA aggregates its shared per-group dictionaries across scales.
+- Grouped has more parameters and 17x nominal index bits than ordinary VQ; this is not equal-rate architecture attribution.
+- Existing oracle scalar-mean side information is retained.
+- One seed and small random validation subset; no convergence or population significance claim.
+- Training batches change each step; raw fluctuations conflate sample difficulty and optimization.
+- Usage includes all transmitted latent positions, including reference-invalid positions.
+
+Checks: six complete logs; finite objectives/gradient norms; matched backbone initialization within family;
+identical validation pixel denominators; checkpoint selection recomputed; execution source hashes unchanged.
+Checkpoints: each arm has step_0000.pt, step_0064.pt, step_0128.pt and last_resume.pt.

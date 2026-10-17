@@ -1,0 +1,134 @@
+{
+  "variants": [
+    "v"
+  ],
+  "epochs": 2,
+  "seed": 20260927,
+  "learning_rate": 2e-05,
+  "min_learning_rate": 1e-06,
+  "checkpoint_every": 500,
+  "segment_seconds": 5400,
+  "validation_records": 141711,
+  "selection_nfe": 50,
+  "evaluation_nfe": [
+    50,
+    20,
+    10,
+    5
+  ],
+  "full_train_records": 2608772,
+  "batch_size": 256,
+  "gradient_accumulation": 1,
+  "ema_decay": 0.9998000100000001,
+  "warmup_records": 320000,
+  "ema_start_records": 320000,
+  "architecture": {
+    "image_size": 224,
+    "patch_size": 16,
+    "hidden_dim": 896,
+    "heads": 14,
+    "encoder_depth": 4,
+    "depth": 6,
+    "ffn_hidden": 2672,
+    "gradient_checkpointing": true
+  },
+  "forward_process": {
+    "v": "VP: xt=alpha*x0+sigma*epsilon; 1000 linear betas1e-6..0.01; uniform discrete t; target alpha*epsilon-sigma*x0"
+  },
+  "sampler": {
+    "v": "Deterministic DDIM, exact NFE; x0=alpha*xt-sigma*v; x0 clamp[-1,1], consistent epsilon recomputation"
+  },
+  "loss": "Valid LST mask per-record v-target MSE, equal average across records; no REPA or SNR weighting.",
+  "spatial_protocol": "efdiff-hlc-fixed-center224-no-flip-20260930-v1",
+  "run_id": "hlc-raw-mmdit-v-b256-fullval-epoch2-20261014-v2",
+  "budget_confirmed": true,
+  "launch_status": "authorized_resume",
+  "budget_basis": "User requested batch256; retain completed first epoch batch128 and resume full validation before epoch2 batch256.",
+  "initialization": "Resume model, optimizer, EMA and RNG from epoch1 batch128 checkpoint; no reinitialization",
+  "metadata_path": "output/efdiff_hlc_dit_timegeo_20261004/metadata",
+  "normalization_path": "output/efdiff_hlc_dit_timegeo_20261004/normalization.json",
+  "test_used": false,
+  "updates_per_model": 30573,
+  "record_presentations_per_model": 5217544,
+  "tail_records_per_epoch": [
+    4,
+    132
+  ],
+  "gpu_constraint": "One A100-40GB, maximum one GPU job at a time, no H200.",
+  "conditioning": {
+    "month": "target LST month; sin/cos harmonics 1,2,3",
+    "geography": "actual crop center latitude/longitude -> sphere xyz and sin/cos at pi*[1,2,4]",
+    "diffusion_time": "256-dimensional Fourier(log-SNR) from VP alpha",
+    "fusion": "concat 256+6+21 -> one MLP(283,896,896)",
+    "injection": "each generation block: independent adaLN projections for both streams; final temperature adaLN; no metadata injected in condition encoder"
+  },
+  "app": "efdiff-hlc-raw-mmdit-b256-v-a100-20261014",
+  "repa": false,
+  "corrected_hls": false,
+  "hls_input_protocol": "hlc-raw-hls-fullmask-mmdit-20261014-v1",
+  "hls_input": {
+    "hls": "B,6,224,224 unclipped reflectance; no Prithvi features or weights",
+    "hls_valid": "B,1,224,224 boolean full-resolution mask, NOT patch averages or attention mask",
+    "coarse": "B,1,224,224 existing normalized upsampled coarse LST",
+    "noisy_target": "B,1,224,224 noisy normalized fine-minus-coarse LST residual",
+    "condition_projection": "concat normalized six HLS bands, coarse LST, full pixel mask -> Conv2d(8,896,kernel=16,stride=16)",
+    "temperature_projection": "Conv2d(1,896,kernel=16,stride=16)",
+    "hls_scaling": {
+      "mean_dn": [
+        1087,
+        1342,
+        1433,
+        2734,
+        1958,
+        1363
+      ],
+      "std_dn": [
+        2248,
+        2179,
+        2178,
+        1850,
+        1242,
+        1049
+      ],
+      "formula": "(reflectance*10000-mean_dn)/std_dn",
+      "invalid_fill": 0.0001,
+      "reason": "preserve previous input affine scaling; no pretrained encoder"
+    }
+  },
+  "parameter_alignment": {
+    "reference": "TimeGeoDiT from dit_timegeo_v_plan.json; excludes frozen Prithvi",
+    "reference_trainable": 216994944,
+    "new_trainable": 217195328,
+    "difference": 200384,
+    "difference_percent": 0.0923450087390032,
+    "tolerance_percent": 0.1,
+    "exact_match": false,
+    "flops_or_training_compute_matched": false,
+    "new_frozen_parameters": 0,
+    "components": {
+      "condition_embed": 1835904,
+      "temperature_embed": 230272,
+      "encoder": 41603584,
+      "metadata": 1058176,
+      "blocks": 170630336,
+      "final_norm": 0,
+      "final_modulation": 1607424,
+      "head": 229632
+    }
+  },
+  "checkpoint_policy": "retain epoch_1.pt, epoch_2.pt, latest.pt, last.pt, best.pt, best_ema.pt, final_ema.pt; ties keep earlier epoch",
+  "validation_seed": 20260927,
+  "validation_views": 1,
+  "selection_metric": "full-val pixel-weighted RMSE Celsius at 50 NFE",
+  "gradient_auxiliary": false,
+  "smoke": {
+    "records": 388,
+    "updates": 4,
+    "tail": 4,
+    "val_records": 132,
+    "nfe": 5,
+    "forced_resume_after_updates": 2
+  },
+  "ema_reference_batch_size": 128,
+  "parent_run": "hlc-raw-mmdit-v-b128-fullval-epoch2-20261014-v1"
+}

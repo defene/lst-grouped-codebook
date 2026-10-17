@@ -1,0 +1,155 @@
+{
+  "name": "efdiff_epsilon_hlc_width32_single_12h_20260923",
+  "phase": "train",
+  "seed": 20260915,
+  "upstream_commit": "773f67375991432d790c1e99076597524dbe0f95",
+  "variant": "epsilon",
+  "data": {
+    "name": "HLS-LST-CrossSensor",
+    "reader_id": "lstsr_tb",
+    "prepared": "processed_data/v1",
+    "sample_unit": "valid fine-LST patch-month",
+    "train_samples": 2608772,
+    "val_samples": 512,
+    "test_samples": 0,
+    "hls_pairing": "record_id many-months-to-one-HLS",
+    "real_modis_input": false,
+    "crop": 224,
+    "scale": 32,
+    "degradation": "Gaussian(sigma=32/pi,nearest)+area32+bicubic",
+    "missing_fill": "valid full-patch mean, mask retained for loss and metrics",
+    "augmentation": "random crop and independent horizontal/vertical flip",
+    "order": "seeded bundle permutation then valid-month permutation; no temporal model",
+    "validation_membership": "pilot_membership/val.npy"
+  },
+  "normalization": {
+    "fit_split": "train",
+    "fit_samples": 2608772,
+    "source": "normalization.json",
+    "weighting": "equal patch-months, equal valid pixels per patch-month",
+    "clip_sigma": 3,
+    "hls": "[0,1] reflectance then frozen upstream Prithvi constants"
+  },
+  "model": {
+    "which_model_G": "sr3_prithvi",
+    "unet": {
+      "in_channel": 2,
+      "out_channel": 1,
+      "inner_channel": 32,
+      "norm_groups": 16,
+      "channel_multiplier": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "attn_res": [
+        14
+      ],
+      "cross_attn_res": [
+        14
+      ],
+      "res_blocks": 2,
+      "dropout": 0
+    },
+    "prithvi": {
+      "model_name": "ibm-nasa-geospatial/Prithvi-EO-2.0-300M",
+      "embed_dim": 1024,
+      "num_frames": 1,
+      "freeze": true,
+      "input_is_reflectance": true,
+      "cross_attn_heads": 8
+    },
+    "beta_schedule": {
+      "train": {
+        "schedule": "linear",
+        "n_timestep": 1000,
+        "linear_start": 1e-06,
+        "linear_end": 0.01
+      },
+      "test": {
+        "schedule": "linear",
+        "n_timestep": 1000,
+        "linear_start": 1e-06,
+        "linear_end": 0.01
+      }
+    },
+    "diffusion": {
+      "image_size": 224,
+      "channels": 1,
+      "conditional": true
+    }
+  },
+  "train": {
+    "epochs": null,
+    "effective_batch": 64,
+    "micro_batch": 64,
+    "workers": 16,
+    "updates_per_epoch": 40763,
+    "tail_records": 0,
+    "total_updates": 12800,
+    "record_presentations": 819200,
+    "drop_last": false,
+    "pad_tail": false,
+    "flush_at_epoch_end": true,
+    "optimizer": {
+      "name": "Adam",
+      "lr": 2e-05
+    },
+    "warmup_steps": 5000,
+    "lr_min": 1e-06,
+    "precision": "bf16",
+    "clip_grad_norm": 1.0,
+    "ema_decay": 0.9999,
+    "ema_start_step": 5000,
+    "ema_before_start": "copy_current_weights",
+    "checkpoint_every": 500,
+    "log_every": 50,
+    "segment_seconds": 5400,
+    "gradient_accumulation": 1,
+    "world_size": 1,
+    "prefetch_factor": 4,
+    "stage_records": [
+      524288,
+      819200
+    ],
+    "lr_schedule_reference_updates": 40763
+  },
+  "evaluation": {
+    "monitor_split": "val",
+    "monitor_samples": 512,
+    "monitor_selection": "same fixed 512 pilot validation members",
+    "monitor_every": "matched stage",
+    "primary_checkpoint": "fixed stage EMA",
+    "final_splits": [
+      "val"
+    ],
+    "final_full_membership": false,
+    "chunk_samples": 32768,
+    "sampling_steps": 50,
+    "sampler": "DDIM_eta0",
+    "metrics": [
+      "valid_pixel_RMSE_C",
+      "valid_pixel_MAE_C",
+      "bicubic_RMSE_C"
+    ],
+    "no_test_selection": true,
+    "prediction_examples": 16
+  },
+  "smoke": {
+    "records": 131,
+    "validation_records": 4,
+    "fit_records": 32,
+    "epochs": 1,
+    "checkpoint_resume_after_updates": 2
+  },
+  "runtime": {
+    "gpu": "H200",
+    "output_volume": "efdiff-hlc-synthetic-runs",
+    "environment": "main",
+    "deadline_utc": "2026-09-24T07:12:00+00:00"
+  },
+  "scope": "deadline-limited matched-stage comparison; separate from formal five-epoch budget",
+  "initialization": "fresh denoiser + frozen pretrained Prithvi; no pilot weights"
+}

@@ -1,0 +1,43 @@
+{
+  "framework_sources": {
+    "__init__.py": "a7697a0a185de07885b2d35d243042f789e83995afd7429aac73ec8105588c51",
+    "__main__.py": "61db67e207e246cefb505e7763c21e4915add789147ed321ecb08d4480f2f99c",
+    "config.py": "48c4dcac95d20843cd24264a42726d9ce920a9ace081ef7289b49f9f1374eee4",
+    "data.py": "3d218f8a9ea47fad2acbd836ac19d87cd84043bf0f72362cae1e88bcf0a49c88",
+    "engine.py": "a28c4c8fd3fa23c3f8a88d612e02e577f2254b1641628b861b94faf6f908086c",
+    "losses.py": "5aca36377d91b53dc30767764b1336cee7f9b3fc333f16bdf4b5ede9c8677ee8",
+    "mask_bank.py": "9530852f1f717da4955d8485453d062287237143c89cdd568e527881664d63f3",
+    "metrics.py": "f21153cc667438c51f957eab55cd1a4a989322abcf9daec17ad88c63e6147fb5",
+    "models.py": "90cb831d3eea8c7a88367231cc087e1acc0698e449f0c45ee80956c6eb7b5e9c",
+    "noise.py": "569b345bb25ae2011eedb8df97a56fe88315b10e9f440c10641c2adce1748124",
+    "ops.py": "a03280532e05c3605d46b6f7630b3265e783029cd2deecd56e2a03b4cf3e2414",
+    "prithvi_continuous.py": "ffd8dd8a7514d7a81efa9b5fb420cbac34d2ea257b38228c19dca58a641d7820",
+    "prithvi_reference.py": "9cee9a8cb17c3859d6365a7e58f723e0f4c08e3e29aa4b8e6523506db70321da",
+    "prithvi_spatial.py": "350c4504457e74b2f1c450cc770813566dad85e2598535ca555a37a8046cf900",
+    "tokens.py": "af09978537afe15b5e517d57c3fe16913085252a039aec3bfa3052694fa0be1a",
+    "var_basic.py": "39568ea83892140fafc2cedd7c6196bb5c0584fcc2bf90938b045c806508369d",
+    "var_codec.py": "ba5b7b0c8288753c6e485f6468dedb7ade167f155e623ad8d3793f73e5459b08",
+    "var_dist.py": "0005fdda9cec26ae0035fe5bfd4061409d9eed1465b6a2f75b8c02a4ff9288b4",
+    "var_ops.py": "472c70f7f77f73548529a9ec9101ba697404fcca5a8fee2eab799db2618b73ba",
+    "var_quant.py": "61881dd71ef12935e915e0e066b0adcf199afda8d0c3b8565af34d4b9605b0c3",
+    "var_reference.py": "08d4087b3477b1cf39da049ea1fcf1ece91d78eeae90a1893437c97ebbcad04b"
+  },
+  "tests": "35 passed; CPU equivalence plus finite actual-model GPU training and concurrent memory benchmarks",
+  "var_revision": "78b95394fc5896192e3a003e4b295f8ea743c48f",
+  "prithvi_revision": "9eb1b1102806593963daa333bcc491b1c6f8562f",
+  "selected_parallel_limits": {
+    "conv": 1,
+    "prithvi": 1
+  },
+  "benchmark_files": {
+    "bench\\solo_conv8.json": "4dece2cf302875d18b77e6da0ecdb523bde9e723739d29f75d3b155be4fae761",
+    "bench\\solo_prithvi8.json": "2b045fb6b5c0bcadc533bcd691d9f2f8ec4355d3e8fb2cb79a37e97b02969b71",
+    "bench\\pair\\0_conv.json": "af19abd03fcf6e335698c77d49677064ebbdcf57040f86285022fcbfc1ca5d79",
+    "bench\\pair\\1_prithvi.json": "21dabf42f78ed4fca6e560d7f1943396ee427253f14cb064c0ac80b1d0cc9dc0",
+    "bench\\pair\\result.json": "fd471b5c3c07bbd562cf00485a1028214a24dfff38bf3f0bd7070eda096afb15",
+    "bench\\triple\\0_conv.json": "dc0a0fb2edd3e07c911ab3b656169624faecd7ae1421bff53fbc78d482d378ff",
+    "bench\\triple\\1_conv.json": "ccd3dd7b90c7ddf687eaee06abf2807508a0eb847169f051a81fe7bd30417856",
+    "bench\\triple\\2_prithvi.json": "619cf5bc06d2e726da80e1f5bf8a116cc733c76e6e6f09183cba73c83c7dafe3",
+    "bench\\triple\\result.json": "58af5df2c04ae1de8a92f4267da38afa022b1e2b31b5e5904ee82ce48ed7c9ac"
+  }
+}

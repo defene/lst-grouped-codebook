@@ -1,0 +1,2580 @@
+{
+  "version": 1,
+  "dataset": "prithvi",
+  "split": "train",
+  "seed": 20260910,
+  "scanned_records": 189,
+  "max_records": 4096,
+  "max_shapes": 256,
+  "source_index_sha256": "51f8a54dac595fad3584acc520e0811fdbba03c4b5e0a80721e17fda4cafee8c",
+  "source_sample_index_sha256": "536ff52a3e65f8789bccc981e2483abb916d58d9adcc86ec26ba3aec27d28dd4",
+  "sha256": "fb3327b6a9aa4f1a521e78749cd5321d98b1a4b9abe2aec0fa973702a2b0d4e1",
+  "shapes": [
+    {
+      "shape_id": "7e66f49781b13c3e8af253aa7a705cd1b96823e1e7a60b20a202f59dd1b70413",
+      "class": "cloud",
+      "source_key": "train/T48QWH/obs_0004/r07_c11",
+      "record_id": 185128,
+      "tile": "T48QWH",
+      "split": "train",
+      "source_record_sha256": "ab0baec4dfed7fb0a8332b61d70f24cd63c9859d829570f7d03de565b7ba3ee6",
+      "pixels": 528
+    },
+    {
+      "shape_id": "95a69dd5574589a226d61412d9c04f7054aaec9984879781b0372a6d83821f8a",
+      "class": "shadow",
+      "source_key": "train/T48QWH/obs_0004/r07_c11",
+      "record_id": 185128,
+      "tile": "T48QWH",
+      "split": "train",
+      "source_record_sha256": "ab0baec4dfed7fb0a8332b61d70f24cd63c9859d829570f7d03de565b7ba3ee6",
+      "pixels": 94
+    },
+    {
+      "shape_id": "7af24910f438dae9e68648ac3fa6a0645142fc769bd14e9d7742a63909342259",
+      "class": "adjacency",
+      "source_key": "train/T48QWH/obs_0004/r07_c11",
+      "record_id": 185128,
+      "tile": "T48QWH",
+      "split": "train",
+      "source_record_sha256": "ab0baec4dfed7fb0a8332b61d70f24cd63c9859d829570f7d03de565b7ba3ee6",
+      "pixels": 763
+    },
+    {
+      "shape_id": "79febf4b3396beb977653fc1f244be620ed56799c702f8d2b4b6e410e4784620",
+      "class": "cloud",
+      "source_key": "train/T12VUR/obs_0042/r05_c08",
+      "record_id": 15765,
+      "tile": "T12VUR",
+      "split": "train",
+      "source_record_sha256": "7fa57d1059d6c89f52f55c5b8d51f1abd4ae65f422b2412562fd557770257b8b",
+      "pixels": 89
+    },
+    {
+      "shape_id": "2c5f593f3ae163e06288ecacb7eb6b3c54b291dfc737d22e4871ec66c3d9852e",
+      "class": "cloud",
+      "source_key": "train/T12VUR/obs_0042/r05_c08",
+      "record_id": 15765,
+      "tile": "T12VUR",
+      "split": "train",
+      "source_record_sha256": "7fa57d1059d6c89f52f55c5b8d51f1abd4ae65f422b2412562fd557770257b8b",
+      "pixels": 80
+    },
+    {
+      "shape_id": "ab89b4b3d44ae42edb3226e5c7b685bf89fc4c69a4c1bae4b380d1aa3c11f29d",
+      "class": "adjacency",
+      "source_key": "train/T12VUR/obs_0042/r05_c08",
+      "record_id": 15765,
+      "tile": "T12VUR",
+      "split": "train",
+      "source_record_sha256": "7fa57d1059d6c89f52f55c5b8d51f1abd4ae65f422b2412562fd557770257b8b",
+      "pixels": 324
+    },
+    {
+      "shape_id": "7c11fcd23004de7991328222fb6f1a52e0a3b2cfaf25d843956b2d3d3dad248c",
+      "class": "adjacency",
+      "source_key": "train/T12VUR/obs_0042/r05_c08",
+      "record_id": 15765,
+      "tile": "T12VUR",
+      "split": "train",
+      "source_record_sha256": "7fa57d1059d6c89f52f55c5b8d51f1abd4ae65f422b2412562fd557770257b8b",
+      "pixels": 312
+    },
+    {
+      "shape_id": "fda1973aec9414d6962cc81de0312e3931dc5543abf349c7dcd7f9d636014aff",
+      "class": "adjacency",
+      "source_key": "train/T22LEN/obs_0008/r03_c01",
+      "record_id": 68718,
+      "tile": "T22LEN",
+      "split": "train",
+      "source_record_sha256": "de630d5a4af1de2ae6709046a5f9e860d2671c7959be556d870ec06579c7344c",
+      "pixels": 117
+    },
+    {
+      "shape_id": "8a6f578486279eac4dad1a06578400d1de3d93e562b723cdf2a1001a34fd26c3",
+      "class": "cloud",
+      "source_key": "train/T10UCB/obs_0025/r06_c01",
+      "record_id": 9483,
+      "tile": "T10UCB",
+      "split": "train",
+      "source_record_sha256": "f9f323cb964db315ade23911c26185e5d46f7c066bf315c4db4aa723b2eb92dd",
+      "pixels": 271
+    },
+    {
+      "shape_id": "73d1413e0602d2baad5e76fb3ebc61edffbaf44fa681a9c3e41f8c2186c5f4e7",
+      "class": "cloud",
+      "source_key": "train/T10UCB/obs_0025/r06_c01",
+      "record_id": 9483,
+      "tile": "T10UCB",
+      "split": "train",
+      "source_record_sha256": "f9f323cb964db315ade23911c26185e5d46f7c066bf315c4db4aa723b2eb92dd",
+      "pixels": 166
+    },
+    {
+      "shape_id": "daf91262396f9a1a405747202d48bf950f3619f2a9a0779936ee099c2064dbfc",
+      "class": "shadow",
+      "source_key": "train/T10UCB/obs_0025/r06_c01",
+      "record_id": 9483,
+      "tile": "T10UCB",
+      "split": "train",
+      "source_record_sha256": "f9f323cb964db315ade23911c26185e5d46f7c066bf315c4db4aa723b2eb92dd",
+      "pixels": 458
+    },
+    {
+      "shape_id": "6becc015f9f62d93204f0fd8c9944a372337f731fd803d7e3209bdc03c77f69a",
+      "class": "shadow",
+      "source_key": "train/T10UCB/obs_0025/r06_c01",
+      "record_id": 9483,
+      "tile": "T10UCB",
+      "split": "train",
+      "source_record_sha256": "f9f323cb964db315ade23911c26185e5d46f7c066bf315c4db4aa723b2eb92dd",
+      "pixels": 201
+    },
+    {
+      "shape_id": "262459652ca3b9870656afbbfb01f4b9b3abc0e52e901d6816a4c7056c05273b",
+      "class": "adjacency",
+      "source_key": "train/T10UCB/obs_0025/r06_c01",
+      "record_id": 9483,
+      "tile": "T10UCB",
+      "split": "train",
+      "source_record_sha256": "f9f323cb964db315ade23911c26185e5d46f7c066bf315c4db4aa723b2eb92dd",
+      "pixels": 1288
+    },
+    {
+      "shape_id": "ae709ac89beba891af41369fbc6e479acddef7a9ec0faf882bb3c7477b0523e0",
+      "class": "adjacency",
+      "source_key": "train/T10UCB/obs_0025/r06_c01",
+      "record_id": 9483,
+      "tile": "T10UCB",
+      "split": "train",
+      "source_record_sha256": "f9f323cb964db315ade23911c26185e5d46f7c066bf315c4db4aa723b2eb92dd",
+      "pixels": 579
+    },
+    {
+      "shape_id": "5db7ba35b48503eb9a45e4145a5feee96cf4012689901188d03dcbeda8aa5bcd",
+      "class": "cloud",
+      "source_key": "train/T30SWD/obs_0001/r02_c11",
+      "record_id": 83151,
+      "tile": "T30SWD",
+      "split": "train",
+      "source_record_sha256": "ed517032b59ef3ee835487b09798f31a9c842dd63960c6aabd2f4ba0aa5607ec",
+      "pixels": 160
+    },
+    {
+      "shape_id": "18e1ad93bd970e5fd440cf3e8616831fb1ce66a4c1c7f456162c86eb5473d92d",
+      "class": "cloud",
+      "source_key": "train/T30SWD/obs_0001/r02_c11",
+      "record_id": 83151,
+      "tile": "T30SWD",
+      "split": "train",
+      "source_record_sha256": "ed517032b59ef3ee835487b09798f31a9c842dd63960c6aabd2f4ba0aa5607ec",
+      "pixels": 54
+    },
+    {
+      "shape_id": "4de31049bf30c2bc9430a0f0d5788b941f604f0a30a2128efad51ce5effd614d",
+      "class": "shadow",
+      "source_key": "train/T30SWD/obs_0001/r02_c11",
+      "record_id": 83151,
+      "tile": "T30SWD",
+      "split": "train",
+      "source_record_sha256": "ed517032b59ef3ee835487b09798f31a9c842dd63960c6aabd2f4ba0aa5607ec",
+      "pixels": 154
+    },
+    {
+      "shape_id": "680ea2c72ec1888460c65f32edaac389535d5f1fe15946ade692b20dc6dcc75b",
+      "class": "shadow",
+      "source_key": "train/T30SWD/obs_0001/r02_c11",
+      "record_id": 83151,
+      "tile": "T30SWD",
+      "split": "train",
+      "source_record_sha256": "ed517032b59ef3ee835487b09798f31a9c842dd63960c6aabd2f4ba0aa5607ec",
+      "pixels": 80
+    },
+    {
+      "shape_id": "af1b575667644a280be16e6c9b3eed531ef2e1ed5cab7084ff775efb01f2724f",
+      "class": "adjacency",
+      "source_key": "train/T30SWD/obs_0001/r02_c11",
+      "record_id": 83151,
+      "tile": "T30SWD",
+      "split": "train",
+      "source_record_sha256": "ed517032b59ef3ee835487b09798f31a9c842dd63960c6aabd2f4ba0aa5607ec",
+      "pixels": 682
+    },
+    {
+      "shape_id": "412ad5973a952b8806818bc2c61644fd997dd27517034eb38f6e03ffa55c57bd",
+      "class": "adjacency",
+      "source_key": "train/T30SWD/obs_0001/r02_c11",
+      "record_id": 83151,
+      "tile": "T30SWD",
+      "split": "train",
+      "source_record_sha256": "ed517032b59ef3ee835487b09798f31a9c842dd63960c6aabd2f4ba0aa5607ec",
+      "pixels": 432
+    },
+    {
+      "shape_id": "961e3f04b4c18e99912f1de2f227a5e6f8a973e7c53716ff273baaa11a73f7d0",
+      "class": "cloud",
+      "source_key": "train/T36MVE/obs_0007/r06_c07",
+      "record_id": 131385,
+      "tile": "T36MVE",
+      "split": "train",
+      "source_record_sha256": "cb3e1bc1185c013b8426deae21ae9852213af5badbdcb9c511be1abbc2f58726",
+      "pixels": 278
+    },
+    {
+      "shape_id": "5ebee0647876d959d9044848af479db1ba507f61c35460573ee000fa83b0b4e8",
+      "class": "cloud",
+      "source_key": "train/T36MVE/obs_0007/r06_c07",
+      "record_id": 131385,
+      "tile": "T36MVE",
+      "split": "train",
+      "source_record_sha256": "cb3e1bc1185c013b8426deae21ae9852213af5badbdcb9c511be1abbc2f58726",
+      "pixels": 252
+    },
+    {
+      "shape_id": "346123d5da0cd6cca4658c7832ea828308b58c82ebee8ba4bc98d881e4a863a9",
+      "class": "adjacency",
+      "source_key": "train/T36MVE/obs_0007/r06_c07",
+      "record_id": 131385,
+      "tile": "T36MVE",
+      "split": "train",
+      "source_record_sha256": "cb3e1bc1185c013b8426deae21ae9852213af5badbdcb9c511be1abbc2f58726",
+      "pixels": 598
+    },
+    {
+      "shape_id": "ae664f15acb01d4e2522d1ba168437f2ad4fb54b5d32663032203a487899d96c",
+      "class": "adjacency",
+      "source_key": "train/T36MVE/obs_0007/r06_c07",
+      "record_id": 131385,
+      "tile": "T36MVE",
+      "split": "train",
+      "source_record_sha256": "cb3e1bc1185c013b8426deae21ae9852213af5badbdcb9c511be1abbc2f58726",
+      "pixels": 504
+    },
+    {
+      "shape_id": "a863c49f902822ab7bcc5e02b2e2952315a5448f279393f8aafe7aac1c17e4cc",
+      "class": "cloud",
+      "source_key": "train/T20LKR/obs_0037/r09_c07",
+      "record_id": 58849,
+      "tile": "T20LKR",
+      "split": "train",
+      "source_record_sha256": "4f40fbe5d20657dbf3feb85fa5bc67fd1552cce4bfff000a2e32f3da0ec3ae23",
+      "pixels": 266
+    },
+    {
+      "shape_id": "c0199b4ea5ecf59747c53e0f15fed4573e079feb2decd9dfa8d9825a9e47e3b4",
+      "class": "shadow",
+      "source_key": "train/T20LKR/obs_0037/r09_c07",
+      "record_id": 58849,
+      "tile": "T20LKR",
+      "split": "train",
+      "source_record_sha256": "4f40fbe5d20657dbf3feb85fa5bc67fd1552cce4bfff000a2e32f3da0ec3ae23",
+      "pixels": 243
+    },
+    {
+      "shape_id": "c62c05e2692ea3ac3e934bdc31c1411584c4d41945af49aa67be46eee2462137",
+      "class": "shadow",
+      "source_key": "train/T20LKR/obs_0037/r09_c07",
+      "record_id": 58849,
+      "tile": "T20LKR",
+      "split": "train",
+      "source_record_sha256": "4f40fbe5d20657dbf3feb85fa5bc67fd1552cce4bfff000a2e32f3da0ec3ae23",
+      "pixels": 125
+    },
+    {
+      "shape_id": "a9637460145f93f48b11e91d42c9132de60dce6289d56daea8800c2b87677e46",
+      "class": "adjacency",
+      "source_key": "train/T20LKR/obs_0037/r09_c07",
+      "record_id": 58849,
+      "tile": "T20LKR",
+      "split": "train",
+      "source_record_sha256": "4f40fbe5d20657dbf3feb85fa5bc67fd1552cce4bfff000a2e32f3da0ec3ae23",
+      "pixels": 719
+    },
+    {
+      "shape_id": "19706f73b3ea437610fbfbb5e335cb54cddea285457603bbdbb8e9c7f78dc0c7",
+      "class": "adjacency",
+      "source_key": "train/T20LKR/obs_0037/r09_c07",
+      "record_id": 58849,
+      "tile": "T20LKR",
+      "split": "train",
+      "source_record_sha256": "4f40fbe5d20657dbf3feb85fa5bc67fd1552cce4bfff000a2e32f3da0ec3ae23",
+      "pixels": 605
+    },
+    {
+      "shape_id": "1190104607cdde4ebfed9ede79c0591189f50039e418021f77148fae741b8477",
+      "class": "cloud",
+      "source_key": "train/T30SYH/obs_0041/r06_c07",
+      "record_id": 83847,
+      "tile": "T30SYH",
+      "split": "train",
+      "source_record_sha256": "f952478e39c3b02d709f4088b999de150aca3f83a971ee62881f1a49e01aee14",
+      "pixels": 186
+    },
+    {
+      "shape_id": "13402afc92fa5f1d637f31cbbe6523a1a0041beebe851a3feafd0b00160c6f22",
+      "class": "adjacency",
+      "source_key": "train/T30SYH/obs_0041/r06_c07",
+      "record_id": 83847,
+      "tile": "T30SYH",
+      "split": "train",
+      "source_record_sha256": "f952478e39c3b02d709f4088b999de150aca3f83a971ee62881f1a49e01aee14",
+      "pixels": 444
+    },
+    {
+      "shape_id": "8fbcb79f1a70176c9f9825a616b7d9ce05aefdbc7eb6792a422718cd1dc1b9cd",
+      "class": "cloud",
+      "source_key": "train/T47MRP/obs_0003/r01_c07",
+      "record_id": 178498,
+      "tile": "T47MRP",
+      "split": "train",
+      "source_record_sha256": "7b5b6f72e9713f40fe84ab74df43d901631d0af9cc12ce2375a0266c35bbe011",
+      "pixels": 489
+    },
+    {
+      "shape_id": "1b0dea4137fe433aaa4d4e3e71499c7fd178d1d481b42b6a070c0743571a9706",
+      "class": "shadow",
+      "source_key": "train/T47MRP/obs_0003/r01_c07",
+      "record_id": 178498,
+      "tile": "T47MRP",
+      "split": "train",
+      "source_record_sha256": "7b5b6f72e9713f40fe84ab74df43d901631d0af9cc12ce2375a0266c35bbe011",
+      "pixels": 258
+    },
+    {
+      "shape_id": "2feba148d086ad9dbcc56f8bdac1c457a737940c9892c0393583fc3ff2345826",
+      "class": "adjacency",
+      "source_key": "train/T47MRP/obs_0003/r01_c07",
+      "record_id": 178498,
+      "tile": "T47MRP",
+      "split": "train",
+      "source_record_sha256": "7b5b6f72e9713f40fe84ab74df43d901631d0af9cc12ce2375a0266c35bbe011",
+      "pixels": 695
+    },
+    {
+      "shape_id": "95402053750e5a40b06caeaa23b5b28e770a65071b04dd4321354d134db9940d",
+      "class": "adjacency",
+      "source_key": "train/T47MRP/obs_0003/r01_c07",
+      "record_id": 178498,
+      "tile": "T47MRP",
+      "split": "train",
+      "source_record_sha256": "7b5b6f72e9713f40fe84ab74df43d901631d0af9cc12ce2375a0266c35bbe011",
+      "pixels": 487
+    },
+    {
+      "shape_id": "da7e21c6987b3b3f19757fa9265cde6eb6e39ee075ca2ee99d710197651eacc6",
+      "class": "cloud",
+      "source_key": "train/T49SGR/obs_0046/r06_c01",
+      "record_id": 193432,
+      "tile": "T49SGR",
+      "split": "train",
+      "source_record_sha256": "a17a1a5f77887b8023cc5046fd118dbd79d025821bd80c84b65d521da063008c",
+      "pixels": 178
+    },
+    {
+      "shape_id": "ed73ba208bd3c7541acad9ffc5755ea0905c4ed682c0621d37ff815144960689",
+      "class": "cloud",
+      "source_key": "train/T49SGR/obs_0046/r06_c01",
+      "record_id": 193432,
+      "tile": "T49SGR",
+      "split": "train",
+      "source_record_sha256": "a17a1a5f77887b8023cc5046fd118dbd79d025821bd80c84b65d521da063008c",
+      "pixels": 81
+    },
+    {
+      "shape_id": "4494f9b217b12c9a1b916df908754d672bcabefa0e62819b7458b6ffa02f90c9",
+      "class": "shadow",
+      "source_key": "train/T49SGR/obs_0046/r06_c01",
+      "record_id": 193432,
+      "tile": "T49SGR",
+      "split": "train",
+      "source_record_sha256": "a17a1a5f77887b8023cc5046fd118dbd79d025821bd80c84b65d521da063008c",
+      "pixels": 183
+    },
+    {
+      "shape_id": "6279bd71f6e3d2d34ccf3ab88517dffb23ffb61fdecd9a160321ce7e503c5b96",
+      "class": "shadow",
+      "source_key": "train/T49SGR/obs_0046/r06_c01",
+      "record_id": 193432,
+      "tile": "T49SGR",
+      "split": "train",
+      "source_record_sha256": "a17a1a5f77887b8023cc5046fd118dbd79d025821bd80c84b65d521da063008c",
+      "pixels": 72
+    },
+    {
+      "shape_id": "cb31c9149a1848cff05de8c7a457979ccba9c5ba4e1afb87ca55eb5372c51dc5",
+      "class": "adjacency",
+      "source_key": "train/T49SGR/obs_0046/r06_c01",
+      "record_id": 193432,
+      "tile": "T49SGR",
+      "split": "train",
+      "source_record_sha256": "a17a1a5f77887b8023cc5046fd118dbd79d025821bd80c84b65d521da063008c",
+      "pixels": 856
+    },
+    {
+      "shape_id": "cbede712bf2ea889fdd42740b54359d6672be05153cb9afc2ab5da344d6bcbe2",
+      "class": "adjacency",
+      "source_key": "train/T49SGR/obs_0046/r06_c01",
+      "record_id": 193432,
+      "tile": "T49SGR",
+      "split": "train",
+      "source_record_sha256": "a17a1a5f77887b8023cc5046fd118dbd79d025821bd80c84b65d521da063008c",
+      "pixels": 312
+    },
+    {
+      "shape_id": "f76849137262eab751ff65e86edff051d3093fc307c0ac4fa3df40d6ceb4d53e",
+      "class": "cloud",
+      "source_key": "train/T14SMA/obs_0040/r01_c07",
+      "record_id": 22627,
+      "tile": "T14SMA",
+      "split": "train",
+      "source_record_sha256": "bc5516f18d77a5dde5b2fa4a3c505484c56f4e302364675c4396833f958b64c8",
+      "pixels": 100
+    },
+    {
+      "shape_id": "ac050e3af89c3778011016c6062423136b0a6f9a7fb7b28bae77cfc518b2ba7c",
+      "class": "adjacency",
+      "source_key": "train/T14SMA/obs_0040/r01_c07",
+      "record_id": 22627,
+      "tile": "T14SMA",
+      "split": "train",
+      "source_record_sha256": "bc5516f18d77a5dde5b2fa4a3c505484c56f4e302364675c4396833f958b64c8",
+      "pixels": 336
+    },
+    {
+      "shape_id": "698d218eff43a535ecf1ba59d1643492cb70b3679abf58548ccc72364dd82630",
+      "class": "adjacency",
+      "source_key": "train/T14SMA/obs_0040/r01_c07",
+      "record_id": 22627,
+      "tile": "T14SMA",
+      "split": "train",
+      "source_record_sha256": "bc5516f18d77a5dde5b2fa4a3c505484c56f4e302364675c4396833f958b64c8",
+      "pixels": 100
+    },
+    {
+      "shape_id": "676a768f9a93219132ce824cb7e012bdbcb282e09f1b82c7f4d2008d422c0d0a",
+      "class": "cloud",
+      "source_key": "train/T43REP/obs_0009/r04_c12",
+      "record_id": 164293,
+      "tile": "T43REP",
+      "split": "train",
+      "source_record_sha256": "0d91a8a9e5d3b837a7c28f7ebd32ec14e061871f65a779308c79bf8ec1ec8a3b",
+      "pixels": 369
+    },
+    {
+      "shape_id": "cc1d7c83bd20e42a1d97de6d0537d9abf0ccb712a805e4df20285b8940bde926",
+      "class": "cloud",
+      "source_key": "train/T43REP/obs_0009/r04_c12",
+      "record_id": 164293,
+      "tile": "T43REP",
+      "split": "train",
+      "source_record_sha256": "0d91a8a9e5d3b837a7c28f7ebd32ec14e061871f65a779308c79bf8ec1ec8a3b",
+      "pixels": 196
+    },
+    {
+      "shape_id": "b0c18daf73e7cf0b56b40ce8d2a56804863da475b489526971e2982da653b260",
+      "class": "shadow",
+      "source_key": "train/T43REP/obs_0009/r04_c12",
+      "record_id": 164293,
+      "tile": "T43REP",
+      "split": "train",
+      "source_record_sha256": "0d91a8a9e5d3b837a7c28f7ebd32ec14e061871f65a779308c79bf8ec1ec8a3b",
+      "pixels": 519
+    },
+    {
+      "shape_id": "50aad7472a44585ff2497e4f6ed0d15d37a1eaadc94d4b19b621ffb672eaa2a0",
+      "class": "shadow",
+      "source_key": "train/T43REP/obs_0009/r04_c12",
+      "record_id": 164293,
+      "tile": "T43REP",
+      "split": "train",
+      "source_record_sha256": "0d91a8a9e5d3b837a7c28f7ebd32ec14e061871f65a779308c79bf8ec1ec8a3b",
+      "pixels": 353
+    },
+    {
+      "shape_id": "b0713a13e2b907729077dc5cf985727e826f741f3ad82b88b3706084adaaa680",
+      "class": "adjacency",
+      "source_key": "train/T43REP/obs_0009/r04_c12",
+      "record_id": 164293,
+      "tile": "T43REP",
+      "split": "train",
+      "source_record_sha256": "0d91a8a9e5d3b837a7c28f7ebd32ec14e061871f65a779308c79bf8ec1ec8a3b",
+      "pixels": 781
+    },
+    {
+      "shape_id": "8e81e3431cb8af36062cf79bd056254a25f0d3d4c1874fb8a043cbbe85a1e496",
+      "class": "adjacency",
+      "source_key": "train/T43REP/obs_0009/r04_c12",
+      "record_id": 164293,
+      "tile": "T43REP",
+      "split": "train",
+      "source_record_sha256": "0d91a8a9e5d3b837a7c28f7ebd32ec14e061871f65a779308c79bf8ec1ec8a3b",
+      "pixels": 581
+    },
+    {
+      "shape_id": "5d23cf654b3201fa32d2e5e34a609623dbe919099b28d09c9e06332aa4f5f3c1",
+      "class": "cloud",
+      "source_key": "train/T17MPS/obs_0000/r03_c03",
+      "record_id": 35779,
+      "tile": "T17MPS",
+      "split": "train",
+      "source_record_sha256": "31b621efe692cbd3b59292e1ea374c9371c453f0e571bb859906bbc807365802",
+      "pixels": 315
+    },
+    {
+      "shape_id": "5aae24ae87203d75f5787c4c956fbfe39e79853bb029f15b14382c287a607c09",
+      "class": "cloud",
+      "source_key": "train/T17MPS/obs_0000/r03_c03",
+      "record_id": 35779,
+      "tile": "T17MPS",
+      "split": "train",
+      "source_record_sha256": "31b621efe692cbd3b59292e1ea374c9371c453f0e571bb859906bbc807365802",
+      "pixels": 207
+    },
+    {
+      "shape_id": "9b25d54b00969b2cfde13e4226fea6c7ea0102615bb6842881da599f14655905",
+      "class": "shadow",
+      "source_key": "train/T17MPS/obs_0000/r03_c03",
+      "record_id": 35779,
+      "tile": "T17MPS",
+      "split": "train",
+      "source_record_sha256": "31b621efe692cbd3b59292e1ea374c9371c453f0e571bb859906bbc807365802",
+      "pixels": 175
+    },
+    {
+      "shape_id": "a9fdd2ae1206d03ecf6b0dbffc69d879991e882ad1e8c910a9a692c2bbe15591",
+      "class": "shadow",
+      "source_key": "train/T17MPS/obs_0000/r03_c03",
+      "record_id": 35779,
+      "tile": "T17MPS",
+      "split": "train",
+      "source_record_sha256": "31b621efe692cbd3b59292e1ea374c9371c453f0e571bb859906bbc807365802",
+      "pixels": 174
+    },
+    {
+      "shape_id": "621e19908660abdae13f9203b468c7e4870d394d3749954ab1aa8fd3207c7f53",
+      "class": "adjacency",
+      "source_key": "train/T17MPS/obs_0000/r03_c03",
+      "record_id": 35779,
+      "tile": "T17MPS",
+      "split": "train",
+      "source_record_sha256": "31b621efe692cbd3b59292e1ea374c9371c453f0e571bb859906bbc807365802",
+      "pixels": 1285
+    },
+    {
+      "shape_id": "6f0b136b7894f1a58f84e0cf1d768ff4a05451ca347b93e06b3a4f1544813705",
+      "class": "cloud",
+      "source_key": "train/T34TEL/obs_0018/r02_c12",
+      "record_id": 116514,
+      "tile": "T34TEL",
+      "split": "train",
+      "source_record_sha256": "98c1983427e43aa88f86920e355a70c4765eef12479d78db1fa46cc3fa81fb02",
+      "pixels": 87
+    },
+    {
+      "shape_id": "60dd85c17f99ee6a0d04f41bdab4c2c1ed4f055a977b4fc28ae18ccc8cc4c964",
+      "class": "adjacency",
+      "source_key": "train/T34TEL/obs_0018/r02_c12",
+      "record_id": 116514,
+      "tile": "T34TEL",
+      "split": "train",
+      "source_record_sha256": "98c1983427e43aa88f86920e355a70c4765eef12479d78db1fa46cc3fa81fb02",
+      "pixels": 324
+    },
+    {
+      "shape_id": "525299f82d97a5a7b4ccaac30a2596c8e8609ed2a0a321968aa837e078e5ac8c",
+      "class": "cloud",
+      "source_key": "train/T18PYT/obs_0007/r00_c05",
+      "record_id": 45034,
+      "tile": "T18PYT",
+      "split": "train",
+      "source_record_sha256": "2db02f223edfef1571e22040c8908fcb9652616b88a075f9c35cb26fb76f9cf8",
+      "pixels": 437
+    },
+    {
+      "shape_id": "8d498e374358d477a6d0cb7714d73297fc5fe47fae2c8aaec7fa5cb9abf07da6",
+      "class": "cloud",
+      "source_key": "train/T18PYT/obs_0007/r00_c05",
+      "record_id": 45034,
+      "tile": "T18PYT",
+      "split": "train",
+      "source_record_sha256": "2db02f223edfef1571e22040c8908fcb9652616b88a075f9c35cb26fb76f9cf8",
+      "pixels": 267
+    },
+    {
+      "shape_id": "aa5e7b1b44280bbe775b6b7ef71eebca3f5a60ac67dd42f5db5ae6d7ad1f2a70",
+      "class": "shadow",
+      "source_key": "train/T18PYT/obs_0007/r00_c05",
+      "record_id": 45034,
+      "tile": "T18PYT",
+      "split": "train",
+      "source_record_sha256": "2db02f223edfef1571e22040c8908fcb9652616b88a075f9c35cb26fb76f9cf8",
+      "pixels": 852
+    },
+    {
+      "shape_id": "c9dde446bfcd6d833de19a061378ab02b36481e803a820da27f3c2fa4aef9a4e",
+      "class": "adjacency",
+      "source_key": "train/T18PYT/obs_0007/r00_c05",
+      "record_id": 45034,
+      "tile": "T18PYT",
+      "split": "train",
+      "source_record_sha256": "2db02f223edfef1571e22040c8908fcb9652616b88a075f9c35cb26fb76f9cf8",
+      "pixels": 858
+    },
+    {
+      "shape_id": "fe26bd08a17ad52358a677496365fcfd345ef31e2cc48c45f314dbb5419f1ad3",
+      "class": "adjacency",
+      "source_key": "train/T18PYT/obs_0007/r00_c05",
+      "record_id": 45034,
+      "tile": "T18PYT",
+      "split": "train",
+      "source_record_sha256": "2db02f223edfef1571e22040c8908fcb9652616b88a075f9c35cb26fb76f9cf8",
+      "pixels": 660
+    },
+    {
+      "shape_id": "5aec58180a89b5a5ef501742a58abe7de97fe87e3ad32d31de3686b57ced696b",
+      "class": "cloud",
+      "source_key": "train/T34HFH/obs_0039/r08_c04",
+      "record_id": 111465,
+      "tile": "T34HFH",
+      "split": "train",
+      "source_record_sha256": "341324a30f1c9345e82dbd3732ad4941703481e55b11c70e731bddb3f31eebd2",
+      "pixels": 185
+    },
+    {
+      "shape_id": "9e3e7a9cc2e5f615c3d513b0df8e2c8dd533e9a7fffe34140e7842b485974479",
+      "class": "cloud",
+      "source_key": "train/T34HFH/obs_0039/r08_c04",
+      "record_id": 111465,
+      "tile": "T34HFH",
+      "split": "train",
+      "source_record_sha256": "341324a30f1c9345e82dbd3732ad4941703481e55b11c70e731bddb3f31eebd2",
+      "pixels": 90
+    },
+    {
+      "shape_id": "e3df7938153533106790699a6e697d3fef3fad4a37afa5414a3e49ac04014d79",
+      "class": "shadow",
+      "source_key": "train/T34HFH/obs_0039/r08_c04",
+      "record_id": 111465,
+      "tile": "T34HFH",
+      "split": "train",
+      "source_record_sha256": "341324a30f1c9345e82dbd3732ad4941703481e55b11c70e731bddb3f31eebd2",
+      "pixels": 104
+    },
+    {
+      "shape_id": "a2da9baa1bc71dea03cd93fd371b2410302a339513537b2544b0297bbdd2d487",
+      "class": "shadow",
+      "source_key": "train/T34HFH/obs_0039/r08_c04",
+      "record_id": 111465,
+      "tile": "T34HFH",
+      "split": "train",
+      "source_record_sha256": "341324a30f1c9345e82dbd3732ad4941703481e55b11c70e731bddb3f31eebd2",
+      "pixels": 96
+    },
+    {
+      "shape_id": "b871502acfeb8cab6ee70fb1287b38310898c717a34bbdac7e24be0cfe7cb39c",
+      "class": "adjacency",
+      "source_key": "train/T34HFH/obs_0039/r08_c04",
+      "record_id": 111465,
+      "tile": "T34HFH",
+      "split": "train",
+      "source_record_sha256": "341324a30f1c9345e82dbd3732ad4941703481e55b11c70e731bddb3f31eebd2",
+      "pixels": 721
+    },
+    {
+      "shape_id": "24f3bd30c3f26ff966749b69c720ebf2e13a7b60891ad772ab1382e36766c8a9",
+      "class": "adjacency",
+      "source_key": "train/T34HFH/obs_0039/r08_c04",
+      "record_id": 111465,
+      "tile": "T34HFH",
+      "split": "train",
+      "source_record_sha256": "341324a30f1c9345e82dbd3732ad4941703481e55b11c70e731bddb3f31eebd2",
+      "pixels": 336
+    },
+    {
+      "shape_id": "4211d7a3980e001a742e4ab253a5a43284a469b5b84594d29b3bbdefabb33c0b",
+      "class": "shadow",
+      "source_key": "train/T42VVP/obs_0004/r07_c06",
+      "record_id": 160644,
+      "tile": "T42VVP",
+      "split": "train",
+      "source_record_sha256": "f1e100486ea466c15c85bc790ce310571716732b453619add94a73f22212c0db",
+      "pixels": 89
+    },
+    {
+      "shape_id": "9fe11e1a69778194b0fe59722187aaefc44ade34ec50dadaed48637d9d0fe066",
+      "class": "shadow",
+      "source_key": "train/T42VVP/obs_0004/r07_c06",
+      "record_id": 160644,
+      "tile": "T42VVP",
+      "split": "train",
+      "source_record_sha256": "f1e100486ea466c15c85bc790ce310571716732b453619add94a73f22212c0db",
+      "pixels": 87
+    },
+    {
+      "shape_id": "2323041197501e865a1a2f499998af16dd34315d1d11fe1d4a51fe78b2511051",
+      "class": "adjacency",
+      "source_key": "train/T42VVP/obs_0004/r07_c06",
+      "record_id": 160644,
+      "tile": "T42VVP",
+      "split": "train",
+      "source_record_sha256": "f1e100486ea466c15c85bc790ce310571716732b453619add94a73f22212c0db",
+      "pixels": 324
+    },
+    {
+      "shape_id": "52060282fdc95428cae5dab35c65de7d833bebe5c7fe1800072bb60f9b9a2480",
+      "class": "adjacency",
+      "source_key": "train/T42VVP/obs_0004/r07_c06",
+      "record_id": 160644,
+      "tile": "T42VVP",
+      "split": "train",
+      "source_record_sha256": "f1e100486ea466c15c85bc790ce310571716732b453619add94a73f22212c0db",
+      "pixels": 324
+    },
+    {
+      "shape_id": "e515bab6e1a5fc35ee97715aecb8c41073048b3279358f900173489adcb45492",
+      "class": "adjacency",
+      "source_key": "train/T35JNG/obs_0017/r06_c07",
+      "record_id": 119715,
+      "tile": "T35JNG",
+      "split": "train",
+      "source_record_sha256": "fceb1e50acafc6a20a9a7a45545959597105f8dd8ccb1a655240bf66bdd7cb83",
+      "pixels": 61
+    },
+    {
+      "shape_id": "e1568ee8faf8eaa8d05a806567fc0d5115000b03e50fca62888f6ffd031638b6",
+      "class": "cloud",
+      "source_key": "train/T55GFP/obs_0045/r04_c01",
+      "record_id": 224421,
+      "tile": "T55GFP",
+      "split": "train",
+      "source_record_sha256": "2c667bad1842832c72a7ef9ec6a05c2e2aa566ff464922ce86316b22246bce7d",
+      "pixels": 2353
+    },
+    {
+      "shape_id": "21e0376ea51ff12e7a62f0b0f3ed4e9835aaf1ee2517bdd4a86bbf5ada5dee92",
+      "class": "cloud",
+      "source_key": "train/T55GFP/obs_0045/r04_c01",
+      "record_id": 224421,
+      "tile": "T55GFP",
+      "split": "train",
+      "source_record_sha256": "2c667bad1842832c72a7ef9ec6a05c2e2aa566ff464922ce86316b22246bce7d",
+      "pixels": 296
+    },
+    {
+      "shape_id": "54cccd7f1d4d2abaa461a2cb07b433b9d9134159aec5e0aa1f46016670d0bf38",
+      "class": "shadow",
+      "source_key": "train/T55GFP/obs_0045/r04_c01",
+      "record_id": 224421,
+      "tile": "T55GFP",
+      "split": "train",
+      "source_record_sha256": "2c667bad1842832c72a7ef9ec6a05c2e2aa566ff464922ce86316b22246bce7d",
+      "pixels": 1703
+    },
+    {
+      "shape_id": "320ccc0db2e2c0400b603a2b2ea0fe17d144c4c8dca8c80981e489f2016138ce",
+      "class": "adjacency",
+      "source_key": "train/T55GFP/obs_0045/r04_c01",
+      "record_id": 224421,
+      "tile": "T55GFP",
+      "split": "train",
+      "source_record_sha256": "2c667bad1842832c72a7ef9ec6a05c2e2aa566ff464922ce86316b22246bce7d",
+      "pixels": 2914
+    },
+    {
+      "shape_id": "b66985ac042b22aafbf7eb0a8d570e09695dc3bc2ffbb6ba9eb25c3a80e66596",
+      "class": "adjacency",
+      "source_key": "train/T55GFP/obs_0045/r04_c01",
+      "record_id": 224421,
+      "tile": "T55GFP",
+      "split": "train",
+      "source_record_sha256": "2c667bad1842832c72a7ef9ec6a05c2e2aa566ff464922ce86316b22246bce7d",
+      "pixels": 516
+    },
+    {
+      "shape_id": "8d839ede5c084b552dca8df5473e465cca0681c074871943f511825bf77f84a6",
+      "class": "cloud",
+      "source_key": "train/T17TMF/obs_0033/r05_c07",
+      "record_id": 39526,
+      "tile": "T17TMF",
+      "split": "train",
+      "source_record_sha256": "f603ba9d162e4f6552f63616b3fa7752a015ca60b085ff4a0106877f8637f665",
+      "pixels": 368
+    },
+    {
+      "shape_id": "8c0144be0de24ee181efb3225f6f1031326f25bb1c8155a503a6acd659b0b45a",
+      "class": "cloud",
+      "source_key": "train/T17TMF/obs_0033/r05_c07",
+      "record_id": 39526,
+      "tile": "T17TMF",
+      "split": "train",
+      "source_record_sha256": "f603ba9d162e4f6552f63616b3fa7752a015ca60b085ff4a0106877f8637f665",
+      "pixels": 149
+    },
+    {
+      "shape_id": "169058fe3bc0f732da4179e493f60497af8abfda325a40c9d81a8de650ea00d9",
+      "class": "shadow",
+      "source_key": "train/T17TMF/obs_0033/r05_c07",
+      "record_id": 39526,
+      "tile": "T17TMF",
+      "split": "train",
+      "source_record_sha256": "f603ba9d162e4f6552f63616b3fa7752a015ca60b085ff4a0106877f8637f665",
+      "pixels": 952
+    },
+    {
+      "shape_id": "02ab8a285b82f34ff4e8f1d8253d1ad8713e179c83254fc2abbb26385f0d5b81",
+      "class": "shadow",
+      "source_key": "train/T17TMF/obs_0033/r05_c07",
+      "record_id": 39526,
+      "tile": "T17TMF",
+      "split": "train",
+      "source_record_sha256": "f603ba9d162e4f6552f63616b3fa7752a015ca60b085ff4a0106877f8637f665",
+      "pixels": 441
+    },
+    {
+      "shape_id": "a33b43cdf798c29117925916d445d8e88d02058f016f7c3f2f4dcfa5cf59d79e",
+      "class": "adjacency",
+      "source_key": "train/T17TMF/obs_0033/r05_c07",
+      "record_id": 39526,
+      "tile": "T17TMF",
+      "split": "train",
+      "source_record_sha256": "f603ba9d162e4f6552f63616b3fa7752a015ca60b085ff4a0106877f8637f665",
+      "pixels": 1641
+    },
+    {
+      "shape_id": "923f2ad9ca2604f82690677403d990ad19748b10912e0be56799c1bdbe2b68fe",
+      "class": "adjacency",
+      "source_key": "train/T17TMF/obs_0033/r05_c07",
+      "record_id": 39526,
+      "tile": "T17TMF",
+      "split": "train",
+      "source_record_sha256": "f603ba9d162e4f6552f63616b3fa7752a015ca60b085ff4a0106877f8637f665",
+      "pixels": 1325
+    },
+    {
+      "shape_id": "57ce12bade489241278ba1926dd602e36696af57873471abf35704c38c0eee62",
+      "class": "cloud",
+      "source_key": "train/T50SND/obs_0042/r05_c07",
+      "record_id": 201812,
+      "tile": "T50SND",
+      "split": "train",
+      "source_record_sha256": "3b8c78ce474e67c6de56af124deb93e1930ff69570723a0f45872e05ba785f66",
+      "pixels": 109
+    },
+    {
+      "shape_id": "d6f42daac50f71a944d488c07b661721876e4851308560b2acfe461042807e21",
+      "class": "cloud",
+      "source_key": "train/T50SND/obs_0042/r05_c07",
+      "record_id": 201812,
+      "tile": "T50SND",
+      "split": "train",
+      "source_record_sha256": "3b8c78ce474e67c6de56af124deb93e1930ff69570723a0f45872e05ba785f66",
+      "pixels": 80
+    },
+    {
+      "shape_id": "326b173e30dd4ab822190f87923f9e254eedf470cf27b034e54d7cd4ce23663c",
+      "class": "adjacency",
+      "source_key": "train/T50SND/obs_0042/r05_c07",
+      "record_id": 201812,
+      "tile": "T50SND",
+      "split": "train",
+      "source_record_sha256": "3b8c78ce474e67c6de56af124deb93e1930ff69570723a0f45872e05ba785f66",
+      "pixels": 348
+    },
+    {
+      "shape_id": "5764e962c82fe153f9abaf08174c2e8d5b2d073e5838b20d3e8b0f8eea140412",
+      "class": "adjacency",
+      "source_key": "train/T50SND/obs_0042/r05_c07",
+      "record_id": 201812,
+      "tile": "T50SND",
+      "split": "train",
+      "source_record_sha256": "3b8c78ce474e67c6de56af124deb93e1930ff69570723a0f45872e05ba785f66",
+      "pixels": 312
+    },
+    {
+      "shape_id": "5685098955752134d7d81d67ef6130d1518a4b7184ca719d7b2010c528e287e2",
+      "class": "cloud",
+      "source_key": "train/T31UGR/obs_0023/r00_c08",
+      "record_id": 93111,
+      "tile": "T31UGR",
+      "split": "train",
+      "source_record_sha256": "89ec4118f555013ed097b15673c30e6c56edefdf0110ccc351c490c756cb9a9f",
+      "pixels": 87
+    },
+    {
+      "shape_id": "7180cdd6a0673bea6acb1b4f8e8e1d8a5cf51781645755b3975ac1fea7ebadc5",
+      "class": "shadow",
+      "source_key": "train/T31UGR/obs_0023/r00_c08",
+      "record_id": 93111,
+      "tile": "T31UGR",
+      "split": "train",
+      "source_record_sha256": "89ec4118f555013ed097b15673c30e6c56edefdf0110ccc351c490c756cb9a9f",
+      "pixels": 87
+    },
+    {
+      "shape_id": "780a5315215d981764dd5e022650152568a2b403efd32524fd4ea4b42e26a392",
+      "class": "adjacency",
+      "source_key": "train/T31UGR/obs_0023/r00_c08",
+      "record_id": 93111,
+      "tile": "T31UGR",
+      "split": "train",
+      "source_record_sha256": "89ec4118f555013ed097b15673c30e6c56edefdf0110ccc351c490c756cb9a9f",
+      "pixels": 324
+    },
+    {
+      "shape_id": "2e010b13f47032cad526e4b213bec3e5bef29e4e62585d9793b0c276ab32c8d5",
+      "class": "adjacency",
+      "source_key": "train/T31UGR/obs_0023/r00_c08",
+      "record_id": 93111,
+      "tile": "T31UGR",
+      "split": "train",
+      "source_record_sha256": "89ec4118f555013ed097b15673c30e6c56edefdf0110ccc351c490c756cb9a9f",
+      "pixels": 324
+    },
+    {
+      "shape_id": "89e8f86df0a06328ad02e081548d8ed5bef64700495ab16ec59d7a00634da5f1",
+      "class": "shadow",
+      "source_key": "train/T17SLU/obs_0041/r05_c07",
+      "record_id": 38410,
+      "tile": "T17SLU",
+      "split": "train",
+      "source_record_sha256": "1c677dce589c0214be05376201436ab3458d0422a3ebceda7974d681f45c476e",
+      "pixels": 80
+    },
+    {
+      "shape_id": "cf160a8b61e96f721d7cb58cc1dcb72d60b8cf43fe3bc1a6150a644f4993105f",
+      "class": "adjacency",
+      "source_key": "train/T17SLU/obs_0041/r05_c07",
+      "record_id": 38410,
+      "tile": "T17SLU",
+      "split": "train",
+      "source_record_sha256": "1c677dce589c0214be05376201436ab3458d0422a3ebceda7974d681f45c476e",
+      "pixels": 312
+    },
+    {
+      "shape_id": "c3e031659b122f271645cf50676568122b5be45a4f35a9e73618f9e84f0a0f9f",
+      "class": "cloud",
+      "source_key": "train/T50HPG/obs_0023/r01_c02",
+      "record_id": 194848,
+      "tile": "T50HPG",
+      "split": "train",
+      "source_record_sha256": "6e6ae371e1f4b3ec04175ccbfe55d88d743f90ce43203b995c4eddbd29d3baab",
+      "pixels": 316
+    },
+    {
+      "shape_id": "ed519dcf5997bcf5b142fc33c249531e44d4c4b8d33df38a6bbeb1b9f9ccd15e",
+      "class": "cloud",
+      "source_key": "train/T50HPG/obs_0023/r01_c02",
+      "record_id": 194848,
+      "tile": "T50HPG",
+      "split": "train",
+      "source_record_sha256": "6e6ae371e1f4b3ec04175ccbfe55d88d743f90ce43203b995c4eddbd29d3baab",
+      "pixels": 123
+    },
+    {
+      "shape_id": "3afaa27472d54053918a3bca0bbc7360c467f59b93596ceba878c1b44e4f09ac",
+      "class": "adjacency",
+      "source_key": "train/T50HPG/obs_0023/r01_c02",
+      "record_id": 194848,
+      "tile": "T50HPG",
+      "split": "train",
+      "source_record_sha256": "6e6ae371e1f4b3ec04175ccbfe55d88d743f90ce43203b995c4eddbd29d3baab",
+      "pixels": 484
+    },
+    {
+      "shape_id": "aded362111320e4d0d8bb7f2d36fab63f4a487e2a95e58f10cfd046eb68fc54e",
+      "class": "adjacency",
+      "source_key": "train/T50HPG/obs_0023/r01_c02",
+      "record_id": 194848,
+      "tile": "T50HPG",
+      "split": "train",
+      "source_record_sha256": "6e6ae371e1f4b3ec04175ccbfe55d88d743f90ce43203b995c4eddbd29d3baab",
+      "pixels": 281
+    },
+    {
+      "shape_id": "6e0a0257e37daddaad8765d67d38ccc956065fc9fff57a064343463e5614d96c",
+      "class": "shadow",
+      "source_key": "train/T35LND/obs_0005/r01_c07",
+      "record_id": 120983,
+      "tile": "T35LND",
+      "split": "train",
+      "source_record_sha256": "38c25554fb07fa3ab566d16464829193a40a46523bc8683966228db7d2da3c1d",
+      "pixels": 9203
+    },
+    {
+      "shape_id": "7f85198c82ce7f0fcfd6cc49d26ec1951f12f74d01520599880150fd72cc37fd",
+      "class": "adjacency",
+      "source_key": "train/T35LND/obs_0005/r01_c07",
+      "record_id": 120983,
+      "tile": "T35LND",
+      "split": "train",
+      "source_record_sha256": "38c25554fb07fa3ab566d16464829193a40a46523bc8683966228db7d2da3c1d",
+      "pixels": 1912
+    },
+    {
+      "shape_id": "7980906639ad1e846eb06fec3dae39d1443e655c46b189538a841d17a0a0f37c",
+      "class": "adjacency",
+      "source_key": "train/T35LND/obs_0005/r01_c07",
+      "record_id": 120983,
+      "tile": "T35LND",
+      "split": "train",
+      "source_record_sha256": "38c25554fb07fa3ab566d16464829193a40a46523bc8683966228db7d2da3c1d",
+      "pixels": 520
+    },
+    {
+      "shape_id": "e7f99e305e3b00043fd1962a42d0b0514c577c43976008fc86b7b2273fff298f",
+      "class": "cloud",
+      "source_key": "train/T44QLD/obs_0023/r04_c03",
+      "record_id": 169238,
+      "tile": "T44QLD",
+      "split": "train",
+      "source_record_sha256": "9170556176fe9f31722c7c88e362f3fea86e5613d2e067a205866d8b48d47a15",
+      "pixels": 177
+    },
+    {
+      "shape_id": "1e4600756589fc4da395fbf8a72151991ba1a32bcca90ede6954101b2915f83e",
+      "class": "cloud",
+      "source_key": "train/T44QLD/obs_0023/r04_c03",
+      "record_id": 169238,
+      "tile": "T44QLD",
+      "split": "train",
+      "source_record_sha256": "9170556176fe9f31722c7c88e362f3fea86e5613d2e067a205866d8b48d47a15",
+      "pixels": 102
+    },
+    {
+      "shape_id": "e3d6d027b144c46c06d8c70002964836d39c0c32fc6b279e5169b4585cb02c11",
+      "class": "shadow",
+      "source_key": "train/T44QLD/obs_0023/r04_c03",
+      "record_id": 169238,
+      "tile": "T44QLD",
+      "split": "train",
+      "source_record_sha256": "9170556176fe9f31722c7c88e362f3fea86e5613d2e067a205866d8b48d47a15",
+      "pixels": 184
+    },
+    {
+      "shape_id": "9e273a3e086f5a264e7109dd3a3f8f09e6ff87b5b625c408392fdbdb62687f5d",
+      "class": "shadow",
+      "source_key": "train/T44QLD/obs_0023/r04_c03",
+      "record_id": 169238,
+      "tile": "T44QLD",
+      "split": "train",
+      "source_record_sha256": "9170556176fe9f31722c7c88e362f3fea86e5613d2e067a205866d8b48d47a15",
+      "pixels": 89
+    },
+    {
+      "shape_id": "92a6a06191aaf01e8fca86d3926f40fcaa2c954e6b159646070903642e912174",
+      "class": "adjacency",
+      "source_key": "train/T44QLD/obs_0023/r04_c03",
+      "record_id": 169238,
+      "tile": "T44QLD",
+      "split": "train",
+      "source_record_sha256": "9170556176fe9f31722c7c88e362f3fea86e5613d2e067a205866d8b48d47a15",
+      "pixels": 1300
+    },
+    {
+      "shape_id": "fd86649eebc2ed3690186957459ede5ba591677c7b50c1bb47ae942cf3f5dc6c",
+      "class": "adjacency",
+      "source_key": "train/T44QLD/obs_0023/r04_c03",
+      "record_id": 169238,
+      "tile": "T44QLD",
+      "split": "train",
+      "source_record_sha256": "9170556176fe9f31722c7c88e362f3fea86e5613d2e067a205866d8b48d47a15",
+      "pixels": 456
+    },
+    {
+      "shape_id": "68c256b9e9df85c4842edc4ebdb7ddb0062c0893be6bc69edd89f7509fb3975b",
+      "class": "cloud",
+      "source_key": "train/T33LUK/obs_0004/r04_c05",
+      "record_id": 103357,
+      "tile": "T33LUK",
+      "split": "train",
+      "source_record_sha256": "cad1bb65ce5e95fb58ba6f2c9115ff74d2d230d18976e9051d5af64bdf99a3e7",
+      "pixels": 706
+    },
+    {
+      "shape_id": "20b639e5d7d1b2c42c4e2d54a1c47e0f1cfc389efbae3124b1e399f78dc9ced2",
+      "class": "cloud",
+      "source_key": "train/T33LUK/obs_0004/r04_c05",
+      "record_id": 103357,
+      "tile": "T33LUK",
+      "split": "train",
+      "source_record_sha256": "cad1bb65ce5e95fb58ba6f2c9115ff74d2d230d18976e9051d5af64bdf99a3e7",
+      "pixels": 412
+    },
+    {
+      "shape_id": "ca5bc5a5e113050852f193e42dc101acc222ed744e2de46b8924e8a9d660247f",
+      "class": "shadow",
+      "source_key": "train/T33LUK/obs_0004/r04_c05",
+      "record_id": 103357,
+      "tile": "T33LUK",
+      "split": "train",
+      "source_record_sha256": "cad1bb65ce5e95fb58ba6f2c9115ff74d2d230d18976e9051d5af64bdf99a3e7",
+      "pixels": 627
+    },
+    {
+      "shape_id": "8747333df16085887d86f55cb9ac2a947dfc4ded4154aa371f677874f8ea9541",
+      "class": "shadow",
+      "source_key": "train/T33LUK/obs_0004/r04_c05",
+      "record_id": 103357,
+      "tile": "T33LUK",
+      "split": "train",
+      "source_record_sha256": "cad1bb65ce5e95fb58ba6f2c9115ff74d2d230d18976e9051d5af64bdf99a3e7",
+      "pixels": 398
+    },
+    {
+      "shape_id": "cb59ff2a825168d8e4183f77b12f9d953555f66604ad64b98b701357d6fcb577",
+      "class": "adjacency",
+      "source_key": "train/T33LUK/obs_0004/r04_c05",
+      "record_id": 103357,
+      "tile": "T33LUK",
+      "split": "train",
+      "source_record_sha256": "cad1bb65ce5e95fb58ba6f2c9115ff74d2d230d18976e9051d5af64bdf99a3e7",
+      "pixels": 4915
+    },
+    {
+      "shape_id": "8d37c2284cf11e09286b15ffb790113155e7ae1eac104c8e57b2e33368975fda",
+      "class": "adjacency",
+      "source_key": "train/T33LUK/obs_0004/r04_c05",
+      "record_id": 103357,
+      "tile": "T33LUK",
+      "split": "train",
+      "source_record_sha256": "cad1bb65ce5e95fb58ba6f2c9115ff74d2d230d18976e9051d5af64bdf99a3e7",
+      "pixels": 674
+    },
+    {
+      "shape_id": "905c389a0a7dd774cbab476232dbae50218783d695ae3316bbd0ac2dd31a8235",
+      "class": "cloud",
+      "source_key": "train/T38KPB/obs_0019/r05_c05",
+      "record_id": 142861,
+      "tile": "T38KPB",
+      "split": "train",
+      "source_record_sha256": "df65a0f39e39b44c6ffce60788853fc6806041d82e10424324f21d11f829777a",
+      "pixels": 2611
+    },
+    {
+      "shape_id": "46a429f2c80cae8812475fc62ca55226e90d1b607ce5acc7d8536b560dd909b3",
+      "class": "cloud",
+      "source_key": "train/T38KPB/obs_0019/r05_c05",
+      "record_id": 142861,
+      "tile": "T38KPB",
+      "split": "train",
+      "source_record_sha256": "df65a0f39e39b44c6ffce60788853fc6806041d82e10424324f21d11f829777a",
+      "pixels": 2417
+    },
+    {
+      "shape_id": "b50df15ca38ceaabfbe478a4672145130aee709d000e19f67479c53ab622be39",
+      "class": "shadow",
+      "source_key": "train/T38KPB/obs_0019/r05_c05",
+      "record_id": 142861,
+      "tile": "T38KPB",
+      "split": "train",
+      "source_record_sha256": "df65a0f39e39b44c6ffce60788853fc6806041d82e10424324f21d11f829777a",
+      "pixels": 943
+    },
+    {
+      "shape_id": "f492e715215ce23188eab5e4d175d9bdc9f4d989d32108bd16a53a6768a00c31",
+      "class": "shadow",
+      "source_key": "train/T38KPB/obs_0019/r05_c05",
+      "record_id": 142861,
+      "tile": "T38KPB",
+      "split": "train",
+      "source_record_sha256": "df65a0f39e39b44c6ffce60788853fc6806041d82e10424324f21d11f829777a",
+      "pixels": 288
+    },
+    {
+      "shape_id": "3e3407635ebeec4291080431159498f009bd33c39c67da4ec1202d2d6246e6c7",
+      "class": "adjacency",
+      "source_key": "train/T38KPB/obs_0019/r05_c05",
+      "record_id": 142861,
+      "tile": "T38KPB",
+      "split": "train",
+      "source_record_sha256": "df65a0f39e39b44c6ffce60788853fc6806041d82e10424324f21d11f829777a",
+      "pixels": 2534
+    },
+    {
+      "shape_id": "d8818e89fa88d5b02c141962288385ca501a748991fed87ed1cee8d880a2c48c",
+      "class": "adjacency",
+      "source_key": "train/T38KPB/obs_0019/r05_c05",
+      "record_id": 142861,
+      "tile": "T38KPB",
+      "split": "train",
+      "source_record_sha256": "df65a0f39e39b44c6ffce60788853fc6806041d82e10424324f21d11f829777a",
+      "pixels": 904
+    },
+    {
+      "shape_id": "2ec39aa16bd85f96fa525e14520c9b504089bba07e331618481eae6e8e0f82f1",
+      "class": "cloud",
+      "source_key": "train/T32NKL/obs_0009/r04_c04",
+      "record_id": 93617,
+      "tile": "T32NKL",
+      "split": "train",
+      "source_record_sha256": "4f2f0fbaa5b79518107ee4eb290f94ef1f919ea29d2e096a0b321df759f1bbf3",
+      "pixels": 107
+    },
+    {
+      "shape_id": "82dd99426e9b7c0bb4ec94f8752f91a11123f44bbf2171a42a1286d322af6853",
+      "class": "cloud",
+      "source_key": "train/T32NKL/obs_0009/r04_c04",
+      "record_id": 93617,
+      "tile": "T32NKL",
+      "split": "train",
+      "source_record_sha256": "4f2f0fbaa5b79518107ee4eb290f94ef1f919ea29d2e096a0b321df759f1bbf3",
+      "pixels": 104
+    },
+    {
+      "shape_id": "3a5ec0f83437d3f847fdf951fd0f58619695209c0a94d48cb77efc993127fd13",
+      "class": "shadow",
+      "source_key": "train/T32NKL/obs_0009/r04_c04",
+      "record_id": 93617,
+      "tile": "T32NKL",
+      "split": "train",
+      "source_record_sha256": "4f2f0fbaa5b79518107ee4eb290f94ef1f919ea29d2e096a0b321df759f1bbf3",
+      "pixels": 169
+    },
+    {
+      "shape_id": "ac17f9fb0e9d09608df05ebad50df762d45632d46f921c7a6bd3a0ab37d97dbd",
+      "class": "shadow",
+      "source_key": "train/T32NKL/obs_0009/r04_c04",
+      "record_id": 93617,
+      "tile": "T32NKL",
+      "split": "train",
+      "source_record_sha256": "4f2f0fbaa5b79518107ee4eb290f94ef1f919ea29d2e096a0b321df759f1bbf3",
+      "pixels": 157
+    },
+    {
+      "shape_id": "4c463b55bcfe95a533e06e2d826c3457f1a790881ceb60dbdefe9164b6ce3707",
+      "class": "adjacency",
+      "source_key": "train/T32NKL/obs_0009/r04_c04",
+      "record_id": 93617,
+      "tile": "T32NKL",
+      "split": "train",
+      "source_record_sha256": "4f2f0fbaa5b79518107ee4eb290f94ef1f919ea29d2e096a0b321df759f1bbf3",
+      "pixels": 887
+    },
+    {
+      "shape_id": "90353df637661dff484d909e0a98068c1884a4008b7214e29a3d50ed4aa6f60b",
+      "class": "adjacency",
+      "source_key": "train/T32NKL/obs_0009/r04_c04",
+      "record_id": 93617,
+      "tile": "T32NKL",
+      "split": "train",
+      "source_record_sha256": "4f2f0fbaa5b79518107ee4eb290f94ef1f919ea29d2e096a0b321df759f1bbf3",
+      "pixels": 569
+    },
+    {
+      "shape_id": "28c97d9b04aa81778231ab4e25fb5c2c8a701555afc71900f73080b60ed2c89e",
+      "class": "cloud",
+      "source_key": "train/T34TDQ/obs_0033/r04_c00",
+      "record_id": 116208,
+      "tile": "T34TDQ",
+      "split": "train",
+      "source_record_sha256": "96250acf012163103f1e054c1a0c244688a2d05922c797e0a8c073e284f1fe97",
+      "pixels": 263
+    },
+    {
+      "shape_id": "e273b785f4da872cd40edda4ffc93a4a0d522086ca36d2c48e17fb7943d8a0ff",
+      "class": "cloud",
+      "source_key": "train/T34TDQ/obs_0033/r04_c00",
+      "record_id": 116208,
+      "tile": "T34TDQ",
+      "split": "train",
+      "source_record_sha256": "96250acf012163103f1e054c1a0c244688a2d05922c797e0a8c073e284f1fe97",
+      "pixels": 213
+    },
+    {
+      "shape_id": "df77432963d93f2b2b1a09656fd67355b0d777ff28c2fcd5c93f51e0fdb220fe",
+      "class": "shadow",
+      "source_key": "train/T34TDQ/obs_0033/r04_c00",
+      "record_id": 116208,
+      "tile": "T34TDQ",
+      "split": "train",
+      "source_record_sha256": "96250acf012163103f1e054c1a0c244688a2d05922c797e0a8c073e284f1fe97",
+      "pixels": 98
+    },
+    {
+      "shape_id": "cc417df389915ea0f06b74f6d33dfe0d6642e53292171e055d11316301a412de",
+      "class": "shadow",
+      "source_key": "train/T34TDQ/obs_0033/r04_c00",
+      "record_id": 116208,
+      "tile": "T34TDQ",
+      "split": "train",
+      "source_record_sha256": "96250acf012163103f1e054c1a0c244688a2d05922c797e0a8c073e284f1fe97",
+      "pixels": 57
+    },
+    {
+      "shape_id": "d3a547a74daaa8998f6a8fa170ba57c522efd8bf24457da04fe0787c4b8addc4",
+      "class": "adjacency",
+      "source_key": "train/T34TDQ/obs_0033/r04_c00",
+      "record_id": 116208,
+      "tile": "T34TDQ",
+      "split": "train",
+      "source_record_sha256": "96250acf012163103f1e054c1a0c244688a2d05922c797e0a8c073e284f1fe97",
+      "pixels": 576
+    },
+    {
+      "shape_id": "5319259847247aded39a1ec04d97d140ba625fad5286a6fa56be7c42e6486565",
+      "class": "adjacency",
+      "source_key": "train/T34TDQ/obs_0033/r04_c00",
+      "record_id": 116208,
+      "tile": "T34TDQ",
+      "split": "train",
+      "source_record_sha256": "96250acf012163103f1e054c1a0c244688a2d05922c797e0a8c073e284f1fe97",
+      "pixels": 336
+    },
+    {
+      "shape_id": "79c752068ffd4f94c213521b79a18cc32ef431d8333021d9d17a2241bf323d3c",
+      "class": "cloud",
+      "source_key": "train/T44RQS/obs_0001/r09_c07",
+      "record_id": 170158,
+      "tile": "T44RQS",
+      "split": "train",
+      "source_record_sha256": "5d0036e64805e8faba58081bb3cfc730096fe3ddac8d54364ae08a7c22ef6b31",
+      "pixels": 4269
+    },
+    {
+      "shape_id": "2632c9d837b3dc39ecada7f76d5f6b76b9efd66162a16b64ba6d757d57d8e96b",
+      "class": "cloud",
+      "source_key": "train/T44RQS/obs_0001/r09_c07",
+      "record_id": 170158,
+      "tile": "T44RQS",
+      "split": "train",
+      "source_record_sha256": "5d0036e64805e8faba58081bb3cfc730096fe3ddac8d54364ae08a7c22ef6b31",
+      "pixels": 80
+    },
+    {
+      "shape_id": "8cc35f958d48b66cb48c95492d2311b531124869824cded95ed00ef950f864d0",
+      "class": "shadow",
+      "source_key": "train/T44RQS/obs_0001/r09_c07",
+      "record_id": 170158,
+      "tile": "T44RQS",
+      "split": "train",
+      "source_record_sha256": "5d0036e64805e8faba58081bb3cfc730096fe3ddac8d54364ae08a7c22ef6b31",
+      "pixels": 273
+    },
+    {
+      "shape_id": "5e5c037b3dc1360dd825e01f64cc0dbdd299d2713af514f7c2adb1e4d0948387",
+      "class": "shadow",
+      "source_key": "train/T44RQS/obs_0001/r09_c07",
+      "record_id": 170158,
+      "tile": "T44RQS",
+      "split": "train",
+      "source_record_sha256": "5d0036e64805e8faba58081bb3cfc730096fe3ddac8d54364ae08a7c22ef6b31",
+      "pixels": 247
+    },
+    {
+      "shape_id": "717dba20085047842f954c774f1573ba19d60d0c837ca9ffe6ef5e68510bbcd8",
+      "class": "adjacency",
+      "source_key": "train/T44RQS/obs_0001/r09_c07",
+      "record_id": 170158,
+      "tile": "T44RQS",
+      "split": "train",
+      "source_record_sha256": "5d0036e64805e8faba58081bb3cfc730096fe3ddac8d54364ae08a7c22ef6b31",
+      "pixels": 2574
+    },
+    {
+      "shape_id": "4c9725a3f439ac774d63ca8d2e330e8f7fc8c37f3406e75978202396e0962184",
+      "class": "adjacency",
+      "source_key": "train/T44RQS/obs_0001/r09_c07",
+      "record_id": 170158,
+      "tile": "T44RQS",
+      "split": "train",
+      "source_record_sha256": "5d0036e64805e8faba58081bb3cfc730096fe3ddac8d54364ae08a7c22ef6b31",
+      "pixels": 2266
+    },
+    {
+      "shape_id": "c18551ec817221b5b4b3b3b6752789a2a4421ba2c8fcedf4d500b9517e778133",
+      "class": "cloud",
+      "source_key": "train/T38PMA/obs_0033/r00_c06",
+      "record_id": 145101,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "a7bf8237356af119062e9b9ac3f354cb5c554db11e853e84823df15f51d30365",
+      "pixels": 80
+    },
+    {
+      "shape_id": "e88db5531cec99ace46df12e61004a7d0360aa1d3e6287a72327fb30c7b8359a",
+      "class": "cloud",
+      "source_key": "train/T38PMA/obs_0033/r00_c06",
+      "record_id": 145101,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "a7bf8237356af119062e9b9ac3f354cb5c554db11e853e84823df15f51d30365",
+      "pixels": 70
+    },
+    {
+      "shape_id": "b5b889486987d3787bb1aed4d93e23d8954e80b31d9dc8ec06238e51cf9b24de",
+      "class": "shadow",
+      "source_key": "train/T38PMA/obs_0033/r00_c06",
+      "record_id": 145101,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "a7bf8237356af119062e9b9ac3f354cb5c554db11e853e84823df15f51d30365",
+      "pixels": 176
+    },
+    {
+      "shape_id": "c2f06198466e05db89d9ebbb37fe68aaba07a1eb0b8609790c66d96511ae0ad7",
+      "class": "shadow",
+      "source_key": "train/T38PMA/obs_0033/r00_c06",
+      "record_id": 145101,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "a7bf8237356af119062e9b9ac3f354cb5c554db11e853e84823df15f51d30365",
+      "pixels": 163
+    },
+    {
+      "shape_id": "f9f5a6988b1a4c94acc04ae249a23db47e7ece2bc5e40eacce6178b758d9d704",
+      "class": "adjacency",
+      "source_key": "train/T38PMA/obs_0033/r00_c06",
+      "record_id": 145101,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "a7bf8237356af119062e9b9ac3f354cb5c554db11e853e84823df15f51d30365",
+      "pixels": 620
+    },
+    {
+      "shape_id": "dc83c490ca91348582e8b0d965b43f32472f433fc7b38527eae844500fa44e09",
+      "class": "adjacency",
+      "source_key": "train/T38PMA/obs_0033/r00_c06",
+      "record_id": 145101,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "a7bf8237356af119062e9b9ac3f354cb5c554db11e853e84823df15f51d30365",
+      "pixels": 407
+    },
+    {
+      "shape_id": "45612396031015bc81b863cd6878078aa074bbdc22b9a7fff7f8a7092a398d80",
+      "class": "cloud",
+      "source_key": "train/T16TDL/obs_0027/r04_c01",
+      "record_id": 32766,
+      "tile": "T16TDL",
+      "split": "train",
+      "source_record_sha256": "19e34099eaad7819a88bb407003da4a0c31e5ccb15e862933d63a5941f1eb450",
+      "pixels": 96
+    },
+    {
+      "shape_id": "e8c55122549b5bd2a64c9eb2613a0dc702119701e550a25f84cc3c19138efb2d",
+      "class": "shadow",
+      "source_key": "train/T16TDL/obs_0027/r04_c01",
+      "record_id": 32766,
+      "tile": "T16TDL",
+      "split": "train",
+      "source_record_sha256": "19e34099eaad7819a88bb407003da4a0c31e5ccb15e862933d63a5941f1eb450",
+      "pixels": 96
+    },
+    {
+      "shape_id": "b41447106f49457eee6fa660daf5b32faa76a438f6868259513dbf71993f081a",
+      "class": "adjacency",
+      "source_key": "train/T16TDL/obs_0027/r04_c01",
+      "record_id": 32766,
+      "tile": "T16TDL",
+      "split": "train",
+      "source_record_sha256": "19e34099eaad7819a88bb407003da4a0c31e5ccb15e862933d63a5941f1eb450",
+      "pixels": 336
+    },
+    {
+      "shape_id": "23e8e365e4e10cb308313d013d8bf93056820a1d762497f4c7744aa93ff123e3",
+      "class": "adjacency",
+      "source_key": "train/T16TDL/obs_0027/r04_c01",
+      "record_id": 32766,
+      "tile": "T16TDL",
+      "split": "train",
+      "source_record_sha256": "19e34099eaad7819a88bb407003da4a0c31e5ccb15e862933d63a5941f1eb450",
+      "pixels": 248
+    },
+    {
+      "shape_id": "243725212f0efe23ab71d63cbab31eeeedc363785a0492de4519ea4160ac7935",
+      "class": "cloud",
+      "source_key": "train/T48PUB/obs_0029/r01_c07",
+      "record_id": 183760,
+      "tile": "T48PUB",
+      "split": "train",
+      "source_record_sha256": "13eba4b4b12efb8def9b544356c170db83f5beb8753b255cf9db155916f16d20",
+      "pixels": 117
+    },
+    {
+      "shape_id": "73f3d29539e2a924428028639a8424847ff4f1fac778c66506d918dc4b80c1a6",
+      "class": "adjacency",
+      "source_key": "train/T48PUB/obs_0029/r01_c07",
+      "record_id": 183760,
+      "tile": "T48PUB",
+      "split": "train",
+      "source_record_sha256": "13eba4b4b12efb8def9b544356c170db83f5beb8753b255cf9db155916f16d20",
+      "pixels": 320
+    },
+    {
+      "shape_id": "c2e6abc3437390d0f29580bbc5e3842b071311c304d57c42642db766bef1dac4",
+      "class": "cloud",
+      "source_key": "train/T11XMC/obs_0023/r04_c00",
+      "record_id": 12559,
+      "tile": "T11XMC",
+      "split": "train",
+      "source_record_sha256": "81089bde409794f69f03474c5692438f8b00b035ccbfc2d2c44a9e32b4fbf85b",
+      "pixels": 310
+    },
+    {
+      "shape_id": "1a76c36b90ae50ea1edf2a2f7595750d8018f17f827764b1e6260036b9ad5787",
+      "class": "shadow",
+      "source_key": "train/T11XMC/obs_0023/r04_c00",
+      "record_id": 12559,
+      "tile": "T11XMC",
+      "split": "train",
+      "source_record_sha256": "81089bde409794f69f03474c5692438f8b00b035ccbfc2d2c44a9e32b4fbf85b",
+      "pixels": 276
+    },
+    {
+      "shape_id": "9f4b95458148086e69b5a7d8e96a77621e42abb551f95e62f6b7cdac163aabd2",
+      "class": "adjacency",
+      "source_key": "train/T11XMC/obs_0023/r04_c00",
+      "record_id": 12559,
+      "tile": "T11XMC",
+      "split": "train",
+      "source_record_sha256": "81089bde409794f69f03474c5692438f8b00b035ccbfc2d2c44a9e32b4fbf85b",
+      "pixels": 540
+    },
+    {
+      "shape_id": "fc1e63a7dfd71e4cd4d029b3d475bbaf1b18068dd37c37e4eda765b1366e290c",
+      "class": "adjacency",
+      "source_key": "train/T11XMC/obs_0023/r04_c00",
+      "record_id": 12559,
+      "tile": "T11XMC",
+      "split": "train",
+      "source_record_sha256": "81089bde409794f69f03474c5692438f8b00b035ccbfc2d2c44a9e32b4fbf85b",
+      "pixels": 407
+    },
+    {
+      "shape_id": "c4432233213178b0f388bb6c31142a9d9bf75fcd19aa32d738eeda048a0f56b3",
+      "class": "adjacency",
+      "source_key": "train/T34UFA/obs_0002/r04_c10",
+      "record_id": 118578,
+      "tile": "T34UFA",
+      "split": "train",
+      "source_record_sha256": "a34a3075d6ba3216231b57f443737e2306276ad0eded3f746b5d256ea2823a89",
+      "pixels": 157
+    },
+    {
+      "shape_id": "797837e0a94e8093603f49f66c547705b0e1e0d622789b3a35b9ca46c74c930c",
+      "class": "shadow",
+      "source_key": "train/T18QZF/obs_0007/r06_c00",
+      "record_id": 46196,
+      "tile": "T18QZF",
+      "split": "train",
+      "source_record_sha256": "e0f6bb93c0560da88ec53d0b44f70550ee293d390d01f8a9567c7b18a5f4ec0e",
+      "pixels": 460
+    },
+    {
+      "shape_id": "944faa163e4689eb4dbda3f8469f8030e31d05ca4b5111b02bd8381c6aa5e60f",
+      "class": "shadow",
+      "source_key": "train/T18QZF/obs_0007/r06_c00",
+      "record_id": 46196,
+      "tile": "T18QZF",
+      "split": "train",
+      "source_record_sha256": "e0f6bb93c0560da88ec53d0b44f70550ee293d390d01f8a9567c7b18a5f4ec0e",
+      "pixels": 88
+    },
+    {
+      "shape_id": "27ab23f35d5c8eb64a9e31e95c6a326f4fde9f4b0401208018aa0ad15b2a8ebb",
+      "class": "adjacency",
+      "source_key": "train/T18QZF/obs_0007/r06_c00",
+      "record_id": 46196,
+      "tile": "T18QZF",
+      "split": "train",
+      "source_record_sha256": "e0f6bb93c0560da88ec53d0b44f70550ee293d390d01f8a9567c7b18a5f4ec0e",
+      "pixels": 538
+    },
+    {
+      "shape_id": "deaf946652b5f5f4e30dd40ac66e4c6ae1f0170f22e94682ede52104acf7a722",
+      "class": "adjacency",
+      "source_key": "train/T18QZF/obs_0007/r06_c00",
+      "record_id": 46196,
+      "tile": "T18QZF",
+      "split": "train",
+      "source_record_sha256": "e0f6bb93c0560da88ec53d0b44f70550ee293d390d01f8a9567c7b18a5f4ec0e",
+      "pixels": 373
+    },
+    {
+      "shape_id": "c973014126979517e528cbd1ace038fae579f72dbe5fe7eb5f5a7607b9d6a4a3",
+      "class": "adjacency",
+      "source_key": "train/T30UUF/obs_0034/r03_c00",
+      "record_id": 85718,
+      "tile": "T30UUF",
+      "split": "train",
+      "source_record_sha256": "95621bd1ddb9039bc4e3958de03940687c63182d66a8ca0933e785a3894eadb7",
+      "pixels": 123
+    },
+    {
+      "shape_id": "9365f97a3527a789a230cb6659545d78d9f56f886d256cbe10a84c44e734f3c9",
+      "class": "cloud",
+      "source_key": "train/T31UFS/obs_0008/r09_c12",
+      "record_id": 92701,
+      "tile": "T31UFS",
+      "split": "train",
+      "source_record_sha256": "b1124e44f509dfa1c7180923f184968d3fcbc5c42694896a89f4be90d580cb50",
+      "pixels": 137
+    },
+    {
+      "shape_id": "4519e55100662ee72133a06ab606d07b32de45fc7020abe5f65c25ea75ee5e96",
+      "class": "cloud",
+      "source_key": "train/T31UFS/obs_0008/r09_c12",
+      "record_id": 92701,
+      "tile": "T31UFS",
+      "split": "train",
+      "source_record_sha256": "b1124e44f509dfa1c7180923f184968d3fcbc5c42694896a89f4be90d580cb50",
+      "pixels": 83
+    },
+    {
+      "shape_id": "47aee9fc4296f21be41d18d162f5b28fbee264bde5c8a7a5e07b9bd251eb316a",
+      "class": "shadow",
+      "source_key": "train/T31UFS/obs_0008/r09_c12",
+      "record_id": 92701,
+      "tile": "T31UFS",
+      "split": "train",
+      "source_record_sha256": "b1124e44f509dfa1c7180923f184968d3fcbc5c42694896a89f4be90d580cb50",
+      "pixels": 538
+    },
+    {
+      "shape_id": "87bc084c8081cefa37c2c796110dafeb00fe5178f8c17338938d6b1f021635f4",
+      "class": "shadow",
+      "source_key": "train/T31UFS/obs_0008/r09_c12",
+      "record_id": 92701,
+      "tile": "T31UFS",
+      "split": "train",
+      "source_record_sha256": "b1124e44f509dfa1c7180923f184968d3fcbc5c42694896a89f4be90d580cb50",
+      "pixels": 261
+    },
+    {
+      "shape_id": "33e454d463f7a6d45b2fe7800f620f0726e23fab9b4c33da05ce6532377e77a2",
+      "class": "adjacency",
+      "source_key": "train/T31UFS/obs_0008/r09_c12",
+      "record_id": 92701,
+      "tile": "T31UFS",
+      "split": "train",
+      "source_record_sha256": "b1124e44f509dfa1c7180923f184968d3fcbc5c42694896a89f4be90d580cb50",
+      "pixels": 1840
+    },
+    {
+      "shape_id": "e1d9f70b73e2f3117b54757ac8b52021dbab534384bb7c45907bf01524540d64",
+      "class": "adjacency",
+      "source_key": "train/T31UFS/obs_0008/r09_c12",
+      "record_id": 92701,
+      "tile": "T31UFS",
+      "split": "train",
+      "source_record_sha256": "b1124e44f509dfa1c7180923f184968d3fcbc5c42694896a89f4be90d580cb50",
+      "pixels": 444
+    },
+    {
+      "shape_id": "302375da79ae34edd2dc289d098fadff30b772a3ad745af1b94a0da371db4a7a",
+      "class": "cloud",
+      "source_key": "train/T51NZF/obs_0038/r06_c08",
+      "record_id": 206256,
+      "tile": "T51NZF",
+      "split": "train",
+      "source_record_sha256": "3282ac64f91c3c5dd04bc1c21c24fa3211e28e75c9e77c4663af926f4162b49d",
+      "pixels": 1028
+    },
+    {
+      "shape_id": "21cc6541151f6fceb1063e40dbe9600183169aa9480e8a6ce7a362625d62ee34",
+      "class": "cloud",
+      "source_key": "train/T51NZF/obs_0038/r06_c08",
+      "record_id": 206256,
+      "tile": "T51NZF",
+      "split": "train",
+      "source_record_sha256": "3282ac64f91c3c5dd04bc1c21c24fa3211e28e75c9e77c4663af926f4162b49d",
+      "pixels": 440
+    },
+    {
+      "shape_id": "28d6b7a7877277f98e23a3b08428446c27721963295130d526a4e8a025d4203a",
+      "class": "adjacency",
+      "source_key": "train/T51NZF/obs_0038/r06_c08",
+      "record_id": 206256,
+      "tile": "T51NZF",
+      "split": "train",
+      "source_record_sha256": "3282ac64f91c3c5dd04bc1c21c24fa3211e28e75c9e77c4663af926f4162b49d",
+      "pixels": 1001
+    },
+    {
+      "shape_id": "9aedea8a76c7d81659b8327153b22b0939f267d12bca1ac928d29a40b9e13ebc",
+      "class": "adjacency",
+      "source_key": "train/T51NZF/obs_0038/r06_c08",
+      "record_id": 206256,
+      "tile": "T51NZF",
+      "split": "train",
+      "source_record_sha256": "3282ac64f91c3c5dd04bc1c21c24fa3211e28e75c9e77c4663af926f4162b49d",
+      "pixels": 963
+    },
+    {
+      "shape_id": "9338e009f7a46a28d7dbe63a3fb6dc14b1d40f271dd839bdf39468d3c84b8f3c",
+      "class": "cloud",
+      "source_key": "train/T38PMA/obs_0033/r07_c08",
+      "record_id": 145179,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "dc943ed8a67a2cba5a033910b68453ca4ef4b72867d022e4e9dd22d0da567ae3",
+      "pixels": 104
+    },
+    {
+      "shape_id": "12b67fea21a3cc1cd602e9d24cee0534af1be6ac414594662702bf58214063e6",
+      "class": "cloud",
+      "source_key": "train/T38PMA/obs_0033/r07_c08",
+      "record_id": 145179,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "dc943ed8a67a2cba5a033910b68453ca4ef4b72867d022e4e9dd22d0da567ae3",
+      "pixels": 88
+    },
+    {
+      "shape_id": "4d81ccf6a3079278f0a02b6b71882d05ff8ecefe33285ee3a704514604c66932",
+      "class": "shadow",
+      "source_key": "train/T38PMA/obs_0033/r07_c08",
+      "record_id": 145179,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "dc943ed8a67a2cba5a033910b68453ca4ef4b72867d022e4e9dd22d0da567ae3",
+      "pixels": 104
+    },
+    {
+      "shape_id": "1f022f59beda6b3d3f8e5b4a696b7ff347ce4ae6100c6b2d77fda94419e9ae3d",
+      "class": "shadow",
+      "source_key": "train/T38PMA/obs_0033/r07_c08",
+      "record_id": 145179,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "dc943ed8a67a2cba5a033910b68453ca4ef4b72867d022e4e9dd22d0da567ae3",
+      "pixels": 88
+    },
+    {
+      "shape_id": "569e0b389ac19ffbb05d1ad3731cb50eea41f9c9e619d8f96981455e55727116",
+      "class": "adjacency",
+      "source_key": "train/T38PMA/obs_0033/r07_c08",
+      "record_id": 145179,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "dc943ed8a67a2cba5a033910b68453ca4ef4b72867d022e4e9dd22d0da567ae3",
+      "pixels": 979
+    },
+    {
+      "shape_id": "65bec5909311cea57583b6cb86ba68a2f7ac37a97a21f43359b8786f90446720",
+      "class": "adjacency",
+      "source_key": "train/T38PMA/obs_0033/r07_c08",
+      "record_id": 145179,
+      "tile": "T38PMA",
+      "split": "train",
+      "source_record_sha256": "dc943ed8a67a2cba5a033910b68453ca4ef4b72867d022e4e9dd22d0da567ae3",
+      "pixels": 596
+    },
+    {
+      "shape_id": "7e11c272c8e1b9fcefb65b03b067ce046dd8020bde9005e9d8cf1acc2c6c2931",
+      "class": "cloud",
+      "source_key": "train/T35SQB/obs_0015/r05_c11",
+      "record_id": 126550,
+      "tile": "T35SQB",
+      "split": "train",
+      "source_record_sha256": "c77ddd7ee884627f3f21dbc6468ee1901e199da1be4836eb995b5a124a05e6e3",
+      "pixels": 691
+    },
+    {
+      "shape_id": "f0ecc9aa1637414bb9490e2799a9ed9a29461731495040f2eafd7ef78f6ce1e3",
+      "class": "cloud",
+      "source_key": "train/T35SQB/obs_0015/r05_c11",
+      "record_id": 126550,
+      "tile": "T35SQB",
+      "split": "train",
+      "source_record_sha256": "c77ddd7ee884627f3f21dbc6468ee1901e199da1be4836eb995b5a124a05e6e3",
+      "pixels": 465
+    },
+    {
+      "shape_id": "6cf3188ddaeb928e608878c3925cbb099b805c66ca0645d55f31ec6c2ed8ca70",
+      "class": "shadow",
+      "source_key": "train/T35SQB/obs_0015/r05_c11",
+      "record_id": 126550,
+      "tile": "T35SQB",
+      "split": "train",
+      "source_record_sha256": "c77ddd7ee884627f3f21dbc6468ee1901e199da1be4836eb995b5a124a05e6e3",
+      "pixels": 1079
+    },
+    {
+      "shape_id": "84fe6d7459415e4e515f4bc31b376f8bc4f5c485c25a536497529f0f669bec8e",
+      "class": "shadow",
+      "source_key": "train/T35SQB/obs_0015/r05_c11",
+      "record_id": 126550,
+      "tile": "T35SQB",
+      "split": "train",
+      "source_record_sha256": "c77ddd7ee884627f3f21dbc6468ee1901e199da1be4836eb995b5a124a05e6e3",
+      "pixels": 1000
+    },
+    {
+      "shape_id": "ef81f7c5d080e0bd2586c2ac19963b10120bfe0d8deeebb1d6d6e7fc845d9c97",
+      "class": "adjacency",
+      "source_key": "train/T35SQB/obs_0015/r05_c11",
+      "record_id": 126550,
+      "tile": "T35SQB",
+      "split": "train",
+      "source_record_sha256": "c77ddd7ee884627f3f21dbc6468ee1901e199da1be4836eb995b5a124a05e6e3",
+      "pixels": 2048
+    },
+    {
+      "shape_id": "24246dd749f3dbd862f00d9362c4fa0ad041f59f397c2faa5974106e19107de9",
+      "class": "adjacency",
+      "source_key": "train/T35SQB/obs_0015/r05_c11",
+      "record_id": 126550,
+      "tile": "T35SQB",
+      "split": "train",
+      "source_record_sha256": "c77ddd7ee884627f3f21dbc6468ee1901e199da1be4836eb995b5a124a05e6e3",
+      "pixels": 2030
+    },
+    {
+      "shape_id": "b830826612b34ece535081b834d71c901893938d86d77142c22a1115b796e31e",
+      "class": "cloud",
+      "source_key": "train/T20NNP/obs_0000/r05_c11",
+      "record_id": 59675,
+      "tile": "T20NNP",
+      "split": "train",
+      "source_record_sha256": "6ddabef105217c50b70b146f9732701221b3c6e4f1625f2607edd7c7a1eb7299",
+      "pixels": 412
+    },
+    {
+      "shape_id": "9d748960cf0c129873f7ba511e94a77c7196c2f7a37f04688c86716b7f599c1f",
+      "class": "cloud",
+      "source_key": "train/T20NNP/obs_0000/r05_c11",
+      "record_id": 59675,
+      "tile": "T20NNP",
+      "split": "train",
+      "source_record_sha256": "6ddabef105217c50b70b146f9732701221b3c6e4f1625f2607edd7c7a1eb7299",
+      "pixels": 160
+    },
+    {
+      "shape_id": "f362a3db6cced11db05a2ef26f05c554195e74a16dbc32150ebd6a7e142ff524",
+      "class": "shadow",
+      "source_key": "train/T20NNP/obs_0000/r05_c11",
+      "record_id": 59675,
+      "tile": "T20NNP",
+      "split": "train",
+      "source_record_sha256": "6ddabef105217c50b70b146f9732701221b3c6e4f1625f2607edd7c7a1eb7299",
+      "pixels": 470
+    },
+    {
+      "shape_id": "867af635886cd5df1a4ddd15c980571ec223bee01e0217e945c173894d32eee9",
+      "class": "shadow",
+      "source_key": "train/T20NNP/obs_0000/r05_c11",
+      "record_id": 59675,
+      "tile": "T20NNP",
+      "split": "train",
+      "source_record_sha256": "6ddabef105217c50b70b146f9732701221b3c6e4f1625f2607edd7c7a1eb7299",
+      "pixels": 160
+    },
+    {
+      "shape_id": "352cd6e52b787372cee25c2789d5af06dbed66810c18bf4ac9f36ff97fd14289",
+      "class": "adjacency",
+      "source_key": "train/T20NNP/obs_0000/r05_c11",
+      "record_id": 59675,
+      "tile": "T20NNP",
+      "split": "train",
+      "source_record_sha256": "6ddabef105217c50b70b146f9732701221b3c6e4f1625f2607edd7c7a1eb7299",
+      "pixels": 1241
+    },
+    {
+      "shape_id": "6e5cb52e00d86701db8718abe2845b4ca2df7e51c76fdc40b47e80526d6fd63c",
+      "class": "adjacency",
+      "source_key": "train/T20NNP/obs_0000/r05_c11",
+      "record_id": 59675,
+      "tile": "T20NNP",
+      "split": "train",
+      "source_record_sha256": "6ddabef105217c50b70b146f9732701221b3c6e4f1625f2607edd7c7a1eb7299",
+      "pixels": 408
+    },
+    {
+      "shape_id": "7f820b3ceb585655090c1bbbcc89d67ff0701acc4e537b388350dd86cf5f319c",
+      "class": "cloud",
+      "source_key": "train/T18NTG/obs_0000/r07_c12",
+      "record_id": 43995,
+      "tile": "T18NTG",
+      "split": "train",
+      "source_record_sha256": "df030c6648e780e8c836e8b0f4a9cdcf5766a5eb1b6c6d8134d73396a3fe7191",
+      "pixels": 119
+    },
+    {
+      "shape_id": "547a638dfe5da74f0016188ee12c9c8fcdfe3a013b37bcad91b79328192dc975",
+      "class": "cloud",
+      "source_key": "train/T18NTG/obs_0000/r07_c12",
+      "record_id": 43995,
+      "tile": "T18NTG",
+      "split": "train",
+      "source_record_sha256": "df030c6648e780e8c836e8b0f4a9cdcf5766a5eb1b6c6d8134d73396a3fe7191",
+      "pixels": 98
+    },
+    {
+      "shape_id": "c0545279057fd8e5b7012cae1c91a163bc54f47b0c7f1a25611aee98cc074f3d",
+      "class": "shadow",
+      "source_key": "train/T18NTG/obs_0000/r07_c12",
+      "record_id": 43995,
+      "tile": "T18NTG",
+      "split": "train",
+      "source_record_sha256": "df030c6648e780e8c836e8b0f4a9cdcf5766a5eb1b6c6d8134d73396a3fe7191",
+      "pixels": 554
+    },
+    {
+      "shape_id": "66220d56955f3fc6f564d69a2011ba8d84d36235b7c3bfa99243c214e01edb9e",
+      "class": "shadow",
+      "source_key": "train/T18NTG/obs_0000/r07_c12",
+      "record_id": 43995,
+      "tile": "T18NTG",
+      "split": "train",
+      "source_record_sha256": "df030c6648e780e8c836e8b0f4a9cdcf5766a5eb1b6c6d8134d73396a3fe7191",
+      "pixels": 534
+    },
+    {
+      "shape_id": "4f745d2ef77731e202e438376e77706aff056ec2d23dcca13bf99cb5f1ad1847",
+      "class": "adjacency",
+      "source_key": "train/T18NTG/obs_0000/r07_c12",
+      "record_id": 43995,
+      "tile": "T18NTG",
+      "split": "train",
+      "source_record_sha256": "df030c6648e780e8c836e8b0f4a9cdcf5766a5eb1b6c6d8134d73396a3fe7191",
+      "pixels": 1136
+    },
+    {
+      "shape_id": "888525439fdf452f534e99d9d0e6fedebf77dfc3dbcd6027c369b54abbd9193b",
+      "class": "adjacency",
+      "source_key": "train/T18NTG/obs_0000/r07_c12",
+      "record_id": 43995,
+      "tile": "T18NTG",
+      "split": "train",
+      "source_record_sha256": "df030c6648e780e8c836e8b0f4a9cdcf5766a5eb1b6c6d8134d73396a3fe7191",
+      "pixels": 665
+    },
+    {
+      "shape_id": "896d69a8c54df4c377f7d725a12218cd313bbe12e1169f1dea937c6f5c481a34",
+      "class": "cloud",
+      "source_key": "train/T53SQA/obs_0027/r13_c03",
+      "record_id": 219095,
+      "tile": "T53SQA",
+      "split": "train",
+      "source_record_sha256": "441b6939e94ae30b1937268d85d737e53b6e751ebd8caffdb4e645c685a10f7e",
+      "pixels": 1269
+    },
+    {
+      "shape_id": "81d9add58c499f12ad5b8f7aa87800cd411f66721711674778dde34fa246f29a",
+      "class": "cloud",
+      "source_key": "train/T53SQA/obs_0027/r13_c03",
+      "record_id": 219095,
+      "tile": "T53SQA",
+      "split": "train",
+      "source_record_sha256": "441b6939e94ae30b1937268d85d737e53b6e751ebd8caffdb4e645c685a10f7e",
+      "pixels": 525
+    },
+    {
+      "shape_id": "5de4f974f059b375d1788c17120b55cf061d7a28443a5b938e498e2ec475459e",
+      "class": "shadow",
+      "source_key": "train/T53SQA/obs_0027/r13_c03",
+      "record_id": 219095,
+      "tile": "T53SQA",
+      "split": "train",
+      "source_record_sha256": "441b6939e94ae30b1937268d85d737e53b6e751ebd8caffdb4e645c685a10f7e",
+      "pixels": 1002
+    },
+    {
+      "shape_id": "4969c33422e0f318595b841e1005f42da9371d9c71ef355109153454553028d2",
+      "class": "shadow",
+      "source_key": "train/T53SQA/obs_0027/r13_c03",
+      "record_id": 219095,
+      "tile": "T53SQA",
+      "split": "train",
+      "source_record_sha256": "441b6939e94ae30b1937268d85d737e53b6e751ebd8caffdb4e645c685a10f7e",
+      "pixels": 427
+    },
+    {
+      "shape_id": "97bad56f701a1d507b2e828482dd0c974d5f7daa7ece4f9cfeff24d34d2f246f",
+      "class": "adjacency",
+      "source_key": "train/T53SQA/obs_0027/r13_c03",
+      "record_id": 219095,
+      "tile": "T53SQA",
+      "split": "train",
+      "source_record_sha256": "441b6939e94ae30b1937268d85d737e53b6e751ebd8caffdb4e645c685a10f7e",
+      "pixels": 2076
+    },
+    {
+      "shape_id": "e1b265368147b80c9ae6dbd3b668a96997134231546b10cc5a96ca70b54a0489",
+      "class": "adjacency",
+      "source_key": "train/T53SQA/obs_0027/r13_c03",
+      "record_id": 219095,
+      "tile": "T53SQA",
+      "split": "train",
+      "source_record_sha256": "441b6939e94ae30b1937268d85d737e53b6e751ebd8caffdb4e645c685a10f7e",
+      "pixels": 1191
+    },
+    {
+      "shape_id": "e2b5ea8c63a655c1e1640da8d9438cab10b1569706aa338831ca2c652eb94f7d",
+      "class": "cloud",
+      "source_key": "train/T42SYD/obs_0009/r01_c05",
+      "record_id": 158451,
+      "tile": "T42SYD",
+      "split": "train",
+      "source_record_sha256": "70d8a999ba1e02d9b65b165bc1e57cde17777e4397217e9a94d2d1e61ab80e5d",
+      "pixels": 2994
+    },
+    {
+      "shape_id": "27588d027b2027ba4c347125d5306683e77b69413953ef8f7e463b9ca58f46e0",
+      "class": "cloud",
+      "source_key": "train/T42SYD/obs_0009/r01_c05",
+      "record_id": 158451,
+      "tile": "T42SYD",
+      "split": "train",
+      "source_record_sha256": "70d8a999ba1e02d9b65b165bc1e57cde17777e4397217e9a94d2d1e61ab80e5d",
+      "pixels": 339
+    },
+    {
+      "shape_id": "225ae9e7eb1deaebabda44bbeebbf2b031024d455a6d5aa73d711f6890836ab3",
+      "class": "shadow",
+      "source_key": "train/T42SYD/obs_0009/r01_c05",
+      "record_id": 158451,
+      "tile": "T42SYD",
+      "split": "train",
+      "source_record_sha256": "70d8a999ba1e02d9b65b165bc1e57cde17777e4397217e9a94d2d1e61ab80e5d",
+      "pixels": 346
+    },
+    {
+      "shape_id": "e237bc3ab6b8d36e674e7ab23e4d79bdcc77a39ad25d4b46ea1ddcea29c82c8a",
+      "class": "shadow",
+      "source_key": "train/T42SYD/obs_0009/r01_c05",
+      "record_id": 158451,
+      "tile": "T42SYD",
+      "split": "train",
+      "source_record_sha256": "70d8a999ba1e02d9b65b165bc1e57cde17777e4397217e9a94d2d1e61ab80e5d",
+      "pixels": 331
+    },
+    {
+      "shape_id": "a48f58c95861f0a3861d39db4e504d877be78111a1357cb43be27160345fafc8",
+      "class": "adjacency",
+      "source_key": "train/T42SYD/obs_0009/r01_c05",
+      "record_id": 158451,
+      "tile": "T42SYD",
+      "split": "train",
+      "source_record_sha256": "70d8a999ba1e02d9b65b165bc1e57cde17777e4397217e9a94d2d1e61ab80e5d",
+      "pixels": 3268
+    },
+    {
+      "shape_id": "32f11a26f26212439971e3501eeb2819c248c1050601f5333f8aa5677b7f4061",
+      "class": "cloud",
+      "source_key": "train/T49MDN/obs_0038/r09_c06",
+      "record_id": 188210,
+      "tile": "T49MDN",
+      "split": "train",
+      "source_record_sha256": "0a12b6a4b9bc12d01f0c6324d9c306d826e036328958cc4c2f9cf4dfa6d91358",
+      "pixels": 519
+    },
+    {
+      "shape_id": "4db0c21c488c27453f2adc5b684e5ccabb976377f90bbd55b7f7cd4d5e80c500",
+      "class": "cloud",
+      "source_key": "train/T49MDN/obs_0038/r09_c06",
+      "record_id": 188210,
+      "tile": "T49MDN",
+      "split": "train",
+      "source_record_sha256": "0a12b6a4b9bc12d01f0c6324d9c306d826e036328958cc4c2f9cf4dfa6d91358",
+      "pixels": 143
+    },
+    {
+      "shape_id": "be5ca9cb0b613362fc39b0cd835016b247c25c22532815f7b6d2645d66ca4858",
+      "class": "shadow",
+      "source_key": "train/T49MDN/obs_0038/r09_c06",
+      "record_id": 188210,
+      "tile": "T49MDN",
+      "split": "train",
+      "source_record_sha256": "0a12b6a4b9bc12d01f0c6324d9c306d826e036328958cc4c2f9cf4dfa6d91358",
+      "pixels": 452
+    },
+    {
+      "shape_id": "28894f1092a133dc88ee58f057e2b8407b3e9aad130f6cb33ce0d970307820d9",
+      "class": "shadow",
+      "source_key": "train/T49MDN/obs_0038/r09_c06",
+      "record_id": 188210,
+      "tile": "T49MDN",
+      "split": "train",
+      "source_record_sha256": "0a12b6a4b9bc12d01f0c6324d9c306d826e036328958cc4c2f9cf4dfa6d91358",
+      "pixels": 143
+    },
+    {
+      "shape_id": "f8cb0282b2ef1f121ab3861d48b303e1dd9b89559b3b0eba9278fb7825785fea",
+      "class": "adjacency",
+      "source_key": "train/T49MDN/obs_0038/r09_c06",
+      "record_id": 188210,
+      "tile": "T49MDN",
+      "split": "train",
+      "source_record_sha256": "0a12b6a4b9bc12d01f0c6324d9c306d826e036328958cc4c2f9cf4dfa6d91358",
+      "pixels": 993
+    },
+    {
+      "shape_id": "5cb0e185c8359a7dfc9378b1cc04a7100f67ed3d255570e5c6a25cb0b86058f1",
+      "class": "adjacency",
+      "source_key": "train/T49MDN/obs_0038/r09_c06",
+      "record_id": 188210,
+      "tile": "T49MDN",
+      "split": "train",
+      "source_record_sha256": "0a12b6a4b9bc12d01f0c6324d9c306d826e036328958cc4c2f9cf4dfa6d91358",
+      "pixels": 717
+    },
+    {
+      "shape_id": "3cd79c576c45ee184d819c8148f7eb815e39faf40559aa30f97cb56284015ae7",
+      "class": "cloud",
+      "source_key": "train/T23KPU/obs_0036/r06_c10",
+      "record_id": 71471,
+      "tile": "T23KPU",
+      "split": "train",
+      "source_record_sha256": "48cbc48e337a0b098f1e9b7f40df6f1b1472668b010538591bce743eec307465",
+      "pixels": 327
+    },
+    {
+      "shape_id": "3cf863416e4b46e69e762276f0595e39dc763294f31056adc8a250796d96fe17",
+      "class": "cloud",
+      "source_key": "train/T23KPU/obs_0036/r06_c10",
+      "record_id": 71471,
+      "tile": "T23KPU",
+      "split": "train",
+      "source_record_sha256": "48cbc48e337a0b098f1e9b7f40df6f1b1472668b010538591bce743eec307465",
+      "pixels": 130
+    },
+    {
+      "shape_id": "a3f191602521e5297c15cd0d580812a8103f8ac933666d6c6bd1dcf2872b4dc7",
+      "class": "shadow",
+      "source_key": "train/T23KPU/obs_0036/r06_c10",
+      "record_id": 71471,
+      "tile": "T23KPU",
+      "split": "train",
+      "source_record_sha256": "48cbc48e337a0b098f1e9b7f40df6f1b1472668b010538591bce743eec307465",
+      "pixels": 531
+    },
+    {
+      "shape_id": "614f9e6c759c5d4dc7d21b69e7728f9ed797c14a8bb7a7ecb583ea2c6f38a21a",
+      "class": "shadow",
+      "source_key": "train/T23KPU/obs_0036/r06_c10",
+      "record_id": 71471,
+      "tile": "T23KPU",
+      "split": "train",
+      "source_record_sha256": "48cbc48e337a0b098f1e9b7f40df6f1b1472668b010538591bce743eec307465",
+      "pixels": 113
+    },
+    {
+      "shape_id": "4eb3342ec663c64ea2ae6fda97664af846d3e03d374ba9bda720244a828c43ca",
+      "class": "adjacency",
+      "source_key": "train/T23KPU/obs_0036/r06_c10",
+      "record_id": 71471,
+      "tile": "T23KPU",
+      "split": "train",
+      "source_record_sha256": "48cbc48e337a0b098f1e9b7f40df6f1b1472668b010538591bce743eec307465",
+      "pixels": 1025
+    },
+    {
+      "shape_id": "34e1ce00b6d07ba9bfded63df50fb279d8e386bdddb1c9ba6167258fb4c58e0c",
+      "class": "adjacency",
+      "source_key": "train/T23KPU/obs_0036/r06_c10",
+      "record_id": 71471,
+      "tile": "T23KPU",
+      "split": "train",
+      "source_record_sha256": "48cbc48e337a0b098f1e9b7f40df6f1b1472668b010538591bce743eec307465",
+      "pixels": 661
+    },
+    {
+      "shape_id": "f3dd25376d0ad84b5c9d3da60696fbe6e363430f389ab82ef000cdbea67f7a95",
+      "class": "shadow",
+      "source_key": "train/T06VXP/obs_0034/r09_c08",
+      "record_id": 4117,
+      "tile": "T06VXP",
+      "split": "train",
+      "source_record_sha256": "4751ac7175e86ddcb1dc7d547b1f16a3baedf5c23df21e8f4382b69260efb69b",
+      "pixels": 40
+    },
+    {
+      "shape_id": "8bff7cd0c53d46b113c767cd4a76d5df8846d463a4c1c059eaea64ee5cc73805",
+      "class": "adjacency",
+      "source_key": "train/T06VXP/obs_0034/r09_c08",
+      "record_id": 4117,
+      "tile": "T06VXP",
+      "split": "train",
+      "source_record_sha256": "4751ac7175e86ddcb1dc7d547b1f16a3baedf5c23df21e8f4382b69260efb69b",
+      "pixels": 161
+    },
+    {
+      "shape_id": "ec4a36e394f21b8a6340c731cd6cdcb471fbb26491499fac34d325be3cf64416",
+      "class": "cloud",
+      "source_key": "train/T33QZE/obs_0024/r09_c05",
+      "record_id": 105591,
+      "tile": "T33QZE",
+      "split": "train",
+      "source_record_sha256": "3caa88e314453f809de93c66b522fdc4a2afab924af2215c2fa8d5d2f10d4b0d",
+      "pixels": 861
+    },
+    {
+      "shape_id": "1b959b968c109d216c72c8b489996f8d333d8d3f054deb0ef3b1cbdfcc2065df",
+      "class": "shadow",
+      "source_key": "train/T33QZE/obs_0024/r09_c05",
+      "record_id": 105591,
+      "tile": "T33QZE",
+      "split": "train",
+      "source_record_sha256": "3caa88e314453f809de93c66b522fdc4a2afab924af2215c2fa8d5d2f10d4b0d",
+      "pixels": 1156
+    },
+    {
+      "shape_id": "6d3e6706567c6a15335f324977e28690fc3b5f11b8289f4638a4ca7399fb1f11",
+      "class": "adjacency",
+      "source_key": "train/T33QZE/obs_0024/r09_c05",
+      "record_id": 105591,
+      "tile": "T33QZE",
+      "split": "train",
+      "source_record_sha256": "3caa88e314453f809de93c66b522fdc4a2afab924af2215c2fa8d5d2f10d4b0d",
+      "pixels": 1118
+    },
+    {
+      "shape_id": "d82a9c4a83e61bc66343ebcc2801d28d066f79eb17a16bf2ad11eca21258c855",
+      "class": "adjacency",
+      "source_key": "train/T33QZE/obs_0024/r09_c05",
+      "record_id": 105591,
+      "tile": "T33QZE",
+      "split": "train",
+      "source_record_sha256": "3caa88e314453f809de93c66b522fdc4a2afab924af2215c2fa8d5d2f10d4b0d",
+      "pixels": 102
+    },
+    {
+      "shape_id": "097b8ae8290cde18cd7bf959a80c6346d97fa9cff3ae0254c592de85dc873deb",
+      "class": "cloud",
+      "source_key": "train/T39KTU/obs_0011/r07_c10",
+      "record_id": 147976,
+      "tile": "T39KTU",
+      "split": "train",
+      "source_record_sha256": "179c42f548de0733ee5287283ac783c774f0751f125a41d34b9c47305c1d2d9c",
+      "pixels": 1170
+    },
+    {
+      "shape_id": "70b95dd3e9ebf511e4e20968c565c0ca528231efc3038c84a9e79a535b7eb8b5",
+      "class": "cloud",
+      "source_key": "train/T39KTU/obs_0011/r07_c10",
+      "record_id": 147976,
+      "tile": "T39KTU",
+      "split": "train",
+      "source_record_sha256": "179c42f548de0733ee5287283ac783c774f0751f125a41d34b9c47305c1d2d9c",
+      "pixels": 1160
+    },
+    {
+      "shape_id": "d975942eb79a0eec0c87b737ba120e65a8778771891a83f11d0204ba058e11f7",
+      "class": "shadow",
+      "source_key": "train/T39KTU/obs_0011/r07_c10",
+      "record_id": 147976,
+      "tile": "T39KTU",
+      "split": "train",
+      "source_record_sha256": "179c42f548de0733ee5287283ac783c774f0751f125a41d34b9c47305c1d2d9c",
+      "pixels": 1503
+    },
+    {
+      "shape_id": "d36b40252a933e99cfeb5aef3257cbf988081b690b0330205dd6ac097f68e6a6",
+      "class": "shadow",
+      "source_key": "train/T39KTU/obs_0011/r07_c10",
+      "record_id": 147976,
+      "tile": "T39KTU",
+      "split": "train",
+      "source_record_sha256": "179c42f548de0733ee5287283ac783c774f0751f125a41d34b9c47305c1d2d9c",
+      "pixels": 828
+    },
+    {
+      "shape_id": "f9bfb9e6b9a724c19f55b74ebed1a37908c64f34308c5e63ae726183a1ed8741",
+      "class": "adjacency",
+      "source_key": "train/T39KTU/obs_0011/r07_c10",
+      "record_id": 147976,
+      "tile": "T39KTU",
+      "split": "train",
+      "source_record_sha256": "179c42f548de0733ee5287283ac783c774f0751f125a41d34b9c47305c1d2d9c",
+      "pixels": 5453
+    },
+    {
+      "shape_id": "8cf49bb5517fed085786cfb4d3eb60c50268c7faced2c0ca93a7e42ff33f36f6",
+      "class": "adjacency",
+      "source_key": "train/T39KTU/obs_0011/r07_c10",
+      "record_id": 147976,
+      "tile": "T39KTU",
+      "split": "train",
+      "source_record_sha256": "179c42f548de0733ee5287283ac783c774f0751f125a41d34b9c47305c1d2d9c",
+      "pixels": 174
+    },
+    {
+      "shape_id": "17fd4a605d4b6e86693fee146d9544768041ae41f9026e8b35f36ecfcb372433",
+      "class": "cloud",
+      "source_key": "train/T33UYS/obs_0038/r01_c10",
+      "record_id": 110567,
+      "tile": "T33UYS",
+      "split": "train",
+      "source_record_sha256": "f20ad64a3cdd7d2381c5fe6f5a213a94c1e97bdaa77d606d324d811a6b8270de",
+      "pixels": 213
+    },
+    {
+      "shape_id": "9d1f2017859bff5fa441817ec3bdd1171849c702b9801d62b68cd506dcb1c281",
+      "class": "shadow",
+      "source_key": "train/T33UYS/obs_0038/r01_c10",
+      "record_id": 110567,
+      "tile": "T33UYS",
+      "split": "train",
+      "source_record_sha256": "f20ad64a3cdd7d2381c5fe6f5a213a94c1e97bdaa77d606d324d811a6b8270de",
+      "pixels": 111
+    },
+    {
+      "shape_id": "ee7d40d22d7ac96c34b077a8f312ee6fa3bd81af494720d437b76414bb70c619",
+      "class": "shadow",
+      "source_key": "train/T33UYS/obs_0038/r01_c10",
+      "record_id": 110567,
+      "tile": "T33UYS",
+      "split": "train",
+      "source_record_sha256": "f20ad64a3cdd7d2381c5fe6f5a213a94c1e97bdaa77d606d324d811a6b8270de",
+      "pixels": 75
+    },
+    {
+      "shape_id": "817b3bad59464ad87bc40bd00002096c1821ce88bc680d051f055674ccb18e7f",
+      "class": "adjacency",
+      "source_key": "train/T33UYS/obs_0038/r01_c10",
+      "record_id": 110567,
+      "tile": "T33UYS",
+      "split": "train",
+      "source_record_sha256": "f20ad64a3cdd7d2381c5fe6f5a213a94c1e97bdaa77d606d324d811a6b8270de",
+      "pixels": 422
+    },
+    {
+      "shape_id": "6760af9870fa26e9764415a5e30c0cd8d16b534a2b750ac9dc7e01f4534ae504",
+      "class": "adjacency",
+      "source_key": "train/T33UYS/obs_0038/r01_c10",
+      "record_id": 110567,
+      "tile": "T33UYS",
+      "split": "train",
+      "source_record_sha256": "f20ad64a3cdd7d2381c5fe6f5a213a94c1e97bdaa77d606d324d811a6b8270de",
+      "pixels": 295
+    },
+    {
+      "shape_id": "a955913df95d3b5cdede51af7a160abb7f184d57dad74738523e288842577312",
+      "class": "cloud",
+      "source_key": "train/T34UDF/obs_0002/r08_c01",
+      "record_id": 117968,
+      "tile": "T34UDF",
+      "split": "train",
+      "source_record_sha256": "21798f9ce47824ece685ea3a6ee2175b16f3dcc0cd404af7dd8f59397732a3b7",
+      "pixels": 87
+    },
+    {
+      "shape_id": "9e90030f99a086384539276f81df419e32612783730aba6336a3033cf6900545",
+      "class": "shadow",
+      "source_key": "train/T34UDF/obs_0002/r08_c01",
+      "record_id": 117968,
+      "tile": "T34UDF",
+      "split": "train",
+      "source_record_sha256": "21798f9ce47824ece685ea3a6ee2175b16f3dcc0cd404af7dd8f59397732a3b7",
+      "pixels": 87
+    },
+    {
+      "shape_id": "772015b38b28768752bc84e5fea899008432548ec084ab72e4cf26ba1ffa7bde",
+      "class": "adjacency",
+      "source_key": "train/T34UDF/obs_0002/r08_c01",
+      "record_id": 117968,
+      "tile": "T34UDF",
+      "split": "train",
+      "source_record_sha256": "21798f9ce47824ece685ea3a6ee2175b16f3dcc0cd404af7dd8f59397732a3b7",
+      "pixels": 324
+    },
+    {
+      "shape_id": "b45300dbda35d94f6af5649161c686ca6ec6ba5f0650b907ec4dbb7939c59d97",
+      "class": "adjacency",
+      "source_key": "train/T34UDF/obs_0002/r08_c01",
+      "record_id": 117968,
+      "tile": "T34UDF",
+      "split": "train",
+      "source_record_sha256": "21798f9ce47824ece685ea3a6ee2175b16f3dcc0cd404af7dd8f59397732a3b7",
+      "pixels": 324
+    },
+    {
+      "shape_id": "5e96a8f58a951f331f66f0d19639d4d56a7fed7daf13fd9afdeeb7620feba3a0",
+      "class": "adjacency",
+      "source_key": "train/T08VPR/obs_0023/r07_c03",
+      "record_id": 5867,
+      "tile": "T08VPR",
+      "split": "train",
+      "source_record_sha256": "2b2a2453f72bc13aa267a7cfa049d9aac54ff6ac27c4a37693f824992756c5d1",
+      "pixels": 97
+    },
+    {
+      "shape_id": "52c682afecbd77758c623b2a1cac1fa0904fd77f518f583a5bb9712ae76a8010",
+      "class": "adjacency",
+      "source_key": "train/T08VPR/obs_0023/r07_c03",
+      "record_id": 5867,
+      "tile": "T08VPR",
+      "split": "train",
+      "source_record_sha256": "2b2a2453f72bc13aa267a7cfa049d9aac54ff6ac27c4a37693f824992756c5d1",
+      "pixels": 47
+    },
+    {
+      "shape_id": "8ed7a8c337f8b9496f68c6a1e38a90d41c1a566aa41ffd5bc9a6818f0625c12a",
+      "class": "cloud",
+      "source_key": "train/T50RPT/obs_0007/r04_c10",
+      "record_id": 199002,
+      "tile": "T50RPT",
+      "split": "train",
+      "source_record_sha256": "7065c35dfb7114adb90e5526de0449586ae6d7119ecad00d22a37a4d5547db1b",
+      "pixels": 3227
+    },
+    {
+      "shape_id": "fafcd073d687b45c195c19aef4e1a047c0df392ddadf625f0c99afae459064af",
+      "class": "cloud",
+      "source_key": "train/T50RPT/obs_0007/r04_c10",
+      "record_id": 199002,
+      "tile": "T50RPT",
+      "split": "train",
+      "source_record_sha256": "7065c35dfb7114adb90e5526de0449586ae6d7119ecad00d22a37a4d5547db1b",
+      "pixels": 1038
+    },
+    {
+      "shape_id": "a4ec27dacb9d9a7094468782293e1f321b3dbd0129c166facc2f762acdbf0cc8",
+      "class": "shadow",
+      "source_key": "train/T50RPT/obs_0007/r04_c10",
+      "record_id": 199002,
+      "tile": "T50RPT",
+      "split": "train",
+      "source_record_sha256": "7065c35dfb7114adb90e5526de0449586ae6d7119ecad00d22a37a4d5547db1b",
+      "pixels": 151
+    },
+    {
+      "shape_id": "c60c2676ed6bbb507fe768418425992268de1eed5e359947bacaa9e49e8360ce",
+      "class": "shadow",
+      "source_key": "train/T50RPT/obs_0007/r04_c10",
+      "record_id": 199002,
+      "tile": "T50RPT",
+      "split": "train",
+      "source_record_sha256": "7065c35dfb7114adb90e5526de0449586ae6d7119ecad00d22a37a4d5547db1b",
+      "pixels": 142
+    },
+    {
+      "shape_id": "62c215d9720c96807a1f3dd1d6c63da622c4bfe638ac5ec1be01c0b9b3c9e5ca",
+      "class": "adjacency",
+      "source_key": "train/T50RPT/obs_0007/r04_c10",
+      "record_id": 199002,
+      "tile": "T50RPT",
+      "split": "train",
+      "source_record_sha256": "7065c35dfb7114adb90e5526de0449586ae6d7119ecad00d22a37a4d5547db1b",
+      "pixels": 2102
+    },
+    {
+      "shape_id": "ab6514fbc6790f4f07e6e98c3dcbb71f5b5eb5ba13c0895e1a992a4b06593670",
+      "class": "adjacency",
+      "source_key": "train/T50RPT/obs_0007/r04_c10",
+      "record_id": 199002,
+      "tile": "T50RPT",
+      "split": "train",
+      "source_record_sha256": "7065c35dfb7114adb90e5526de0449586ae6d7119ecad00d22a37a4d5547db1b",
+      "pixels": 913
+    },
+    {
+      "shape_id": "3b1a5b45c50f68dbaecc4ff4c50a3ca9d3d1fc112c485c5979049dae1404661f",
+      "class": "cloud",
+      "source_key": "train/T38LLN/obs_0019/r02_c05",
+      "record_id": 143369,
+      "tile": "T38LLN",
+      "split": "train",
+      "source_record_sha256": "7061325adc0a6dc62a24150f841af0d3d1e40d8c09efd3403f29887c673ca716",
+      "pixels": 172
+    },
+    {
+      "shape_id": "9ea4bc63e6e47855e7d50b0891a8489a5920f685ca9d2b32621f438666f87da1",
+      "class": "cloud",
+      "source_key": "train/T38LLN/obs_0019/r02_c05",
+      "record_id": 143369,
+      "tile": "T38LLN",
+      "split": "train",
+      "source_record_sha256": "7061325adc0a6dc62a24150f841af0d3d1e40d8c09efd3403f29887c673ca716",
+      "pixels": 117
+    },
+    {
+      "shape_id": "51b0f39c138ea3feb7b05823babeb86d49cfd01c5d78feb7c723ef65f612e3e8",
+      "class": "adjacency",
+      "source_key": "train/T38LLN/obs_0019/r02_c05",
+      "record_id": 143369,
+      "tile": "T38LLN",
+      "split": "train",
+      "source_record_sha256": "7061325adc0a6dc62a24150f841af0d3d1e40d8c09efd3403f29887c673ca716",
+      "pixels": 539
+    },
+    {
+      "shape_id": "4d00e3ce1df24fe46b94894e2774286a84e466f969c7653cbd22a507d8da0603",
+      "class": "cloud",
+      "source_key": "train/T14QQG/obs_0009/r05_c08",
+      "record_id": 21600,
+      "tile": "T14QQG",
+      "split": "train",
+      "source_record_sha256": "87d8f3d8eb39b712f4e702a96f99e9ec732705a493b2988b914a65239fd3792c",
+      "pixels": 353
+    },
+    {
+      "shape_id": "b8968c99e05a937df6a2d977cd595c201052f27ad6fedccecb78466465f4d6e7",
+      "class": "shadow",
+      "source_key": "train/T14QQG/obs_0009/r05_c08",
+      "record_id": 21600,
+      "tile": "T14QQG",
+      "split": "train",
+      "source_record_sha256": "87d8f3d8eb39b712f4e702a96f99e9ec732705a493b2988b914a65239fd3792c",
+      "pixels": 264
+    },
+    {
+      "shape_id": "fd7d963ed729e0e869e441ed1c9d38f957f7a444a2dfa73b5e43ef740e1c2508",
+      "class": "adjacency",
+      "source_key": "train/T14QQG/obs_0009/r05_c08",
+      "record_id": 21600,
+      "tile": "T14QQG",
+      "split": "train",
+      "source_record_sha256": "87d8f3d8eb39b712f4e702a96f99e9ec732705a493b2988b914a65239fd3792c",
+      "pixels": 713
+    },
+    {
+      "shape_id": "13c70586dd51a95fbeafad9b02c0659ab218c54ae7e17be27d9d59c64d629eb6",
+      "class": "cloud",
+      "source_key": "train/T09UYT/obs_0040/r01_c01",
+      "record_id": 6854,
+      "tile": "T09UYT",
+      "split": "train",
+      "source_record_sha256": "6facbfbc3263f8b8abc490c5bf17e973cef53ad238847b8b0a4184db9e8ac7c7",
+      "pixels": 1163
+    },
+    {
+      "shape_id": "dfdae141d63ecc6c7fc269c4fc79ddb44207f40817c95525996efdf9294c28d8",
+      "class": "cloud",
+      "source_key": "train/T09UYT/obs_0040/r01_c01",
+      "record_id": 6854,
+      "tile": "T09UYT",
+      "split": "train",
+      "source_record_sha256": "6facbfbc3263f8b8abc490c5bf17e973cef53ad238847b8b0a4184db9e8ac7c7",
+      "pixels": 84
+    },
+    {
+      "shape_id": "e1e89b568c6ebe044a1a5b5b056cc5f5a0ad89636521042ad2db6ac6313a142a",
+      "class": "shadow",
+      "source_key": "train/T09UYT/obs_0040/r01_c01",
+      "record_id": 6854,
+      "tile": "T09UYT",
+      "split": "train",
+      "source_record_sha256": "6facbfbc3263f8b8abc490c5bf17e973cef53ad238847b8b0a4184db9e8ac7c7",
+      "pixels": 1036
+    },
+    {
+      "shape_id": "c15bd97b57d31a7d3fa41c52411fc775b9dcde9b2940aeffb19faf92e4cb7af6",
+      "class": "shadow",
+      "source_key": "train/T09UYT/obs_0040/r01_c01",
+      "record_id": 6854,
+      "tile": "T09UYT",
+      "split": "train",
+      "source_record_sha256": "6facbfbc3263f8b8abc490c5bf17e973cef53ad238847b8b0a4184db9e8ac7c7",
+      "pixels": 132
+    },
+    {
+      "shape_id": "000ed07bfb55e4531ebe3c30109ee3297f0a22694c1e797f6b90daa97116df0f",
+      "class": "adjacency",
+      "source_key": "train/T09UYT/obs_0040/r01_c01",
+      "record_id": 6854,
+      "tile": "T09UYT",
+      "split": "train",
+      "source_record_sha256": "6facbfbc3263f8b8abc490c5bf17e973cef53ad238847b8b0a4184db9e8ac7c7",
+      "pixels": 1158
+    }
+  ],
+  "class_counts": {
+    "cloud": 82,
+    "shadow": 73,
+    "adjacency": 101
+  },
+  "interpretation": "QA-derived missing-region geometry; not paired real cloudy/clear imagery"
+}

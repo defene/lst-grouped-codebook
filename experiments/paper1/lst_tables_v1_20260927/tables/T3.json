@@ -1,0 +1,591 @@
+{
+  "title": "表示消融",
+  "rows": [
+    {
+      "job_id": "vq_R_clean_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "85c746aa2ede9d488732de8b9418b35580e1e9b4bbc60e650608e9f79ff3bdf8",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_pixel10_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "7c060dff18c483fb8a6c4d87b9c1244995f92843708c686de134744a32ec3043",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_clean_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "66b10ade53e56773adf09223fee2f1624a7ebed30ff51a3977b3e0e603aa89ac",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_pixel10_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "19ac7ecfd5c006f5923094d253367b6b9389f559f530a7a1e9663a6c948d0bec",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_clean_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "730f96cd87b6787e6af861725cac7b66a65c1d6d37a8681f72d1142fee8ecce3",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "c3cd8a15bae647253d3d0fe701b2ecaa4163fa80415e9c039e39095be90fa337",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_clean_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "5355dee26d3154246f294be29d2670aaf3d7026d1beb8b52093a01508791e44e",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "2369507e9ff5bbef85aef47ed844f109c36263a6b5e751641dba2cdde0f97785",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_G_clean_seed17",
+      "model": "vq",
+      "representation": "G",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "319296e1cd1e1a391512a5b7c74ddc752765fdb6089acd98cc655f8a7d2da2d3",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_G_pixel10_seed17",
+      "model": "vq",
+      "representation": "G",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "6a6bd612177dd7edd978366eb6808b234094402597a333b1a7592951f36d8349",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_power_clean_seed17",
+      "model": "vq",
+      "representation": "C_power",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "fcb1888c6dbeb0c1847271fc807c238bcd6cc8ff082dbbcbc73bb2d3deef2567",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_power_pixel10_seed17",
+      "model": "vq",
+      "representation": "C_power",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "8fce6d143090c7bd7b4befab19925018de94487c823b1f3ad02480b9c741efa9",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_asinh_clean_seed17",
+      "model": "vq",
+      "representation": "C_asinh",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "d143511d63fb07c9707c420f1bf4ba53a7faaaa1d6dc70bc0c0e1cbf99d81161",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_asinh_pixel10_seed17",
+      "model": "vq",
+      "representation": "C_asinh",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "b246077557784845868da57d89a9115125385c861d83a49b481502b664602e8f",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_G_clean_seed17",
+      "model": "fsq",
+      "representation": "G",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "7116008c498c8b728a6f7f5edaac15f487fffea6b01938d45850079b7b9dfbe8",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_G_pixel10_seed17",
+      "model": "fsq",
+      "representation": "G",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "cde315c157e5d9abf5c86715e2c3efc1b2ecf3b8ee4fc11d54f6106ab5b207e6",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_power_clean_seed17",
+      "model": "fsq",
+      "representation": "C_power",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "6bdbab462ad7a2e6d45b9ae683bc1eba04da7268829b8c56639461c41f366b8c",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_power_pixel10_seed17",
+      "model": "fsq",
+      "representation": "C_power",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "7f5dbf6616de30856d5571bfc914326a8f7424d92d80f09c3741a4c8976450cd",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_asinh_clean_seed17",
+      "model": "fsq",
+      "representation": "C_asinh",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "4e61edeaa5e67000c6779edfd34744e09e06595b01871809b71114db4c96e97d",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_asinh_pixel10_seed17",
+      "model": "fsq",
+      "representation": "C_asinh",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "c1061b3862a30ba10873d6c2fdc3eb99594821fd5db01eba42cc90f330dfd1e3",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_G_clean_seed17",
+      "model": "sd",
+      "representation": "G",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "dbde2ce2ca668be55e904c2635ceb68f435e8bf84b455ed7b79d0dc6b245f046",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_G_pixel10_seed17",
+      "model": "sd",
+      "representation": "G",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "ccf1c3a9af3373e3d9900e2db8368933de5149fa7679d7f830fe1d2ee9c3f270",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_clean_seed17",
+      "model": "sd",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "affc6ae3d7247b4018153a35ebe20700e5c0b6addbae355ef6eda0599c5f33a4",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_pixel10_seed17",
+      "model": "sd",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "c8d896522ee2980642588b847b4e33874d0dafa7e0ac18fba93ab1c7db2dca26",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_power_clean_seed17",
+      "model": "sd",
+      "representation": "C_power",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "cdd71e1376e2fb3bd141b627e50cfe8c4fec12aebfd93671e0f767b324ca614c",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_power_pixel10_seed17",
+      "model": "sd",
+      "representation": "C_power",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "4120edc8f468da9ab26e1b5f2bd871cae5b39d9df6c86d260d9151cfcd215c46",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_asinh_clean_seed17",
+      "model": "sd",
+      "representation": "C_asinh",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "30199a7fdf825bd807120afcf6a28c3732ba5780d83af571ad6ec29a2a68d295",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_asinh_pixel10_seed17",
+      "model": "sd",
+      "representation": "C_asinh",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "pixel10_gradient_rmse": null,
+        "tail_rmse": null
+      },
+      "config_sha256": "f24ee28d9bc93b42c85d43b25d795d293c8e8939351730a9551ddda7c9ecb7ce",
+      "evidence": []
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "natural_pretrained_discrete",
+      "tables": [
+        "T1",
+        "T3",
+        "T4",
+        "T5"
+      ],
+      "candidate_training_jobs": null,
+      "status": "blocked_asset_and_adapter",
+      "reason": "Need identified official VQ/FSQ/LFQ/BSQ checkpoint, architecture and license audits. Native pretrained K/grid cannot be resized and still called zero-shot."
+    },
+    {
+      "id": "statistics_extensions",
+      "tables": [
+        "T3",
+        "T4",
+        "S2",
+        "S4"
+      ],
+      "candidate_training_jobs": 0,
+      "status": "blocked_reporting",
+      "reason": "Train-only residual-tail thresholds, between/within decomposition, cross-seed aggregation and convergence-threshold reporting still need implementation; null is not zero."
+    }
+  ]
+}

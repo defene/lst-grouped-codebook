@@ -1,0 +1,14 @@
+[
+  {
+    "backbone": "conv",
+    "seconds_per_step": 0.06260236666518419,
+    "peak_allocated_GiB": 4.494449615478516,
+    "loss_finite": true
+  },
+  {
+    "backbone": "prithvi",
+    "seconds_per_step": 0.019309300002836,
+    "peak_allocated_GiB": 0.5160255432128906,
+    "loss_finite": true
+  }
+]

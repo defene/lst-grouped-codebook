@@ -1,0 +1,65 @@
+Torch 实验结果下载：2026-10-13
+
+范围：Stage 1、VQGAN 预训练初始化微调、VQ-drifting、grouped g8k256；含早期失败尝试与修复记录。
+RAE 为另行准备的设计方案，本次没有新增 RAE 训练或推理。
+最终训练模型：39；最终验证条件单元：390。
+索引：results_index.json；全部最终指标：all_final_metrics.json；原始下载目录：snapshot。
+原始 snapshot 文件已经逐一校验 SHA-256；生成的索引与预览放在 snapshot 外。
+
+查看结果：
+preview_clean_G.png / preview_pixel10_G.png 为 G 表示下五类模型同一样例的重建预览。
+所有下载的 gallery.npz 位于对应评估条件目录，包含保存的样例数组。
+以下为验证集 pixel-weighted RMSE，单位摄氏度；raw 为模型直接输出，未混用 projected 后处理指标。
+这些是最终 epoch 的结果；未使用 test 排名。均温条件等实验假设请结合每项 metrics 的 data_fingerprint 阅读。
+
+模型                         完整训练/验证  修复评估   clean RMSE   pixel10 RMSE
+sd_C                          True         False        2.042288       1.989577
+sd_C_affine                   True         False        0.231517       0.204150
+sd_C_asinh                    True         False        0.244998       0.225477
+sd_C_power                    True         False        1.426813       1.415375
+sd_G                          True         False        0.250954       0.210056
+sd_G_asinh                    True         False        0.287258       0.204175
+sd_G_power                    True         False        0.440434       0.253134
+vq_C                          True         True         1.396084       1.271004
+vq_C_affine                   True         True         1.248514       1.220854
+vq_C_asinh                    True         True         1.101884       1.093828
+vq_C_power                    True         True         2.491808       2.471920
+vq_G                          True         False        1.285050       1.260186
+vq_G_asinh                    True         True         1.264633       1.251093
+vq_G_power                    True         True         1.262818       1.260474
+vq_R                          True         False        1.264191       1.235963
+vq_drifting_C                 True         False        2.361695       2.365733
+vq_drifting_C_affine          True         False        2.311976       2.320519
+vq_drifting_C_asinh           True         False        2.328082       2.329094
+vq_drifting_C_power           True         False        2.681763       2.681423
+vq_drifting_G                 True         False        2.757441       2.439677
+vq_drifting_G_asinh           True         False        2.713233       2.651602
+vq_drifting_G_power           True         False        2.738900       2.660433
+vq_drifting_R                 True         False        3.275454       2.251516
+vqgan_pretrained_C            True         False        0.970659       0.995721
+vqgan_pretrained_C_affine     True         False        0.721424       0.709379
+vqgan_pretrained_C_asinh      True         False        0.740428       0.717945
+vqgan_pretrained_C_power      True         False        0.856367       0.796846
+vqgan_pretrained_G            True         False        0.736153       0.720778
+vqgan_pretrained_G_asinh      True         False        0.726683       0.709366
+vqgan_pretrained_G_power      True         False        2.307406       0.735236
+vqgan_pretrained_R            True         False        0.735582       0.720902
+grouped_g8k256_C              True         False        0.536998       0.494053
+grouped_g8k256_C_affine       True         False        0.511186       0.467166
+grouped_g8k256_C_asinh        True         False        0.463475       0.460815
+grouped_g8k256_C_power        True         False        2.842767       2.769715
+grouped_g8k256_G              True         False        0.510941       0.471374
+grouped_g8k256_G_asinh        True         False        0.467944       0.458524
+grouped_g8k256_G_power        True         False        0.889010       0.509759
+grouped_g8k256_R              True         False        0.519490       0.482617
+
+未下载文件分类（完整路径和大小见 snapshot/DOWNLOAD_MANIFEST.json 的 excluded）：
+cache_or_lock: 4489 个文件，0.024 GB
+model_weights: 42 个文件，43.449 GB
+wandb_binary_history: 46 个文件，0.320 GB
+full_codebook_indices: 460 个文件，5.620 GB
+per_sample_metric_rows: 1800 个文件，79.653 GB
+
+模型权重、逐样本指标行、全量码本索引和 W&B 二进制历史仍在服务器。
+这是覆盖全部相关实验的结果审阅包，不是服务器目录的完整镜像。
+历史 failure 文件保留；不能仅据其存在或 training/status.json 的旧状态判断当前实验失败。

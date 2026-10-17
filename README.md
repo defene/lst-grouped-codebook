@@ -1,5 +1,13 @@
 # LST 组合码本实验：A06 / A07
 
+## 2026-10-17：当前源码与实验报告更新
+
+[本地 VQ / EMA 最新状态与报告入口](reports/local_vq_ema_20261017/README.md)：原始 VQ 和纯 EMA 均完成5轮，pixel10验证RMSE分别为1.236882°C和0.635862°C；EMA+初始化/死码重置只完成第1轮验证。Grouped及K512正式实验未启动，所有本机队列已按用户要求停止。
+
+本次新增当前工作区实验框架、逐轮完整验证、EMA和K512对照实现及相关单元测试；实验数据只发布现有报告、汇总指标和验证证据。新增内容不含数据集、预测数组、权重、训练断点或环境。配置保留历史路径；本次提交不代表服务器部署或恢复训练。
+
+`UPDATE_MANIFEST_20261017.json`记录新增/同步文件的来源与哈希；`python verify_update_20261017.py`验证本次导出。下方A06/A07说明及结果仍按原始历史版本解释。`verify_export.py`继续验证原导出，旧AGENTS副本保存在`docs/historical_export_20261004/AGENTS.md`。
+
 新增设计文档：[Prithvi + RAE 14 层 ViT decoder 方案](experiments/paper1/prithvi_rae_20261005/README.md)（2026-10-05，仅方案与显存估算，训练器尚未实现，未提交实验；不属于下述 A06/A07 历史结果或原始导出 manifest）。
 
 本快照包含 single1024、g2k32、g4k256、g8k16、g8k256 五个已完成配置的实验框架和结果；没有启动新训练。

@@ -1,0 +1,326 @@
+{
+  "title": "MAE 整块补全",
+  "rows": [
+    {
+      "job_id": "vq_R_clean_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "85c746aa2ede9d488732de8b9418b35580e1e9b4bbc60e650608e9f79ff3bdf8",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_clean_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "66b10ade53e56773adf09223fee2f1624a7ebed30ff51a3977b3e0e603aa89ac",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_clean_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "730f96cd87b6787e6af861725cac7b66a65c1d6d37a8681f72d1142fee8ecce3",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_clean_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "5355dee26d3154246f294be29d2670aaf3d7026d1beb8b52093a01508791e44e",
+      "evidence": []
+    },
+    {
+      "job_id": "prithvi_mae_R_clean_seed17",
+      "model": "prithvi_mae",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "3bc946b7c9290037cd8f8e66960b050790ef53945a5ed6fe9a4b9d378cda3078",
+      "evidence": []
+    },
+    {
+      "job_id": "prithvi_mae_R_patch16_seed17",
+      "model": "prithvi_mae",
+      "representation": "R",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "8a68c0bf177190682e00c19117b6cdfe66ee7171bbcd813690155498477afe91",
+      "evidence": []
+    },
+    {
+      "job_id": "prithvi_mae_C_clean_seed17",
+      "model": "prithvi_mae",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "8a1d0fa80d10e1fd9f03cb25594d790d2de4466d6425f91b852fade96dc3e8c1",
+      "evidence": []
+    },
+    {
+      "job_id": "prithvi_mae_C_patch16_seed17",
+      "model": "prithvi_mae",
+      "representation": "C",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "c5c9f9071f6af9135c230f4091ee6826c2b8783c85c1df3ac419111b2b73830b",
+      "evidence": []
+    },
+    {
+      "job_id": "satmae_pp_R_clean_seed17",
+      "model": "satmae_pp",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "b56d3ab69870ef3bc93d7c379bfc9717655ca9d3fbdc447f850652fdf03ea82c",
+      "evidence": []
+    },
+    {
+      "job_id": "satmae_pp_R_patch16_seed17",
+      "model": "satmae_pp",
+      "representation": "R",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "dab46e1ee6256270bcbf1b7da202721ad5e9286a64641ce284e776c07a99f394",
+      "evidence": []
+    },
+    {
+      "job_id": "satmae_pp_C_clean_seed17",
+      "model": "satmae_pp",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "31a19a879c2f5db63b220831f757f22b3a589bb220e5efeef8049097f02cdaae",
+      "evidence": []
+    },
+    {
+      "job_id": "satmae_pp_C_patch16_seed17",
+      "model": "satmae_pp",
+      "representation": "C",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "40cf443a6b35aab582a279a852c5f0c73e368fdbc52dba65c0e3fd3989b83a13",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_patch16_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "72975ae7bd2894802ee962ce7bf29e4e6c67613180b7adea049a080e78649eb1",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_patch16_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "05f4b069f57d73b27433134ad1c5530094daf51a8451c5659f1e105e89df5b18",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_patch16_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "a0c7373ff2017452b82c3eaf94c818398cd734359d431bb5704e5a4f6207f5b7",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_patch16_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "patch16_rmse": null,
+        "patch16_missing_rmse": null,
+        "patch16_spatial_rmse": null,
+        "patch16_gradient_rmse": null
+      },
+      "config_sha256": "5e822a800ab204d5745c32624e8b01dc5742748d6ff0355f32a0516eead70aff",
+      "evidence": []
+    }
+  ],
+  "unresolved": []
+}

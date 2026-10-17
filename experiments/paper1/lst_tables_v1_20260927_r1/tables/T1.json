@@ -1,0 +1,415 @@
+{
+  "title": "总体复原",
+  "rows": [
+    {
+      "job_id": "vq_R_mixed_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "87c11984f3d0d38bc8ed7be37bfc20f9825b5fef6853c2976f8cff29b6ff6bf7",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_mixed_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "8d4cf409e2f0559dabc87b2198e0e78780a3915679b7cc2330bac29d02462899",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_mixed_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "0d99fba3a25f1b79d8b1f88b426270256f17b3f8ec012b9bed28182bff92b4dc",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_mixed_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "e083b7b1fe9b5c3b2cda5d0a4a55b61e30da8b3b64b9e2b71668273057e07abe",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_mixed_seed17",
+      "model": "lfq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "f75c6c68724092c5c8115910ef26bda81a35016ff30079293bcfb8a48cdf19c2",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_mixed_seed17",
+      "model": "lfq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "f54c165b9b277ccaea574c61a567ab77e52fa6488e90517de411fe6e35ee3da2",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_mixed_seed17",
+      "model": "bsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "a3f607bf513d73dcac5820c257f1339b3ae589d92bc9559e39e1b3fc51be5ddc",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_mixed_seed17",
+      "model": "bsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "038842a891450062749815703a4bd33aefd10b5b2e41ee4deb4bee5354887a0e",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_G_mixed_seed17",
+      "model": "sd",
+      "representation": "G",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "8cde862f0150beb0cff6451d85248d1324be6fa5b052298c52baaea9f3a0144c",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_mixed_seed17",
+      "model": "sd",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "e3dc1e111c3a237e8dd43f9a2816afcf5c1d7a5a6ae8f8b16bae2aa651f88731",
+      "evidence": []
+    },
+    {
+      "job_id": "eo_vae_R_mixed_seed17",
+      "model": "eo_vae",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "3e774f5e1bb512fb12034537d6c6f0342645fe7a7fcab94a24748716e46b1478",
+      "evidence": []
+    },
+    {
+      "job_id": "eo_vae_C_mixed_seed17",
+      "model": "eo_vae",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "09553edd9ba65684aa88145c63a6515af41d192741bbccc436d945776763988e",
+      "evidence": []
+    },
+    {
+      "job_id": "terramind_fsq_R_mixed_seed17",
+      "model": "terramind_fsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "c7c782b0249fdf29d9a46ae3051b38873a7b480891fb71dd7e8f1df133f0f1e8",
+      "evidence": []
+    },
+    {
+      "job_id": "terramind_fsq_C_mixed_seed17",
+      "model": "terramind_fsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "a1900be2edfd4c13e5c966f7d307c8ddb40b055c924ce1d36a1885363eb6c029",
+      "evidence": []
+    },
+    {
+      "job_id": "sdxl_G_mixed_seed17",
+      "model": "sdxl",
+      "representation": "G",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "5147979fb6ea3b1d8a30c10e5814186b8886c050663851b06c1e1f14301a71a5",
+      "evidence": []
+    },
+    {
+      "job_id": "sdxl_C_mixed_seed17",
+      "model": "sdxl",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "db6245606238f17c84463029b637535b0869c6a98dbaf0c1713c84b8bf31236c",
+      "evidence": []
+    },
+    {
+      "job_id": "flux1_G_mixed_seed17",
+      "model": "flux1",
+      "representation": "G",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "8c6a25f2943e573dd4df20f8570eda2939e1e95a3fa5a6d914e694b6edd4cafb",
+      "evidence": []
+    },
+    {
+      "job_id": "flux1_C_mixed_seed17",
+      "model": "flux1",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "clean_rmse": null,
+        "pixel10_rmse": null,
+        "pixel10_missing_rmse": null,
+        "gaussian_rmse": null,
+        "cloud_rmse": null,
+        "joint_spatial_rmse": null,
+        "joint_gradient_rmse": null
+      },
+      "config_sha256": "30ff30e79db6de6494bf8db617488fa21a3cf9a73fbea4f4cee671c302b1a635",
+      "evidence": []
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "natural_pretrained_discrete",
+      "tables": [
+        "T1",
+        "T3",
+        "T4",
+        "T5"
+      ],
+      "candidate_training_jobs": null,
+      "status": "blocked_asset_and_adapter",
+      "reason": "Need identified official VQ/FSQ/LFQ/BSQ checkpoint, architecture and license audits. Native pretrained K/grid cannot be resized and still called zero-shot."
+    }
+  ]
+}

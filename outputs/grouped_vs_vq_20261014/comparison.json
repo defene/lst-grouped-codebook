@@ -1,0 +1,5151 @@
+{
+  "scope": "Frozen epoch-5 models; full HLP v2 val 11684 records, 2 fixed pixel10 views. No test selection.",
+  "pairing": "Physical input, mean, encoded input and full data fingerprint identical within all eight representation pairs.",
+  "rows": [
+    {
+      "representation": "R",
+      "vq_pixel10_rmse_C": 1.2359633368396237,
+      "grouped_pixel10_rmse_C": 0.48261716041793834,
+      "grouped_rmse_reduction_pct": 60.952145906528465,
+      "vq_clean_rmse_C": 1.2641905712273234,
+      "grouped_clean_rmse_C": 0.5194900703011,
+      "vq_epoch5_pixel": 0.2080403443963741,
+      "grouped_epoch5_pixel": 0.03159577737212222,
+      "vq_epoch5_bottleneck": 3.6597069411044223,
+      "grouped_epoch5_bottleneck": 0.10083421333561016,
+      "vq_used_codes": 29,
+      "vq_perplexity": 15.968171713923388,
+      "grouped_used_min": 199,
+      "grouped_used_max": 235,
+      "grouped_perplexity_min": 2.3271222988116227,
+      "grouped_perplexity_max": 4.512234379636469,
+      "grouped_top1_min": 0.4369723805304388,
+      "grouped_top1_max": 0.8376760199971807
+    },
+    {
+      "representation": "G",
+      "vq_pixel10_rmse_C": 1.2601858382729234,
+      "grouped_pixel10_rmse_C": 0.47137366741166503,
+      "grouped_rmse_reduction_pct": 62.5949083781421,
+      "vq_clean_rmse_C": 1.285050069311872,
+      "grouped_clean_rmse_C": 0.5109411927227776,
+      "vq_epoch5_pixel": 0.21808955129756136,
+      "grouped_epoch5_pixel": 0.03007500262293237,
+      "vq_epoch5_bottleneck": 30.27745522670243,
+      "grouped_epoch5_bottleneck": 0.0991003559284973,
+      "vq_used_codes": 30,
+      "vq_perplexity": 12.534663774190312,
+      "grouped_used_min": 187,
+      "grouped_used_max": 225,
+      "grouped_perplexity_min": 2.562796686716333,
+      "grouped_perplexity_max": 5.350270786140257,
+      "grouped_top1_min": 0.39364421179289927,
+      "grouped_top1_max": 0.8330806834887327
+    },
+    {
+      "representation": "G_power",
+      "vq_pixel10_rmse_C": 1.260473977267948,
+      "grouped_pixel10_rmse_C": 0.5097588859314025,
+      "grouped_rmse_reduction_pct": 59.55815866692507,
+      "vq_clean_rmse_C": 1.2628175556074053,
+      "grouped_clean_rmse_C": 0.8890096390356523,
+      "vq_epoch5_pixel": 0.22640675609753358,
+      "grouped_epoch5_pixel": 0.039532502832156785,
+      "vq_epoch5_bottleneck": 3.3047874598498215,
+      "grouped_epoch5_bottleneck": 0.088658531369725,
+      "vq_used_codes": 32,
+      "vq_perplexity": 14.99316660409503,
+      "grouped_used_min": 179,
+      "grouped_used_max": 221,
+      "grouped_perplexity_min": 2.6313489666151537,
+      "grouped_perplexity_max": 5.105733532368326,
+      "grouped_top1_min": 0.38814278450168155,
+      "grouped_top1_max": 0.8201475245181948
+    },
+    {
+      "representation": "G_asinh",
+      "vq_pixel10_rmse_C": 1.251092767636646,
+      "grouped_pixel10_rmse_C": 0.45852449452312716,
+      "grouped_rmse_reduction_pct": 63.35008031504374,
+      "vq_clean_rmse_C": 1.2646332665936504,
+      "grouped_clean_rmse_C": 0.46794371552087555,
+      "vq_epoch5_pixel": 0.21483854812647005,
+      "grouped_epoch5_pixel": 0.02838486897362219,
+      "vq_epoch5_bottleneck": 6.774841427156841,
+      "grouped_epoch5_bottleneck": 0.10274831983236461,
+      "vq_used_codes": 35,
+      "vq_perplexity": 17.60732796130051,
+      "grouped_used_min": 177,
+      "grouped_used_max": 225,
+      "grouped_perplexity_min": 2.8993114362070553,
+      "grouped_perplexity_max": 3.91371962479637,
+      "grouped_top1_min": 0.5167602251444912,
+      "grouped_top1_max": 0.7832821908290876
+    },
+    {
+      "representation": "C",
+      "vq_pixel10_rmse_C": 1.271004234739357,
+      "grouped_pixel10_rmse_C": 0.49405329869016557,
+      "grouped_rmse_reduction_pct": 61.12890223442251,
+      "vq_clean_rmse_C": 1.3960844501335425,
+      "grouped_clean_rmse_C": 0.5369982813795684,
+      "vq_epoch5_pixel": 0.22869079487415492,
+      "grouped_epoch5_pixel": 0.03526165220391833,
+      "vq_epoch5_bottleneck": 7.322853023591332,
+      "grouped_epoch5_bottleneck": 0.10520501485612244,
+      "vq_used_codes": 29,
+      "vq_perplexity": 14.106297965981422,
+      "grouped_used_min": 193,
+      "grouped_used_max": 230,
+      "grouped_perplexity_min": 2.6805219561268347,
+      "grouped_perplexity_max": 4.904397412101755,
+      "grouped_top1_min": 0.4630325281430614,
+      "grouped_top1_max": 0.8081407203415429
+    },
+    {
+      "representation": "C_affine",
+      "vq_pixel10_rmse_C": 1.2208544738723337,
+      "grouped_pixel10_rmse_C": 0.467165680520062,
+      "grouped_rmse_reduction_pct": 61.73453179572702,
+      "vq_clean_rmse_C": 1.248514299453717,
+      "grouped_clean_rmse_C": 0.5111856215540123,
+      "vq_epoch5_pixel": 0.2030994572579854,
+      "grouped_epoch5_pixel": 0.029496483512070504,
+      "vq_epoch5_bottleneck": 4.143441322317732,
+      "grouped_epoch5_bottleneck": 0.10468047393383617,
+      "vq_used_codes": 33,
+      "vq_perplexity": 16.966101208517568,
+      "grouped_used_min": 185,
+      "grouped_used_max": 229,
+      "grouped_perplexity_min": 2.6653685247561048,
+      "grouped_perplexity_max": 4.543560828703194,
+      "grouped_top1_min": 0.49512405098978995,
+      "grouped_top1_max": 0.802956028354512
+    },
+    {
+      "representation": "C_power",
+      "vq_pixel10_rmse_C": 2.4719201564408744,
+      "grouped_pixel10_rmse_C": 2.7697145339956015,
+      "grouped_rmse_reduction_pct": -12.047087232117493,
+      "vq_clean_rmse_C": 2.4918077799143665,
+      "grouped_clean_rmse_C": 2.8427669073889392,
+      "vq_epoch5_pixel": 1.0068244167691103,
+      "grouped_epoch5_pixel": 0.9959407533098402,
+      "vq_epoch5_bottleneck": 0.21405248211451977,
+      "grouped_epoch5_bottleneck": 0.02331773276446222,
+      "vq_used_codes": 39,
+      "vq_perplexity": 7.559788123655303,
+      "grouped_used_min": 97,
+      "grouped_used_max": 134,
+      "grouped_perplexity_min": 1.6046108242876076,
+      "grouped_perplexity_max": 2.995395993878782,
+      "grouped_top1_min": 0.4485603741667841,
+      "grouped_top1_max": 0.9014660571520632
+    },
+    {
+      "representation": "C_asinh",
+      "vq_pixel10_rmse_C": 1.0938280808693521,
+      "grouped_pixel10_rmse_C": 0.46081506265888345,
+      "grouped_rmse_reduction_pct": 57.87134461819292,
+      "vq_clean_rmse_C": 1.1018837993509896,
+      "grouped_clean_rmse_C": 0.4634745612420822,
+      "vq_epoch5_pixel": 0.16226274130707505,
+      "grouped_epoch5_pixel": 0.029465255691013947,
+      "vq_epoch5_bottleneck": 3.6680087516106132,
+      "grouped_epoch5_bottleneck": 0.10685132560834505,
+      "vq_used_codes": 42,
+      "vq_perplexity": 24.42000308694711,
+      "grouped_used_min": 190,
+      "grouped_used_max": 218,
+      "grouped_perplexity_min": 2.449634290358542,
+      "grouped_perplexity_max": 4.047517368747768,
+      "grouped_top1_min": 0.4421008744990636,
+      "grouped_top1_max": 0.8331556351571783
+    }
+  ],
+  "group_usage": [
+    {
+      "representation": "R",
+      "group": 0,
+      "used_codes": 227,
+      "perplexity": 3.602925577011025,
+      "top1_fraction": 0.7602272212376906,
+      "top10_fraction": 0.9294408391566145,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.9153123006074102,
+          "top1_fraction": 0.6460116398493666
+        },
+        {
+          "scale": 2,
+          "used_codes": 3,
+          "perplexity": 1.0078413226524976,
+          "top1_fraction": 0.9990478432043821
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.0229810296560993,
+          "top1_fraction": 0.9967001407432766
+        },
+        {
+          "scale": 4,
+          "used_codes": 13,
+          "perplexity": 1.119814815741583,
+          "top1_fraction": 0.9791434868195823
+        },
+        {
+          "scale": 5,
+          "used_codes": 11,
+          "perplexity": 1.0748539342193493,
+          "top1_fraction": 0.9877867168777816
+        },
+        {
+          "scale": 6,
+          "used_codes": 19,
+          "perplexity": 1.187819471625664,
+          "top1_fraction": 0.9680320190954391
+        },
+        {
+          "scale": 8,
+          "used_codes": 64,
+          "perplexity": 2.169715471794692,
+          "top1_fraction": 0.8335865285861006
+        },
+        {
+          "scale": 10,
+          "used_codes": 42,
+          "perplexity": 1.3764526389676208,
+          "top1_fraction": 0.939572920232797
+        },
+        {
+          "scale": 13,
+          "used_codes": 47,
+          "perplexity": 1.4367506336397213,
+          "top1_fraction": 0.9309572692338078
+        },
+        {
+          "scale": 16,
+          "used_codes": 227,
+          "perplexity": 10.734455635378769,
+          "top1_fraction": 0.48491911347783295
+        }
+      ]
+    },
+    {
+      "representation": "R",
+      "group": 1,
+      "used_codes": 201,
+      "perplexity": 2.3271222988116227,
+      "top1_fraction": 0.8376760199971807,
+      "top10_fraction": 0.976412313470407,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0037541723133863,
+          "top1_fraction": 0.99957206436152
+        },
+        {
+          "scale": 2,
+          "used_codes": 4,
+          "perplexity": 1.0540084108049066,
+          "top1_fraction": 0.9919976035604245
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.0363190249382044,
+          "top1_fraction": 0.9949313401042261
+        },
+        {
+          "scale": 4,
+          "used_codes": 7,
+          "perplexity": 1.1083981431619248,
+          "top1_fraction": 0.9820427507702841
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.0568177791054414,
+          "top1_fraction": 0.9912752482026703
+        },
+        {
+          "scale": 6,
+          "used_codes": 13,
+          "perplexity": 1.1483667632493952,
+          "top1_fraction": 0.9749574441781734
+        },
+        {
+          "scale": 8,
+          "used_codes": 53,
+          "perplexity": 1.6775306891302055,
+          "top1_fraction": 0.8879865093289969
+        },
+        {
+          "scale": 10,
+          "used_codes": 32,
+          "perplexity": 1.2278915195696256,
+          "top1_fraction": 0.9622492297158507
+        },
+        {
+          "scale": 13,
+          "used_codes": 37,
+          "perplexity": 1.2433437538657979,
+          "top1_fraction": 0.9605040727318398
+        },
+        {
+          "scale": 16,
+          "used_codes": 200,
+          "perplexity": 4.82548893634876,
+          "top1_fraction": 0.6473539535903801
+        }
+      ]
+    },
+    {
+      "representation": "R",
+      "group": 2,
+      "used_codes": 212,
+      "perplexity": 2.927565702254504,
+      "top1_fraction": 0.8084286329218439,
+      "top10_fraction": 0.9498965402662263,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 2,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 3,
+          "used_codes": 7,
+          "perplexity": 1.0025863792625995,
+          "top1_fraction": 0.9997670128190498
+        },
+        {
+          "scale": 4,
+          "used_codes": 8,
+          "perplexity": 1.0347126492299097,
+          "top1_fraction": 0.9958543735022253
+        },
+        {
+          "scale": 5,
+          "used_codes": 10,
+          "perplexity": 1.01740799248278,
+          "top1_fraction": 0.9980811365970558
+        },
+        {
+          "scale": 6,
+          "used_codes": 17,
+          "perplexity": 1.0774875471035685,
+          "top1_fraction": 0.9899625318574309
+        },
+        {
+          "scale": 8,
+          "used_codes": 56,
+          "perplexity": 1.7420064232982797,
+          "top1_fraction": 0.897292772167066
+        },
+        {
+          "scale": 10,
+          "used_codes": 36,
+          "perplexity": 1.190010973245128,
+          "top1_fraction": 0.9738454296473811
+        },
+        {
+          "scale": 13,
+          "used_codes": 46,
+          "perplexity": 1.2471849816973692,
+          "top1_fraction": 0.9656314506866215
+        },
+        {
+          "scale": 16,
+          "used_codes": 212,
+          "perplexity": 8.162622753073768,
+          "top1_fraction": 0.5515868054069668
+        }
+      ]
+    },
+    {
+      "representation": "R",
+      "group": 3,
+      "used_codes": 223,
+      "perplexity": 3.270045090180572,
+      "top1_fraction": 0.7653788740761625,
+      "top10_fraction": 0.9470861988239321,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 5,
+          "perplexity": 1.0170870872364948,
+          "top1_fraction": 0.9979887024991442
+        },
+        {
+          "scale": 2,
+          "used_codes": 8,
+          "perplexity": 1.525480817547588,
+          "top1_fraction": 0.8736947963026361
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 1.2701992242588152,
+          "top1_fraction": 0.9394328426338012
+        },
+        {
+          "scale": 4,
+          "used_codes": 15,
+          "perplexity": 1.3739240109528836,
+          "top1_fraction": 0.9174298185552893
+        },
+        {
+          "scale": 5,
+          "used_codes": 9,
+          "perplexity": 1.2117191536639524,
+          "top1_fraction": 0.9559260527216706
+        },
+        {
+          "scale": 6,
+          "used_codes": 18,
+          "perplexity": 1.3262619386383003,
+          "top1_fraction": 0.9329698257826468
+        },
+        {
+          "scale": 8,
+          "used_codes": 81,
+          "perplexity": 2.137025212799203,
+          "top1_fraction": 0.8138172393871962
+        },
+        {
+          "scale": 10,
+          "used_codes": 41,
+          "perplexity": 1.4054281477801294,
+          "top1_fraction": 0.9237615542622389
+        },
+        {
+          "scale": 13,
+          "used_codes": 44,
+          "perplexity": 1.4181295377108356,
+          "top1_fraction": 0.92467016037711
+        },
+        {
+          "scale": 16,
+          "used_codes": 223,
+          "perplexity": 8.417717058619365,
+          "top1_fraction": 0.5297433656603047
+        }
+      ]
+    },
+    {
+      "representation": "R",
+      "group": 4,
+      "used_codes": 203,
+      "perplexity": 2.5280575583527707,
+      "top1_fraction": 0.8362127318404253,
+      "top10_fraction": 0.9582436136899128,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 2,
+          "used_codes": 3,
+          "perplexity": 1.0052799163400143,
+          "top1_fraction": 0.999422286888052
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.005571513821499,
+          "top1_fraction": 0.999391380425273
+        },
+        {
+          "scale": 4,
+          "used_codes": 7,
+          "perplexity": 1.0370641640952143,
+          "top1_fraction": 0.9951803748716193
+        },
+        {
+          "scale": 5,
+          "used_codes": 7,
+          "perplexity": 1.0179926361234666,
+          "top1_fraction": 0.9978603218076001
+        },
+        {
+          "scale": 6,
+          "used_codes": 14,
+          "perplexity": 1.0690501782303052,
+          "top1_fraction": 0.9904879417246757
+        },
+        {
+          "scale": 8,
+          "used_codes": 47,
+          "perplexity": 1.508285469650398,
+          "top1_fraction": 0.9240227019856213
+        },
+        {
+          "scale": 10,
+          "used_codes": 28,
+          "perplexity": 1.131352052561337,
+          "top1_fraction": 0.9814370078740158
+        },
+        {
+          "scale": 13,
+          "used_codes": 34,
+          "perplexity": 1.165370377074902,
+          "top1_fraction": 0.97605206330814
+        },
+        {
+          "scale": 16,
+          "used_codes": 203,
+          "perplexity": 6.386134920273665,
+          "top1_fraction": 0.6088731785989387
+        }
+      ]
+    },
+    {
+      "representation": "R",
+      "group": 5,
+      "used_codes": 199,
+      "perplexity": 4.512234379636469,
+      "top1_fraction": 0.4369723805304388,
+      "top10_fraction": 0.9685222501359325,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 4,
+          "perplexity": 1.5462268982287273,
+          "top1_fraction": 0.8447877439233139
+        },
+        {
+          "scale": 2,
+          "used_codes": 12,
+          "perplexity": 3.014676130579821,
+          "top1_fraction": 0.4793735022252653
+        },
+        {
+          "scale": 3,
+          "used_codes": 16,
+          "perplexity": 2.8520681129523884,
+          "top1_fraction": 0.48312031648217885
+        },
+        {
+          "scale": 4,
+          "used_codes": 24,
+          "perplexity": 3.0619723326238093,
+          "top1_fraction": 0.4967503637452927
+        },
+        {
+          "scale": 5,
+          "used_codes": 22,
+          "perplexity": 2.7751145474573997,
+          "top1_fraction": 0.4538822321122903
+        },
+        {
+          "scale": 6,
+          "used_codes": 34,
+          "perplexity": 2.8698079839779744,
+          "top1_fraction": 0.5117361348853132
+        },
+        {
+          "scale": 8,
+          "used_codes": 85,
+          "perplexity": 3.775165317706118,
+          "top1_fraction": 0.41324942228688805
+        },
+        {
+          "scale": 10,
+          "used_codes": 50,
+          "perplexity": 2.893091864429682,
+          "top1_fraction": 0.4989263094830538
+        },
+        {
+          "scale": 13,
+          "used_codes": 54,
+          "perplexity": 2.801548129643032,
+          "top1_fraction": 0.5529746337985086
+        },
+        {
+          "scale": 16,
+          "used_codes": 198,
+          "perplexity": 7.1960602623584675,
+          "top1_fraction": 0.3279773956371962
+        }
+      ]
+    },
+    {
+      "representation": "R",
+      "group": 6,
+      "used_codes": 235,
+      "perplexity": 4.43772519673076,
+      "top1_fraction": 0.5948288383309503,
+      "top10_fraction": 0.9321767953158668,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.8330260111450378,
+          "top1_fraction": 0.7102447791852106
+        },
+        {
+          "scale": 2,
+          "used_codes": 4,
+          "perplexity": 1.5717503562289117,
+          "top1_fraction": 0.8330088154741527
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.5399761098386595,
+          "top1_fraction": 0.8453630796150481
+        },
+        {
+          "scale": 4,
+          "used_codes": 16,
+          "perplexity": 1.7357811211966137,
+          "top1_fraction": 0.7721055503252311
+        },
+        {
+          "scale": 5,
+          "used_codes": 12,
+          "perplexity": 1.639778877002886,
+          "top1_fraction": 0.8111845258473126
+        },
+        {
+          "scale": 6,
+          "used_codes": 23,
+          "perplexity": 1.7930193347124064,
+          "top1_fraction": 0.7681159420289855
+        },
+        {
+          "scale": 8,
+          "used_codes": 75,
+          "perplexity": 2.7672373470892153,
+          "top1_fraction": 0.6187100147637795
+        },
+        {
+          "scale": 10,
+          "used_codes": 46,
+          "perplexity": 2.054388569542612,
+          "top1_fraction": 0.7046602191030469
+        },
+        {
+          "scale": 13,
+          "used_codes": 50,
+          "perplexity": 2.0574556349553816,
+          "top1_fraction": 0.7328218025358099
+        },
+        {
+          "scale": 16,
+          "used_codes": 235,
+          "perplexity": 10.979970406852923,
+          "top1_fraction": 0.38807610835330364
+        }
+      ]
+    },
+    {
+      "representation": "R",
+      "group": 7,
+      "used_codes": 226,
+      "perplexity": 4.168759957118486,
+      "top1_fraction": 0.5995219077874218,
+      "top10_fraction": 0.9484170786596049,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0047364744488168,
+          "top1_fraction": 0.999443683669976
+        },
+        {
+          "scale": 2,
+          "used_codes": 6,
+          "perplexity": 1.924500079887434,
+          "top1_fraction": 0.6986049298185553
+        },
+        {
+          "scale": 3,
+          "used_codes": 8,
+          "perplexity": 1.7567754969555778,
+          "top1_fraction": 0.7595001711742554
+        },
+        {
+          "scale": 4,
+          "used_codes": 15,
+          "perplexity": 1.822520069531417,
+          "top1_fraction": 0.7506606256419035
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.8207214170855237,
+          "top1_fraction": 0.7338531324888736
+        },
+        {
+          "scale": 6,
+          "used_codes": 25,
+          "perplexity": 1.8974812779875894,
+          "top1_fraction": 0.7348023412834265
+        },
+        {
+          "scale": 8,
+          "used_codes": 83,
+          "perplexity": 2.841884016285115,
+          "top1_fraction": 0.6052955697963026
+        },
+        {
+          "scale": 10,
+          "used_codes": 48,
+          "perplexity": 2.0295320479759944,
+          "top1_fraction": 0.7204313591235878
+        },
+        {
+          "scale": 13,
+          "used_codes": 54,
+          "perplexity": 1.9976246391350412,
+          "top1_fraction": 0.7504441414851443
+        },
+        {
+          "scale": 16,
+          "used_codes": 226,
+          "perplexity": 9.392083178395248,
+          "top1_fraction": 0.40479719193983227
+        }
+      ]
+    },
+    {
+      "representation": "G",
+      "group": 0,
+      "used_codes": 225,
+      "perplexity": 3.4701435965985685,
+      "top1_fraction": 0.7598447222949433,
+      "top10_fraction": 0.9418994930221318,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0016570960306872,
+          "top1_fraction": 0.999828825744608
+        },
+        {
+          "scale": 2,
+          "used_codes": 7,
+          "perplexity": 1.050592212125887,
+          "top1_fraction": 0.9919655083875385
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 1.0487890858005435,
+          "top1_fraction": 0.9925016166457453
+        },
+        {
+          "scale": 4,
+          "used_codes": 8,
+          "perplexity": 1.1698455197813462,
+          "top1_fraction": 0.9708495592262923
+        },
+        {
+          "scale": 5,
+          "used_codes": 9,
+          "perplexity": 1.093788823157512,
+          "top1_fraction": 0.9852327969873331
+        },
+        {
+          "scale": 6,
+          "used_codes": 16,
+          "perplexity": 1.2128272585820052,
+          "top1_fraction": 0.9640070466735137
+        },
+        {
+          "scale": 8,
+          "used_codes": 52,
+          "perplexity": 2.154320979441927,
+          "top1_fraction": 0.8247068640876413
+        },
+        {
+          "scale": 10,
+          "used_codes": 36,
+          "perplexity": 1.380955217398808,
+          "top1_fraction": 0.9370981684354673
+        },
+        {
+          "scale": 13,
+          "used_codes": 43,
+          "perplexity": 1.4432497520760872,
+          "top1_fraction": 0.9282070864116001
+        },
+        {
+          "scale": 16,
+          "used_codes": 225,
+          "perplexity": 9.792525738161562,
+          "top1_fraction": 0.4904973213903629
+        }
+      ]
+    },
+    {
+      "representation": "G",
+      "group": 1,
+      "used_codes": 208,
+      "perplexity": 2.6211337611625183,
+      "top1_fraction": 0.7979431399399883,
+      "top10_fraction": 0.969725315665465,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 2,
+          "used_codes": 6,
+          "perplexity": 1.173198300168424,
+          "top1_fraction": 0.9646846114344403
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.1000067628872707,
+          "top1_fraction": 0.9812278899920118
+        },
+        {
+          "scale": 4,
+          "used_codes": 9,
+          "perplexity": 1.2076360459107844,
+          "top1_fraction": 0.9560777559055118
+        },
+        {
+          "scale": 5,
+          "used_codes": 9,
+          "perplexity": 1.1210508418050662,
+          "top1_fraction": 0.9766706607326258
+        },
+        {
+          "scale": 6,
+          "used_codes": 9,
+          "perplexity": 1.2414503206907703,
+          "top1_fraction": 0.9488878428239949
+        },
+        {
+          "scale": 8,
+          "used_codes": 51,
+          "perplexity": 1.7996559091387163,
+          "top1_fraction": 0.838918339181787
+        },
+        {
+          "scale": 10,
+          "used_codes": 30,
+          "perplexity": 1.3498005662128731,
+          "top1_fraction": 0.9278979801437863
+        },
+        {
+          "scale": 13,
+          "used_codes": 33,
+          "perplexity": 1.3499088243811364,
+          "top1_fraction": 0.9316579188856859
+        },
+        {
+          "scale": 16,
+          "used_codes": 208,
+          "perplexity": 5.666802412579314,
+          "top1_fraction": 0.594167237247518
+        }
+      ]
+    },
+    {
+      "representation": "G",
+      "group": 2,
+      "used_codes": 217,
+      "perplexity": 3.0730337814350985,
+      "top1_fraction": 0.7840977228789496,
+      "top10_fraction": 0.9468483798860181,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 2,
+          "used_codes": 4,
+          "perplexity": 1.0235974272363362,
+          "top1_fraction": 0.9968653714481343
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.0544394554795393,
+          "top1_fraction": 0.9910228612727757
+        },
+        {
+          "scale": 4,
+          "used_codes": 10,
+          "perplexity": 1.159767261401731,
+          "top1_fraction": 0.969744950359466
+        },
+        {
+          "scale": 5,
+          "used_codes": 7,
+          "perplexity": 1.0934811957853865,
+          "top1_fraction": 0.9834731256419035
+        },
+        {
+          "scale": 6,
+          "used_codes": 16,
+          "perplexity": 1.1918633639699419,
+          "top1_fraction": 0.9642768838677774
+        },
+        {
+          "scale": 8,
+          "used_codes": 49,
+          "perplexity": 1.8425078544298763,
+          "top1_fraction": 0.8580704649520712
+        },
+        {
+          "scale": 10,
+          "used_codes": 33,
+          "perplexity": 1.3095375311458277,
+          "top1_fraction": 0.9443431187949333
+        },
+        {
+          "scale": 13,
+          "used_codes": 36,
+          "perplexity": 1.3342409558095312,
+          "top1_fraction": 0.9417154192553818
+        },
+        {
+          "scale": 16,
+          "used_codes": 217,
+          "perplexity": 8.259326827734029,
+          "top1_fraction": 0.5311028971242725
+        }
+      ]
+    },
+    {
+      "representation": "G",
+      "group": 3,
+      "used_codes": 219,
+      "perplexity": 5.350270786140257,
+      "top1_fraction": 0.39364421179289927,
+      "top10_fraction": 0.9398819023501219,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.003078851871597,
+          "top1_fraction": 0.999657651489216
+        },
+        {
+          "scale": 2,
+          "used_codes": 15,
+          "perplexity": 3.501116222725081,
+          "top1_fraction": 0.547190602533379
+        },
+        {
+          "scale": 3,
+          "used_codes": 16,
+          "perplexity": 3.2099039719177562,
+          "top1_fraction": 0.4364800867282894
+        },
+        {
+          "scale": 4,
+          "used_codes": 31,
+          "perplexity": 3.214027129708457,
+          "top1_fraction": 0.48838957120849025
+        },
+        {
+          "scale": 5,
+          "used_codes": 23,
+          "perplexity": 2.8925237490641815,
+          "top1_fraction": 0.46394214310167753
+        },
+        {
+          "scale": 6,
+          "used_codes": 46,
+          "perplexity": 2.9751452470845132,
+          "top1_fraction": 0.4777081193655141
+        },
+        {
+          "scale": 8,
+          "used_codes": 89,
+          "perplexity": 4.049430078005949,
+          "top1_fraction": 0.40089478667408424
+        },
+        {
+          "scale": 10,
+          "used_codes": 63,
+          "perplexity": 2.9680412951946833,
+          "top1_fraction": 0.4668893358438891
+        },
+        {
+          "scale": 13,
+          "used_codes": 68,
+          "perplexity": 2.9415292741256263,
+          "top1_fraction": 0.4373727587820496
+        },
+        {
+          "scale": 16,
+          "used_codes": 219,
+          "perplexity": 10.138464529843475,
+          "top1_fraction": 0.30737697519043133
+        }
+      ]
+    },
+    {
+      "representation": "G",
+      "group": 4,
+      "used_codes": 196,
+      "perplexity": 2.562796686716333,
+      "top1_fraction": 0.8330806834887327,
+      "top10_fraction": 0.9598062710191916,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 2,
+          "used_codes": 4,
+          "perplexity": 1.0288586922455811,
+          "top1_fraction": 0.9958383259157823
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.015687590145347,
+          "top1_fraction": 0.998107573509833
+        },
+        {
+          "scale": 4,
+          "used_codes": 8,
+          "perplexity": 1.06432358433435,
+          "top1_fraction": 0.9904944796302636
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.0333898984574243,
+          "top1_fraction": 0.9953937007874015
+        },
+        {
+          "scale": 6,
+          "used_codes": 14,
+          "perplexity": 1.0835175924984817,
+          "top1_fraction": 0.9872415744227624
+        },
+        {
+          "scale": 8,
+          "used_codes": 40,
+          "perplexity": 1.507622453116731,
+          "top1_fraction": 0.9216282683584389
+        },
+        {
+          "scale": 10,
+          "used_codes": 30,
+          "perplexity": 1.1299028564961615,
+          "top1_fraction": 0.9812328825744608
+        },
+        {
+          "scale": 13,
+          "used_codes": 30,
+          "perplexity": 1.1596212102976362,
+          "top1_fraction": 0.9767218205648143
+        },
+        {
+          "scale": 16,
+          "used_codes": 196,
+          "perplexity": 6.4635368465616025,
+          "top1_fraction": 0.6057875286181958
+        }
+      ]
+    },
+    {
+      "representation": "G",
+      "group": 5,
+      "used_codes": 187,
+      "perplexity": 3.656684518598364,
+      "top1_fraction": 0.5175782115311034,
+      "top10_fraction": 0.9767550395714603,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.1952036243493944,
+          "top1_fraction": 0.9573348168435467
+        },
+        {
+          "scale": 2,
+          "used_codes": 7,
+          "perplexity": 2.5838695430223577,
+          "top1_fraction": 0.6304026874358096
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 2.293162709041126,
+          "top1_fraction": 0.6558921982578265
+        },
+        {
+          "scale": 4,
+          "used_codes": 8,
+          "perplexity": 2.5451907038561017,
+          "top1_fraction": 0.4962555631633002
+        },
+        {
+          "scale": 5,
+          "used_codes": 5,
+          "perplexity": 2.1915092273341696,
+          "top1_fraction": 0.662093461143444
+        },
+        {
+          "scale": 6,
+          "used_codes": 15,
+          "perplexity": 2.3096405697119673,
+          "top1_fraction": 0.6209464985355091
+        },
+        {
+          "scale": 8,
+          "used_codes": 52,
+          "perplexity": 2.828571271069401,
+          "top1_fraction": 0.49578416531153713
+        },
+        {
+          "scale": 10,
+          "used_codes": 33,
+          "perplexity": 2.3814606747706297,
+          "top1_fraction": 0.5939130434782609
+        },
+        {
+          "scale": 13,
+          "used_codes": 35,
+          "perplexity": 2.32597357779746,
+          "top1_fraction": 0.620790278112586
+        },
+        {
+          "scale": 16,
+          "used_codes": 187,
+          "perplexity": 5.946534091087122,
+          "top1_fraction": 0.39315232770241354
+        }
+      ]
+    },
+    {
+      "representation": "G",
+      "group": 6,
+      "used_codes": 209,
+      "perplexity": 3.9957174318553514,
+      "top1_fraction": 0.6001172417786012,
+      "top10_fraction": 0.9465539853394285,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.0171069848582803,
+          "top1_fraction": 0.9976463539883601
+        },
+        {
+          "scale": 2,
+          "used_codes": 7,
+          "perplexity": 1.7736575218679014,
+          "top1_fraction": 0.7587405854159535
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.702923252359225,
+          "top1_fraction": 0.7797225075126478
+        },
+        {
+          "scale": 4,
+          "used_codes": 13,
+          "perplexity": 1.821528349268627,
+          "top1_fraction": 0.7486627011297501
+        },
+        {
+          "scale": 5,
+          "used_codes": 13,
+          "perplexity": 1.711588577469899,
+          "top1_fraction": 0.7885244779185211
+        },
+        {
+          "scale": 6,
+          "used_codes": 27,
+          "perplexity": 1.8766191590842305,
+          "top1_fraction": 0.7413557001027046
+        },
+        {
+          "scale": 8,
+          "used_codes": 78,
+          "perplexity": 2.8279445088245065,
+          "top1_fraction": 0.5850722676309483
+        },
+        {
+          "scale": 10,
+          "used_codes": 54,
+          "perplexity": 2.0390660414731947,
+          "top1_fraction": 0.708858695652174
+        },
+        {
+          "scale": 13,
+          "used_codes": 60,
+          "perplexity": 2.009160845337981,
+          "top1_fraction": 0.7361951508055319
+        },
+        {
+          "scale": 16,
+          "used_codes": 209,
+          "perplexity": 8.65499340526835,
+          "top1_fraction": 0.41757524980742894
+        }
+      ]
+    },
+    {
+      "representation": "G",
+      "group": 7,
+      "used_codes": 213,
+      "perplexity": 3.1334461641110867,
+      "top1_fraction": 0.7812268411301528,
+      "top10_fraction": 0.9516367279537628,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.151848277362434,
+          "top1_fraction": 0.9680760013693941
+        },
+        {
+          "scale": 2,
+          "used_codes": 6,
+          "perplexity": 1.1171256656515416,
+          "top1_fraction": 0.9797051523450873
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.0886824900092726,
+          "top1_fraction": 0.9853265624405645
+        },
+        {
+          "scale": 4,
+          "used_codes": 12,
+          "perplexity": 1.1961349258048604,
+          "top1_fraction": 0.9651874358096543
+        },
+        {
+          "scale": 5,
+          "used_codes": 10,
+          "perplexity": 1.1105463922085086,
+          "top1_fraction": 0.9818880520369736
+        },
+        {
+          "scale": 6,
+          "used_codes": 15,
+          "perplexity": 1.1990820366114538,
+          "top1_fraction": 0.9668290444672677
+        },
+        {
+          "scale": 8,
+          "used_codes": 53,
+          "perplexity": 2.036620880631358,
+          "top1_fraction": 0.8430579478346457
+        },
+        {
+          "scale": 10,
+          "used_codes": 40,
+          "perplexity": 1.3295902074747403,
+          "top1_fraction": 0.947201300924341
+        },
+        {
+          "scale": 13,
+          "used_codes": 42,
+          "perplexity": 1.384843641338417,
+          "top1_fraction": 0.9389819487125468
+        },
+        {
+          "scale": 16,
+          "used_codes": 213,
+          "perplexity": 8.164416574922887,
+          "top1_fraction": 0.5323736653757275
+        }
+      ]
+    },
+    {
+      "representation": "G_power",
+      "group": 0,
+      "used_codes": 206,
+      "perplexity": 4.472748741830765,
+      "top1_fraction": 0.6401063797651892,
+      "top10_fraction": 0.946366700565882,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0047364744488168,
+          "top1_fraction": 0.999443683669976
+        },
+        {
+          "scale": 2,
+          "used_codes": 9,
+          "perplexity": 2.1382115113865634,
+          "top1_fraction": 0.7505456179390619
+        },
+        {
+          "scale": 3,
+          "used_codes": 12,
+          "perplexity": 1.796210762156332,
+          "top1_fraction": 0.8274373312031649
+        },
+        {
+          "scale": 4,
+          "used_codes": 15,
+          "perplexity": 2.0228072819720215,
+          "top1_fraction": 0.7824829895583704
+        },
+        {
+          "scale": 5,
+          "used_codes": 12,
+          "perplexity": 1.6947790449974822,
+          "top1_fraction": 0.853206093803492
+        },
+        {
+          "scale": 6,
+          "used_codes": 21,
+          "perplexity": 1.881592878924453,
+          "top1_fraction": 0.817278614629693
+        },
+        {
+          "scale": 8,
+          "used_codes": 66,
+          "perplexity": 3.1952071465995884,
+          "top1_fraction": 0.6584699161246148
+        },
+        {
+          "scale": 10,
+          "used_codes": 41,
+          "perplexity": 2.072808252869693,
+          "top1_fraction": 0.7915722355357754
+        },
+        {
+          "scale": 13,
+          "used_codes": 48,
+          "perplexity": 1.9601858192053976,
+          "top1_fraction": 0.8184218442658651
+        },
+        {
+          "scale": 16,
+          "used_codes": 206,
+          "perplexity": 10.834837479938832,
+          "top1_fraction": 0.3981959503915611
+        }
+      ]
+    },
+    {
+      "representation": "G_power",
+      "group": 1,
+      "used_codes": 200,
+      "perplexity": 4.325902641948687,
+      "top1_fraction": 0.4726420117002638,
+      "top10_fraction": 0.9716289999395855,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 4,
+          "perplexity": 1.9033925663803497,
+          "top1_fraction": 0.6926994180075317
+        },
+        {
+          "scale": 2,
+          "used_codes": 10,
+          "perplexity": 2.448272424754814,
+          "top1_fraction": 0.6491783635741184
+        },
+        {
+          "scale": 3,
+          "used_codes": 10,
+          "perplexity": 2.4230525590927563,
+          "top1_fraction": 0.6349043326105976
+        },
+        {
+          "scale": 4,
+          "used_codes": 15,
+          "perplexity": 2.6361477076668107,
+          "top1_fraction": 0.578932728517631
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 2.498813272713102,
+          "top1_fraction": 0.6240431359123588
+        },
+        {
+          "scale": 6,
+          "used_codes": 16,
+          "perplexity": 2.6669340764645635,
+          "top1_fraction": 0.5635900471680171
+        },
+        {
+          "scale": 8,
+          "used_codes": 62,
+          "perplexity": 3.190441456823738,
+          "top1_fraction": 0.4970739900718932
+        },
+        {
+          "scale": 10,
+          "used_codes": 38,
+          "perplexity": 2.7859284389313284,
+          "top1_fraction": 0.5410116398493666
+        },
+        {
+          "scale": 13,
+          "used_codes": 38,
+          "perplexity": 2.6919337643582018,
+          "top1_fraction": 0.5806992924122201
+        },
+        {
+          "scale": 16,
+          "used_codes": 200,
+          "perplexity": 7.229358586799123,
+          "top1_fraction": 0.32763788888651146
+        }
+      ]
+    },
+    {
+      "representation": "G_power",
+      "group": 2,
+      "used_codes": 204,
+      "perplexity": 2.693955980369465,
+      "top1_fraction": 0.8201475245181948,
+      "top10_fraction": 0.9648865592967759,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 2,
+          "used_codes": 2,
+          "perplexity": 1.0004733703682807,
+          "top1_fraction": 0.999957206436152
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.0027938830967833,
+          "top1_fraction": 0.9997242192552018
+        },
+        {
+          "scale": 4,
+          "used_codes": 9,
+          "perplexity": 1.0360010844774277,
+          "top1_fraction": 0.9952151446422458
+        },
+        {
+          "scale": 5,
+          "used_codes": 9,
+          "perplexity": 1.0180563301467516,
+          "top1_fraction": 0.9977884286203355
+        },
+        {
+          "scale": 6,
+          "used_codes": 13,
+          "perplexity": 1.0677123594337778,
+          "top1_fraction": 0.9905937369241888
+        },
+        {
+          "scale": 8,
+          "used_codes": 37,
+          "perplexity": 1.5390910143434364,
+          "top1_fraction": 0.9195547864601163
+        },
+        {
+          "scale": 10,
+          "used_codes": 21,
+          "perplexity": 1.1344575660598322,
+          "top1_fraction": 0.9812512838069154
+        },
+        {
+          "scale": 13,
+          "used_codes": 23,
+          "perplexity": 1.160119882431115,
+          "top1_fraction": 0.9773135871844164
+        },
+        {
+          "scale": 16,
+          "used_codes": 204,
+          "perplexity": 7.166185264547662,
+          "top1_fraction": 0.5665266068983225
+        }
+      ]
+    },
+    {
+      "representation": "G_power",
+      "group": 3,
+      "used_codes": 221,
+      "perplexity": 5.105733532368326,
+      "top1_fraction": 0.5370399691886341,
+      "top10_fraction": 0.9443008412711199,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.0155033368697968,
+          "top1_fraction": 0.9979031153714482
+        },
+        {
+          "scale": 2,
+          "used_codes": 7,
+          "perplexity": 2.0657588678471686,
+          "top1_fraction": 0.5281581650119822
+        },
+        {
+          "scale": 3,
+          "used_codes": 11,
+          "perplexity": 1.8991307725367343,
+          "top1_fraction": 0.7391922477081669
+        },
+        {
+          "scale": 4,
+          "used_codes": 15,
+          "perplexity": 2.160704731367254,
+          "top1_fraction": 0.6948016518315645
+        },
+        {
+          "scale": 5,
+          "used_codes": 12,
+          "perplexity": 2.0295242948475174,
+          "top1_fraction": 0.7096199931530298
+        },
+        {
+          "scale": 6,
+          "used_codes": 19,
+          "perplexity": 2.263912390644283,
+          "top1_fraction": 0.6710946118148275
+        },
+        {
+          "scale": 8,
+          "used_codes": 63,
+          "perplexity": 3.543872555385797,
+          "top1_fraction": 0.5443180845600821
+        },
+        {
+          "scale": 10,
+          "used_codes": 41,
+          "perplexity": 2.4997989668264013,
+          "top1_fraction": 0.6535356042451216
+        },
+        {
+          "scale": 13,
+          "used_codes": 46,
+          "perplexity": 2.4280131039890342,
+          "top1_fraction": 0.6806774651624939
+        },
+        {
+          "scale": 16,
+          "used_codes": 221,
+          "perplexity": 11.626400257828317,
+          "top1_fraction": 0.3454147699311024
+        }
+      ]
+    },
+    {
+      "representation": "G_power",
+      "group": 4,
+      "used_codes": 179,
+      "perplexity": 2.6313489666151537,
+      "top1_fraction": 0.8140588814265863,
+      "top10_fraction": 0.9599253378174275,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 2,
+          "used_codes": 3,
+          "perplexity": 1.011779878940932,
+          "top1_fraction": 0.9984594317014721
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.0661855890806509,
+          "top1_fraction": 0.9888784282399483
+        },
+        {
+          "scale": 4,
+          "used_codes": 8,
+          "perplexity": 1.1952320677774178,
+          "top1_fraction": 0.9628337897980144
+        },
+        {
+          "scale": 5,
+          "used_codes": 7,
+          "perplexity": 1.110843129285131,
+          "top1_fraction": 0.9805973981513181
+        },
+        {
+          "scale": 6,
+          "used_codes": 17,
+          "perplexity": 1.2028470081974543,
+          "top1_fraction": 0.9623535509148313
+        },
+        {
+          "scale": 8,
+          "used_codes": 45,
+          "perplexity": 1.7708766131590585,
+          "top1_fraction": 0.8650177325830195
+        },
+        {
+          "scale": 10,
+          "used_codes": 26,
+          "perplexity": 1.2490202868516103,
+          "top1_fraction": 0.9563458575830195
+        },
+        {
+          "scale": 13,
+          "used_codes": 31,
+          "perplexity": 1.2574569829311018,
+          "top1_fraction": 0.9553868234312234
+        },
+        {
+          "scale": 16,
+          "used_codes": 179,
+          "perplexity": 6.179070146820884,
+          "top1_fraction": 0.5962703068833447
+        }
+      ]
+    },
+    {
+      "representation": "G_power",
+      "group": 5,
+      "used_codes": 193,
+      "perplexity": 4.640008617136356,
+      "top1_fraction": 0.38814278450168155,
+      "top10_fraction": 0.9667159841512778,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 6,
+          "perplexity": 2.400324616027756,
+          "top1_fraction": 0.5050496405340636
+        },
+        {
+          "scale": 2,
+          "used_codes": 16,
+          "perplexity": 2.701220852877053,
+          "top1_fraction": 0.6108567271482369
+        },
+        {
+          "scale": 3,
+          "used_codes": 15,
+          "perplexity": 2.507413076167089,
+          "top1_fraction": 0.5356280193236715
+        },
+        {
+          "scale": 4,
+          "used_codes": 19,
+          "perplexity": 2.7760822835759265,
+          "top1_fraction": 0.4561018272851763
+        },
+        {
+          "scale": 5,
+          "used_codes": 15,
+          "perplexity": 2.5357983973136786,
+          "top1_fraction": 0.49913214652516263
+        },
+        {
+          "scale": 6,
+          "used_codes": 21,
+          "perplexity": 2.6700059106199774,
+          "top1_fraction": 0.4774596789531743
+        },
+        {
+          "scale": 8,
+          "used_codes": 57,
+          "perplexity": 3.5442050671351497,
+          "top1_fraction": 0.4369403404228004
+        },
+        {
+          "scale": 10,
+          "used_codes": 37,
+          "perplexity": 2.804090688799424,
+          "top1_fraction": 0.46072107155083875
+        },
+        {
+          "scale": 13,
+          "used_codes": 41,
+          "perplexity": 2.8173572645480154,
+          "top1_fraction": 0.43724539095592213
+        },
+        {
+          "scale": 16,
+          "used_codes": 193,
+          "perplexity": 7.925549682241064,
+          "top1_fraction": 0.3131987386597056
+        }
+      ]
+    },
+    {
+      "representation": "G_power",
+      "group": 6,
+      "used_codes": 209,
+      "perplexity": 4.050921691462978,
+      "top1_fraction": 0.5693070715105625,
+      "top10_fraction": 0.9495996284511751,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.827650434335513,
+          "top1_fraction": 0.7380178021225607
+        },
+        {
+          "scale": 2,
+          "used_codes": 7,
+          "perplexity": 1.8519564303967762,
+          "top1_fraction": 0.7168563847997261
+        },
+        {
+          "scale": 3,
+          "used_codes": 8,
+          "perplexity": 1.7997085132705875,
+          "top1_fraction": 0.7294781087146716
+        },
+        {
+          "scale": 4,
+          "used_codes": 15,
+          "perplexity": 1.8861525972870645,
+          "top1_fraction": 0.6950370164327285
+        },
+        {
+          "scale": 5,
+          "used_codes": 10,
+          "perplexity": 1.812748632466197,
+          "top1_fraction": 0.7249024306744266
+        },
+        {
+          "scale": 6,
+          "used_codes": 30,
+          "perplexity": 1.9466755850943738,
+          "top1_fraction": 0.6668449731827
+        },
+        {
+          "scale": 8,
+          "used_codes": 67,
+          "perplexity": 2.657201023932303,
+          "top1_fraction": 0.586156817014721
+        },
+        {
+          "scale": 10,
+          "used_codes": 43,
+          "perplexity": 2.058220622601516,
+          "top1_fraction": 0.6632874015748031
+        },
+        {
+          "scale": 13,
+          "used_codes": 48,
+          "perplexity": 2.030334870329413,
+          "top1_fraction": 0.7018240693286121
+        },
+        {
+          "scale": 16,
+          "used_codes": 209,
+          "perplexity": 8.780319117390974,
+          "top1_fraction": 0.3983970467091749
+        }
+      ]
+    },
+    {
+      "representation": "G_power",
+      "group": 7,
+      "used_codes": 216,
+      "perplexity": 3.9759218368107323,
+      "top1_fraction": 0.6877078634432205,
+      "top10_fraction": 0.9504431021809614,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 4,
+          "perplexity": 1.6982361727875488,
+          "top1_fraction": 0.8551437863745293
+        },
+        {
+          "scale": 2,
+          "used_codes": 9,
+          "perplexity": 1.2603992242236466,
+          "top1_fraction": 0.952574032865457
+        },
+        {
+          "scale": 3,
+          "used_codes": 9,
+          "perplexity": 1.3314880305368955,
+          "top1_fraction": 0.9334845372589295
+        },
+        {
+          "scale": 4,
+          "used_codes": 15,
+          "perplexity": 1.6550413046018968,
+          "top1_fraction": 0.8679658079424855
+        },
+        {
+          "scale": 5,
+          "used_codes": 12,
+          "perplexity": 1.4202146767910182,
+          "top1_fraction": 0.9140516946251284
+        },
+        {
+          "scale": 6,
+          "used_codes": 19,
+          "perplexity": 1.6319420024324953,
+          "top1_fraction": 0.8755575050401309
+        },
+        {
+          "scale": 8,
+          "used_codes": 63,
+          "perplexity": 2.8920452901491274,
+          "top1_fraction": 0.7087416552550496
+        },
+        {
+          "scale": 10,
+          "used_codes": 36,
+          "perplexity": 1.804706812368669,
+          "top1_fraction": 0.8478744436836699
+        },
+        {
+          "scale": 13,
+          "used_codes": 37,
+          "perplexity": 1.7576981203994881,
+          "top1_fraction": 0.8621601583311219
+        },
+        {
+          "scale": 16,
+          "used_codes": 216,
+          "perplexity": 9.731412127560235,
+          "top1_fraction": 0.43471607807685725
+        }
+      ]
+    },
+    {
+      "representation": "G_asinh",
+      "group": 0,
+      "used_codes": 219,
+      "perplexity": 3.777140266068466,
+      "top1_fraction": 0.7012349089755724,
+      "top10_fraction": 0.9420548084862154,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.00930081453677,
+          "top1_fraction": 0.9988017802122561
+        },
+        {
+          "scale": 2,
+          "used_codes": 3,
+          "perplexity": 1.3149092019770765,
+          "top1_fraction": 0.9240949161246148
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.3407445845290578,
+          "top1_fraction": 0.9158678534748373
+        },
+        {
+          "scale": 4,
+          "used_codes": 10,
+          "perplexity": 1.5103094159395494,
+          "top1_fraction": 0.8701990970558028
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.3776043844009267,
+          "top1_fraction": 0.907713111947963
+        },
+        {
+          "scale": 6,
+          "used_codes": 18,
+          "perplexity": 1.5238019746668643,
+          "top1_fraction": 0.8739349157442277
+        },
+        {
+          "scale": 8,
+          "used_codes": 55,
+          "perplexity": 2.3380543761214683,
+          "top1_fraction": 0.757154548955837
+        },
+        {
+          "scale": 10,
+          "used_codes": 36,
+          "perplexity": 1.6601142894967598,
+          "top1_fraction": 0.8573497945908936
+        },
+        {
+          "scale": 13,
+          "used_codes": 41,
+          "perplexity": 1.6539355492759105,
+          "top1_fraction": 0.8678453719140523
+        },
+        {
+          "scale": 16,
+          "used_codes": 219,
+          "perplexity": 9.77043071150971,
+          "top1_fraction": 0.4529802373972954
+        }
+      ]
+    },
+    {
+      "representation": "G_asinh",
+      "group": 1,
+      "used_codes": 199,
+      "perplexity": 3.2260131200349487,
+      "top1_fraction": 0.6025994572769197,
+      "top10_fraction": 0.9745090697182673,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 4,
+          "perplexity": 1.1051609323285931,
+          "top1_fraction": 0.9805717220130092
+        },
+        {
+          "scale": 2,
+          "used_codes": 6,
+          "perplexity": 1.8449248228059663,
+          "top1_fraction": 0.703355015405683
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.7600136100906005,
+          "top1_fraction": 0.747969683137434
+        },
+        {
+          "scale": 4,
+          "used_codes": 7,
+          "perplexity": 1.8077635243285781,
+          "top1_fraction": 0.7242864173228346
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.7577608426255222,
+          "top1_fraction": 0.7496559397466621
+        },
+        {
+          "scale": 6,
+          "used_codes": 14,
+          "perplexity": 1.8243568914532131,
+          "top1_fraction": 0.7215731865038609
+        },
+        {
+          "scale": 8,
+          "used_codes": 45,
+          "perplexity": 2.2050316955162494,
+          "top1_fraction": 0.6242163428620335
+        },
+        {
+          "scale": 10,
+          "used_codes": 31,
+          "perplexity": 1.939020704168489,
+          "top1_fraction": 0.6827028414926395
+        },
+        {
+          "scale": 13,
+          "used_codes": 37,
+          "perplexity": 1.9303608940685875,
+          "top1_fraction": 0.7052665456630116
+        },
+        {
+          "scale": 16,
+          "used_codes": 199,
+          "perplexity": 5.828286933022723,
+          "top1_fraction": 0.4551003575937179
+        }
+      ]
+    },
+    {
+      "representation": "G_asinh",
+      "group": 2,
+      "used_codes": 198,
+      "perplexity": 2.9863939390482064,
+      "top1_fraction": 0.7531270138147693,
+      "top10_fraction": 0.9570845374267475,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 2,
+          "used_codes": 2,
+          "perplexity": 1.1130744305242941,
+          "top1_fraction": 0.9776296644984594
+        },
+        {
+          "scale": 3,
+          "used_codes": 3,
+          "perplexity": 1.1941155207235365,
+          "top1_fraction": 0.9570019780136179
+        },
+        {
+          "scale": 4,
+          "used_codes": 5,
+          "perplexity": 1.3510924882123276,
+          "top1_fraction": 0.9111926566244437
+        },
+        {
+          "scale": 5,
+          "used_codes": 4,
+          "perplexity": 1.2495161641381358,
+          "top1_fraction": 0.9417339952071209
+        },
+        {
+          "scale": 6,
+          "used_codes": 13,
+          "perplexity": 1.3452825766318242,
+          "top1_fraction": 0.9151213435277112
+        },
+        {
+          "scale": 8,
+          "used_codes": 38,
+          "perplexity": 1.7997873592082276,
+          "top1_fraction": 0.8142130798527901
+        },
+        {
+          "scale": 10,
+          "used_codes": 32,
+          "perplexity": 1.4481115177987103,
+          "top1_fraction": 0.8928123930160904
+        },
+        {
+          "scale": 13,
+          "used_codes": 34,
+          "perplexity": 1.4488158391835309,
+          "top1_fraction": 0.898319706917263
+        },
+        {
+          "scale": 16,
+          "used_codes": 198,
+          "perplexity": 7.009393334301204,
+          "top1_fraction": 0.5247231457013866
+        }
+      ]
+    },
+    {
+      "representation": "G_asinh",
+      "group": 3,
+      "used_codes": 218,
+      "perplexity": 3.554798501082296,
+      "top1_fraction": 0.6863933458525485,
+      "top10_fraction": 0.9556951310993416,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 2.004776957713143,
+          "top1_fraction": 0.5228517630948305
+        },
+        {
+          "scale": 2,
+          "used_codes": 6,
+          "perplexity": 1.5879646769321158,
+          "top1_fraction": 0.8297244094488189
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 1.5199823263264052,
+          "top1_fraction": 0.8535033664270227
+        },
+        {
+          "scale": 4,
+          "used_codes": 9,
+          "perplexity": 1.626057071130403,
+          "top1_fraction": 0.8223692656624444
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.5008755056601313,
+          "top1_fraction": 0.8645600821636426
+        },
+        {
+          "scale": 6,
+          "used_codes": 16,
+          "perplexity": 1.6233554925990368,
+          "top1_fraction": 0.833925310966564
+        },
+        {
+          "scale": 8,
+          "used_codes": 63,
+          "perplexity": 2.2772841724424353,
+          "top1_fraction": 0.7346504835672715
+        },
+        {
+          "scale": 10,
+          "used_codes": 38,
+          "perplexity": 1.7261052396107008,
+          "top1_fraction": 0.8214695309825403
+        },
+        {
+          "scale": 13,
+          "used_codes": 38,
+          "perplexity": 1.6921828131940138,
+          "top1_fraction": 0.844535034001892
+        },
+        {
+          "scale": 16,
+          "used_codes": 218,
+          "perplexity": 8.15760331799195,
+          "top1_fraction": 0.4650891443426909
+        }
+      ]
+    },
+    {
+      "representation": "G_asinh",
+      "group": 4,
+      "used_codes": 194,
+      "perplexity": 3.712937708055382,
+      "top1_fraction": 0.5640845575648952,
+      "top10_fraction": 0.9502419094991643,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.146036341049347,
+          "top1_fraction": 0.9700872988702499
+        },
+        {
+          "scale": 2,
+          "used_codes": 11,
+          "perplexity": 2.332579763761831,
+          "top1_fraction": 0.6520990243067443
+        },
+        {
+          "scale": 3,
+          "used_codes": 9,
+          "perplexity": 2.141898668899511,
+          "top1_fraction": 0.5931283046140972
+        },
+        {
+          "scale": 4,
+          "used_codes": 15,
+          "perplexity": 2.183290900991384,
+          "top1_fraction": 0.6063099109893872
+        },
+        {
+          "scale": 5,
+          "used_codes": 12,
+          "perplexity": 1.9667848875883156,
+          "top1_fraction": 0.6465833618623759
+        },
+        {
+          "scale": 6,
+          "used_codes": 21,
+          "perplexity": 2.0172976237596565,
+          "top1_fraction": 0.6211010308494047
+        },
+        {
+          "scale": 8,
+          "used_codes": 53,
+          "perplexity": 2.5510737773106897,
+          "top1_fraction": 0.5759197941629579
+        },
+        {
+          "scale": 10,
+          "used_codes": 34,
+          "perplexity": 1.9933834954999787,
+          "top1_fraction": 0.6506641561109209
+        },
+        {
+          "scale": 13,
+          "used_codes": 36,
+          "perplexity": 1.9466662126001688,
+          "top1_fraction": 0.6906141813312698
+        },
+        {
+          "scale": 16,
+          "used_codes": 194,
+          "perplexity": 7.379899996691044,
+          "top1_fraction": 0.42486988081992466
+        }
+      ]
+    },
+    {
+      "representation": "G_asinh",
+      "group": 5,
+      "used_codes": 177,
+      "perplexity": 3.154504848599778,
+      "top1_fraction": 0.5167602251444912,
+      "top10_fraction": 0.9785756539863463,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.1928120432226423,
+          "top1_fraction": 0.9602875727490585
+        },
+        {
+          "scale": 2,
+          "used_codes": 9,
+          "perplexity": 2.1178534164116813,
+          "top1_fraction": 0.5260612803834304
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 1.9795301422202962,
+          "top1_fraction": 0.6038457149378067
+        },
+        {
+          "scale": 4,
+          "used_codes": 9,
+          "perplexity": 2.03424794504585,
+          "top1_fraction": 0.5200862290311538
+        },
+        {
+          "scale": 5,
+          "used_codes": 7,
+          "perplexity": 1.9850701426075166,
+          "top1_fraction": 0.5739370078740158
+        },
+        {
+          "scale": 6,
+          "used_codes": 12,
+          "perplexity": 2.0019474126372656,
+          "top1_fraction": 0.5760287097265016
+        },
+        {
+          "scale": 8,
+          "used_codes": 48,
+          "perplexity": 2.2417336612013576,
+          "top1_fraction": 0.5329095878979802
+        },
+        {
+          "scale": 10,
+          "used_codes": 29,
+          "perplexity": 2.0465724645369407,
+          "top1_fraction": 0.5645091578226634
+        },
+        {
+          "scale": 13,
+          "used_codes": 33,
+          "perplexity": 2.0392242552398683,
+          "top1_fraction": 0.593688784946389
+        },
+        {
+          "scale": 16,
+          "used_codes": 177,
+          "perplexity": 5.157929100186961,
+          "top1_fraction": 0.4289504811601335
+        }
+      ]
+    },
+    {
+      "representation": "G_asinh",
+      "group": 6,
+      "used_codes": 225,
+      "perplexity": 3.91371962479637,
+      "top1_fraction": 0.6066230591860161,
+      "top10_fraction": 0.9426119429284895,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0524176184945846,
+          "top1_fraction": 0.9910561451557686
+        },
+        {
+          "scale": 2,
+          "used_codes": 6,
+          "perplexity": 1.675673132321942,
+          "top1_fraction": 0.7936066415611092
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.6300870360678914,
+          "top1_fraction": 0.8095115827912815
+        },
+        {
+          "scale": 4,
+          "used_codes": 12,
+          "perplexity": 1.7315001684250433,
+          "top1_fraction": 0.7742746490927764
+        },
+        {
+          "scale": 5,
+          "used_codes": 9,
+          "perplexity": 1.6395725062036504,
+          "top1_fraction": 0.8081718589524135
+        },
+        {
+          "scale": 6,
+          "used_codes": 24,
+          "perplexity": 1.782514935770361,
+          "top1_fraction": 0.7608327152040778
+        },
+        {
+          "scale": 8,
+          "used_codes": 67,
+          "perplexity": 2.6499204558707206,
+          "top1_fraction": 0.6254319475350907
+        },
+        {
+          "scale": 10,
+          "used_codes": 49,
+          "perplexity": 1.9644859957981946,
+          "top1_fraction": 0.7199807428962685
+        },
+        {
+          "scale": 13,
+          "used_codes": 52,
+          "perplexity": 1.9762122431969222,
+          "top1_fraction": 0.7318570482265739
+        },
+        {
+          "scale": 16,
+          "used_codes": 225,
+          "perplexity": 8.673622754816492,
+          "top1_fraction": 0.4154352372903115
+        }
+      ]
+    },
+    {
+      "representation": "G_asinh",
+      "group": 7,
+      "used_codes": 208,
+      "perplexity": 2.8993114362070553,
+      "top1_fraction": 0.7832821908290876,
+      "top10_fraction": 0.9645491194594922,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.0173715279149784,
+          "top1_fraction": 0.9976035604245121
+        },
+        {
+          "scale": 2,
+          "used_codes": 4,
+          "perplexity": 1.029686093103899,
+          "top1_fraction": 0.9954959774049983
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.0768736685979174,
+          "top1_fraction": 0.9863631176537715
+        },
+        {
+          "scale": 4,
+          "used_codes": 10,
+          "perplexity": 1.2265850894414865,
+          "top1_fraction": 0.9549945438206093
+        },
+        {
+          "scale": 5,
+          "used_codes": 11,
+          "perplexity": 1.1325474176231523,
+          "top1_fraction": 0.975919205751455
+        },
+        {
+          "scale": 6,
+          "used_codes": 12,
+          "perplexity": 1.2588033723670844,
+          "top1_fraction": 0.9517847293544829
+        },
+        {
+          "scale": 8,
+          "used_codes": 47,
+          "perplexity": 2.0261500134228436,
+          "top1_fraction": 0.8296796099366656
+        },
+        {
+          "scale": 10,
+          "used_codes": 30,
+          "perplexity": 1.3565875121888344,
+          "top1_fraction": 0.937735364601164
+        },
+        {
+          "scale": 13,
+          "used_codes": 32,
+          "perplexity": 1.3796549954683632,
+          "top1_fraction": 0.9368764547279544
+        },
+        {
+          "scale": 16,
+          "used_codes": 208,
+          "perplexity": 6.887697074486308,
+          "top1_fraction": 0.545420854640962
+        }
+      ]
+    },
+    {
+      "representation": "C",
+      "group": 0,
+      "used_codes": 226,
+      "perplexity": 3.2127564259552197,
+      "top1_fraction": 0.7858358967517167,
+      "top10_fraction": 0.9413506655657813,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0940340775268076,
+          "top1_fraction": 0.9820694967476892
+        },
+        {
+          "scale": 2,
+          "used_codes": 4,
+          "perplexity": 1.001783232170577,
+          "top1_fraction": 0.999828825744608
+        },
+        {
+          "scale": 3,
+          "used_codes": 7,
+          "perplexity": 1.0109052441122972,
+          "top1_fraction": 0.9986876640419947
+        },
+        {
+          "scale": 4,
+          "used_codes": 12,
+          "perplexity": 1.0933435051476879,
+          "top1_fraction": 0.9855865927764464
+        },
+        {
+          "scale": 5,
+          "used_codes": 10,
+          "perplexity": 1.0499129951736876,
+          "top1_fraction": 0.9929784320438206
+        },
+        {
+          "scale": 6,
+          "used_codes": 16,
+          "perplexity": 1.1530044009317109,
+          "top1_fraction": 0.9762460059340409
+        },
+        {
+          "scale": 8,
+          "used_codes": 55,
+          "perplexity": 2.00010618099563,
+          "top1_fraction": 0.855409908849709
+        },
+        {
+          "scale": 10,
+          "used_codes": 40,
+          "perplexity": 1.2705516228262324,
+          "top1_fraction": 0.9588963539883602
+        },
+        {
+          "scale": 13,
+          "used_codes": 41,
+          "perplexity": 1.3297059849867443,
+          "top1_fraction": 0.9504675893195368
+        },
+        {
+          "scale": 16,
+          "used_codes": 226,
+          "perplexity": 9.17333813921412,
+          "top1_fraction": 0.5210751615457035
+        }
+      ]
+    },
+    {
+      "representation": "C",
+      "group": 1,
+      "used_codes": 198,
+      "perplexity": 3.3176838976435037,
+      "top1_fraction": 0.6166241667841392,
+      "top10_fraction": 0.9774435754274322,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.3949479977206702,
+          "top1_fraction": 0.9009328996918864
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 1.8337096620153255,
+          "top1_fraction": 0.7168777815816502
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.7339590708661077,
+          "top1_fraction": 0.7632327209098863
+        },
+        {
+          "scale": 4,
+          "used_codes": 10,
+          "perplexity": 1.8294197676535724,
+          "top1_fraction": 0.7282314489900719
+        },
+        {
+          "scale": 5,
+          "used_codes": 9,
+          "perplexity": 1.7846638358153948,
+          "top1_fraction": 0.7461160561451557
+        },
+        {
+          "scale": 6,
+          "used_codes": 13,
+          "perplexity": 1.852949534867679,
+          "top1_fraction": 0.731685543383164
+        },
+        {
+          "scale": 8,
+          "used_codes": 60,
+          "perplexity": 2.417626180695785,
+          "top1_fraction": 0.610664824760356
+        },
+        {
+          "scale": 10,
+          "used_codes": 35,
+          "perplexity": 1.954878777626011,
+          "top1_fraction": 0.7287658336186238
+        },
+        {
+          "scale": 13,
+          "used_codes": 40,
+          "perplexity": 1.9444377182616706,
+          "top1_fraction": 0.7502795508549597
+        },
+        {
+          "scale": 16,
+          "used_codes": 198,
+          "perplexity": 6.004061233580751,
+          "top1_fraction": 0.4459537348082848
+        }
+      ]
+    },
+    {
+      "representation": "C",
+      "group": 2,
+      "used_codes": 201,
+      "perplexity": 2.9198842738847137,
+      "top1_fraction": 0.7904651534526854,
+      "top10_fraction": 0.9545841346637935,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0023823012525381,
+          "top1_fraction": 0.999743238616912
+        },
+        {
+          "scale": 2,
+          "used_codes": 2,
+          "perplexity": 1.0943619347765816,
+          "top1_fraction": 0.9819946080109552
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 1.0596488574223724,
+          "top1_fraction": 0.9897200349956256
+        },
+        {
+          "scale": 4,
+          "used_codes": 10,
+          "perplexity": 1.1523644965221465,
+          "top1_fraction": 0.9709378209517289
+        },
+        {
+          "scale": 5,
+          "used_codes": 6,
+          "perplexity": 1.0834745411827178,
+          "top1_fraction": 0.9856059568640877
+        },
+        {
+          "scale": 6,
+          "used_codes": 15,
+          "perplexity": 1.1705240849414957,
+          "top1_fraction": 0.9696534196812355
+        },
+        {
+          "scale": 8,
+          "used_codes": 48,
+          "perplexity": 1.8370552660504513,
+          "top1_fraction": 0.8566810114258816
+        },
+        {
+          "scale": 10,
+          "used_codes": 35,
+          "perplexity": 1.2800628820917972,
+          "top1_fraction": 0.9508271995891818
+        },
+        {
+          "scale": 13,
+          "used_codes": 41,
+          "perplexity": 1.3290721105635335,
+          "top1_fraction": 0.9429708659391592
+        },
+        {
+          "scale": 16,
+          "used_codes": 201,
+          "perplexity": 7.454051756261657,
+          "top1_fraction": 0.5442423600115542
+        }
+      ]
+    },
+    {
+      "representation": "C",
+      "group": 3,
+      "used_codes": 225,
+      "perplexity": 3.292192752189463,
+      "top1_fraction": 0.7236249421028254,
+      "top10_fraction": 0.9541172442958696,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0258204674873916,
+          "top1_fraction": 0.9961057856898322
+        },
+        {
+          "scale": 2,
+          "used_codes": 7,
+          "perplexity": 1.587176900626468,
+          "top1_fraction": 0.8341642416980486
+        },
+        {
+          "scale": 3,
+          "used_codes": 7,
+          "perplexity": 1.4950140602365036,
+          "top1_fraction": 0.8623045760584275
+        },
+        {
+          "scale": 4,
+          "used_codes": 11,
+          "perplexity": 1.5557750652950673,
+          "top1_fraction": 0.84396396781924
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.4215520232336742,
+          "top1_fraction": 0.8896165696679219
+        },
+        {
+          "scale": 6,
+          "used_codes": 20,
+          "perplexity": 1.4940104480969008,
+          "top1_fraction": 0.8702392160219103
+        },
+        {
+          "scale": 8,
+          "used_codes": 55,
+          "perplexity": 2.056532221319856,
+          "top1_fraction": 0.7744712320267032
+        },
+        {
+          "scale": 10,
+          "used_codes": 41,
+          "perplexity": 1.5804454593238497,
+          "top1_fraction": 0.8622205580280726
+        },
+        {
+          "scale": 13,
+          "used_codes": 41,
+          "perplexity": 1.5564008765223967,
+          "top1_fraction": 0.876657554254136
+        },
+        {
+          "scale": 16,
+          "used_codes": 225,
+          "perplexity": 7.656807990048534,
+          "top1_fraction": 0.5076241080216536
+        }
+      ]
+    },
+    {
+      "representation": "C",
+      "group": 4,
+      "used_codes": 193,
+      "perplexity": 2.6805219561268347,
+      "top1_fraction": 0.8081407203415429,
+      "top10_fraction": 0.9611615683589423,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 4,
+          "perplexity": 1.9670949051801643,
+          "top1_fraction": 0.7391304347826086
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 1.0663757675318213,
+          "top1_fraction": 0.9885848168435467
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 1.0388478489260724,
+          "top1_fraction": 0.9938187074441782
+        },
+        {
+          "scale": 4,
+          "used_codes": 7,
+          "perplexity": 1.1169876055456038,
+          "top1_fraction": 0.977931894043136
+        },
+        {
+          "scale": 5,
+          "used_codes": 6,
+          "perplexity": 1.0657751472679662,
+          "top1_fraction": 0.9887024991441288
+        },
+        {
+          "scale": 6,
+          "used_codes": 12,
+          "perplexity": 1.1461123313949622,
+          "top1_fraction": 0.9721295028338849
+        },
+        {
+          "scale": 8,
+          "used_codes": 46,
+          "perplexity": 1.6784268148992978,
+          "top1_fraction": 0.8760029741526875
+        },
+        {
+          "scale": 10,
+          "used_codes": 31,
+          "perplexity": 1.2390418608553913,
+          "top1_fraction": 0.955737333105101
+        },
+        {
+          "scale": 13,
+          "used_codes": 34,
+          "perplexity": 1.2688724210948659,
+          "top1_fraction": 0.9513199155675389
+        },
+        {
+          "scale": 16,
+          "used_codes": 193,
+          "perplexity": 6.3903855527271185,
+          "top1_fraction": 0.5815033512709689
+        }
+      ]
+    },
+    {
+      "representation": "C",
+      "group": 5,
+      "used_codes": 204,
+      "perplexity": 3.570838683999293,
+      "top1_fraction": 0.6511566219264152,
+      "top10_fraction": 0.9769170257969672,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.00919878742244,
+          "top1_fraction": 0.9988873673399521
+        },
+        {
+          "scale": 2,
+          "used_codes": 11,
+          "perplexity": 2.3100538389485474,
+          "top1_fraction": 0.7382745635056488
+        },
+        {
+          "scale": 3,
+          "used_codes": 7,
+          "perplexity": 2.0276797834808846,
+          "top1_fraction": 0.8052892844916124
+        },
+        {
+          "scale": 4,
+          "used_codes": 12,
+          "perplexity": 2.292797905111654,
+          "top1_fraction": 0.7537631590208833
+        },
+        {
+          "scale": 5,
+          "used_codes": 7,
+          "perplexity": 1.7725746271657403,
+          "top1_fraction": 0.8520027387880863
+        },
+        {
+          "scale": 6,
+          "used_codes": 17,
+          "perplexity": 2.0376447629008014,
+          "top1_fraction": 0.8000744132526912
+        },
+        {
+          "scale": 8,
+          "used_codes": 59,
+          "perplexity": 2.9459850222207895,
+          "top1_fraction": 0.6431257488873673
+        },
+        {
+          "scale": 10,
+          "used_codes": 31,
+          "perplexity": 2.047848168702144,
+          "top1_fraction": 0.7899229715850736
+        },
+        {
+          "scale": 13,
+          "used_codes": 29,
+          "perplexity": 1.9439133923780998,
+          "top1_fraction": 0.8099585940617726
+        },
+        {
+          "scale": 16,
+          "used_codes": 204,
+          "perplexity": 6.49171759067148,
+          "top1_fraction": 0.4429199051587641
+        }
+      ]
+    },
+    {
+      "representation": "C",
+      "group": 6,
+      "used_codes": 230,
+      "perplexity": 4.904397412101755,
+      "top1_fraction": 0.5829258085466299,
+      "top10_fraction": 0.9293398966913023,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 6,
+          "perplexity": 2.979683779900335,
+          "top1_fraction": 0.5282865457035262
+        },
+        {
+          "scale": 2,
+          "used_codes": 10,
+          "perplexity": 1.8997869756319457,
+          "top1_fraction": 0.7433349024306745
+        },
+        {
+          "scale": 3,
+          "used_codes": 8,
+          "perplexity": 1.8468081752701089,
+          "top1_fraction": 0.7769456807029556
+        },
+        {
+          "scale": 4,
+          "used_codes": 21,
+          "perplexity": 2.065092958461803,
+          "top1_fraction": 0.7395048784662787
+        },
+        {
+          "scale": 5,
+          "used_codes": 13,
+          "perplexity": 1.836740485850417,
+          "top1_fraction": 0.7942040397124273
+        },
+        {
+          "scale": 6,
+          "used_codes": 32,
+          "perplexity": 2.0498263257129716,
+          "top1_fraction": 0.7534472593099776
+        },
+        {
+          "scale": 8,
+          "used_codes": 83,
+          "perplexity": 3.3212568690129602,
+          "top1_fraction": 0.58545607240671
+        },
+        {
+          "scale": 10,
+          "used_codes": 58,
+          "perplexity": 2.317563030830733,
+          "top1_fraction": 0.7019265662444368
+        },
+        {
+          "scale": 13,
+          "used_codes": 64,
+          "perplexity": 2.2516550172102807,
+          "top1_fraction": 0.7304919588614582
+        },
+        {
+          "scale": 16,
+          "used_codes": 230,
+          "perplexity": 11.706569665923217,
+          "top1_fraction": 0.37694309525847314
+        }
+      ]
+    },
+    {
+      "representation": "C",
+      "group": 7,
+      "used_codes": 210,
+      "perplexity": 3.9638858266457686,
+      "top1_fraction": 0.4630325281430614,
+      "top10_fraction": 0.9601350262802827,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.0600831722281758,
+          "top1_fraction": 0.9898151318041767
+        },
+        {
+          "scale": 2,
+          "used_codes": 9,
+          "perplexity": 2.18918710460027,
+          "top1_fraction": 0.5613659705580281
+        },
+        {
+          "scale": 3,
+          "used_codes": 10,
+          "perplexity": 2.07784328954056,
+          "top1_fraction": 0.5024820267031839
+        },
+        {
+          "scale": 4,
+          "used_codes": 17,
+          "perplexity": 2.144406912541067,
+          "top1_fraction": 0.5473056102362205
+        },
+        {
+          "scale": 5,
+          "used_codes": 13,
+          "perplexity": 2.041052941702748,
+          "top1_fraction": 0.5095669291338583
+        },
+        {
+          "scale": 6,
+          "used_codes": 25,
+          "perplexity": 2.1118216937979435,
+          "top1_fraction": 0.5475234413633079
+        },
+        {
+          "scale": 8,
+          "used_codes": 74,
+          "perplexity": 2.8379181451705286,
+          "top1_fraction": 0.4660386265405683
+        },
+        {
+          "scale": 10,
+          "used_codes": 40,
+          "perplexity": 2.1621196178576114,
+          "top1_fraction": 0.5461387367339952
+        },
+        {
+          "scale": 13,
+          "used_codes": 41,
+          "perplexity": 2.171826386156671,
+          "top1_fraction": 0.5547803196198109
+        },
+        {
+          "scale": 16,
+          "used_codes": 210,
+          "perplexity": 7.656302860520626,
+          "top1_fraction": 0.3479711838839439
+        }
+      ]
+    },
+    {
+      "representation": "C_affine",
+      "group": 0,
+      "used_codes": 229,
+      "perplexity": 3.501711320524555,
+      "top1_fraction": 0.761086176168516,
+      "top10_fraction": 0.9357893902168879,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0023823012525381,
+          "top1_fraction": 0.999743238616912
+        },
+        {
+          "scale": 2,
+          "used_codes": 3,
+          "perplexity": 1.0561857149622724,
+          "top1_fraction": 0.9906068127353646
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.0428353454124764,
+          "top1_fraction": 0.9931054813800448
+        },
+        {
+          "scale": 4,
+          "used_codes": 9,
+          "perplexity": 1.1369754569349848,
+          "top1_fraction": 0.9753990499828826
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.0776336297298321,
+          "top1_fraction": 0.987223553577542
+        },
+        {
+          "scale": 6,
+          "used_codes": 16,
+          "perplexity": 1.1972425185122697,
+          "top1_fraction": 0.9661170071132413
+        },
+        {
+          "scale": 8,
+          "used_codes": 56,
+          "perplexity": 2.1778208159161343,
+          "top1_fraction": 0.8234818983224923
+        },
+        {
+          "scale": 10,
+          "used_codes": 44,
+          "perplexity": 1.3764090506515771,
+          "top1_fraction": 0.9386357411845259
+        },
+        {
+          "scale": 13,
+          "used_codes": 44,
+          "perplexity": 1.4348348941803881,
+          "top1_fraction": 0.9310362727362964
+        },
+        {
+          "scale": 16,
+          "used_codes": 229,
+          "perplexity": 10.075782497472218,
+          "top1_fraction": 0.490856386137025
+        }
+      ]
+    },
+    {
+      "representation": "C_affine",
+      "group": 1,
+      "used_codes": 203,
+      "perplexity": 3.819750382747111,
+      "top1_fraction": 0.49512405098978995,
+      "top10_fraction": 0.9683578095736755,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.0815199712816432,
+          "top1_fraction": 0.9851934269085929
+        },
+        {
+          "scale": 2,
+          "used_codes": 10,
+          "perplexity": 1.977399701490376,
+          "top1_fraction": 0.6071229887024991
+        },
+        {
+          "scale": 3,
+          "used_codes": 9,
+          "perplexity": 1.937655981670929,
+          "top1_fraction": 0.6406148959640915
+        },
+        {
+          "scale": 4,
+          "used_codes": 14,
+          "perplexity": 2.0876664306082158,
+          "top1_fraction": 0.5294901146867511
+        },
+        {
+          "scale": 5,
+          "used_codes": 10,
+          "perplexity": 2.015935147387075,
+          "top1_fraction": 0.6063659705580281
+        },
+        {
+          "scale": 6,
+          "used_codes": 19,
+          "perplexity": 2.126844521257704,
+          "top1_fraction": 0.5729903666932937
+        },
+        {
+          "scale": 8,
+          "used_codes": 58,
+          "perplexity": 2.6737219825358807,
+          "top1_fraction": 0.5139741045446765
+        },
+        {
+          "scale": 10,
+          "used_codes": 38,
+          "perplexity": 2.2518721829902084,
+          "top1_fraction": 0.5744304176651831
+        },
+        {
+          "scale": 13,
+          "used_codes": 41,
+          "perplexity": 2.2494849127385907,
+          "top1_fraction": 0.5971110039724582
+        },
+        {
+          "scale": 16,
+          "used_codes": 203,
+          "perplexity": 6.985998118226211,
+          "top1_fraction": 0.36315621255563163
+        }
+      ]
+    },
+    {
+      "representation": "C_affine",
+      "group": 2,
+      "used_codes": 205,
+      "perplexity": 2.9099102536309633,
+      "top1_fraction": 0.7963353605735345,
+      "top10_fraction": 0.9504400185270959,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.6916696162266214,
+          "top1_fraction": 0.780939746662102
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 1.0036403866049421,
+          "top1_fraction": 0.999636254707292
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.012443529036755,
+          "top1_fraction": 0.9984879607440375
+        },
+        {
+          "scale": 4,
+          "used_codes": 9,
+          "perplexity": 1.0865696045914015,
+          "top1_fraction": 0.9864210672714824
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.0540340173593525,
+          "top1_fraction": 0.991923998630606
+        },
+        {
+          "scale": 6,
+          "used_codes": 17,
+          "perplexity": 1.1446783932478017,
+          "top1_fraction": 0.9767975674236372
+        },
+        {
+          "scale": 8,
+          "used_codes": 46,
+          "perplexity": 1.7827075617420158,
+          "top1_fraction": 0.8735791199503594
+        },
+        {
+          "scale": 10,
+          "used_codes": 29,
+          "perplexity": 1.2523741806692121,
+          "top1_fraction": 0.9585839609722697
+        },
+        {
+          "scale": 13,
+          "used_codes": 35,
+          "perplexity": 1.2992413888329026,
+          "top1_fraction": 0.9512983921774378
+        },
+        {
+          "scale": 16,
+          "used_codes": 205,
+          "perplexity": 7.50792857943436,
+          "top1_fraction": 0.5469594169911846
+        }
+      ]
+    },
+    {
+      "representation": "C_affine",
+      "group": 3,
+      "used_codes": 227,
+      "perplexity": 3.712294613722207,
+      "top1_fraction": 0.6235764217532271,
+      "top10_fraction": 0.9510928091709124,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0148720393295814,
+          "top1_fraction": 0.9979459089352961
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 1.7526779793664724,
+          "top1_fraction": 0.7619180075316673
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 1.6650643925353938,
+          "top1_fraction": 0.7947240290615847
+        },
+        {
+          "scale": 4,
+          "used_codes": 11,
+          "perplexity": 1.7600019900182284,
+          "top1_fraction": 0.7538540953440602
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.6514124975612026,
+          "top1_fraction": 0.8008558712769599
+        },
+        {
+          "scale": 6,
+          "used_codes": 21,
+          "perplexity": 1.7175236009888126,
+          "top1_fraction": 0.7777777777777778
+        },
+        {
+          "scale": 8,
+          "used_codes": 57,
+          "perplexity": 2.2463605830273305,
+          "top1_fraction": 0.6660249860920917
+        },
+        {
+          "scale": 10,
+          "used_codes": 42,
+          "perplexity": 1.8643825840366164,
+          "top1_fraction": 0.7346567956179391
+        },
+        {
+          "scale": 13,
+          "used_codes": 44,
+          "perplexity": 1.8524290791596643,
+          "top1_fraction": 0.7558376498281167
+        },
+        {
+          "scale": 16,
+          "used_codes": 227,
+          "perplexity": 8.255579527763325,
+          "top1_fraction": 0.4293784167986135
+        }
+      ]
+    },
+    {
+      "representation": "C_affine",
+      "group": 4,
+      "used_codes": 185,
+      "perplexity": 2.6653685247561048,
+      "top1_fraction": 0.802956028354512,
+      "top10_fraction": 0.9655153729584953,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.9076041337078862,
+          "top1_fraction": 0.6525590551181102
+        },
+        {
+          "scale": 2,
+          "used_codes": 3,
+          "perplexity": 1.1080065570046402,
+          "top1_fraction": 0.9792130263608353
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.0951447512115335,
+          "top1_fraction": 0.9820029289817034
+        },
+        {
+          "scale": 4,
+          "used_codes": 7,
+          "perplexity": 1.1976670515582937,
+          "top1_fraction": 0.9595092648065731
+        },
+        {
+          "scale": 5,
+          "used_codes": 7,
+          "perplexity": 1.1106423559011767,
+          "top1_fraction": 0.979339267374187
+        },
+        {
+          "scale": 6,
+          "used_codes": 9,
+          "perplexity": 1.20016455795426,
+          "top1_fraction": 0.9607250180683936
+        },
+        {
+          "scale": 8,
+          "used_codes": 37,
+          "perplexity": 1.7162453489108023,
+          "top1_fraction": 0.8678534748373845
+        },
+        {
+          "scale": 10,
+          "used_codes": 29,
+          "perplexity": 1.2657435192428068,
+          "top1_fraction": 0.9506727148236905
+        },
+        {
+          "scale": 13,
+          "used_codes": 31,
+          "perplexity": 1.2839586171494366,
+          "top1_fraction": 0.949067302881197
+        },
+        {
+          "scale": 16,
+          "used_codes": 185,
+          "perplexity": 6.1323147401641105,
+          "top1_fraction": 0.5774657116569668
+        }
+      ]
+    },
+    {
+      "representation": "C_affine",
+      "group": 5,
+      "used_codes": 209,
+      "perplexity": 4.125057690269757,
+      "top1_fraction": 0.6053430911049802,
+      "top10_fraction": 0.9713635539803049,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 6,
+          "perplexity": 1.4755481948201277,
+          "top1_fraction": 0.9050838753851421
+        },
+        {
+          "scale": 2,
+          "used_codes": 13,
+          "perplexity": 2.6826148585608145,
+          "top1_fraction": 0.609166381376241
+        },
+        {
+          "scale": 3,
+          "used_codes": 10,
+          "perplexity": 2.2873049660701423,
+          "top1_fraction": 0.703911331735707
+        },
+        {
+          "scale": 4,
+          "used_codes": 19,
+          "perplexity": 2.517237695433677,
+          "top1_fraction": 0.678960009414584
+        },
+        {
+          "scale": 5,
+          "used_codes": 10,
+          "perplexity": 2.0889307895306835,
+          "top1_fraction": 0.7668486819582335
+        },
+        {
+          "scale": 6,
+          "used_codes": 21,
+          "perplexity": 2.2971925322977893,
+          "top1_fraction": 0.7304373977709309
+        },
+        {
+          "scale": 8,
+          "used_codes": 60,
+          "perplexity": 3.2694725616258546,
+          "top1_fraction": 0.5953547586442999
+        },
+        {
+          "scale": 10,
+          "used_codes": 34,
+          "perplexity": 2.301718222547963,
+          "top1_fraction": 0.7393555289284491
+        },
+        {
+          "scale": 13,
+          "used_codes": 32,
+          "perplexity": 2.1507005255084275,
+          "top1_fraction": 0.7784848141088101
+        },
+        {
+          "scale": 16,
+          "used_codes": 209,
+          "perplexity": 7.727725976231177,
+          "top1_fraction": 0.4020660933220644
+        }
+      ]
+    },
+    {
+      "representation": "C_affine",
+      "group": 6,
+      "used_codes": 228,
+      "perplexity": 4.543560828703194,
+      "top1_fraction": 0.6213529185210545,
+      "top10_fraction": 0.9348737338139639,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 4,
+          "perplexity": 1.6149290671539192,
+          "top1_fraction": 0.8458147894556659
+        },
+        {
+          "scale": 2,
+          "used_codes": 11,
+          "perplexity": 1.9522715056312927,
+          "top1_fraction": 0.7372261211913728
+        },
+        {
+          "scale": 3,
+          "used_codes": 12,
+          "perplexity": 1.725233355632483,
+          "top1_fraction": 0.7893510593784473
+        },
+        {
+          "scale": 4,
+          "used_codes": 23,
+          "perplexity": 1.8283212438004808,
+          "top1_fraction": 0.7754167023279699
+        },
+        {
+          "scale": 5,
+          "used_codes": 12,
+          "perplexity": 1.6426867859435326,
+          "top1_fraction": 0.8223365285861006
+        },
+        {
+          "scale": 6,
+          "used_codes": 27,
+          "perplexity": 1.8060677905810345,
+          "top1_fraction": 0.7932298204572255
+        },
+        {
+          "scale": 8,
+          "used_codes": 90,
+          "perplexity": 3.102361335071082,
+          "top1_fraction": 0.6489175902944198
+        },
+        {
+          "scale": 10,
+          "used_codes": 51,
+          "perplexity": 2.0514196665225164,
+          "top1_fraction": 0.7571901745977405
+        },
+        {
+          "scale": 13,
+          "used_codes": 59,
+          "perplexity": 2.0094499370801335,
+          "top1_fraction": 0.7853183638577208
+        },
+        {
+          "scale": 16,
+          "used_codes": 228,
+          "perplexity": 11.241252210594347,
+          "top1_fraction": 0.3944414838133345
+        }
+      ]
+    },
+    {
+      "representation": "C_affine",
+      "group": 7,
+      "used_codes": 211,
+      "perplexity": 3.706501601641894,
+      "top1_fraction": 0.5087913083754556,
+      "top10_fraction": 0.9715978487423726,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.043566155747988,
+          "top1_fraction": 0.9928106812735364
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 1.969486543401116,
+          "top1_fraction": 0.6062029270797672
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.9632370400162256,
+          "top1_fraction": 0.6065940127049336
+        },
+        {
+          "scale": 4,
+          "used_codes": 11,
+          "perplexity": 2.0064265814365387,
+          "top1_fraction": 0.5810938034919548
+        },
+        {
+          "scale": 5,
+          "used_codes": 9,
+          "perplexity": 1.9690630267489146,
+          "top1_fraction": 0.6113505648750428
+        },
+        {
+          "scale": 6,
+          "used_codes": 18,
+          "perplexity": 2.0311164956781296,
+          "top1_fraction": 0.5952870021682072
+        },
+        {
+          "scale": 8,
+          "used_codes": 58,
+          "perplexity": 2.6189844705712124,
+          "top1_fraction": 0.5184139367939062
+        },
+        {
+          "scale": 10,
+          "used_codes": 27,
+          "perplexity": 2.1458165267689613,
+          "top1_fraction": 0.5747346799041424
+        },
+        {
+          "scale": 13,
+          "used_codes": 37,
+          "perplexity": 2.159132244079802,
+          "top1_fraction": 0.6037083028629654
+        },
+        {
+          "scale": 16,
+          "used_codes": 211,
+          "perplexity": 6.84184650280281,
+          "top1_fraction": 0.3882955925303834
+        }
+      ]
+    },
+    {
+      "representation": "C_power",
+      "group": 0,
+      "used_codes": 121,
+      "perplexity": 2.0919920693128504,
+      "top1_fraction": 0.7742289606701975,
+      "top10_fraction": 0.9964829983688099,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 4,
+          "perplexity": 1.0654341010645714,
+          "top1_fraction": 0.9899007189318726
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 2.06682037123376,
+          "top1_fraction": 0.49875898664840806
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 2.000402961078933,
+          "top1_fraction": 0.5781553121077256
+        },
+        {
+          "scale": 4,
+          "used_codes": 9,
+          "perplexity": 1.5506466574557807,
+          "top1_fraction": 0.8497036545703526
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.5353332390190904,
+          "top1_fraction": 0.8488805203697364
+        },
+        {
+          "scale": 6,
+          "used_codes": 11,
+          "perplexity": 1.5015086116390464,
+          "top1_fraction": 0.8653310319905664
+        },
+        {
+          "scale": 8,
+          "used_codes": 19,
+          "perplexity": 1.8189273018949903,
+          "top1_fraction": 0.7841278671687778
+        },
+        {
+          "scale": 10,
+          "used_codes": 13,
+          "perplexity": 1.5033510025737546,
+          "top1_fraction": 0.8671178534748374
+        },
+        {
+          "scale": 13,
+          "used_codes": 16,
+          "perplexity": 1.3852000531466284,
+          "top1_fraction": 0.9058582109960721
+        },
+        {
+          "scale": 16,
+          "used_codes": 121,
+          "perplexity": 3.0245103738349113,
+          "top1_fraction": 0.6435043716300068
+        }
+      ]
+    },
+    {
+      "representation": "C_power",
+      "group": 1,
+      "used_codes": 134,
+      "perplexity": 2.89145415917779,
+      "top1_fraction": 0.4485603741667841,
+      "top10_fraction": 0.9978536510461768,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.0487630118105031,
+          "top1_fraction": 0.9925111263266004
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 2.062134743130983,
+          "top1_fraction": 0.5752096884628551
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.820754448745121,
+          "top1_fraction": 0.7856280193236715
+        },
+        {
+          "scale": 4,
+          "used_codes": 6,
+          "perplexity": 2.218030614239627,
+          "top1_fraction": 0.5488194325573433
+        },
+        {
+          "scale": 5,
+          "used_codes": 5,
+          "perplexity": 2.094713940178198,
+          "top1_fraction": 0.6112256076686067
+        },
+        {
+          "scale": 6,
+          "used_codes": 7,
+          "perplexity": 2.2748992022355834,
+          "top1_fraction": 0.49125228232340523
+        },
+        {
+          "scale": 8,
+          "used_codes": 24,
+          "perplexity": 2.6898802002473228,
+          "top1_fraction": 0.47642810146353987
+        },
+        {
+          "scale": 10,
+          "used_codes": 13,
+          "perplexity": 2.3809601142396137,
+          "top1_fraction": 0.4828594659363232
+        },
+        {
+          "scale": 13,
+          "used_codes": 14,
+          "perplexity": 2.276744579811331,
+          "top1_fraction": 0.5122847914206248
+        },
+        {
+          "scale": 16,
+          "used_codes": 134,
+          "perplexity": 3.668332996859615,
+          "top1_fraction": 0.3980010390812222
+        }
+      ]
+    },
+    {
+      "representation": "C_power",
+      "group": 2,
+      "used_codes": 106,
+      "perplexity": 1.6046108242876076,
+      "top1_fraction": 0.9014660571520632,
+      "top10_fraction": 0.9977366609944218,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0221185874090095,
+          "top1_fraction": 0.9967476891475522
+        },
+        {
+          "scale": 2,
+          "used_codes": 3,
+          "perplexity": 1.0278761950980002,
+          "top1_fraction": 0.9960095001711743
+        },
+        {
+          "scale": 3,
+          "used_codes": 3,
+          "perplexity": 1.0535166627266261,
+          "top1_fraction": 0.9917741260603294
+        },
+        {
+          "scale": 4,
+          "used_codes": 7,
+          "perplexity": 1.0599279014358023,
+          "top1_fraction": 0.9907137966449846
+        },
+        {
+          "scale": 5,
+          "used_codes": 7,
+          "perplexity": 1.0428541225883856,
+          "top1_fraction": 0.9936853817185896
+        },
+        {
+          "scale": 6,
+          "used_codes": 8,
+          "perplexity": 1.0781947465341062,
+          "top1_fraction": 0.9875102229069193
+        },
+        {
+          "scale": 8,
+          "used_codes": 17,
+          "perplexity": 1.2812746976285947,
+          "top1_fraction": 0.9493324204039713
+        },
+        {
+          "scale": 10,
+          "used_codes": 13,
+          "perplexity": 1.128609820663371,
+          "top1_fraction": 0.9782369051694625
+        },
+        {
+          "scale": 13,
+          "used_codes": 11,
+          "perplexity": 1.1391454920666952,
+          "top1_fraction": 0.9762050059860347
+        },
+        {
+          "scale": 16,
+          "used_codes": 106,
+          "perplexity": 2.4365832661743627,
+          "top1_fraction": 0.7784634034791167
+        }
+      ]
+    },
+    {
+      "representation": "C_power",
+      "group": 3,
+      "used_codes": 123,
+      "perplexity": 1.96982366096231,
+      "top1_fraction": 0.8322633893509475,
+      "top10_fraction": 0.9971196155627605,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 5,
+          "perplexity": 1.106677998714562,
+          "top1_fraction": 0.9836956521739131
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 1.1233820573221716,
+          "top1_fraction": 0.9787957891133173
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.5836677974330668,
+          "top1_fraction": 0.8381499866864468
+        },
+        {
+          "scale": 4,
+          "used_codes": 7,
+          "perplexity": 1.3201521089843296,
+          "top1_fraction": 0.9312013223211228
+        },
+        {
+          "scale": 5,
+          "used_codes": 6,
+          "perplexity": 1.2918993008074722,
+          "top1_fraction": 0.9352413557001027
+        },
+        {
+          "scale": 6,
+          "used_codes": 8,
+          "perplexity": 1.3484772647098777,
+          "top1_fraction": 0.9240521225607669
+        },
+        {
+          "scale": 8,
+          "used_codes": 19,
+          "perplexity": 1.7139382992910646,
+          "top1_fraction": 0.8513980122389593
+        },
+        {
+          "scale": 10,
+          "used_codes": 14,
+          "perplexity": 1.335914992730142,
+          "top1_fraction": 0.9328016946251284
+        },
+        {
+          "scale": 13,
+          "used_codes": 18,
+          "perplexity": 1.2486129874500633,
+          "top1_fraction": 0.9543577521680384
+        },
+        {
+          "scale": 16,
+          "used_codes": 123,
+          "perplexity": 3.0210398288423264,
+          "top1_fraction": 0.6791901919826259
+        }
+      ]
+    },
+    {
+      "representation": "C_power",
+      "group": 4,
+      "used_codes": 97,
+      "perplexity": 1.941223869869251,
+      "top1_fraction": 0.8120613030388465,
+      "top10_fraction": 0.9975890861308576,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0938466183036977,
+          "top1_fraction": 0.9821122903115371
+        },
+        {
+          "scale": 2,
+          "used_codes": 4,
+          "perplexity": 1.398524423379834,
+          "top1_fraction": 0.8968140191715166
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 1.22716974388787,
+          "top1_fraction": 0.9490090912548975
+        },
+        {
+          "scale": 4,
+          "used_codes": 6,
+          "perplexity": 1.3171897825511478,
+          "top1_fraction": 0.9258949204039713
+        },
+        {
+          "scale": 5,
+          "used_codes": 6,
+          "perplexity": 1.245219995894924,
+          "top1_fraction": 0.9452584731256419
+        },
+        {
+          "scale": 6,
+          "used_codes": 7,
+          "perplexity": 1.3068505404989108,
+          "top1_fraction": 0.9304735345581803
+        },
+        {
+          "scale": 8,
+          "used_codes": 17,
+          "perplexity": 1.6901573104648309,
+          "top1_fraction": 0.8344417312136255
+        },
+        {
+          "scale": 10,
+          "used_codes": 13,
+          "perplexity": 1.4370595252233096,
+          "top1_fraction": 0.8955122389592606
+        },
+        {
+          "scale": 13,
+          "used_codes": 16,
+          "perplexity": 1.3631245669183538,
+          "top1_fraction": 0.9181632597250273
+        },
+        {
+          "scale": 16,
+          "used_codes": 97,
+          "perplexity": 2.780776514058607,
+          "top1_fraction": 0.6726556482155084
+        }
+      ]
+    },
+    {
+      "representation": "C_power",
+      "group": 5,
+      "used_codes": 101,
+      "perplexity": 2.995395993878782,
+      "top1_fraction": 0.4989071908290875,
+      "top10_fraction": 0.9991986905169462,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 5,
+          "perplexity": 1.1286384113193204,
+          "top1_fraction": 0.9777901403628895
+        },
+        {
+          "scale": 2,
+          "used_codes": 6,
+          "perplexity": 1.70604574795399,
+          "top1_fraction": 0.797083618623759
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 1.5747494615852942,
+          "top1_fraction": 0.8633601506333447
+        },
+        {
+          "scale": 4,
+          "used_codes": 7,
+          "perplexity": 2.1680588562222587,
+          "top1_fraction": 0.6408576900034235
+        },
+        {
+          "scale": 5,
+          "used_codes": 7,
+          "perplexity": 2.139620430093538,
+          "top1_fraction": 0.6072834645669292
+        },
+        {
+          "scale": 6,
+          "used_codes": 7,
+          "perplexity": 2.4258377988142517,
+          "top1_fraction": 0.49480058199246835
+        },
+        {
+          "scale": 8,
+          "used_codes": 18,
+          "perplexity": 2.9343381752067446,
+          "top1_fraction": 0.4578436590636768
+        },
+        {
+          "scale": 10,
+          "used_codes": 10,
+          "perplexity": 2.5505631054941547,
+          "top1_fraction": 0.5473343889079082
+        },
+        {
+          "scale": 13,
+          "used_codes": 9,
+          "perplexity": 2.3738841337568886,
+          "top1_fraction": 0.6428355471195121
+        },
+        {
+          "scale": 16,
+          "used_codes": 101,
+          "perplexity": 3.5471239574554327,
+          "top1_fraction": 0.3872989705473297
+        }
+      ]
+    },
+    {
+      "representation": "C_power",
+      "group": 6,
+      "used_codes": 126,
+      "perplexity": 2.842656101151435,
+      "top1_fraction": 0.6158965503353001,
+      "top10_fraction": 0.9974281697444469,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0448826521020171,
+          "top1_fraction": 0.9925539198904485
+        },
+        {
+          "scale": 2,
+          "used_codes": 4,
+          "perplexity": 1.4399696582740318,
+          "top1_fraction": 0.890405682985279
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.5233148499703606,
+          "top1_fraction": 0.8905721024002434
+        },
+        {
+          "scale": 4,
+          "used_codes": 4,
+          "perplexity": 2.0400391044003614,
+          "top1_fraction": 0.7442255434782609
+        },
+        {
+          "scale": 5,
+          "used_codes": 5,
+          "perplexity": 2.032891218876257,
+          "top1_fraction": 0.7625316672372475
+        },
+        {
+          "scale": 6,
+          "used_codes": 5,
+          "perplexity": 2.314999034888355,
+          "top1_fraction": 0.6835879550382289
+        },
+        {
+          "scale": 8,
+          "used_codes": 20,
+          "perplexity": 2.5533968958929334,
+          "top1_fraction": 0.6279942121704896
+        },
+        {
+          "scale": 10,
+          "used_codes": 15,
+          "perplexity": 2.2402077190533856,
+          "top1_fraction": 0.7073515063334475
+        },
+        {
+          "scale": 13,
+          "used_codes": 14,
+          "perplexity": 2.226484257854538,
+          "top1_fraction": 0.712436366730207
+        },
+        {
+          "scale": 16,
+          "used_codes": 126,
+          "perplexity": 3.7042787085613487,
+          "top1_fraction": 0.48225839021311195
+        }
+      ]
+    },
+    {
+      "representation": "C_power",
+      "group": 7,
+      "used_codes": 128,
+      "perplexity": 2.130168561096977,
+      "top1_fraction": 0.8017637870793645,
+      "top10_fraction": 0.9963375631834384,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 6,
+          "perplexity": 1.0604372885526978,
+          "top1_fraction": 0.9914412872304006
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 1.6626836724799667,
+          "top1_fraction": 0.8179454809996577
+        },
+        {
+          "scale": 3,
+          "used_codes": 5,
+          "perplexity": 1.1122061150344849,
+          "top1_fraction": 0.9812516641941497
+        },
+        {
+          "scale": 4,
+          "used_codes": 5,
+          "perplexity": 1.1910460059206625,
+          "top1_fraction": 0.9664017031838411
+        },
+        {
+          "scale": 5,
+          "used_codes": 6,
+          "perplexity": 1.1495077168863983,
+          "top1_fraction": 0.9726258130777131
+        },
+        {
+          "scale": 6,
+          "used_codes": 6,
+          "perplexity": 1.2560656063461657,
+          "top1_fraction": 0.9511808646201834
+        },
+        {
+          "scale": 8,
+          "used_codes": 23,
+          "perplexity": 1.7872001368128108,
+          "top1_fraction": 0.847415536203355
+        },
+        {
+          "scale": 10,
+          "used_codes": 16,
+          "perplexity": 1.3728238658039886,
+          "top1_fraction": 0.9261900890106128
+        },
+        {
+          "scale": 13,
+          "used_codes": 16,
+          "perplexity": 1.359209924888843,
+          "top1_fraction": 0.9266723420892172
+        },
+        {
+          "scale": 16,
+          "used_codes": 128,
+          "perplexity": 3.4131922129290095,
+          "top1_fraction": 0.6078670283614345
+        }
+      ]
+    },
+    {
+      "representation": "C_asinh",
+      "group": 0,
+      "used_codes": 207,
+      "perplexity": 3.5113098304534733,
+      "top1_fraction": 0.7040939595625995,
+      "top10_fraction": 0.9533321711943936,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0016570960306872,
+          "top1_fraction": 0.999828825744608
+        },
+        {
+          "scale": 2,
+          "used_codes": 3,
+          "perplexity": 1.2308728260803932,
+          "top1_fraction": 0.9479523279698733
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.309791684219277,
+          "top1_fraction": 0.9285252386929894
+        },
+        {
+          "scale": 4,
+          "used_codes": 9,
+          "perplexity": 1.565094191285675,
+          "top1_fraction": 0.8698086057856899
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.3719103767592002,
+          "top1_fraction": 0.9194488188976377
+        },
+        {
+          "scale": 6,
+          "used_codes": 18,
+          "perplexity": 1.5567640985713362,
+          "top1_fraction": 0.8800294324622465
+        },
+        {
+          "scale": 8,
+          "used_codes": 56,
+          "perplexity": 2.4078460164085365,
+          "top1_fraction": 0.7286908111520027
+        },
+        {
+          "scale": 10,
+          "used_codes": 43,
+          "perplexity": 1.6971274616844856,
+          "top1_fraction": 0.8543165867853475
+        },
+        {
+          "scale": 13,
+          "used_codes": 42,
+          "perplexity": 1.679582985640401,
+          "top1_fraction": 0.8625954372438717
+        },
+        {
+          "scale": 16,
+          "used_codes": 207,
+          "perplexity": 8.165911256276436,
+          "top1_fraction": 0.46954870175025676
+        }
+      ]
+    },
+    {
+      "representation": "C_asinh",
+      "group": 1,
+      "used_codes": 194,
+      "perplexity": 3.1600488116951424,
+      "top1_fraction": 0.45678901010935014,
+      "top10_fraction": 0.9831889260325835,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 2,
+          "used_codes": 3,
+          "perplexity": 2.007778200232788,
+          "top1_fraction": 0.5246169976035604
+        },
+        {
+          "scale": 3,
+          "used_codes": 3,
+          "perplexity": 2.0175423033933844,
+          "top1_fraction": 0.5036850013313553
+        },
+        {
+          "scale": 4,
+          "used_codes": 7,
+          "perplexity": 2.0727470339967646,
+          "top1_fraction": 0.501150077028415
+        },
+        {
+          "scale": 5,
+          "used_codes": 4,
+          "perplexity": 2.0398318022943807,
+          "top1_fraction": 0.5001557685724067
+        },
+        {
+          "scale": 6,
+          "used_codes": 9,
+          "perplexity": 2.097457569426227,
+          "top1_fraction": 0.4991500722735745
+        },
+        {
+          "scale": 8,
+          "used_codes": 32,
+          "perplexity": 2.3803249608266492,
+          "top1_fraction": 0.4807154816415611
+        },
+        {
+          "scale": 10,
+          "used_codes": 26,
+          "perplexity": 2.168159432597437,
+          "top1_fraction": 0.4917964738103389
+        },
+        {
+          "scale": 13,
+          "used_codes": 26,
+          "perplexity": 2.1964897432861403,
+          "top1_fraction": 0.4968955674983642
+        },
+        {
+          "scale": 16,
+          "used_codes": 194,
+          "perplexity": 4.930791196944718,
+          "top1_fraction": 0.40510426919291337
+        }
+      ]
+    },
+    {
+      "representation": "C_asinh",
+      "group": 2,
+      "used_codes": 192,
+      "perplexity": 2.449634290358542,
+      "top1_fraction": 0.8331556351571783,
+      "top10_fraction": 0.9692952403487928,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 1,
+          "perplexity": 1.0,
+          "top1_fraction": 1.0
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 1.0095510431880796,
+          "top1_fraction": 0.998855272167066
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.0081088268531186,
+          "top1_fraction": 0.999058541595344
+        },
+        {
+          "scale": 4,
+          "used_codes": 7,
+          "perplexity": 1.056965199829079,
+          "top1_fraction": 0.991690024820267
+        },
+        {
+          "scale": 5,
+          "used_codes": 7,
+          "perplexity": 1.0280065064132644,
+          "top1_fraction": 0.9962478603218076
+        },
+        {
+          "scale": 6,
+          "used_codes": 12,
+          "perplexity": 1.0843360610049335,
+          "top1_fraction": 0.9872415744227624
+        },
+        {
+          "scale": 8,
+          "used_codes": 36,
+          "perplexity": 1.5447246555827,
+          "top1_fraction": 0.9107687328825744
+        },
+        {
+          "scale": 10,
+          "used_codes": 27,
+          "perplexity": 1.1580053384127387,
+          "top1_fraction": 0.9753902773022938
+        },
+        {
+          "scale": 13,
+          "used_codes": 33,
+          "perplexity": 1.208774706495476,
+          "top1_fraction": 0.9670790885831836
+        },
+        {
+          "scale": 16,
+          "used_codes": 192,
+          "perplexity": 5.746802881359976,
+          "top1_fraction": 0.6132045224773194
+        }
+      ]
+    },
+    {
+      "representation": "C_asinh",
+      "group": 3,
+      "used_codes": 214,
+      "perplexity": 2.76378055471887,
+      "top1_fraction": 0.8031443200354431,
+      "top10_fraction": 0.9619346844352257,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.1127594608836413,
+          "top1_fraction": 0.9777045532351935
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 1.0286157184524023,
+          "top1_fraction": 0.9957741355700103
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.0362511822156368,
+          "top1_fraction": 0.994793449731827
+        },
+        {
+          "scale": 4,
+          "used_codes": 9,
+          "perplexity": 1.129051186414921,
+          "top1_fraction": 0.9781726078397809
+        },
+        {
+          "scale": 5,
+          "used_codes": 6,
+          "perplexity": 1.066186349189232,
+          "top1_fraction": 0.9897791852105443
+        },
+        {
+          "scale": 6,
+          "used_codes": 14,
+          "perplexity": 1.1594360773988488,
+          "top1_fraction": 0.9728688805203697
+        },
+        {
+          "scale": 8,
+          "used_codes": 43,
+          "perplexity": 1.7443873023986667,
+          "top1_fraction": 0.8734433841150291
+        },
+        {
+          "scale": 10,
+          "used_codes": 31,
+          "perplexity": 1.2481580873569795,
+          "top1_fraction": 0.9578937007874015
+        },
+        {
+          "scale": 13,
+          "used_codes": 35,
+          "perplexity": 1.2962115571459492,
+          "top1_fraction": 0.9505119021815095
+        },
+        {
+          "scale": 16,
+          "used_codes": 214,
+          "perplexity": 6.732034931634089,
+          "top1_fraction": 0.5681918783165012
+        }
+      ]
+    },
+    {
+      "representation": "C_asinh",
+      "group": 4,
+      "used_codes": 190,
+      "perplexity": 4.047517368747768,
+      "top1_fraction": 0.5432314426969007,
+      "top10_fraction": 0.9516593833699176,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 6,
+          "perplexity": 1.339153520203246,
+          "top1_fraction": 0.9201044162957891
+        },
+        {
+          "scale": 2,
+          "used_codes": 13,
+          "perplexity": 2.5367075788526963,
+          "top1_fraction": 0.6214481342006162
+        },
+        {
+          "scale": 3,
+          "used_codes": 12,
+          "perplexity": 2.272577103169818,
+          "top1_fraction": 0.5670575145498117
+        },
+        {
+          "scale": 4,
+          "used_codes": 16,
+          "perplexity": 2.3660944460231907,
+          "top1_fraction": 0.5669986733995207
+        },
+        {
+          "scale": 5,
+          "used_codes": 13,
+          "perplexity": 2.0525850887978665,
+          "top1_fraction": 0.6250068469702157
+        },
+        {
+          "scale": 6,
+          "used_codes": 21,
+          "perplexity": 2.1639152945283198,
+          "top1_fraction": 0.597972298299669
+        },
+        {
+          "scale": 8,
+          "used_codes": 56,
+          "perplexity": 3.020496935176659,
+          "top1_fraction": 0.5393647295446765
+        },
+        {
+          "scale": 10,
+          "used_codes": 40,
+          "perplexity": 2.1010046823130617,
+          "top1_fraction": 0.6381376241013351
+        },
+        {
+          "scale": 13,
+          "used_codes": 43,
+          "perplexity": 2.0519494039668107,
+          "top1_fraction": 0.6739350733010702
+        },
+        {
+          "scale": 16,
+          "used_codes": 190,
+          "perplexity": 8.109586946141878,
+          "top1_fraction": 0.4037332035261897
+        }
+      ]
+    },
+    {
+      "representation": "C_asinh",
+      "group": 5,
+      "used_codes": 192,
+      "perplexity": 3.268911412057079,
+      "top1_fraction": 0.5677384986003987,
+      "top10_fraction": 0.987860724570554,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 4,
+          "perplexity": 1.003435958188439,
+          "top1_fraction": 0.999657651489216
+        },
+        {
+          "scale": 2,
+          "used_codes": 7,
+          "perplexity": 1.8622065925925653,
+          "top1_fraction": 0.6935552892844916
+        },
+        {
+          "scale": 3,
+          "used_codes": 6,
+          "perplexity": 1.7852396244307238,
+          "top1_fraction": 0.7350935752596143
+        },
+        {
+          "scale": 4,
+          "used_codes": 8,
+          "perplexity": 1.9211042559851021,
+          "top1_fraction": 0.6668012880862718
+        },
+        {
+          "scale": 5,
+          "used_codes": 8,
+          "perplexity": 1.9254687487313922,
+          "top1_fraction": 0.6477045532351934
+        },
+        {
+          "scale": 6,
+          "used_codes": 10,
+          "perplexity": 1.9290675814687301,
+          "top1_fraction": 0.6787237532808399
+        },
+        {
+          "scale": 8,
+          "used_codes": 34,
+          "perplexity": 2.325919232239601,
+          "top1_fraction": 0.6177872785433071
+        },
+        {
+          "scale": 10,
+          "used_codes": 16,
+          "perplexity": 2.0026186390828653,
+          "top1_fraction": 0.6579390619650805
+        },
+        {
+          "scale": 13,
+          "used_codes": 20,
+          "perplexity": 2.0257130688033085,
+          "top1_fraction": 0.6687762965183764
+        },
+        {
+          "scale": 16,
+          "used_codes": 192,
+          "perplexity": 5.610420272519824,
+          "top1_fraction": 0.41805099388052036
+        }
+      ]
+    },
+    {
+      "representation": "C_asinh",
+      "group": 6,
+      "used_codes": 218,
+      "perplexity": 2.9545198618227313,
+      "top1_fraction": 0.7814472909156815,
+      "top10_fraction": 0.9584558823529412,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 2,
+          "perplexity": 1.0023823012525381,
+          "top1_fraction": 0.999743238616912
+        },
+        {
+          "scale": 2,
+          "used_codes": 5,
+          "perplexity": 1.0720043425933488,
+          "top1_fraction": 0.9875149777473468
+        },
+        {
+          "scale": 3,
+          "used_codes": 4,
+          "perplexity": 1.1174213252273064,
+          "top1_fraction": 0.9787601278101107
+        },
+        {
+          "scale": 4,
+          "used_codes": 9,
+          "perplexity": 1.275576286945772,
+          "top1_fraction": 0.9457029912701129
+        },
+        {
+          "scale": 5,
+          "used_codes": 7,
+          "perplexity": 1.1567855345744247,
+          "top1_fraction": 0.9712375898664841
+        },
+        {
+          "scale": 6,
+          "used_codes": 14,
+          "perplexity": 1.2913711522269016,
+          "top1_fraction": 0.94470596066796
+        },
+        {
+          "scale": 8,
+          "used_codes": 39,
+          "perplexity": 2.0229213196924745,
+          "top1_fraction": 0.8267248480828483
+        },
+        {
+          "scale": 10,
+          "used_codes": 32,
+          "perplexity": 1.4225841424642272,
+          "top1_fraction": 0.9235129236562821
+        },
+        {
+          "scale": 13,
+          "used_codes": 34,
+          "perplexity": 1.4450978178345897,
+          "top1_fraction": 0.9226636739869827
+        },
+        {
+          "scale": 16,
+          "used_codes": 218,
+          "perplexity": 6.893726676704599,
+          "top1_fraction": 0.5625451338368709
+        }
+      ]
+    },
+    {
+      "representation": "C_asinh",
+      "group": 7,
+      "used_codes": 205,
+      "perplexity": 3.9025103960285787,
+      "top1_fraction": 0.4421008744990636,
+      "top10_fraction": 0.9686804604587471,
+      "scales": [
+        {
+          "scale": 1,
+          "used_codes": 3,
+          "perplexity": 1.2240327467531238,
+          "top1_fraction": 0.9494608010955152
+        },
+        {
+          "scale": 2,
+          "used_codes": 6,
+          "perplexity": 2.0406089902642894,
+          "top1_fraction": 0.5571722013009244
+        },
+        {
+          "scale": 3,
+          "used_codes": 9,
+          "perplexity": 2.0138431286475504,
+          "top1_fraction": 0.5256618737875157
+        },
+        {
+          "scale": 4,
+          "used_codes": 14,
+          "perplexity": 2.057526069421739,
+          "top1_fraction": 0.5376075188291681
+        },
+        {
+          "scale": 5,
+          "used_codes": 11,
+          "perplexity": 2.0268875839423406,
+          "top1_fraction": 0.5073964395754879
+        },
+        {
+          "scale": 6,
+          "used_codes": 18,
+          "perplexity": 2.1054833338126326,
+          "top1_fraction": 0.5193807295827152
+        },
+        {
+          "scale": 8,
+          "used_codes": 54,
+          "perplexity": 2.7053873561473414,
+          "top1_fraction": 0.46889844017459775
+        },
+        {
+          "scale": 10,
+          "used_codes": 34,
+          "perplexity": 2.202586863362279,
+          "top1_fraction": 0.5104634542964738
+        },
+        {
+          "scale": 13,
+          "used_codes": 39,
+          "perplexity": 2.272516448991588,
+          "top1_fraction": 0.5073014935713432
+        },
+        {
+          "scale": 16,
+          "used_codes": 205,
+          "perplexity": 7.281366346641995,
+          "top1_fraction": 0.34543349211528585
+        }
+      ]
+    }
+  ],
+  "epoch_curves": [
+    {
+      "representation": "R",
+      "vq": [
+        {
+          "epoch": 1,
+          "pixel": 0.6170184667627076,
+          "bottleneck": 465.8535816077412
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.2985912225431252,
+          "bottleneck": 31.809021415514465
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.24132128182530255,
+          "bottleneck": 5.946201538420633
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.21882201605299617,
+          "bottleneck": 4.061979493736636
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.2080403443963741,
+          "bottleneck": 3.6597069411044223
+        }
+      ],
+      "grouped": [
+        {
+          "epoch": 1,
+          "pixel": 0.17575453566598462,
+          "bottleneck": 0.07731641398741307
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.06575390806788042,
+          "bottleneck": 0.0870537723770478
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.04429210906059574,
+          "bottleneck": 0.09544610798736593
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.03450379973595369,
+          "bottleneck": 0.09872838218005393
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.03159577737212222,
+          "bottleneck": 0.10083421333561016
+        }
+      ]
+    },
+    {
+      "representation": "G",
+      "vq": [
+        {
+          "epoch": 1,
+          "pixel": 0.6178545068295419,
+          "bottleneck": 376.63355170042536
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.32017146388367573,
+          "bottleneck": 91.27511779619225
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.2511534975676494,
+          "bottleneck": 46.219284306272606
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.2345453024312015,
+          "bottleneck": 37.43968491810889
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.21808955129756136,
+          "bottleneck": 30.27745522670243
+        }
+      ],
+      "grouped": [
+        {
+          "epoch": 1,
+          "pixel": 0.16193358523675686,
+          "bottleneck": 0.07814581348377761
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.0600483639520255,
+          "bottleneck": 0.08825066980695409
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.04289518034442679,
+          "bottleneck": 0.09472604550255367
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.03217568724557293,
+          "bottleneck": 0.0979973882574893
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.03007500262293237,
+          "bottleneck": 0.0991003559284973
+        }
+      ]
+    },
+    {
+      "representation": "G_power",
+      "vq": [
+        {
+          "epoch": 1,
+          "pixel": 1.7810692818055402,
+          "bottleneck": 81.38493858128915
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.686588795833874,
+          "bottleneck": 13.752685047249392
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.44201721130583516,
+          "bottleneck": 5.499393126395947
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.25356615764234064,
+          "bottleneck": 3.69185128256289
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.22640675609753358,
+          "bottleneck": 3.3047874598498215
+        }
+      ],
+      "grouped": [
+        {
+          "epoch": 1,
+          "pixel": 1.1951091117476245,
+          "bottleneck": 0.06901444364553895
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.4246324294201927,
+          "bottleneck": 0.07427667396048022
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.19963799856309683,
+          "bottleneck": 0.0837503222415662
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.07310541806571362,
+          "bottleneck": 0.08707002323635883
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.039532502832156785,
+          "bottleneck": 0.088658531369725
+        }
+      ]
+    },
+    {
+      "representation": "G_asinh",
+      "vq": [
+        {
+          "epoch": 1,
+          "pixel": 0.5424428701848523,
+          "bottleneck": 423.96018723701053
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.3390410689912113,
+          "bottleneck": 54.98621538530461
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.26830533087668673,
+          "bottleneck": 19.85475544725029
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.2276457914696775,
+          "bottleneck": 8.56752205697025
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.21483854812647005,
+          "bottleneck": 6.774841427156841
+        }
+      ],
+      "grouped": [
+        {
+          "epoch": 1,
+          "pixel": 0.11532545559631388,
+          "bottleneck": 0.0839242139681859
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.04136619258292197,
+          "bottleneck": 0.09447750668565709
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.03316713699909572,
+          "bottleneck": 0.09967790511246753
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.02947179706051192,
+          "bottleneck": 0.10213864487570869
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.02838486897362219,
+          "bottleneck": 0.10274831983236461
+        }
+      ]
+    },
+    {
+      "representation": "C",
+      "vq": [
+        {
+          "epoch": 1,
+          "pixel": 3.4268910150350207,
+          "bottleneck": 681.2597773719513
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.3391953845966732,
+          "bottleneck": 28.523859065406764
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.2665521538778859,
+          "bottleneck": 8.851050395895893
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.24135655924485608,
+          "bottleneck": 7.566331123289336
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.22869079487415492,
+          "bottleneck": 7.322853023591332
+        }
+      ],
+      "grouped": [
+        {
+          "epoch": 1,
+          "pixel": 0.14220502935968343,
+          "bottleneck": 0.08166550146970647
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.06922864576996238,
+          "bottleneck": 0.09561488937744336
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.06003127226470125,
+          "bottleneck": 0.10183756913604877
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.03988350125017987,
+          "bottleneck": 0.10430567278745226
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.03526165220391833,
+          "bottleneck": 0.10520501485612244
+        }
+      ]
+    },
+    {
+      "representation": "C_affine",
+      "vq": [
+        {
+          "epoch": 1,
+          "pixel": 0.5251197061251255,
+          "bottleneck": 507.50767365140644
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.3255916280942579,
+          "bottleneck": 26.955059550801753
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.23888992299764364,
+          "bottleneck": 7.8071148797978225
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.21232776934322883,
+          "bottleneck": 4.807737373441768
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.2030994572579854,
+          "bottleneck": 4.143441322317732
+        }
+      ],
+      "grouped": [
+        {
+          "epoch": 1,
+          "pixel": 0.1199863255941435,
+          "bottleneck": 0.08183285585943048
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.044149051652078226,
+          "bottleneck": 0.09464060236008857
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.03513144685583873,
+          "bottleneck": 0.10131864049905838
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.030962129814097537,
+          "bottleneck": 0.103947800950878
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.029496483512070504,
+          "bottleneck": 0.10468047393383617
+        }
+      ]
+    },
+    {
+      "representation": "C_power",
+      "vq": [
+        {
+          "epoch": 1,
+          "pixel": 1.290372028933607,
+          "bottleneck": 51.53152679819233
+        },
+        {
+          "epoch": 2,
+          "pixel": 1.1834421674877775,
+          "bottleneck": 2.1760254347196097
+        },
+        {
+          "epoch": 3,
+          "pixel": 1.0908244258533508,
+          "bottleneck": 0.4686109291603473
+        },
+        {
+          "epoch": 4,
+          "pixel": 1.1085732002853872,
+          "bottleneck": 0.38983043406193135
+        },
+        {
+          "epoch": 5,
+          "pixel": 1.0068244167691103,
+          "bottleneck": 0.21405248211451977
+        }
+      ],
+      "grouped": [
+        {
+          "epoch": 1,
+          "pixel": 1.2085859796193545,
+          "bottleneck": 0.046468868724000634
+        },
+        {
+          "epoch": 2,
+          "pixel": 1.0809739865199495,
+          "bottleneck": 0.04320976285979906
+        },
+        {
+          "epoch": 3,
+          "pixel": 1.1690438491125767,
+          "bottleneck": 0.040391538338035
+        },
+        {
+          "epoch": 4,
+          "pixel": 1.0979587310072847,
+          "bottleneck": 0.031698465164457776
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.9959407533098402,
+          "bottleneck": 0.02331773276446222
+        }
+      ]
+    },
+    {
+      "representation": "C_asinh",
+      "vq": [
+        {
+          "epoch": 1,
+          "pixel": 0.3865059915401713,
+          "bottleneck": 217.41860271078443
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.23236176018587515,
+          "bottleneck": 7.108959821068896
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.18675358768460248,
+          "bottleneck": 4.463489866690054
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.17063201993251312,
+          "bottleneck": 3.9136858320002115
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.16226274130707505,
+          "bottleneck": 3.6680087516106132
+        }
+      ],
+      "grouped": [
+        {
+          "epoch": 1,
+          "pixel": 0.10025604780593689,
+          "bottleneck": 0.08502829135726583
+        },
+        {
+          "epoch": 2,
+          "pixel": 0.034910190390183275,
+          "bottleneck": 0.09909531926449364
+        },
+        {
+          "epoch": 3,
+          "pixel": 0.03172592542523703,
+          "bottleneck": 0.10390244161981278
+        },
+        {
+          "epoch": 4,
+          "pixel": 0.030224320941666025,
+          "bottleneck": 0.10622373986355123
+        },
+        {
+          "epoch": 5,
+          "pixel": 0.029465255691013947,
+          "bottleneck": 0.10685132560834505
+        }
+      ]
+    }
+  ],
+  "mechanism": {
+    "vq": {
+      "groups": 1,
+      "dim_per_group": 32,
+      "codes_per_group": 1024,
+      "scales": [
+        16
+      ],
+      "index_bits": 2560,
+      "parameters": 87190776,
+      "initialization": "uniform +/-1/1024",
+      "unit_rms": false,
+      "warmup_updates": 0
+    },
+    "grouped": {
+      "groups": 8,
+      "dim_per_group": 4,
+      "codes_per_group": 256,
+      "scales": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        13,
+        16
+      ],
+      "index_bits": 43520,
+      "parameters": 108828056,
+      "initialization": "nn.Embedding default normal(0,1)",
+      "unit_rms": false,
+      "warmup_updates": 500
+    }
+  },
+  "caveats": [
+    "Not equal-rate or equal-architecture comparisons; no isolated causal claim about grouping.",
+    "Bottleneck objectives differ: single reconstruction vs mean over ten cumulative reconstructions.",
+    "Group usage pools scales within each independent group; inspect per-scale data too.",
+    "Token statistics include reference-invalid positions; observed usage is not measured compressed bitrate.",
+    "Grouped statistics count more token positions than the single-scale baseline.",
+    "All scores are final-epoch, not validation-selected best."
+  ]
+}

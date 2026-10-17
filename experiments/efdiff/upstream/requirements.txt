@@ -1,0 +1,13 @@
+torch>=2.0
+torchvision>=0.15
+numpy>=1.24
+scipy>=1.10
+opencv-python>=4.7
+PyYAML>=6.0
+tqdm>=4.65
+tensorboardX>=2.6
+wandb>=0.15
+transformers>=4.30
+matplotlib>=3.7
+scikit-image>=0.20
+terratorch

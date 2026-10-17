@@ -1,0 +1,31 @@
+{
+  "revision": "78b95394fc5896192e3a003e4b295f8ea743c48f",
+  "downloaded_weights": false,
+  "files": [
+    {
+      "path": "models/vqvae.py",
+      "url": "https://raw.githubusercontent.com/FoundationVision/VAR/78b95394fc5896192e3a003e4b295f8ea743c48f/models/vqvae.py",
+      "sha256": "ae5cf43180632efe82e56e88e8f65c670857b8e977fc04acb100e26094322772"
+    },
+    {
+      "path": "models/basic_vae.py",
+      "url": "https://raw.githubusercontent.com/FoundationVision/VAR/78b95394fc5896192e3a003e4b295f8ea743c48f/models/basic_vae.py",
+      "sha256": "277a5fcef29bbcbd83c39895691bc4cb034ec6cd5c97e3593275b80b8a04d6d5"
+    },
+    {
+      "path": "models/quant.py",
+      "url": "https://raw.githubusercontent.com/FoundationVision/VAR/78b95394fc5896192e3a003e4b295f8ea743c48f/models/quant.py",
+      "sha256": "3c987d8ba6700aa78b2759b50d5db1bd1278f82001aebcdb1d7c41b66b015b94"
+    },
+    {
+      "path": "dist.py",
+      "url": "https://raw.githubusercontent.com/FoundationVision/VAR/78b95394fc5896192e3a003e4b295f8ea743c48f/dist.py",
+      "sha256": "b55322b4ae4c8c2b600b98870dc98b26435a813b72b3468a4315d7d74771e370"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/FoundationVision/VAR/78b95394fc5896192e3a003e4b295f8ea743c48f/LICENSE",
+      "sha256": "a318f4da9d043e05f535b65774febde7572908c97562cc14e49a2f3687f5a453"
+    }
+  ]
+}

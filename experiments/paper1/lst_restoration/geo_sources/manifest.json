@@ -1,0 +1,98 @@
+[
+  {
+    "file": "eo_new_autoencoder.py.txt",
+    "repo": "nilsleh/eo-vae",
+    "revision": "8e65a27546d6ad5c7b0b349024a27702d49f9333",
+    "path": "eo_vae/models/new_autoencoder.py",
+    "url": "https://raw.githubusercontent.com/nilsleh/eo-vae/8e65a27546d6ad5c7b0b349024a27702d49f9333/eo_vae/models/new_autoencoder.py",
+    "sha256": "4e7ed025cc93e4bce258e9ee3c2195c2cf5b3b38472bbaea4da5657ca74864b0"
+  },
+  {
+    "file": "tm_vqvae.py.txt",
+    "repo": "terrastackai/terratorch",
+    "revision": "0f3873f08058d991b638db8c5b71478777beb2ac",
+    "path": "terratorch/models/backbones/terramind/tokenizer/vqvae.py",
+    "url": "https://raw.githubusercontent.com/terrastackai/terratorch/0f3873f08058d991b638db8c5b71478777beb2ac/terratorch/models/backbones/terramind/tokenizer/vqvae.py",
+    "sha256": "6f6a0f9f9f7892df57d85c16a1c6c875ffb6c95b7fc0979560688c9dcc994ed4"
+  },
+  {
+    "file": "tm_register.py.txt",
+    "repo": "terrastackai/terratorch",
+    "revision": "0f3873f08058d991b638db8c5b71478777beb2ac",
+    "path": "terratorch/models/backbones/terramind/tokenizer/tokenizer_register.py",
+    "url": "https://raw.githubusercontent.com/terrastackai/terratorch/0f3873f08058d991b638db8c5b71478777beb2ac/terratorch/models/backbones/terramind/tokenizer/tokenizer_register.py",
+    "sha256": "6e586d38167626360d99df21c3461267f8b8cdcf18ba560a944be173d7f3ee9e"
+  },
+  {
+    "file": "eo_distribution.py.txt",
+    "repo": "nilsleh/eo-vae",
+    "revision": "8e65a27546d6ad5c7b0b349024a27702d49f9333",
+    "path": "eo_vae/models/modules/distributions.py",
+    "url": "https://raw.githubusercontent.com/nilsleh/eo-vae/8e65a27546d6ad5c7b0b349024a27702d49f9333/eo_vae/models/modules/distributions.py",
+    "sha256": "d46a4eb88cab56f594f4d460eb3a0de1c975eebc52d68aaa07f7a899f1ea2665"
+  },
+  {
+    "file": "eo_LICENSE.txt",
+    "repo": "nilsleh/eo-vae",
+    "revision": "8e65a27546d6ad5c7b0b349024a27702d49f9333",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/nilsleh/eo-vae/8e65a27546d6ad5c7b0b349024a27702d49f9333/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "file": "tm_LICENSE.txt",
+    "repo": "terrastackai/terratorch",
+    "revision": "0f3873f08058d991b638db8c5b71478777beb2ac",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/terrastackai/terratorch/0f3873f08058d991b638db8c5b71478777beb2ac/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "file": "eo_model.py.txt",
+    "repo": "nilsleh/eo-vae",
+    "revision": "8e65a27546d6ad5c7b0b349024a27702d49f9333",
+    "path": "eo_vae/models/model.py",
+    "url": "https://raw.githubusercontent.com/nilsleh/eo-vae/8e65a27546d6ad5c7b0b349024a27702d49f9333/eo_vae/models/model.py",
+    "sha256": "ef1d50f542081c00b023e48b96334e3d64a4890858c37d80c2d49cea339c2f6a"
+  },
+  {
+    "file": "tm___init__.py.txt",
+    "repo": "terrastackai/terratorch",
+    "revision": "0f3873f08058d991b638db8c5b71478777beb2ac",
+    "path": "terratorch/models/backbones/terramind/tokenizer/quantizers/__init__.py",
+    "url": "https://raw.githubusercontent.com/terrastackai/terratorch/0f3873f08058d991b638db8c5b71478777beb2ac/terratorch/models/backbones/terramind/tokenizer/quantizers/__init__.py",
+    "sha256": "43269ca2cb9dab81e06c038a2b723a48c2aacf86b1326bdf9b62e67b254025d5"
+  },
+  {
+    "file": "tm_quantize_finite_scalar.py.txt",
+    "repo": "terrastackai/terratorch",
+    "revision": "0f3873f08058d991b638db8c5b71478777beb2ac",
+    "path": "terratorch/models/backbones/terramind/tokenizer/quantizers/quantize_finite_scalar.py",
+    "url": "https://raw.githubusercontent.com/terrastackai/terratorch/0f3873f08058d991b638db8c5b71478777beb2ac/terratorch/models/backbones/terramind/tokenizer/quantizers/quantize_finite_scalar.py",
+    "sha256": "a7961a903e2749a69e17566cf9a69f115436c1c194798b6c9a6e590d0fc569f1"
+  },
+  {
+    "file": "satmae_models_mae.py.txt",
+    "repo": "techmn/satmae_pp",
+    "revision": "34f46564e4de1e4108fc12dc191fac600d62441c",
+    "path": "models_mae.py",
+    "url": "https://raw.githubusercontent.com/techmn/satmae_pp/34f46564e4de1e4108fc12dc191fac600d62441c/models_mae.py",
+    "sha256": "d72ad7560490cb9a07bf2a049eeec18552d0de914e9c10e5d27b715293593bd7"
+  },
+  {
+    "file": "satmae_util_pos_embed.py.txt",
+    "repo": "techmn/satmae_pp",
+    "revision": "34f46564e4de1e4108fc12dc191fac600d62441c",
+    "path": "util/pos_embed.py",
+    "url": "https://raw.githubusercontent.com/techmn/satmae_pp/34f46564e4de1e4108fc12dc191fac600d62441c/util/pos_embed.py",
+    "sha256": "80d1fdf2567bc5bda8c52bff2d125bd9d35a817782ebe2851965e3ef7e50e437"
+  },
+  {
+    "file": "satmae_LICENSE.txt",
+    "repo": "techmn/satmae_pp",
+    "revision": "34f46564e4de1e4108fc12dc191fac600d62441c",
+    "path": "LICENSE",
+    "url": "https://raw.githubusercontent.com/techmn/satmae_pp/34f46564e4de1e4108fc12dc191fac600d62441c/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  }
+]

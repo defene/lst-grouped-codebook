@@ -1,0 +1,24 @@
+{
+  "submitted_utc": "2026-10-05T03:44:30.367615+00:00",
+  "server": "zm2864@torch",
+  "remote_directory": "/scratch/zm2864/lst-restoration-bench/output/stage2_vq_20261004_attempt01",
+  "pilot_preflight": "19196790",
+  "remaining_preflight": "19197084",
+  "formal_vqgan_pretrained": "19197089",
+  "formal_vq_drifting": "19197091",
+  "formal_runs_per_family": 8,
+  "formal_epochs_per_run": 5,
+  "last_observed_status": {
+    "pilot_preflight": "PENDING: QOSMaxGRESPerUser",
+    "remaining_preflight": "PENDING: Dependency",
+    "formal_vqgan_pretrained": "PENDING: Dependency",
+    "formal_vq_drifting": "PENDING: Dependency"
+  },
+  "cpu_energy_checks": "passed: pair formula and gradients, force signs, RNG replay, hard token decode, encoder/all-code energy gradients, absence of STE",
+  "gpu_preflight_completed": false,
+  "formal_training_started": false,
+  "dependency_policy": "afterok both preflight arrays; kill-on-invalid-dep=yes; in-process source/config/gate verification",
+  "wandb_project": "cyiheng312-new-york-university/lst-restoration-stage1-20260930",
+  "wandb_group": "stage2-vq-pretrained-drifting-20261004",
+  "authoritative_live_state": "Check remote submission.json, checks/, failures/, runs/ and Slurm; this local file records submission-time status only."
+}

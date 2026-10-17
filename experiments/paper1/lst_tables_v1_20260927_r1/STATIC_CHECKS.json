@@ -1,0 +1,13 @@
+{
+  "status": "static_checks_passed",
+  "configs": 166,
+  "tables": 10,
+  "unique_job_ids": true,
+  "config_hashes_verified": true,
+  "null_metrics_verified": true,
+  "required_evaluation_profiles_present": true,
+  "overwrite_guard_verified": true,
+  "torch_imported": false,
+  "training_started": false,
+  "runtime_verified": false
+}

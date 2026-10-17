@@ -1,0 +1,28 @@
+{
+  "status": "static_checks_passed_runtime_unverified",
+  "python_files_parsed": 18,
+  "jobs": 174,
+  "geo_scratch_jobs": 12,
+  "tiers": {
+    "absolute_temperature_control": 24,
+    "affine_gain_control": 4,
+    "core_replication": 48,
+    "core_seed17": 24,
+    "geo_continuous_scratch": 6,
+    "geo_discrete_diffusion_scratch": 6,
+    "geo_mae_separate": 8,
+    "gray_control": 12,
+    "natural_pretrained": 18,
+    "rate_distortion": 16,
+    "visible_mean_control": 8
+  },
+  "final_evaluation_cells": 3352,
+  "pretrained_evaluation_cells": 360,
+  "all_execution_disabled": true,
+  "torch_imported": false,
+  "numpy_imported": false,
+  "models_initialized": 0,
+  "training_jobs_started": 0,
+  "all_runtime_gates_pending": true,
+  "source_snapshots_sha256_checked": true
+}

@@ -1,0 +1,5 @@
+{
+  "status": "superseded_unverified_draft",
+  "replacement": "experiments\\paper1\\lst_tables_v1_20260927_r1",
+  "reason": "Corrected S4 membership to exclude separate patch16 MAE task; no training started."
+}

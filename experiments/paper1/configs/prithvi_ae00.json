@@ -1,0 +1,10 @@
+{
+  "name": "prithvi_ae00",
+  "model": {
+    "quantizer": "ae"
+  },
+  "loss": {
+    "stability": 0,
+    "cross_view": 0
+  }
+}

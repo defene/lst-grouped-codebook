@@ -1,0 +1,104 @@
+{
+  "checked_utc": "2026-09-10T17:09:44.393800+00:00",
+  "torch_installed": false,
+  "profiles": [
+    {
+      "dataset": "prithvi",
+      "modality": "hls",
+      "training_samples": 230659,
+      "checked_indices": [
+        0,
+        115329,
+        230658
+      ],
+      "batch_shape": [
+        3,
+        6,
+        256,
+        256
+      ],
+      "mask_shape": [
+        3,
+        1,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "read_and_stack": "passed"
+    },
+    {
+      "dataset": "prithvi",
+      "modality": "lst",
+      "training_samples": 230659,
+      "checked_indices": [
+        0,
+        115329,
+        230658
+      ],
+      "batch_shape": [
+        3,
+        1,
+        256,
+        256
+      ],
+      "mask_shape": [
+        3,
+        1,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "read_and_stack": "passed"
+    },
+    {
+      "dataset": "lstsr_tb",
+      "modality": "hls",
+      "training_samples": 250449,
+      "checked_indices": [
+        0,
+        125224,
+        250448
+      ],
+      "batch_shape": [
+        3,
+        6,
+        256,
+        256
+      ],
+      "mask_shape": [
+        3,
+        1,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "read_and_stack": "passed"
+    },
+    {
+      "dataset": "lstsr_tb",
+      "modality": "lst",
+      "training_samples": 2608772,
+      "checked_indices": [
+        0,
+        1304386,
+        2608771
+      ],
+      "batch_shape": [
+        3,
+        1,
+        256,
+        256
+      ],
+      "mask_shape": [
+        3,
+        1,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "read_and_stack": "passed"
+    }
+  ],
+  "status": "data_ready_pytorch_not_installed",
+  "pytorch_dataloader_tested_this_check": false
+}

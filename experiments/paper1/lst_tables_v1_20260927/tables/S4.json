@@ -1,0 +1,1779 @@
+{
+  "title": "多种子与更强污染",
+  "rows": [
+    {
+      "job_id": "vq_R_clean_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "85c746aa2ede9d488732de8b9418b35580e1e9b4bbc60e650608e9f79ff3bdf8",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_pixel10_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "7c060dff18c483fb8a6c4d87b9c1244995f92843708c686de134744a32ec3043",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_clean_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "66b10ade53e56773adf09223fee2f1624a7ebed30ff51a3977b3e0e603aa89ac",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_pixel10_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "19ac7ecfd5c006f5923094d253367b6b9389f559f530a7a1e9663a6c948d0bec",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_clean_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "730f96cd87b6787e6af861725cac7b66a65c1d6d37a8681f72d1142fee8ecce3",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "c3cd8a15bae647253d3d0fe701b2ecaa4163fa80415e9c039e39095be90fa337",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_clean_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "5355dee26d3154246f294be29d2670aaf3d7026d1beb8b52093a01508791e44e",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "2369507e9ff5bbef85aef47ed844f109c36263a6b5e751641dba2cdde0f97785",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_clean_seed17",
+      "model": "lfq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "1ccc75dae3408e4b3e1cfce666a27b0139f6da1c57885e2ff21a1e2cca98e2b0",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_pixel10_seed17",
+      "model": "lfq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "144ffe88c257b510260e44d5efe0d9b4de51247f466f97717326dc3ec1d64771",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_clean_seed17",
+      "model": "lfq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "4343f4ce20b65cb40213cc0a4ca7d5a3a5af41550b4a07b7c71a7ffcd28200be",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_pixel10_seed17",
+      "model": "lfq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "de1e3a4e49cc465f68bedc74e09bac4cb7f2a79649a2fc803736d042769c60d0",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_clean_seed17",
+      "model": "bsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "e5a45dde9f3133f9e989fb3538d6d82f2db47a30b15d9d812a89565f1a029190",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_pixel10_seed17",
+      "model": "bsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "825625f9818897dc99ed2f0706d0e305dd3f99f4c0305d2b89344f17b50ae685",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_clean_seed17",
+      "model": "bsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "6eb121c88b2b0c86e51f405b0fbb9abc7e607f74c5778183673b4f8e3e9b93f9",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_pixel10_seed17",
+      "model": "bsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "7bd574045ec3930b06910a90cc533950cef5c00e543d02acddc93551937514ec",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_power_pixel10_seed17",
+      "model": "vq",
+      "representation": "C_power",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "8fce6d143090c7bd7b4befab19925018de94487c823b1f3ad02480b9c741efa9",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_asinh_pixel10_seed17",
+      "model": "vq",
+      "representation": "C_asinh",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "b246077557784845868da57d89a9115125385c861d83a49b481502b664602e8f",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_power_pixel10_seed17",
+      "model": "fsq",
+      "representation": "C_power",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "7f5dbf6616de30856d5571bfc914326a8f7424d92d80f09c3741a4c8976450cd",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_asinh_pixel10_seed17",
+      "model": "fsq",
+      "representation": "C_asinh",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "c1061b3862a30ba10873d6c2fdc3eb99594821fd5db01eba42cc90f330dfd1e3",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_mixed_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "87c11984f3d0d38bc8ed7be37bfc20f9825b5fef6853c2976f8cff29b6ff6bf7",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_mixed_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "8d4cf409e2f0559dabc87b2198e0e78780a3915679b7cc2330bac29d02462899",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_mixed_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "0d99fba3a25f1b79d8b1f88b426270256f17b3f8ec012b9bed28182bff92b4dc",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_mixed_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "e083b7b1fe9b5c3b2cda5d0a4a55b61e30da8b3b64b9e2b71668273057e07abe",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_mixed_seed17",
+      "model": "lfq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "f75c6c68724092c5c8115910ef26bda81a35016ff30079293bcfb8a48cdf19c2",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_mixed_seed17",
+      "model": "lfq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "f54c165b9b277ccaea574c61a567ab77e52fa6488e90517de411fe6e35ee3da2",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_mixed_seed17",
+      "model": "bsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "a3f607bf513d73dcac5820c257f1339b3ae589d92bc9559e39e1b3fc51be5ddc",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_mixed_seed17",
+      "model": "bsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "038842a891450062749815703a4bd33aefd10b5b2e41ee4deb4bee5354887a0e",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_patch16_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "72975ae7bd2894802ee962ce7bf29e4e6c67613180b7adea049a080e78649eb1",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_patch16_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "05f4b069f57d73b27433134ad1c5530094daf51a8451c5659f1e105e89df5b18",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_patch16_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "a0c7373ff2017452b82c3eaf94c818398cd734359d431bb5704e5a4f6207f5b7",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_patch16_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "patch16",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "5e822a800ab204d5745c32624e8b01dc5742748d6ff0355f32a0516eead70aff",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_clean_seed23",
+      "model": "vq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "0f3cbd3c2204608226a8b7368538606ff02390f7f362f94c94a2a97059e1a6b1",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_clean_seed42",
+      "model": "vq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "b0cdf494ae48a9b256098dd3934eca8adcd88c699527476dff72594eef1dcf9c",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_pixel10_seed23",
+      "model": "vq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "f20a59180e6a87f58ec17c96e42c12b9c9f3b766f7d925e3caca6807598ab76e",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_pixel10_seed42",
+      "model": "vq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "29e907f1bbcfb78aff8c695b8daf32536f2859266086f578ac62f0109f03197b",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_mixed_seed23",
+      "model": "vq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "69057bbaf604ad6be7aea06f0fb054948bc4e733acd817726082b60a5fa7fb4e",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_mixed_seed42",
+      "model": "vq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "ad0e8edfb507d18f742d8377a42a03ff340587ea64c976447211aa515812328d",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_clean_seed23",
+      "model": "vq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "c707de02c12e1a804ace2dad837faa92c87b5d6d0c75f8e47a60f055062c6da9",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_clean_seed42",
+      "model": "vq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "d0016ca40188a0854278ccf79ccb5b2dbd42320665a3543bb05b0006f241a202",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_pixel10_seed23",
+      "model": "vq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "4b3e22715e7259b2871f14b630eeafac1d05cbf2ef192eb84286523ba475405c",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_pixel10_seed42",
+      "model": "vq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "2ff184ea6584bf0643f691baa6d62cfd52cd511fad149c35b74f9d0bbf0bd664",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_mixed_seed23",
+      "model": "vq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "6078fa824ac5bd69d3290494b6415678daa792298578e1a6b625773d2a7a519f",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_mixed_seed42",
+      "model": "vq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "676737e1e8c81efbf5ea92208325cad442d00183b014b2f92ba3bc6f3e581722",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_clean_seed23",
+      "model": "fsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "234258adb3e7cfe391fc47535965578dfdec3c51251113243b55ff77a5d36e77",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_clean_seed42",
+      "model": "fsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "b00072442fda049d574e0f956e391d20e0c1c2e49032211038ed477c00d458ef",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed23",
+      "model": "fsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "a7a2b29744af3fe0d83bb5c6990c1b445c4a55e0cc0c376f7392794b799da946",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed42",
+      "model": "fsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "15c2b147828411050321335e1569521274384d652f6f79e56d2a2f286c5162e6",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_mixed_seed23",
+      "model": "fsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "aea3a05a76ec40017ee36c30521bc0fd51a5a8cb311380c4b14f92a2deaec0fb",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_mixed_seed42",
+      "model": "fsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "7fba353c6ff28be68a7d9bb6901841b236cd19174013882d841a9496ad69dc5b",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_clean_seed23",
+      "model": "fsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "eaf74fb654815eb07cfe9bb8242be9c3a496fc8ab72f7075a29dbb2375eee7be",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_clean_seed42",
+      "model": "fsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "46e5e516a19f4f4b8b54189410e664401ec00b6fc4da47cfac2f5569a17a8750",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed23",
+      "model": "fsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "1e301eb6bc32ace9059f3143e4650edf7327d9fe1d449d18aa3e9f5a641f98c5",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed42",
+      "model": "fsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "970cf2afe1565647fa133da15d1a9abba79d55f965fc94196e7b1a11560cbd34",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_mixed_seed23",
+      "model": "fsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "460313abbed2d33545db1d43c1efaec0722d380c5925db3834dea33685406b63",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_mixed_seed42",
+      "model": "fsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "7890a21bb6ca57fc4cc5eaf8a68509d53b8cad013b6104fe15ec92c591a8a349",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_clean_seed23",
+      "model": "lfq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "ec2c16168026503a9e9bfd96c52460b43edad28ed055c89f182f55001f5bc784",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_clean_seed42",
+      "model": "lfq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "2355326711a64905c65480486d0afc2e234ff56edf728ae990497f316714496e",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_pixel10_seed23",
+      "model": "lfq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "29d93292886f61359cace0a13a00a2a09c9ea1fd2211e0c25121eaaac70d7360",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_pixel10_seed42",
+      "model": "lfq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "6fa98a7f5b2728f00f81d1ba2e433d8120eb14eff06605b030555f2131e82dc7",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_mixed_seed23",
+      "model": "lfq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "e865a19020ed28fe8aeee34beca61a001b9464cce0ca299e540f62bca6d13623",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_mixed_seed42",
+      "model": "lfq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "7620b0d1141aacf69d9e7c4b88ba5d1a4528343340df5badab38fab6ce94a836",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_clean_seed23",
+      "model": "lfq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "206e38fe701ff195e4fcaf026bce75bf7bcc8bea2eba1b8e6aab127296396d02",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_clean_seed42",
+      "model": "lfq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "4f4d41887e0bf4e24cbd3333be6dd6a80078fdb825aea10555192efd9a77fce2",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_pixel10_seed23",
+      "model": "lfq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "eb7eb09c5fbf9332e896e5dce9c9094a4417a5e16779780b28d8262ac0c26321",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_pixel10_seed42",
+      "model": "lfq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "d73b2c2c10dfa47f3f60b44bbc1b1930636bd3334b8cee5dc14d89a0646d2602",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_mixed_seed23",
+      "model": "lfq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "24cbea44e108c3bb99cdac258549c8dca2cdf34d79a09ed29232414fef39fe90",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_mixed_seed42",
+      "model": "lfq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "aa840b2c99167b98c02e3db1ba580b821b49c157a3b19463a610577b2b5a3623",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_clean_seed23",
+      "model": "bsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "29cf7bf8208100f1662231d7747b161a55038920721d7a29c3840576c020802a",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_clean_seed42",
+      "model": "bsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "f2fe43dabbffb19b5421b4d655c56316ea5d927780b8242c04b3c5a63f7176fa",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_pixel10_seed23",
+      "model": "bsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "4d149c6c5ea99c018f24ca5838dca087618a81f15964b3cd6c5f81fcbcdcc325",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_pixel10_seed42",
+      "model": "bsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "9eee76677a2f7399690b8b64b713a61763af137bd9872d9cbcf150dfa0ad2fb7",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_mixed_seed23",
+      "model": "bsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "2a184a685de17c9e9a6dca0c8892499209abeaecbe029c19937e8f9d412a1fdb",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_mixed_seed42",
+      "model": "bsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "69fdd6d1ad3340c74b3678f5658a7d66a3b01cd1420bd213a903849fd1896ffb",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_clean_seed23",
+      "model": "bsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "5eb55d14eb49206d089451ead8dc512810ee7afa187925c6672257dbfd29c545",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_clean_seed42",
+      "model": "bsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "38f6229b2484266bc023c38e6be98f81cd7a2685d9c32d19bf7ef941cd3e73c3",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_pixel10_seed23",
+      "model": "bsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "c90119f06602ec765e2f5a5830b29176532d6e1b7847e92e9b94fd777d9f3f33",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_pixel10_seed42",
+      "model": "bsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "5f5cc6c9ca605c1097089d6892585e10e866b2050d220da207dae844cb661ba8",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_mixed_seed23",
+      "model": "bsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "336d64e83f7bee4f92c9ad83bebf9501d50a8d3720e7f7cab6628d3478fb0dfc",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_mixed_seed42",
+      "model": "bsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "c6df4bcb724c03e31a567f53aa690c0d9f88493ec3d129a706ca2e9926b80723",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_power_pixel10_seed23",
+      "model": "vq",
+      "representation": "C_power",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "13e849bdb47f7abe483637746227e104d19cd4b8da0cbeabb70e44ef628ac251",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_power_pixel10_seed42",
+      "model": "vq",
+      "representation": "C_power",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "c97277fbf0e886bc7c79657f4ae7c47d6afdb5ff15e822e27262f0b9716618f0",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_asinh_pixel10_seed23",
+      "model": "vq",
+      "representation": "C_asinh",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "3767aaa51d28bd711f9c1908000379587fedfdbc047a7eac1aa4d6f5c6d30505",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_asinh_pixel10_seed42",
+      "model": "vq",
+      "representation": "C_asinh",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "15a2e2b38837b4927fa858ae54ff393546da0b8e57970be2054b191d1d316b56",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_power_pixel10_seed23",
+      "model": "fsq",
+      "representation": "C_power",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "a546d39f2ac069a9bcfdeb496afc78092f9be5300caebdc9d77545a6595fa72f",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_power_pixel10_seed42",
+      "model": "fsq",
+      "representation": "C_power",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "f10b918a510aa157000c9ea2c7ec674d9077667607020a596fef44ce8a017d4e",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_asinh_pixel10_seed23",
+      "model": "fsq",
+      "representation": "C_asinh",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 23,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "b985495edecfab64fcefa87b26d23ab7d20d37604e89c54752b02bf1f08c482d",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_asinh_pixel10_seed42",
+      "model": "fsq",
+      "representation": "C_asinh",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 42,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_paired_tile_ci": null,
+        "strong_gaussian_rmse": null,
+        "cloud30_rmse": null,
+        "joint30_rmse": null
+      },
+      "config_sha256": "09c2921f2dbeefa540467a449f74b2cd5768cf6c757af6deccd41d9263461830",
+      "evidence": []
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "statistics_extensions",
+      "tables": [
+        "T3",
+        "T4",
+        "S2",
+        "S4"
+      ],
+      "candidate_training_jobs": 0,
+      "status": "blocked_reporting",
+      "reason": "Train-only residual-tail thresholds, between/within decomposition, cross-seed aggregation and convergence-threshold reporting still need implementation; null is not zero."
+    }
+  ]
+}

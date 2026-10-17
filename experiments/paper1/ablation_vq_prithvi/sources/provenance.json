@@ -1,0 +1,26 @@
+{
+  "revision": "9eb1b1102806593963daa333bcc491b1c6f8562f",
+  "downloaded_weights": false,
+  "files": [
+    {
+      "file": "config.json",
+      "url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M/resolve/9eb1b1102806593963daa333bcc491b1c6f8562f/config.json",
+      "sha256": "748bc314d9b0653b00e3a2eaf14b69b4c27a295d73eb0b85112fe21bd2c36aa8"
+    },
+    {
+      "file": "prithvi_mae.py",
+      "url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M/resolve/9eb1b1102806593963daa333bcc491b1c6f8562f/prithvi_mae.py",
+      "sha256": "9cee9a8cb17c3859d6365a7e58f723e0f4c08e3e29aa4b8e6523506db70321da"
+    },
+    {
+      "file": "requirements.txt",
+      "url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M/resolve/9eb1b1102806593963daa333bcc491b1c6f8562f/requirements.txt",
+      "sha256": "dfcc1ac57927a91683cc2d56e7a4d2d6a5163965ada09900149ed7becc01c728"
+    },
+    {
+      "file": "README.md",
+      "url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M/resolve/9eb1b1102806593963daa333bcc491b1c6f8562f/README.md",
+      "sha256": "0f85c7d59f91566bd7c8a11793ad0e4a342d22b88bd8d470a7a27c1f5ed53917"
+    }
+  ]
+}

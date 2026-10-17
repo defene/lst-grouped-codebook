@@ -1,0 +1,497 @@
+{
+  "title": "均值与残差",
+  "rows": [
+    {
+      "job_id": "vq_R_clean_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "85c746aa2ede9d488732de8b9418b35580e1e9b4bbc60e650608e9f79ff3bdf8",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_pixel10_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "7c060dff18c483fb8a6c4d87b9c1244995f92843708c686de134744a32ec3043",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_clean_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "66b10ade53e56773adf09223fee2f1624a7ebed30ff51a3977b3e0e603aa89ac",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_pixel10_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "19ac7ecfd5c006f5923094d253367b6b9389f559f530a7a1e9663a6c948d0bec",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_clean_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "730f96cd87b6787e6af861725cac7b66a65c1d6d37a8681f72d1142fee8ecce3",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "c3cd8a15bae647253d3d0fe701b2ecaa4163fa80415e9c039e39095be90fa337",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_clean_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "5355dee26d3154246f294be29d2670aaf3d7026d1beb8b52093a01508791e44e",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "2369507e9ff5bbef85aef47ed844f109c36263a6b5e751641dba2cdde0f97785",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_mixed_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "87c11984f3d0d38bc8ed7be37bfc20f9825b5fef6853c2976f8cff29b6ff6bf7",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_mixed_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "8d4cf409e2f0559dabc87b2198e0e78780a3915679b7cc2330bac29d02462899",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_mixed_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "0d99fba3a25f1b79d8b1f88b426270256f17b3f8ec012b9bed28182bff92b4dc",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_mixed_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "e083b7b1fe9b5c3b2cda5d0a4a55b61e30da8b3b64b9e2b71668273057e07abe",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_clean_seed17_visible",
+      "model": "vq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "88ffb3836b7341ce24efaf99d0bb923608c37896f9edc021d64ae3b81f2db59d",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_pixel10_seed17_visible",
+      "model": "vq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "948ecb463d04970d5798f63a0c0aec3d4bcd9786f6e8ca92972ee2ec108b010b",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_mixed_seed17_visible",
+      "model": "vq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "085a8b1513e9e373dc4d7742958318b706f6fe65f4f954c55e625992502657c5",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_clean_seed17_visible",
+      "model": "vq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "6006c4a5fa3c71d176f739764c7aaebae0531eaa4494d1f64131307b67bf9638",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_pixel10_seed17_visible",
+      "model": "vq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "bb28b4a18b00464f4d3a53d932dcec2cd278b8f4a2884e3ae9c47dea9d4a2be2",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_mixed_seed17_visible",
+      "model": "vq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "f771c43fa1433f97312ef059acc5e587263251bb646d30bc4e0f215034ae2c80",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_clean_seed17_visible",
+      "model": "fsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "a631a3597d8a71c508dcc8e8705af4ed38743fdc8e92c74ed6390c05cdb1e689",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed17_visible",
+      "model": "fsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "212895dcd966af899a528c3b990c9ef51f0c11b3905a2e6b00b79ac022290a12",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_mixed_seed17_visible",
+      "model": "fsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "91ba429e873bf90e7f248ec6d230d8c6b5c30d34b3dd12d6c9bc80305113c63b",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_clean_seed17_visible",
+      "model": "fsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "6bf8cd8ed652ce5697ba222df8376f8e4a87a8ea80e15247e26184c2ca449fc7",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed17_visible",
+      "model": "fsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "111d960b08449ddeca361ade812fbdc84865cd371a2ab197153b7176b8092026",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_mixed_seed17_visible",
+      "model": "fsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "visible",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "pixel10_rmse": null,
+        "pixel10_mean_rmse": null,
+        "pixel10_spatial_rmse": null,
+        "joint_rmse": null,
+        "mean_side_bits": null
+      },
+      "config_sha256": "af6cf8b23fc32577a3b38df505caaa5fa6ac8509c36b56ec2d212570a4eb54f3",
+      "evidence": []
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "absolute_without_mean",
+      "tables": [
+        "T6"
+      ],
+      "candidate_training_jobs": 12,
+      "status": "blocked_implementation",
+      "reason": "Current absolute-field runtime still supplies per-image mean to encoder/decoder; requires a no-mean interface and payload audit.",
+      "design": "VQ/FSQ x R/C x clean/pixel10/mixed; no per-image oracle or visible mean side input"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "name": "full_asinh_gray",
+  "seed": 17,
+  "data": {
+    "dataset": "prithvi",
+    "root": "C:\\Users\\rog\\Desktop\\iclr",
+    "modalities": [
+      "lst"
+    ],
+    "train_limit": null,
+    "val_limit": null,
+    "subset_seed": 20260910,
+    "alignment": "same_tile_same_time_metadata",
+    "train_views": 1,
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "test_limit": null
+  },
+  "noise": {
+    "kind": "bank_missing",
+    "coverages": [
+      0.1
+    ],
+    "clean_probability": 0,
+    "sigma": 0.1,
+    "bank_root": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_v2_5epoch_20260915\\mask_banks",
+    "seed": 20260910
+  },
+  "model": {
+    "backbone": "sd_kl_f8",
+    "quantizer": "vae",
+    "grid": 32,
+    "latent_dim": 4
+  },
+  "loss": {
+    "gradient": 0.1,
+    "spatial_extra": 3.0,
+    "representation": 0.01,
+    "kl": 1e-06,
+    "units": "frozen_v2_normalized_temperature",
+    "kl_reduction": "mean_over_latent_elements"
+  },
+  "train": {
+    "steps": 17110,
+    "batch_size": 2,
+    "accumulation": 32,
+    "workers": 2,
+    "lr": 1e-05,
+    "weight_decay": 0.01,
+    "warmup": 500,
+    "eval_every": 3422,
+    "save_every": 100,
+    "log_every": 10,
+    "clip": 1.0,
+    "device": "cuda",
+    "amp": true,
+    "memory_limit_gib": 8.5
+  },
+  "eval": {
+    "coverage": 0.1,
+    "realizations": 2,
+    "batch_size": 2,
+    "bootstrap_replicates": 500,
+    "amp": false
+  },
+  "experiment": {
+    "id": "A07",
+    "phase": "full",
+    "epochs": 5,
+    "output_root": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\lst_sd_color_20260921",
+    "pretrained_weights": true,
+    "primary_checkpoint": "last_after_exact_epochs",
+    "no_test_model_selection": true,
+    "epoch_tail": "flush_actual_sample_weight_no_padding",
+    "schedule": "cosine_with_500_update_warmup_for_full",
+    "trainable": "all_encoder_and_decoder_parameters"
+  },
+  "pretrained": {
+    "repo": "stabilityai/sd-vae-ft-mse",
+    "revision": "31f26fdeee1355a5c34592e401dd41e45d25a493",
+    "directory": "C:\\Users\\rog\\Desktop\\iclr\\models\\sd-vae-ft-mse-31f26fd",
+    "sha256": {
+      "config.json": "92d3dfb746fca211a2c9e019e285f8597412211728dce3c5bcf4eda0f2d62e7e",
+      "diffusion_pytorch_model.safetensors": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815"
+    }
+  },
+  "representation": {
+    "kind": "asinh_gray",
+    "std_celsius": 16.29419157454727,
+    "residual_std_celsius": 2.6950881812941048,
+    "bound_celsius": 120.0,
+    "center": "visible_input_mean_only",
+    "source_valid_range_celsius": [
+      -50,
+      70
+    ],
+    "scale_source": "runs/paper1/lst_residual_scale_20260918/residual_scale.json",
+    "fit_split": "train",
+    "output_precision": "float32",
+    "input_quantization": "none"
+  }
+}

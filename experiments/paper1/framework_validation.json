@@ -1,0 +1,654 @@
+{
+  "created_utc": "2026-09-10T17:52:39.531779+00:00",
+  "status": "framework_ready_formal_training_not_started",
+  "primary_data": "Prithvi one-to-one HLS-HR LST",
+  "source_hashes": {
+    "__init__.py": "a7697a0a185de07885b2d35d243042f789e83995afd7429aac73ec8105588c51",
+    "__main__.py": "03454d12199cbed28e0a4f7103b17ffc7d0ad0d414a1016d542abb036aa3d1a8",
+    "config.py": "145681903ab7c0773ca7a9156c2d048fa183f1a7072f15803c841477bbb4d34a",
+    "data.py": "2e8ca8dc8a0d869120dfd5a83b6545c3fd88f85108a7ff0247b3622134bfdc86",
+    "engine.py": "9d64bf1cfe601a62fdd467500486bf726aaac178f333d650c1349a4a6c366e99",
+    "losses.py": "e9f3ff5875fa5f35cdb1d4a60e9edbe0d7315fde63c1fd561ca5891d65299fa4",
+    "mask_bank.py": "9530852f1f717da4955d8485453d062287237143c89cdd568e527881664d63f3",
+    "metrics.py": "c317535dd37c63d469f7a4f62b5eeaf657918438c5e3f327caadecf33bb110b7",
+    "models.py": "8db7fa1b690a48cf2c055d14913b2344db9564bf4a6a6d12e2348f88521d6e9a",
+    "noise.py": "569b345bb25ae2011eedb8df97a56fe88315b10e9f440c10641c2adce1748124",
+    "ops.py": "a03280532e05c3605d46b6f7630b3265e783029cd2deecd56e2a03b4cf3e2414",
+    "tokens.py": "af09978537afe15b5e517d57c3fe16913085252a039aec3bfa3052694fa0be1a"
+  },
+  "validated_configs": [
+    "prithvi_ae00",
+    "prithvi_fsq00",
+    "prithvi_hls_conv_vae_clean",
+    "prithvi_hls_prithvi_style_vae_clean",
+    "prithvi_lst_conv_vae_clean",
+    "prithvi_lst_prithvi_style_vae_clean",
+    "prithvi_vq00",
+    "prithvi_vq01",
+    "prithvi_vq10",
+    "prithvi_vq11"
+  ],
+  "tests_observed": {
+    "passed": 19,
+    "seconds": 8.11,
+    "command": ".venv-paper1/Scripts/python.exe -m pytest tests/test_eo_denoise.py tests/test_eo_data.py -q",
+    "scope": [
+      "input leakage",
+      "mask/gradient losses",
+      "VQ/FSQ gradients and decode",
+      "sample-equal physical metrics",
+      "mask-bank integrity",
+      "Windows persistent workers",
+      "CPU VAE exact uninterrupted/resume equality"
+    ]
+  },
+  "gpu_smoke_runs": [
+    {
+      "name": "vq11",
+      "directory": "runs/paper1/framework_vq11_smoke",
+      "steps": 4,
+      "status": "complete",
+      "device": "cuda",
+      "model": {
+        "parameters": 18651047,
+        "per_modality": {
+          "hls": 9328406,
+          "lst": 9322641
+        },
+        "rates": {
+          "hls": {
+            "kind": "fixed_length_token_payload",
+            "tokens": 256,
+            "vocabulary": 512,
+            "bits_per_image": 2304,
+            "bpp_spatial": 0.03515625,
+            "bpp_band_pixel": 0.005859375,
+            "includes_mask_header_or_model": false
+          },
+          "lst": {
+            "kind": "fixed_length_token_payload",
+            "tokens": 256,
+            "vocabulary": 512,
+            "bits_per_image": 2304,
+            "bpp_spatial": 0.03515625,
+            "bpp_band_pixel": 0.03515625,
+            "includes_mask_header_or_model": false
+          }
+        },
+        "architecture": {
+          "backbone": "conv",
+          "quantizer": "vq",
+          "base_width": 64,
+          "blocks": 2,
+          "latent_dim": 32,
+          "grid": 16,
+          "codebook_size": 512,
+          "commitment": 0.25,
+          "levels": [
+            8,
+            8,
+            8
+          ],
+          "temperature": 1.0,
+          "vit_dim": 192,
+          "vit_depth": 4,
+          "vit_heads": 6
+        },
+        "pretrained_weights": false
+      },
+      "environment": {
+        "python": "3.13.5",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.1.3",
+        "cuda_runtime": "12.8",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "cudnn_benchmark": false,
+        "deterministic_algorithms": true,
+        "bf16_supported": true
+      },
+      "checkpoint_matches_current_source": true,
+      "last_checkpoint_sha256": "3f3ccfcc0a62d096338b52d865838f2cc573f258e9684c229c79d3c91d140c3f"
+    },
+    {
+      "name": "fsq",
+      "directory": "runs/paper1/framework_fsq_smoke",
+      "steps": 2,
+      "status": "complete",
+      "device": "cuda",
+      "model": {
+        "parameters": 18618733,
+        "per_modality": {
+          "hls": 9312249,
+          "lst": 9306484
+        },
+        "rates": {
+          "hls": {
+            "kind": "fixed_length_token_payload",
+            "tokens": 256,
+            "vocabulary": 512,
+            "bits_per_image": 2304,
+            "bpp_spatial": 0.03515625,
+            "bpp_band_pixel": 0.005859375,
+            "includes_mask_header_or_model": false
+          },
+          "lst": {
+            "kind": "fixed_length_token_payload",
+            "tokens": 256,
+            "vocabulary": 512,
+            "bits_per_image": 2304,
+            "bpp_spatial": 0.03515625,
+            "bpp_band_pixel": 0.03515625,
+            "includes_mask_header_or_model": false
+          }
+        },
+        "architecture": {
+          "backbone": "conv",
+          "quantizer": "fsq",
+          "base_width": 64,
+          "blocks": 2,
+          "latent_dim": 32,
+          "grid": 16,
+          "codebook_size": 512,
+          "commitment": 0.25,
+          "levels": [
+            8,
+            8,
+            8
+          ],
+          "temperature": 1.0,
+          "vit_dim": 192,
+          "vit_depth": 4,
+          "vit_heads": 6
+        },
+        "pretrained_weights": false
+      },
+      "environment": {
+        "python": "3.13.5",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.1.3",
+        "cuda_runtime": "12.8",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "cudnn_benchmark": false,
+        "deterministic_algorithms": true,
+        "bf16_supported": true
+      },
+      "checkpoint_matches_current_source": true,
+      "last_checkpoint_sha256": "c7173e5971f12423153376363ee836cea158d31b58966bd43850234bcb994db0"
+    },
+    {
+      "name": "ae",
+      "directory": "runs/paper1/framework_ae_smoke",
+      "steps": 2,
+      "status": "complete",
+      "device": "cuda",
+      "model": {
+        "parameters": 18618279,
+        "per_modality": {
+          "hls": 9312022,
+          "lst": 9306257
+        },
+        "rates": {
+          "hls": {
+            "kind": "continuous_float32_latent_payload",
+            "latent_elements": 8192,
+            "bits_per_image": 262144,
+            "not_a_discrete_codec_rate": true
+          },
+          "lst": {
+            "kind": "continuous_float32_latent_payload",
+            "latent_elements": 8192,
+            "bits_per_image": 262144,
+            "not_a_discrete_codec_rate": true
+          }
+        },
+        "architecture": {
+          "backbone": "conv",
+          "quantizer": "ae",
+          "base_width": 64,
+          "blocks": 2,
+          "latent_dim": 32,
+          "grid": 16,
+          "codebook_size": 512,
+          "commitment": 0.25,
+          "levels": [
+            8,
+            8,
+            8
+          ],
+          "temperature": 1.0,
+          "vit_dim": 192,
+          "vit_depth": 4,
+          "vit_heads": 6
+        },
+        "pretrained_weights": false
+      },
+      "environment": {
+        "python": "3.13.5",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.1.3",
+        "cuda_runtime": "12.8",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "cudnn_benchmark": false,
+        "deterministic_algorithms": true,
+        "bf16_supported": true
+      },
+      "checkpoint_matches_current_source": true,
+      "last_checkpoint_sha256": "094cd31d088bb1d2cc03a990bd2de45a1bf9bee4c7ae023e83ddcdf8febeb5e9"
+    },
+    {
+      "name": "hls_conv_vae_clean",
+      "directory": "runs/paper1/framework_hls_conv_vae_clean_smoke",
+      "steps": 2,
+      "status": "complete",
+      "device": "cuda",
+      "model": {
+        "parameters": 9314134,
+        "per_modality": {
+          "hls": 9314134
+        },
+        "rates": {
+          "hls": {
+            "kind": "continuous_float32_latent_payload",
+            "latent_elements": 8192,
+            "bits_per_image": 262144,
+            "not_a_discrete_codec_rate": true
+          }
+        },
+        "architecture": {
+          "backbone": "conv",
+          "quantizer": "vae",
+          "base_width": 64,
+          "blocks": 2,
+          "latent_dim": 32,
+          "grid": 16,
+          "codebook_size": 512,
+          "commitment": 0.25,
+          "levels": [
+            8,
+            8,
+            8
+          ],
+          "temperature": 1.0,
+          "vit_dim": 192,
+          "vit_depth": 4,
+          "vit_heads": 6
+        },
+        "pretrained_weights": false
+      },
+      "environment": {
+        "python": "3.13.5",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.1.3",
+        "cuda_runtime": "12.8",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "cudnn_benchmark": false,
+        "deterministic_algorithms": true,
+        "bf16_supported": true
+      },
+      "checkpoint_matches_current_source": true,
+      "last_checkpoint_sha256": "68b95b52b2d832bfbb4a61b086fcc6b095e0d9a4904db65ab65b6d1592a798a9"
+    },
+    {
+      "name": "lst_conv_vae_clean",
+      "directory": "runs/paper1/framework_lst_conv_vae_clean_smoke",
+      "steps": 2,
+      "status": "complete",
+      "device": "cuda",
+      "model": {
+        "parameters": 9308369,
+        "per_modality": {
+          "lst": 9308369
+        },
+        "rates": {
+          "lst": {
+            "kind": "continuous_float32_latent_payload",
+            "latent_elements": 8192,
+            "bits_per_image": 262144,
+            "not_a_discrete_codec_rate": true
+          }
+        },
+        "architecture": {
+          "backbone": "conv",
+          "quantizer": "vae",
+          "base_width": 64,
+          "blocks": 2,
+          "latent_dim": 32,
+          "grid": 16,
+          "codebook_size": 512,
+          "commitment": 0.25,
+          "levels": [
+            8,
+            8,
+            8
+          ],
+          "temperature": 1.0,
+          "vit_dim": 192,
+          "vit_depth": 4,
+          "vit_heads": 6
+        },
+        "pretrained_weights": false
+      },
+      "environment": {
+        "python": "3.13.5",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.1.3",
+        "cuda_runtime": "12.8",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "cudnn_benchmark": false,
+        "deterministic_algorithms": true,
+        "bf16_supported": true
+      },
+      "checkpoint_matches_current_source": true,
+      "last_checkpoint_sha256": "4843682bfcb8e7b9c131b85408d4b7abb12e053cd39643a2b28c30fa8dea9250"
+    },
+    {
+      "name": "hls_prithvi_style_vae_clean",
+      "directory": "runs/paper1/framework_hls_prithvi_style_vae_clean_smoke",
+      "steps": 2,
+      "status": "complete",
+      "device": "cuda",
+      "model": {
+        "parameters": 4216592,
+        "per_modality": {
+          "hls": 4216592
+        },
+        "rates": {
+          "hls": {
+            "kind": "continuous_float32_latent_payload",
+            "latent_elements": 8192,
+            "bits_per_image": 262144,
+            "not_a_discrete_codec_rate": true
+          }
+        },
+        "architecture": {
+          "backbone": "prithvi_style",
+          "quantizer": "vae",
+          "base_width": 64,
+          "blocks": 2,
+          "latent_dim": 32,
+          "grid": 16,
+          "codebook_size": 512,
+          "commitment": 0.25,
+          "levels": [
+            8,
+            8,
+            8
+          ],
+          "temperature": 1.0,
+          "vit_dim": 192,
+          "vit_depth": 4,
+          "vit_heads": 6
+        },
+        "pretrained_weights": false
+      },
+      "environment": {
+        "python": "3.13.5",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.1.3",
+        "cuda_runtime": "12.8",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "cudnn_benchmark": false,
+        "deterministic_algorithms": true,
+        "bf16_supported": true
+      },
+      "checkpoint_matches_current_source": true,
+      "last_checkpoint_sha256": "935ef69c55154e72fffbfa58b18317ae56ec5e809f951a359daa6b7644782273"
+    },
+    {
+      "name": "lst_prithvi_style_vae_clean",
+      "directory": "runs/paper1/framework_lst_prithvi_style_vae_clean_smoke",
+      "steps": 2,
+      "status": "complete",
+      "device": "cuda",
+      "model": {
+        "parameters": 3723792,
+        "per_modality": {
+          "lst": 3723792
+        },
+        "rates": {
+          "lst": {
+            "kind": "continuous_float32_latent_payload",
+            "latent_elements": 8192,
+            "bits_per_image": 262144,
+            "not_a_discrete_codec_rate": true
+          }
+        },
+        "architecture": {
+          "backbone": "prithvi_style",
+          "quantizer": "vae",
+          "base_width": 64,
+          "blocks": 2,
+          "latent_dim": 32,
+          "grid": 16,
+          "codebook_size": 512,
+          "commitment": 0.25,
+          "levels": [
+            8,
+            8,
+            8
+          ],
+          "temperature": 1.0,
+          "vit_dim": 192,
+          "vit_depth": 4,
+          "vit_heads": 6
+        },
+        "pretrained_weights": false
+      },
+      "environment": {
+        "python": "3.13.5",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.1.3",
+        "cuda_runtime": "12.8",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 5090",
+        "cudnn_benchmark": false,
+        "deterministic_algorithms": true,
+        "bf16_supported": true
+      },
+      "checkpoint_matches_current_source": true,
+      "last_checkpoint_sha256": "b7905b875386abe646f5faceb0e10277b43450cbdc519f829527f174aa94ea65"
+    }
+  ],
+  "vq_factorial_parity": [
+    {
+      "variant": "VQ00",
+      "initial_model_sha256": "ac3633d26cbd663c34fb0b965b8094849b459a0ac9c162303b225560af9af176",
+      "first_training_pair_input_sha256": "b2183639cf4b411c38af8349c4475284cf2cb588cc99188a5f554021b1ead3d8",
+      "paired_record_ids_sha256": "4a286bcdc2c428c0a3c916b318001b28b6e107c2bb3d65c301da08dd8ecc7c78",
+      "train_pairs": 230659
+    },
+    {
+      "variant": "VQ10",
+      "initial_model_sha256": "ac3633d26cbd663c34fb0b965b8094849b459a0ac9c162303b225560af9af176",
+      "first_training_pair_input_sha256": "b2183639cf4b411c38af8349c4475284cf2cb588cc99188a5f554021b1ead3d8",
+      "paired_record_ids_sha256": "4a286bcdc2c428c0a3c916b318001b28b6e107c2bb3d65c301da08dd8ecc7c78",
+      "train_pairs": 230659
+    },
+    {
+      "variant": "VQ01",
+      "initial_model_sha256": "ac3633d26cbd663c34fb0b965b8094849b459a0ac9c162303b225560af9af176",
+      "first_training_pair_input_sha256": "b2183639cf4b411c38af8349c4475284cf2cb588cc99188a5f554021b1ead3d8",
+      "paired_record_ids_sha256": "4a286bcdc2c428c0a3c916b318001b28b6e107c2bb3d65c301da08dd8ecc7c78",
+      "train_pairs": 230659
+    },
+    {
+      "variant": "VQ11",
+      "initial_model_sha256": "ac3633d26cbd663c34fb0b965b8094849b459a0ac9c162303b225560af9af176",
+      "first_training_pair_input_sha256": "b2183639cf4b411c38af8349c4475284cf2cb588cc99188a5f554021b1ead3d8",
+      "paired_record_ids_sha256": "4a286bcdc2c428c0a3c916b318001b28b6e107c2bb3d65c301da08dd8ecc7c78",
+      "train_pairs": 230659
+    }
+  ],
+  "discrete_token_roundtrips": [
+    {
+      "path": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\framework_vq11_smoke\\lst_example.cvdt",
+      "bytes_including_mask_header_checksum": 8916,
+      "token_bytes": 288,
+      "input_mask_bytes": 8192,
+      "total_bpp_including_side_information": 1.08837890625,
+      "decoder_roundtrip_max_error": 0.0,
+      "model_weights_included": false,
+      "entropy_coding": false,
+      "sha256": "ed3960b959ca4313037e3ee93d3e1df960716beb0fee1d2c39ef249e9848ea6a"
+    },
+    {
+      "path": "C:\\Users\\rog\\Desktop\\iclr\\runs\\paper1\\framework_fsq_smoke\\hls_example.cvdt",
+      "bytes_including_mask_header_checksum": 8916,
+      "token_bytes": 288,
+      "input_mask_bytes": 8192,
+      "total_bpp_including_side_information": 1.08837890625,
+      "decoder_roundtrip_max_error": 0.0,
+      "model_weights_included": false,
+      "entropy_coding": false,
+      "sha256": "b68614a63a0541cbaca9ba83998e978c8d7f4faa4fc2f57947b8c2105da78e05"
+    }
+  ],
+  "standalone_zero_noise_evaluation": {
+    "pairs": 8,
+    "empty_corruption_regions_omitted": true,
+    "directory": "runs/paper1/framework_vq11_smoke/eval_clean"
+  },
+  "gpu_resume_observed": {
+    "run": "runs/paper1/framework_vq11_smoke",
+    "stopped_at_step": 2,
+    "resumed_to_step": 4,
+    "exact_model_equality_tested_on": "CPU VAE unit test"
+  },
+  "paired_metadata_audit": {
+    "dataset": "prithvi",
+    "created_utc": "2026-09-10T17:50:53.659985+00:00",
+    "scope": "Complete paired sample indices and source metadata, not a pixel registration audit",
+    "cross_view_rule": "HLS source tile equals record tile and timestamp difference < 1 second",
+    "splits": {
+      "train": {
+        "hls_samples": 230659,
+        "lst_samples": 230659,
+        "pairs": 230659,
+        "hls_unpaired": 0,
+        "lst_unpaired": 0,
+        "tiles": 2943,
+        "paired_record_ids_sha256": "4a286bcdc2c428c0a3c916b318001b28b6e107c2bb3d65c301da08dd8ecc7c78",
+        "metadata_eligible_for_cross_view": 183613,
+        "source_tile_mismatch": 29144,
+        "source_time_mismatch": 20505,
+        "both_tile_and_time_mismatch": 2603,
+        "metadata_eligible_fraction": 0.7960365734699275,
+        "ineligible_examples": [
+          {
+            "record_id": 39,
+            "key": "train/T01WCU/obs_0023/r00_c00",
+            "record_tile": "T01WCU",
+            "hls_source_tile": "T01WCU",
+            "time_delta_seconds": 86009.0
+          },
+          {
+            "record_id": 40,
+            "key": "train/T01WCU/obs_0023/r01_c00",
+            "record_tile": "T01WCU",
+            "hls_source_tile": "T01WCU",
+            "time_delta_seconds": 86009.0
+          },
+          {
+            "record_id": 41,
+            "key": "train/T01WCU/obs_0023/r02_c00",
+            "record_tile": "T01WCU",
+            "hls_source_tile": "T01WCU",
+            "time_delta_seconds": 86009.0
+          },
+          {
+            "record_id": 42,
+            "key": "train/T01WCU/obs_0023/r02_c01",
+            "record_tile": "T01WCU",
+            "hls_source_tile": "T01WCU",
+            "time_delta_seconds": 86009.0
+          },
+          {
+            "record_id": 333,
+            "key": "train/T02WMS/obs_0034/r00_c04",
+            "record_tile": "T02WMS",
+            "hls_source_tile": "T02WMS",
+            "time_delta_seconds": 86027.0
+          }
+        ]
+      },
+      "val": {
+        "hls_samples": 11757,
+        "lst_samples": 11757,
+        "pairs": 11757,
+        "hls_unpaired": 0,
+        "lst_unpaired": 0,
+        "tiles": 151,
+        "paired_record_ids_sha256": "348964510247add9ec461eb520cb52e76258b8db76fd8b1e41bd0236a380be93",
+        "metadata_eligible_for_cross_view": 8770,
+        "source_tile_mismatch": 1825,
+        "source_time_mismatch": 1232,
+        "both_tile_and_time_mismatch": 70,
+        "metadata_eligible_fraction": 0.7459385897763035,
+        "ineligible_examples": [
+          {
+            "record_id": 230752,
+            "key": "val/T04VCP/obs_0008/r00_c05",
+            "record_tile": "T04VCP",
+            "hls_source_tile": "T04VCP",
+            "time_delta_seconds": -24.0
+          },
+          {
+            "record_id": 230753,
+            "key": "val/T04VCP/obs_0008/r00_c06",
+            "record_tile": "T04VCP",
+            "hls_source_tile": "T04VCP",
+            "time_delta_seconds": -24.0
+          },
+          {
+            "record_id": 230754,
+            "key": "val/T04VCP/obs_0008/r00_c07",
+            "record_tile": "T04VCP",
+            "hls_source_tile": "T04VCP",
+            "time_delta_seconds": -24.0
+          },
+          {
+            "record_id": 230755,
+            "key": "val/T04VCP/obs_0008/r00_c08",
+            "record_tile": "T04VCP",
+            "hls_source_tile": "T04VCP",
+            "time_delta_seconds": -24.0
+          },
+          {
+            "record_id": 230756,
+            "key": "val/T04VCP/obs_0008/r00_c09",
+            "record_tile": "T04VCP",
+            "hls_source_tile": "T04VCP",
+            "time_delta_seconds": -24.0
+          }
+        ]
+      }
+    },
+    "train_val_record_overlap": 0,
+    "train_val_record_tile_overlap": 0
+  },
+  "mask_banks": {
+    "train": {
+      "shapes": 256,
+      "sha256": "fb3327b6a9aa4f1a521e78749cd5321d98b1a4b9abe2aec0fa973702a2b0d4e1"
+    },
+    "val": {
+      "shapes": 128,
+      "sha256": "14d8e599b9ad19ece98ef107fbde059050c71221cd13a55c1a34313776731673"
+    }
+  },
+  "limitations": [
+    "Smoke scores are not model quality evidence",
+    "Prithvi has train/val only; no independent test",
+    "Prithvi-style VAE is a from-scratch adaptation, not an official pretrained model",
+    "Metadata eligibility is not a pixel-level registration guarantee",
+    "Known-mask synthetic missing-region recovery; no real-cloud accuracy claim",
+    "Fixed-bit token packaging, not entropy coding; side information and weights accounted separately",
+    "Single GPU; planned full experiments and extensions remain unrun"
+  ]
+}

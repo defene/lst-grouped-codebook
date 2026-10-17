@@ -1,0 +1,41 @@
+{
+  "kind": "vq",
+  "colour_inverse": "nearest_segment",
+  "vq_geometry": "euclidean",
+  "drift_reconstruction_gradient": "codes_only",
+  "parameters_total": 87190776,
+  "parameters_trainable": 87190776,
+  "parameters_by_component": {
+    "encoder": 36992800,
+    "decoder": 50144643,
+    "quant_conv": 9248,
+    "post_quant_conv": 9248,
+    "input_adapter": 21,
+    "decoder_mean": 2048,
+    "quantizer": 32768
+  },
+  "runtime_verified": false,
+  "latent_grid": [
+    16,
+    16
+  ],
+  "latent_channels": 32,
+  "indices_per_image": 256,
+  "codebook_size": 1024,
+  "fixed_bits_per_index": 10,
+  "nominal_index_bits": 2560,
+  "mean_side_information_bits": 32,
+  "nominal_index_plus_mean_bits": 2592,
+  "excludes": [
+    "mask/support metadata",
+    "container headers",
+    "shared weights"
+  ],
+  "actual_bitstream_measured": false,
+  "payload_type": "discrete_fixed_width_nominal",
+  "parameters": 87190776,
+  "trainable_parameters": 87190776,
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "stopped",
+  "active": "vq_G_ema_maint",
+  "completed": [
+    "vq_G_baseline",
+    "vq_G_ema"
+  ],
+  "pid": 37692,
+  "utc": "2026-10-17T04:44:56.037288+00:00",
+  "exit_code": 1
+}

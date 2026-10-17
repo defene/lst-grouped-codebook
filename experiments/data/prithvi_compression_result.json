@@ -1,0 +1,10 @@
+{
+  "original_GiB": 222.12429253663868,
+  "packed_frames_GiB": 115.57662102300674,
+  "complete_prepared_GiB": 115.8528645336628,
+  "reduction_percent": 47.84322632584042,
+  "shards": 474,
+  "verified_records": 242416,
+  "restored_files_byte_matched": 33,
+  "zip_GiB": 137.38664511591196
+}

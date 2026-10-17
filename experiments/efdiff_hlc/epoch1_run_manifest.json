@@ -1,0 +1,67 @@
+{
+  "scope": "one complete full-HLC training epoch, explicitly requested 2026-09-16",
+  "run_id": "hlc-synthetic-full-epoch1-20260916-v1",
+  "dataset": "HLS-LST-CrossSensor",
+  "reader_id": "lstsr_tb",
+  "prepared": "processed_data/v1",
+  "models": [
+    "EFDiff-x0",
+    "EFDiff-epsilon"
+  ],
+  "configurations": [
+    "configs/epoch1_x0.yaml",
+    "configs/epoch1_epsilon.yaml"
+  ],
+  "budget": "epoch1_budget.json",
+  "train_patch_months": 2608772,
+  "train_hls_bundles": 250449,
+  "train_tiles": 2249,
+  "validation_patch_months": 512,
+  "validation_membership": "pilot_membership/val.npy",
+  "real_modis_input": false,
+  "epochs_per_model": 1,
+  "updates_per_model": 40763,
+  "record_presentations_per_model": 2608772,
+  "effective_batch": 64,
+  "tail_update_records": 4,
+  "initialization": "fresh denoiser, frozen pretrained Prithvi; no pilot weights",
+  "normalization_fit": "all 2608772 training months; 32 cached shards; no pilot statistics for main run",
+  "technical_smoke_statistics": "existing train-only pilot statistics; technical checks only",
+  "primary_checkpoint": "fixed_epoch1_ema",
+  "test_used": false,
+  "modal_app": "efdiff-hlc-full-epoch1-20260916",
+  "modal_app_id": "ap-sUNTWX5OwSjSqKjvo4N9o0",
+  "modal_url": "https://modal.com/apps/runlongyu/main/ap-sUNTWX5OwSjSqKjvo4N9o0",
+  "launch_call_id": "fc-01M2PPFY9BR17SJ7M483M38Z7N",
+  "output_volume": "efdiff-hlc-synthetic-runs",
+  "local_evidence": "output/efdiff_hlc_full_epoch1_20260916",
+  "status_at_submission": "preflight, statistics and smoke gates; full training auto-starts after success",
+  "latest_verified_phase": "single_gpu_launch_cancelled_for_deadline",
+  "cloud_preflight": "passed",
+  "cloud_checkpoint_resume_and_inference": "both variants passed; 131 records and 3 updates each; technical checks only",
+  "local_contract_checks_passed": 8,
+  "estimated_main_training_hours_per_model": [
+    24,
+    28
+  ],
+  "estimated_gpu_only_usd_both_models": [
+    210,
+    250
+  ],
+  "estimate_excludes": "CPU, memory, full-data statistics, storage and extra overhead; not a spending cap",
+  "pricing_source": "https://modal.com/pricing",
+  "completion_requirement": {
+    "requested_at_utc": "2026-09-17T04:23:04Z",
+    "deadline_utc": "2026-09-18T04:23:04Z",
+    "deadline_America_Chicago": "2026-09-17T23:23:04-05:00",
+    "scope": "Both models: complete full HLC train epoch and fixed validation/report within 24 hours from latest user requirement",
+    "effective_batch": 64,
+    "train_records_per_model": 2608772,
+    "status": "two H200 per model deployed; speed and resume gates running"
+  },
+  "superseded_by": "hlc-synthetic-full-epoch1-ddp2-20260916-v2",
+  "current_manifest": "deadline_run_manifest.json",
+  "coordinator_cancelled": true,
+  "main_training_started_before_cancel": false,
+  "statistics_shards_retained": true
+}

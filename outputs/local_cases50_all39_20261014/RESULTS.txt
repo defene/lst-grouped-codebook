@@ -1,0 +1,48 @@
+本地 39 模型 × 50 cases 推理完成（1950 组预测）
+
+打开 index.html 浏览，选择 case 和模型；每个 case 含全部39模型重建图和误差图。
+HLP v2 val；固定种子20261014随机无放回抽取50条，覆盖40个tile；pixel10、view=0。
+沿用训练的 oracle reference mean；CUDA BF16 推理，raw 为主指标；未重新训练。
+这是50条验证样例的局部对照，不替代11684条、2视图的完整验证结果。
+Observation + oracle mean fill baseline: RMSE 0.894878 C
+
+模型                             RMSE C       Missing RMSE C      MAE C
+sd_C_affine                      0.188016         0.196169     0.117461
+sd_G_asinh                       0.188473         0.197505     0.117372
+sd_G                             0.193651         0.202352     0.121429
+sd_C_asinh                       0.199818         0.209221     0.124935
+sd_G_power                       0.229405         0.245370     0.132781
+grouped_g8k256_G_asinh           0.455510         0.458653     0.311160
+grouped_g8k256_C_asinh           0.456014         0.458827     0.311593
+grouped_g8k256_C_affine          0.466586         0.469154     0.318383
+grouped_g8k256_C                 0.468538         0.473061     0.320055
+grouped_g8k256_G                 0.468765         0.472475     0.319198
+grouped_g8k256_R                 0.481856         0.486417     0.328041
+grouped_g8k256_G_power           0.510855         0.519785     0.337221
+vqgan_pretrained_C_affine        0.735736         0.739954     0.461154
+vqgan_pretrained_G_asinh         0.737519         0.739645     0.461247
+vqgan_pretrained_C_asinh         0.742253         0.747096     0.463567
+vqgan_pretrained_C               0.743984         0.747624     0.465214
+vqgan_pretrained_R               0.747627         0.752441     0.470332
+vqgan_pretrained_G               0.748604         0.753471     0.470323
+vqgan_pretrained_G_power         0.757200         0.760214     0.468243
+vqgan_pretrained_C_power         0.759213         0.763836     0.473007
+vq_C_asinh                       1.140359         1.144597     0.708169
+vq_C                             1.269933         1.278353     0.787833
+vq_C_affine                      1.275456         1.282445     0.791715
+vq_R                             1.290417         1.297538     0.801515
+vq_G                             1.309716         1.312975     0.812044
+vq_G_asinh                       1.311869         1.319546     0.811902
+vq_G_power                       1.317388         1.325123     0.808339
+sd_C_power                       1.440843         1.443549     0.507355
+sd_C                             1.704373         1.730253     0.202206
+vq_drifting_C_asinh              2.408460         2.419088     1.488179
+vq_drifting_C_affine             2.423432         2.434324     1.480669
+vq_drifting_R                    2.433046         2.445424     1.491783
+vq_drifting_C                    2.489800         2.502321     1.516021
+vq_C_power                       2.577799         2.585719     1.651534
+vq_drifting_G                    2.594310         2.598145     1.579845
+vq_drifting_G_asinh              2.739740         2.750545     1.703273
+vq_drifting_G_power              2.743114         2.751129     1.718206
+vq_drifting_C_power              2.765029         2.773507     1.697275
+grouped_g8k256_C_power           2.847878         2.858099     1.986371

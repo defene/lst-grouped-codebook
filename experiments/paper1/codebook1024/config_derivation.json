@@ -1,0 +1,90 @@
+{
+  "configs\\pilot\\pilot_hls_conv_clean_seed17.json": {
+    "baseline": "experiments\\paper1\\var_vs_prithvi_ae\\configs\\pilot\\pilot_hls_conv_clean_seed17.json",
+    "baseline_sha256": "d001874e67d92f05e1f8aa4798bef0748c8a343e3c581318cbfe5044f94cd7a3",
+    "config_sha256": "1e5e21678f2b3737c38da58e32f34f79aa7d51370da41da89068f070e524bb69",
+    "changes": {
+      "model.codebook_size": [
+        4096,
+        1024
+      ]
+    }
+  },
+  "configs\\pilot\\pilot_hls_conv_noisy_seed17.json": {
+    "baseline": "experiments\\paper1\\var_vs_prithvi_ae\\configs\\pilot\\pilot_hls_conv_noisy_seed17.json",
+    "baseline_sha256": "0da8dba62860cb0fca53adfd7e850b2deb516fc0c48838bd9bdc409d94a19fe6",
+    "config_sha256": "7c32d7957044603fec205ae4e4a9d641834eac511bdc207c0a5c72a169d35a85",
+    "changes": {
+      "model.codebook_size": [
+        4096,
+        1024
+      ]
+    }
+  },
+  "configs\\pilot\\pilot_lst_conv_clean_seed17.json": {
+    "baseline": "experiments\\paper1\\var_vs_prithvi_ae\\configs\\pilot\\pilot_lst_conv_clean_seed17.json",
+    "baseline_sha256": "f423e0f863a0364c2d1c98f39f1e13cb7c50b7a47c0840415778e56845c2eff6",
+    "config_sha256": "a7112c3bfcac52957a71f70043bfe2ffc5c4e037c1d1803a958e2f9cfb88eafb",
+    "changes": {
+      "model.codebook_size": [
+        4096,
+        1024
+      ]
+    }
+  },
+  "configs\\pilot\\pilot_lst_conv_noisy_seed17.json": {
+    "baseline": "experiments\\paper1\\var_vs_prithvi_ae\\configs\\pilot\\pilot_lst_conv_noisy_seed17.json",
+    "baseline_sha256": "5cc64e17ff3592300be0bd13f16dea26ca2355f645570c9b7c921470ff85c1dc",
+    "config_sha256": "d949e4f9c315ae2eb06dbfd3c4f90e467945491b47b39881c1615af463ca0397",
+    "changes": {
+      "model.codebook_size": [
+        4096,
+        1024
+      ]
+    }
+  },
+  "configs\\full\\full_hls_conv_clean_seed17.json": {
+    "baseline": "experiments\\paper1\\var_vs_prithvi_ae\\configs\\full\\full_hls_conv_clean_seed17.json",
+    "baseline_sha256": "5409853f72c254395f88d961482b6ef9d1e3f7a77dd693f446eb663be69ba627",
+    "config_sha256": "99902a6c3c2974088e823dcbb2897747803d7ce4fd35e54f9d35fa1bb8b922fa",
+    "changes": {
+      "model.codebook_size": [
+        4096,
+        1024
+      ]
+    }
+  },
+  "configs\\full\\full_hls_conv_noisy_seed17.json": {
+    "baseline": "experiments\\paper1\\var_vs_prithvi_ae\\configs\\full\\full_hls_conv_noisy_seed17.json",
+    "baseline_sha256": "c25e4609d37da3b020aeb92932be58b3266c57aa380279383827f61da821098b",
+    "config_sha256": "0ad0ac5c0bb01c31e9f5363f35943948b684ab1e4255995af54effa884471b59",
+    "changes": {
+      "model.codebook_size": [
+        4096,
+        1024
+      ]
+    }
+  },
+  "configs\\full\\full_lst_conv_clean_seed17.json": {
+    "baseline": "experiments\\paper1\\var_vs_prithvi_ae\\configs\\full\\full_lst_conv_clean_seed17.json",
+    "baseline_sha256": "8dc60372aa73d185a95cdf09be0ec8dc2934988622042e6d6a789d45556e3c5c",
+    "config_sha256": "000523edbfa196a619adaeaf92fa13715fbd7e21f6a7566b9865bce7dd3f43cf",
+    "changes": {
+      "model.codebook_size": [
+        4096,
+        1024
+      ]
+    }
+  },
+  "configs\\full\\full_lst_conv_noisy_seed17.json": {
+    "baseline": "experiments\\paper1\\var_vs_prithvi_ae\\configs\\full\\full_lst_conv_noisy_seed17.json",
+    "baseline_sha256": "954b60617609e57bea1a03ad3bb3d3855a9864086b1238be5d8dad7073ec376c",
+    "config_sha256": "a663f9993d0bf2d39c8afc44ab4d2e70d2ad8300ba155d1de8a123eb1076be26",
+    "changes": {
+      "model.codebook_size": [
+        4096,
+        1024
+      ]
+    }
+  }
+}

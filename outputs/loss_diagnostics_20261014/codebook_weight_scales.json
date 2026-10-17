@@ -1,0 +1,29 @@
+[
+  {
+    "model": "vq_G",
+    "codebook_rms": 0.044921983033418655,
+    "codebook_abs_max": 0.5804308652877808,
+    "codebook_shape": [
+      1024,
+      32
+    ]
+  },
+  {
+    "model": "vq_C_asinh",
+    "codebook_rms": 0.06208387017250061,
+    "codebook_abs_max": 0.718382716178894,
+    "codebook_shape": [
+      1024,
+      32
+    ]
+  },
+  {
+    "model": "vq_R",
+    "codebook_rms": 0.05025806277990341,
+    "codebook_abs_max": 0.650267481803894,
+    "codebook_shape": [
+      1024,
+      32
+    ]
+  }
+]

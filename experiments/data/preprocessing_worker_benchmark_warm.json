@@ -1,0 +1,38 @@
+{
+  "prithvi": [
+    {
+      "workers": 8,
+      "records_per_second": 217.391968929783
+    },
+    {
+      "workers": 4,
+      "records_per_second": 197.14533554068885
+    },
+    {
+      "workers": 4,
+      "records_per_second": 209.73766079032436
+    },
+    {
+      "workers": 8,
+      "records_per_second": 218.30471381421603
+    }
+  ],
+  "lstsr_tb": [
+    {
+      "workers": 8,
+      "records_per_second": 121.21108816392058
+    },
+    {
+      "workers": 4,
+      "records_per_second": 118.88366750114038
+    },
+    {
+      "workers": 4,
+      "records_per_second": 113.27573969943822
+    },
+    {
+      "workers": 8,
+      "records_per_second": 128.46844734645993
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "T1": {
+    "title": "总体复原",
+    "planned_rows": 18,
+    "columns": [
+      "clean_rmse",
+      "pixel10_rmse",
+      "pixel10_missing_rmse",
+      "gaussian_rmse",
+      "cloud_rmse",
+      "joint_spatial_rmse",
+      "joint_gradient_rmse"
+    ],
+    "unresolved": [
+      "natural_pretrained_discrete"
+    ]
+  },
+  "T2": {
+    "title": "训练污染消融",
+    "planned_rows": 58,
+    "columns": [
+      "clean_rmse",
+      "pixel10_rmse",
+      "pixel10_missing_rmse",
+      "gaussian_rmse",
+      "cloud_missing_rmse",
+      "joint_rmse"
+    ],
+    "unresolved": []
+  },
+  "T3": {
+    "title": "表示消融",
+    "planned_rows": 28,
+    "columns": [
+      "clean_rmse",
+      "pixel10_rmse",
+      "pixel10_spatial_rmse",
+      "pixel10_gradient_rmse",
+      "tail_rmse"
+    ],
+    "unresolved": [
+      "natural_pretrained_discrete",
+      "statistics_extensions"
+    ]
+  },
+  "T4": {
+    "title": "预训练迁移",
+    "planned_rows": 22,
+    "columns": [
+      "zero_shot_clean_rmse",
+      "zero_shot_pixel10_rmse",
+      "final_clean_rmse",
+      "final_pixel10_rmse",
+      "training_job_hours"
+    ],
+    "unresolved": [
+      "same_architecture_natural_kl_scratch",
+      "natural_pretrained_discrete",
+      "statistics_extensions"
+    ]
+  },
+  "T5": {
+    "title": "率失真与效率",
+    "planned_rows": 24,
+    "columns": [
+      "actual_bpp",
+      "pixel10_rmse",
+      "joint_rmse",
+      "encode_ms",
+      "decode_ms",
+      "peak_memory_gib",
+      "training_job_hours"
+    ],
+    "unresolved": [
+      "natural_pretrained_discrete"
+    ]
+  },
+  "T6": {
+    "title": "均值与残差",
+    "planned_rows": 24,
+    "columns": [
+      "pixel10_rmse",
+      "pixel10_mean_rmse",
+      "pixel10_spatial_rmse",
+      "joint_rmse",
+      "mean_side_bits"
+    ],
+    "unresolved": [
+      "absolute_without_mean"
+    ]
+  },
+  "S1": {
+    "title": "配置与公平性",
+    "planned_rows": 166,
+    "columns": [
+      "measured_parameters",
+      "index_grid",
+      "nominal_states",
+      "measured_payload_bits",
+      "alignment_passed"
+    ],
+    "unresolved": []
+  },
+  "S2": {
+    "title": "离散状态空间诊断",
+    "planned_rows": 28,
+    "columns": [
+      "utilization",
+      "joint_entropy_bits",
+      "within_image_entropy_bits",
+      "neighbor_equal_fraction",
+      "cross_condition_agreement",
+      "between_within_decomposition"
+    ],
+    "unresolved": [
+      "statistics_extensions"
+    ]
+  },
+  "S3": {
+    "title": "MAE 整块补全",
+    "planned_rows": 16,
+    "columns": [
+      "clean_rmse",
+      "patch16_rmse",
+      "patch16_missing_rmse",
+      "patch16_spatial_rmse",
+      "patch16_gradient_rmse"
+    ],
+    "unresolved": []
+  },
+  "S4": {
+    "title": "多种子与更强污染",
+    "planned_rows": 88,
+    "columns": [
+      "pixel10_rmse",
+      "pixel10_paired_tile_ci",
+      "strong_gaussian_rmse",
+      "cloud30_rmse",
+      "joint30_rmse"
+    ],
+    "unresolved": [
+      "statistics_extensions"
+    ]
+  }
+}

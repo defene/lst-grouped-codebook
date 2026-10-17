@@ -1,0 +1,31 @@
+{
+  "run_id": "hlc-width32-epoch1-resume-20260925-v1",
+  "source_run": "hlc-width32-single-12h-20260923-v1",
+  "scope": "User-authorized continuation to one complete epoch, supersedes prior 12-hour stop for this continuation only",
+  "authorization": "2026-09-24 user: continue training and finish one complete epoch",
+  "gpu": "H200",
+  "gpu_count": 1,
+  "execution": "two independent processes concurrently on one H200, bounded startup offset",
+  "inner_channel": 32,
+  "effective_batch": 64,
+  "micro_batch": 64,
+  "gradient_accumulation": 1,
+  "full_epoch_records": 2608772,
+  "stage_records": [
+    2608772
+  ],
+  "updates_per_stage": [
+    40763
+  ],
+  "resume_records": 819200,
+  "resume_updates": 12800,
+  "remaining_records": 1789572,
+  "remaining_updates": 27963,
+  "tail_records": 4,
+  "normalization_path": "/runs/hlc-synthetic-full-epoch1-ddp2-io16-20260916-v3/normalization.json",
+  "validation_records": 512,
+  "test_used": false,
+  "lr_schedule_reference_updates": 40763,
+  "stop_rule": "stop at exactly one complete epoch; no former wall-clock deadline; checkpoint and automatically continue bounded execution segments",
+  "does_not_change_other_experiments_default_epochs": true
+}

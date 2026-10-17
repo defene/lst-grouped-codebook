@@ -1,0 +1,229 @@
+{
+  "verification": {
+    "prithvi": {
+      "status": "passed",
+      "scope": "full",
+      "profiles": {
+        "train/hls": {
+          "samples": 230659,
+          "checked": 32,
+          "roundtrip_passed": true
+        },
+        "val/hls": {
+          "samples": 11757,
+          "checked": 32,
+          "roundtrip_passed": true
+        },
+        "train/lst_hr": {
+          "samples": 230659,
+          "checked": 32,
+          "roundtrip_passed": true
+        },
+        "val/lst_hr": {
+          "samples": 11757,
+          "checked": 32,
+          "roundtrip_passed": true
+        }
+      },
+      "all_compressed_records_verified_during_preparation": true,
+      "seconds": 1.5745246000005864
+    },
+    "lstsr_tb": {
+      "status": "passed",
+      "scope": "full",
+      "profiles": {
+        "test/hls": {
+          "samples": 13665,
+          "checked": 32,
+          "roundtrip_passed": true
+        },
+        "train/hls": {
+          "samples": 250449,
+          "checked": 32,
+          "roundtrip_passed": true
+        },
+        "val/hls": {
+          "samples": 13694,
+          "checked": 32,
+          "roundtrip_passed": true
+        },
+        "test/lst_hr": {
+          "samples": 141524,
+          "checked": 32,
+          "roundtrip_passed": true
+        },
+        "train/lst_hr": {
+          "samples": 2608772,
+          "checked": 32,
+          "roundtrip_passed": true
+        },
+        "val/lst_hr": {
+          "samples": 141711,
+          "checked": 32,
+          "roundtrip_passed": true
+        }
+      },
+      "all_compressed_records_verified_during_preparation": false,
+      "seconds": 2.1120287000012468
+    }
+  },
+  "profiles": {
+    "prithvi/hls": {
+      "train_samples": 230659,
+      "spawn_worker_values_identical": true,
+      "random_read_samples": 64,
+      "random_read_seconds": 0.3783060000059777,
+      "mean": [
+        0.11076699878829255,
+        0.1357854712484166,
+        0.1460196284885112,
+        0.2587103439096404,
+        0.18623208311435518,
+        0.13391556769210017
+      ],
+      "std": [
+        0.22778172286427978,
+        0.22035724007491198,
+        0.2269043263205692,
+        0.20442832382501042,
+        0.14755165588447217,
+        0.1267497579899701
+      ],
+      "fingerprint": {
+        "dataset": "prithvi",
+        "modality": "hls",
+        "split": "train",
+        "protocol": "b3f6a94d26cfa021334aca031fe445ee7a80dcbe911e17a3728e1b77c025a98d",
+        "sample_index": "536ff52a3e65f8789bccc981e2483abb916d58d9adcc86ec26ba3aec27d28dd4",
+        "normalization": "c591955820d377aebb1eb8874f56914bad275d8b061b4c798b9694cd022509e0",
+        "source_index": "51f8a54dac595fad3584acc520e0811fdbba03c4b5e0a80721e17fda4cafee8c",
+        "record_index": "b1207b2a4cca3548640fa60b654dc160e1b79e2750a5c2880be19aae2cfd172e",
+        "reader_code": "007d784043504df218fa6bc3539a0fef72627c3f08aebc1dedf78188fa134388",
+        "processing_code": {
+          "codec.py": "7e3f21ca95652919dd69d26b5f448af7da8af7c47a836e900f4c6b01ba340dff",
+          "core.py": "7b56ddaa8d037a7acab3fb1f17ea1e294bc21d69187a0efbc43735dbe0d0c513",
+          "dataset.py": "c335ab2975f019eccbeefab4b7c443e49867c592169f0c4b0f09be101360af84",
+          "prepare.py": "9ba7e9277088591696de88f9ce1b739e23b3b15729d8ea2fab03dc3ddc66c378",
+          "verify.py": "0980a434089637c9eb702be95568302589d1786c4aaabe4b8d216442eb772e2f",
+          "__init__.py": "b89c5939d137e74d81e82fa90d01f085d3d62d498f380b18770e1e8b42d99b58",
+          "__main__.py": "7d8ef47df0580c754b3d581e4024a0924a7e3abd8fb4c67f9cb53fb63aa7a058"
+        }
+      }
+    },
+    "prithvi/lst": {
+      "train_samples": 230659,
+      "spawn_worker_values_identical": true,
+      "random_read_samples": 64,
+      "random_read_seconds": 0.20186069999908796,
+      "mean": [
+        2539.2374922487193
+      ],
+      "std": [
+        1622.6526157165315
+      ],
+      "fingerprint": {
+        "dataset": "prithvi",
+        "modality": "lst_hr",
+        "split": "train",
+        "protocol": "b3f6a94d26cfa021334aca031fe445ee7a80dcbe911e17a3728e1b77c025a98d",
+        "sample_index": "6d5b53877ef8f89640ddb75ac2068f43489bf25ec352684a001a1ad856515e25",
+        "normalization": "c591955820d377aebb1eb8874f56914bad275d8b061b4c798b9694cd022509e0",
+        "source_index": "51f8a54dac595fad3584acc520e0811fdbba03c4b5e0a80721e17fda4cafee8c",
+        "record_index": "b1207b2a4cca3548640fa60b654dc160e1b79e2750a5c2880be19aae2cfd172e",
+        "reader_code": "007d784043504df218fa6bc3539a0fef72627c3f08aebc1dedf78188fa134388",
+        "processing_code": {
+          "codec.py": "7e3f21ca95652919dd69d26b5f448af7da8af7c47a836e900f4c6b01ba340dff",
+          "core.py": "7b56ddaa8d037a7acab3fb1f17ea1e294bc21d69187a0efbc43735dbe0d0c513",
+          "dataset.py": "c335ab2975f019eccbeefab4b7c443e49867c592169f0c4b0f09be101360af84",
+          "prepare.py": "9ba7e9277088591696de88f9ce1b739e23b3b15729d8ea2fab03dc3ddc66c378",
+          "verify.py": "0980a434089637c9eb702be95568302589d1786c4aaabe4b8d216442eb772e2f",
+          "__init__.py": "b89c5939d137e74d81e82fa90d01f085d3d62d498f380b18770e1e8b42d99b58",
+          "__main__.py": "7d8ef47df0580c754b3d581e4024a0924a7e3abd8fb4c67f9cb53fb63aa7a058"
+        }
+      }
+    },
+    "lstsr_tb/hls": {
+      "train_samples": 250449,
+      "spawn_worker_values_identical": true,
+      "random_read_samples": 64,
+      "random_read_seconds": 0.39862230000289856,
+      "mean": [
+        0.06004754034145592,
+        0.09453229605916574,
+        0.10980806300230178,
+        0.2747008017865311,
+        0.24341935169315215,
+        0.17196968451789005
+      ],
+      "std": [
+        0.0680510125621377,
+        0.07543071016089009,
+        0.09833689281963476,
+        0.10047386303401144,
+        0.12207512634543984,
+        0.11687593558796062
+      ],
+      "fingerprint": {
+        "dataset": "lstsr_tb",
+        "modality": "hls",
+        "split": "train",
+        "protocol": "b3f6a94d26cfa021334aca031fe445ee7a80dcbe911e17a3728e1b77c025a98d",
+        "sample_index": "cabbca0e1424f84893efa138d0ca6e4dd397c22dd335525bd32a8281ae3f3500",
+        "normalization": "4d19c9c4ec24f5e9bc38ad5a7f466881d8da57e2cec5750f3751df08cb39a260",
+        "source_index": "320cba48e59dd201c2ec2763bc33fffec5ab31488458fdf1e993090bcc292a3e",
+        "record_index": "9a256c2395174cd3e53f8cfaf57b6ccac3cf187f161eeb5303d51c805a920f82",
+        "reader_code": "007d784043504df218fa6bc3539a0fef72627c3f08aebc1dedf78188fa134388",
+        "processing_code": {
+          "codec.py": "7e3f21ca95652919dd69d26b5f448af7da8af7c47a836e900f4c6b01ba340dff",
+          "core.py": "7b56ddaa8d037a7acab3fb1f17ea1e294bc21d69187a0efbc43735dbe0d0c513",
+          "dataset.py": "c335ab2975f019eccbeefab4b7c443e49867c592169f0c4b0f09be101360af84",
+          "prepare.py": "9ba7e9277088591696de88f9ce1b739e23b3b15729d8ea2fab03dc3ddc66c378",
+          "verify.py": "0980a434089637c9eb702be95568302589d1786c4aaabe4b8d216442eb772e2f",
+          "__init__.py": "b89c5939d137e74d81e82fa90d01f085d3d62d498f380b18770e1e8b42d99b58",
+          "__main__.py": "7d8ef47df0580c754b3d581e4024a0924a7e3abd8fb4c67f9cb53fb63aa7a058"
+        }
+      }
+    },
+    "lstsr_tb/lst": {
+      "train_samples": 2608772,
+      "spawn_worker_values_identical": true,
+      "random_read_samples": 64,
+      "random_read_seconds": 0.4637021999951685,
+      "mean": [
+        2709.747934379476
+      ],
+      "std": [
+        1671.9957488981986
+      ],
+      "fingerprint": {
+        "dataset": "lstsr_tb",
+        "modality": "lst_hr",
+        "split": "train",
+        "protocol": "b3f6a94d26cfa021334aca031fe445ee7a80dcbe911e17a3728e1b77c025a98d",
+        "sample_index": "e1a76a84b8872caab5a8a2a6494b08b67891943677ec3c9f007fab02d29f6715",
+        "normalization": "4d19c9c4ec24f5e9bc38ad5a7f466881d8da57e2cec5750f3751df08cb39a260",
+        "source_index": "320cba48e59dd201c2ec2763bc33fffec5ab31488458fdf1e993090bcc292a3e",
+        "record_index": "9a256c2395174cd3e53f8cfaf57b6ccac3cf187f161eeb5303d51c805a920f82",
+        "reader_code": "007d784043504df218fa6bc3539a0fef72627c3f08aebc1dedf78188fa134388",
+        "processing_code": {
+          "codec.py": "7e3f21ca95652919dd69d26b5f448af7da8af7c47a836e900f4c6b01ba340dff",
+          "core.py": "7b56ddaa8d037a7acab3fb1f17ea1e294bc21d69187a0efbc43735dbe0d0c513",
+          "dataset.py": "c335ab2975f019eccbeefab4b7c443e49867c592169f0c4b0f09be101360af84",
+          "prepare.py": "9ba7e9277088591696de88f9ce1b739e23b3b15729d8ea2fab03dc3ddc66c378",
+          "verify.py": "0980a434089637c9eb702be95568302589d1786c4aaabe4b8d216442eb772e2f",
+          "__init__.py": "b89c5939d137e74d81e82fa90d01f085d3d62d498f380b18770e1e8b42d99b58",
+          "__main__.py": "7d8ef47df0580c754b3d581e4024a0924a7e3abd8fb4c67f9cb53fb63aa7a058"
+        }
+      }
+    }
+  },
+  "restore": {
+    "restored_records": 8,
+    "full_dataset": false,
+    "destination": "C:\\Users\\rog\\Desktop\\iclr\\processed_data\\restore_check",
+    "direct_original_files_compared": 0,
+    "original_bytes_match": null,
+    "decoded_content_hashes_verified": true
+  },
+  "status": "passed"
+}

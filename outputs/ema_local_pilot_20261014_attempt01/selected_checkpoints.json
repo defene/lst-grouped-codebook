@@ -1,0 +1,44 @@
+[
+  {
+    "arm": "vq:baseline",
+    "step": 0,
+    "subset_rmse_c": 2.868295117248004,
+    "path": "vq_baseline/step_0000.pt",
+    "trained": false
+  },
+  {
+    "arm": "vq:ema",
+    "step": 128,
+    "subset_rmse_c": 2.0330244608143384,
+    "path": "vq_ema/step_0128.pt",
+    "trained": true
+  },
+  {
+    "arm": "vq:ema_maint",
+    "step": 128,
+    "subset_rmse_c": 1.7437933192140946,
+    "path": "vq_ema_maint/step_0128.pt",
+    "trained": true
+  },
+  {
+    "arm": "grouped_g8k256:baseline",
+    "step": 128,
+    "subset_rmse_c": 1.8137310357416425,
+    "path": "grouped_g8k256_baseline/step_0128.pt",
+    "trained": true
+  },
+  {
+    "arm": "grouped_g8k256:ema",
+    "step": 128,
+    "subset_rmse_c": 1.7368873930553497,
+    "path": "grouped_g8k256_ema/step_0128.pt",
+    "trained": true
+  },
+  {
+    "arm": "grouped_g8k256:ema_maint",
+    "step": 128,
+    "subset_rmse_c": 1.8410542059583408,
+    "path": "grouped_g8k256_ema_maint/step_0128.pt",
+    "trained": true
+  }
+]

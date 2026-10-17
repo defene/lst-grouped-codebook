@@ -1,0 +1,69 @@
+name: lst_sr3_7_224
+phase: train
+gpu_ids: [0]
+seed: 2026
+
+path:
+  log: logs
+  tb_logger: tb_logger
+  results: results
+  checkpoint: checkpoint
+  resume_state: null
+
+datasets:
+  normalization_stats: ${SCRATCH}/lst-super-resolution/normalization_stats.json
+  train:
+    dataroot: ${SCRATCH}/lst-super-resolution/prithvi_data
+    batch_size: 64
+    num_workers: 8
+    use_shuffle: true
+    data_len: -1
+  val:
+    data_len: 50
+    seed: 2026
+  test:
+    dataroot: ${SCRATCH}/lst-super-resolution/prithvi_data
+    data_len: -1
+
+model:
+  which_model_G: sr3
+  unet:
+    in_channel: 2
+    out_channel: 1
+    inner_channel: 64
+    norm_groups: 16
+    channel_multiplier: [1, 2, 4, 8, 16]
+    attn_res: [14]
+    res_blocks: 2
+    dropout: 0
+  beta_schedule:
+    train:
+      schedule: linear
+      n_timestep: 1000
+      linear_start: 1.0e-6
+      linear_end: 1.0e-2
+    test:
+      schedule: linear
+      n_timestep: 1000
+      linear_start: 1.0e-6
+      linear_end: 1.0e-2
+  diffusion:
+    image_size: 224
+    channels: 1
+    conditional: true
+
+train:
+  n_iter: 300000
+  val_freq: 5000
+  save_checkpoint_freq: 5000
+  print_freq: 200
+  warmup_steps: 5000
+  optimizer:
+    lr: 2.0e-5
+  ema_scheduler:
+    step_start_ema: 5000
+    update_ema_every: 1
+    ema_decay: 0.9999
+
+wandb:
+  project: lst_sr3

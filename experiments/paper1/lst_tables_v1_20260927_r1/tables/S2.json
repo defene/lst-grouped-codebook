@@ -1,0 +1,607 @@
+{
+  "title": "离散状态空间诊断",
+  "rows": [
+    {
+      "job_id": "vq_R_clean_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "85c746aa2ede9d488732de8b9418b35580e1e9b4bbc60e650608e9f79ff3bdf8",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_pixel10_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "7c060dff18c483fb8a6c4d87b9c1244995f92843708c686de134744a32ec3043",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_clean_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "66b10ade53e56773adf09223fee2f1624a7ebed30ff51a3977b3e0e603aa89ac",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_pixel10_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "19ac7ecfd5c006f5923094d253367b6b9389f559f530a7a1e9663a6c948d0bec",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_clean_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "730f96cd87b6787e6af861725cac7b66a65c1d6d37a8681f72d1142fee8ecce3",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "c3cd8a15bae647253d3d0fe701b2ecaa4163fa80415e9c039e39095be90fa337",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_clean_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "5355dee26d3154246f294be29d2670aaf3d7026d1beb8b52093a01508791e44e",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "2369507e9ff5bbef85aef47ed844f109c36263a6b5e751641dba2cdde0f97785",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_clean_seed17",
+      "model": "lfq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "1ccc75dae3408e4b3e1cfce666a27b0139f6da1c57885e2ff21a1e2cca98e2b0",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_pixel10_seed17",
+      "model": "lfq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "144ffe88c257b510260e44d5efe0d9b4de51247f466f97717326dc3ec1d64771",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_clean_seed17",
+      "model": "lfq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "4343f4ce20b65cb40213cc0a4ca7d5a3a5af41550b4a07b7c71a7ffcd28200be",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_pixel10_seed17",
+      "model": "lfq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "de1e3a4e49cc465f68bedc74e09bac4cb7f2a79649a2fc803736d042769c60d0",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_clean_seed17",
+      "model": "bsq",
+      "representation": "R",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "e5a45dde9f3133f9e989fb3538d6d82f2db47a30b15d9d812a89565f1a029190",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_pixel10_seed17",
+      "model": "bsq",
+      "representation": "R",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "825625f9818897dc99ed2f0706d0e305dd3f99f4c0305d2b89344f17b50ae685",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_clean_seed17",
+      "model": "bsq",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "6eb121c88b2b0c86e51f405b0fbb9abc7e607f74c5778183673b4f8e3e9b93f9",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_pixel10_seed17",
+      "model": "bsq",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "7bd574045ec3930b06910a90cc533950cef5c00e543d02acddc93551937514ec",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_G_clean_seed17",
+      "model": "vq",
+      "representation": "G",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "319296e1cd1e1a391512a5b7c74ddc752765fdb6089acd98cc655f8a7d2da2d3",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_G_pixel10_seed17",
+      "model": "vq",
+      "representation": "G",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "6a6bd612177dd7edd978366eb6808b234094402597a333b1a7592951f36d8349",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_G_clean_seed17",
+      "model": "fsq",
+      "representation": "G",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "7116008c498c8b728a6f7f5edaac15f487fffea6b01938d45850079b7b9dfbe8",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_G_pixel10_seed17",
+      "model": "fsq",
+      "representation": "G",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "cde315c157e5d9abf5c86715e2c3efc1b2ecf3b8ee4fc11d54f6106ab5b207e6",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_R_mixed_seed17",
+      "model": "vq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "87c11984f3d0d38bc8ed7be37bfc20f9825b5fef6853c2976f8cff29b6ff6bf7",
+      "evidence": []
+    },
+    {
+      "job_id": "vq_C_mixed_seed17",
+      "model": "vq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "8d4cf409e2f0559dabc87b2198e0e78780a3915679b7cc2330bac29d02462899",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_R_mixed_seed17",
+      "model": "fsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "0d99fba3a25f1b79d8b1f88b426270256f17b3f8ec012b9bed28182bff92b4dc",
+      "evidence": []
+    },
+    {
+      "job_id": "fsq_C_mixed_seed17",
+      "model": "fsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "e083b7b1fe9b5c3b2cda5d0a4a55b61e30da8b3b64b9e2b71668273057e07abe",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_R_mixed_seed17",
+      "model": "lfq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "f75c6c68724092c5c8115910ef26bda81a35016ff30079293bcfb8a48cdf19c2",
+      "evidence": []
+    },
+    {
+      "job_id": "lfq_C_mixed_seed17",
+      "model": "lfq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "f54c165b9b277ccaea574c61a567ab77e52fa6488e90517de411fe6e35ee3da2",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_R_mixed_seed17",
+      "model": "bsq",
+      "representation": "R",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "a3f607bf513d73dcac5820c257f1339b3ae589d92bc9559e39e1b3fc51be5ddc",
+      "evidence": []
+    },
+    {
+      "job_id": "bsq_C_mixed_seed17",
+      "model": "bsq",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": 10,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "utilization": null,
+        "joint_entropy_bits": null,
+        "within_image_entropy_bits": null,
+        "neighbor_equal_fraction": null,
+        "cross_condition_agreement": null,
+        "between_within_decomposition": null
+      },
+      "config_sha256": "038842a891450062749815703a4bd33aefd10b5b2e41ee4deb4bee5354887a0e",
+      "evidence": []
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "statistics_extensions",
+      "tables": [
+        "T3",
+        "T4",
+        "S2",
+        "S4"
+      ],
+      "candidate_training_jobs": 0,
+      "status": "blocked_reporting",
+      "reason": "Train-only residual-tail thresholds, between/within decomposition, cross-seed aggregation and convergence-threshold reporting still need implementation; null is not zero."
+    }
+  ]
+}

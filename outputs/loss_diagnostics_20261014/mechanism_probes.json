@@ -1,0 +1,31 @@
+{
+  "gradient_vq": {
+    "reconstruction_to_encoder_latent_grad_exists": true,
+    "reconstruction_to_encoder_latent_grad_norm": 0.006799188908189535,
+    "bottleneck_to_encoder_latent_grad_norm": 0.04154112562537193
+  },
+  "drifting_vq": {
+    "reconstruction_to_encoder_latent_grad_exists": false,
+    "reconstruction_to_encoder_latent_grad_norm": 0.0,
+    "bottleneck_to_encoder_latent_grad_norm": 0.00644444115459919
+  },
+  "C_inverse_discontinuity_example": {
+    "encoded_before": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "encoded_after": [
+      6.099890379118733e-05,
+      0.00010760608711279929,
+      4.200344119453803e-05
+    ],
+    "encoded_l2_delta": 0.00013063009828329086,
+    "C_temperature_before": -102.85714721679688,
+    "C_temperature_after": 102.85899353027344,
+    "C_temperature_jump": 205.7161407470703,
+    "C_affine_temperature_jump": 0.0007200589752756059,
+    "scope": "Synthetic existence proof of inverse discontinuity; not attribution of every observed training spike"
+  },
+  "scope": "CPU-only toy tensors; frozen source; no optimizer steps, no actual model fitting"
+}

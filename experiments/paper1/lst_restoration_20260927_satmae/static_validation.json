@@ -1,0 +1,20 @@
+{
+  "status": "static_checks_passed_runtime_unverified",
+  "python_files_parsed": 21,
+  "planned_jobs": 174,
+  "satmae_jobs": [
+    "satmae_pp_R_clean_seed17",
+    "satmae_pp_R_patch16_seed17",
+    "satmae_pp_C_clean_seed17",
+    "satmae_pp_C_patch16_seed17"
+  ],
+  "all_execution_disabled": true,
+  "source_snapshots_sha256_checked": true,
+  "vendor_body_matches_declared_changes": true,
+  "torch_imported": false,
+  "models_initialized": 0,
+  "training_jobs_started": 0,
+  "final_evaluation_cells": 3352,
+  "runtime_checks_executed": false,
+  "parameter_alignment_measured": false
+}

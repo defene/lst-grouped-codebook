@@ -1,0 +1,26 @@
+{
+  "name": "prithvi_lst_prithvi_style_vae_clean",
+  "data": {
+    "modalities": [
+      "lst"
+    ]
+  },
+  "model": {
+    "backbone": "prithvi_style",
+    "quantizer": "vae"
+  },
+  "noise": {
+    "kind": "none",
+    "coverages": [
+      0
+    ],
+    "clean_probability": 1
+  },
+  "loss": {
+    "stability": 0,
+    "cross_view": 0
+  },
+  "eval": {
+    "coverage": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "protocol": "efdiff-hlc-synthetic-pilot-16384-512-v1",
+  "seed": 20260915,
+  "method": "equal tile quotas plus seeded random remainder; uniform months without replacement within tile",
+  "test_used": false,
+  "splits": {
+    "train": {
+      "samples": 16384,
+      "tiles": 2249,
+      "min_months_per_tile": 6,
+      "max_months_per_tile": 8,
+      "membership_sha256": "3e50bbca91eacbb67484c3d7db422f8ef9dfb4e40199e6a712ae726141c6bbb9",
+      "csv_sha256": "94d669073000c5f3f18ed4878ce220f666dbe0f6a8075189aa4a8eed0f6f7383",
+      "source_index_sha256": "e1a76a84b8872caab5a8a2a6494b08b67891943677ec3c9f007fab02d29f6715"
+    },
+    "val": {
+      "samples": 512,
+      "tiles": 118,
+      "min_months_per_tile": 4,
+      "max_months_per_tile": 5,
+      "membership_sha256": "d5dc287867c7eb7aed1bf6a8641679ae8ad7d9926f62e9a6ef78247718629f78",
+      "csv_sha256": "efc8d02717842d7937c628cce91e73f88ddc9308110540eb0bc6955c373f7f5d",
+      "source_index_sha256": "855e7a933dafbc400be01e98912c352aa02133c1f72e5ef5921b0a9b6daace78"
+    }
+  }
+}

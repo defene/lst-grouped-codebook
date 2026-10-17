@@ -1,0 +1,70 @@
+{
+  "scope": "fixed-subset pilot; explicitly selected by user",
+  "dataset": "HLS-LST-CrossSensor",
+  "reader_id": "lstsr_tb",
+  "prepared": "processed_data/v1",
+  "models": [
+    "EFDiff-x0",
+    "EFDiff-epsilon"
+  ],
+  "real_modis_input": false,
+  "configurations": [
+    "configs/pilot_x0.yaml",
+    "configs/pilot_epsilon.yaml"
+  ],
+  "membership": "pilot_membership/summary.json",
+  "train_patch_months": 16384,
+  "val_patch_months": 512,
+  "test_used": false,
+  "epochs_per_model": 5,
+  "effective_batch": 64,
+  "updates_per_model": 1280,
+  "record_presentations_per_model": 81920,
+  "primary_checkpoint": "fixed_epoch5_ema",
+  "modal_profile": "runlongyu-target",
+  "modal_app_id": "ap-7SJPD46LDHw3gs8xiWpQWu",
+  "modal_url": "https://modal.com/apps/runlongyu/main/ap-7SJPD46LDHw3gs8xiWpQWu",
+  "launch_call_id": "fc-01M2M8X6M00P15XZCEXPYYQH2N",
+  "run_id": "hlc-synthetic-pilot-16384-512-v1",
+  "output_volume": "efdiff-hlc-synthetic-runs",
+  "local_evidence": "output/efdiff_hlc_pilot_20260915",
+  "status_at_submission": "preparing; smoke resume gates training; results pending",
+  "training_status_verified_20260916": "both completed 5 epochs, 1280 updates, 81920 record presentations",
+  "report_status": "regenerated; cloud pipeline complete; original coordinator error preserved",
+  "epoch5_validation_rmse_c": {
+    "x0": 1.9790596120027129,
+    "epsilon": 1.951712028760468,
+    "bicubic": 1.6511403950289636
+  },
+  "local_inference_weights": "output/efdiff_hlc_pilot_20260915/models",
+  "local_inference_command": ".venv-paper1/Scripts/python.exe experiments/efdiff_hlc/local_infer.py --samples 16",
+  "local_tests_passed": 7,
+  "full_hlc_app_stopped": "ap-NGpfYVCeHW8ceVfvAP5h2K",
+  "hlp_trial": "stopped; no weights or statistics reused",
+  "local_inference_status": "passed on 16 matched validation examples per model",
+  "local_report": "output/efdiff_hlc_pilot_20260915/LOCAL_TEST.md",
+  "local_metrics": {
+    "x0": {
+      "records": 16,
+      "valid_pixels": 799926,
+      "rmse_c": 2.0823955531711924,
+      "mae_c": 1.4339545050456683,
+      "bicubic_rmse_c": 1.793890610849725,
+      "bicubic_mae_c": 1.2019038203664427,
+      "seconds": 14.19282054901123,
+      "all_predictions_finite": true,
+      "peak_gpu_gb": 1.550896128
+    },
+    "epsilon": {
+      "records": 16,
+      "valid_pixels": 799926,
+      "rmse_c": 2.0542712684671005,
+      "mae_c": 1.4766067709941766,
+      "bicubic_rmse_c": 1.793890610849725,
+      "bicubic_mae_c": 1.2019038203664427,
+      "seconds": 43.59228515625,
+      "all_predictions_finite": true,
+      "peak_gpu_gb": 1.550746624
+    }
+  }
+}

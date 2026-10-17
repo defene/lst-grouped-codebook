@@ -1,0 +1,196 @@
+{
+  "version": "lst-restoration-v4-colour-20260927",
+  "seed": 17,
+  "name": "sdxl_C_pixel10_seed17",
+  "execution": {
+    "enabled": false,
+    "preflight_report": null,
+    "alignment_report": null
+  },
+  "data": {
+    "root": "C:\\Users\\rog\\Desktop\\iclr",
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "dataset": "prithvi",
+    "display_name": "HLS-LST-Pairs",
+    "modality": "lst",
+    "counts": {
+      "train": 218975,
+      "val": 11684,
+      "test": 11757
+    },
+    "shape": [
+      1,
+      256,
+      256
+    ],
+    "historical_test_exposure": true
+  },
+  "task": {
+    "mean_source": "oracle",
+    "field": "residual",
+    "mean_side_bits": 32,
+    "mean_scale_celsius": 16.29419157454727,
+    "mean_center_celsius": 0.0,
+    "absolute_center_celsius": null,
+    "temperature_bounds_celsius": [
+      -50.0,
+      70.0
+    ],
+    "residual_std_celsius": 2.6950881812941048,
+    "scale_evidence": "runs/paper1/lst_residual_scale_20260918/residual_scale.json"
+  },
+  "representation": {
+    "kind": "C",
+    "A_celsius": 120.0
+  },
+  "model": {
+    "kind": "sdxl",
+    "channels": 3,
+    "base_channels": 128,
+    "num_res_blocks": 3,
+    "latent_dim": 32,
+    "grid": 16,
+    "codebook_size": 1024,
+    "levels": [
+      8,
+      8,
+      16
+    ],
+    "bits_per_token": 10,
+    "commitment": 0.25,
+    "entropy_weight": 0.01,
+    "entropy_temperature": 0.1,
+    "checkpointing": false,
+    "pretrained_path": null,
+    "pretrained_sha256": {}
+  },
+  "corruption": {
+    "training_name": "pixel10",
+    "train_profiles": [
+      {
+        "kind": "pixel10",
+        "coverage": 0.1,
+        "seed": 20260925
+      }
+    ],
+    "profile_selection_seed": 20260925,
+    "synthetic_not_sensor_calibrated": true
+  },
+  "loss": {
+    "pixel": 1.0,
+    "gradient": 0.1,
+    "representation": 0.01,
+    "bottleneck": 1.0,
+    "kl": 1e-06,
+    "region": "all_valid"
+  },
+  "train": {
+    "epochs": 5,
+    "effective_batch": 64,
+    "micro_batch": 4,
+    "workers": 0,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "amp": true,
+    "memory_limit_gib": 8.5,
+    "device": "cuda:0",
+    "checkpoint_every": 100,
+    "sample_order_seed": 17,
+    "views": 1,
+    "selection": "final_epoch",
+    "record_presentations": 1094875,
+    "updates": 17110
+  },
+  "evaluation": {
+    "profiles": [
+      {
+        "kind": "clean",
+        "seed": 20260925
+      },
+      {
+        "kind": "pixel10",
+        "coverage": 0.1,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_gaussian",
+        "sigma_celsius": 0.5,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_stripe",
+        "stripe_sigma_celsius": 0.25,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_missing",
+        "coverage": 0.1,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_bias",
+        "coverage": 0.3,
+        "bias_celsius": 2.0,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "joint",
+        "sigma_celsius": 0.5,
+        "stripe_sigma_celsius": 0.25,
+        "coverage": 0.1,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_gaussian",
+        "sigma_celsius": 1.0,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_missing",
+        "coverage": 0.3,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "joint",
+        "sigma_celsius": 1.0,
+        "stripe_sigma_celsius": 0.25,
+        "coverage": 0.3,
+        "field_grid": 8,
+        "seed": 20260925
+      }
+    ],
+    "splits": [
+      "val",
+      "test"
+    ],
+    "views": 2,
+    "batch_size": 4,
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 20260925,
+    "save_gallery_samples": 8,
+    "codec_samples": 8
+  },
+  "scope": {
+    "downstream": false,
+    "generation": false,
+    "hls_training": false,
+    "cross_view_training": false,
+    "real_cloud_claim": false
+  },
+  "tier": "P4",
+  "study": {
+    "plan_version": "lst-tables-v1-20260927",
+    "stage": "P4",
+    "runtime_verified": false,
+    "table_ids": [
+      "S1",
+      "T2",
+      "T4"
+    ]
+  }
+}

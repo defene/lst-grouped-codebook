@@ -1,0 +1,22 @@
+{
+  "run_id": "hlc-synthetic-full-epoch1-ddp2-io16-20260916-v3",
+  "scope": "user requested one complete full-training-set epoch",
+  "epochs": 1,
+  "train_records": 2608772,
+  "validation_records": 512,
+  "effective_batch": 64,
+  "updates": 40763,
+  "tail_records": 4,
+  "record_presentations_per_model": 2608772,
+  "models": [
+    "x0",
+    "epsilon"
+  ],
+  "initialization": "fresh denoiser + frozen pretrained Prithvi; no pilot weights",
+  "test_used": false,
+  "does_not_change_other_experiments_default_epochs": true,
+  "world_size_per_model": 2,
+  "gpu": "H200:2",
+  "completion_deadline_utc": "2026-09-18T04:23:04Z",
+  "supersedes": "v2 distributed technical checks; insufficient I/O margin in 80-update probe"
+}

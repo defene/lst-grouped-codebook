@@ -1,0 +1,14 @@
+{
+  "reference": "VAR official vae_ch160v4096z32",
+  "input_channels": 3,
+  "parameters": 108948355,
+  "components": {
+    "encoder": 44107872,
+    "decoder": 64653923,
+    "quantize": 168064,
+    "quant_conv": 9248,
+    "post_quant_conv": 9248
+  },
+  "weights_downloaded": false,
+  "role": "parameter ceiling only; current ablation uses a common single-scale VQ bottleneck"
+}

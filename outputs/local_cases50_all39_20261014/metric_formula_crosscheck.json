@@ -1,0 +1,64 @@
+{
+  "model": "sd_G_asinh",
+  "result": "passed",
+  "tolerance_C": 1e-10,
+  "checks": 9,
+  "frozen_summary": {
+    "unit": "celsius",
+    "gradient_unit": "celsius_per_pixel",
+    "row_count": 50,
+    "unique_records": 50,
+    "tile_count": 40,
+    "metric_row_count": 50,
+    "invalid_only_row_count": 0,
+    "count": 3275525,
+    "squared_error_sum": 116353.72470472075,
+    "pixel_weighted_mse": 0.035522160479532515,
+    "pixel_weighted_rmse": 0.18847323544613043,
+    "pixel_weighted_mae": 0.11737195649703774,
+    "pixel_weighted_bias": 5.723768671973871e-05,
+    "macro_mse": 0.03552163464446873,
+    "sqrt_macro_mse": 0.18847184045493037,
+    "mean_image_rmse": 0.16346424277375043,
+    "mean_temperature_rmse": 0.002542313747565744,
+    "spatial_rmse": 0.1884560854135501,
+    "spatial_squared_error_sum": 116332.5505642506,
+    "gradient_rmse": 0.18063645702830644,
+    "gradient_squared_error_sum": 212890.8438532207,
+    "gradient_count": 6524484,
+    "missing_region": {
+      "count": 327571,
+      "squared_error_sum": 12777.937922009134,
+      "pixel_weighted_mse": 0.03900814761382764,
+      "pixel_weighted_rmse": 0.19750480402721257,
+      "pixel_weighted_mae": 0.12173247332048563,
+      "pixel_weighted_bias": -0.00013743281855003642
+    },
+    "observed_region": {
+      "count": 2947954,
+      "squared_error_sum": 103575.78678271163,
+      "pixel_weighted_mse": 0.03513480426855766,
+      "pixel_weighted_rmse": 0.18744280265872484,
+      "pixel_weighted_mae": 0.11688742422266249,
+      "pixel_weighted_bias": 7.886910026341189e-05
+    },
+    "affected_region": {
+      "count": 327571,
+      "squared_error_sum": 12777.937922009134,
+      "pixel_weighted_mse": 0.03900814761382764,
+      "pixel_weighted_rmse": 0.19750480402721257,
+      "pixel_weighted_mae": 0.12173247332048563,
+      "pixel_weighted_bias": -0.00013743281855003642
+    },
+    "affected_region_defined_for_all_rows": true,
+    "tile_cluster_bootstrap": {
+      "seed": 1701,
+      "replicates": 0,
+      "confidence": 0.95,
+      "method": "percentile; sample tiles with replacement and retain all rows/views",
+      "valid_tile_count": 40,
+      "macro_mse_ci": null,
+      "sqrt_macro_mse_ci": null
+    }
+  }
+}

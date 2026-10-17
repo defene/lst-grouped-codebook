@@ -1,0 +1,112 @@
+{
+  "dataset": "prithvi",
+  "created_utc": "2026-09-10T17:50:53.659985+00:00",
+  "scope": "Complete paired sample indices and source metadata, not a pixel registration audit",
+  "cross_view_rule": "HLS source tile equals record tile and timestamp difference < 1 second",
+  "splits": {
+    "train": {
+      "hls_samples": 230659,
+      "lst_samples": 230659,
+      "pairs": 230659,
+      "hls_unpaired": 0,
+      "lst_unpaired": 0,
+      "tiles": 2943,
+      "paired_record_ids_sha256": "4a286bcdc2c428c0a3c916b318001b28b6e107c2bb3d65c301da08dd8ecc7c78",
+      "metadata_eligible_for_cross_view": 183613,
+      "source_tile_mismatch": 29144,
+      "source_time_mismatch": 20505,
+      "both_tile_and_time_mismatch": 2603,
+      "metadata_eligible_fraction": 0.7960365734699275,
+      "ineligible_examples": [
+        {
+          "record_id": 39,
+          "key": "train/T01WCU/obs_0023/r00_c00",
+          "record_tile": "T01WCU",
+          "hls_source_tile": "T01WCU",
+          "time_delta_seconds": 86009.0
+        },
+        {
+          "record_id": 40,
+          "key": "train/T01WCU/obs_0023/r01_c00",
+          "record_tile": "T01WCU",
+          "hls_source_tile": "T01WCU",
+          "time_delta_seconds": 86009.0
+        },
+        {
+          "record_id": 41,
+          "key": "train/T01WCU/obs_0023/r02_c00",
+          "record_tile": "T01WCU",
+          "hls_source_tile": "T01WCU",
+          "time_delta_seconds": 86009.0
+        },
+        {
+          "record_id": 42,
+          "key": "train/T01WCU/obs_0023/r02_c01",
+          "record_tile": "T01WCU",
+          "hls_source_tile": "T01WCU",
+          "time_delta_seconds": 86009.0
+        },
+        {
+          "record_id": 333,
+          "key": "train/T02WMS/obs_0034/r00_c04",
+          "record_tile": "T02WMS",
+          "hls_source_tile": "T02WMS",
+          "time_delta_seconds": 86027.0
+        }
+      ]
+    },
+    "val": {
+      "hls_samples": 11757,
+      "lst_samples": 11757,
+      "pairs": 11757,
+      "hls_unpaired": 0,
+      "lst_unpaired": 0,
+      "tiles": 151,
+      "paired_record_ids_sha256": "348964510247add9ec461eb520cb52e76258b8db76fd8b1e41bd0236a380be93",
+      "metadata_eligible_for_cross_view": 8770,
+      "source_tile_mismatch": 1825,
+      "source_time_mismatch": 1232,
+      "both_tile_and_time_mismatch": 70,
+      "metadata_eligible_fraction": 0.7459385897763035,
+      "ineligible_examples": [
+        {
+          "record_id": 230752,
+          "key": "val/T04VCP/obs_0008/r00_c05",
+          "record_tile": "T04VCP",
+          "hls_source_tile": "T04VCP",
+          "time_delta_seconds": -24.0
+        },
+        {
+          "record_id": 230753,
+          "key": "val/T04VCP/obs_0008/r00_c06",
+          "record_tile": "T04VCP",
+          "hls_source_tile": "T04VCP",
+          "time_delta_seconds": -24.0
+        },
+        {
+          "record_id": 230754,
+          "key": "val/T04VCP/obs_0008/r00_c07",
+          "record_tile": "T04VCP",
+          "hls_source_tile": "T04VCP",
+          "time_delta_seconds": -24.0
+        },
+        {
+          "record_id": 230755,
+          "key": "val/T04VCP/obs_0008/r00_c08",
+          "record_tile": "T04VCP",
+          "hls_source_tile": "T04VCP",
+          "time_delta_seconds": -24.0
+        },
+        {
+          "record_id": 230756,
+          "key": "val/T04VCP/obs_0008/r00_c09",
+          "record_tile": "T04VCP",
+          "hls_source_tile": "T04VCP",
+          "time_delta_seconds": -24.0
+        }
+      ]
+    }
+  },
+  "train_val_record_overlap": 0,
+  "train_val_record_tile_overlap": 0
+}

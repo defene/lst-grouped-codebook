@@ -1,0 +1,20 @@
+{
+  "protocol": "efdiff-hlc-fixed-center224-no-flip-20260930-v1",
+  "scope": "New HLC synthetic-degradation experiments; frozen historical runs unchanged",
+  "dataset": "HLS-LST-CrossSensor",
+  "prepared": "processed_data/v1",
+  "loader": "experiments/efdiff_hlc/center_data.py:HLCPairs",
+  "loader_arguments": {"augment": false},
+  "source_size": [256, 256],
+  "crop_size": [224, 224],
+  "row_slice": [16, 240],
+  "column_slice": [16, 240],
+  "shared_across_sequence_months": true,
+  "shared_across_epochs": true,
+  "random_flip": false,
+  "modalities": ["fine LST", "HLS", "mask"],
+  "synthetic_coarse": "Wald x32 degradation after the shared crop",
+  "normalization": "Reuse verified historical full-train center-crop statistics with their original provenance; center_data.check_stats validates them",
+  "new_run_requirements": ["Import center_data.HLCPairs and center_data.check_stats", "Pass augment=False", "Record protocol and center_data.py hash in provenance and checkpoint compatibility checks", "Use a new run ID; do not resume historical random-crop checkpoints as a controlled fresh comparison"],
+  "launch_status": "loader prepared; no new training launched"
+}

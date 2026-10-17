@@ -1,0 +1,170 @@
+{
+  "audit_data_budget.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/audit_data_budget.py",
+    "sha256": "f6a110f5751287e675ebcafa0a1d5889ad3b878dee3ac5c00906bdced0b35fc0"
+  },
+  "audit_model.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/audit_model.py",
+    "sha256": "1232ce9bfba5e181b2bbf0d5a20cd397872285475e6d489381c04197152c7eb5"
+  },
+  "bitstream.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/bitstream.py",
+    "sha256": "f646c01edac0bcdb4febc6add6dfc07fc1df029e3a1716f7d900178a77fce44d"
+  },
+  "check_colour.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/check_colour.py",
+    "sha256": "98857463812510c42f58f35e20bca87fd07f20ff0755163deb74dfe02fa2edd9"
+  },
+  "config.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/config.py",
+    "sha256": "787a6e88b43117f9b51386687a0652f95d0eb088097d7c08eca54ece77d8576d"
+  },
+  "corruptions.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/corruptions.py",
+    "sha256": "1a583e8d4454b09e27d46a165c8e717ecef6f46c58cd900c2b5db7b7bca6d179"
+  },
+  "data.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/data.py",
+    "sha256": "57e2c4826755ac048ee02e8900b611d356d0337fa96c107e4104bb41e7007f2d"
+  },
+  "evaluate.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/evaluate.py",
+    "sha256": "260dbed7b4a5abc0e7f2f20b460c7073cf352e0c93411a04b82568cafad3fcd5"
+  },
+  "geo_models.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_models.py",
+    "sha256": "70cd63972b443ca1f45aebfb5196bae50b39e3f184ae77c847f676a52a855231"
+  },
+  "metrics.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/metrics.py",
+    "sha256": "a901a0b138c95440605b754eb1180d11421590fbc4f74a1888d3b669788ef59f"
+  },
+  "models.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/models.py",
+    "sha256": "c3cd919ae2b016a43e4ac97d57075a27c96684de27d3007bb0a0fba4fcd5baca"
+  },
+  "objective.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/objective.py",
+    "sha256": "8b2f153c96642360a2b5e7b265dd35bf05b4317dcecdf73f6dd44d4e5726ee03"
+  },
+  "preflight.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/preflight.py",
+    "sha256": "919bcfa828e15f80a36a8857ae641cfeb4e47d5d401c7eaf9f992cd75077ed54"
+  },
+  "quantizers.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/quantizers.py",
+    "sha256": "9dfafe8b38956ec9a4e566eeca862922fb52aa2a8e6543906999507b4669cbf3"
+  },
+  "report.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/report.py",
+    "sha256": "ba26e985fd477e3b5426a4fae046973c83e65d65c2a0a89f324d737291efcc49"
+  },
+  "representations.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/representations.py",
+    "sha256": "9706f3664ac6cda43d112bf0be75cd5a6da3dfeb5aead1f805f74381838f7edd"
+  },
+  "runtime.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/runtime.py",
+    "sha256": "68637d267837e95c12682c7b4f074b27e4b2a0f481bce74a110ea2d41dda33c9"
+  },
+  "satmae.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/satmae.py",
+    "sha256": "4a17083541646a9b06540feda8a7c00d9b248f47aaa54e95d114a6a4d3cec406"
+  },
+  "satmae_position.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/satmae_position.py",
+    "sha256": "e7b25ed34d8fed613ac9576f84bb81f0d6184cfbcdef582885712c1bed18eb85"
+  },
+  "satmae_reference.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/satmae_reference.py",
+    "sha256": "c695ec3a400c6b9b05c0e01362aa972b5d8aa8a49ae906cebb9da695819209c8"
+  },
+  "stage2_audit.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/stage2_audit.py",
+    "sha256": "b22230dcfe5b67a490ce96c6dec19048fb6efcb8c15e8c9a0f2a74feeeb2d625"
+  },
+  "stage2_models.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/stage2_models.py",
+    "sha256": "3d14884d895e4687ae1a9363c5f725406ca03e259748d178a3cb333b2cd91ee2"
+  },
+  "taming_model.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/taming_model.py",
+    "sha256": "8c3c03be847e9049b41b5b1cd039332a57a4dbe090b4e35076c91287b7a1b951"
+  },
+  "tracking.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/tracking.py",
+    "sha256": "ac90715616907307f154304d6ec22431f00b85f48dab1fa4f8747ad5f1678e63"
+  },
+  "__init__.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/__init__.py",
+    "sha256": "2d2c6d2ac062c4527da960e88139a9284c41d35ff4960fb108b986abba08644d"
+  },
+  "__main__.py": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/__main__.py",
+    "sha256": "b1609cea5c941adb9127a44c4f640da73e440cdcf30073fa17cd62eff35a5650"
+  },
+  "geo_sources/eo_distribution.py.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/eo_distribution.py.txt",
+    "sha256": "d46a4eb88cab56f594f4d460eb3a0de1c975eebc52d68aaa07f7a899f1ea2665"
+  },
+  "geo_sources/eo_LICENSE.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/eo_LICENSE.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "geo_sources/eo_model.py.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/eo_model.py.txt",
+    "sha256": "ef1d50f542081c00b023e48b96334e3d64a4890858c37d80c2d49cea339c2f6a"
+  },
+  "geo_sources/eo_new_autoencoder.py.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/eo_new_autoencoder.py.txt",
+    "sha256": "4e7ed025cc93e4bce258e9ee3c2195c2cf5b3b38472bbaea4da5657ca74864b0"
+  },
+  "geo_sources/manifest.json": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/manifest.json",
+    "sha256": "533e68038baa4fb941ab775310eafb047d3520a6da9ed64c23565027fc92bd07"
+  },
+  "geo_sources/satmae_LICENSE.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/satmae_LICENSE.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "geo_sources/satmae_models_mae.py.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/satmae_models_mae.py.txt",
+    "sha256": "d72ad7560490cb9a07bf2a049eeec18552d0de914e9c10e5d27b715293593bd7"
+  },
+  "geo_sources/satmae_util_pos_embed.py.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/satmae_util_pos_embed.py.txt",
+    "sha256": "80d1fdf2567bc5bda8c52bff2d125bd9d35a817782ebe2851965e3ef7e50e437"
+  },
+  "geo_sources/tm_LICENSE.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/tm_LICENSE.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "geo_sources/tm_quantize_finite_scalar.py.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/tm_quantize_finite_scalar.py.txt",
+    "sha256": "a7961a903e2749a69e17566cf9a69f115436c1c194798b6c9a6e590d0fc569f1"
+  },
+  "geo_sources/tm_register.py.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/tm_register.py.txt",
+    "sha256": "6e586d38167626360d99df21c3461267f8b8cdcf18ba560a944be173d7f3ee9e"
+  },
+  "geo_sources/tm_vqvae.py.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/tm_vqvae.py.txt",
+    "sha256": "6f6a0f9f9f7892df57d85c16a1c6c875ffb6c95b7fc0979560688c9dcc994ed4"
+  },
+  "geo_sources/tm___init__.py.txt": {
+    "source": "outputs/torch_models_20261013/sources/stage2_vq_20261005_attempt02/experiments/paper1/lst_restoration/geo_sources/tm___init__.py.txt",
+    "sha256": "43269ca2cb9dab81e06c038a2b723a48c2aacf86b1326bdf9b62e67b254025d5"
+  },
+  "grouped_adapter.py": {
+    "source": "outputs/torch_models_20261013/sources/stage3_grouped_20261005_attempt01/experiments/paper1/lst_restoration/grouped_adapter.py",
+    "sha256": "e2dc90e3ebd4b3beddb266e8ff33e33a4c46a179dfb5dacb7cc0d921ccbedd45"
+  },
+  "vendor_grouped_quantizer.py": {
+    "source": "outputs/torch_models_20261013/sources/stage3_grouped_20261005_attempt01/experiments/paper1/lst_restoration/vendor_grouped_quantizer.py",
+    "sha256": "c6670abb469b46b6bb45b098b287ebdc7f6b4dee0d2c47e4f32d14c7c68a5ab1"
+  },
+  "grouped_audit.py": {
+    "source": "outputs/torch_models_20261013/sources/stage3_grouped_20261005_attempt01/experiments/paper1/lst_restoration/grouped_audit.py",
+    "sha256": "ccfe2dafba8a6b2bbc3a7c60997ddbb7e7361d1756542cfff6b4939db04c2cb0"
+  }
+}

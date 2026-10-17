@@ -1,0 +1,593 @@
+{
+  "checked_utc": "2026-10-14T22:40:32.131405+00:00",
+  "remote_root": "/scratch/zm2864/lst-restoration-bench",
+  "models": [
+    {
+      "model": "sd_C",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/sd_C/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "2841545dd05c59d23a7c0144cf8f700a740c1f79a2aa8b32faa3fe79c81e9a6d",
+        "budget_passed": true,
+        "utc": "2026-10-03T01:14:44.221424+00:00"
+      }
+    },
+    {
+      "model": "sd_C_affine",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/sd_C_affine/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "ef395e58ed5a87e750cafb6d81b9c63fdce7a07e588902cdd5d789921a54612b",
+        "budget_passed": true,
+        "utc": "2026-10-03T21:47:22.601326+00:00"
+      }
+    },
+    {
+      "model": "sd_C_asinh",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/sd_C_asinh/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "9c4d404acc89a3b2ab952d2b20694f2ccd7ad0593705f5e0917daed82ae5a457",
+        "budget_passed": true,
+        "utc": "2026-10-03T20:30:06.394594+00:00"
+      }
+    },
+    {
+      "model": "sd_C_power",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/sd_C_power/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "58bdb0efb13cb45ff41bf9076cdfead2c9e341256edbfa54b489086e31c00e99",
+        "budget_passed": true,
+        "utc": "2026-10-03T02:37:24.809241+00:00"
+      }
+    },
+    {
+      "model": "sd_G",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/sd_G/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "cb4228f310e00a886c21ebc397baccaf73344e08be404c4eb919d87526035f65",
+        "budget_passed": true,
+        "utc": "2026-10-03T01:09:50.147794+00:00"
+      }
+    },
+    {
+      "model": "sd_G_asinh",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/sd_G_asinh/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "d02e274cd42648adea808d122d21933919cb11af0a47cebde09e4b3e9d1a2832",
+        "budget_passed": true,
+        "utc": "2026-10-03T20:31:16.670989+00:00"
+      }
+    },
+    {
+      "model": "sd_G_power",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/sd_G_power/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "e7b89cae84bf9baf1e845ebfeaf785720f56d77e38206e53236613d48dbbad00",
+        "budget_passed": true,
+        "utc": "2026-10-03T02:30:37.903814+00:00"
+      }
+    },
+    {
+      "model": "vq_C",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/vq_C/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "03151efab8ca2aca2fcabb9bada8538b4023ab89f242a1c2e24b7f5b170a51e3",
+        "budget_passed": true,
+        "utc": "2026-10-01T17:13:49.297240+00:00"
+      }
+    },
+    {
+      "model": "vq_C_affine",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/vq_C_affine/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "29e47aad6475eb2df0dc6b364ab93f02bb466c6a618b03e64827759603581863",
+        "budget_passed": true,
+        "utc": "2026-10-02T08:51:42.873453+00:00"
+      }
+    },
+    {
+      "model": "vq_C_asinh",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/vq_C_asinh/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "d27c60540c7d41342f39581cede193f4a518ff4ced96d6af540311b5649c058c",
+        "budget_passed": true,
+        "utc": "2026-10-02T08:45:22.813684+00:00"
+      }
+    },
+    {
+      "model": "vq_C_power",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/vq_C_power/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "120a279883474d036ee805ea4778400e9593500a5590bcd21d8737ac01d64919",
+        "budget_passed": true,
+        "utc": "2026-10-02T07:34:38.823013+00:00"
+      }
+    },
+    {
+      "model": "vq_G",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/vq_G/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "dbfc0ff52b38d4eeaf54fb451283a880cc5f5e17a083687651e374e1f78c17fd",
+        "budget_passed": true,
+        "utc": "2026-10-01T17:06:54.008628+00:00"
+      }
+    },
+    {
+      "model": "vq_G_asinh",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/vq_G_asinh/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "4cbe45cac797d75d4d47eb49e98f7e7e86a1f370ee7c496f8085184c63bd726f",
+        "budget_passed": true,
+        "utc": "2026-10-02T07:29:42.427642+00:00"
+      }
+    },
+    {
+      "model": "vq_G_power",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/vq_G_power/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "ac7800b59852c29739b7b0ba54650291dac022d5280db30ad86acfb69145bffd",
+        "budget_passed": true,
+        "utc": "2026-10-01T17:10:32.785038+00:00"
+      }
+    },
+    {
+      "model": "vq_R",
+      "stage": "stage1_20260930_attempt02",
+      "checkpoints": [
+        "output/stage1_20260930_attempt02/runs/vq_R/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "71ad760bd103f5b182db5ea442b414a8b9d48ae94d42431919790a4c05f72bf3",
+        "budget_passed": true,
+        "utc": "2026-10-01T17:01:19.303665+00:00"
+      }
+    },
+    {
+      "model": "vq_drifting_C",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vq_drifting_C/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "48f6fdc52668799a9ff5e7c369e225a7ba1a221f5d42e7037572ef78faf5ab6f",
+        "budget_passed": true,
+        "utc": "2026-10-06T12:44:29.354729+00:00"
+      }
+    },
+    {
+      "model": "vq_drifting_C_affine",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vq_drifting_C_affine/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "73b00c5f330126d11cc37242ebfb9bb928e0d7df379fd1dea39dacfee020de65",
+        "budget_passed": true,
+        "utc": "2026-10-07T20:56:09.675510+00:00"
+      }
+    },
+    {
+      "model": "vq_drifting_C_asinh",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vq_drifting_C_asinh/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "2e7748c5f6c348d8fa8a021d237a48e44f54a8d16fef919b42ac9d8c173128fd",
+        "budget_passed": true,
+        "utc": "2026-10-07T20:52:26.489695+00:00"
+      }
+    },
+    {
+      "model": "vq_drifting_C_power",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vq_drifting_C_power/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "7eeda1e57ce0f050ebc4194e4a06c39d87378d963d1c3afaf401b211e87d4e76",
+        "budget_passed": true,
+        "utc": "2026-10-07T04:45:28.209394+00:00"
+      }
+    },
+    {
+      "model": "vq_drifting_G",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vq_drifting_G/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "b360e0af99ea940dd1b169177286c66b7ef8639e686dd016df7c7a44b28b13be",
+        "budget_passed": true,
+        "utc": "2026-10-05T20:51:31.763229+00:00"
+      }
+    },
+    {
+      "model": "vq_drifting_G_asinh",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vq_drifting_G_asinh/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "303a8a5b33063fb332f2de0caa26a25519e2ec5a3b267cd6dec8ab95f9ee87df",
+        "budget_passed": true,
+        "utc": "2026-10-07T04:54:14.717935+00:00"
+      }
+    },
+    {
+      "model": "vq_drifting_G_power",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vq_drifting_G_power/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "c64b0ade80dfb69f9ba654cb2ec6b9647fcda01df085e8cfb9d28da50322a479",
+        "budget_passed": true,
+        "utc": "2026-10-06T12:53:30.943085+00:00"
+      }
+    },
+    {
+      "model": "vq_drifting_R",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vq_drifting_R/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "73760b74a41fcf4618cd13068c927ebe7d58b4be776a3fe0f969ab094adf97d0",
+        "budget_passed": true,
+        "utc": "2026-10-05T20:49:12.348476+00:00"
+      }
+    },
+    {
+      "model": "vqgan_pretrained_C",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vqgan_pretrained_C/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "82ab2af57fe3386be2d4e8c2cfa371217373684ae8074e563fc130ad8151bcd4",
+        "budget_passed": true,
+        "utc": "2026-10-06T12:04:38.139311+00:00"
+      }
+    },
+    {
+      "model": "vqgan_pretrained_C_affine",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vqgan_pretrained_C_affine/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "05802691e91baba95cf96007ad5022d3a38a0db4decd89217728f5e2bab7414b",
+        "budget_passed": true,
+        "utc": "2026-10-07T20:08:25.229871+00:00"
+      }
+    },
+    {
+      "model": "vqgan_pretrained_C_asinh",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vqgan_pretrained_C_asinh/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "0255d74fc36f788edaccc36aec3f6fa75b988231b1d8ab6fc7384fdbd66eab34",
+        "budget_passed": true,
+        "utc": "2026-10-07T20:02:04.534800+00:00"
+      }
+    },
+    {
+      "model": "vqgan_pretrained_C_power",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vqgan_pretrained_C_power/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "b53488d2ff68fa76a3ce1f64e22ff929ce181dbfadae439bb92e49b96b49de35",
+        "budget_passed": true,
+        "utc": "2026-10-07T04:02:29.344246+00:00"
+      }
+    },
+    {
+      "model": "vqgan_pretrained_G",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vqgan_pretrained_G/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "02e1aa2b05fcf4dd2783cc3d7fddfbe4997e09b9eea29b570e81bdc62c7b6ad9",
+        "budget_passed": true,
+        "utc": "2026-10-05T20:35:57.064928+00:00"
+      }
+    },
+    {
+      "model": "vqgan_pretrained_G_asinh",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vqgan_pretrained_G_asinh/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "4aa014216e09c338b0d791c08f4ab2c33d2f994ce76620a89a10fd814106f889",
+        "budget_passed": true,
+        "utc": "2026-10-07T04:10:45.447602+00:00"
+      }
+    },
+    {
+      "model": "vqgan_pretrained_G_power",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vqgan_pretrained_G_power/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "d84fa3ffbc1aaa7075aa95fb4d58d2dcbfb80f369912b158dbeafbb3c0346c0b",
+        "budget_passed": true,
+        "utc": "2026-10-06T12:13:07.420821+00:00"
+      }
+    },
+    {
+      "model": "vqgan_pretrained_R",
+      "stage": "stage2_vq_20261005_attempt02",
+      "checkpoints": [
+        "output/stage2_vq_20261005_attempt02/runs/vqgan_pretrained_R/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "671f10cac76ba9dc758cdf57806eeb915e204af0a0c0720d0eef6dfb25519876",
+        "budget_passed": true,
+        "utc": "2026-10-05T20:29:23.509915+00:00"
+      }
+    },
+    {
+      "model": "grouped_g8k256_C",
+      "stage": "stage3_grouped_20261005_attempt01",
+      "checkpoints": [
+        "output/stage3_grouped_20261005_attempt01/runs/grouped_g8k256_C/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "6f8fbda549c89662be725cbf30f0f0d2fdd91b5d6fe1be7ca597b596db1343a3",
+        "budget_passed": true,
+        "utc": "2026-10-09T06:01:12.684219+00:00"
+      }
+    },
+    {
+      "model": "grouped_g8k256_C_affine",
+      "stage": "stage3_grouped_20261005_attempt01",
+      "checkpoints": [
+        "output/stage3_grouped_20261005_attempt01/runs/grouped_g8k256_C_affine/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "e36789d6db6c02e699cb0feb36967f381fc5e69278386b5836727e6593a3482c",
+        "budget_passed": true,
+        "utc": "2026-10-10T16:53:10.399678+00:00"
+      }
+    },
+    {
+      "model": "grouped_g8k256_C_asinh",
+      "stage": "stage3_grouped_20261005_attempt01",
+      "checkpoints": [
+        "output/stage3_grouped_20261005_attempt01/runs/grouped_g8k256_C_asinh/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "89abf8e838d257226c05f6939e7f980091634c65756ddb23e46627547edeb90a",
+        "budget_passed": true,
+        "utc": "2026-10-10T16:39:47.878091+00:00"
+      }
+    },
+    {
+      "model": "grouped_g8k256_C_power",
+      "stage": "stage3_grouped_20261005_attempt01",
+      "checkpoints": [
+        "output/stage3_grouped_20261005_attempt01/runs/grouped_g8k256_C_power/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "975c864ff31fba42ab8012a5345fe089568c0f9927b3638174c93d787a63e741",
+        "budget_passed": true,
+        "utc": "2026-10-09T23:17:18.692452+00:00"
+      }
+    },
+    {
+      "model": "grouped_g8k256_G",
+      "stage": "stage3_grouped_20261005_attempt01",
+      "checkpoints": [
+        "output/stage3_grouped_20261005_attempt01/runs/grouped_g8k256_G/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "9b3906beebcba90e6b04336cbb957307ebf2510813a0946064eefebb30e5bd1a",
+        "budget_passed": true,
+        "utc": "2026-10-08T12:53:55.364036+00:00"
+      }
+    },
+    {
+      "model": "grouped_g8k256_G_asinh",
+      "stage": "stage3_grouped_20261005_attempt01",
+      "checkpoints": [
+        "output/stage3_grouped_20261005_attempt01/runs/grouped_g8k256_G_asinh/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "9b8df324b876e851b8b0228b58fc3ab772aeb4e27ecc45275f202f1f653ff851",
+        "budget_passed": true,
+        "utc": "2026-10-09T23:19:18.887746+00:00"
+      }
+    },
+    {
+      "model": "grouped_g8k256_G_power",
+      "stage": "stage3_grouped_20261005_attempt01",
+      "checkpoints": [
+        "output/stage3_grouped_20261005_attempt01/runs/grouped_g8k256_G_power/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "d6d1e47caf7d8b20a01b231452b2200cc3ba0441dd64f4f2c20086199227c0b1",
+        "budget_passed": true,
+        "utc": "2026-10-09T06:00:57.639587+00:00"
+      }
+    },
+    {
+      "model": "grouped_g8k256_R",
+      "stage": "stage3_grouped_20261005_attempt01",
+      "checkpoints": [
+        "output/stage3_grouped_20261005_attempt01/runs/grouped_g8k256_R/training/last.pt"
+      ],
+      "completion": {
+        "epochs": 5,
+        "records": 1094875,
+        "updates": 17110,
+        "checkpoint_sha256": "0626552e64f760a9ba42ebf7532a623b4c31bc39c052bdc975c00e709af40e58",
+        "budget_passed": true,
+        "utc": "2026-10-08T12:50:32.968694+00:00"
+      }
+    }
+  ],
+  "additional_checkpoint_paths": [],
+  "lowpoint_validation_performed": false
+}

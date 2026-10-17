@@ -1,0 +1,2216 @@
+{
+  "checked_utc": "2026-09-10T02:57:49.682768+00:00",
+  "purpose": "Distinguish stored Celsius x100 from original Landsat ST DN",
+  "source_code_found_in_delivered_workspace": false,
+  "prithvi_all_record_lst_scale_counts": {
+    "100": 242416
+  },
+  "sources": {
+    "landsat_formula": "https://www.usgs.gov/landsat-missions/landsat-collection-2-surface-temperature",
+    "modis_formula": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A1",
+    "point_api_schema": "https://planetarycomputer.microsoft.com/api/data/v1/openapi.json"
+  },
+  "formula": {
+    "landsat_dn_to_kelvin": "DN * 0.00341802 + 149.0",
+    "landsat_dn_to_celsius": "DN * 0.00341802 - 124.15",
+    "stored_to_celsius": "stored / 100.0"
+  },
+  "source_hashes": {
+    "processed_data/v1/prithvi/normalization.json": "c591955820d377aebb1eb8874f56914bad275d8b061b4c798b9694cd022509e0",
+    "processed_data/v1/lstsr_tb/normalization.json": "4d19c9c4ec24f5e9bc38ad5a7f466881d8da57e2cec5750f3751df08cb39a260",
+    "data_inspection/extracted_metadata/lstsr_tb_final_dataset_20260719/phase3_tile_variant_months_merged.csv": "ee7502975b378407110e966c947b63e83c1a7490f4d607461e1809f1cc415d08",
+    "data_inspection/extracted_metadata/lstsr_tb_final_dataset_20260719/phase4_dataset_manifest.csv": "7110aca1ec7ef1d55b3098686e98139d9230577734d45863468a5622af0c253c",
+    "data_inspection/extracted_metadata/lstsr_tb_final_dataset_20260719/arrays/T01WCP/T01WCP_v000_p0000.npz": "14d56517c876fb06df9534a2ca337cd75c538a8985b6d526e39128bc3edfa8b9",
+    "data_inspection/normalization/train_histograms.npz": "bfe9e9480e45b321cac76b2b514d1331e8891e31ab6e8bc13e7405173d79cfa4",
+    "data_inspection/normalization/val_histograms.npz": "8f377abd35c8110903cf5a5287bd533ac02abb8fe57e541a3158eb2f70991582",
+    "data_inspection/normalization/test_histograms.npz": "dcb080bb87ed0e07878f6091789029892d53910944f13116e12470dbda91598d"
+  },
+  "cases": [
+    {
+      "dataset": "prithvi",
+      "sample": "train/T03VXK/obs_0014/r00_c00",
+      "metadata": {
+        "tile": "T03VXK",
+        "split": "train",
+        "obs_idx": 14,
+        "row": 0,
+        "col": 0,
+        "datetime": "2017-03-08T22:08:49Z",
+        "patch_size": 256,
+        "bands": [
+          "Blue",
+          "Green",
+          "Red",
+          "NIR",
+          "SWIR1",
+          "SWIR2"
+        ],
+        "bands_dtype": "int16",
+        "bands_scale": 10000,
+        "hls_image_id": "T03VXK_20170308T220849",
+        "has_lst": true,
+        "lst_dtype": "int16",
+        "lst_scale": 100
+      },
+      "source_record_sha256": "22bc6a9c62156551a01b29f41942d6989c2e7039b9f384d2beda1b4dffff26a3",
+      "source_selection": {
+        "collections": "landsat-c2-l2",
+        "limit": 10,
+        "datetime": "2017-03-08T22:08:48+00:00/2017-03-08T22:08:51+00:00"
+      },
+      "grid_evidence": "Same HLS tile ID; grid from LSTSR tile manifest; zero-based r00_c00",
+      "grid_transform": [
+        30.0,
+        0.0,
+        600000.0,
+        0.0,
+        -30.0,
+        7000020.0
+      ],
+      "epsg": 32603,
+      "patch_origin_pixels": [
+        0,
+        0
+      ],
+      "items": [
+        {
+          "id": "LC08_L2SP_078016_20170308_02_T1",
+          "datetime": "2017-03-08T22:08:49.842731Z",
+          "stac_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2/items/LC08_L2SP_078016_20170308_02_T1",
+          "band_metadata": [
+            {
+              "unit": "kelvin",
+              "scale": 0.00341802,
+              "nodata": 0,
+              "offset": 149.0,
+              "data_type": "uint16",
+              "spatial_resolution": 30
+            }
+          ]
+        }
+      ],
+      "points": [
+        {
+          "item": "LC08_L2SP_078016_20170308_02_T1",
+          "row": 32,
+          "col": 32,
+          "stored": -1807,
+          "input_coordinates": [
+            600975.0,
+            6999045.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              6999045.0
+            ],
+            "values": [
+              31033.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 31033.0,
+          "source_celsius": -18.07858533999996,
+          "stored_div_100": -18.07,
+          "error_celsius": 0.008585339999960695,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078016_20170308_02_T1",
+          "row": 32,
+          "col": 128,
+          "stored": -1965,
+          "input_coordinates": [
+            603855.0,
+            6999045.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              6999045.0
+            ],
+            "values": [
+              30572.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 30572.0,
+          "source_celsius": -19.654292559999988,
+          "stored_div_100": -19.65,
+          "error_celsius": 0.00429255999998901,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078016_20170308_02_T1",
+          "row": 32,
+          "col": 224,
+          "stored": -1954,
+          "input_coordinates": [
+            606735.0,
+            6999045.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              6999045.0
+            ],
+            "values": [
+              30603.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 30603.0,
+          "source_celsius": -19.548333939999964,
+          "stored_div_100": -19.54,
+          "error_celsius": 0.008333939999964457,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078016_20170308_02_T1",
+          "row": 128,
+          "col": 32,
+          "stored": -2037,
+          "input_coordinates": [
+            600975.0,
+            6996165.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              6996165.0
+            ],
+            "values": [
+              30358.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 30358.0,
+          "source_celsius": -20.385748839999962,
+          "stored_div_100": -20.37,
+          "error_celsius": 0.01574883999996146,
+          "agrees_within_0_011_C": false
+        },
+        {
+          "item": "LC08_L2SP_078016_20170308_02_T1",
+          "row": 128,
+          "col": 128,
+          "stored": -2028,
+          "input_coordinates": [
+            603855.0,
+            6996165.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              6996165.0
+            ],
+            "values": [
+              30387.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 30387.0,
+          "source_celsius": -20.28662625999999,
+          "stored_div_100": -20.28,
+          "error_celsius": 0.006626259999990225,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078016_20170308_02_T1",
+          "row": 128,
+          "col": 224,
+          "stored": -1975,
+          "input_coordinates": [
+            606735.0,
+            6996165.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              6996165.0
+            ],
+            "values": [
+              30542.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 30542.0,
+          "source_celsius": -19.756833159999985,
+          "stored_div_100": -19.75,
+          "error_celsius": 0.006833159999985128,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078016_20170308_02_T1",
+          "row": 224,
+          "col": 32,
+          "stored": -2006,
+          "input_coordinates": [
+            600975.0,
+            6993285.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              6993285.0
+            ],
+            "values": [
+              30452.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 30452.0,
+          "source_celsius": -20.064454959999978,
+          "stored_div_100": -20.06,
+          "error_celsius": 0.004454959999979025,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078016_20170308_02_T1",
+          "row": 224,
+          "col": 128,
+          "stored": -1985,
+          "input_coordinates": [
+            603855.0,
+            6993285.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              6993285.0
+            ],
+            "values": [
+              30512.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 30512.0,
+          "source_celsius": -19.859373759999983,
+          "stored_div_100": -19.85,
+          "error_celsius": 0.009373759999981246,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078016_20170308_02_T1",
+          "row": 224,
+          "col": 224,
+          "stored": -1948,
+          "input_coordinates": [
+            606735.0,
+            6993285.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              6993285.0
+            ],
+            "values": [
+              30621.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 30621.0,
+          "source_celsius": -19.48680958,
+          "stored_div_100": -19.48,
+          "error_celsius": 0.0068095799999987605,
+          "agrees_within_0_011_C": true
+        }
+      ],
+      "valid_preselected_pixels": 9,
+      "matched_pixels_any_listed_scene": 8,
+      "best_absolute_errors_celsius": [
+        0.008585339999960695,
+        0.00429255999998901,
+        0.008333939999964457,
+        0.01574883999996146,
+        0.006626259999990225,
+        0.006833159999985128,
+        0.004454959999979025,
+        0.009373759999981246,
+        0.0068095799999987605
+      ]
+    },
+    {
+      "dataset": "prithvi",
+      "sample": "train/T03WXM/obs_0025/r00_c00",
+      "metadata": {
+        "tile": "T03WXM",
+        "split": "train",
+        "obs_idx": 25,
+        "row": 0,
+        "col": 0,
+        "datetime": "2021-04-20T22:07:53Z",
+        "patch_size": 256,
+        "bands": [
+          "Blue",
+          "Green",
+          "Red",
+          "NIR",
+          "SWIR1",
+          "SWIR2"
+        ],
+        "bands_dtype": "int16",
+        "bands_scale": 10000,
+        "hls_image_id": "T03WXM_20210420T220753",
+        "has_lst": true,
+        "lst_dtype": "int16",
+        "lst_scale": 100
+      },
+      "source_record_sha256": "869669c723e1c4b818d997f271a44ff5b9ed2cdb310bd226c9479079b9811a35",
+      "source_selection": {
+        "collections": "landsat-c2-l2",
+        "limit": 10,
+        "datetime": "2021-04-20T22:07:52+00:00/2021-04-20T22:07:55+00:00"
+      },
+      "grid_evidence": "Same HLS tile ID; grid from LSTSR tile manifest; zero-based r00_c00",
+      "grid_transform": [
+        30.0,
+        0.0,
+        600000.0,
+        0.0,
+        -30.0,
+        7200000.0
+      ],
+      "epsg": 32603,
+      "patch_origin_pixels": [
+        0,
+        0
+      ],
+      "items": [
+        {
+          "id": "LC08_L2SP_078014_20210420_02_T1",
+          "datetime": "2021-04-20T22:07:53.498697Z",
+          "stac_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2/items/LC08_L2SP_078014_20210420_02_T1",
+          "band_metadata": [
+            {
+              "unit": "kelvin",
+              "scale": 0.00341802,
+              "nodata": 0,
+              "offset": 149.0,
+              "data_type": "uint16",
+              "spatial_resolution": 30
+            }
+          ]
+        },
+        {
+          "id": "LC08_L2SP_078013_20210420_02_T1",
+          "datetime": "2021-04-20T22:07:29.633073Z",
+          "stac_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2/items/LC08_L2SP_078013_20210420_02_T1",
+          "band_metadata": [
+            {
+              "unit": "kelvin",
+              "scale": 0.00341802,
+              "nodata": 0,
+              "offset": 149.0,
+              "data_type": "uint16",
+              "spatial_resolution": 30
+            }
+          ]
+        },
+        {
+          "id": "LC08_L2SP_078015_20210420_02_T1",
+          "datetime": "2021-04-20T22:08:17.377028Z",
+          "stac_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2/items/LC08_L2SP_078015_20210420_02_T1",
+          "band_metadata": [
+            {
+              "unit": "kelvin",
+              "scale": 0.00341802,
+              "nodata": 0,
+              "offset": 149.0,
+              "data_type": "uint16",
+              "spatial_resolution": 30
+            }
+          ]
+        }
+      ],
+      "points": [
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 32,
+          "col": 32,
+          "stored": 21,
+          "input_coordinates": [
+            600975.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              7199025.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 32,
+          "col": 128,
+          "stored": -2,
+          "input_coordinates": [
+            603855.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              7199025.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 32,
+          "col": 224,
+          "stored": -23,
+          "input_coordinates": [
+            606735.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              7199025.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 128,
+          "col": 32,
+          "stored": 51,
+          "input_coordinates": [
+            600975.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              7196145.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 128,
+          "col": 128,
+          "stored": 60,
+          "input_coordinates": [
+            603855.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              7196145.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 128,
+          "col": 224,
+          "stored": 28,
+          "input_coordinates": [
+            606735.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              7196145.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 224,
+          "col": 32,
+          "stored": -10,
+          "input_coordinates": [
+            600975.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              7193265.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 224,
+          "col": 128,
+          "stored": 231,
+          "input_coordinates": [
+            603855.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              7193265.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 224,
+          "col": 224,
+          "stored": 25,
+          "input_coordinates": [
+            606735.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              7193265.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078013_20210420_02_T1",
+          "row": 32,
+          "col": 32,
+          "stored": 21,
+          "input_coordinates": [
+            600975.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "status": "request_failed",
+          "error": "500 Server Error: Internal Server Error for url: https://planetarycomputer.microsoft.com/api/data/v1/item/point/600975.0,7199025.0?collection=landsat-c2-l2&item=LC08_L2SP_078013_20210420_02_T1&assets=lwir11&coord_crs=EPSG%3A32603&unscale=false"
+        },
+        {
+          "item": "LC08_L2SP_078013_20210420_02_T1",
+          "row": 32,
+          "col": 128,
+          "stored": -2,
+          "input_coordinates": [
+            603855.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "status": "request_failed",
+          "error": "500 Server Error: Internal Server Error for url: https://planetarycomputer.microsoft.com/api/data/v1/item/point/603855.0,7199025.0?collection=landsat-c2-l2&item=LC08_L2SP_078013_20210420_02_T1&assets=lwir11&coord_crs=EPSG%3A32603&unscale=false"
+        },
+        {
+          "item": "LC08_L2SP_078013_20210420_02_T1",
+          "row": 32,
+          "col": 224,
+          "stored": -23,
+          "input_coordinates": [
+            606735.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "status": "request_failed",
+          "error": "500 Server Error: Internal Server Error for url: https://planetarycomputer.microsoft.com/api/data/v1/item/point/606735.0,7199025.0?collection=landsat-c2-l2&item=LC08_L2SP_078013_20210420_02_T1&assets=lwir11&coord_crs=EPSG%3A32603&unscale=false"
+        },
+        {
+          "item": "LC08_L2SP_078013_20210420_02_T1",
+          "row": 128,
+          "col": 32,
+          "stored": 51,
+          "input_coordinates": [
+            600975.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "status": "request_failed",
+          "error": "500 Server Error: Internal Server Error for url: https://planetarycomputer.microsoft.com/api/data/v1/item/point/600975.0,7196145.0?collection=landsat-c2-l2&item=LC08_L2SP_078013_20210420_02_T1&assets=lwir11&coord_crs=EPSG%3A32603&unscale=false"
+        },
+        {
+          "item": "LC08_L2SP_078013_20210420_02_T1",
+          "row": 128,
+          "col": 128,
+          "stored": 60,
+          "input_coordinates": [
+            603855.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "status": "request_failed",
+          "error": "500 Server Error: Internal Server Error for url: https://planetarycomputer.microsoft.com/api/data/v1/item/point/603855.0,7196145.0?collection=landsat-c2-l2&item=LC08_L2SP_078013_20210420_02_T1&assets=lwir11&coord_crs=EPSG%3A32603&unscale=false"
+        },
+        {
+          "item": "LC08_L2SP_078013_20210420_02_T1",
+          "row": 128,
+          "col": 224,
+          "stored": 28,
+          "input_coordinates": [
+            606735.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "status": "request_failed",
+          "error": "500 Server Error: Internal Server Error for url: https://planetarycomputer.microsoft.com/api/data/v1/item/point/606735.0,7196145.0?collection=landsat-c2-l2&item=LC08_L2SP_078013_20210420_02_T1&assets=lwir11&coord_crs=EPSG%3A32603&unscale=false"
+        },
+        {
+          "item": "LC08_L2SP_078013_20210420_02_T1",
+          "row": 224,
+          "col": 32,
+          "stored": -10,
+          "input_coordinates": [
+            600975.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "status": "request_failed",
+          "error": "500 Server Error: Internal Server Error for url: https://planetarycomputer.microsoft.com/api/data/v1/item/point/600975.0,7193265.0?collection=landsat-c2-l2&item=LC08_L2SP_078013_20210420_02_T1&assets=lwir11&coord_crs=EPSG%3A32603&unscale=false"
+        },
+        {
+          "item": "LC08_L2SP_078013_20210420_02_T1",
+          "row": 224,
+          "col": 128,
+          "stored": 231,
+          "input_coordinates": [
+            603855.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "status": "request_failed",
+          "error": "500 Server Error: Internal Server Error for url: https://planetarycomputer.microsoft.com/api/data/v1/item/point/603855.0,7193265.0?collection=landsat-c2-l2&item=LC08_L2SP_078013_20210420_02_T1&assets=lwir11&coord_crs=EPSG%3A32603&unscale=false"
+        },
+        {
+          "item": "LC08_L2SP_078013_20210420_02_T1",
+          "row": 224,
+          "col": 224,
+          "stored": 25,
+          "input_coordinates": [
+            606735.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "status": "request_failed",
+          "error": "500 Server Error: Internal Server Error for url: https://planetarycomputer.microsoft.com/api/data/v1/item/point/606735.0,7193265.0?collection=landsat-c2-l2&item=LC08_L2SP_078013_20210420_02_T1&assets=lwir11&coord_crs=EPSG%3A32603&unscale=false"
+        },
+        {
+          "item": "LC08_L2SP_078015_20210420_02_T1",
+          "row": 32,
+          "col": 32,
+          "stored": 21,
+          "input_coordinates": [
+            600975.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              7199025.0
+            ],
+            "values": [
+              36384.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 36384.0,
+          "source_celsius": 0.2112396800000056,
+          "stored_div_100": 0.21,
+          "error_celsius": -0.0012396800000055996,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078015_20210420_02_T1",
+          "row": 32,
+          "col": 128,
+          "stored": -2,
+          "input_coordinates": [
+            603855.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              7199025.0
+            ],
+            "values": [
+              36316.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 36316.0,
+          "source_celsius": -0.021185679999973672,
+          "stored_div_100": -0.02,
+          "error_celsius": 0.0011856799999736718,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078015_20210420_02_T1",
+          "row": 32,
+          "col": 224,
+          "stored": -23,
+          "input_coordinates": [
+            606735.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              7199025.0
+            ],
+            "values": [
+              36252.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 36252.0,
+          "source_celsius": -0.23993895999996084,
+          "stored_div_100": -0.23,
+          "error_celsius": 0.009938959999960834,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078015_20210420_02_T1",
+          "row": 128,
+          "col": 32,
+          "stored": 51,
+          "input_coordinates": [
+            600975.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              7196145.0
+            ],
+            "values": [
+              36474.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 36474.0,
+          "source_celsius": 0.518861480000055,
+          "stored_div_100": 0.51,
+          "error_celsius": -0.008861480000055044,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078015_20210420_02_T1",
+          "row": 128,
+          "col": 128,
+          "stored": 60,
+          "input_coordinates": [
+            603855.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              7196145.0
+            ],
+            "values": [
+              36498.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 36498.0,
+          "source_celsius": 0.6008939600000076,
+          "stored_div_100": 0.6,
+          "error_celsius": -0.000893960000007632,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078015_20210420_02_T1",
+          "row": 128,
+          "col": 224,
+          "stored": 28,
+          "input_coordinates": [
+            606735.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              7196145.0
+            ],
+            "values": [
+              36406.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 36406.0,
+          "source_celsius": 0.28643612000001895,
+          "stored_div_100": 0.28,
+          "error_celsius": -0.006436120000018919,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078015_20210420_02_T1",
+          "row": 224,
+          "col": 32,
+          "stored": -10,
+          "input_coordinates": [
+            600975.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              7193265.0
+            ],
+            "values": [
+              36291.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 36291.0,
+          "source_celsius": -0.10663618000000952,
+          "stored_div_100": -0.1,
+          "error_celsius": 0.006636180000009512,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078015_20210420_02_T1",
+          "row": 224,
+          "col": 128,
+          "stored": 231,
+          "input_coordinates": [
+            603855.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              7193265.0
+            ],
+            "values": [
+              37000.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 37000.0,
+          "source_celsius": 2.3167400000000384,
+          "stored_div_100": 2.31,
+          "error_celsius": -0.006740000000038382,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_078015_20210420_02_T1",
+          "row": 224,
+          "col": 224,
+          "stored": 25,
+          "input_coordinates": [
+            606735.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              7193265.0
+            ],
+            "values": [
+              36396.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 36396.0,
+          "source_celsius": 0.2522559200000387,
+          "stored_div_100": 0.25,
+          "error_celsius": -0.0022559200000387136,
+          "agrees_within_0_011_C": true
+        }
+      ],
+      "valid_preselected_pixels": 9,
+      "matched_pixels_any_listed_scene": 9,
+      "best_absolute_errors_celsius": [
+        0.0012396800000055996,
+        0.0011856799999736718,
+        0.009938959999960834,
+        0.008861480000055044,
+        0.000893960000007632,
+        0.006436120000018919,
+        0.006636180000009512,
+        0.006740000000038382,
+        0.0022559200000387136
+      ],
+      "initial_points": [
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 32,
+          "col": 32,
+          "stored": 21,
+          "input_coordinates": [
+            600975.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              7199025.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 32,
+          "col": 128,
+          "stored": -2,
+          "input_coordinates": [
+            603855.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              7199025.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 32,
+          "col": 224,
+          "stored": -23,
+          "input_coordinates": [
+            606735.0,
+            7199025.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              7199025.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 128,
+          "col": 32,
+          "stored": 51,
+          "input_coordinates": [
+            600975.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              7196145.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 128,
+          "col": 128,
+          "stored": 60,
+          "input_coordinates": [
+            603855.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              7196145.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 128,
+          "col": 224,
+          "stored": 28,
+          "input_coordinates": [
+            606735.0,
+            7196145.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              7196145.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 224,
+          "col": 32,
+          "stored": -10,
+          "input_coordinates": [
+            600975.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              600975.0,
+              7193265.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 224,
+          "col": 128,
+          "stored": 231,
+          "input_coordinates": [
+            603855.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              603855.0,
+              7193265.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_078014_20210420_02_T1",
+          "row": 224,
+          "col": 224,
+          "stored": 25,
+          "input_coordinates": [
+            606735.0,
+            7193265.0
+          ],
+          "coord_crs": "EPSG:32603",
+          "response": {
+            "coordinates": [
+              606735.0,
+              7193265.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        }
+      ],
+      "source_selection_expansion": "Adjacent WRS rows, same path/date/platform, because initial ST pixels are all unavailable"
+    },
+    {
+      "dataset": "lstsr_tb",
+      "sample": "T01WCP_v000_p0000",
+      "month": 4,
+      "grid_evidence": "Delivered phase3/phase4 manifests",
+      "grid_transform": [
+        30.0,
+        0.0,
+        300000.0,
+        0.0,
+        -30.0,
+        7400040.0
+      ],
+      "epsg": 32601,
+      "patch_origin_pixels": [
+        0,
+        0
+      ],
+      "items": [
+        {
+          "id": "LC09_L2SP_092014_20240406_02_T1",
+          "gee_id": "LANDSAT/LC09/C02/T1_L2/LC09_092014_20240406",
+          "datetime": "2024-04-06T23:34:45.414107Z",
+          "stac_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2/items/LC09_L2SP_092014_20240406_02_T1",
+          "band_metadata": [
+            {
+              "unit": "kelvin",
+              "scale": 0.00341802,
+              "nodata": 0,
+              "offset": 149.0,
+              "data_type": "uint16",
+              "spatial_resolution": 30
+            }
+          ]
+        },
+        {
+          "id": "LC09_L2SP_092013_20240406_02_T1",
+          "gee_id": "LANDSAT/LC09/C02/T1_L2/LC09_092013_20240406",
+          "datetime": "2024-04-06T23:34:21.544271Z",
+          "stac_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2/items/LC09_L2SP_092013_20240406_02_T1",
+          "band_metadata": [
+            {
+              "unit": "kelvin",
+              "scale": 0.00341802,
+              "nodata": 0,
+              "offset": 149.0,
+              "data_type": "uint16",
+              "spatial_resolution": 30
+            }
+          ]
+        }
+      ],
+      "points": [
+        {
+          "item": "LC09_L2SP_092014_20240406_02_T1",
+          "row": 32,
+          "col": 32,
+          "stored": -1933,
+          "input_coordinates": [
+            300975.0,
+            7399065.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              300975.0,
+              7399065.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC09_L2SP_092014_20240406_02_T1",
+          "row": 32,
+          "col": 128,
+          "stored": -1707,
+          "input_coordinates": [
+            303855.0,
+            7399065.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              303855.0,
+              7399065.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC09_L2SP_092014_20240406_02_T1",
+          "row": 32,
+          "col": 224,
+          "stored": -1692,
+          "input_coordinates": [
+            306735.0,
+            7399065.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              306735.0,
+              7399065.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC09_L2SP_092014_20240406_02_T1",
+          "row": 128,
+          "col": 32,
+          "stored": -1440,
+          "input_coordinates": [
+            300975.0,
+            7396185.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              300975.0,
+              7396185.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC09_L2SP_092014_20240406_02_T1",
+          "row": 128,
+          "col": 128,
+          "stored": -868,
+          "input_coordinates": [
+            303855.0,
+            7396185.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              303855.0,
+              7396185.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC09_L2SP_092014_20240406_02_T1",
+          "row": 128,
+          "col": 224,
+          "stored": -1566,
+          "input_coordinates": [
+            306735.0,
+            7396185.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              306735.0,
+              7396185.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC09_L2SP_092014_20240406_02_T1",
+          "row": 224,
+          "col": 32,
+          "stored": -1714,
+          "input_coordinates": [
+            300975.0,
+            7393305.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              300975.0,
+              7393305.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC09_L2SP_092014_20240406_02_T1",
+          "row": 224,
+          "col": 128,
+          "stored": -1316,
+          "input_coordinates": [
+            303855.0,
+            7393305.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              303855.0,
+              7393305.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC09_L2SP_092014_20240406_02_T1",
+          "row": 224,
+          "col": 224,
+          "stored": -1027,
+          "input_coordinates": [
+            306735.0,
+            7393305.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              306735.0,
+              7393305.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC09_L2SP_092013_20240406_02_T1",
+          "row": 32,
+          "col": 32,
+          "stored": -1933,
+          "input_coordinates": [
+            300975.0,
+            7399065.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              300975.0,
+              7399065.0
+            ],
+            "values": [
+              30667.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 30667.0,
+          "source_celsius": -19.329580659999976,
+          "stored_div_100": -19.33,
+          "error_celsius": -0.00041934000002186167,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC09_L2SP_092013_20240406_02_T1",
+          "row": 32,
+          "col": 128,
+          "stored": -1707,
+          "input_coordinates": [
+            303855.0,
+            7399065.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              303855.0,
+              7399065.0
+            ],
+            "values": [
+              31327.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 31327.0,
+          "source_celsius": -17.073687459999974,
+          "stored_div_100": -17.07,
+          "error_celsius": 0.0036874599999734414,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC09_L2SP_092013_20240406_02_T1",
+          "row": 32,
+          "col": 224,
+          "stored": -1692,
+          "input_coordinates": [
+            306735.0,
+            7399065.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              306735.0,
+              7399065.0
+            ],
+            "values": [
+              31372.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 31372.0,
+          "source_celsius": -16.919876559999977,
+          "stored_div_100": -16.92,
+          "error_celsius": -0.00012344000002428857,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC09_L2SP_092013_20240406_02_T1",
+          "row": 128,
+          "col": 32,
+          "stored": -1440,
+          "input_coordinates": [
+            300975.0,
+            7396185.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              300975.0,
+              7396185.0
+            ],
+            "values": [
+              32110.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 32110.0,
+          "source_celsius": -14.397377799999958,
+          "stored_div_100": -14.4,
+          "error_celsius": -0.0026222000000419854,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC09_L2SP_092013_20240406_02_T1",
+          "row": 128,
+          "col": 128,
+          "stored": -868,
+          "input_coordinates": [
+            303855.0,
+            7396185.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              303855.0,
+              7396185.0
+            ],
+            "values": [
+              33782.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 33782.0,
+          "source_celsius": -8.682448359999967,
+          "stored_div_100": -8.68,
+          "error_celsius": 0.0024483599999669536,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC09_L2SP_092013_20240406_02_T1",
+          "row": 128,
+          "col": 224,
+          "stored": -1566,
+          "input_coordinates": [
+            306735.0,
+            7396185.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              306735.0,
+              7396185.0
+            ],
+            "values": [
+              31741.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 31741.0,
+          "source_celsius": -15.658627179999996,
+          "stored_div_100": -15.66,
+          "error_celsius": -0.001372820000003827,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC09_L2SP_092013_20240406_02_T1",
+          "row": 224,
+          "col": 32,
+          "stored": -1714,
+          "input_coordinates": [
+            300975.0,
+            7393305.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              300975.0,
+              7393305.0
+            ],
+            "values": [
+              31309.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 31309.0,
+          "source_celsius": -17.135211819999995,
+          "stored_div_100": -17.14,
+          "error_celsius": -0.004788180000005582,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC09_L2SP_092013_20240406_02_T1",
+          "row": 224,
+          "col": 128,
+          "stored": -1316,
+          "input_coordinates": [
+            303855.0,
+            7393305.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              303855.0,
+              7393305.0
+            ],
+            "values": [
+              32472.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 32472.0,
+          "source_celsius": -13.160054559999992,
+          "stored_div_100": -13.16,
+          "error_celsius": 5.455999999171013e-05,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC09_L2SP_092013_20240406_02_T1",
+          "row": 224,
+          "col": 224,
+          "stored": -1027,
+          "input_coordinates": [
+            306735.0,
+            7393305.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              306735.0,
+              7393305.0
+            ],
+            "values": [
+              33317.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 33317.0,
+          "source_celsius": -10.271827659999985,
+          "stored_div_100": -10.27,
+          "error_celsius": 0.0018276599999857979,
+          "agrees_within_0_011_C": true
+        }
+      ],
+      "valid_preselected_pixels": 9,
+      "matched_pixels_any_listed_scene": 9,
+      "best_absolute_errors_celsius": [
+        0.00041934000002186167,
+        0.0036874599999734414,
+        0.00012344000002428857,
+        0.0026222000000419854,
+        0.0024483599999669536,
+        0.001372820000003827,
+        0.004788180000005582,
+        5.455999999171013e-05,
+        0.0018276599999857979
+      ]
+    },
+    {
+      "dataset": "lstsr_tb",
+      "sample": "T01WCP_v000_p0000",
+      "month": 8,
+      "grid_evidence": "Delivered phase3/phase4 manifests",
+      "grid_transform": [
+        30.0,
+        0.0,
+        300000.0,
+        0.0,
+        -30.0,
+        7400040.0
+      ],
+      "epsg": 32601,
+      "patch_origin_pixels": [
+        0,
+        0
+      ],
+      "items": [
+        {
+          "id": "LC08_L2SP_091014_20220808_02_T1",
+          "gee_id": "LANDSAT/LC08/C02/T1_L2/LC08_091014_20220808",
+          "datetime": "2022-08-08T23:29:04.604943Z",
+          "stac_url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2/items/LC08_L2SP_091014_20220808_02_T1",
+          "band_metadata": [
+            {
+              "unit": "kelvin",
+              "scale": 0.00341802,
+              "nodata": 0,
+              "offset": 149.0,
+              "data_type": "uint16",
+              "spatial_resolution": 30
+            }
+          ]
+        }
+      ],
+      "points": [
+        {
+          "item": "LC08_L2SP_091014_20220808_02_T1",
+          "row": 32,
+          "col": 32,
+          "stored": 1870,
+          "input_coordinates": [
+            300975.0,
+            7399065.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              300975.0,
+              7399065.0
+            ],
+            "values": [
+              41794.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 41794.0,
+          "source_celsius": 18.702727879999998,
+          "stored_div_100": 18.7,
+          "error_celsius": -0.0027278799999983505,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_091014_20220808_02_T1",
+          "row": 32,
+          "col": 128,
+          "stored": 2139,
+          "input_coordinates": [
+            303855.0,
+            7399065.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              303855.0,
+              7399065.0
+            ],
+            "values": [
+              42579.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 42579.0,
+          "source_celsius": 21.38587358000001,
+          "stored_div_100": 21.39,
+          "error_celsius": 0.004126419999991526,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_091014_20220808_02_T1",
+          "row": 32,
+          "col": 224,
+          "stored": 2317,
+          "input_coordinates": [
+            306735.0,
+            7399065.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              306735.0,
+              7399065.0
+            ],
+            "values": [
+              0.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "source_nodata"
+        },
+        {
+          "item": "LC08_L2SP_091014_20220808_02_T1",
+          "row": 128,
+          "col": 32,
+          "stored": 2713,
+          "input_coordinates": [
+            300975.0,
+            7396185.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              300975.0,
+              7396185.0
+            ],
+            "values": [
+              44260.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 44260.0,
+          "source_celsius": 27.13156520000001,
+          "stored_div_100": 27.13,
+          "error_celsius": -0.0015652000000123678,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_091014_20220808_02_T1",
+          "row": 128,
+          "col": 128,
+          "stored": 2796,
+          "input_coordinates": [
+            303855.0,
+            7396185.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              303855.0,
+              7396185.0
+            ],
+            "values": [
+              44503.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 44503.0,
+          "source_celsius": 27.962144060000014,
+          "stored_div_100": 27.96,
+          "error_celsius": -0.002144060000013326,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_091014_20220808_02_T1",
+          "row": 128,
+          "col": 224,
+          "stored": 2207,
+          "input_coordinates": [
+            306735.0,
+            7396185.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              306735.0,
+              7396185.0
+            ],
+            "values": [
+              42779.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 42779.0,
+          "source_celsius": 22.06947758000001,
+          "stored_div_100": 22.07,
+          "error_celsius": 0.0005224199999886991,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_091014_20220808_02_T1",
+          "row": 224,
+          "col": 32,
+          "stored": 2402,
+          "input_coordinates": [
+            300975.0,
+            7393305.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              300975.0,
+              7393305.0
+            ],
+            "values": [
+              43351.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 43351.0,
+          "source_celsius": 24.024585020000018,
+          "stored_div_100": 24.02,
+          "error_celsius": -0.004585020000018147,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_091014_20220808_02_T1",
+          "row": 224,
+          "col": 128,
+          "stored": 2607,
+          "input_coordinates": [
+            303855.0,
+            7393305.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              303855.0,
+              7393305.0
+            ],
+            "values": [
+              43948.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 43948.0,
+          "source_celsius": 26.065142960000003,
+          "stored_div_100": 26.07,
+          "error_celsius": 0.004857039999997426,
+          "agrees_within_0_011_C": true
+        },
+        {
+          "item": "LC08_L2SP_091014_20220808_02_T1",
+          "row": 224,
+          "col": 224,
+          "stored": 2815,
+          "input_coordinates": [
+            306735.0,
+            7393305.0
+          ],
+          "coord_crs": "EPSG:32601",
+          "response": {
+            "coordinates": [
+              306735.0,
+              7393305.0
+            ],
+            "values": [
+              44557.0
+            ],
+            "band_names": [
+              "lwir11_b1"
+            ]
+          },
+          "status": "compared",
+          "source_dn": 44557.0,
+          "source_celsius": 28.14671714000002,
+          "stored_div_100": 28.15,
+          "error_celsius": 0.003282859999977461,
+          "agrees_within_0_011_C": true
+        }
+      ],
+      "valid_preselected_pixels": 9,
+      "matched_pixels_any_listed_scene": 8,
+      "best_absolute_errors_celsius": [
+        0.0027278799999983505,
+        0.004126419999991526,
+        0.0015652000000123678,
+        0.002144060000013326,
+        0.0005224199999886991,
+        0.004585020000018147,
+        0.004857039999997426,
+        0.003282859999977461
+      ]
+    }
+  ],
+  "frozen_train_stats": {
+    "prithvi": {
+      "samples": 230659,
+      "raw_mean": 2539.2374922487193,
+      "raw_std": 1622.6526157165315,
+      "celsius_mean_under_x100_decode": 25.392374922487193,
+      "celsius_std_under_x100_decode": 16.226526157165313
+    },
+    "lstsr_tb": {
+      "samples": 2608772,
+      "raw_mean": 2709.747934379476,
+      "raw_std": 1671.9957488981986,
+      "celsius_mean_under_x100_decode": 27.097479343794763,
+      "celsius_std_under_x100_decode": 16.719957488981986
+    }
+  },
+  "normalization_code_changed": false,
+  "source_lookup_failures": [
+    {
+      "item": "LC08_L2SP_091013_20220808_02_T1",
+      "error": "404 Client Error: Not Found for url: https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2/items/LC08_L2SP_091013_20220808_02_T1"
+    }
+  ],
+  "modis_lr_quantization_evidence": [
+    {
+      "split": "train",
+      "valid_sampled_pixels": 1356445,
+      "odd_pixels": 1356445,
+      "odd_fraction": 1.0,
+      "interpretation": "Consistent with 2 * MODIS_DN - 27315; supporting evidence"
+    },
+    {
+      "split": "val",
+      "valid_sampled_pixels": 168412,
+      "odd_pixels": 168412,
+      "odd_fraction": 1.0,
+      "interpretation": "Consistent with 2 * MODIS_DN - 27315; supporting evidence"
+    },
+    {
+      "split": "test",
+      "valid_sampled_pixels": 168449,
+      "odd_pixels": 168449,
+      "odd_fraction": 1.0,
+      "interpretation": "Consistent with 2 * MODIS_DN - 27315; supporting evidence"
+    }
+  ],
+  "summary": {
+    "prithvi": {
+      "patch_month_cases": 2,
+      "valid_preselected_pixels": 18,
+      "pixels_with_available_source_dn": 18,
+      "pixels_without_available_source_dn": 0,
+      "matched_within_0_011_C": 17,
+      "matched_within_0_02_C": 18,
+      "max_best_absolute_error_celsius": 0.01574883999996146,
+      "unit_conclusion": "Celsius x100 supported by independent source pixels",
+      "scope": "Sample verification, not an all-pixel proof or recovered exporter implementation",
+      "tolerance_note": "0.011 C checks one stored integer step; 0.02 C allows small source resampling/quantization differences for a unit check, not a pixel-exact export claim"
+    },
+    "lstsr_tb": {
+      "patch_month_cases": 2,
+      "valid_preselected_pixels": 18,
+      "pixels_with_available_source_dn": 17,
+      "pixels_without_available_source_dn": 1,
+      "matched_within_0_011_C": 17,
+      "matched_within_0_02_C": 17,
+      "max_best_absolute_error_celsius": 0.004857039999997426,
+      "unit_conclusion": "Celsius x100 supported by independent source pixels",
+      "scope": "Sample verification, not an all-pixel proof or recovered exporter implementation",
+      "tolerance_note": "0.011 C checks one stored integer step; 0.02 C allows small source resampling/quantization differences for a unit check, not a pixel-exact export claim"
+    }
+  }
+}

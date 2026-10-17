@@ -1,0 +1,13 @@
+{
+  "previous_attempt": "stage2_vq_20261004_attempt01",
+  "previous_outcome": "VQGAN R/C GPU preflight failed because official ResnetBlock.forward requires temb=None; formal dependencies prevented training. Drifting R/C passed.",
+  "repair": "Pass explicit temb=None to official CompVis residual blocks; preserve attention call signatures and checkpoint compatibility.",
+  "new_attempt": "/scratch/zm2864/lst-restoration-bench/output/stage2_vq_20261005_attempt02",
+  "new_preflight_job": "19206325",
+  "new_formal_vqgan_job": "19206326",
+  "new_formal_drifting_job": "19206328",
+  "new_run_ids": true,
+  "old_files_preserved": true,
+  "last_observed": "All 16 configurations accepted; VQGAN R/G formal jobs and Drifting R formal job running; no failures recorded in attempt02.",
+  "observation_scope": "Snapshot on 2026-10-05 after grouped R/G acceptance; not live state."
+}

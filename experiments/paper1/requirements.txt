@@ -1,0 +1,10 @@
+# Install a platform-appropriate torch build first; setup_paper1.ps1 uses CUDA 12.8.
+torch==2.11.0
+torchvision==0.26.0
+timm==1.0.29
+einops==0.8.2
+numpy>=1.24
+zstandard>=0.22
+scipy>=1.10
+PyYAML>=6
+pytest>=8

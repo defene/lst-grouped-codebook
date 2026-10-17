@@ -1,0 +1,299 @@
+{
+  "version": 4,
+  "updated": "2026-09-05",
+  "status": "plan_only_no_training_started",
+  "plan": "PAPER1_EXPERIMENT_PLAN.md",
+  "split_seed": 20260905,
+  "training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "manifest_sha256": "7110aca1ec7ef1d55b3098686e98139d9230577734d45863468a5622af0c253c",
+  "split_counts": {
+    "train": {
+      "sequences": 250449,
+      "tiles": 2249,
+      "months": 2608772
+    },
+    "val": {
+      "sequences": 13694,
+      "tiles": 118,
+      "months": 141711
+    },
+    "test": {
+      "sequences": 13665,
+      "tiles": 123,
+      "months": 141524
+    }
+  },
+  "scope": "discrete representation learning; full asynchronous cross-satellite reconstruction belongs to paper 2",
+  "main_factorial": {
+    "VQ00": {
+      "stability": false,
+      "cross_view": false
+    },
+    "VQ10": {
+      "stability": true,
+      "cross_view": false
+    },
+    "VQ01": {
+      "stability": false,
+      "cross_view": true
+    },
+    "VQ11": {
+      "stability": true,
+      "cross_view": true
+    }
+  },
+  "proposed_rates": [
+    {
+      "name": "low",
+      "latent_hw": 8,
+      "tokens": 64,
+      "vocabulary": 512,
+      "fixed_bits": 576,
+      "bpp": 0.0087890625
+    },
+    {
+      "name": "medium",
+      "latent_hw": 16,
+      "tokens": 256,
+      "vocabulary": 512,
+      "fixed_bits": 2304,
+      "bpp": 0.03515625
+    },
+    {
+      "name": "high",
+      "latent_hw": 32,
+      "tokens": 1024,
+      "vocabulary": 512,
+      "fixed_bits": 9216,
+      "bpp": 0.140625
+    }
+  ],
+  "proposed_training": {
+    "global_pair_batch": 64,
+    "pilot_steps": 20000,
+    "full_steps": 100000,
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "hyperparameters_status": "proposed_freeze_after_pilot",
+    "hardware": "four H200 assumed, not benchmarked",
+    "batch_unit": "sample = one HLS and one available-month HR LST"
+  },
+  "experiments": [
+    {
+      "id": "E00",
+      "priority": "必做",
+      "experiment": "云污染保留、地表参考、单位与分组审计",
+      "deliverable": "污染/缺失/可靠参考分开，data_protocol、合法训练入口",
+      "prerequisites": "无",
+      "status": "planned"
+    },
+    {
+      "id": "E01",
+      "priority": "必做",
+      "experiment": "train 归一化与 loader 吞吐",
+      "deliverable": "norm hash、精确子集、每模态样本流",
+      "prerequisites": "E00",
+      "status": "planned"
+    },
+    {
+      "id": "E02",
+      "priority": "必做",
+      "experiment": "AE/VQ/FSQ smoke 与可逆编码",
+      "deliverable": "32 组 overfit、形状/梯度/roundtrip 记录",
+      "prerequisites": "E01",
+      "status": "planned"
+    },
+    {
+      "id": "E03",
+      "priority": "必做",
+      "experiment": "中码率基础 pilot",
+      "deliverable": "连续 AE、独立 VQ、独立 FSQ，各模态单独输出",
+      "prerequisites": "E02",
+      "status": "planned"
+    },
+    {
+      "id": "E04",
+      "priority": "必做",
+      "experiment": "S 一致性项 pilot",
+      "deliverable": "VQ00 vs VQ10，相同受控损坏",
+      "prerequisites": "E03",
+      "status": "planned"
+    },
+    {
+      "id": "E05",
+      "priority": "必做",
+      "experiment": "C 结构项 pilot",
+      "deliverable": "VQ00 vs VQ01，相同 paired 输入暴露量",
+      "prerequisites": "E03",
+      "status": "planned"
+    },
+    {
+      "id": "E06",
+      "priority": "必做",
+      "experiment": "S+C 联合机制",
+      "deliverable": "VQ00/10/01/11 四组，全同 backbone",
+      "prerequisites": "E04,E05",
+      "status": "planned"
+    },
+    {
+      "id": "E07",
+      "priority": "必做",
+      "experiment": "错配与退化诊断",
+      "deliverable": "正确配对/跨 tile 错配、码本使用、细节与极值",
+      "prerequisites": "E06",
+      "status": "planned"
+    },
+    {
+      "id": "E08",
+      "priority": "必做",
+      "experiment": "独立复验",
+      "deliverable": "seed=29 重跑选定 pilot 对照，不再改超参",
+      "prerequisites": "E07",
+      "status": "planned"
+    },
+    {
+      "id": "E09",
+      "priority": "必做",
+      "experiment": "机制判断与冻结",
+      "deliverable": "选定机制、主码率和训练配置；失败则修改假设",
+      "prerequisites": "E08",
+      "status": "planned"
+    },
+    {
+      "id": "E10",
+      "priority": "必做",
+      "experiment": "三码率正式 tokenizer",
+      "deliverable": "VQ00、FSQ00、VQ11：每模型输出 HLS/LST 两套结果",
+      "prerequisites": "E09",
+      "status": "planned"
+    },
+    {
+      "id": "E11",
+      "priority": "必做",
+      "experiment": "中码率正式消融",
+      "deliverable": "增加 VQ10、VQ01，与 E10 中的 00/11 构成四组",
+      "prerequisites": "E10",
+      "status": "planned"
+    },
+    {
+      "id": "E12",
+      "priority": "必做",
+      "experiment": "云/云影异常还原、覆盖与形状迁移",
+      "deliverable": "异常区还原、可靠区保真；真实与参考可控实验分表",
+      "prerequisites": "E10,E11",
+      "status": "planned"
+    },
+    {
+      "id": "E13",
+      "priority": "必做",
+      "experiment": "物理保真与坍缩诊断",
+      "deliverable": "SAM/指数、温度极值/梯度、usage/entropy",
+      "prerequisites": "E10,E11",
+      "status": "planned"
+    },
+    {
+      "id": "E14",
+      "priority": "必做",
+      "experiment": "像素域云区缺失→离散表示→图像还原",
+      "deliverable": "输入在编码前污染/遮挡，匹配轻量恢复头",
+      "prerequisites": "E10",
+      "status": "planned"
+    },
+    {
+      "id": "E15",
+      "priority": "必做",
+      "experiment": "条件重建对照",
+      "deliverable": "LST-only、concat、连续 cross、离散 cross，单独计条件成本",
+      "prerequisites": "E09",
+      "status": "planned"
+    },
+    {
+      "id": "E16",
+      "priority": "必做",
+      "experiment": "主要结果三种子与最终测试",
+      "deliverable": "固定配置 seed 17/29/43、tile CI、统一 test batch",
+      "prerequisites": "E11–E15",
+      "status": "planned"
+    },
+    {
+      "id": "E17",
+      "priority": "扩展",
+      "experiment": "FSQ + 所提训练机制",
+      "deliverable": "检查机制是否依赖 VQ，明确损失适配",
+      "prerequisites": "E09",
+      "status": "planned"
+    },
+    {
+      "id": "E18",
+      "priority": "扩展",
+      "experiment": "多尺度残差 VQ 迁移",
+      "deliverable": "历史 680-token anchor 与同架构无机制对照",
+      "prerequisites": "E09",
+      "status": "planned"
+    },
+    {
+      "id": "E19",
+      "priority": "扩展",
+      "experiment": "shared/private 与物理 loss",
+      "deliverable": "一次改变一个因素，所有 token 都计码率",
+      "prerequisites": "E11",
+      "status": "planned"
+    },
+    {
+      "id": "E20",
+      "priority": "辅助",
+      "experiment": "自然 RGB/HLS RGB/6-band/LST 几何分析",
+      "deliverable": "matched 数量、归一化敏感性；只用 train",
+      "prerequisites": "E01",
+      "status": "planned"
+    },
+    {
+      "id": "E21",
+      "priority": "扩展",
+      "experiment": "TerraMind/EO-VAE 适配参考",
+      "deliverable": "HLS 波段/归一化/码率可比性核实后加入",
+      "prerequisites": "E03",
+      "status": "planned"
+    }
+  ],
+  "noise_definition": "cloud, cloud shadow, and verified anomalous contamination; same-resolution image restoration",
+  "restoration_protocols": {
+    "R1": "reference-controlled cloud-shape missing-region restoration",
+    "R2": "actual masked cloud holes; no pixel accuracy without reference",
+    "R3": "retained cloudy observations; input/reference pairs not yet verified"
+  },
+  "gaussian_role": "optional diagnostic only; not primary task",
+  "direction_status": "user_confirmed_existing_mask_self_supervised_image_restoration",
+  "primary_protocol": "R1: hide additional reliable pixels before encoding; use original held-out values for supervision; restore at same resolution",
+  "application_protocol": "R2: restore actual cloud-masked holes; no pixel accuracy claims without reference",
+  "paired_cloudy_clear_data_required_to_start": false,
+  "R3_status": "optional_extension_not_prerequisite",
+  "sampling_protocol": {
+    "unit": "sample",
+    "key": [
+      "sequence_id",
+      "month"
+    ],
+    "inputs": [
+      "single HR LST image",
+      "static HLS image",
+      "per-modality masks"
+    ],
+    "sampler": "uniform shuffle of valid flattened sample index",
+    "requires_complete_sequence": false,
+    "requires_LR_for_paper1": false,
+    "skip": [
+      "missing sequence or required modality file",
+      "unavailable month",
+      "target has no reliable reference pixels"
+    ],
+    "partial_pixel_nodata": "keep sample; handle with per-pixel masks",
+    "split": "inherit fixed sequence/tile split; never re-split flattened samples",
+    "normalization_weighting": "equal valid samples; equal valid pixels within each sample; HLS weighted by sample frequency",
+    "skip_log_required": true
+  }
+}

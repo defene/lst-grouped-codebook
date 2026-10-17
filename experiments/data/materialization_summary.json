@@ -1,0 +1,85 @@
+{
+  "status": "ready",
+  "scope": "full",
+  "training_scope": "independent_datasets",
+  "training_started": false,
+  "synthetic_noise": false,
+  "datasets": {
+    "prithvi": {
+      "records": 242416,
+      "samples": {
+        "train/hls": 230659,
+        "val/hls": 11757,
+        "train/lst_hr": 230659,
+        "val/lst_hr": 11757
+      },
+      "rejected": {},
+      "referenced_source_bytes": 238497352456,
+      "prepared_directory_bytes": 296614448,
+      "elapsed_seconds": 2532.3562738895416,
+      "normalization": "C:\\Users\\rog\\Desktop\\iclr\\processed_data\\v1\\prithvi\\normalization.json",
+      "bundle_sha256": "efcd7c93a69dd4e6a5dedfd7e91b23c55a16fbcb88d96f63a5691902cac32810",
+      "source_manifest_hashes": {}
+    },
+    "lstsr_tb": {
+      "records": 277808,
+      "samples": {
+        "test/hls": 13665,
+        "train/hls": 250449,
+        "val/hls": 13694,
+        "test/lst_hr": 141524,
+        "train/lst_hr": 2608772,
+        "val/lst_hr": 141711
+      },
+      "rejected": {},
+      "referenced_source_bytes": 432655059412,
+      "prepared_directory_bytes": 800089091,
+      "elapsed_seconds": 2844.987811088562,
+      "normalization": "C:\\Users\\rog\\Desktop\\iclr\\processed_data\\v1\\lstsr_tb\\normalization.json",
+      "bundle_sha256": "c8d875e21739c16d0433e509c52befaf51b8d262b7f002f78a1a574dcea3d958",
+      "source_manifest_hashes": {
+        "data_inspection/extracted_metadata/lstsr_tb_final_dataset_20260719/phase4_dataset_manifest.csv": "7110aca1ec7ef1d55b3098686e98139d9230577734d45863468a5622af0c253c",
+        "data_inspection/extracted_metadata/lstsr_tb_final_dataset_20260719/hls_l8_conditions_2019_2025_lc08/hls_condition_manifest.csv": "08d8d48d45e592b7e27994bcbc8835c8d493f08cef1f1c851c2d553e602da946"
+      }
+    }
+  },
+  "compression": {
+    "original_directory_bytes": 238504143023,
+    "packed_frames_bytes": 124099451869,
+    "prepared_directory_bytes": 296614448,
+    "archive_path": "C:\\Users\\rog\\Desktop\\iclr\\artifacts\\prithvi_data_v1_20260909.zip",
+    "archive_bytes": 124136280470,
+    "archive_sha256": "2764097028fe9caa44fb55eb5c204c949788f2e6ebfba49b6c37d4171b9c9879",
+    "working_bytes_including_archive_and_indices": 124432894918,
+    "reduction_percent_including_indices": 47.82778473328223,
+    "shards": 474,
+    "verified_records": 242416,
+    "original_directory_retained": false,
+    "original_zip_retained": false,
+    "original_zip_bytes": 147517786920,
+    "old_original_plus_zip_bytes": 386021929943,
+    "net_logical_saved_bytes": 261589035025,
+    "original_data_deleted": true,
+    "loose_shards_deleted": true
+  },
+  "validation_report": "C:\\Users\\rog\\Desktop\\iclr\\experiments\\data\\materialization_validation.json",
+  "environment": {
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\ProgramData\\anaconda3\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.1.3",
+      "zstandard": "0.23.0",
+      "pytest": "8.3.4"
+    },
+    "torch_installed": false
+  },
+  "frozen_preprocessing_source_sha256": "23e1c1ad8792a203add251254eecf9aefaf42f8e2b4e643c44398c709530374c",
+  "post_validation_temporary_restore": {
+    "path": "C:\\Users\\rog\\Desktop\\iclr\\processed_data\\restore_check",
+    "files": 33,
+    "bytes": 14661247,
+    "removal_status": "blocked_by_automatic_approval",
+    "tool_reason": "blocked by policy"
+  }
+}

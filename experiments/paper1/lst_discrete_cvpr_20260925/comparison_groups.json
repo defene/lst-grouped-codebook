@@ -1,0 +1,770 @@
+[
+  {
+    "id": "quantizer_R_clean_s17",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__R__clean__oracle_mean__b10__s17",
+      "core__fsq__R__clean__oracle_mean__b10__s17",
+      "core__lfq__R__clean__oracle_mean__b10__s17",
+      "core__bsq__R__clean__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_R_clean_s23",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__R__clean__oracle_mean__b10__s23",
+      "core__fsq__R__clean__oracle_mean__b10__s23",
+      "core__lfq__R__clean__oracle_mean__b10__s23",
+      "core__bsq__R__clean__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_R_clean_s42",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__R__clean__oracle_mean__b10__s42",
+      "core__fsq__R__clean__oracle_mean__b10__s42",
+      "core__lfq__R__clean__oracle_mean__b10__s42",
+      "core__bsq__R__clean__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_R_pixel10_s17",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__R__pixel10__oracle_mean__b10__s17",
+      "core__fsq__R__pixel10__oracle_mean__b10__s17",
+      "core__lfq__R__pixel10__oracle_mean__b10__s17",
+      "core__bsq__R__pixel10__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_R_pixel10_s23",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__R__pixel10__oracle_mean__b10__s23",
+      "core__fsq__R__pixel10__oracle_mean__b10__s23",
+      "core__lfq__R__pixel10__oracle_mean__b10__s23",
+      "core__bsq__R__pixel10__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_R_pixel10_s42",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__R__pixel10__oracle_mean__b10__s42",
+      "core__fsq__R__pixel10__oracle_mean__b10__s42",
+      "core__lfq__R__pixel10__oracle_mean__b10__s42",
+      "core__bsq__R__pixel10__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_G_clean_s17",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__G__clean__oracle_mean__b10__s17",
+      "core__fsq__G__clean__oracle_mean__b10__s17",
+      "core__lfq__G__clean__oracle_mean__b10__s17",
+      "core__bsq__G__clean__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_G_clean_s23",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__G__clean__oracle_mean__b10__s23",
+      "core__fsq__G__clean__oracle_mean__b10__s23",
+      "core__lfq__G__clean__oracle_mean__b10__s23",
+      "core__bsq__G__clean__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_G_clean_s42",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__G__clean__oracle_mean__b10__s42",
+      "core__fsq__G__clean__oracle_mean__b10__s42",
+      "core__lfq__G__clean__oracle_mean__b10__s42",
+      "core__bsq__G__clean__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_G_pixel10_s17",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__G__pixel10__oracle_mean__b10__s17",
+      "core__fsq__G__pixel10__oracle_mean__b10__s17",
+      "core__lfq__G__pixel10__oracle_mean__b10__s17",
+      "core__bsq__G__pixel10__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_G_pixel10_s23",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__G__pixel10__oracle_mean__b10__s23",
+      "core__fsq__G__pixel10__oracle_mean__b10__s23",
+      "core__lfq__G__pixel10__oracle_mean__b10__s23",
+      "core__bsq__G__pixel10__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_G_pixel10_s42",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__G__pixel10__oracle_mean__b10__s42",
+      "core__fsq__G__pixel10__oracle_mean__b10__s42",
+      "core__lfq__G__pixel10__oracle_mean__b10__s42",
+      "core__bsq__G__pixel10__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_C_clean_s17",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__C__clean__oracle_mean__b10__s17",
+      "core__fsq__C__clean__oracle_mean__b10__s17",
+      "core__lfq__C__clean__oracle_mean__b10__s17",
+      "core__bsq__C__clean__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_C_clean_s23",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__C__clean__oracle_mean__b10__s23",
+      "core__fsq__C__clean__oracle_mean__b10__s23",
+      "core__lfq__C__clean__oracle_mean__b10__s23",
+      "core__bsq__C__clean__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_C_clean_s42",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__C__clean__oracle_mean__b10__s42",
+      "core__fsq__C__clean__oracle_mean__b10__s42",
+      "core__lfq__C__clean__oracle_mean__b10__s42",
+      "core__bsq__C__clean__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_C_pixel10_s17",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__C__pixel10__oracle_mean__b10__s17",
+      "core__fsq__C__pixel10__oracle_mean__b10__s17",
+      "core__lfq__C__pixel10__oracle_mean__b10__s17",
+      "core__bsq__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_C_pixel10_s23",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__C__pixel10__oracle_mean__b10__s23",
+      "core__fsq__C__pixel10__oracle_mean__b10__s23",
+      "core__lfq__C__pixel10__oracle_mean__b10__s23",
+      "core__bsq__C__pixel10__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "quantizer_C_pixel10_s42",
+    "kind": "quantizer_mechanism",
+    "job_ids": [
+      "core__vq__C__pixel10__oracle_mean__b10__s42",
+      "core__fsq__C__pixel10__oracle_mean__b10__s42",
+      "core__lfq__C__pixel10__oracle_mean__b10__s42",
+      "core__bsq__C__pixel10__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "fsq_minus_vq",
+    "same_nominal_rate": true,
+    "same_backbone": true,
+    "same_algorithm_specific_loss": false
+  },
+  {
+    "id": "representation_vq_clean_s17",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__vq__R__clean__oracle_mean__b10__s17",
+      "core__vq__G__clean__oracle_mean__b10__s17",
+      "core__vq__C__clean__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_vq_clean_s23",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__vq__R__clean__oracle_mean__b10__s23",
+      "core__vq__G__clean__oracle_mean__b10__s23",
+      "core__vq__C__clean__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_vq_clean_s42",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__vq__R__clean__oracle_mean__b10__s42",
+      "core__vq__G__clean__oracle_mean__b10__s42",
+      "core__vq__C__clean__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_vq_pixel10_s17",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__vq__R__pixel10__oracle_mean__b10__s17",
+      "core__vq__G__pixel10__oracle_mean__b10__s17",
+      "core__vq__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_vq_pixel10_s23",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__vq__R__pixel10__oracle_mean__b10__s23",
+      "core__vq__G__pixel10__oracle_mean__b10__s23",
+      "core__vq__C__pixel10__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_vq_pixel10_s42",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__vq__R__pixel10__oracle_mean__b10__s42",
+      "core__vq__G__pixel10__oracle_mean__b10__s42",
+      "core__vq__C__pixel10__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_fsq_clean_s17",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__fsq__R__clean__oracle_mean__b10__s17",
+      "core__fsq__G__clean__oracle_mean__b10__s17",
+      "core__fsq__C__clean__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_fsq_clean_s23",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__fsq__R__clean__oracle_mean__b10__s23",
+      "core__fsq__G__clean__oracle_mean__b10__s23",
+      "core__fsq__C__clean__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_fsq_clean_s42",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__fsq__R__clean__oracle_mean__b10__s42",
+      "core__fsq__G__clean__oracle_mean__b10__s42",
+      "core__fsq__C__clean__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_fsq_pixel10_s17",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__fsq__R__pixel10__oracle_mean__b10__s17",
+      "core__fsq__G__pixel10__oracle_mean__b10__s17",
+      "core__fsq__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_fsq_pixel10_s23",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__fsq__R__pixel10__oracle_mean__b10__s23",
+      "core__fsq__G__pixel10__oracle_mean__b10__s23",
+      "core__fsq__C__pixel10__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_fsq_pixel10_s42",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__fsq__R__pixel10__oracle_mean__b10__s42",
+      "core__fsq__G__pixel10__oracle_mean__b10__s42",
+      "core__fsq__C__pixel10__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_lfq_clean_s17",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__lfq__R__clean__oracle_mean__b10__s17",
+      "core__lfq__G__clean__oracle_mean__b10__s17",
+      "core__lfq__C__clean__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_lfq_clean_s23",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__lfq__R__clean__oracle_mean__b10__s23",
+      "core__lfq__G__clean__oracle_mean__b10__s23",
+      "core__lfq__C__clean__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_lfq_clean_s42",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__lfq__R__clean__oracle_mean__b10__s42",
+      "core__lfq__G__clean__oracle_mean__b10__s42",
+      "core__lfq__C__clean__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_lfq_pixel10_s17",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__lfq__R__pixel10__oracle_mean__b10__s17",
+      "core__lfq__G__pixel10__oracle_mean__b10__s17",
+      "core__lfq__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_lfq_pixel10_s23",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__lfq__R__pixel10__oracle_mean__b10__s23",
+      "core__lfq__G__pixel10__oracle_mean__b10__s23",
+      "core__lfq__C__pixel10__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_lfq_pixel10_s42",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__lfq__R__pixel10__oracle_mean__b10__s42",
+      "core__lfq__G__pixel10__oracle_mean__b10__s42",
+      "core__lfq__C__pixel10__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_bsq_clean_s17",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__bsq__R__clean__oracle_mean__b10__s17",
+      "core__bsq__G__clean__oracle_mean__b10__s17",
+      "core__bsq__C__clean__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_bsq_clean_s23",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__bsq__R__clean__oracle_mean__b10__s23",
+      "core__bsq__G__clean__oracle_mean__b10__s23",
+      "core__bsq__C__clean__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_bsq_clean_s42",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__bsq__R__clean__oracle_mean__b10__s42",
+      "core__bsq__G__clean__oracle_mean__b10__s42",
+      "core__bsq__C__clean__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_bsq_pixel10_s17",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__bsq__R__pixel10__oracle_mean__b10__s17",
+      "core__bsq__G__pixel10__oracle_mean__b10__s17",
+      "core__bsq__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_bsq_pixel10_s23",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__bsq__R__pixel10__oracle_mean__b10__s23",
+      "core__bsq__G__pixel10__oracle_mean__b10__s23",
+      "core__bsq__C__pixel10__oracle_mean__b10__s23"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "representation_bsq_pixel10_s42",
+    "kind": "representation_mechanism",
+    "job_ids": [
+      "core__bsq__R__pixel10__oracle_mean__b10__s42",
+      "core__bsq__G__pixel10__oracle_mean__b10__s42",
+      "core__bsq__C__pixel10__oracle_mean__b10__s42"
+    ],
+    "primary_contrast": "C_minus_R",
+    "supporting_contrast": "C_minus_G",
+    "same_nominal_rate": true,
+    "same_backbone": true
+  },
+  {
+    "id": "rate_vq_R",
+    "kind": "rate_distortion",
+    "job_ids": [
+      "rate_sweep__vq__R__pixel10__oracle_mean__b8__s17",
+      "rate_sweep__vq__R__pixel10__oracle_mean__b12__s17",
+      "core__vq__R__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "same_grid": true
+  },
+  {
+    "id": "rate_vq_C",
+    "kind": "rate_distortion",
+    "job_ids": [
+      "rate_sweep__vq__C__pixel10__oracle_mean__b8__s17",
+      "rate_sweep__vq__C__pixel10__oracle_mean__b12__s17",
+      "core__vq__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "same_grid": true
+  },
+  {
+    "id": "rate_fsq_R",
+    "kind": "rate_distortion",
+    "job_ids": [
+      "rate_sweep__fsq__R__pixel10__oracle_mean__b8__s17",
+      "rate_sweep__fsq__R__pixel10__oracle_mean__b12__s17",
+      "core__fsq__R__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "same_grid": true
+  },
+  {
+    "id": "rate_fsq_C",
+    "kind": "rate_distortion",
+    "job_ids": [
+      "rate_sweep__fsq__C__pixel10__oracle_mean__b8__s17",
+      "rate_sweep__fsq__C__pixel10__oracle_mean__b12__s17",
+      "core__fsq__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "same_grid": true
+  },
+  {
+    "id": "rate_lfq_R",
+    "kind": "rate_distortion",
+    "job_ids": [
+      "rate_sweep__lfq__R__pixel10__oracle_mean__b8__s17",
+      "rate_sweep__lfq__R__pixel10__oracle_mean__b12__s17",
+      "core__lfq__R__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "same_grid": true
+  },
+  {
+    "id": "rate_lfq_C",
+    "kind": "rate_distortion",
+    "job_ids": [
+      "rate_sweep__lfq__C__pixel10__oracle_mean__b8__s17",
+      "rate_sweep__lfq__C__pixel10__oracle_mean__b12__s17",
+      "core__lfq__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "same_grid": true
+  },
+  {
+    "id": "rate_bsq_R",
+    "kind": "rate_distortion",
+    "job_ids": [
+      "rate_sweep__bsq__R__pixel10__oracle_mean__b8__s17",
+      "rate_sweep__bsq__R__pixel10__oracle_mean__b12__s17",
+      "core__bsq__R__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "same_grid": true
+  },
+  {
+    "id": "rate_bsq_C",
+    "kind": "rate_distortion",
+    "job_ids": [
+      "rate_sweep__bsq__C__pixel10__oracle_mean__b8__s17",
+      "rate_sweep__bsq__C__pixel10__oracle_mean__b12__s17",
+      "core__bsq__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "same_grid": true
+  },
+  {
+    "id": "continuous_ablation",
+    "kind": "supporting_or_system_comparison",
+    "job_ids": [
+      "continuous_ablation__ae__R__clean__oracle_mean__b10__s17",
+      "continuous_ablation__ae__R__pixel10__oracle_mean__b10__s17",
+      "continuous_ablation__ae__G__clean__oracle_mean__b10__s17",
+      "continuous_ablation__ae__G__pixel10__oracle_mean__b10__s17",
+      "continuous_ablation__ae__C__clean__oracle_mean__b10__s17",
+      "continuous_ablation__ae__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "interpretation": "Pair with matching core controls; this list is not one universal leaderboard."
+  },
+  {
+    "id": "pretrained",
+    "kind": "supporting_or_system_comparison",
+    "job_ids": [
+      "pretrained__sd__G__clean__oracle_mean__b10__s17",
+      "pretrained__sd__G__pixel10__oracle_mean__b10__s17",
+      "pretrained__sd__C__clean__oracle_mean__b10__s17",
+      "pretrained__sd__C__pixel10__oracle_mean__b10__s17",
+      "pretrained__sdxl__G__clean__oracle_mean__b10__s17",
+      "pretrained__sdxl__G__pixel10__oracle_mean__b10__s17",
+      "pretrained__sdxl__C__clean__oracle_mean__b10__s17",
+      "pretrained__sdxl__C__pixel10__oracle_mean__b10__s17",
+      "pretrained__flux1__G__clean__oracle_mean__b10__s17",
+      "pretrained__flux1__G__pixel10__oracle_mean__b10__s17",
+      "pretrained__flux1__C__clean__oracle_mean__b10__s17",
+      "pretrained__flux1__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "interpretation": "Pair with matching core controls; this list is not one universal leaderboard."
+  },
+  {
+    "id": "multiscale",
+    "kind": "supporting_or_system_comparison",
+    "job_ids": [
+      "multiscale__var_multiscale__R__clean__oracle_mean__b10__s17",
+      "multiscale__var_multiscale__R__pixel10__oracle_mean__b10__s17",
+      "multiscale__var_multiscale__G__clean__oracle_mean__b10__s17",
+      "multiscale__var_multiscale__G__pixel10__oracle_mean__b10__s17",
+      "multiscale__var_multiscale__C__clean__oracle_mean__b10__s17",
+      "multiscale__var_multiscale__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "interpretation": "Pair with matching core controls; this list is not one universal leaderboard."
+  },
+  {
+    "id": "mean_ablation",
+    "kind": "supporting_or_system_comparison",
+    "job_ids": [
+      "mean_ablation__vq__R__pixel10__absolute_with_same_mean__b10__s17",
+      "mean_ablation__vq__R__pixel10__visible_mean__b10__s17",
+      "mean_ablation__vq__C__pixel10__absolute_with_same_mean__b10__s17",
+      "mean_ablation__vq__C__pixel10__visible_mean__b10__s17",
+      "mean_ablation__fsq__R__pixel10__absolute_with_same_mean__b10__s17",
+      "mean_ablation__fsq__R__pixel10__visible_mean__b10__s17",
+      "mean_ablation__fsq__C__pixel10__absolute_with_same_mean__b10__s17",
+      "mean_ablation__fsq__C__pixel10__visible_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "interpretation": "Pair with matching core controls; this list is not one universal leaderboard."
+  },
+  {
+    "id": "gain_control",
+    "kind": "supporting_or_system_comparison",
+    "job_ids": [
+      "gain_control__vq__C_affine__pixel10__oracle_mean__b10__s17",
+      "gain_control__fsq__C_affine__pixel10__oracle_mean__b10__s17",
+      "gain_control__lfq__C_affine__pixel10__oracle_mean__b10__s17",
+      "gain_control__bsq__C_affine__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "interpretation": "Pair with matching core controls; this list is not one universal leaderboard."
+  },
+  {
+    "id": "quantizer_recipe",
+    "kind": "supporting_or_system_comparison",
+    "job_ids": [
+      "quantizer_recipe__fsq1000__R__pixel10__oracle_mean__b10__s17",
+      "quantizer_recipe__fsq1000__C__pixel10__oracle_mean__b10__s17",
+      "quantizer_recipe__vq_ema__R__pixel10__oracle_mean__b10__s17",
+      "quantizer_recipe__vq_ema__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "interpretation": "Pair with matching core controls; this list is not one universal leaderboard."
+  },
+  {
+    "id": "inverse_loss_ablation",
+    "kind": "supporting_or_system_comparison",
+    "job_ids": [
+      "inverse_loss_ablation__vq__R__pixel10__oracle_mean__b10__s17",
+      "inverse_loss_ablation__vq__C__pixel10__oracle_mean__b10__s17",
+      "inverse_loss_ablation__fsq__R__pixel10__oracle_mean__b10__s17",
+      "inverse_loss_ablation__fsq__C__pixel10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "interpretation": "Pair with matching core controls; this list is not one universal leaderboard."
+  },
+  {
+    "id": "mae_patch",
+    "kind": "supporting_or_system_comparison",
+    "job_ids": [
+      "mae_patch__prithvi_mae__R__clean__oracle_mean__b10__s17",
+      "mae_patch__prithvi_mae__R__patch10__oracle_mean__b10__s17",
+      "mae_patch__satmae_pp__R__clean__oracle_mean__b10__s17",
+      "mae_patch__satmae_pp__R__patch10__oracle_mean__b10__s17",
+      "mae_patch__vq__R__patch10__oracle_mean__b10__s17",
+      "mae_patch__vq__C__patch10__oracle_mean__b10__s17",
+      "mae_patch__fsq__R__patch10__oracle_mean__b10__s17",
+      "mae_patch__fsq__C__patch10__oracle_mean__b10__s17"
+    ],
+    "same_nominal_rate": false,
+    "interpretation": "Pair with matching core controls; this list is not one universal leaderboard."
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "status": "prepared_not_launched",
+  "jobs": [
+    {
+      "name": "vq_k512_G_baseline",
+      "config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_k512_full_20261015_attempt01\\configs\\vq_k512_G_baseline.json",
+      "parent_config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_full_20261015_attempt01\\configs\\vq_G_baseline.json",
+      "parent_config_sha256": "6a2c18318ec7e59b783ea6fd3ff6c32239bc31cffd8d3f1d2f1ac6c659cac342",
+      "protocol_sha256": "64f9192133256ca6c3408ebd864faeea3f0628ab9592b93aaa24c1b8e92073fa",
+      "codebook_size_per_group": 512,
+      "groups": 1,
+      "nominal_index_bits": 2304
+    },
+    {
+      "name": "vq_k512_G_ema",
+      "config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_k512_full_20261015_attempt01\\configs\\vq_k512_G_ema.json",
+      "parent_config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_full_20261015_attempt01\\configs\\vq_G_ema.json",
+      "parent_config_sha256": "2b8eaf27ea6ba34eea20a3af82086798f785e28585d67fcd624334568bd53f0f",
+      "protocol_sha256": "d9f0b8cacd08cc50dcc73ad3cd6835065904f3639b342870026359980fbbe4e8",
+      "codebook_size_per_group": 512,
+      "groups": 1,
+      "nominal_index_bits": 2304
+    },
+    {
+      "name": "vq_k512_G_ema_maint",
+      "config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_k512_full_20261015_attempt01\\configs\\vq_k512_G_ema_maint.json",
+      "parent_config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_full_20261015_attempt01\\configs\\vq_G_ema_maint.json",
+      "parent_config_sha256": "52a6967361dfe7a9e23480122362800f56f0afafc5e9d48612f0fd509bd95e85",
+      "protocol_sha256": "f0dde863428bafbd655287b59a95f1431ca911bdcdfdade81f104d238375bba1",
+      "codebook_size_per_group": 512,
+      "groups": 1,
+      "nominal_index_bits": 2304
+    },
+    {
+      "name": "grouped_g8k512_G_baseline",
+      "config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_k512_full_20261015_attempt01\\configs\\grouped_g8k512_G_baseline.json",
+      "parent_config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_full_20261015_attempt01\\configs\\grouped_g8k256_G_baseline.json",
+      "parent_config_sha256": "0fdea4d32546ba9596a02275171bd0f56486fabcd44815962a222257be0d61bd",
+      "protocol_sha256": "ee0e2d8b66da1ca26ed79dcf4a7df40712d9795668c655897c9bff855e9380c2",
+      "codebook_size_per_group": 512,
+      "groups": 8,
+      "nominal_index_bits": 48960
+    },
+    {
+      "name": "grouped_g8k512_G_ema",
+      "config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_k512_full_20261015_attempt01\\configs\\grouped_g8k512_G_ema.json",
+      "parent_config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_full_20261015_attempt01\\configs\\grouped_g8k256_G_ema.json",
+      "parent_config_sha256": "564124f5a631c6f309a48c7f6c49e1979ee3393f28db4e6ad45bf30ce1d72aaa",
+      "protocol_sha256": "59e520d2c3a38b5ddff6896f09875fce0bb3ac83f5f61194406f75245e4a8b1b",
+      "codebook_size_per_group": 512,
+      "groups": 8,
+      "nominal_index_bits": 48960
+    },
+    {
+      "name": "grouped_g8k512_G_ema_maint",
+      "config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_k512_full_20261015_attempt01\\configs\\grouped_g8k512_G_ema_maint.json",
+      "parent_config": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\ema_local_full_20261015_attempt01\\configs\\grouped_g8k256_G_ema_maint.json",
+      "parent_config_sha256": "c5827b1deffc364f2a511c3b7a5da5b4ff96e857004bb4f134f8c47f8d3a3320",
+      "protocol_sha256": "b1e286c3a6bbb66db72c04ef5e59d9e0b6ac1aa03f44116557bec42751e6b5e6",
+      "codebook_size_per_group": 512,
+      "groups": 8,
+      "nominal_index_bits": 48960
+    }
+  ],
+  "scope": "G; ordinary VQ K512 and Grouped 8 x K512; baseline, EMA, EMA maintenance; 5 full epochs",
+  "total_record_presentations": 6569250,
+  "note": "Legacy internal grouped_g8k256 routes the generic Grouped implementation; actual K is 512."
+}

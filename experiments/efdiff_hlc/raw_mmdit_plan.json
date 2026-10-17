@@ -1,0 +1,133 @@
+{
+  "protocol": "hlc-raw-hls-fullmask-mmdit-20261014-v1",
+  "status": "implemented_and_locally_verified; training_not_submitted",
+  "architecture": {
+    "image_size": 224,
+    "patch_size": 16,
+    "hidden_dim": 896,
+    "heads": 14,
+    "encoder_depth": 4,
+    "depth": 6,
+    "ffn_hidden": 2672,
+    "gradient_checkpointing": true
+  },
+  "parameter_alignment": {
+    "reference": "TimeGeoDiT from dit_timegeo_v_plan.json; excludes frozen Prithvi",
+    "reference_trainable": 216994944,
+    "new_trainable": 217195328,
+    "difference": 200384,
+    "difference_percent": 0.0923450087390032,
+    "tolerance_percent": 0.1,
+    "exact_match": false,
+    "flops_or_training_compute_matched": false,
+    "new_frozen_parameters": 0,
+    "components": {
+      "condition_embed": 1835904,
+      "temperature_embed": 230272,
+      "encoder": 41603584,
+      "metadata": 1058176,
+      "blocks": 170630336,
+      "final_norm": 0,
+      "final_modulation": 1607424,
+      "head": 229632
+    }
+  },
+  "inputs": {
+    "hls": "B,6,224,224 unclipped reflectance; no Prithvi features or weights",
+    "hls_valid": "B,1,224,224 boolean full-resolution mask, NOT patch averages or attention mask",
+    "coarse": "B,1,224,224 existing normalized upsampled coarse LST",
+    "noisy_target": "B,1,224,224 noisy normalized fine-minus-coarse LST residual",
+    "condition_projection": "concat normalized six HLS bands, coarse LST, full pixel mask -> Conv2d(8,896,kernel=16,stride=16)",
+    "temperature_projection": "Conv2d(1,896,kernel=16,stride=16)",
+    "hls_scaling": {
+      "mean_dn": [
+        1087,
+        1342,
+        1433,
+        2734,
+        1958,
+        1363
+      ],
+      "std_dn": [
+        2248,
+        2179,
+        2178,
+        1850,
+        1242,
+        1049
+      ],
+      "formula": "(reflectance*10000-mean_dn)/std_dn",
+      "invalid_fill": 0.0001,
+      "reason": "preserve previous input affine scaling; no pretrained encoder"
+    }
+  },
+  "conditioning": {
+    "month": "target LST month; sin/cos harmonics 1,2,3",
+    "geography": "actual crop center latitude/longitude -> sphere xyz and sin/cos at pi*[1,2,4]",
+    "diffusion_time": "256-dimensional Fourier(log-SNR) from VP alpha",
+    "fusion": "concat 256+6+21 -> one MLP(283,896,896)",
+    "injection": "each generation block: independent adaLN projections for both streams; final temperature adaLN; no metadata injected in condition encoder"
+  },
+  "attention": {
+    "head_dim": 64,
+    "condition_tokens": 196,
+    "temperature_tokens": 196,
+    "joint_tokens": 392,
+    "position": "same spatial 2D RoPE coordinates on both streams Q/K; per-head QK RMSNorm",
+    "mask": "no causal or cloud attention mask",
+    "condition_encoder": "4 bidirectional self-attention + SwiGLU blocks",
+    "generation": "5 full bidirectional joint blocks + final joint readout block",
+    "final_block": "condition K/V and 2-vector modulation only; unused condition Q/output/FFN/gates omitted",
+    "cache": "encoder output may be cached per sample; every NFE resets condition stream to that output"
+  },
+  "output": {
+    "shape": "B,1,224,224",
+    "head": "Linear(896,256), unpatchify",
+    "objective": "existing VP v-prediction of normalized temperature residual",
+    "loss": "unchanged per-record valid-LST masked MSE",
+    "sampler": "unchanged deterministic DDIM",
+    "gradient_auxiliary": "not added in this baseline; preserves existing v-only objective",
+    "vae": false,
+    "repa": false
+  },
+  "data": {
+    "entry": "raw_mmdit_data.HLCPairs",
+    "prepared": "processed_data/v1",
+    "augment": false,
+    "crop": [
+      16,
+      240,
+      16,
+      240
+    ],
+    "members": "reuse frozen HLC split members and metadata audit",
+    "normalization": "reuse center-crop training-only LST/residual stats; check_stats required",
+    "fingerprint": "new raw_hls_input entry plus inherited data, split, metadata hashes"
+  },
+  "validation": {
+    "local_tests": "8 passed: parameter budget, full mask geometry, invalid input handling, autograd with/without checkpointing, cached/uncached equivalence, batch isolation, v-target/DDIM compatibility, full-size forward, cold-start optimizer updates",
+    "hardware_scope": "CPU only; full-size forward B=1; backward/optimizer tests use tiny architecture",
+    "batch128_gpu_fit_verified": false,
+    "training_quality_verified": false
+  },
+  "launch": {
+    "submitted": false,
+    "training_budget": null,
+    "note": "Architecture preparation only. A future run needs its own confirmed budget/run ID, full epoch validation, checkpoint retention and GPU preflight."
+  },
+  "code_sha256": {
+    "raw_mmdit_model.py": "8d8804109e0e3a43c247f32d43526a4f380a0ed279b0565a7c1ec438daa5297a",
+    "raw_mmdit_objective.py": "4572f3e9ff97c43c878739ab8607b4f163dbffabc9d22336302a7bb52eb0b271",
+    "raw_mmdit_data.py": "e1783ee33e5bc83eb410f7071dbeac4fec34b857e676341ca7b188d314d31084",
+    "test_raw_mmdit.py": "6307f60364c2dd58d2d56770812041cec7983c1a7b72b0bca0cdaf10b779e309",
+    "dit_model.py": "655b32f16d5160e1d0e4a8bcff696fe79e694b0f60f6cb6ded2bf106bcfc8739",
+    "dit_timegeo_model.py": "031cb35c3ec6ee908b9300a6a39b24efc821682dd418b89edadc8267b2f62f9e",
+    "dit_timegeo_objectives.py": "f417a1fd7bcb9440f7497532e357d9fe5387dd3b8f723c3e9aa53a0903c38eb1",
+    "dit_objectives.py": "a58bf30bddaa7189b083b6b216321608fd15281bc14ca980e4b12d5f5eae223a",
+    "vscore_diffusion.py": "6f64353ae60a846fd733b38ba564265d70ef589127335545a4ff1c3f402a7523",
+    "prithvi_input_data.py": "a05f1e8adb509fd1504ab03e62a9afcb7bd75b6381594ca5e9602c706d3ab89d",
+    "timegeo_data.py": "5278730e27ae32cbf36c698ee88dc1f040278bfeb2fd7c10f4cfa2e40181b377",
+    "center_data.py": "616fa99a07badff33638be2bb755d3b1ded40885aba606363f980614f56677d5",
+    "data.py": "5a9aabd69a952d73082164cce6c7c33f73344bba9bf837372d7e0a947518cbdc"
+  }
+}

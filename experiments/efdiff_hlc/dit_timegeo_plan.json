@@ -1,0 +1,74 @@
+{
+  "variants": [
+    "flow",
+    "epsilon"
+  ],
+  "epochs": 2,
+  "seed": 20260927,
+  "learning_rate": 2e-05,
+  "min_learning_rate": 1e-06,
+  "checkpoint_every": 500,
+  "segment_seconds": 5400,
+  "validation_records": 141711,
+  "selection_nfe": 50,
+  "evaluation_nfe": [
+    50,
+    20,
+    10,
+    5
+  ],
+  "full_train_records": 2608772,
+  "batch_size": 128,
+  "gradient_accumulation": 1,
+  "ema_decay": 0.9998000100000001,
+  "warmup_records": 320000,
+  "ema_start_records": 320000,
+  "architecture": {
+    "image_size": 224,
+    "patch_size": 16,
+    "hidden_dim": 1024,
+    "depth": 8,
+    "heads": 16,
+    "context_dim": 1024,
+    "mlp_ratio": 4,
+    "gradient_checkpointing": false,
+    "ffn_type": "swiglu",
+    "ffn_multiple": 64,
+    "qk_norm": true,
+    "rope_2d": true,
+    "condition_dim": 128,
+    "month_harmonics": 3,
+    "geo_bands": 3
+  },
+  "forward_process": {
+    "flow": "x_t=(1-t)*noise+t*x0; t uniform[0,1); independent noise/data pairing; target x0-noise",
+    "epsilon": "VP Gaussian; 1000 linear beta 1e-6..0.01; uniform discrete timesteps; target noise"
+  },
+  "sampler": {
+    "flow": "Euler from t=0 to t=1, exact NFE; final residual clipped to [-1,1] only",
+    "epsilon": "Deterministic DDIM, exact NFE; x0 clip and consistent epsilon recomputation"
+  },
+  "loss": "Both valid-mask per-record MSE, then equal average across records",
+  "spatial_protocol": "efdiff-hlc-fixed-center224-no-flip-20260930-v1",
+  "run_id": "hlc-dit-timegeo-center-b128-epoch2-20261004-v1",
+  "budget_confirmed": true,
+  "launch_status": "implementation_prepared_not_launched",
+  "budget_basis": "Retain latest requested 2 epochs and batch128; no cloud launch performed by implementation work.",
+  "initialization": "Fresh TimeGeoDiT; frozen pretrained Prithvi; historical checkpoints are not compatible.",
+  "metadata_path": "output/efdiff_hlc_dit_timegeo_20261004/metadata",
+  "normalization_path": "output/efdiff_hlc_dit_timegeo_20261004/normalization.json",
+  "test_used": false,
+  "updates_per_model": 40764,
+  "record_presentations_per_model": 5217544,
+  "tail_records_per_epoch": 4,
+  "gpu_constraint": "A100 only; H200 remains cancelled. New architecture has not been profiled on A100.",
+  "conditioning": {
+    "protocol": "hlc-center224-calendar-geo-adaln-20261004-v1",
+    "calendar": "Target LST month, 3 periodic harmonics; not HLS acquisition month or sequence position.",
+    "geolocation": "Actual crop center WGS84 latitude/longitude -> unit sphere xyz -> xyz plus sin/cos at pi*[1,2,4].",
+    "fusion": "Separate 128-dimensional calendar/geography MLPs, concatenate with diffusion-time embedding, MLP to1024.",
+    "injection": "Every block self-attention/cross-attention/SwiGLU adaLN and final adaLN; zero-initialized gates/head retained.",
+    "orthogonality": "Disjoint concatenated input blocks; no post-fusion orthogonality constraint.",
+    "hls": "Existing Prithvi cross-attention only; direct HLS concat not added in this revision."
+  }
+}

@@ -1,0 +1,2439 @@
+{
+  "plan_version": "lst-tables-v1-20260927",
+  "status": "static_plan_only",
+  "formal_training_jobs_configured": 166,
+  "training_jobs_started": 0,
+  "record_presentations_if_all_configured_jobs_run": 181749250,
+  "stages": [
+    {
+      "id": "P1",
+      "title": "共同离散基线",
+      "jobs": 16
+    },
+    {
+      "id": "P2",
+      "title": "代表模型的表示消融与 SD 迁移",
+      "jobs": 20
+    },
+    {
+      "id": "P3",
+      "title": "混合污染训练",
+      "jobs": 10
+    },
+    {
+      "id": "P4",
+      "title": "地理与自然预训练模型扩展",
+      "jobs": 24
+    },
+    {
+      "id": "P5",
+      "title": "均值侧信息对照",
+      "jobs": 12
+    },
+    {
+      "id": "P6",
+      "title": "率失真",
+      "jobs": 16
+    },
+    {
+      "id": "P7",
+      "title": "独立 MAE 整块补全",
+      "jobs": 12
+    },
+    {
+      "id": "P8",
+      "title": "预先指定的多种子复验",
+      "jobs": 56
+    }
+  ],
+  "jobs": [
+    {
+      "job_id": "vq_R_clean_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "T2",
+        "T3",
+        "T6"
+      ],
+      "config": "configs/vq_R_clean_seed17.json",
+      "config_sha256": "85c746aa2ede9d488732de8b9418b35580e1e9b4bbc60e650608e9f79ff3bdf8",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_pixel10_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2",
+        "T3",
+        "T6"
+      ],
+      "config": "configs/vq_R_pixel10_seed17.json",
+      "config_sha256": "7c060dff18c483fb8a6c4d87b9c1244995f92843708c686de134744a32ec3043",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_clean_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "T2",
+        "T3",
+        "T6"
+      ],
+      "config": "configs/vq_C_clean_seed17.json",
+      "config_sha256": "66b10ade53e56773adf09223fee2f1624a7ebed30ff51a3977b3e0e603aa89ac",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_pixel10_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2",
+        "T3",
+        "T6"
+      ],
+      "config": "configs/vq_C_pixel10_seed17.json",
+      "config_sha256": "19ac7ecfd5c006f5923094d253367b6b9389f559f530a7a1e9663a6c948d0bec",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_clean_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "T2",
+        "T3",
+        "T6"
+      ],
+      "config": "configs/fsq_R_clean_seed17.json",
+      "config_sha256": "730f96cd87b6787e6af861725cac7b66a65c1d6d37a8681f72d1142fee8ecce3",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2",
+        "T3",
+        "T6"
+      ],
+      "config": "configs/fsq_R_pixel10_seed17.json",
+      "config_sha256": "c3cd8a15bae647253d3d0fe701b2ecaa4163fa80415e9c039e39095be90fa337",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_clean_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "T2",
+        "T3",
+        "T6"
+      ],
+      "config": "configs/fsq_C_clean_seed17.json",
+      "config_sha256": "5355dee26d3154246f294be29d2670aaf3d7026d1beb8b52093a01508791e44e",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2",
+        "T3",
+        "T6"
+      ],
+      "config": "configs/fsq_C_pixel10_seed17.json",
+      "config_sha256": "2369507e9ff5bbef85aef47ed844f109c36263a6b5e751641dba2cdde0f97785",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_clean_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2"
+      ],
+      "config": "configs/lfq_R_clean_seed17.json",
+      "config_sha256": "1ccc75dae3408e4b3e1cfce666a27b0139f6da1c57885e2ff21a1e2cca98e2b0",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_pixel10_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2"
+      ],
+      "config": "configs/lfq_R_pixel10_seed17.json",
+      "config_sha256": "144ffe88c257b510260e44d5efe0d9b4de51247f466f97717326dc3ec1d64771",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_clean_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2"
+      ],
+      "config": "configs/lfq_C_clean_seed17.json",
+      "config_sha256": "4343f4ce20b65cb40213cc0a4ca7d5a3a5af41550b4a07b7c71a7ffcd28200be",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_pixel10_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2"
+      ],
+      "config": "configs/lfq_C_pixel10_seed17.json",
+      "config_sha256": "de1e3a4e49cc465f68bedc74e09bac4cb7f2a79649a2fc803736d042769c60d0",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_clean_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2"
+      ],
+      "config": "configs/bsq_R_clean_seed17.json",
+      "config_sha256": "e5a45dde9f3133f9e989fb3538d6d82f2db47a30b15d9d812a89565f1a029190",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_pixel10_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2"
+      ],
+      "config": "configs/bsq_R_pixel10_seed17.json",
+      "config_sha256": "825625f9818897dc99ed2f0706d0e305dd3f99f4c0305d2b89344f17b50ae685",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_clean_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2"
+      ],
+      "config": "configs/bsq_C_clean_seed17.json",
+      "config_sha256": "6eb121c88b2b0c86e51f405b0fbb9abc7e607f74c5778183673b4f8e3e9b93f9",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_pixel10_seed17",
+      "stage": "P1",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T2"
+      ],
+      "config": "configs/bsq_C_pixel10_seed17.json",
+      "config_sha256": "7bd574045ec3930b06910a90cc533950cef5c00e543d02acddc93551937514ec",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_G_clean_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "S2",
+        "T2",
+        "T3"
+      ],
+      "config": "configs/vq_G_clean_seed17.json",
+      "config_sha256": "319296e1cd1e1a391512a5b7c74ddc752765fdb6089acd98cc655f8a7d2da2d3",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_G_pixel10_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "S2",
+        "T2",
+        "T3"
+      ],
+      "config": "configs/vq_G_pixel10_seed17.json",
+      "config_sha256": "6a6bd612177dd7edd978366eb6808b234094402597a333b1a7592951f36d8349",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_power_clean_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T3"
+      ],
+      "config": "configs/vq_C_power_clean_seed17.json",
+      "config_sha256": "fcb1888c6dbeb0c1847271fc807c238bcd6cc8ff082dbbcbc73bb2d3deef2567",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_power_pixel10_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "S4",
+        "T3"
+      ],
+      "config": "configs/vq_C_power_pixel10_seed17.json",
+      "config_sha256": "8fce6d143090c7bd7b4befab19925018de94487c823b1f3ad02480b9c741efa9",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_asinh_clean_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T3"
+      ],
+      "config": "configs/vq_C_asinh_clean_seed17.json",
+      "config_sha256": "d143511d63fb07c9707c420f1bf4ba53a7faaaa1d6dc70bc0c0e1cbf99d81161",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_asinh_pixel10_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "S4",
+        "T3"
+      ],
+      "config": "configs/vq_C_asinh_pixel10_seed17.json",
+      "config_sha256": "b246077557784845868da57d89a9115125385c861d83a49b481502b664602e8f",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_G_clean_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "S2",
+        "T2",
+        "T3"
+      ],
+      "config": "configs/fsq_G_clean_seed17.json",
+      "config_sha256": "7116008c498c8b728a6f7f5edaac15f487fffea6b01938d45850079b7b9dfbe8",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_G_pixel10_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "S2",
+        "T2",
+        "T3"
+      ],
+      "config": "configs/fsq_G_pixel10_seed17.json",
+      "config_sha256": "cde315c157e5d9abf5c86715e2c3efc1b2ecf3b8ee4fc11d54f6106ab5b207e6",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_power_clean_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T3"
+      ],
+      "config": "configs/fsq_C_power_clean_seed17.json",
+      "config_sha256": "6bdbab462ad7a2e6d45b9ae683bc1eba04da7268829b8c56639461c41f366b8c",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_power_pixel10_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "S4",
+        "T3"
+      ],
+      "config": "configs/fsq_C_power_pixel10_seed17.json",
+      "config_sha256": "7f5dbf6616de30856d5571bfc914326a8f7424d92d80f09c3741a4c8976450cd",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_asinh_clean_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T3"
+      ],
+      "config": "configs/fsq_C_asinh_clean_seed17.json",
+      "config_sha256": "4e61edeaa5e67000c6779edfd34744e09e06595b01871809b71114db4c96e97d",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_asinh_pixel10_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "S4",
+        "T3"
+      ],
+      "config": "configs/fsq_C_asinh_pixel10_seed17.json",
+      "config_sha256": "c1061b3862a30ba10873d6c2fdc3eb99594821fd5db01eba42cc90f330dfd1e3",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sd_G_clean_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T2",
+        "T3",
+        "T4"
+      ],
+      "config": "configs/sd_G_clean_seed17.json",
+      "config_sha256": "dbde2ce2ca668be55e904c2635ceb68f435e8bf84b455ed7b79d0dc6b245f046",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sd_G_pixel10_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T2",
+        "T3",
+        "T4"
+      ],
+      "config": "configs/sd_G_pixel10_seed17.json",
+      "config_sha256": "ccf1c3a9af3373e3d9900e2db8368933de5149fa7679d7f830fe1d2ee9c3f270",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sd_C_clean_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T2",
+        "T3",
+        "T4"
+      ],
+      "config": "configs/sd_C_clean_seed17.json",
+      "config_sha256": "affc6ae3d7247b4018153a35ebe20700e5c0b6addbae355ef6eda0599c5f33a4",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sd_C_pixel10_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T2",
+        "T3",
+        "T4"
+      ],
+      "config": "configs/sd_C_pixel10_seed17.json",
+      "config_sha256": "c8d896522ee2980642588b847b4e33874d0dafa7e0ac18fba93ab1c7db2dca26",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sd_C_power_clean_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T3",
+        "T4"
+      ],
+      "config": "configs/sd_C_power_clean_seed17.json",
+      "config_sha256": "cdd71e1376e2fb3bd141b627e50cfe8c4fec12aebfd93671e0f767b324ca614c",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sd_C_power_pixel10_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T3",
+        "T4"
+      ],
+      "config": "configs/sd_C_power_pixel10_seed17.json",
+      "config_sha256": "4120edc8f468da9ab26e1b5f2bd871cae5b39d9df6c86d260d9151cfcd215c46",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sd_C_asinh_clean_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T3",
+        "T4"
+      ],
+      "config": "configs/sd_C_asinh_clean_seed17.json",
+      "config_sha256": "30199a7fdf825bd807120afcf6a28c3732ba5780d83af571ad6ec29a2a68d295",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sd_C_asinh_pixel10_seed17",
+      "stage": "P2",
+      "tables": [
+        "S1",
+        "T3",
+        "T4"
+      ],
+      "config": "configs/sd_C_asinh_pixel10_seed17.json",
+      "config_sha256": "f24ee28d9bc93b42c85d43b25d795d293c8e8939351730a9551ddda7c9ecb7ce",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_mixed_seed17",
+      "stage": "P3",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T1",
+        "T2",
+        "T5",
+        "T6"
+      ],
+      "config": "configs/vq_R_mixed_seed17.json",
+      "config_sha256": "87c11984f3d0d38bc8ed7be37bfc20f9825b5fef6853c2976f8cff29b6ff6bf7",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_mixed_seed17",
+      "stage": "P3",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T1",
+        "T2",
+        "T5",
+        "T6"
+      ],
+      "config": "configs/vq_C_mixed_seed17.json",
+      "config_sha256": "8d4cf409e2f0559dabc87b2198e0e78780a3915679b7cc2330bac29d02462899",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_mixed_seed17",
+      "stage": "P3",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T1",
+        "T2",
+        "T5",
+        "T6"
+      ],
+      "config": "configs/fsq_R_mixed_seed17.json",
+      "config_sha256": "0d99fba3a25f1b79d8b1f88b426270256f17b3f8ec012b9bed28182bff92b4dc",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_mixed_seed17",
+      "stage": "P3",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T1",
+        "T2",
+        "T5",
+        "T6"
+      ],
+      "config": "configs/fsq_C_mixed_seed17.json",
+      "config_sha256": "e083b7b1fe9b5c3b2cda5d0a4a55b61e30da8b3b64b9e2b71668273057e07abe",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_mixed_seed17",
+      "stage": "P3",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T1",
+        "T2",
+        "T5"
+      ],
+      "config": "configs/lfq_R_mixed_seed17.json",
+      "config_sha256": "f75c6c68724092c5c8115910ef26bda81a35016ff30079293bcfb8a48cdf19c2",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_mixed_seed17",
+      "stage": "P3",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T1",
+        "T2",
+        "T5"
+      ],
+      "config": "configs/lfq_C_mixed_seed17.json",
+      "config_sha256": "f54c165b9b277ccaea574c61a567ab77e52fa6488e90517de411fe6e35ee3da2",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_mixed_seed17",
+      "stage": "P3",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T1",
+        "T2",
+        "T5"
+      ],
+      "config": "configs/bsq_R_mixed_seed17.json",
+      "config_sha256": "a3f607bf513d73dcac5820c257f1339b3ae589d92bc9559e39e1b3fc51be5ddc",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_mixed_seed17",
+      "stage": "P3",
+      "tables": [
+        "S1",
+        "S2",
+        "S4",
+        "T1",
+        "T2",
+        "T5"
+      ],
+      "config": "configs/bsq_C_mixed_seed17.json",
+      "config_sha256": "038842a891450062749815703a4bd33aefd10b5b2e41ee4deb4bee5354887a0e",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sd_G_mixed_seed17",
+      "stage": "P3",
+      "tables": [
+        "S1",
+        "T1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/sd_G_mixed_seed17.json",
+      "config_sha256": "8cde862f0150beb0cff6451d85248d1324be6fa5b052298c52baaea9f3a0144c",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sd_C_mixed_seed17",
+      "stage": "P3",
+      "tables": [
+        "S1",
+        "T1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/sd_C_mixed_seed17.json",
+      "config_sha256": "e3dc1e111c3a237e8dd43f9a2816afcf5c1d7a5a6ae8f8b16bae2aa651f88731",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "eo_vae_R_clean_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2"
+      ],
+      "config": "configs/eo_vae_R_clean_seed17.json",
+      "config_sha256": "2578ca996d5929d63ff662a8f5dcf021917960014c98372866c1e6960bc5a469",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "eo_vae_R_pixel10_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2"
+      ],
+      "config": "configs/eo_vae_R_pixel10_seed17.json",
+      "config_sha256": "2088daf2f2662f7fec4684c1310866547a95bdd6afc0274c25017c7f806c7c1e",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "eo_vae_R_mixed_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T1",
+        "T2"
+      ],
+      "config": "configs/eo_vae_R_mixed_seed17.json",
+      "config_sha256": "3e774f5e1bb512fb12034537d6c6f0342645fe7a7fcab94a24748716e46b1478",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "eo_vae_C_clean_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2"
+      ],
+      "config": "configs/eo_vae_C_clean_seed17.json",
+      "config_sha256": "8a76463609f9fd64e3c4c860acf5c26d8d4425d8b56f71ad3e0f3cf9285ceba1",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "eo_vae_C_pixel10_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2"
+      ],
+      "config": "configs/eo_vae_C_pixel10_seed17.json",
+      "config_sha256": "4a5496a4c03337f669f4ccdee272f2754d6b8483fae761d4b75fe990b971e351",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "eo_vae_C_mixed_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T1",
+        "T2"
+      ],
+      "config": "configs/eo_vae_C_mixed_seed17.json",
+      "config_sha256": "09553edd9ba65684aa88145c63a6515af41d192741bbccc436d945776763988e",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "terramind_fsq_R_clean_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2"
+      ],
+      "config": "configs/terramind_fsq_R_clean_seed17.json",
+      "config_sha256": "03ac179b40e86d369307a92553efcfc21b2e1e14bc1f3ac8ccc2a29f44188a04",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "terramind_fsq_R_pixel10_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2"
+      ],
+      "config": "configs/terramind_fsq_R_pixel10_seed17.json",
+      "config_sha256": "8cd8821f76fa168a4e0eb1a57c6b50f04cc62db425de66029671df80848ede1d",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "terramind_fsq_R_mixed_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T1",
+        "T2"
+      ],
+      "config": "configs/terramind_fsq_R_mixed_seed17.json",
+      "config_sha256": "c7c782b0249fdf29d9a46ae3051b38873a7b480891fb71dd7e8f1df133f0f1e8",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "terramind_fsq_C_clean_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2"
+      ],
+      "config": "configs/terramind_fsq_C_clean_seed17.json",
+      "config_sha256": "8e286d05a5b264ab40292c94961fa6364c10ac0be4d0e5ef345b88d8230fb009",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "terramind_fsq_C_pixel10_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2"
+      ],
+      "config": "configs/terramind_fsq_C_pixel10_seed17.json",
+      "config_sha256": "c8203df069c4098f776221bfd4c67f8ee948ab5c5e256810f65fbd4e927c6d27",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "terramind_fsq_C_mixed_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T1",
+        "T2"
+      ],
+      "config": "configs/terramind_fsq_C_mixed_seed17.json",
+      "config_sha256": "a1900be2edfd4c13e5c966f7d307c8ddb40b055c924ce1d36a1885363eb6c029",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sdxl_G_clean_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/sdxl_G_clean_seed17.json",
+      "config_sha256": "2b82fc5a4b1214454521441788c4a3436af341b74e9d34f6121cf04056d4eb11",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sdxl_G_pixel10_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/sdxl_G_pixel10_seed17.json",
+      "config_sha256": "e8fed28bd13b548ba3abd90a87ca6d65524790c516a55c3b05daace7ade59c0f",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sdxl_G_mixed_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/sdxl_G_mixed_seed17.json",
+      "config_sha256": "5147979fb6ea3b1d8a30c10e5814186b8886c050663851b06c1e1f14301a71a5",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sdxl_C_clean_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/sdxl_C_clean_seed17.json",
+      "config_sha256": "ce1f6e0cbe2e18f58dcc0395c5d05f1b38efaf7c2f308e1a27c00d51c843f3ee",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sdxl_C_pixel10_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/sdxl_C_pixel10_seed17.json",
+      "config_sha256": "ec3d77c6bba2cdc6fdd3f1d4168d730981821ecfc4e9a7e1d53a237d23207d4a",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "sdxl_C_mixed_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/sdxl_C_mixed_seed17.json",
+      "config_sha256": "db6245606238f17c84463029b637535b0869c6a98dbaf0c1713c84b8bf31236c",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "flux1_G_clean_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/flux1_G_clean_seed17.json",
+      "config_sha256": "828c5f0d99e516b186a55aa7d7c20445731d94dd92a5b8fb983af0d83cfd2f55",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "flux1_G_pixel10_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/flux1_G_pixel10_seed17.json",
+      "config_sha256": "9c860c7fc1d0fadc2fd9c5e0a552642499b87cfabdc10f58f9e19e854695b3d9",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "flux1_G_mixed_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/flux1_G_mixed_seed17.json",
+      "config_sha256": "8c6a25f2943e573dd4df20f8570eda2939e1e95a3fa5a6d914e694b6edd4cafb",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "flux1_C_clean_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/flux1_C_clean_seed17.json",
+      "config_sha256": "fcd028026464ac24fa875701b71163b3333f4b1b552723221bdbfe92ecadfc02",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "flux1_C_pixel10_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/flux1_C_pixel10_seed17.json",
+      "config_sha256": "3eeb753ca7b02767a0427744232dd5bb595572f573b327bcc4e6339efcc53299",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "flux1_C_mixed_seed17",
+      "stage": "P4",
+      "tables": [
+        "S1",
+        "T1",
+        "T2",
+        "T4"
+      ],
+      "config": "configs/flux1_C_mixed_seed17.json",
+      "config_sha256": "30ff30e79db6de6494bf8db617488fa21a3cf9a73fbea4f4cee671c302b1a635",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_clean_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/vq_R_clean_seed17_visible.json",
+      "config_sha256": "88ffb3836b7341ce24efaf99d0bb923608c37896f9edc021d64ae3b81f2db59d",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_pixel10_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/vq_R_pixel10_seed17_visible.json",
+      "config_sha256": "948ecb463d04970d5798f63a0c0aec3d4bcd9786f6e8ca92972ee2ec108b010b",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_mixed_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/vq_R_mixed_seed17_visible.json",
+      "config_sha256": "085a8b1513e9e373dc4d7742958318b706f6fe65f4f954c55e625992502657c5",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_clean_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/vq_C_clean_seed17_visible.json",
+      "config_sha256": "6006c4a5fa3c71d176f739764c7aaebae0531eaa4494d1f64131307b67bf9638",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_pixel10_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/vq_C_pixel10_seed17_visible.json",
+      "config_sha256": "bb28b4a18b00464f4d3a53d932dcec2cd278b8f4a2884e3ae9c47dea9d4a2be2",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_mixed_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/vq_C_mixed_seed17_visible.json",
+      "config_sha256": "f771c43fa1433f97312ef059acc5e587263251bb646d30bc4e0f215034ae2c80",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_clean_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/fsq_R_clean_seed17_visible.json",
+      "config_sha256": "a631a3597d8a71c508dcc8e8705af4ed38743fdc8e92c74ed6390c05cdb1e689",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/fsq_R_pixel10_seed17_visible.json",
+      "config_sha256": "212895dcd966af899a528c3b990c9ef51f0c11b3905a2e6b00b79ac022290a12",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_mixed_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/fsq_R_mixed_seed17_visible.json",
+      "config_sha256": "91ba429e873bf90e7f248ec6d230d8c6b5c30d34b3dd12d6c9bc80305113c63b",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_clean_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/fsq_C_clean_seed17_visible.json",
+      "config_sha256": "6bf8cd8ed652ce5697ba222df8376f8e4a87a8ea80e15247e26184c2ca449fc7",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/fsq_C_pixel10_seed17_visible.json",
+      "config_sha256": "111d960b08449ddeca361ade812fbdc84865cd371a2ab197153b7176b8092026",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_mixed_seed17_visible",
+      "stage": "P5",
+      "tables": [
+        "S1",
+        "T6"
+      ],
+      "config": "configs/fsq_C_mixed_seed17_visible.json",
+      "config_sha256": "af6cf8b23fc32577a3b38df505caaa5fa6ac8509c36b56ec2d212570a4eb54f3",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_mixed_seed17_rate8",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/vq_R_mixed_seed17_rate8.json",
+      "config_sha256": "e275576e642114f7b86dddc3e58c1548d00796019a01d0ef377b38d7dc3ab1a1",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_mixed_seed17_rate8",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/vq_C_mixed_seed17_rate8.json",
+      "config_sha256": "ddb901d78d755385627d7178ff100ddaec08c9b383519eb7974f320e18f1a67b",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_mixed_seed17_rate8",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/fsq_R_mixed_seed17_rate8.json",
+      "config_sha256": "704add73e24d33190b881b2e0bf10b8b9809edd11abeebe439c958f8df5ddb5d",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_mixed_seed17_rate8",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/fsq_C_mixed_seed17_rate8.json",
+      "config_sha256": "b70353374b6e39079ee7484f9f8952383505d466c6bcf09b90843b30a1a8dd19",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_mixed_seed17_rate8",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/lfq_R_mixed_seed17_rate8.json",
+      "config_sha256": "8cbe8da7e12553bb3911e4cb2e7700278424d726aa6be4dc5698e5b96d694f4a",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_mixed_seed17_rate8",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/lfq_C_mixed_seed17_rate8.json",
+      "config_sha256": "897b91105502e051f395c2416435c62a6324d33b9659b9b56efa6c22171adabb",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_mixed_seed17_rate8",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/bsq_R_mixed_seed17_rate8.json",
+      "config_sha256": "7ef3830cf39b7d64065b04f3ff97c532e3a4c22408f0cf7a0b2a96691342aa97",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_mixed_seed17_rate8",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/bsq_C_mixed_seed17_rate8.json",
+      "config_sha256": "7d054436dbee5e0abcbf8f78ee9488c65bc98380448045965fcb8754bce734a3",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_mixed_seed17_rate12",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/vq_R_mixed_seed17_rate12.json",
+      "config_sha256": "a08d051b5dd782c4a202be62c8ab40ae69abbcadfcde4141cd7144343453f7e6",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_mixed_seed17_rate12",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/vq_C_mixed_seed17_rate12.json",
+      "config_sha256": "f7a26d28adb8142e1fa441af1fd796b60de3e3bfcdd5fe34c7586cd6c08521c4",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_mixed_seed17_rate12",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/fsq_R_mixed_seed17_rate12.json",
+      "config_sha256": "bfcf3e50fb321ebcfd1ecdb7e8dbea689abf09439dcf33eea6f90db018c00c87",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_mixed_seed17_rate12",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/fsq_C_mixed_seed17_rate12.json",
+      "config_sha256": "671b2eb17781e63a2ad2e03bfa61f80bbcff82dd987c4300bfe4e806ac6777cb",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_mixed_seed17_rate12",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/lfq_R_mixed_seed17_rate12.json",
+      "config_sha256": "973902047ad5f5bd105185b9df265b1151790b5524bee1107cf41100f52089e1",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_mixed_seed17_rate12",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/lfq_C_mixed_seed17_rate12.json",
+      "config_sha256": "ce6174f802065a001d53141e9f8815e387f554f171a2565c5981c80f01794249",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_mixed_seed17_rate12",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/bsq_R_mixed_seed17_rate12.json",
+      "config_sha256": "b61b1dbf5f7514195582201a7fd55d70c9faca5d81d6be2222ab6432fd14afb2",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_mixed_seed17_rate12",
+      "stage": "P6",
+      "tables": [
+        "S1",
+        "T5"
+      ],
+      "config": "configs/bsq_C_mixed_seed17_rate12.json",
+      "config_sha256": "0b6eff0ce978f2a09b6142f7a0bbf72e08a5c2945986986687dd482be9dc18c1",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "prithvi_mae_R_clean_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/prithvi_mae_R_clean_seed17.json",
+      "config_sha256": "3bc946b7c9290037cd8f8e66960b050790ef53945a5ed6fe9a4b9d378cda3078",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "prithvi_mae_R_patch16_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/prithvi_mae_R_patch16_seed17.json",
+      "config_sha256": "8a68c0bf177190682e00c19117b6cdfe66ee7171bbcd813690155498477afe91",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "prithvi_mae_C_clean_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/prithvi_mae_C_clean_seed17.json",
+      "config_sha256": "8a1d0fa80d10e1fd9f03cb25594d790d2de4466d6425f91b852fade96dc3e8c1",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "prithvi_mae_C_patch16_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/prithvi_mae_C_patch16_seed17.json",
+      "config_sha256": "c5c9f9071f6af9135c230f4091ee6826c2b8783c85c1df3ac419111b2b73830b",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "satmae_pp_R_clean_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/satmae_pp_R_clean_seed17.json",
+      "config_sha256": "b56d3ab69870ef3bc93d7c379bfc9717655ca9d3fbdc447f850652fdf03ea82c",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "satmae_pp_R_patch16_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/satmae_pp_R_patch16_seed17.json",
+      "config_sha256": "dab46e1ee6256270bcbf1b7da202721ad5e9286a64641ce284e776c07a99f394",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "satmae_pp_C_clean_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/satmae_pp_C_clean_seed17.json",
+      "config_sha256": "31a19a879c2f5db63b220831f757f22b3a589bb220e5efeef8049097f02cdaae",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "satmae_pp_C_patch16_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/satmae_pp_C_patch16_seed17.json",
+      "config_sha256": "40cf443a6b35aab582a279a852c5f0c73e368fdbc52dba65c0e3fd3989b83a13",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_patch16_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/vq_R_patch16_seed17.json",
+      "config_sha256": "a7c1fd3675fabc8cc81bf36e9aaa62d707ef01b61c157c239105743671c9f8af",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_patch16_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/vq_C_patch16_seed17.json",
+      "config_sha256": "39695cd2f844d7cb9f60a5da845a8ec54ef643148b7c2f503d0161374d917121",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_patch16_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/fsq_R_patch16_seed17.json",
+      "config_sha256": "01bb0126e956023638a5429fb8e7a53d76c61cfcf1c7ea7b490251a122ece1ce",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_patch16_seed17",
+      "stage": "P7",
+      "tables": [
+        "S1",
+        "S3"
+      ],
+      "config": "configs/fsq_C_patch16_seed17.json",
+      "config_sha256": "02614f182174794d069e7819b8ab6c2541dedbe1b7078fa2bf2ce791e9b7ebbb",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_clean_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_R_clean_seed23.json",
+      "config_sha256": "0f3cbd3c2204608226a8b7368538606ff02390f7f362f94c94a2a97059e1a6b1",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_clean_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_R_clean_seed42.json",
+      "config_sha256": "b0cdf494ae48a9b256098dd3934eca8adcd88c699527476dff72594eef1dcf9c",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_R_pixel10_seed23.json",
+      "config_sha256": "f20a59180e6a87f58ec17c96e42c12b9c9f3b766f7d925e3caca6807598ab76e",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_R_pixel10_seed42.json",
+      "config_sha256": "29e907f1bbcfb78aff8c695b8daf32536f2859266086f578ac62f0109f03197b",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_mixed_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_R_mixed_seed23.json",
+      "config_sha256": "69057bbaf604ad6be7aea06f0fb054948bc4e733acd817726082b60a5fa7fb4e",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_R_mixed_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_R_mixed_seed42.json",
+      "config_sha256": "ad0e8edfb507d18f742d8377a42a03ff340587ea64c976447211aa515812328d",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_clean_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_C_clean_seed23.json",
+      "config_sha256": "c707de02c12e1a804ace2dad837faa92c87b5d6d0c75f8e47a60f055062c6da9",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_clean_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_C_clean_seed42.json",
+      "config_sha256": "d0016ca40188a0854278ccf79ccb5b2dbd42320665a3543bb05b0006f241a202",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_C_pixel10_seed23.json",
+      "config_sha256": "4b3e22715e7259b2871f14b630eeafac1d05cbf2ef192eb84286523ba475405c",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_C_pixel10_seed42.json",
+      "config_sha256": "2ff184ea6584bf0643f691baa6d62cfd52cd511fad149c35b74f9d0bbf0bd664",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_mixed_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_C_mixed_seed23.json",
+      "config_sha256": "6078fa824ac5bd69d3290494b6415678daa792298578e1a6b625773d2a7a519f",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_mixed_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_C_mixed_seed42.json",
+      "config_sha256": "676737e1e8c81efbf5ea92208325cad442d00183b014b2f92ba3bc6f3e581722",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_clean_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_R_clean_seed23.json",
+      "config_sha256": "234258adb3e7cfe391fc47535965578dfdec3c51251113243b55ff77a5d36e77",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_clean_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_R_clean_seed42.json",
+      "config_sha256": "b00072442fda049d574e0f956e391d20e0c1c2e49032211038ed477c00d458ef",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_R_pixel10_seed23.json",
+      "config_sha256": "a7a2b29744af3fe0d83bb5c6990c1b445c4a55e0cc0c376f7392794b799da946",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_R_pixel10_seed42.json",
+      "config_sha256": "15c2b147828411050321335e1569521274384d652f6f79e56d2a2f286c5162e6",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_mixed_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_R_mixed_seed23.json",
+      "config_sha256": "aea3a05a76ec40017ee36c30521bc0fd51a5a8cb311380c4b14f92a2deaec0fb",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_R_mixed_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_R_mixed_seed42.json",
+      "config_sha256": "7fba353c6ff28be68a7d9bb6901841b236cd19174013882d841a9496ad69dc5b",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_clean_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_C_clean_seed23.json",
+      "config_sha256": "eaf74fb654815eb07cfe9bb8242be9c3a496fc8ab72f7075a29dbb2375eee7be",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_clean_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_C_clean_seed42.json",
+      "config_sha256": "46e5e516a19f4f4b8b54189410e664401ec00b6fc4da47cfac2f5569a17a8750",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_C_pixel10_seed23.json",
+      "config_sha256": "1e301eb6bc32ace9059f3143e4650edf7327d9fe1d449d18aa3e9f5a641f98c5",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_C_pixel10_seed42.json",
+      "config_sha256": "970cf2afe1565647fa133da15d1a9abba79d55f965fc94196e7b1a11560cbd34",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_mixed_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_C_mixed_seed23.json",
+      "config_sha256": "460313abbed2d33545db1d43c1efaec0722d380c5925db3834dea33685406b63",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_mixed_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_C_mixed_seed42.json",
+      "config_sha256": "7890a21bb6ca57fc4cc5eaf8a68509d53b8cad013b6104fe15ec92c591a8a349",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_clean_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_R_clean_seed23.json",
+      "config_sha256": "ec2c16168026503a9e9bfd96c52460b43edad28ed055c89f182f55001f5bc784",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_clean_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_R_clean_seed42.json",
+      "config_sha256": "2355326711a64905c65480486d0afc2e234ff56edf728ae990497f316714496e",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_R_pixel10_seed23.json",
+      "config_sha256": "29d93292886f61359cace0a13a00a2a09c9ea1fd2211e0c25121eaaac70d7360",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_R_pixel10_seed42.json",
+      "config_sha256": "6fa98a7f5b2728f00f81d1ba2e433d8120eb14eff06605b030555f2131e82dc7",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_mixed_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_R_mixed_seed23.json",
+      "config_sha256": "e865a19020ed28fe8aeee34beca61a001b9464cce0ca299e540f62bca6d13623",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_R_mixed_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_R_mixed_seed42.json",
+      "config_sha256": "7620b0d1141aacf69d9e7c4b88ba5d1a4528343340df5badab38fab6ce94a836",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_clean_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_C_clean_seed23.json",
+      "config_sha256": "206e38fe701ff195e4fcaf026bce75bf7bcc8bea2eba1b8e6aab127296396d02",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_clean_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_C_clean_seed42.json",
+      "config_sha256": "4f4d41887e0bf4e24cbd3333be6dd6a80078fdb825aea10555192efd9a77fce2",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_C_pixel10_seed23.json",
+      "config_sha256": "eb7eb09c5fbf9332e896e5dce9c9094a4417a5e16779780b28d8262ac0c26321",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_C_pixel10_seed42.json",
+      "config_sha256": "d73b2c2c10dfa47f3f60b44bbc1b1930636bd3334b8cee5dc14d89a0646d2602",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_mixed_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_C_mixed_seed23.json",
+      "config_sha256": "24cbea44e108c3bb99cdac258549c8dca2cdf34d79a09ed29232414fef39fe90",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "lfq_C_mixed_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/lfq_C_mixed_seed42.json",
+      "config_sha256": "aa840b2c99167b98c02e3db1ba580b821b49c157a3b19463a610577b2b5a3623",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_clean_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_R_clean_seed23.json",
+      "config_sha256": "29cf7bf8208100f1662231d7747b161a55038920721d7a29c3840576c020802a",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_clean_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_R_clean_seed42.json",
+      "config_sha256": "f2fe43dabbffb19b5421b4d655c56316ea5d927780b8242c04b3c5a63f7176fa",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_R_pixel10_seed23.json",
+      "config_sha256": "4d149c6c5ea99c018f24ca5838dca087618a81f15964b3cd6c5f81fcbcdcc325",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_R_pixel10_seed42.json",
+      "config_sha256": "9eee76677a2f7399690b8b64b713a61763af137bd9872d9cbcf150dfa0ad2fb7",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_mixed_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_R_mixed_seed23.json",
+      "config_sha256": "2a184a685de17c9e9a6dca0c8892499209abeaecbe029c19937e8f9d412a1fdb",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_R_mixed_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_R_mixed_seed42.json",
+      "config_sha256": "69fdd6d1ad3340c74b3678f5658a7d66a3b01cd1420bd213a903849fd1896ffb",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_clean_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_C_clean_seed23.json",
+      "config_sha256": "5eb55d14eb49206d089451ead8dc512810ee7afa187925c6672257dbfd29c545",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_clean_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_C_clean_seed42.json",
+      "config_sha256": "38f6229b2484266bc023c38e6be98f81cd7a2685d9c32d19bf7ef941cd3e73c3",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_C_pixel10_seed23.json",
+      "config_sha256": "c90119f06602ec765e2f5a5830b29176532d6e1b7847e92e9b94fd777d9f3f33",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_C_pixel10_seed42.json",
+      "config_sha256": "5f5cc6c9ca605c1097089d6892585e10e866b2050d220da207dae844cb661ba8",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_mixed_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_C_mixed_seed23.json",
+      "config_sha256": "336d64e83f7bee4f92c9ad83bebf9501d50a8d3720e7f7cab6628d3478fb0dfc",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "bsq_C_mixed_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/bsq_C_mixed_seed42.json",
+      "config_sha256": "c6df4bcb724c03e31a567f53aa690c0d9f88493ec3d129a706ca2e9926b80723",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_power_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_C_power_pixel10_seed23.json",
+      "config_sha256": "13e849bdb47f7abe483637746227e104d19cd4b8da0cbeabb70e44ef628ac251",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_power_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_C_power_pixel10_seed42.json",
+      "config_sha256": "c97277fbf0e886bc7c79657f4ae7c47d6afdb5ff15e822e27262f0b9716618f0",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_asinh_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_C_asinh_pixel10_seed23.json",
+      "config_sha256": "3767aaa51d28bd711f9c1908000379587fedfdbc047a7eac1aa4d6f5c6d30505",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "vq_C_asinh_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/vq_C_asinh_pixel10_seed42.json",
+      "config_sha256": "15a2e2b38837b4927fa858ae54ff393546da0b8e57970be2054b191d1d316b56",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_power_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_C_power_pixel10_seed23.json",
+      "config_sha256": "a546d39f2ac069a9bcfdeb496afc78092f9be5300caebdc9d77545a6595fa72f",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_power_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_C_power_pixel10_seed42.json",
+      "config_sha256": "f10b918a510aa157000c9ea2c7ec674d9077667607020a596fef44ce8a017d4e",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_asinh_pixel10_seed23",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_C_asinh_pixel10_seed23.json",
+      "config_sha256": "b985495edecfab64fcefa87b26d23ab7d20d37604e89c54752b02bf1f08c482d",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    },
+    {
+      "job_id": "fsq_C_asinh_pixel10_seed42",
+      "stage": "P8",
+      "tables": [
+        "S1",
+        "S4"
+      ],
+      "config": "configs/fsq_C_asinh_pixel10_seed42.json",
+      "config_sha256": "09c2921f2dbeefa540467a449f74b2cd5768cf6c757af6deccd41d9263461830",
+      "state": "planned_disabled",
+      "result_directory": null,
+      "source_evidence": null
+    }
+  ],
+  "unresolved_cells": [
+    {
+      "id": "absolute_without_mean",
+      "tables": [
+        "T6"
+      ],
+      "candidate_training_jobs": 12,
+      "status": "blocked_implementation",
+      "reason": "Current absolute-field runtime still supplies per-image mean to encoder/decoder; requires a no-mean interface and payload audit.",
+      "design": "VQ/FSQ x R/C x clean/pixel10/mixed; no per-image oracle or visible mean side input"
+    },
+    {
+      "id": "same_architecture_natural_kl_scratch",
+      "tables": [
+        "T4"
+      ],
+      "candidate_training_jobs": null,
+      "status": "blocked_implementation",
+      "reason": "Current SD/SDXL/FLUX builder requires pretrained assets. Random-init same-architecture controls are not implemented; do not substitute a different backbone."
+    },
+    {
+      "id": "natural_pretrained_discrete",
+      "tables": [
+        "T1",
+        "T3",
+        "T4",
+        "T5"
+      ],
+      "candidate_training_jobs": null,
+      "status": "blocked_asset_and_adapter",
+      "reason": "Need identified official VQ/FSQ/LFQ/BSQ checkpoint, architecture and license audits. Native pretrained K/grid cannot be resized and still called zero-shot."
+    },
+    {
+      "id": "statistics_extensions",
+      "tables": [
+        "T3",
+        "T4",
+        "S2",
+        "S4"
+      ],
+      "candidate_training_jobs": 0,
+      "status": "blocked_reporting",
+      "reason": "Train-only residual-tail thresholds, between/within decomposition, cross-seed aggregation and convergence-threshold reporting still need implementation; null is not zero."
+    }
+  ],
+  "proposed_zero_shot_reuse_groups": {
+    "sd_G": [
+      "sd_G_clean_seed17",
+      "sd_G_pixel10_seed17",
+      "sd_G_mixed_seed17"
+    ],
+    "sd_C": [
+      "sd_C_clean_seed17",
+      "sd_C_pixel10_seed17",
+      "sd_C_mixed_seed17"
+    ],
+    "sd_C_power": [
+      "sd_C_power_clean_seed17",
+      "sd_C_power_pixel10_seed17"
+    ],
+    "sd_C_asinh": [
+      "sd_C_asinh_clean_seed17",
+      "sd_C_asinh_pixel10_seed17"
+    ],
+    "sdxl_G": [
+      "sdxl_G_clean_seed17",
+      "sdxl_G_pixel10_seed17",
+      "sdxl_G_mixed_seed17"
+    ],
+    "sdxl_C": [
+      "sdxl_C_clean_seed17",
+      "sdxl_C_pixel10_seed17",
+      "sdxl_C_mixed_seed17"
+    ],
+    "flux1_G": [
+      "flux1_G_clean_seed17",
+      "flux1_G_pixel10_seed17",
+      "flux1_G_mixed_seed17"
+    ],
+    "flux1_C": [
+      "flux1_C_clean_seed17",
+      "flux1_C_pixel10_seed17",
+      "flux1_C_mixed_seed17"
+    ]
+  },
+  "shared_zero_shot_cache_implemented": false,
+  "global_gates": [
+    "data/component/model preflight",
+    "measured parameter and payload alignment",
+    "source/weight assets bound",
+    "nonlinear loss gradient audit",
+    "STOP and free memory checked"
+  ],
+  "schedule": "P0 preflight -> P1 -> P2 -> P3 -> P4 -> P5/P6/P7 -> P8 -> final table audit; no test-driven pruning"
+}

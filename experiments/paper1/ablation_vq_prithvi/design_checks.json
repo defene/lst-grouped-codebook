@@ -1,0 +1,13 @@
+{
+  "clean_vs_noisy_config_difference": [
+    "name",
+    "noise.coverages"
+  ],
+  "8_configs_checked": true,
+  "case_selection_fixed_before_final_analysis": [
+    0,
+    64,
+    128,
+    192
+  ]
+}

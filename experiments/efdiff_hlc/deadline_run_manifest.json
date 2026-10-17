@@ -1,0 +1,187 @@
+{
+  "scope": "one complete full-HLC training epoch, explicitly requested 2026-09-16",
+  "run_id": "hlc-synthetic-full-epoch1-ddp2-io16-20260916-v3",
+  "dataset": "HLS-LST-CrossSensor",
+  "reader_id": "lstsr_tb",
+  "prepared": "processed_data/v1",
+  "models": [
+    "EFDiff-x0",
+    "EFDiff-epsilon"
+  ],
+  "configurations": [
+    "configs/deadline_fast_x0.yaml",
+    "configs/deadline_fast_epsilon.yaml"
+  ],
+  "budget": "deadline_fast_budget.json",
+  "train_patch_months": 2608772,
+  "train_hls_bundles": 250449,
+  "train_tiles": 2249,
+  "validation_patch_months": 512,
+  "validation_membership": "pilot_membership/val.npy",
+  "real_modis_input": false,
+  "epochs_per_model": 1,
+  "updates_per_model": 40763,
+  "record_presentations_per_model": 2608772,
+  "effective_batch": 64,
+  "tail_update_records": 4,
+  "initialization": "fresh denoiser, frozen pretrained Prithvi; no pilot weights",
+  "normalization_fit": "all 2608772 training months; 32 cached shards; no pilot statistics for main run",
+  "technical_smoke_statistics": "existing train-only pilot statistics; technical checks only",
+  "primary_checkpoint": "fixed_epoch1_ema",
+  "test_used": false,
+  "modal_app": "efdiff-hlc-epoch1-deadline-io16-20260916",
+  "modal_app_id": "ap-EoCnQWeCx9PJAgrSvkKJlz",
+  "modal_url": "https://modal.com/apps/runlongyu/main/ap-EoCnQWeCx9PJAgrSvkKJlz",
+  "launch_call_id": "fc-01M2PTJ5QSDYC7MV09BMEYZKGX",
+  "output_volume": "efdiff-hlc-synthetic-runs",
+  "local_evidence": "output/efdiff_hlc_epoch1_deadline_io16_20260916",
+  "status_at_submission": "Distributed smoke, exact tail/resume and measured throughput gates; then full training automatically",
+  "latest_verified_phase": "complete",
+  "cloud_preflight": "passed",
+  "cloud_checkpoint_resume_and_inference": "both passed; 132 records, 3 updates, 4-record tail, independent containers and validation",
+  "local_contract_checks_passed": 7,
+  "estimated_main_training_hours_per_model": [
+    14,
+    16
+  ],
+  "estimated_gpu_only_usd_both_models": [
+    218,
+    291
+  ],
+  "estimate_excludes": "Account credits, long-term storage and unusual retries; includes ordinary CPU/RAM/validation/preparation overhead. Not a spending cap.",
+  "pricing_source": "https://modal.com/pricing",
+  "completion_requirement": {
+    "requested_at_utc": "2026-09-17T04:23:04Z",
+    "deadline_utc": "2026-09-18T04:23:04Z",
+    "deadline_America_Chicago": "2026-09-17T23:23:04-05:00",
+    "scope": "Both models: complete full HLC train epoch and fixed validation/report within 24 hours from latest user requirement",
+    "effective_batch": 64,
+    "train_records_per_model": 2608772,
+    "status": "met; report generated 2026-09-17 17:41:12 UTC, 13.3022 hours after request"
+  },
+  "runner": "deadline_fast_train.py",
+  "world_size_per_model": 2,
+  "micro_batch_per_gpu": 16,
+  "accumulation_per_rank": 2,
+  "gpu_per_model": "H200:2",
+  "estimated_total_usd_both_models": [
+    350,
+    420
+  ],
+  "gpu_selection_evidence": "output/efdiff_hlc_full_epoch1_20260916/h200_microbatch_benchmark.json",
+  "supersedes": "hlc-synthetic-full-epoch1-ddp2-20260916-v2; technical checks only; throughput gate failed",
+  "normalization_reuses": "Original run completed full-train statistics shards; unchanged code fingerprints",
+  "noise_rule": "Independent seed 20260915+rank on both variants; differs from historical single-GPU noise sequence",
+  "loader_workers_per_rank": 16,
+  "prefetch_factor": 4,
+  "cpu_physical_cores_per_model": 40,
+  "host_memory_GiB_per_model": 128,
+  "measured_seconds_per_update": 1.0835236152013143,
+  "projected_pure_training_hours": 12.268798090680882,
+  "normalization_shards_completed": 32,
+  "normalization_fit_records": 2608772,
+  "throughput_gate": {
+    "seconds_per_update": 1.0835236152013143,
+    "projected_training_hours": 12.268798090680882,
+    "remaining_deadline_hours": 23.660769669444445,
+    "reserve_hours": 3,
+    "passed": true
+  },
+  "training_calls": {
+    "x0": "fc-01M2PTTMDNSTF6NEGSWYFSZA9J",
+    "epsilon": "fc-01M2PTTMFNJDSRTEXB1XPJ4KQZ"
+  },
+  "completion_evidence": "output/efdiff_hlc_epoch1_deadline_io16_20260916/completion_verified.json",
+  "results": {
+    "phase": "complete",
+    "status_verified_utc": "2026-09-21T22:35:15.725283+00:00",
+    "status_file_mtime_utc": {
+      "x0": "2026-09-17T17:40:46Z",
+      "epsilon": "2026-09-17T17:19:37Z"
+    },
+    "report_file_mtime_utc": "2026-09-17T17:41:12Z",
+    "time_evidence": "Modal Volume FileEntry.mtime of final status and report files",
+    "hours_from_deadline_request_to_report": 13.302222222222222,
+    "met_24_hour_deadline": true,
+    "active_app_tasks_at_check": 0,
+    "statuses": {
+      "x0": {
+        "phase": "training_complete",
+        "updates": 40763,
+        "record_presentations": 2608772,
+        "epochs": 1,
+        "best_val_rmse_c": 1.2324209533031745,
+        "world_size": 2,
+        "elapsed_seconds": 46258.01616311073,
+        "test_used": false
+      },
+      "epsilon": {
+        "phase": "training_complete",
+        "updates": 40763,
+        "record_presentations": 2608772,
+        "epochs": 1,
+        "best_val_rmse_c": 1.398556195100655,
+        "world_size": 2,
+        "elapsed_seconds": 45007.110892772675,
+        "test_used": false
+      }
+    },
+    "metrics": {
+      "x0": {
+        "records": 512,
+        "valid_pixels": 25549027,
+        "rmse_c": 1.2324209533031745,
+        "mae_c": 0.8182409787766208,
+        "bicubic_rmse_c": 1.6511403950289636,
+        "squared_error_sum": 38805431.07474685,
+        "absolute_error_sum": 20905260.859270312,
+        "baseline_squared_error_sum": 69653407.97920328,
+        "epoch": 1,
+        "step": 40763,
+        "split": "val",
+        "smoke": false
+      },
+      "epsilon": {
+        "records": 512,
+        "valid_pixels": 25549027,
+        "rmse_c": 1.398556195100655,
+        "mae_c": 0.9325220727478535,
+        "bicubic_rmse_c": 1.6511403950289636,
+        "squared_error_sum": 49972860.30980426,
+        "absolute_error_sum": 23825031.614730872,
+        "baseline_squared_error_sum": 69653407.97920328,
+        "epoch": 1,
+        "step": 40763,
+        "split": "val",
+        "smoke": false
+      }
+    },
+    "weights_location": "cloud volume; this status check synced reports, figures, logs and provenance only"
+  },
+  "verified_billing": {
+    "total_metered_cost_usd": "317.71095083",
+    "final_training_app_cost_usd": "308.27035851",
+    "preparation_and_other_benchmarks_usd": "9.44059232",
+    "evidence": "output/efdiff_hlc_epoch1_deadline_io16_20260916/billing_verified.json",
+    "scope": "Full HLC one-epoch x0/epsilon comparison, including preparation, H200/B200 benchmarks and DDP smoke versions; excludes earlier pilot/export and shared storage; account-wide credits not allocated"
+  },
+  "local_full_test": {
+    "phase": "launched; live status in pipeline.json and status.json",
+    "started_at_utc": "2026-09-21T22:49:21.7676753Z",
+    "models_downloaded_and_sha256_verified": true,
+    "model_bytes": 3289910538,
+    "portable_encoder_reused_after_exact_weight_and_batch_checks": true,
+    "local_validation_smoke_records": 32,
+    "test_records_per_model": 141524,
+    "test_hls_bundles": 13665,
+    "test_tiles": 123,
+    "crop": 224,
+    "batch_size": 16,
+    "checkpoint": "fixed_epoch1_ema",
+    "test_used_for_selection": false,
+    "process_receipt": "output/efdiff_hlc_epoch1_deadline_io16_20260916/full_test_20260921/process.json",
+    "progress": "output/efdiff_hlc_epoch1_deadline_io16_20260916/full_test_20260921/status.json",
+    "output": "output/efdiff_hlc_epoch1_deadline_io16_20260916/full_test_20260921",
+    "pipeline": "output/efdiff_hlc_epoch1_deadline_io16_20260916/full_test_20260921/pipeline.json"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "run_id": "hlc-dit-center-flow-epsilon-a100-epoch1-20261001-v1",
+  "app": "efdiff-hlc-dit-flow-epsilon-a100-20261001",
+  "variants": [
+    "flow",
+    "epsilon"
+  ],
+  "epochs": 1,
+  "budget_confirmed": true,
+  "authorization": "User explicitly replaced H200 with A100 after authorizing both DiT variants; one complete epoch each retained.",
+  "updates_per_model": 40763,
+  "record_presentations_per_model": 2608772,
+  "tail_records": 4,
+  "full_train_records": 2608772,
+  "batch_size": 64,
+  "gradient_accumulation": 1,
+  "gpu_per_variant": "A100-40GB",
+  "execution": "Two concurrent independent A100-40GB jobs, one GPU per model; H200 app stopped.",
+  "seed": 20260927,
+  "learning_rate": 2e-05,
+  "min_learning_rate": 1e-06,
+  "warmup_updates": 5000,
+  "ema_start_update": 5000,
+  "ema_decay": 0.9999,
+  "checkpoint_every": 500,
+  "segment_seconds": 5400,
+  "validation_fraction_per_epoch": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "validation_records": 512,
+  "selection_nfe": 50,
+  "evaluation_nfe": [
+    50,
+    20,
+    10,
+    5
+  ],
+  "normalization_path": "/runs/hlc-synthetic-full-epoch1-ddp2-io16-20260916-v3/normalization.json",
+  "initialization": "Fresh DiT with adaLN-Zero and zero output head; frozen pretrained Prithvi; UNet weights incompatible",
+  "forward_process": {
+    "flow": "x_t=(1-t)*noise+t*x0; t uniform[0,1); independent noise/data pairing; target x0-noise",
+    "epsilon": "VP Gaussian; 1000 linear beta 1e-6..0.01; uniform discrete timesteps; target noise"
+  },
+  "sampler": {
+    "flow": "Euler from t=0 to t=1, exact NFE; final residual clipped to [-1,1] only",
+    "epsilon": "Deterministic DDIM, exact NFE; x0 clip and consistent epsilon recomputation"
+  },
+  "test_used": false,
+  "scope": "One complete HLC train epoch per model, fixed-center crop; flow/epsilon masked MSE; fixed 512 validation; no test.",
+  "architecture": {
+    "image_size": 224,
+    "patch_size": 16,
+    "hidden_dim": 1024,
+    "depth": 8,
+    "heads": 16,
+    "context_dim": 1024,
+    "mlp_ratio": 4,
+    "gradient_checkpointing": false,
+    "ffn_type": "swiglu",
+    "ffn_multiple": 64,
+    "qk_norm": true,
+    "rope_2d": true
+  },
+  "spatial_protocol": "efdiff-hlc-fixed-center224-no-flip-20260930-v1",
+  "architecture_reference": "https://arxiv.org/abs/2212.09748",
+  "architecture_revision": "swiglu-qk-rmsnorm-self-attention-axial-rope-v2",
+  "architecture_notes": {
+    "swiglu_hidden_dim": 2752,
+    "mlp_ratio_definition": "GELU-equivalent projection budget; SwiGLU width=ceil((2/3)*hidden_dim*mlp_ratio/64)*64",
+    "qk_norm": "Per-head RMSNorm on Q and K, fp32 statistics, shared learned gain across heads; default SDPA 1/sqrt(head_dim) scaling. Not the original L2-normalized QKNorm variant.",
+    "rope": "Axial 2D RoPE in DiT self-attention only; replaces additive sinusoidal positions. Cross-attention retains Prithvi positional features without a second rotary transform.",
+    "attention_backend": "PyTorch SDPA; backend chosen by device/dtype, Flash kernel not guaranteed.",
+    "architecture_changes_independently_switchable": true
+  },
+  "architecture_references": [
+    "https://arxiv.org/abs/2212.09748",
+    "https://arxiv.org/abs/2002.05202",
+    "https://arxiv.org/abs/2010.04245",
+    "https://arxiv.org/abs/2403.13298"
+  ],
+  "loss": "Both valid-mask per-record MSE, then equal average across records",
+  "probe": {
+    "batch_size": 64,
+    "warmup_updates": 5,
+    "measured_updates": 10,
+    "tail_records": 4,
+    "checkpointing_settings": [
+      true,
+      false
+    ],
+    "purpose": "hardware and finite-gradient check, not accuracy comparison"
+  },
+  "hardware_feasibility": {
+    "result": "passed for each variant",
+    "evidence": "output/efdiff_hlc_dit_flow_epsilon_probe_20260930/verification.json",
+    "gpu_per_model": "H200:1",
+    "batch_size": 64,
+    "gradient_checkpointing": false,
+    "concurrent_models_tested": false,
+    "measured_scope": "Cached real HLC train batches; full training not started"
+  }
+}

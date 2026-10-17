@@ -1,0 +1,294 @@
+{
+  "dataset": {
+    "id": "hlp_v2_lst",
+    "name": "HLS-LST-Pairs",
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "split_sizes": {
+      "train": 218975,
+      "val": 11684,
+      "test": 11757
+    },
+    "tile_counts": {
+      "train": 2796,
+      "val": 147,
+      "test": 151
+    },
+    "unit": "degree_Celsius",
+    "decode": "ds.denormalize(image)/100.0",
+    "support": "reference_mask",
+    "split_policy": "frozen_tile_disjoint_not_verified_footprint_disjoint",
+    "historical_test_exposure": true,
+    "external_confirmation_verified": false
+  },
+  "representations": {
+    "R": {
+      "channels": 1,
+      "forward": "field/A",
+      "inverse": "A*y",
+      "role": "native_scalar"
+    },
+    "G": {
+      "channels": 3,
+      "forward": "repeat(field/A,3)",
+      "inverse": "A*mean(y)",
+      "role": "channel_control"
+    },
+    "C": {
+      "channels": 3,
+      "forward": "2*g((field/A+1)/2)-1",
+      "inverse": "nearest_segment_inverse",
+      "role": "piecewise_linear_color_hypothesis"
+    },
+    "C_affine": {
+      "channels": 3,
+      "forward": "[-1,1,7*field/A]",
+      "inverse": "A*y[2]/7",
+      "role": "affine_gain_control",
+      "bounded_rgb": false
+    },
+    "common": {
+      "A_celsius": 120.0,
+      "status": "conservative_reference_not_freeze_approved",
+      "input_clipping": false,
+      "residual_loss_scale_celsius": 2.6950881812941048,
+      "source_fraction_images_entirely_central_segment": 0.907372987784,
+      "natural_image_distribution_match_claim": false,
+      "cube_vertices": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "mean_storage": "float32_both_centering_and_reconstruction",
+      "scratch_physical_initial_prediction": "zero_residual_after_representation_inverse",
+      "color_zero_residual_head_bias": [
+        -1,
+        1,
+        0
+      ],
+      "gradients_verified": false
+    }
+  },
+  "field_contracts": {
+    "residual_condition_center_and_addback": {
+      "field": "T-mean_f32",
+      "missing_fill": 0,
+      "readout": "mean_f32+inverse_representation(prediction)",
+      "scratch_initial_temperature": "mean_f32"
+    },
+    "absolute_global_center_no_mu_addback": {
+      "field": "T-c_train",
+      "c_train": "train_only_pixel_weighted_global_mean_pending_fit",
+      "same_A_as_residual": true,
+      "missing_fill": 0,
+      "readout": "c_train+inverse_representation(prediction)",
+      "scratch_initial_temperature": "c_train",
+      "oracle_mean_available_to_encoder_and_decoder": true,
+      "claim": "output_parameterization_including_shortcut_and_initialization_not_pure_information_change"
+    }
+  },
+  "readout_order": [
+    "representation_prediction",
+    "raw_inverse_with_C_intrinsic_segment_projection",
+    "training_physical_and_representation_loss",
+    "evaluation_common_field_domain_projection",
+    "evaluation_common_temperature_projection"
+  ],
+  "representation_auxiliary": {
+    "default_weight": 0.01,
+    "status": "proposal_requires_gradient_preflight",
+    "formula": "mean_valid(sum_channels((prediction-F(field))**2)*A**2/(k*s**2))",
+    "derivative_norm_factors": {
+      "R": 1,
+      "G": 3,
+      "C": 49,
+      "C_affine": 49
+    },
+    "global_equivalence_to_physical_loss": false
+  },
+  "quantizers": {
+    "vq": {
+      "kind": "discrete",
+      "quantizer": "vq",
+      "layout": "single_scale",
+      "grid": [
+        16,
+        16
+      ],
+      "token_count": 256,
+      "bits_per_token": 10,
+      "states": 1024,
+      "levels": null,
+      "internal_dim": 32,
+      "shared_decoder_interface_dim": 32,
+      "token_bits": 2560,
+      "same_rate_group": "grid16_fixed10",
+      "codebook_update": "gradient",
+      "fixed_bits_are_actual_file_size": false
+    },
+    "fsq": {
+      "kind": "discrete",
+      "quantizer": "fsq",
+      "layout": "single_scale",
+      "grid": [
+        16,
+        16
+      ],
+      "token_count": 256,
+      "bits_per_token": 10,
+      "states": 1024,
+      "levels": [
+        8,
+        8,
+        16
+      ],
+      "internal_dim": 3,
+      "shared_decoder_interface_dim": 32,
+      "token_bits": 2560,
+      "same_rate_group": "grid16_fixed10",
+      "codebook_update": "not_applicable",
+      "fixed_bits_are_actual_file_size": false
+    },
+    "lfq": {
+      "kind": "discrete",
+      "quantizer": "lfq",
+      "layout": "single_scale",
+      "grid": [
+        16,
+        16
+      ],
+      "token_count": 256,
+      "bits_per_token": 10,
+      "states": 1024,
+      "levels": null,
+      "internal_dim": 10,
+      "shared_decoder_interface_dim": 32,
+      "token_bits": 2560,
+      "same_rate_group": "grid16_fixed10",
+      "codebook_update": "not_applicable",
+      "fixed_bits_are_actual_file_size": false
+    },
+    "bsq": {
+      "kind": "discrete",
+      "quantizer": "bsq",
+      "layout": "single_scale",
+      "grid": [
+        16,
+        16
+      ],
+      "token_count": 256,
+      "bits_per_token": 10,
+      "states": 1024,
+      "levels": null,
+      "internal_dim": 10,
+      "shared_decoder_interface_dim": 32,
+      "token_bits": 2560,
+      "same_rate_group": "grid16_fixed10",
+      "codebook_update": "not_applicable",
+      "fixed_bits_are_actual_file_size": false
+    }
+  },
+  "fsq_exact_levels_by_bits": {
+    "8": [
+      8,
+      8,
+      4
+    ],
+    "10": [
+      8,
+      8,
+      16
+    ],
+    "12": [
+      8,
+      8,
+      8,
+      8
+    ]
+  },
+  "model_sources": {
+    "shared_conv": "https://github.com/FoundationVision/VAR",
+    "fsq": "https://raw.githubusercontent.com/google-research/google-research/master/fsq/fsq.ipynb",
+    "lfq": "https://arxiv.org/html/2310.05737v3",
+    "bsq": "https://github.com/zhaoyue-zephyrus/npq-vit",
+    "prithvi_mae": "https://github.com/NASA-IMPACT/Prithvi-EO-2.0",
+    "satmae_pp": "https://github.com/techmn/satmae_pp",
+    "sd": "https://huggingface.co/stabilityai/sd-vae-ft-mse",
+    "sdxl": "https://huggingface.co/stabilityai/sdxl-vae",
+    "flux1": "https://huggingface.co/black-forest-labs/FLUX.1-schnell"
+  },
+  "new_model_implementations_ready": false,
+  "official_revisions_frozen": false,
+  "parameters": {
+    "target_context": "roughly_84_to_87M_not_a_hard_requirement",
+    "shared_backbone": "var_conv_ch128_resblocks3_chmult_1_1_2_2_4",
+    "previous_multiscale_rgb_probe": 87225699,
+    "previous_sd_probe": 83653863,
+    "current_adapted_models_measured": false,
+    "forbid_unused_parameter_padding": true
+  },
+  "regularizers": {
+    "vq": "codebook_gradient_plus_commitment_candidate_beta0.25",
+    "fsq": "none_native_round_STE",
+    "lfq": "native_commitment_and_entropy_adapter_coefficients_unfrozen",
+    "bsq": "native_spherical_and_entropy_no_automatic_vq_commitment",
+    "kl": "element_mean_KL_candidate_1e-6_pending_api_audit"
+  },
+  "masks": {
+    "pixel10": "uniform_without_replacement_round_0.1_Nvalid",
+    "patch10": {
+      "patch_size": 16,
+      "selected": 26,
+      "total": 256,
+      "nominal_fraction": 0.1015625
+    },
+    "input": "values_R_O_mu_1x1_adapter_identity_values_zero_other_weights",
+    "decoder": "common_zero_initialized_mean_condition_affine_branch_no_observed_value_skip",
+    "rng_keys": [
+      "split",
+      "record_id",
+      "epoch",
+      "view",
+      "mask_seed"
+    ],
+    "mask_seed": 20260925,
+    "evaluation_views": 2,
+    "clean_views_independent": false
+  }
+}

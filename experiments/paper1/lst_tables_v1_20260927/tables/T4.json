@@ -1,0 +1,480 @@
+{
+  "title": "预训练迁移",
+  "rows": [
+    {
+      "job_id": "sd_G_clean_seed17",
+      "model": "sd",
+      "representation": "G",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "dbde2ce2ca668be55e904c2635ceb68f435e8bf84b455ed7b79d0dc6b245f046",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_G_pixel10_seed17",
+      "model": "sd",
+      "representation": "G",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "ccf1c3a9af3373e3d9900e2db8368933de5149fa7679d7f830fe1d2ee9c3f270",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_clean_seed17",
+      "model": "sd",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "affc6ae3d7247b4018153a35ebe20700e5c0b6addbae355ef6eda0599c5f33a4",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_pixel10_seed17",
+      "model": "sd",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "c8d896522ee2980642588b847b4e33874d0dafa7e0ac18fba93ab1c7db2dca26",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_power_clean_seed17",
+      "model": "sd",
+      "representation": "C_power",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "cdd71e1376e2fb3bd141b627e50cfe8c4fec12aebfd93671e0f767b324ca614c",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_power_pixel10_seed17",
+      "model": "sd",
+      "representation": "C_power",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "4120edc8f468da9ab26e1b5f2bd871cae5b39d9df6c86d260d9151cfcd215c46",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_asinh_clean_seed17",
+      "model": "sd",
+      "representation": "C_asinh",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "30199a7fdf825bd807120afcf6a28c3732ba5780d83af571ad6ec29a2a68d295",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_asinh_pixel10_seed17",
+      "model": "sd",
+      "representation": "C_asinh",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "f24ee28d9bc93b42c85d43b25d795d293c8e8939351730a9551ddda7c9ecb7ce",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_G_mixed_seed17",
+      "model": "sd",
+      "representation": "G",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "8cde862f0150beb0cff6451d85248d1324be6fa5b052298c52baaea9f3a0144c",
+      "evidence": []
+    },
+    {
+      "job_id": "sd_C_mixed_seed17",
+      "model": "sd",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "e3dc1e111c3a237e8dd43f9a2816afcf5c1d7a5a6ae8f8b16bae2aa651f88731",
+      "evidence": []
+    },
+    {
+      "job_id": "sdxl_G_clean_seed17",
+      "model": "sdxl",
+      "representation": "G",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "2b82fc5a4b1214454521441788c4a3436af341b74e9d34f6121cf04056d4eb11",
+      "evidence": []
+    },
+    {
+      "job_id": "sdxl_G_pixel10_seed17",
+      "model": "sdxl",
+      "representation": "G",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "e8fed28bd13b548ba3abd90a87ca6d65524790c516a55c3b05daace7ade59c0f",
+      "evidence": []
+    },
+    {
+      "job_id": "sdxl_G_mixed_seed17",
+      "model": "sdxl",
+      "representation": "G",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "5147979fb6ea3b1d8a30c10e5814186b8886c050663851b06c1e1f14301a71a5",
+      "evidence": []
+    },
+    {
+      "job_id": "sdxl_C_clean_seed17",
+      "model": "sdxl",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "ce1f6e0cbe2e18f58dcc0395c5d05f1b38efaf7c2f308e1a27c00d51c843f3ee",
+      "evidence": []
+    },
+    {
+      "job_id": "sdxl_C_pixel10_seed17",
+      "model": "sdxl",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "ec3d77c6bba2cdc6fdd3f1d4168d730981821ecfc4e9a7e1d53a237d23207d4a",
+      "evidence": []
+    },
+    {
+      "job_id": "sdxl_C_mixed_seed17",
+      "model": "sdxl",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "db6245606238f17c84463029b637535b0869c6a98dbaf0c1713c84b8bf31236c",
+      "evidence": []
+    },
+    {
+      "job_id": "flux1_G_clean_seed17",
+      "model": "flux1",
+      "representation": "G",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "828c5f0d99e516b186a55aa7d7c20445731d94dd92a5b8fb983af0d83cfd2f55",
+      "evidence": []
+    },
+    {
+      "job_id": "flux1_G_pixel10_seed17",
+      "model": "flux1",
+      "representation": "G",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "9c860c7fc1d0fadc2fd9c5e0a552642499b87cfabdc10f58f9e19e854695b3d9",
+      "evidence": []
+    },
+    {
+      "job_id": "flux1_G_mixed_seed17",
+      "model": "flux1",
+      "representation": "G",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "8c6a25f2943e573dd4df20f8570eda2939e1e95a3fa5a6d914e694b6edd4cafb",
+      "evidence": []
+    },
+    {
+      "job_id": "flux1_C_clean_seed17",
+      "model": "flux1",
+      "representation": "C",
+      "training": "clean",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "fcd028026464ac24fa875701b71163b3333f4b1b552723221bdbfe92ecadfc02",
+      "evidence": []
+    },
+    {
+      "job_id": "flux1_C_pixel10_seed17",
+      "model": "flux1",
+      "representation": "C",
+      "training": "pixel10",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "3eeb753ca7b02767a0427744232dd5bb595572f573b327bcc4e6339efcc53299",
+      "evidence": []
+    },
+    {
+      "job_id": "flux1_C_mixed_seed17",
+      "model": "flux1",
+      "representation": "C",
+      "training": "mixed",
+      "mean": "oracle",
+      "seed": 17,
+      "nominal_bits_per_token": null,
+      "split": "test",
+      "state": "not_run",
+      "values": {
+        "zero_shot_clean_rmse": null,
+        "zero_shot_pixel10_rmse": null,
+        "final_clean_rmse": null,
+        "final_pixel10_rmse": null,
+        "training_job_hours": null
+      },
+      "config_sha256": "30ff30e79db6de6494bf8db617488fa21a3cf9a73fbea4f4cee671c302b1a635",
+      "evidence": []
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "same_architecture_natural_kl_scratch",
+      "tables": [
+        "T4"
+      ],
+      "candidate_training_jobs": null,
+      "status": "blocked_implementation",
+      "reason": "Current SD/SDXL/FLUX builder requires pretrained assets. Random-init same-architecture controls are not implemented; do not substitute a different backbone."
+    },
+    {
+      "id": "natural_pretrained_discrete",
+      "tables": [
+        "T1",
+        "T3",
+        "T4",
+        "T5"
+      ],
+      "candidate_training_jobs": null,
+      "status": "blocked_asset_and_adapter",
+      "reason": "Need identified official VQ/FSQ/LFQ/BSQ checkpoint, architecture and license audits. Native pretrained K/grid cannot be resized and still called zero-shot."
+    },
+    {
+      "id": "statistics_extensions",
+      "tables": [
+        "T3",
+        "T4",
+        "S2",
+        "S4"
+      ],
+      "candidate_training_jobs": 0,
+      "status": "blocked_reporting",
+      "reason": "Train-only residual-tail thresholds, between/within decomposition, cross-seed aggregation and convergence-threshold reporting still need implementation; null is not zero."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "prithvi_vq10",
+  "model": {
+    "quantizer": "vq"
+  },
+  "loss": {
+    "stability": 0.1,
+    "cross_view": 0
+  }
+}

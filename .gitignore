@@ -13,3 +13,15 @@ __pycache__/
 *.safetensors
 *.eoz
 /tmp/
+# New exports contain reports only. Existing historical tracked assets remain intact.
+*.npz
+*.npy
+*.sqlite
+*.sqlite3
+*.zip
+*.tar
+*.tar.gz
+*.log
+*.jsonl
+/artifacts/
+/output/update_checks_20261017/

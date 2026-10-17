@@ -1,0 +1,58 @@
+{
+  "status": "static_design_checks_passed_not_model_preflight",
+  "schema": "lst-discrete-design-20260925-v2",
+  "training_started_by_this_script": false,
+  "gpu_used_by_this_script": false,
+  "counts": {
+    "training_jobs": 140,
+    "core_training": 72,
+    "core_seed17": 24,
+    "core_replication_additional": 48,
+    "supporting_training": 68,
+    "by_module": {
+      "core": 72,
+      "continuous_ablation": 6,
+      "multiscale": 6,
+      "pretrained": 12,
+      "mean_ablation": 8,
+      "gain_control": 4,
+      "quantizer_recipe": 4,
+      "inverse_loss_ablation": 4,
+      "mae_patch": 8,
+      "rate_sweep": 16
+    },
+    "zero_states": 6,
+    "full_evaluation_cells": 592,
+    "full_budget_record_presentations": 153282500,
+    "full_budget_updates": 2395400
+  },
+  "passed_checks": [
+    "unique_job_ids",
+    "complete_factorial_core",
+    "epoch_tail_and_update_arithmetic",
+    "fixed_width_payload_and_FSQ_state_products",
+    "comparison_group_rate_contract",
+    "evaluation_dedup_and_record_counts",
+    "execution_disabled_everywhere",
+    "prerequisite_references_resolve",
+    "absolute_and_residual_field_contracts_resolve"
+  ],
+  "not_checked": [
+    "user_requests_execution",
+    "protocol_freeze",
+    "data_audit",
+    "mapping_gradients",
+    "quantizer_adapters",
+    "parameter_latent_audit",
+    "budget_resume",
+    "bitstream_roundtrip",
+    "resource_profile",
+    "external_confirmation"
+  ],
+  "output_hashes": {
+    "design_manifest.json": "e05ec41819b770e2469bb7e70d8a06e1abebf8c22a160d088070d7968d786815",
+    "registries.json": "bea1de4cb8f9923e9ab4304acece7466378715e351abaa1ecc49374fdcf6cdf7",
+    "comparison_groups.json": "206fa9e77bba5cd153bb1cc7492dbf12770dfaa68e179564aea912e5c0fc61b8",
+    "experiments.jsonl": "52884199a3ded3b0a9ad8392f2e01c82db1a7c188450118309d72f9587c70f27"
+  }
+}

@@ -1,0 +1,1067 @@
+{
+  "version": "lst-restoration-v3-satmae-20260927",
+  "status": "implementation_static_only",
+  "training_jobs_started": 0,
+  "planned_jobs": 174,
+  "tiers": {
+    "absolute_temperature_control": 24,
+    "affine_gain_control": 4,
+    "core_replication": 48,
+    "core_seed17": 24,
+    "geo_continuous_scratch": 6,
+    "geo_discrete_diffusion_scratch": 6,
+    "geo_mae_separate": 8,
+    "gray_control": 12,
+    "natural_pretrained": 18,
+    "rate_distortion": 16,
+    "visible_mean_control": 8
+  },
+  "runtime_verified": false,
+  "downstream_excluded": true,
+  "jobs": [
+    {
+      "name": "vq_R_clean_seed17",
+      "tier": "core_seed17",
+      "sha256": "6088a3282a7698b839eacfeaf81dea580fef77438055624a993a00db673b3397",
+      "file": "configs/vq_R_clean_seed17.json"
+    },
+    {
+      "name": "vq_R_pixel10_seed17",
+      "tier": "core_seed17",
+      "sha256": "d3ee0f2d490c00744bac9d10fd2d6e99056230324876f47ce5422da7adb2932d",
+      "file": "configs/vq_R_pixel10_seed17.json"
+    },
+    {
+      "name": "vq_R_mixed_seed17",
+      "tier": "core_seed17",
+      "sha256": "ac591d168b0ab8608d921507f208209bdb2348a2ce9b12fc6bb61a4fcbf6aad5",
+      "file": "configs/vq_R_mixed_seed17.json"
+    },
+    {
+      "name": "vq_C_clean_seed17",
+      "tier": "core_seed17",
+      "sha256": "30aeab4e233d3193c33ed4fe31dbbb2988a1054a2dfb8f9a141397cc5c658387",
+      "file": "configs/vq_C_clean_seed17.json"
+    },
+    {
+      "name": "vq_C_pixel10_seed17",
+      "tier": "core_seed17",
+      "sha256": "84d229f3d5f41c699075701913cefcd69e2c0d854e782cd5de181644367ff59c",
+      "file": "configs/vq_C_pixel10_seed17.json"
+    },
+    {
+      "name": "vq_C_mixed_seed17",
+      "tier": "core_seed17",
+      "sha256": "462a1a5730024c7afcfd5a611ea2e549dd8eb6433fbd73e640a0b3cde6721b99",
+      "file": "configs/vq_C_mixed_seed17.json"
+    },
+    {
+      "name": "fsq_R_clean_seed17",
+      "tier": "core_seed17",
+      "sha256": "f27400b4cb9d9b3473f21a665081ca5a3bf1462ba0f2a763be7c84c47a34742e",
+      "file": "configs/fsq_R_clean_seed17.json"
+    },
+    {
+      "name": "fsq_R_pixel10_seed17",
+      "tier": "core_seed17",
+      "sha256": "72fb8affbcd0f8a28dad0b9e963c8786f97b1df623f61ca3df9bb3593200e10d",
+      "file": "configs/fsq_R_pixel10_seed17.json"
+    },
+    {
+      "name": "fsq_R_mixed_seed17",
+      "tier": "core_seed17",
+      "sha256": "4fa4746d9dee36e195bc5d36e4886991271b2b15597c9b3c7ec79728b2ef32d6",
+      "file": "configs/fsq_R_mixed_seed17.json"
+    },
+    {
+      "name": "fsq_C_clean_seed17",
+      "tier": "core_seed17",
+      "sha256": "af35bc9c3a805d4bbcd099391d9b7a201fbfeb0b9d35354aae110506ff741e74",
+      "file": "configs/fsq_C_clean_seed17.json"
+    },
+    {
+      "name": "fsq_C_pixel10_seed17",
+      "tier": "core_seed17",
+      "sha256": "ee3bc648c30e31e1dbf6042489892916126b9b6cb6017c3350197ea3162ccbdd",
+      "file": "configs/fsq_C_pixel10_seed17.json"
+    },
+    {
+      "name": "fsq_C_mixed_seed17",
+      "tier": "core_seed17",
+      "sha256": "6dcc2b06c7bdc31c5e5ad99120c486c757de387409463889fbaf5277e5099ee5",
+      "file": "configs/fsq_C_mixed_seed17.json"
+    },
+    {
+      "name": "lfq_R_clean_seed17",
+      "tier": "core_seed17",
+      "sha256": "4470d1c25693db072564a55d250dfc9911c9db1503dbd5ce66a4f24323ae3e0a",
+      "file": "configs/lfq_R_clean_seed17.json"
+    },
+    {
+      "name": "lfq_R_pixel10_seed17",
+      "tier": "core_seed17",
+      "sha256": "e9d575a989d0b8d725c4470da10f977472b6a7cbbe7aeea6d48b75a2683ad795",
+      "file": "configs/lfq_R_pixel10_seed17.json"
+    },
+    {
+      "name": "lfq_R_mixed_seed17",
+      "tier": "core_seed17",
+      "sha256": "5c329f3d4b395a7d3d1ac1060d6dc4546a65d9d9766f2bdba0741e270c095dfb",
+      "file": "configs/lfq_R_mixed_seed17.json"
+    },
+    {
+      "name": "lfq_C_clean_seed17",
+      "tier": "core_seed17",
+      "sha256": "d06356bd1dc0e32482393f4ee6b6b4afba30dd1a487c3dcdd19ecf2f11f28a58",
+      "file": "configs/lfq_C_clean_seed17.json"
+    },
+    {
+      "name": "lfq_C_pixel10_seed17",
+      "tier": "core_seed17",
+      "sha256": "ede59af23b53a8aecf262f8929eef7198427abadcd9b045ecaa7d6e599b7bdeb",
+      "file": "configs/lfq_C_pixel10_seed17.json"
+    },
+    {
+      "name": "lfq_C_mixed_seed17",
+      "tier": "core_seed17",
+      "sha256": "d79fd1d185a4b7ea7b6f0a86e599af3a1ff210072377a0703c57d22a547ce426",
+      "file": "configs/lfq_C_mixed_seed17.json"
+    },
+    {
+      "name": "bsq_R_clean_seed17",
+      "tier": "core_seed17",
+      "sha256": "19e636101247a1a5cfd8d2c14c1a5fd3e1487bcae5170f2869deb6e4652459fb",
+      "file": "configs/bsq_R_clean_seed17.json"
+    },
+    {
+      "name": "bsq_R_pixel10_seed17",
+      "tier": "core_seed17",
+      "sha256": "e4b7a4842fe1e692c35383808acffb0d3a58f89c9cec23560fb2197806deafd4",
+      "file": "configs/bsq_R_pixel10_seed17.json"
+    },
+    {
+      "name": "bsq_R_mixed_seed17",
+      "tier": "core_seed17",
+      "sha256": "d19b309b294f86f5032e042f018a2c395615124b20f54478fc47c6704ea1ba60",
+      "file": "configs/bsq_R_mixed_seed17.json"
+    },
+    {
+      "name": "bsq_C_clean_seed17",
+      "tier": "core_seed17",
+      "sha256": "b416fdcdf010be2ea48efcb06d21327d256c4924c532fcc233fabc78cb31b7c2",
+      "file": "configs/bsq_C_clean_seed17.json"
+    },
+    {
+      "name": "bsq_C_pixel10_seed17",
+      "tier": "core_seed17",
+      "sha256": "87e3af75ff595274e99832f6cf19c23475da2e47470e66542341e301bb15c2a3",
+      "file": "configs/bsq_C_pixel10_seed17.json"
+    },
+    {
+      "name": "bsq_C_mixed_seed17",
+      "tier": "core_seed17",
+      "sha256": "3e8b7c3a340350ac9cd9c6edf4c36755f7459f8c51cb2b29bf074876e24475ec",
+      "file": "configs/bsq_C_mixed_seed17.json"
+    },
+    {
+      "name": "vq_R_clean_seed23",
+      "tier": "core_replication",
+      "sha256": "82ad92e8443e1f1a8a012460e0ac465a38ea900723ba882a6deec6997ebef4e7",
+      "file": "configs/vq_R_clean_seed23.json"
+    },
+    {
+      "name": "vq_R_clean_seed42",
+      "tier": "core_replication",
+      "sha256": "23ff01b544af6dd63908978c1e7cd8468d9a424ba00dde26f1aaf1705e9cd1c6",
+      "file": "configs/vq_R_clean_seed42.json"
+    },
+    {
+      "name": "vq_R_pixel10_seed23",
+      "tier": "core_replication",
+      "sha256": "01ea48e2255978ee8b771b97d675924a21e9abe373409f49fabe684537b29e3c",
+      "file": "configs/vq_R_pixel10_seed23.json"
+    },
+    {
+      "name": "vq_R_pixel10_seed42",
+      "tier": "core_replication",
+      "sha256": "fb807950e91b8b417d9693d44b09ca4f4eea1db6561f79539627b474daf9f002",
+      "file": "configs/vq_R_pixel10_seed42.json"
+    },
+    {
+      "name": "vq_R_mixed_seed23",
+      "tier": "core_replication",
+      "sha256": "00269eb7938e858b9664679c2b575c0111355170aae1aad301fe45131e9d0a8f",
+      "file": "configs/vq_R_mixed_seed23.json"
+    },
+    {
+      "name": "vq_R_mixed_seed42",
+      "tier": "core_replication",
+      "sha256": "37db665c799ba5529bfae527182e588f68a414f80a43939400a81b41e431ca8e",
+      "file": "configs/vq_R_mixed_seed42.json"
+    },
+    {
+      "name": "vq_C_clean_seed23",
+      "tier": "core_replication",
+      "sha256": "183aec047a9b46eb149fe9d88182c23bf72497e2fb1a187573e0253b2e468a36",
+      "file": "configs/vq_C_clean_seed23.json"
+    },
+    {
+      "name": "vq_C_clean_seed42",
+      "tier": "core_replication",
+      "sha256": "b726dee3bae75c0948ff27acbc31987863863a08213b59c986c5121677cbccaa",
+      "file": "configs/vq_C_clean_seed42.json"
+    },
+    {
+      "name": "vq_C_pixel10_seed23",
+      "tier": "core_replication",
+      "sha256": "5b81c5b7091fd214a62f89b84f36b3f7f8d6de92ccb8217e13518b1f49a9cef4",
+      "file": "configs/vq_C_pixel10_seed23.json"
+    },
+    {
+      "name": "vq_C_pixel10_seed42",
+      "tier": "core_replication",
+      "sha256": "4760bd2d612388a1c6274999b32d6bc0261c5c9e98165a006d7af33faec3210b",
+      "file": "configs/vq_C_pixel10_seed42.json"
+    },
+    {
+      "name": "vq_C_mixed_seed23",
+      "tier": "core_replication",
+      "sha256": "d78cd44bb09a915fd758a91fbc9088fb6b5da695b33c7447ca82f9300941f19e",
+      "file": "configs/vq_C_mixed_seed23.json"
+    },
+    {
+      "name": "vq_C_mixed_seed42",
+      "tier": "core_replication",
+      "sha256": "b8245a572b0587d4c86bfeac3ce454173e883d8e80c993c45f8a2bbb3f04bbf6",
+      "file": "configs/vq_C_mixed_seed42.json"
+    },
+    {
+      "name": "fsq_R_clean_seed23",
+      "tier": "core_replication",
+      "sha256": "065412e7b30d1076729ec6fc8231245c6eeb607edfc81dcf5936ec4514374db1",
+      "file": "configs/fsq_R_clean_seed23.json"
+    },
+    {
+      "name": "fsq_R_clean_seed42",
+      "tier": "core_replication",
+      "sha256": "e975e25456b1249bdde4236931ee3d53fd49bd28f98bee548a02c1839b2bacc0",
+      "file": "configs/fsq_R_clean_seed42.json"
+    },
+    {
+      "name": "fsq_R_pixel10_seed23",
+      "tier": "core_replication",
+      "sha256": "5766ef0c903dec8ac0837798b3e75d496a1b653e67aebd9823156ee248e06b3a",
+      "file": "configs/fsq_R_pixel10_seed23.json"
+    },
+    {
+      "name": "fsq_R_pixel10_seed42",
+      "tier": "core_replication",
+      "sha256": "c51c1c1c51a0a93d370798efc298a3fc0affdcf268d740e421a880ef9cb064ca",
+      "file": "configs/fsq_R_pixel10_seed42.json"
+    },
+    {
+      "name": "fsq_R_mixed_seed23",
+      "tier": "core_replication",
+      "sha256": "4843a37a3cb4b2329ff08c082754053a0b3d3694204aca0b30ef51efb6906205",
+      "file": "configs/fsq_R_mixed_seed23.json"
+    },
+    {
+      "name": "fsq_R_mixed_seed42",
+      "tier": "core_replication",
+      "sha256": "ff862b881d9594c6e86082b0183a24fc973a537da6939f255c38c748bfcfdcb1",
+      "file": "configs/fsq_R_mixed_seed42.json"
+    },
+    {
+      "name": "fsq_C_clean_seed23",
+      "tier": "core_replication",
+      "sha256": "469b5c0d297d613fabf4e77dbcabe76d26642adc656232f8e3b1fdf549b86946",
+      "file": "configs/fsq_C_clean_seed23.json"
+    },
+    {
+      "name": "fsq_C_clean_seed42",
+      "tier": "core_replication",
+      "sha256": "1b7e0b3ca746a2467f8d14a3be83af288e0e17c34ba27d8ca9af9c53b14a47db",
+      "file": "configs/fsq_C_clean_seed42.json"
+    },
+    {
+      "name": "fsq_C_pixel10_seed23",
+      "tier": "core_replication",
+      "sha256": "3fc143bd2d85fc6eb5335738ba83962940c37e8c01eaeebad0bc85aca9124c05",
+      "file": "configs/fsq_C_pixel10_seed23.json"
+    },
+    {
+      "name": "fsq_C_pixel10_seed42",
+      "tier": "core_replication",
+      "sha256": "aa3532e971a09ee66cfbe3d4d510c98881b6e3e8fb33a8cf2f19774bc16b5f8d",
+      "file": "configs/fsq_C_pixel10_seed42.json"
+    },
+    {
+      "name": "fsq_C_mixed_seed23",
+      "tier": "core_replication",
+      "sha256": "bc334e9b9e9c33da49bce9e1b81836dfcf82382580701af859f3fd48ebe9cd2b",
+      "file": "configs/fsq_C_mixed_seed23.json"
+    },
+    {
+      "name": "fsq_C_mixed_seed42",
+      "tier": "core_replication",
+      "sha256": "9f31fd567715834e2af664a53dca36b65fc3c23ef52517959d03a6ba28dd87ca",
+      "file": "configs/fsq_C_mixed_seed42.json"
+    },
+    {
+      "name": "lfq_R_clean_seed23",
+      "tier": "core_replication",
+      "sha256": "84c402b93cb54bc4f0cd3e8af5a7dfd61cdf914349ee6b6d1a596d189a43beaa",
+      "file": "configs/lfq_R_clean_seed23.json"
+    },
+    {
+      "name": "lfq_R_clean_seed42",
+      "tier": "core_replication",
+      "sha256": "8fa4199952941574cb40ded691ec885af616a4d25dae8d9f37281e81b1fe48b5",
+      "file": "configs/lfq_R_clean_seed42.json"
+    },
+    {
+      "name": "lfq_R_pixel10_seed23",
+      "tier": "core_replication",
+      "sha256": "d09e893cf25e93d8bcee32aaa19184a28c2d18740f7998afa41c1cb80ae02f86",
+      "file": "configs/lfq_R_pixel10_seed23.json"
+    },
+    {
+      "name": "lfq_R_pixel10_seed42",
+      "tier": "core_replication",
+      "sha256": "cda240457b1f6e9e559d43da80cb929cf56d4255f7f394ad49906bb6deb7c771",
+      "file": "configs/lfq_R_pixel10_seed42.json"
+    },
+    {
+      "name": "lfq_R_mixed_seed23",
+      "tier": "core_replication",
+      "sha256": "04efbecbaa0b8bdd2c6d5da6d356b53f26449e83781569821fe3f14cd63762b8",
+      "file": "configs/lfq_R_mixed_seed23.json"
+    },
+    {
+      "name": "lfq_R_mixed_seed42",
+      "tier": "core_replication",
+      "sha256": "60adfecb50eef2f95811c9651e0605babf98c79710d75e43d90f37956075dd58",
+      "file": "configs/lfq_R_mixed_seed42.json"
+    },
+    {
+      "name": "lfq_C_clean_seed23",
+      "tier": "core_replication",
+      "sha256": "fd7767b7871385aeea543eee88f1de232a6589d42e2ba646afb6ec9f7af51e57",
+      "file": "configs/lfq_C_clean_seed23.json"
+    },
+    {
+      "name": "lfq_C_clean_seed42",
+      "tier": "core_replication",
+      "sha256": "6040f198b5093f207ec74163aa0c6bb23c48fdbe00a86217c376ac9f3aac9310",
+      "file": "configs/lfq_C_clean_seed42.json"
+    },
+    {
+      "name": "lfq_C_pixel10_seed23",
+      "tier": "core_replication",
+      "sha256": "0da6496629f5d480a45ab78cfaec9eceb8f995317786e3dfb034701b86cf656b",
+      "file": "configs/lfq_C_pixel10_seed23.json"
+    },
+    {
+      "name": "lfq_C_pixel10_seed42",
+      "tier": "core_replication",
+      "sha256": "d9313cdfce3614c189fc5f6241f3f12cda01173afa4042bbe32946e3ebfe4d00",
+      "file": "configs/lfq_C_pixel10_seed42.json"
+    },
+    {
+      "name": "lfq_C_mixed_seed23",
+      "tier": "core_replication",
+      "sha256": "77952904a21f180f6a8d871a69dc53a8d47b7e80c4ff489659f59330b4b1d7ac",
+      "file": "configs/lfq_C_mixed_seed23.json"
+    },
+    {
+      "name": "lfq_C_mixed_seed42",
+      "tier": "core_replication",
+      "sha256": "e6a0040d82878f73e81efb6cf88a364853783308ada37034321f196e84c22a4c",
+      "file": "configs/lfq_C_mixed_seed42.json"
+    },
+    {
+      "name": "bsq_R_clean_seed23",
+      "tier": "core_replication",
+      "sha256": "67e2515c4f65693790c1d1a38a1d31076f4e702a3a673ae8b5b9dbad77aa30c4",
+      "file": "configs/bsq_R_clean_seed23.json"
+    },
+    {
+      "name": "bsq_R_clean_seed42",
+      "tier": "core_replication",
+      "sha256": "79d7dfed3a0b67f800519bb829a023d598f45ae020aff1622da709b1645c0ce7",
+      "file": "configs/bsq_R_clean_seed42.json"
+    },
+    {
+      "name": "bsq_R_pixel10_seed23",
+      "tier": "core_replication",
+      "sha256": "8bf22dd8b8bd9b2290057a7419034dc0947c2ce9baa1d085f7beab2496e9aec9",
+      "file": "configs/bsq_R_pixel10_seed23.json"
+    },
+    {
+      "name": "bsq_R_pixel10_seed42",
+      "tier": "core_replication",
+      "sha256": "1cc348769fc7cd94331ec6b450a508192660cd527839e043cc92b374b2f4fa1c",
+      "file": "configs/bsq_R_pixel10_seed42.json"
+    },
+    {
+      "name": "bsq_R_mixed_seed23",
+      "tier": "core_replication",
+      "sha256": "a92925f6d489bbcff855220d58cfe287004da8f1712ac0be9195483e08511b1d",
+      "file": "configs/bsq_R_mixed_seed23.json"
+    },
+    {
+      "name": "bsq_R_mixed_seed42",
+      "tier": "core_replication",
+      "sha256": "dfa5811227b94319bbd5be9d805e08c1ba81d07bbdec59da32bb2f3d67b45ffd",
+      "file": "configs/bsq_R_mixed_seed42.json"
+    },
+    {
+      "name": "bsq_C_clean_seed23",
+      "tier": "core_replication",
+      "sha256": "12fb1a2e40e9b563fb5e4ddc14cdd10da69f15754a5b31c0c9106ad8b43080ea",
+      "file": "configs/bsq_C_clean_seed23.json"
+    },
+    {
+      "name": "bsq_C_clean_seed42",
+      "tier": "core_replication",
+      "sha256": "6acdbece793a723e682120ae7867d1847a3b14ea483b86c21a17ea7345aa7d8c",
+      "file": "configs/bsq_C_clean_seed42.json"
+    },
+    {
+      "name": "bsq_C_pixel10_seed23",
+      "tier": "core_replication",
+      "sha256": "da5e41dc1c520812ca436b7fed5f9007893920140dd7adf67331d186c202edca",
+      "file": "configs/bsq_C_pixel10_seed23.json"
+    },
+    {
+      "name": "bsq_C_pixel10_seed42",
+      "tier": "core_replication",
+      "sha256": "b31b1bd1b5486870de2a13476a83a8a9958f22bb8cd021f19da270094283a3aa",
+      "file": "configs/bsq_C_pixel10_seed42.json"
+    },
+    {
+      "name": "bsq_C_mixed_seed23",
+      "tier": "core_replication",
+      "sha256": "4211136d403aa185b031ffdc71dc76c6252e91a2dda65cd26d657669070bee97",
+      "file": "configs/bsq_C_mixed_seed23.json"
+    },
+    {
+      "name": "bsq_C_mixed_seed42",
+      "tier": "core_replication",
+      "sha256": "c2d5a76d30b990949aac719ab4bad6f08aaaab84af577db4b63341863e630366",
+      "file": "configs/bsq_C_mixed_seed42.json"
+    },
+    {
+      "name": "vq_G_clean_seed17",
+      "tier": "gray_control",
+      "sha256": "5e79e1441849a0a7f374d06f19e3c0a93b98dbc1a045fcb8f4d60222697694a6",
+      "file": "configs/vq_G_clean_seed17.json"
+    },
+    {
+      "name": "vq_G_pixel10_seed17",
+      "tier": "gray_control",
+      "sha256": "527ed401dede88dcefe0dc738167048a91ab8e871c787d8f7d33b974e313f4f6",
+      "file": "configs/vq_G_pixel10_seed17.json"
+    },
+    {
+      "name": "vq_G_mixed_seed17",
+      "tier": "gray_control",
+      "sha256": "b827defe1e1323a0f97fad5b43ddbb230343e5c4f4ed3f77fe31df28c7f73aa9",
+      "file": "configs/vq_G_mixed_seed17.json"
+    },
+    {
+      "name": "fsq_G_clean_seed17",
+      "tier": "gray_control",
+      "sha256": "ceb69ab291acc8badf3fc5e391a00500b7093f23992bf646265238f846e80876",
+      "file": "configs/fsq_G_clean_seed17.json"
+    },
+    {
+      "name": "fsq_G_pixel10_seed17",
+      "tier": "gray_control",
+      "sha256": "6aed6d5da245f040b5988c93f4f6969be7b30b8dcae357f25320b899babb4cc8",
+      "file": "configs/fsq_G_pixel10_seed17.json"
+    },
+    {
+      "name": "fsq_G_mixed_seed17",
+      "tier": "gray_control",
+      "sha256": "83b5f7598bee9f02dfba0537ef1fa80c7a4869ec1b91bfd3c91d7f2165d3788e",
+      "file": "configs/fsq_G_mixed_seed17.json"
+    },
+    {
+      "name": "lfq_G_clean_seed17",
+      "tier": "gray_control",
+      "sha256": "0448bb343d51d3aa481c376ebbe3d8c711c76f487aafd9b0a9380315abc0c535",
+      "file": "configs/lfq_G_clean_seed17.json"
+    },
+    {
+      "name": "lfq_G_pixel10_seed17",
+      "tier": "gray_control",
+      "sha256": "f2d591f9c4f675fa3412e536cbb7c18662f1edbcb5155eb5474057d30cdb92a5",
+      "file": "configs/lfq_G_pixel10_seed17.json"
+    },
+    {
+      "name": "lfq_G_mixed_seed17",
+      "tier": "gray_control",
+      "sha256": "4bc0c07fb61023d78903ea5bca7abf785b060b978e7a24a6b9dc4a847411d45a",
+      "file": "configs/lfq_G_mixed_seed17.json"
+    },
+    {
+      "name": "bsq_G_clean_seed17",
+      "tier": "gray_control",
+      "sha256": "9d88bc40e98838538d1d60ba1357d111f4816b7c800d9e2dec8c341e7f2a6f84",
+      "file": "configs/bsq_G_clean_seed17.json"
+    },
+    {
+      "name": "bsq_G_pixel10_seed17",
+      "tier": "gray_control",
+      "sha256": "4de206e5435e9ee33240d0170908523bd22c30f3a41327dd9d44be094bc8ce73",
+      "file": "configs/bsq_G_pixel10_seed17.json"
+    },
+    {
+      "name": "bsq_G_mixed_seed17",
+      "tier": "gray_control",
+      "sha256": "e7e47c37c2d0fec4e0e346964ec00178dcca7222ffab453503daddcb98ca2257",
+      "file": "configs/bsq_G_mixed_seed17.json"
+    },
+    {
+      "name": "sd_G_clean_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "7a6e4d7cff69f1faaca0bf2d9de8ac02406b892521c6b5f4c9de5b7b94b12759",
+      "file": "configs/sd_G_clean_seed17.json"
+    },
+    {
+      "name": "sd_G_pixel10_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "a9c2bb18b0f10dc5096d619ddc074cfffb8c73d06ad84d987fe8e0e0105a641d",
+      "file": "configs/sd_G_pixel10_seed17.json"
+    },
+    {
+      "name": "sd_G_mixed_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "9a8fafaa1c833fa5a4d973dd4bcd3d351c3e92972b3e8fc74f549210847a4609",
+      "file": "configs/sd_G_mixed_seed17.json"
+    },
+    {
+      "name": "sd_C_clean_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "f154396c57e1be97d19c9ca458650677e558b41ef19856d232b9c6577bd89573",
+      "file": "configs/sd_C_clean_seed17.json"
+    },
+    {
+      "name": "sd_C_pixel10_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "fd965a699c889184f1e8489e5849c726360c1c93875bc9361deadc7dc29eb36d",
+      "file": "configs/sd_C_pixel10_seed17.json"
+    },
+    {
+      "name": "sd_C_mixed_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "16a4c58990c6889023ab6bcb80d22a190e32c26d8bcf6ceaa2c775da4ecf1a3b",
+      "file": "configs/sd_C_mixed_seed17.json"
+    },
+    {
+      "name": "sdxl_G_clean_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "c710171222574348ffb917abc3481d853986a55e1d0234c07930059abf322c76",
+      "file": "configs/sdxl_G_clean_seed17.json"
+    },
+    {
+      "name": "sdxl_G_pixel10_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "16b2c76aa425749ba5ef3fb7c144b42cf57a139bcfa39ed34dba6cdc47e8b63d",
+      "file": "configs/sdxl_G_pixel10_seed17.json"
+    },
+    {
+      "name": "sdxl_G_mixed_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "4e3e33d36ea373a5e7c5e3f97b0c50a0c971d32fe724fbd458bcb4f325be6141",
+      "file": "configs/sdxl_G_mixed_seed17.json"
+    },
+    {
+      "name": "sdxl_C_clean_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "c2374061957de7b2ed1ec20c665a06ca8205764f2cbcd6ae6cf279dba374e4e6",
+      "file": "configs/sdxl_C_clean_seed17.json"
+    },
+    {
+      "name": "sdxl_C_pixel10_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "9a681f6d9d57589618b195d89976faf3e8191e9b861ec59ee42cf5929fd4a43b",
+      "file": "configs/sdxl_C_pixel10_seed17.json"
+    },
+    {
+      "name": "sdxl_C_mixed_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "e3bacd4b3e6a52602b1947cbddd1c7d457f7ee103817a22a088c5093c66f6f43",
+      "file": "configs/sdxl_C_mixed_seed17.json"
+    },
+    {
+      "name": "flux1_G_clean_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "b3103d8373fbfe19cb308751cae383f6626f06839a0c5dafc3040cc5d91c1ec1",
+      "file": "configs/flux1_G_clean_seed17.json"
+    },
+    {
+      "name": "flux1_G_pixel10_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "4ad326932e707ea86c358eeb54df6093cfcbe2158e8ff3d203731d17dace2bb4",
+      "file": "configs/flux1_G_pixel10_seed17.json"
+    },
+    {
+      "name": "flux1_G_mixed_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "3f60de47a9012dfbc67d8f88f5a347df41da347bdd7e2adba2e27d82aa3e1a70",
+      "file": "configs/flux1_G_mixed_seed17.json"
+    },
+    {
+      "name": "flux1_C_clean_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "e6bf47ad3a86fb3df55005aea641ffe1f2527aa36b3b8e1c178ea918db8d9a9d",
+      "file": "configs/flux1_C_clean_seed17.json"
+    },
+    {
+      "name": "flux1_C_pixel10_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "e0469f6595c9a43ae9d5e294d322c93912db7a4b1f49132a462e6360690f7fd1",
+      "file": "configs/flux1_C_pixel10_seed17.json"
+    },
+    {
+      "name": "flux1_C_mixed_seed17",
+      "tier": "natural_pretrained",
+      "sha256": "5e3b8e7a7e2104b65e27acd17e900c367933f2b8469a098a36caf96840a58620",
+      "file": "configs/flux1_C_mixed_seed17.json"
+    },
+    {
+      "name": "eo_vae_R_clean_seed17",
+      "tier": "geo_continuous_scratch",
+      "sha256": "4d70904a6cc9977bd13211efb17e3a0d23f45495f3721235093685c1f1c36e34",
+      "file": "configs/eo_vae_R_clean_seed17.json"
+    },
+    {
+      "name": "eo_vae_R_pixel10_seed17",
+      "tier": "geo_continuous_scratch",
+      "sha256": "798aed3a502535f794f968fecc4dd25c6100edf830b3296d494d9a9b910bb5a0",
+      "file": "configs/eo_vae_R_pixel10_seed17.json"
+    },
+    {
+      "name": "eo_vae_R_mixed_seed17",
+      "tier": "geo_continuous_scratch",
+      "sha256": "8ab42d9b35e5ed7eb4645f0f77b169b9fe497d90476751d129ee060af34accc3",
+      "file": "configs/eo_vae_R_mixed_seed17.json"
+    },
+    {
+      "name": "eo_vae_C_clean_seed17",
+      "tier": "geo_continuous_scratch",
+      "sha256": "6fc33a2d095214859d5f335d8f67ff600bbbd62999e9b6d12dabf52369ee2a5f",
+      "file": "configs/eo_vae_C_clean_seed17.json"
+    },
+    {
+      "name": "eo_vae_C_pixel10_seed17",
+      "tier": "geo_continuous_scratch",
+      "sha256": "50c2a343f795f688fa4b4d37ed34cc9a9e33e08847c27f3668ac0e99f885938e",
+      "file": "configs/eo_vae_C_pixel10_seed17.json"
+    },
+    {
+      "name": "eo_vae_C_mixed_seed17",
+      "tier": "geo_continuous_scratch",
+      "sha256": "d67ace88a20e0f44f17f5e7ee3c758d64b0a29c510d8130bd92bafc9153c7b19",
+      "file": "configs/eo_vae_C_mixed_seed17.json"
+    },
+    {
+      "name": "terramind_fsq_R_clean_seed17",
+      "tier": "geo_discrete_diffusion_scratch",
+      "sha256": "397e6b81ef9635553ecea2a67a2b14aa2dd9c1c9446a9894f03701a88163f7b0",
+      "file": "configs/terramind_fsq_R_clean_seed17.json"
+    },
+    {
+      "name": "terramind_fsq_R_pixel10_seed17",
+      "tier": "geo_discrete_diffusion_scratch",
+      "sha256": "3daa37bc319dbb2a4128c11017cbf9a2b85043e259d890825b4a5f876e4e82e9",
+      "file": "configs/terramind_fsq_R_pixel10_seed17.json"
+    },
+    {
+      "name": "terramind_fsq_R_mixed_seed17",
+      "tier": "geo_discrete_diffusion_scratch",
+      "sha256": "a5e46d1140ead60d2cffaa6139a62d262394329e3fd3e129872d2f9864f91343",
+      "file": "configs/terramind_fsq_R_mixed_seed17.json"
+    },
+    {
+      "name": "terramind_fsq_C_clean_seed17",
+      "tier": "geo_discrete_diffusion_scratch",
+      "sha256": "c50828b4d60965fe95625b206a3bcf4d28a8ba38d95341acfcfe8d1f40ada448",
+      "file": "configs/terramind_fsq_C_clean_seed17.json"
+    },
+    {
+      "name": "terramind_fsq_C_pixel10_seed17",
+      "tier": "geo_discrete_diffusion_scratch",
+      "sha256": "281dceecc77e6bc37a935d19888949b7009c9b9663fd52345cb463b400d0d035",
+      "file": "configs/terramind_fsq_C_pixel10_seed17.json"
+    },
+    {
+      "name": "terramind_fsq_C_mixed_seed17",
+      "tier": "geo_discrete_diffusion_scratch",
+      "sha256": "94ff17b75855d48b590f635b2f3c19107578917f38787b08c2798692f2a70211",
+      "file": "configs/terramind_fsq_C_mixed_seed17.json"
+    },
+    {
+      "name": "vq_R_pixel10_seed17_visible",
+      "tier": "visible_mean_control",
+      "sha256": "a20d364ba07ab03dffade177af3eaed15ad4a49c9c74e3b42d5f6f7a70a68074",
+      "file": "configs/vq_R_pixel10_seed17_visible.json"
+    },
+    {
+      "name": "vq_R_mixed_seed17_visible",
+      "tier": "visible_mean_control",
+      "sha256": "e677ec232dae682d81aa86cc5efd19f43812a1f3acb040fc9034db61ba5cf88c",
+      "file": "configs/vq_R_mixed_seed17_visible.json"
+    },
+    {
+      "name": "vq_C_pixel10_seed17_visible",
+      "tier": "visible_mean_control",
+      "sha256": "3ab45ea2471de3c76635803d0e2d59fc415d49c7179f15804f131a5cae2f1e1a",
+      "file": "configs/vq_C_pixel10_seed17_visible.json"
+    },
+    {
+      "name": "vq_C_mixed_seed17_visible",
+      "tier": "visible_mean_control",
+      "sha256": "29011be15eb0c6cf628f56c2cf7e0ce6d4910737dd33aaa67d0018fd447b1470",
+      "file": "configs/vq_C_mixed_seed17_visible.json"
+    },
+    {
+      "name": "fsq_R_pixel10_seed17_visible",
+      "tier": "visible_mean_control",
+      "sha256": "ab005329d10f65ce39d26cc7c3abe526c499dc0eb6101bba5acca3d9d1aa59ab",
+      "file": "configs/fsq_R_pixel10_seed17_visible.json"
+    },
+    {
+      "name": "fsq_R_mixed_seed17_visible",
+      "tier": "visible_mean_control",
+      "sha256": "ac0eccb9090375f4620d95a6b51dbed90dc5362be21d6a5a169f4368ae6e5fba",
+      "file": "configs/fsq_R_mixed_seed17_visible.json"
+    },
+    {
+      "name": "fsq_C_pixel10_seed17_visible",
+      "tier": "visible_mean_control",
+      "sha256": "23e8ddd944a4ef16d4ac73941a3c1dfce9ce978c5663e8037f41b28f4f58ce43",
+      "file": "configs/fsq_C_pixel10_seed17_visible.json"
+    },
+    {
+      "name": "fsq_C_mixed_seed17_visible",
+      "tier": "visible_mean_control",
+      "sha256": "d7f22e3379dce6b61caa2c6714f6f5b22a087406f516bf6d061344a5cfa9dd9c",
+      "file": "configs/fsq_C_mixed_seed17_visible.json"
+    },
+    {
+      "name": "prithvi_mae_R_clean_seed17",
+      "tier": "geo_mae_separate",
+      "sha256": "0b26d8d83b8139df8016a54b90e561299111fbe9e1423480a43b16067a452eed",
+      "file": "configs/prithvi_mae_R_clean_seed17.json"
+    },
+    {
+      "name": "prithvi_mae_R_patch16_seed17",
+      "tier": "geo_mae_separate",
+      "sha256": "c724460220a379a8f2d80325ca869a2d89e5704b1c0fe48b0ed9d254178e9eb0",
+      "file": "configs/prithvi_mae_R_patch16_seed17.json"
+    },
+    {
+      "name": "prithvi_mae_C_clean_seed17",
+      "tier": "geo_mae_separate",
+      "sha256": "d608681cb93819f1d5f6a87e3274c939a0d60075fe734ce98b743c6fc85df432",
+      "file": "configs/prithvi_mae_C_clean_seed17.json"
+    },
+    {
+      "name": "prithvi_mae_C_patch16_seed17",
+      "tier": "geo_mae_separate",
+      "sha256": "fe8d4f422ef98909f9a05b18a91ab663b6a748025bebe513aa4af1739da9ad11",
+      "file": "configs/prithvi_mae_C_patch16_seed17.json"
+    },
+    {
+      "name": "satmae_pp_R_clean_seed17",
+      "tier": "geo_mae_separate",
+      "sha256": "ab8f51b83000e2b368e8d9b948fd3276c331ae3efd3fb154c4d6fdb8e9c44d8d",
+      "file": "configs/satmae_pp_R_clean_seed17.json"
+    },
+    {
+      "name": "satmae_pp_R_patch16_seed17",
+      "tier": "geo_mae_separate",
+      "sha256": "9cf10cab53d7d9302e1a60aa30ec54144aeb3a0bc303f7114a9f19e656de46bf",
+      "file": "configs/satmae_pp_R_patch16_seed17.json"
+    },
+    {
+      "name": "satmae_pp_C_clean_seed17",
+      "tier": "geo_mae_separate",
+      "sha256": "366491e8f6b9c8a476471cf287aa604569b1220fe9acaa730d55d153126b05e6",
+      "file": "configs/satmae_pp_C_clean_seed17.json"
+    },
+    {
+      "name": "satmae_pp_C_patch16_seed17",
+      "tier": "geo_mae_separate",
+      "sha256": "f02ca4aa5aa862460bfcaa818d6f73f64f08a5c79105be5d493fd9a7da608db2",
+      "file": "configs/satmae_pp_C_patch16_seed17.json"
+    },
+    {
+      "name": "vq_C_affine_clean_seed17",
+      "tier": "affine_gain_control",
+      "sha256": "05ce65ba9d5262ff3b3af2a6c66c6230a75a77da5116a9e294f61fbd6dfc154d",
+      "file": "configs/vq_C_affine_clean_seed17.json"
+    },
+    {
+      "name": "vq_C_affine_mixed_seed17",
+      "tier": "affine_gain_control",
+      "sha256": "cc8f8d0768b41b2597516905850fa8316081c835eda2508e6e95998f2a9f68e9",
+      "file": "configs/vq_C_affine_mixed_seed17.json"
+    },
+    {
+      "name": "fsq_C_affine_clean_seed17",
+      "tier": "affine_gain_control",
+      "sha256": "1f7c553c54c6aec360a44a506dd1bf8759bff1d16931d4ca3601f82ab514f068",
+      "file": "configs/fsq_C_affine_clean_seed17.json"
+    },
+    {
+      "name": "fsq_C_affine_mixed_seed17",
+      "tier": "affine_gain_control",
+      "sha256": "27bb99d4071d3ef9a8e53e29a84920066f7dce9284b8f570424a3867fc684073",
+      "file": "configs/fsq_C_affine_mixed_seed17.json"
+    },
+    {
+      "name": "vq_R_clean_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "20fe6e8231474bf280b5a7d816b07aa7ab9b192d3b82a2239390b917ee5e946a",
+      "file": "configs/vq_R_clean_seed17_absolute.json"
+    },
+    {
+      "name": "vq_R_pixel10_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "0ca8f9946913c451bbb8dda2e6c0125ea2a16084f4787f51e1bc63b56a4f4eae",
+      "file": "configs/vq_R_pixel10_seed17_absolute.json"
+    },
+    {
+      "name": "vq_R_mixed_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "d137f2d3635ce3ade79ba8ace6337a5f8f5eaa9d23613965e364d5a458413a54",
+      "file": "configs/vq_R_mixed_seed17_absolute.json"
+    },
+    {
+      "name": "vq_C_clean_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "7c8c1cf0052b02ebad12880c221718626c3b39c0b83bd9a49dd39c959fde09ae",
+      "file": "configs/vq_C_clean_seed17_absolute.json"
+    },
+    {
+      "name": "vq_C_pixel10_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "08da9bae42cd11a48f95f92c30b6fb577f3b2a68604c1c0b73e70b931817d612",
+      "file": "configs/vq_C_pixel10_seed17_absolute.json"
+    },
+    {
+      "name": "vq_C_mixed_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "30fe63a64a49b67f4d72cfaa822d28e3cb6cd88f15655894f9d2c4294f0066fd",
+      "file": "configs/vq_C_mixed_seed17_absolute.json"
+    },
+    {
+      "name": "fsq_R_clean_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "444c20838070bfe46c5b05432d46b8a45e21dd9c2ea773d428409710a44351f9",
+      "file": "configs/fsq_R_clean_seed17_absolute.json"
+    },
+    {
+      "name": "fsq_R_pixel10_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "ecf85e918ddfc77513bcef7950e4ca02c82f625ccd948a9add734c5b3a0d0d9e",
+      "file": "configs/fsq_R_pixel10_seed17_absolute.json"
+    },
+    {
+      "name": "fsq_R_mixed_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "077b6ec397ec9fa9d3908d79fa437ad14d23ca2f671e57a7fa13c4151c8b809e",
+      "file": "configs/fsq_R_mixed_seed17_absolute.json"
+    },
+    {
+      "name": "fsq_C_clean_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "f7759e7c5de71857afc03dcb0f3e9c1132d99aac18faedc1c42e9d9ff1976293",
+      "file": "configs/fsq_C_clean_seed17_absolute.json"
+    },
+    {
+      "name": "fsq_C_pixel10_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "6013e30effa890d206ff1399a342e13e5f79f3ce966e2afd0a5de32741667aad",
+      "file": "configs/fsq_C_pixel10_seed17_absolute.json"
+    },
+    {
+      "name": "fsq_C_mixed_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "8917977386ffad40c4ba248aad1a1e1b42cbf78fcd79a361f9e0bed560adb97d",
+      "file": "configs/fsq_C_mixed_seed17_absolute.json"
+    },
+    {
+      "name": "lfq_R_clean_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "2b6d07c25e7c0555fce48736c2369ae0dacb94fee732680804641e721af7c393",
+      "file": "configs/lfq_R_clean_seed17_absolute.json"
+    },
+    {
+      "name": "lfq_R_pixel10_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "5c47d15d51e36d1082f4d89c05f1ea359bb36b7ad06a1893a0f882338eb819bb",
+      "file": "configs/lfq_R_pixel10_seed17_absolute.json"
+    },
+    {
+      "name": "lfq_R_mixed_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "5fbc99ec50d339636edc34b680c4476cf99cd5fda8723ced9a88c2905dc8d5d0",
+      "file": "configs/lfq_R_mixed_seed17_absolute.json"
+    },
+    {
+      "name": "lfq_C_clean_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "4a75aa6e850ec6c5268ce9cc1a293589e8ee5a9161d8d2e347dffff738cb596d",
+      "file": "configs/lfq_C_clean_seed17_absolute.json"
+    },
+    {
+      "name": "lfq_C_pixel10_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "0d920760613d08d4514ee42c1c16359d0fdad05ae77c9cf889c93eae0b4ab520",
+      "file": "configs/lfq_C_pixel10_seed17_absolute.json"
+    },
+    {
+      "name": "lfq_C_mixed_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "19dc8b70bf38dbb81d2bbbec7d92629d86a5162b3a8d77d01b631c8e298c381f",
+      "file": "configs/lfq_C_mixed_seed17_absolute.json"
+    },
+    {
+      "name": "bsq_R_clean_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "f8d5db12b07165e2ea267b59a1a9e6aa184ae7778cde6557f41def7fd269e77f",
+      "file": "configs/bsq_R_clean_seed17_absolute.json"
+    },
+    {
+      "name": "bsq_R_pixel10_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "a8c3b6db02c66398344d1f3b1c0c1302231f79d2c108e6851a5bd47fb76d4598",
+      "file": "configs/bsq_R_pixel10_seed17_absolute.json"
+    },
+    {
+      "name": "bsq_R_mixed_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "a7fd52ce1472c1910a6534ce719ac2b08268a80776346f20fed4ced8da48e761",
+      "file": "configs/bsq_R_mixed_seed17_absolute.json"
+    },
+    {
+      "name": "bsq_C_clean_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "6c44eae4480d608d427d253f3eba423153803b64ef70530f324d63faf13ffe12",
+      "file": "configs/bsq_C_clean_seed17_absolute.json"
+    },
+    {
+      "name": "bsq_C_pixel10_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "4087c8d3cdcfcee2b4f240e58e2d45bf03c5997964952d772efd22f94057f61c",
+      "file": "configs/bsq_C_pixel10_seed17_absolute.json"
+    },
+    {
+      "name": "bsq_C_mixed_seed17_absolute",
+      "tier": "absolute_temperature_control",
+      "sha256": "e45b389dcdeccac3e82e5af82d4f43985e76780e501cd0e8d49b980d036d21fc",
+      "file": "configs/bsq_C_mixed_seed17_absolute.json"
+    },
+    {
+      "name": "vq_R_mixed_seed17_rate8",
+      "tier": "rate_distortion",
+      "sha256": "2d7119a29f29fe5cc72552b12571e2ab30f07d9a672a59c70a625a75addf45d6",
+      "file": "configs/vq_R_mixed_seed17_rate8.json"
+    },
+    {
+      "name": "vq_C_mixed_seed17_rate8",
+      "tier": "rate_distortion",
+      "sha256": "6be6eef2e32cf9f10db640ce956ee2b0235b94dd8175f3244cad95f04a48a5e7",
+      "file": "configs/vq_C_mixed_seed17_rate8.json"
+    },
+    {
+      "name": "fsq_R_mixed_seed17_rate8",
+      "tier": "rate_distortion",
+      "sha256": "84a75289a92076b16904078a2490059e842204d3062944c14710eedf2c19d4cc",
+      "file": "configs/fsq_R_mixed_seed17_rate8.json"
+    },
+    {
+      "name": "fsq_C_mixed_seed17_rate8",
+      "tier": "rate_distortion",
+      "sha256": "9cff9b1d0f1e80fb2b98fd9d1dfacefc65a462d62b2d4bd9bfc1d10ff2b9bfb9",
+      "file": "configs/fsq_C_mixed_seed17_rate8.json"
+    },
+    {
+      "name": "lfq_R_mixed_seed17_rate8",
+      "tier": "rate_distortion",
+      "sha256": "174423ae38325c0631751c9bee4bc63e7c87622a89cd0065c02992cd38e08cd0",
+      "file": "configs/lfq_R_mixed_seed17_rate8.json"
+    },
+    {
+      "name": "lfq_C_mixed_seed17_rate8",
+      "tier": "rate_distortion",
+      "sha256": "3e47c33098e5136f3ee7fb48e7e83139fcdcda0cf0b86269258668874954733f",
+      "file": "configs/lfq_C_mixed_seed17_rate8.json"
+    },
+    {
+      "name": "bsq_R_mixed_seed17_rate8",
+      "tier": "rate_distortion",
+      "sha256": "f5d8095f1a6eab20f161d4ed2b4a848211dfef5b4fd59803d75e500aef12c990",
+      "file": "configs/bsq_R_mixed_seed17_rate8.json"
+    },
+    {
+      "name": "bsq_C_mixed_seed17_rate8",
+      "tier": "rate_distortion",
+      "sha256": "2ab04ff8c89a0f697ca5174e2ca956d51f5e537513d578af00dd38a2c4be3019",
+      "file": "configs/bsq_C_mixed_seed17_rate8.json"
+    },
+    {
+      "name": "vq_R_mixed_seed17_rate12",
+      "tier": "rate_distortion",
+      "sha256": "e598e2d6726d37e630480e558b4b66fdec479eda3091ea0b1e27a7fef4597688",
+      "file": "configs/vq_R_mixed_seed17_rate12.json"
+    },
+    {
+      "name": "vq_C_mixed_seed17_rate12",
+      "tier": "rate_distortion",
+      "sha256": "30ab49df996bfd28e0d1fafa8852d5ca32e0bc61b069a15d3fcec009284ce295",
+      "file": "configs/vq_C_mixed_seed17_rate12.json"
+    },
+    {
+      "name": "fsq_R_mixed_seed17_rate12",
+      "tier": "rate_distortion",
+      "sha256": "1ab21aaab1b048e2d16a931b447a98a9bc96a6831b46ae32a2bf63ccc5cf66a3",
+      "file": "configs/fsq_R_mixed_seed17_rate12.json"
+    },
+    {
+      "name": "fsq_C_mixed_seed17_rate12",
+      "tier": "rate_distortion",
+      "sha256": "ab347f4ea263e44c148690255af5370e294016183243702b26eca965dc205de6",
+      "file": "configs/fsq_C_mixed_seed17_rate12.json"
+    },
+    {
+      "name": "lfq_R_mixed_seed17_rate12",
+      "tier": "rate_distortion",
+      "sha256": "5bceb99ef75f3fd69bfdbbd32c84dc6740a2baf6bccdbc127a6a282e39b0f2cf",
+      "file": "configs/lfq_R_mixed_seed17_rate12.json"
+    },
+    {
+      "name": "lfq_C_mixed_seed17_rate12",
+      "tier": "rate_distortion",
+      "sha256": "1b8f33c5f2e287ea864b5618af4f688560c1c794844d023df42bc521b9119884",
+      "file": "configs/lfq_C_mixed_seed17_rate12.json"
+    },
+    {
+      "name": "bsq_R_mixed_seed17_rate12",
+      "tier": "rate_distortion",
+      "sha256": "b463e117a2afa91c43f4ff6cfcfedf6e49dd664c7c8f73dcb52248ff7f02862a",
+      "file": "configs/bsq_R_mixed_seed17_rate12.json"
+    },
+    {
+      "name": "bsq_C_mixed_seed17_rate12",
+      "tier": "rate_distortion",
+      "sha256": "df3e5880aa51d6737febdcb468137cea1b069112c727a2d74134123cf83e3f0e",
+      "file": "configs/bsq_C_mixed_seed17_rate12.json"
+    }
+  ]
+}
