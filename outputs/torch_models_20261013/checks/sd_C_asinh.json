@@ -1,0 +1,9 @@
+{
+  "model": "sd_C_asinh",
+  "strict_loading": "passed",
+  "source_stage": "stage1_20260930_attempt02",
+  "weights_sha256": "a829baad3ee84014b4f93ea49a12b5796c9769b858364df7a7d1e648762b0320",
+  "original_checkpoint_sha256": "9c4d404acc89a3b2ab952d2b20694f2ccd7ad0593705f5e0917daed82ae5a457",
+  "epoch": 5,
+  "inference_run": false
+}

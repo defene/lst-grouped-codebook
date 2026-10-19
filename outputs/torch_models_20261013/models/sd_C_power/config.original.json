@@ -1,0 +1,204 @@
+{
+  "version": "lst-restoration-v4-colour-20260927",
+  "seed": 17,
+  "name": "sd_C_power_pixel10_seed17",
+  "execution": {
+    "enabled": true,
+    "preflight_report": "/scratch/zm2864/lst-restoration-bench/output/stage1_20260930_attempt02/runs/sd_C_power/preflight.json",
+    "alignment_report": "/scratch/zm2864/lst-restoration-bench/output/stage1_20260930_attempt02/runs/sd_C_power/alignment.json"
+  },
+  "data": {
+    "root": "/scratch/zm2864/lst-restoration-bench",
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "dataset": "prithvi",
+    "display_name": "HLS-LST-Pairs",
+    "modality": "lst",
+    "counts": {
+      "train": 218975,
+      "val": 11684,
+      "test": 11757
+    },
+    "shape": [
+      1,
+      256,
+      256
+    ],
+    "historical_test_exposure": true
+  },
+  "task": {
+    "mean_source": "oracle",
+    "field": "residual",
+    "mean_side_bits": 32,
+    "mean_scale_celsius": 16.29419157454709,
+    "mean_center_celsius": 0.0,
+    "absolute_center_celsius": null,
+    "temperature_bounds_celsius": [
+      -50.0,
+      70.0
+    ],
+    "residual_std_celsius": 2.6950881766205814,
+    "scale_evidence": "/scratch/zm2864/lst-restoration-bench/processed_data/hlp_split_v2_20260914/prithvi/residual_scale.json"
+  },
+  "representation": {
+    "kind": "C_power",
+    "A_celsius": 120.0,
+    "tau_celsius": 2.6950881766205814,
+    "scale_evidence": "/scratch/zm2864/lst-restoration-bench/processed_data/hlp_split_v2_20260914/prithvi/residual_scale.json",
+    "mapping_origin": "signed bounded LST adaptation; not the exact nonnegative-depth formula",
+    "inverse_gradient_policy": "saturated_softpath_v1"
+  },
+  "model": {
+    "kind": "sd",
+    "channels": 3,
+    "base_channels": 128,
+    "num_res_blocks": 3,
+    "latent_dim": 32,
+    "grid": 16,
+    "codebook_size": 1024,
+    "levels": [
+      8,
+      8,
+      16
+    ],
+    "bits_per_token": 10,
+    "commitment": 0.25,
+    "entropy_weight": 0.01,
+    "entropy_temperature": 0.1,
+    "checkpointing": false,
+    "pretrained_path": "/scratch/zm2864/lst-restoration-bench/artifacts/pretrained/sd-vae-ft-mse-31f26f",
+    "pretrained_sha256": {
+      "config.json": "92d3dfb746fca211a2c9e019e285f8597412211728dce3c5bcf4eda0f2d62e7e",
+      "diffusion_pytorch_model.safetensors": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815"
+    },
+    "source_repo": "stabilityai/sd-vae-ft-mse",
+    "source_revision": "31f26fdeee1355a5c34592e401dd41e45d25a493"
+  },
+  "corruption": {
+    "training_name": "pixel10",
+    "train_profiles": [
+      {
+        "kind": "pixel10",
+        "coverage": 0.1,
+        "seed": 20260925
+      }
+    ],
+    "profile_selection_seed": 20260925,
+    "synthetic_not_sensor_calibrated": true
+  },
+  "loss": {
+    "pixel": 1.0,
+    "gradient": 0.1,
+    "representation": 0.0,
+    "bottleneck": 1.0,
+    "kl": 1e-06,
+    "region": "all_valid"
+  },
+  "train": {
+    "epochs": 5,
+    "effective_batch": 64,
+    "micro_batch": 16,
+    "workers": 8,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "amp": true,
+    "memory_limit_gib": 40.0,
+    "device": "cuda:0",
+    "checkpoint_every": 100,
+    "sample_order_seed": 17,
+    "views": 1,
+    "selection": "final_epoch",
+    "record_presentations": 1094875,
+    "updates": 17110,
+    "micro_batch_protocol": "core-micro16-effective64-20260930"
+  },
+  "evaluation": {
+    "profiles": [
+      {
+        "kind": "clean",
+        "seed": 20260925
+      },
+      {
+        "kind": "pixel10",
+        "coverage": 0.1,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_gaussian",
+        "sigma_celsius": 0.5,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_stripe",
+        "stripe_sigma_celsius": 0.25,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_missing",
+        "coverage": 0.1,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_bias",
+        "coverage": 0.3,
+        "bias_celsius": 2.0,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "joint",
+        "sigma_celsius": 0.5,
+        "stripe_sigma_celsius": 0.25,
+        "coverage": 0.1,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_gaussian",
+        "sigma_celsius": 1.0,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_missing",
+        "coverage": 0.3,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "joint",
+        "sigma_celsius": 1.0,
+        "stripe_sigma_celsius": 0.25,
+        "coverage": 0.3,
+        "field_grid": 8,
+        "seed": 20260925
+      }
+    ],
+    "splits": [
+      "val"
+    ],
+    "views": 2,
+    "batch_size": 4,
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 20260925,
+    "save_gallery_samples": 8,
+    "codec_samples": 8,
+    "stage": "selection"
+  },
+  "scope": {
+    "downstream": false,
+    "generation": false,
+    "hls_training": false,
+    "cross_view_training": false,
+    "real_cloud_claim": false
+  },
+  "tracking": {
+    "enabled": true,
+    "entity": "cyiheng312-new-york-university",
+    "project": "lst-restoration-stage1-20260930",
+    "run_id": "f183c92ff87d",
+    "name": "sd_C_power-micro16-eb64",
+    "group": "stage1_20260930_attempt02",
+    "every_updates": 10
+  }
+}

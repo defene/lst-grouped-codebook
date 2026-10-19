@@ -1,0 +1,18 @@
+{
+  "model": "sd_C_affine",
+  "strict_loading": "passed",
+  "source_stage": "stage1_20260930_attempt02",
+  "weights_sha256": "598110cd1135c26e6f618211127343f9b8bad5cbb08c3a3c98d834cea72708c4",
+  "original_checkpoint_sha256": "ef395e58ed5a87e750cafb6d81b9c63fdce7a07e588902cdd5d789921a54612b",
+  "epoch": 5,
+  "inference_run": true,
+  "device": "cpu",
+  "precision": "float32; no autocast",
+  "input_source": "C:\\Users\\rog\\Desktop\\iclr\\outputs\\torch_experiments_20261013\\snapshot\\output\\stage1_20260930_attempt02\\runs\\sd_C_affine\\training\\final\\val\\pixel10_e94c881d3e7a\\gallery.npz",
+  "sample_id": "prithvi:train/T02WNT/obs_0005/r00_c04:lst_hr",
+  "mean_celsius": -0.3227313160896301,
+  "mean_note": "oracle reference mean, explicitly reproduced from saved validation reference",
+  "note": "Single-example local test; not a rerun of full validation. Server BF16 and local FP32 can differ.",
+  "sample_raw_rmse_C": 0.028223383810079484,
+  "difference_from_saved_prediction_max_abs_C": 0.1120280921459198
+}

@@ -1,0 +1,9 @@
+{
+  "model": "vq_C",
+  "strict_loading": "passed",
+  "source_stage": "stage1_evalrepair_20261004_attempt01",
+  "weights_sha256": "ddc7001afdab17c0f1d9f290a70c54611d23256b5f288d003e7e5281acf3f178",
+  "original_checkpoint_sha256": "03151efab8ca2aca2fcabb9bada8538b4023ab89f242a1c2e24b7f5b170a51e3",
+  "epoch": 5,
+  "inference_run": false
+}

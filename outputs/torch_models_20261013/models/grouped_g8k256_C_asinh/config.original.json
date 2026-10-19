@@ -1,0 +1,228 @@
+{
+  "version": "lst-restoration-v4-colour-20260927",
+  "seed": 17,
+  "name": "grouped_g8k256_C_asinh_pixel10_seed17_20261005",
+  "execution": {
+    "enabled": true,
+    "preflight_report": "/scratch/zm2864/lst-restoration-bench/output/stage3_grouped_20261005_attempt01/runs/grouped_g8k256_C_asinh/preflight.json",
+    "alignment_report": null
+  },
+  "data": {
+    "root": "/scratch/zm2864/lst-restoration-bench",
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "dataset": "prithvi",
+    "display_name": "HLS-LST-Pairs",
+    "modality": "lst",
+    "counts": {
+      "train": 218975,
+      "val": 11684,
+      "test": 11757
+    },
+    "shape": [
+      1,
+      256,
+      256
+    ],
+    "historical_test_exposure": true
+  },
+  "task": {
+    "mean_source": "oracle",
+    "field": "residual",
+    "mean_side_bits": 32,
+    "mean_scale_celsius": 16.29419157454709,
+    "mean_center_celsius": 0.0,
+    "absolute_center_celsius": null,
+    "temperature_bounds_celsius": [
+      -50.0,
+      70.0
+    ],
+    "residual_std_celsius": 2.6950881766205814,
+    "scale_evidence": "/scratch/zm2864/lst-restoration-bench/processed_data/hlp_split_v2_20260914/prithvi/residual_scale.json"
+  },
+  "representation": {
+    "kind": "C_asinh",
+    "A_celsius": 120.0,
+    "tau_celsius": 2.6950881766205814,
+    "scale_evidence": "/scratch/zm2864/lst-restoration-bench/processed_data/hlp_split_v2_20260914/prithvi/residual_scale.json",
+    "mapping_origin": "signed bounded LST adaptation; not the exact nonnegative-depth formula",
+    "inverse_gradient_policy": "saturated_softpath_v1"
+  },
+  "model": {
+    "kind": "grouped_g8k256",
+    "channels": 3,
+    "base_channels": 160,
+    "num_res_blocks": 2,
+    "latent_dim": 32,
+    "grid": 16,
+    "codebook_size": 256,
+    "levels": [
+      8,
+      8,
+      16
+    ],
+    "bits_per_token": 8,
+    "commitment": 0.25,
+    "entropy_weight": 0.01,
+    "entropy_temperature": 0.1,
+    "checkpointing": false,
+    "pretrained_path": null,
+    "pretrained_sha256": {},
+    "groups": 8,
+    "scales": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      13,
+      16
+    ],
+    "quant_resi": 0.5,
+    "share_quant_resi": 4,
+    "initialization": "scratch",
+    "source_repo": "defene/lst-grouped-codebook",
+    "source_revision": "9465a23adbdc5688093be33c62cadf8860301f2e",
+    "source_configuration": "A07 g8k256; lowest published val clean and noisy10 RMSE"
+  },
+  "corruption": {
+    "training_name": "pixel10",
+    "train_profiles": [
+      {
+        "kind": "pixel10",
+        "coverage": 0.1,
+        "seed": 20260925
+      }
+    ],
+    "profile_selection_seed": 20260925,
+    "synthetic_not_sensor_calibrated": true
+  },
+  "loss": {
+    "pixel": 1.0,
+    "gradient": 0.1,
+    "representation": 0.0,
+    "bottleneck": 1.0,
+    "kl": 1e-06,
+    "region": "all_valid"
+  },
+  "train": {
+    "epochs": 5,
+    "effective_batch": 64,
+    "micro_batch": 8,
+    "workers": 8,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "amp": true,
+    "memory_limit_gib": 40.0,
+    "device": "cuda:0",
+    "checkpoint_every": 100,
+    "sample_order_seed": 17,
+    "views": 1,
+    "selection": "final_epoch",
+    "record_presentations": 1094875,
+    "updates": 17110,
+    "micro_batch_protocol": "grouped-micro8-effective64-20261005",
+    "warmup_updates": 500
+  },
+  "evaluation": {
+    "profiles": [
+      {
+        "kind": "clean",
+        "seed": 20260925
+      },
+      {
+        "kind": "pixel10",
+        "coverage": 0.1,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_gaussian",
+        "sigma_celsius": 0.5,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_stripe",
+        "stripe_sigma_celsius": 0.25,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_missing",
+        "coverage": 0.1,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_bias",
+        "coverage": 0.3,
+        "bias_celsius": 2.0,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "joint",
+        "sigma_celsius": 0.5,
+        "stripe_sigma_celsius": 0.25,
+        "coverage": 0.1,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_gaussian",
+        "sigma_celsius": 1.0,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_missing",
+        "coverage": 0.3,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "joint",
+        "sigma_celsius": 1.0,
+        "stripe_sigma_celsius": 0.25,
+        "coverage": 0.3,
+        "field_grid": 8,
+        "seed": 20260925
+      }
+    ],
+    "splits": [
+      "val"
+    ],
+    "views": 2,
+    "batch_size": 4,
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 20260925,
+    "save_gallery_samples": 8,
+    "codec_samples": 8,
+    "stage": "selection"
+  },
+  "scope": {
+    "downstream": false,
+    "generation": false,
+    "hls_training": false,
+    "cross_view_training": false,
+    "real_cloud_claim": false
+  },
+  "tracking": {
+    "enabled": true,
+    "entity": "cyiheng312-new-york-university",
+    "project": "lst-restoration-stage1-20260930",
+    "run_id": "fb1a8b1ad1b8",
+    "name": "grouped_g8k256_C_asinh",
+    "group": "stage3-grouped-g8k256-20261005",
+    "every_updates": 10,
+    "tags": [
+      "stage3",
+      "grouped-g8k256",
+      "multiscale",
+      "HLP-v2",
+      "C_asinh",
+      "five-exact-epochs"
+    ]
+  },
+  "experiment_revision": "grouped-9465a23-eight-representations-20261005-v1"
+}

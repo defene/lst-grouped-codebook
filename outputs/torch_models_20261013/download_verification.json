@@ -1,0 +1,10 @@
+{
+  "status": "verified",
+  "models": 39,
+  "files": 441,
+  "archive_sha256": "e90dc8988d78a57e1dbbfb0d5d963963d965e1975a8717fa2fcb86a475dbe998",
+  "archive_bytes": 14346158080,
+  "model_weight_bytes": 13718979809,
+  "optimizer_states_included": false,
+  "original_model_dtypes_preserved": true
+}

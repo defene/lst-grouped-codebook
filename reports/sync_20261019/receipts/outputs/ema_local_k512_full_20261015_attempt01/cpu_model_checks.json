@@ -1,0 +1,71 @@
+{
+  "protocol_changes_verified": true,
+  "models": [
+    {
+      "name": "vq_k512_G_baseline",
+      "parameters": 87174392,
+      "rate": {
+        "latent_grid": [
+          16,
+          16
+        ],
+        "latent_channels": 32,
+        "indices_per_image": 256,
+        "codebook_size": 512,
+        "fixed_bits_per_index": 9,
+        "nominal_index_bits": 2304,
+        "mean_side_information_bits": 32,
+        "nominal_index_plus_mean_bits": 2336,
+        "excludes": [
+          "mask/support metadata",
+          "container headers",
+          "shared weights"
+        ],
+        "actual_bitstream_measured": false,
+        "payload_type": "discrete_fixed_width_nominal"
+      }
+    },
+    {
+      "name": "grouped_g8k512_G_baseline",
+      "parameters": 108836248,
+      "rate": {
+        "latent_grid": [
+          16,
+          16
+        ],
+        "latent_channels": 32,
+        "indices_per_image": 5440,
+        "groups": 8,
+        "positions_per_group": 680,
+        "scales": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          10,
+          13,
+          16
+        ],
+        "codebook_size": 512,
+        "codebook_size_scope": "per_group",
+        "fixed_bits_per_index": 9,
+        "nominal_index_bits": 48960,
+        "mean_side_information_bits": 32,
+        "nominal_index_plus_mean_bits": 48992,
+        "embedding_parameters": 16384,
+        "payload_type": "grouped_multiscale_fixed_width_nominal",
+        "actual_bitstream_measured": false,
+        "excludes": [
+          "mask/support metadata",
+          "container headers",
+          "shared weights"
+        ],
+        "equal_rate_claim": false
+      }
+    }
+  ],
+  "cuda_preflight": "deferred_until_parent_completed"
+}

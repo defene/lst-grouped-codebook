@@ -7,7 +7,9 @@ from pathlib import Path
 root=Path(__file__).resolve().parent
 manifest=json.loads((root/'UPDATE_MANIFEST_20261017.json').read_text(encoding='utf-8'))
 for rel,entry in manifest['files'].items():
-    path=root/rel
+    # The 2026-10-19 navigation update preserves these manifest-bound originals.
+    frozen = {"README.md", "verify_update_20261017.py"}
+    path = root / ("docs/historical_sync_20261017/" + rel if rel in frozen else rel)
     assert path.resolve().is_relative_to(root),rel
     assert path.suffix.lower() not in {'.pt','.pth','.ckpt','.safetensors','.npz','.npy','.eoz','.zip','.sqlite'},rel
     raw=path.read_bytes()

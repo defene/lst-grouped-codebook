@@ -1,0 +1,9 @@
+{
+  "model": "vq_G_asinh",
+  "strict_loading": "passed",
+  "source_stage": "stage1_evalrepair_20261004_attempt01",
+  "weights_sha256": "6657a215eba3d7f4d03c41b24fa1fe6297fcc0e4ea1b009d7b8418af37e2b4e3",
+  "original_checkpoint_sha256": "4cbe45cac797d75d4d47eb49e98f7e7e86a1f370ee7c496f8085184c63bd726f",
+  "epoch": 5,
+  "inference_run": false
+}

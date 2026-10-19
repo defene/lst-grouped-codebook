@@ -1,0 +1,9 @@
+{
+  "model": "vq_drifting_G_asinh",
+  "strict_loading": "passed",
+  "source_stage": "stage2_vq_20261005_attempt02",
+  "weights_sha256": "2da39b601ae619e4cc84be40fc4eb2880fbd497e4d557d125ed874b5e58e4ac9",
+  "original_checkpoint_sha256": "303a8a5b33063fb332f2de0caa26a25519e2ec5a3b267cd6dec8ab95f9ee87df",
+  "epoch": 5,
+  "inference_run": false
+}

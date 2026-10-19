@@ -1,0 +1,9 @@
+{
+  "model": "grouped_g8k256_C",
+  "strict_loading": "passed",
+  "source_stage": "stage3_grouped_20261005_attempt01",
+  "weights_sha256": "4bc82cf3f58e68a0532ed18a73069044e31848ff4246e4492f71cbc0e04c883c",
+  "original_checkpoint_sha256": "6f8fbda549c89662be725cbf30f0f0d2fdd91b5d6fe1be7ca597b596db1343a3",
+  "epoch": 5,
+  "inference_run": false
+}

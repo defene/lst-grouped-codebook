@@ -1,0 +1,9 @@
+{
+  "model": "sd_G_power",
+  "strict_loading": "passed",
+  "source_stage": "stage1_20260930_attempt02",
+  "weights_sha256": "061fccba25271fba1708131d07a8f8e4f4612ce123ba78181ce7217d356ecbd8",
+  "original_checkpoint_sha256": "e7b89cae84bf9baf1e845ebfeaf785720f56d77e38206e53236613d48dbbad00",
+  "epoch": 5,
+  "inference_run": false
+}

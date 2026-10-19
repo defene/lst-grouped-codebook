@@ -1,0 +1,8 @@
+{
+  "epochs": 5,
+  "records": 1094875,
+  "updates": 17110,
+  "checkpoint_sha256": "9b3906beebcba90e6b04336cbb957307ebf2510813a0946064eefebb30e5bd1a",
+  "budget_passed": true,
+  "utc": "2026-10-08T12:53:55.364036+00:00"
+}

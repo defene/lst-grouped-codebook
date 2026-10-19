@@ -1,0 +1,6 @@
+{
+  "status": "stopped",
+  "error": "InterruptedError('User STOP present: C:\\\\Users\\\\rog\\\\Desktop\\\\iclr\\\\outputs\\\\ema_local_full_20261015_attempt01\\\\STOP: ')",
+  "utc": "2026-10-17T04:44:55.439794+00:00",
+  "pid": 31204
+}

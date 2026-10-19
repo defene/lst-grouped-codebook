@@ -1,0 +1,9 @@
+{
+  "model": "vqgan_pretrained_R",
+  "strict_loading": "passed",
+  "source_stage": "stage2_vq_20261005_attempt02",
+  "weights_sha256": "2a86ecc786ab4663decfc2e95330f2d4034379f977c28dbf97162b29cced73a0",
+  "original_checkpoint_sha256": "671f10cac76ba9dc758cdf57806eeb915e204af0a0c0720d0eef6dfb25519876",
+  "epoch": 5,
+  "inference_run": false
+}

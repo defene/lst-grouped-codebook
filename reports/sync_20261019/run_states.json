@@ -1,0 +1,23 @@
+{
+  "snapshot_date": "2026-10-19",
+  "meaning": "Saved local receipts; not a live process query",
+  "queues": {
+    "ema_local_full_20261015_attempt01": {
+      "status": "stopped",
+      "active": "vq_G_ema_maint",
+      "completed": [
+        "vq_G_baseline",
+        "vq_G_ema"
+      ],
+      "pid": 37692,
+      "utc": "2026-10-17T04:44:56.037288+00:00",
+      "exit_code": 1
+    },
+    "ema_local_k512_full_20261015_attempt01": {
+      "status": "stopped",
+      "pid": 16012,
+      "utc": "2026-10-17T04:45:21.446174+00:00"
+    }
+  },
+  "training_started_by_this_sync": false
+}

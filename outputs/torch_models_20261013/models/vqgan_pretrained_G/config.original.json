@@ -1,0 +1,214 @@
+{
+  "version": "lst-restoration-v4-colour-20260927",
+  "seed": 17,
+  "name": "vqgan_pretrained_G_pixel10_seed17_20261004",
+  "execution": {
+    "enabled": true,
+    "preflight_report": "/scratch/zm2864/lst-restoration-bench/output/stage2_vq_20261005_attempt02/runs/vqgan_pretrained_G/preflight.json",
+    "alignment_report": null
+  },
+  "data": {
+    "root": "/scratch/zm2864/lst-restoration-bench",
+    "prepared": "processed_data/hlp_split_v2_20260914",
+    "dataset": "prithvi",
+    "display_name": "HLS-LST-Pairs",
+    "modality": "lst",
+    "counts": {
+      "train": 218975,
+      "val": 11684,
+      "test": 11757
+    },
+    "shape": [
+      1,
+      256,
+      256
+    ],
+    "historical_test_exposure": true
+  },
+  "task": {
+    "mean_source": "oracle",
+    "field": "residual",
+    "mean_side_bits": 32,
+    "mean_scale_celsius": 16.29419157454709,
+    "mean_center_celsius": 0.0,
+    "absolute_center_celsius": null,
+    "temperature_bounds_celsius": [
+      -50.0,
+      70.0
+    ],
+    "residual_std_celsius": 2.6950881766205814,
+    "scale_evidence": "/scratch/zm2864/lst-restoration-bench/processed_data/hlp_split_v2_20260914/prithvi/residual_scale.json"
+  },
+  "representation": {
+    "kind": "G",
+    "A_celsius": 120.0,
+    "inverse_gradient_policy": "saturated_softpath_v1"
+  },
+  "model": {
+    "kind": "vqgan_pretrained",
+    "channels": 3,
+    "base_channels": 128,
+    "num_res_blocks": 2,
+    "latent_dim": 256,
+    "grid": 16,
+    "codebook_size": 1024,
+    "levels": [
+      8,
+      8,
+      16
+    ],
+    "bits_per_token": 10,
+    "commitment": 0.25,
+    "entropy_weight": 0.01,
+    "entropy_temperature": 0.1,
+    "checkpointing": false,
+    "pretrained_path": "/scratch/zm2864/lst-restoration-bench/output/stage2_vq_20261004_attempt01/assets",
+    "pretrained_sha256": {
+      "autoencoder_state.pt": "065b0ca6d3e4b0cc25323cc42126043c350e9860e3d79fe64ca4fcad3fb1bfcd",
+      "model.yaml": "cbd6fa371d07bf5bb960e32186e6e81356accbefdcc722bf94583b6a98bda00c"
+    },
+    "initialization": "official_imagenet_f16_1024",
+    "source_repo": "CompVis/taming-transformers",
+    "source_revision": "3ba01b241669f5ade541ce990f7650a3b8f65318",
+    "quantizer_loss": "canonical_codebook_plus_0.25_commitment",
+    "pretrained_objective": "VQGAN",
+    "finetuning_objective": "physical_LST_no_GAN_no_LPIPS"
+  },
+  "corruption": {
+    "training_name": "pixel10",
+    "train_profiles": [
+      {
+        "kind": "pixel10",
+        "coverage": 0.1,
+        "seed": 20260925
+      }
+    ],
+    "profile_selection_seed": 20260925,
+    "synthetic_not_sensor_calibrated": true
+  },
+  "loss": {
+    "pixel": 1.0,
+    "gradient": 0.1,
+    "representation": 0.0,
+    "bottleneck": 1.0,
+    "kl": 1e-06,
+    "region": "all_valid"
+  },
+  "train": {
+    "epochs": 5,
+    "effective_batch": 64,
+    "micro_batch": 8,
+    "workers": 8,
+    "lr": 1e-05,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "amp": true,
+    "memory_limit_gib": 40.0,
+    "device": "cuda:0",
+    "checkpoint_every": 100,
+    "sample_order_seed": 17,
+    "views": 1,
+    "selection": "final_epoch",
+    "record_presentations": 1094875,
+    "updates": 17110,
+    "micro_batch_protocol": "stage2-vq-20261004-v1"
+  },
+  "evaluation": {
+    "profiles": [
+      {
+        "kind": "clean",
+        "seed": 20260925
+      },
+      {
+        "kind": "pixel10",
+        "coverage": 0.1,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_gaussian",
+        "sigma_celsius": 0.5,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_stripe",
+        "stripe_sigma_celsius": 0.25,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_missing",
+        "coverage": 0.1,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_bias",
+        "coverage": 0.3,
+        "bias_celsius": 2.0,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "joint",
+        "sigma_celsius": 0.5,
+        "stripe_sigma_celsius": 0.25,
+        "coverage": 0.1,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "sensor_gaussian",
+        "sigma_celsius": 1.0,
+        "seed": 20260925
+      },
+      {
+        "kind": "cloud_missing",
+        "coverage": 0.3,
+        "field_grid": 8,
+        "seed": 20260925
+      },
+      {
+        "kind": "joint",
+        "sigma_celsius": 1.0,
+        "stripe_sigma_celsius": 0.25,
+        "coverage": 0.3,
+        "field_grid": 8,
+        "seed": 20260925
+      }
+    ],
+    "splits": [
+      "val"
+    ],
+    "views": 2,
+    "batch_size": 4,
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 20260925,
+    "save_gallery_samples": 8,
+    "codec_samples": 8,
+    "stage": "selection"
+  },
+  "scope": {
+    "downstream": false,
+    "generation": false,
+    "hls_training": false,
+    "cross_view_training": false,
+    "real_cloud_claim": false
+  },
+  "tracking": {
+    "enabled": true,
+    "entity": "cyiheng312-new-york-university",
+    "project": "lst-restoration-stage1-20260930",
+    "run_id": "e7079f0fba4b",
+    "name": "vqgan_pretrained_G",
+    "group": "stage2-vq-pretrained-drifting-20261005-attempt02",
+    "every_updates": 10,
+    "tags": [
+      "stage2",
+      "HLP-v2",
+      "single-scale",
+      "vqgan_pretrained",
+      "G",
+      "five-exact-epochs"
+    ]
+  },
+  "experiment_revision": "stage2-single-scale-20261005-attempt02"
+}
