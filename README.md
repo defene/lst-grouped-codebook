@@ -51,3 +51,5 @@ python -m pytest tests/test_lst_grouped_vq.py tests/test_lst_grouped_vq8.py test
 包括最终20单元metrics、逐样本误差、逐组逐尺度token频数、记录ID、每轮验证汇总、训练日志、门禁、完成审查、恢复事件记录、GPU时长和历史/新case图。体积较大的JSONL和划分CSV使用无损gzip，解压后字节SHA256与原文件相同。每轮验证的逐样本日志、权重和原始数据未打包；其他外部依赖/未附文件由历史manifest描述。源报告保留原始路径，缺少外部资产时不能直接重跑report/gallery。
 
 `EXPORT_MANIFEST.json` 记录所有复制文件的来源与SHA256。可执行 `python verify_export.py` 验证上传副本；不加载模型、不写历史结果。历史registry只导出A06/A07两条记录。
+
+本地项目最终留档与恢复入口：[2026-10-19记录](reports/final_local_20261019/README.md)。
